@@ -61,16 +61,6 @@ dist: doc npm_deps
 	mkdir -p $(DIST_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp -r ./bin $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp ./fh-fhc.js $(OUTPUT_DIR)/$(RELEASE_DIR)
-
-internaldist: dist
-	cp -r ./$(MAN_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
-	cp -r ./lib $(OUTPUT_DIR)/$(RELEASE_DIR)
-	cp ./package.json $(OUTPUT_DIR)/$(RELEASE_DIR)
-	echo "$(MAJOR).$(RELEASE).$(HOTFIX)-$(BUILD_NUMBER_INTERNAL)" > $(OUTPUT_DIR)/$(RELEASE_DIR)/VERSION.txt
-	sed -i -e s/BUILD-NUMBER/$(BUILD_NUMBER_INTERNAL)/ $(OUTPUT_DIR)/$(RELEASE_DIR)/package.json
-	tar -czf $(DIST_DIR)/$(RELEASE_FILE_INTERNAL) -C $(OUTPUT_DIR) $(RELEASE_DIR)
-
-externaldist: dist
 	cp -r ./$(MAN_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp -r ./lib $(OUTPUT_DIR)/$(RELEASE_DIR)
 	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/df.js 
