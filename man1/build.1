@@ -1,0 +1,25 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+.TH "FHC\-BUILD" "1" "September 2011" "" ""
+.
+.SH "NAME"
+\fBfhc-build\fR \-\- Build FeedHenry Applications
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc build app=<appId> destination=<destination> version=<version> config=<config> keypass=<private key password> certpass=<certificate password>
+  where <destination> is one of: andriod, iphone
+  where <version> is specific to the destination, see http://www\.feedhenry\.com/TODO
+  where <config> is either \'debug\' (default) or \'release\'
+  \'keypass\' and \'certpass\' only needed for \'release\' builds
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command can be used to build your FeedHenry applications\.
+.
+.P
+e\.g\. 
+fhc build app=mfLkParVTDcr80\-uEk8OhEfT destination=iphone config=distribution keypass=password certpass= version=4\.0

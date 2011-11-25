@@ -1,0 +1,37 @@
+{ 
+  "name" : "fh-fhc",
+  "description" : "A command line client for FeedHenry",
+  "keywords" : [ "cli", "feedhenry" ],
+  "version": "0.5.0-BUILD-NUMBER",
+  "preferGlobal" : true,
+  "homepage" : "http://fhc.feedhenry.com/",
+  "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
+   "directories" : {
+     "doc" : "./doc",
+     "man" : "./man1",
+     "lib" : "./lib",
+     "bin" : "./bin"
+  },
+  "main" : "./fh-fhc.js",
+  "bin" : { 
+    "fhc": "./bin/fhc.js"
+  },
+  "dependencies" :{
+    "semver" : "1",
+    "abbrev" : "1",
+    "nopt" : "1", 
+    "async" : "*",
+    "request" : "*",
+    "vmcjs" : "*",
+    "cli-table" : "*" 
+  },
+  "devDependencies" : {
+    "ronn" : "" 
+  },
+  "engines" : {
+    "node" : "0.4 || 0.6"
+  },
+  "scripts" : { 
+    "test" : "expresso -I lib"
+  }
+}

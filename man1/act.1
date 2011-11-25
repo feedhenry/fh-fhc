@@ -1,0 +1,30 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+.TH "FHC\-ACT" "1" "July 2011" "" ""
+.
+.SH "NAME"
+\fBfhc-act\fR \-\- FeedHenry Actions
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc act <app id> <server function> <params>
+.
+.fi
+.
+.SH "DESCRIPTION"
+This is a utility command to easily invoke your application server side functions in FeedHenry\. 
+.
+.SS "app id"
+Your application id\.
+.
+.SS "server function"
+The name of the server side function you wish to call, this will be a method in your server side \'main\.js\' file\.
+.
+.SS "params"
+The parameters that the function expects\. FeedHenry expects one JSON object to be passed here which contains all the function parameters\.
+.
+.P
+Examples:
+    fhc act h2n0pg\-qvar407mijmsvbapz helloWorld "{\\"name\\":\\"bono\\"}"

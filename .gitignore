@@ -1,0 +1,9 @@
+lib-cov/
+dist/
+output/
+node_modules/
+*~
+.settings/
+.project
+fhc-debug.log
+TAGS
