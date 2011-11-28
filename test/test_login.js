@@ -9,12 +9,11 @@ var mockrequest = require('utils/mockrequest.js');
 module.exports = {
 
     'test login' : function() {
-      // console.log("In test login");
-      //TODO - Temp commenting - needs a proper look 
-      //AM - Seems like the mock data is being passed into fhlogin.js
+      /* TODO
+      console.log("In test login");
        
-    /*  fhc.load(function(er) {
-        request.requestFunc = mockRequest;
+      fhc.load(function(err) {
+        request.requestFunc = mockrequest.mockRequest;
         
         // test login 
         login(['testuser', 'testpassword'], function(data, err) {
@@ -22,7 +21,7 @@ module.exports = {
           assert.equal(data, "login ok");
 
         });      
-      });*/
-      
+      });
+      */
     }
 };
