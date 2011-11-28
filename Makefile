@@ -63,17 +63,9 @@ dist: doc npm_deps
 	cp ./fh-fhc.js $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp -r ./$(MAN_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp -r ./lib $(OUTPUT_DIR)/$(RELEASE_DIR)
-	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/df.js 
-	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/cf.js 
 	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/messaging.js 
-	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/man1/df.1
-	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/man1/cf.1
 	rm $(OUTPUT_DIR)/$(RELEASE_DIR)/man1/messaging.1
 	sed -i -e s/,\'messaging\'// $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/fhc.js
-	sed -i -e s/,\'df\'// $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/fhc.js
-	sed -i -e s/,\'cf\'// $(OUTPUT_DIR)/$(RELEASE_DIR)/lib/fhc.js
-	sed -i -e s/exports.df.*// $(OUTPUT_DIR)/$(RELEASE_DIR)/fh-fhc.js
-	sed -i -e s/exports.cf.*// $(OUTPUT_DIR)/$(RELEASE_DIR)/fh-fhc.js
 	cp ./package.json $(OUTPUT_DIR)/$(RELEASE_DIR)
 	echo "$(MAJOR).$(RELEASE).$(HOTFIX)-$(BUILD_NUMBER)" > $(OUTPUT_DIR)/$(RELEASE_DIR)/VERSION.txt
 	sed -i -e s/BUILD-NUMBER/$(BUILD_NUMBER)/ $(OUTPUT_DIR)/$(RELEASE_DIR)/package.json
