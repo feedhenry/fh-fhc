@@ -11,7 +11,7 @@ fhc-ota -- Build OTA version of an app
     
 ## DESCRIPTION
 
-This command can be used to return the OTA installer URL of a Feedhenry application. To function, you must have an 'In-House' distribution certificate installed in the Feedhenry Studio. This command returns both the OTA install URL and a corresponding convenience short URL.
+This command can be used to return the OTA (Over The Air) installer URL of a Feedhenry application. To function, you must have an 'In-House' distribution certificate installed in the Feedhenry Studio. This command returns both the OTA install URL and a corresponding convenience short URL.
 
 e.g. 
 fhc ota app=mfLkParVTDcr80-uEk8OhEfT destination=iphone config=distribution keypass=password certpass= version=4.0
