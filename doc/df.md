@@ -8,6 +8,7 @@ fhc-dynofarm(1) -- FeedHenry DynoFarm
     fhc df apps
     fhc df logs <app id>
     fhc df start <app id>
+    fhc df restart <app id>
     fhc df stop <app id>
     fhc df delete <app id>
              

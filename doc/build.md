@@ -3,7 +3,7 @@ fhc-build(1) -- Build FeedHenry Applications
 
 ## SYNOPSIS
 
-    fhc build app=<appId> destination=<destination> version=<version> config=<config> keypass=<private key password> certpass=<certificate password>
+    fhc build app=<appId> destination=<destination> version=<version> config=<config> keypass=<private key password> certpass=<certificate password> download=<true|false>
       where <destination> is one of: andriod, iphone
       where <version> is specific to the destination, see http://www.feedhenry.com/TODO
       where <config> is either 'debug' (default) or 'release'
