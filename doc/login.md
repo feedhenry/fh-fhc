@@ -14,6 +14,6 @@ If none are provided, the username and password are read in from prompts.
 
 ### feedhenry
 
-Default: http://apps.feedhenry.com
+Default: https://apps.feedhenry.com
 
 The FeedHenry base URL.
