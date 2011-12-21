@@ -15,7 +15,7 @@ Finally, install FHC bash completion: `fhc completion >> ~/.bashrc` (or ~/.zshrc
 
 ## Usage
 
-See `fhc help`.
+See `fhc help` for general help, or `fhc help <command>` for help on a specific command.
 
 To get started, set the FeedHenry target and then login:
 
