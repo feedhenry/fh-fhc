@@ -9,5 +9,8 @@ fhc-target(1) -- Get/Set the FeedHenry Target URL
     
 ## DESCRIPTION
 
-This command will get or set the FeedHenry Target URL. E.g. fhc target https://apps.feedhenry.com
+This command will get or set the FeedHenry Target URL.
+
+## EXAMPLES
+    fhc target https://apps.feedhenry.com
 

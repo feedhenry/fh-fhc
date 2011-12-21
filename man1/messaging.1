@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs/v0.1
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-MESSAGING" "1" "June 2011" "" ""
+.TH "FHC\-MESSAGING" "1" "December 2011" "" ""
 .
 .SH "NAME"
 \fBfhc-messaging\fR \-\- FeedHenry Messaging Client
@@ -22,16 +22,11 @@ fhc messaging add <topic> <msg>
 .SH "DESCRIPTION"
 This command can be used to interact with the FeedHenry Message Server\. The \'messaging\' config property should be set to the url of the Message Server, i\.e\. \'fhc config edit\' and set the messaging url as appropriate\.  
 .
-.P
-Examples:
-    Query messages in a topic:
-.
-.IP "" 4
+.SH "EXAMPLES"
 .
 .nf
+Query messages in a topic:
 fhc messaging topic foo "bar=123&baz=345"
 .
 .fi
-.
-.IP "" 0
 

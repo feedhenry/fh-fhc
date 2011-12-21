@@ -7,5 +7,5 @@ fhc-targets(1) -- List the stored FeedHenry Targets
     
 ## DESCRIPTION
 
-This command will list all the FeedHenry Targets, i.e. successful logins. 
+This command will list all the FeedHenry Targets, i.e. successful logins that have been made with fhc.
 

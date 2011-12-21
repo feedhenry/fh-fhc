@@ -3,7 +3,7 @@ fhc-import(1) -- Import FeedHenry zipfile
 
 ## SYNOPSIS
 
-    fhc import <feedhenry zip file>
+    fhc import <FeedHenry zip file>
     
 ## DESCRIPTION
 

@@ -9,7 +9,6 @@ fhc-login(1) -- Login to FeedHenry
 
 If none are provided, the username and password are read in from prompts.
 
-
 ## CONFIGURATION
 
 ### feedhenry
