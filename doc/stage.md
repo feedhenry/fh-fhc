@@ -10,5 +10,6 @@ fhc-stage(1) -- Stage FeedHenry Applications
 
 This command can be used to stage your FeedHenry applications, either to the 'development' or 'live' FeedHenry environment.
 
-e.g. 
-fhc stage mfLkParVTDcr80-uEk8OhEfT --live
+## Examples 
+
+    fhc stage mfLkParVTDcr80-uEk8OhEfT --live

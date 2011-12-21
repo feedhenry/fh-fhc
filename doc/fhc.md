@@ -11,10 +11,6 @@ fhc is the command line interface to FeedHenry.
 
 Run `fhc help` to get a list of available commands.
 
-## INTRODUCTION
-
-TODO
-
 ## CONFIGURATION
 
 fhc is extremely configurable.  It reads its configuration options from

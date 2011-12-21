@@ -7,5 +7,5 @@ fhc-user(1) -- FeedHenry User Information
     
 ## DESCRIPTION
 
-This command will return FeedHenry information on the logged in user.
+This command will return FeedHenry information about the logged in user.
 

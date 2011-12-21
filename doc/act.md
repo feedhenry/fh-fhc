@@ -1,6 +1,5 @@
 fhc-act(1) -- FeedHenry Actions
 ===============================
-
 ## SYNOPSIS
 
     fhc act <app id> <server function> <params>
@@ -21,7 +20,7 @@ The name of the server side function you wish to call, this will be a method in 
 
 The parameters that the function expects. FeedHenry expects one JSON object to be passed here which contains all the function parameters.
 
-Examples:
+## EXAMPLES
     fhc act h2n0pg-qvar407mijmsvbapz helloWorld "{\"name\":\"bono\"}"
 
 

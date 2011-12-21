@@ -9,5 +9,5 @@ fhc-git(1) -- FeedHenry App Git Actions
     
 ## DESCRIPTION
 
-This command can be used to perform your Applications FeedHenry Git actions.
+This command can be used to perform your FeedHenry Git actions on your App.
 
