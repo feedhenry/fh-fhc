@@ -2,7 +2,7 @@
   "name" : "fh-fhc",
   "description" : "A Command Line Interface for FeedHenry",
   "keywords" : [ "cli", "feedhenry" ],
-  "version": "0.6.4-BUILD-NUMBER",
+  "version": "0.6.5-BUILD-NUMBER",
   "preferGlobal" : true,
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
