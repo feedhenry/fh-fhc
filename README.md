@@ -32,3 +32,6 @@ To create an app from a git repository use:
 `fhc apps create StoreFinder git://github.com/feedhenry/Store-Finder.git`
 
 
+## Acknowledgements
+
+The source code for FHC was orginally based on an earlier version of [NPM (https://github.com/isaacs/npm)], so many thanks to [Isaac (https://github.com/isaacs)] for the foundation code for an excellent Command Line Interface!
