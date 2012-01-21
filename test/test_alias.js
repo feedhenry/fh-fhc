@@ -1,3 +1,4 @@
+//tests for alias command
 var assert 		= require('assert'),
 	fhc 		= require("../lib/fhc.js"),
 	alias 		= require('../lib/alias.js'),
