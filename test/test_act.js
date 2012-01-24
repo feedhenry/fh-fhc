@@ -1,8 +1,8 @@
 var assert = require('assert');
-var fhc = require("../lib/fhc.js");
-var act = require('../lib/act.js');
-var request = require('../lib/utils/request.js');
-var mockrequest = require('../lib/utils/mockrequest.js');
+var fhc = require("fhc.js");
+var act = require('act.js');
+var request = require('utils/request.js');
+var mockrequest = require('utils/mockrequest.js');
 
 module.exports = {
 

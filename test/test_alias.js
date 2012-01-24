@@ -15,10 +15,6 @@ var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";
 
 
 module.exports =  {
-	
-
-	
-
 	"test alias" : function () {
 		fhc.load(function (er){
 
@@ -27,16 +23,15 @@ module.exports =  {
 			alias([theAlias+"="+testAppId],function(er,data){
 				assert.equal(er,undefined);
 				assert.equal(data,"ok");
-				console.log(fhc.appId(theAlias));
-				assert.equal(testAppId,fhc.appId(theAlias));
-				
+
+
 			});
 
-			
+
 
 			//test 24 character alias arn't accepted
 			alias(["Hw1ahBfiT2KEBVq9bxz4Qc8Q="+testAppId], function(err,data){
-				
+
 				assert.isDefined(err);
 				assert.isUndefined(data);
 			});
@@ -55,8 +50,8 @@ module.exports =  {
 				assert.isDefined(err);
 				assert.isUndefined(data);
 			});
-			var reserved =  ["feedhenry","_password","cookie","username"];
-			for(i = 0; i < reserved.length; i++){
+			var reserved = alias.reserved;
+			for(var i = 0; i < reserved.length; i++){
 				alias([reserved[i]+"="+testAppId],function (err, data) {
 					assert.isDefined(err);
 					assert.isUndefined(data);
@@ -75,11 +70,11 @@ module.exports =  {
 	},
 
 	"test fh appid" : function () {
-		
+
 		assert.equal(fhc.appId(undefined),undefined);
 		//shouldn't change valid appid
 		assert.equal(fhc.appId("Hw1ahBfiT2KEBVq9bxz8Qc8H"),"Hw1ahBfiT2KEBVq9bxz8Qc8H");
-		
-		
+
+
 	}
 };
