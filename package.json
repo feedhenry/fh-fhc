@@ -23,6 +23,7 @@
     "async" : "*",
     "request" : "*",
     "vmcjs" : "*",
+    "findit" : "*",
     "cli-table" : "*" 
   },
   "devDependencies" : {
