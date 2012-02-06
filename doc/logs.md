@@ -3,8 +3,8 @@ fhc-logs(1) -- FeedHenry Application Log Files
 
 ## SYNOPSIS
 
-    fhc logs <app id> 
-    fhc logs <app id> --live
+    fhc logs <app-id> 
+    fhc logs <app-id> --live
     
 ## DESCRIPTION
 
