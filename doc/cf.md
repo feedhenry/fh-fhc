@@ -3,7 +3,7 @@ fhc-cf(1) -- FeedHenry CloudFoundry
 
 ## SYNOPSIS
 
-    fhc cf act <app id> <server function> <params>
+    fhc cf act <app-id> <server-function> <params>
 
 ## DESCRIPTION
 

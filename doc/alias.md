@@ -2,7 +2,7 @@ fhc-alias(1) -- FeedHenry Actions
 ===============================
 ## SYNOPSIS
 
-    fhc alias <app id>=<alias>
+    fhc alias <app-id>=<alias>
         
 ## DESCRIPTION
 

@@ -3,7 +3,7 @@ fhc-cloudfoundry(1) -- FeedHenry CloudFoundry
 
 ## SYNOPSIS
 
-    fhc cloudfoundry <app id> <cf target> <cf user> <cf pwd>
+    fhc cloudfoundry <app-id> <cf-target> <cf-user> <cf-pwd>
 
 ## DESCRIPTION
 
