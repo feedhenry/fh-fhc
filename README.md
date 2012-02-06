@@ -21,7 +21,7 @@ To get started, set the FeedHenry target and then login:
 
 `$ fhc target https://apps.feedhenry.com`
 
-`$ fhc login <your email address> <your password>`
+`$ fhc login <your-email-address> <your-password>`
 
 To list your apps, use:
 

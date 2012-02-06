@@ -4,7 +4,7 @@ fhc-version(1) -- FeedHenry Version Information
 ## SYNOPSIS
 
     fhc version 
-    fhc version <FeedHenry URL>
+    fhc version <FeedHenry-URL>
     
 ## DESCRIPTION
 
