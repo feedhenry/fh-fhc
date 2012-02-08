@@ -3,8 +3,8 @@ fhc-preview(1) -- FeedHenry Application Preview
 
 ## SYNOPSIS
 
-    fhc preview [url] <app-id>
-    fhc preview show <app-id> 
+    fhc preview [show] <app-id>
+    fhc preview url <app-id> 
     
 ## DESCRIPTION
 
