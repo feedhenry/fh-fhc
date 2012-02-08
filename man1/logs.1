@@ -9,18 +9,18 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc logs <app\-id> 
-fhc logs <app\-id> \-\-live
+fhc logs [show] <app\-id> [log\-name] [\-\-live]
+fhc logs list <app\-id> [\-\-live]
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to retrieve your Application log files\. Use the \-\-live switch if your app is staged to the live FeedHenry deployment environment\.
+This command can be used to list/retrieve your Application log files\. Use the \-\-live switch if your app is staged to the live FeedHenry deployment environment\.
 .
 .SH "EXAMPLES"
 .
 .nf
-fhc stage mfLkParVTDcr80\-uEk8OhEfT \-\-live
+fhc logs mfLkParVTDcr80\-uEk8OhEfT \-\-live
 .
 .fi
 

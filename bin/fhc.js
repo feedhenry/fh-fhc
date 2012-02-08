@@ -58,36 +58,28 @@ fhc.load(conf, function (err) {
   var cmd = fhc.commands[fhc.command];
   cmd(fhc.argv, function(err, data) {
     if (err) return errorHandler(err);
-
-    // special output for apps logs. TODO still should be able to get json output for logs via by setting a flag.. 
-    if ("logs" === fhc.command && fhc.argv[0] != undefined) {
-      var logData = "\n====> stdout <====\n" +  data.logs.stdout + "\n====> stderr <====\n" + data.logs.stderr;
-      output.write(logData, errorHandler); 
-    }else {
-      if (data === undefined) {
-        output.write("",errorHandler);     
-      }        
-      else {
-        // display table if both requested and supported.. 
-        if (!conf.json && conf.table && cmd.table) {
-          console.log(cmd.table.toString());
-          output.write("", errorHandler);
+    if (data === undefined) {
+      output.write("",errorHandler);     
+    } else {
+      // display table if both requested and supported.. 
+      if (!conf.json && conf.table && cmd.table) {
+        console.log(cmd.table.toString());
+        output.write("", errorHandler);
+      }else {
+        // check if we have a nonjson message
+        if(!conf.json && cmd.message) {
+          output.write(cmd.message, errorHandler);
         }else {
-          // check if we have a nonjson message
-          if(!conf.json && cmd.message) {
-            output.write(cmd.message, errorHandler);
-          }else {
-            if (typeof data === 'string') return output.write(data, errorHandler);
-            if (conf.filter) {
-              var script = "output.write(data." + conf.filter + ", errorHandler)"; 
-              eval(script);
-            }else{
-              return output.write(data, errorHandler);
-            }
+          if (typeof data === 'string') return output.write(data, errorHandler);
+          if (conf.filter) {
+            var script = "output.write(data." + conf.filter + ", errorHandler)"; 
+            eval(script);
+          }else{
+            return output.write(data, errorHandler);
           }
         }
-      }        
-    }
+      }
+    }        
   });
 })
 })()
