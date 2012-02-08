@@ -8,8 +8,11 @@ fhc-preview(1) -- FeedHenry Application Preview
     
 ## DESCRIPTION
 
-This command can be used to preview your application in your browser.
+This command can be used to preview your application in your browser. By default, the 'open' command is the default command used on OSX to open the preview url, otherwise 'google-chrome' is the default command.
+
+To set your default brower: fhc set browser firefox
+Or on windows: fhc set browser start
 
 ## EXAMPLES
 
-    fhc preview url mfLkParVTDcr80-uEk8OhEfT
+    fhc preview mfLkParVTDcr80-uEk8OhEfT
