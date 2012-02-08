@@ -50,7 +50,7 @@ man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
 
 test:
-	env fhc_fhcfg_feedhenry="https://apps.feedhenry.com" expresso -I lib x
+	env fhc_fhcfg_feedhenry="https://apps.feedhenry.com" expresso -I lib 
 
 npm_deps:
 	npm install .

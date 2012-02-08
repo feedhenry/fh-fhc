@@ -44,7 +44,7 @@ module.exports = {
           assert.equal(data.status, 'ok');
         });
         // test logs
-        logs(['0123'], function (err, data) {
+        logs(['show', '01234567890123456789012340'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
