@@ -15,4 +15,5 @@ exports.df = require('./lib/df.js');
 exports.stage = require('./lib/stage.js');
 exports.configuration = require('./lib/configuration.js');
 exports.account = require('./lib/account.js');
+exports.cloudfoundry = require('./lib/cloudfoundry.js');
 

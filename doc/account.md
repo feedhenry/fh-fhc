@@ -3,16 +3,21 @@ fhc-account -- Manage your FeedHenry Account Resources
 
 ## SYNOPSIS
 
-     fhc account upload-resource <destination> <file path> <resource type> <config>
+     fhc account upload-resource <destination> <file-path> <resource-type> <config>
        where <destination> is one of : android, iphone or blackberry
-       where <file path> is the absolute path of the file to upload
+       where <file-path> is the absolute path of the file to upload
        where <resource> is one of : certificate (used by iphone and android), privatekey (used by iphone and android), csk or db (used by Blackberry)
        where <config> is one of : debug or distribution (required if destination is iphone, default is debug)
      or
-     fhc account upload-resources-batch <destination> <resource directory>
+     fhc account upload-resources-batch <destination> <resource-directory>
        where <destination> is one of : android, iphone, blackberry or all
-       where <resource directory> should be the directory where resources are located.
-    
+       where <resource-directory> should be the directory where resources are located.
+     or 
+     fhc account generate-resource <destination> <resource-type> <password>
+       where <destination> is one of android or iphone (not supported yet)
+       where <resource-type> is one of certificate or csr (certificate signing request, not supported yet)
+       where <password> is the password used to encrypt the private key (required)    
+  
 ## DESCRIPTION
 
 This command will try to find the correct type of resources for each destination and upload them automatically. 
