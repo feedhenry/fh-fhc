@@ -3,7 +3,7 @@ fhc-checkout(1) -- Checkout FeedHenry Applications Source
 
 ## SYNOPSIS
 
-    fhc checkout <app id> [directory]
+    fhc checkout <app-id> [directory]
     
 ## DESCRIPTION
 
