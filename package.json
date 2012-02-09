@@ -24,7 +24,8 @@
     "request" : "*",
     "vmcjs" : "*",
     "findit" : "*",
-    "cli-table" : "*" 
+    "cli-table" : "*", 
+    "datejs" : "*"
   },
   "devDependencies" : {
     "ronn" : "" 
