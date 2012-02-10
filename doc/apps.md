@@ -5,7 +5,7 @@ fhc-apps(1) -- Manage FeedHenry Applications
 
     fhc apps 
     fhc apps [read] <app-id>
-    fhc apps create <app-title> [<git-repo> <git-branch> <key-file>]
+    fhc apps create <app-title> [<git-repo> <git-branch>]
     fhc apps update <app-id> <property-name> <property-value>
     fhc apps delete <app-id>
     
