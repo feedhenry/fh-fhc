@@ -10,7 +10,7 @@ var ini = require('../lib/utils/ini.js');
 
 var testguid = "c0TPJtvFbztuS2p7NhZN3oZz";
 var platform = process.platform;
-var writeDir = (platform === "linux")?"/home":(platform === "darwin")?"/Users/"+process.env.USER+"/Downloads":"C:\Download";
+var writeDir = (platform === "linux")?"/home/Downloads":(platform === "darwin")?"/Users/"+process.env.USER+"/Downloads":"C:\Download";
 console.log(writeDir);
 module.exports = {
 
@@ -27,6 +27,7 @@ module.exports = {
 
     "test native file write":function () {
         fhc.load(function (er){
+            //endure we have a domain to read against
             if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             native(["config=apple","app=c0TPJtvFbztuS2p7NhZN3oZz","dir="+writeDir],function (err, data){
                 console.log(data);
@@ -34,5 +35,16 @@ module.exports = {
                 assert.equal(data.substr(0,21), "native config written");
             });
         });
+    },
+
+    "test no fail when write fails":function (){
+        fhc.load(function (er){
+            native(["config=apple","app=c0TPJtvFbztuS2p7NhZN3oZz","dir=somedir"],function (err, data){
+                assert.equal(err,null);
+                //should still write out the contents to the terminal
+                assert.isNotNull(data);
+            });
+        });
     }
+
 };
