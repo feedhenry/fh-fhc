@@ -18,7 +18,7 @@ module.exports = {
         fhc.load(function (er){
             request.requestFunc = mockrequest.mockRequest;
             if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
-            native(["config=apple","app=c0TPJtvFbztuS2p7NhZN3oZz"],function (err, data){
+            native(["confg=apple","app=c0TPJtvFbztuS2p7NhZN3oZz"],function (err, data){
                     assert.equal(err,null);
                     assert.equal(data.substr(0,5), "<?xml");
             });
