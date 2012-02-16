@@ -4,7 +4,7 @@ fhc-cf(1) -- FeedHenry CloudFoundry
 ## SYNOPSIS
 
     fhc cf apps
-    fhc cf app <app-id>
+    fhc cf app <app-name>
 
 
 ## DESCRIPTION
