@@ -3,6 +3,7 @@ dist/
 output/
 node_modules/
 *~
+*.swp
 .settings/
 .project
 fhc-debug.log
