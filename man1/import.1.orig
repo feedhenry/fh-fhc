@@ -1,0 +1,21 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+<<<<<<< HEAD
+.TH "FHC\-IMPORT" "1" "December 2011" "" ""
+=======
+.TH "FHC\-IMPORT" "1" "February 2012" "" ""
+>>>>>>> 626960d95ce09a36759c3d06d10ab4a1fa1be440
+.
+.SH "NAME"
+\fBfhc-import\fR \-\- Import FeedHenry zipfile
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc import <FeedHenry zip file>
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command can be used to an existing FeedHenry zipfile\.

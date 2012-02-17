@@ -1,0 +1,29 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+<<<<<<< HEAD
+.TH "FHC\-LOGIN" "1" "December 2011" "" ""
+=======
+.TH "FHC\-LOGIN" "1" "February 2012" "" ""
+>>>>>>> 626960d95ce09a36759c3d06d10ab4a1fa1be440
+.
+.SH "NAME"
+\fBfhc-login\fR \-\- Login to FeedHenry
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc login <username> <password>
+.
+.fi
+.
+.SH "DESCRIPTION"
+If none are provided, the username and password are read in from prompts\.
+.
+.SH "CONFIGURATION"
+.
+.SS "feedhenry"
+Default: https://apps\.feedhenry\.com
+.
+.P
+The FeedHenry base URL\.

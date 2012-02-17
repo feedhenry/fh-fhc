@@ -61,12 +61,18 @@ var commandCache = {}
   // Note: these are filenames in ./lib
   //
   , cmdList = fhc.cmdList = [
+<<<<<<< HEAD
+=======
               ,'account'
+>>>>>>> 626960d95ce09a36759c3d06d10ab4a1fa1be440
               ,'act'
               ,'alias'
               ,'apps'
               ,'build'
+<<<<<<< HEAD
+=======
               //,'checkout'
+>>>>>>> 626960d95ce09a36759c3d06d10ab4a1fa1be440
               ,'cloudfoundry'
               ,'ota'
               ,'configuration'
@@ -101,7 +107,6 @@ var commandCache = {}
               // internal commands/work in progress
               ,'cf'
               ,'df'
-              ,'endpoints'
               ,'messaging'
                ]
   , fullList = fhc.fullList = cmdList.concat(aliasNames).concat(fhcList).filter(function (c) {

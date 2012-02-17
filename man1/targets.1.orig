@@ -1,0 +1,21 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+<<<<<<< HEAD
+.TH "FHC\-TARGETS" "1" "December 2011" "" ""
+=======
+.TH "FHC\-TARGETS" "1" "February 2012" "" ""
+>>>>>>> 626960d95ce09a36759c3d06d10ab4a1fa1be440
+.
+.SH "NAME"
+\fBfhc-targets\fR \-\- List the stored FeedHenry Targets
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc targets
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command will list all the FeedHenry Targets, i\.e\. successful logins that have been made with fhc\.
