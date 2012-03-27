@@ -8,6 +8,8 @@ fhc-apps(1) -- Manage FeedHenry Applications
     fhc apps create <app-title> [<git-repo> <git-branch>]
     fhc apps update <app-id> <property-name> <property-value>
     fhc apps delete <app-id>
+    fhc apps ping <app-id>
+    fhc apps ping <app-id> --live
     
 ## DESCRIPTION
 
