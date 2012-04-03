@@ -7,4 +7,4 @@ node_modules/
 .project
 fhc-debug.log
 TAGS
-.idea/
+.idea./
