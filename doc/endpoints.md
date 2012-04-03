@@ -1,12 +1,12 @@
-fhc-endpoints(1) -- FeedHenry Endpoints
+fhc-hosts(1) -- FeedHenry hosts
 =======================================
 ## SYNOPSIS
 
-    fhc endpoints <app-id> 
+    fhc hosts <app-id> 
     
 ## DESCRIPTION
 
-This is a utility command to see the various endpoints an App has.
+This is a utility command to see the various hosts an App has.
 
 
 
