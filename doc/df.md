@@ -6,11 +6,11 @@ fhc-dynofarm(1) -- FeedHenry DynoFarm
     fhc df ping
     fhc df version
     fhc df apps
-    fhc df logs <app-id>
-    fhc df start <app-id>
-    fhc df restart <app-id>
-    fhc df stop <app-id>
-    fhc df delete <app-id>
+    fhc df logs <app-name>
+    fhc df start <app-name>
+    fhc df restart <app-name>
+    fhc df stop <app-name>
+    fhc df delete <app-name>
              
 
 ## DESCRIPTION
