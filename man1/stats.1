@@ -1,0 +1,37 @@
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
+.
+.TH "FHC\-STATS" "1" "April 2012" "" ""
+.
+.SH "NAME"
+\fBfhc-stats\fR \-\- FeedHenry Stats
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc stats <app\-id> <stats\-type> <num\-results> [\-\-live]
+.
+.fi
+.
+.SH "DESCRIPTION"
+Get App stats from your FeedHenry Application\.
+.
+.SS "app id"
+Your application id\.
+.
+.SS "stats\-type"
+Type of stats\. Options here are \'api\' (in\-built system stats, e\.g\. timing app end points, etc) or \'app\' (stats a developer has put in their code using feedhenry\.stats() API)\.
+.
+.SS "num\-results"
+Number of results you want returned\. Numeric value\.
+.
+.SS "\-\-live"
+Use \-\-live to see stats from your app that is staged in the \'live\' environment\. \'dev\' stats are returned by default\.
+.
+.SH "EXAMPLES"
+.
+.nf
+fhc stats h2n0pg\-qvar407mijmsvbapz app 10 \-\-live
+.
+.fi
+
