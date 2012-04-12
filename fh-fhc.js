@@ -1,6 +1,7 @@
 exports.login = require('./lib/login.js');
 exports.target = require('./lib/target.js');
 exports.apps = require('./lib/apps.js');
+exports.stats = require('./lib/stats.js');
 exports.imports = require('./lib/import.js');
 exports.logs = require('./lib/logs.js');
 exports.files = require('./lib/files.js');
