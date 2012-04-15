@@ -3,8 +3,8 @@
 var fh = require("./");
 
 var options = {
-      host: "https://demo2.feedhenry.com",
-      domain: "demo2",
+      host: "https://apps.feedhenry.com",
+      domain: "apps",
       cookie: ""
     },
     apps = [],
@@ -16,8 +16,8 @@ var options = {
       cyan  : '\u001b[36m',
       reset : '\u001b[0m'
     },
-    username = "fhdemo2@example.com",
-    password = "password12";
+    username = "",
+    password = "";
 
 
 var tests = {
@@ -76,6 +76,16 @@ var tests = {
     }
     else {
       console.log("No apps to read");
+    }
+  },
+
+  'read files': function(cb) {
+    var app = apps[0];
+    if(app) {
+      fh.files.list(options, app.id, function(error, data){
+        console.log(arguments);
+        cb(error);
+      });
     }
   },
 
