@@ -5,7 +5,7 @@ var fh = require("./");
 var options = {
       host: "https://apps.feedhenry.com",
       domain: "apps",
-      cookie: ""
+      login: ""
     },
     apps = [],
     createdApp = null,
@@ -26,7 +26,7 @@ var tests = {
     fh.auth.login(options, username, password, function(error, data) {
         console.log(arguments);
         if(!error) {
-          options.cookie = data.login;
+          options.login = data.login;
         }
         cb(error);
       }
