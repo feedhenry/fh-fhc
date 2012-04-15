@@ -3,8 +3,8 @@
 var fh = require("./");
 
 var options = {
-      host: "https://apps.feedhenry.com",
-      domain: "apps",
+      host: "https://demo2.feedhenry.com",
+      domain: "demo2",
       cookie: ""
     },
     apps = [],
@@ -16,8 +16,8 @@ var options = {
       cyan  : '\u001b[36m',
       reset : '\u001b[0m'
     },
-    username = "",
-    password = "";
+    username = "fhdemo2@example.com",
+    password = "password12";
 
 
 var tests = {
@@ -120,8 +120,10 @@ var tests = {
 
 (function() {
 
-  if(!username || !password) 
+  if(!username || !password) {
     console.log("please edit the username and password for the tests to work");
+    return;
+  }
 
   var successful = 0,
       total = 0;

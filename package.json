@@ -2,7 +2,7 @@
   "name" : "fh-module",
   "description" : "A node module for communicating with the feedhenry platform for FeedHenry",
   "keywords" : [ "module", "feedhenry" ],
-  "version": "0.1",
+  "version": "0.1.1",
   "preferGlobal" : true,
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
