@@ -66,16 +66,29 @@ var tests = {
   },
 
   'read app': function(cb) {
-    var app = createdApp || apps[0];
+    var appId = createdApp ? createdApp.guid : apps[0] ? apps[0].id : null;
 
-    if(app) {
-      fh.apps.read(options, app.guid, function(error, data) {
+    if(appId) {
+      fh.apps.read(options, appId, function(error, data) {
         console.log(arguments);
         cb(error);
       });
     }
     else {
       console.log("No apps to read");
+    }
+  },
+
+  'git pull': function(cb) {
+    if(createdApp) {
+      fh.git.pull(options, createdApp.guid, function(error, data){
+        console.log(arguments);
+
+        cb(error);
+      });
+    }
+    else {
+      cb(true);
     }
   },
 
@@ -131,7 +144,7 @@ var tests = {
 (function() {
 
   if(!username || !password) {
-    console.log("please edit the username and password for the tests to work");
+    console.log("please edit a username and password for the tests to work");
     return;
   }
 
