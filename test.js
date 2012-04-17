@@ -16,8 +16,8 @@ var options = {
       cyan  : '\u001b[36m',
       reset : '\u001b[0m'
     },
-    username = "",
-    password = "";
+    username = process.argv[2] || "",
+    password = process.argv[3] || "";
 
 
 var tests = {
