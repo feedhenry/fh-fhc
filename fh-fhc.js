@@ -1,6 +1,11 @@
 exports.login = require('./lib/login.js');
 exports.target = require('./lib/target.js');
 exports.apps = require('./lib/apps.js');
+exports.create = require('./lib/create.js');
+exports.read = require('./lib/read.js');
+exports.update = require('./lib/update.js');
+exports.deletes = require('./lib/deletes.js');
+exports.ping = require('./lib/ping.js');
 exports.stats = require('./lib/stats.js');
 exports.imports = require('./lib/import.js');
 exports.logs = require('./lib/logs.js');
