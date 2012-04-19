@@ -5,6 +5,9 @@ var apps = require('apps.js');
 var target = require('target.js');
 var set = require('set.js');
 var logs = require('logs.js');
+var read = require('read.js');
+var deletes = require('delete.js');
+var create = require('create.js');
 var fhcfg = require('fhcfg.js');
 var request = require('utils/request.js');
 var mockrequest = require('utils/mockrequest.js');
@@ -23,23 +26,23 @@ module.exports = {
           assert.equal(err, null);
           assert.notEqual(data.list.length, 0);
         });
-        // test apps read
-        apps(['read','0123'], function (err, data) {
+        // test read
+        read(['0123'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
-        // test apps delete
-        apps(['delete','0123'], function (err, data) {
+        // test delete
+        deletes(['0123'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data[0].status, 'ok');
         });
-        // test apps delete (multiple)
-        apps(['delete','0123', '456', '789'], function (err, data) {
+        // test delete (multiple)
+        deletes(['0123', '456', '789'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data[0].status, 'ok');
         });
-        // test apps create
-        apps(['create','foo1'], function (err, data) {
+        // test create
+        create(['foo1'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
