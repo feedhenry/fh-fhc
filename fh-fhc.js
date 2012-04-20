@@ -1,5 +1,6 @@
 exports.login = require('./lib/login.js');
 exports.target = require('./lib/target.js');
+exports.call = require('./lib/call.js');
 exports.apps = require('./lib/apps.js');
 exports.create = require('./lib/create.js');
 exports.read = require('./lib/read.js');
@@ -16,6 +17,7 @@ exports.search = require('./lib/search.js');
 exports.set = require('./lib/set.js');
 exports.config = require('./lib/fhcfg.js');
 exports.build = require('./lib/build.js');
+exports.keys = require('./lib/keys.js');
 exports.cf = require('./lib/cf.js');
 exports.df = require('./lib/df.js');
 exports.stage = require('./lib/stage.js');
