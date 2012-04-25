@@ -33,19 +33,19 @@ var tests = {
     );
   },
 
-  'version': function(cb) {
-    fh.version(options, function(error, data) {
-      console.log(arguments);
-      cb(error);
-    });
-  },
+  // 'version': function(cb) {
+  //   fh.version(options, function(error, data) {
+  //     console.log(arguments);
+  //     cb(error);
+  //   });
+  // },
 
-  'read user': function(cb) {
-    fh.user.read(options, function(error, data) {
-      console.log(arguments);
-      cb(error);
-    });
-  },
+  // 'read user': function(cb) {
+  //   fh.user.read(options, function(error, data) {
+  //     console.log(arguments);
+  //     cb(error);
+  //   });
+  // },
 
   'list apps': function(cb) {
     fh.apps.list(options, function(error, data) {
@@ -57,80 +57,103 @@ var tests = {
     })
   },
 
-  'create app': function(cb) {
-    fh.apps.create(options, "testApp", "git@github.com:danielconnor/test.git", "master", function(error, data) {
-      console.log(arguments);
-      createdApp = data;
-      cb(error);
-    });
-  },
 
-  'read app': function(cb) {
-    var appId = createdApp ? createdApp.guid : apps[0] ? apps[0].id : null;
+  'build': function(cb) {
+    fh.build(options, apps[0].id, {
+      version: "2.3",
+      destination: "android",
+      config: "debug",
+      stage: false
+    }, function(error, data) {
+      console.log(error, data);
 
-    if(appId) {
-      fh.apps.read(options, appId, function(error, data) {
-        console.log(arguments);
+      fh.api.waitFor(options, data.cacheKey, function(error, data) {
+        console.log(data);
+
         cb(error);
+      }, function(error, data) {
+        if(data.log && data.log.length) {
+          console.log(data.log[0]);
+        }
       });
-    }
-    else {
-      console.log("No apps to read");
-    }
+
+    })
   },
 
-  'git pull': function(cb) {
-    if(createdApp) {
-      fh.git.pull(options, createdApp.guid, function(error, data){
-        console.log(arguments);
+  // 'create app': function(cb) {
+  //   fh.apps.create(options, "testApp", "git@github.com:danielconnor/test.git", "master", function(error, data) {
+  //     console.log(arguments);
+  //     createdApp = data;
+  //     cb(error);
+  //   });
+  // },
 
-        cb(error);
-      });
-    }
-    else {
-      cb(true);
-    }
-  },
+  // 'read app': function(cb) {
+  //   var appId = createdApp ? createdApp.guid : apps[0] ? apps[0].id : null;
 
-  'read files': function(cb) {
-    var app = apps[0];
-    if(app) {
-      fh.files.list(options, app.id, function(error, data){
-        console.log(arguments);
-        cb(error);
-      });
-    }
-  },
+  //   if(appId) {
+  //     fh.apps.read(options, appId, function(error, data) {
+  //       console.log(arguments);
+  //       cb(error);
+  //     });
+  //   }
+  //   else {
+  //     console.log("No apps to read");
+  //   }
+  // },
 
-  'list config': function(cb) {
-    var app = createdApp || apps[0];
+  // 'git pull': function(cb) {
+  //   if(createdApp) {
+  //     fh.git.pull(options, createdApp.guid, function(error, data){
+  //       console.log(arguments);
 
-    if(app) {
-      fh.config.list(options, app.guid, "all", function(error, data) {
-        console.log(arguments);
-        cb(error);
-      });
-    }
-    else {
-      console.log("No apps to read");
-    }
-  },
+  //       cb(error);
+  //     });
+  //   }
+  //   else {
+  //     cb(true);
+  //   }
+  // },
 
-  'search apps': function(cb) {
-    fh.apps.search(options, "testApp", function(error, data) {
-      console.log(arguments);
-      cb(error);
-    });
-  },
+  // 'read files': function(cb) {
+  //   var app = apps[0];
+  //   if(app) {
+  //     fh.files.list(options, app.id, function(error, data){
+  //       console.log(arguments);
+  //       cb(error);
+  //     });
+  //   }
+  // },
 
-  'remove app': function(cb) {
-    if(createdApp) {
-      fh.apps.remove(options, createdApp.guid, function(error, data) {
-        console.log(arguments);
-        cb(error);
-      })
-    }
-  },
+  // 'list config': function(cb) {
+  //   var app = createdApp || apps[0];
+
+  //   if(app) {
+  //     fh.config.list(options, app.guid, "all", function(error, data) {
+  //       console.log(arguments);
+  //       cb(error);
+  //     });
+  //   }
+  //   else {
+  //     console.log("No apps to read");
+  //   }
+  // },
+
+  // 'search apps': function(cb) {
+  //   fh.apps.search(options, "testApp", function(error, data) {
+  //     console.log(arguments);
+  //     cb(error);
+  //   });
+  // },
+
+  // 'remove app': function(cb) {
+  //   if(createdApp) {
+  //     fh.apps.remove(options, createdApp.guid, function(error, data) {
+  //       console.log(arguments);
+  //       cb(error);
+  //     })
+  //   }
+  // },
 
   'logout': function(cb) {
     fh.auth.logout(options, function(error, data) {
