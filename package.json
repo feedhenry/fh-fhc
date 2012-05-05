@@ -6,10 +6,7 @@
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
    "directories" : {
-     "doc" : "./doc",
-     "man" : "./man1",
-     "lib" : "./lib",
-     "bin" : "./bin"
+     "lib" : "./lib"
   },
   "main" : "./main.js",
   "dependencies" :{
