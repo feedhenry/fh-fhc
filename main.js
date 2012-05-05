@@ -1,4 +1,5 @@
 exports.api 	= require("./lib/api.js");
+exports.act 	= require("./lib/act.js");
 exports.version = require("./lib/version");
 exports.user    = require("./lib/user");
 exports.auth    = require("./lib/auth");

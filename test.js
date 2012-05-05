@@ -71,7 +71,7 @@ var tests = {
         console.log(data);
 
         if(data.status !== "pending") {
-        	cb(error);
+          cb(error);
         }
       });
 
