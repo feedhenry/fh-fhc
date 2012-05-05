@@ -18,7 +18,6 @@
     "vmcjs" : "*"
   },
   "devDependencies" : {
-    "ronn" : "" 
   },
   "engines" : {
     "node" : "0.4 || 0.6"
