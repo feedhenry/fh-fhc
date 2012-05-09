@@ -70,12 +70,10 @@ var tests = {
 
   //     fh.api.waitFor(options, data.cacheKey, function(error, data) {
   //       console.log(data);
-
   //       if(data.status !== "pending") {
   //       	cb(error);
   //       }
   //     });
-
   //   })
   // },
 
