@@ -1,6 +1,7 @@
 "use strict";
 
 var fh = require("./");
+var http = require("http");
 
 var options = {
       host: "https://apps.feedhenry.com",
@@ -24,7 +25,7 @@ var tests = {
 
   'login': function(cb) {
     fh.auth.login(options, username, password, function(error, data) {
-        console.log(arguments);
+        console.log(data);
         if(!error) {
           options.login = data.login;
         }
@@ -47,36 +48,36 @@ var tests = {
   //   });
   // },
 
-  'list apps': function(cb) {
-    fh.apps.list(options, function(error, data) {
-      console.log(arguments);
-      if(data && data.list) {
-        apps = data.list;
-      }
-      cb(error);
-    })
-  },
+  // 'list apps': function(cb) {
+  //   fh.apps.list(options, function(error, data) {
+  //     console.log(arguments);
+  //     if(data && data.list) {
+  //       apps = data.list;
+  //     }
+  //     cb(error);
+  //   })
+  // },
 
 
-  'build': function(cb) {
-    fh.build(options, apps[0].id, {
-      version: "2.3",
-      destination: "android",
-      config: "debug",
-      stage: false
-    }, function(error, data) {
-      console.log(error, data);
+  // 'build': function(cb) {
+  //   fh.build(options, apps[0].id, {
+  //     version: "2.3",
+  //     destination: "android",
+  //     config: "debug",
+  //     stage: false
+  //   }, function(error, data) {
+  //     console.log(error, data);
 
-      fh.api.waitFor(options, data.cacheKey, function(error, data) {
-        console.log(data);
+  //     fh.api.waitFor(options, data.cacheKey, function(error, data) {
+  //       console.log(data);
 
-        if(data.status !== "pending") {
-        	cb(error);
-        }
-      });
+  //       if(data.status !== "pending") {
+  //       	cb(error);
+  //       }
+  //     });
 
-    })
-  },
+  //   })
+  // },
 
   // 'create app': function(cb) {
   //   fh.apps.create(options, "testApp", "git@github.com:danielconnor/test.git", "master", function(error, data) {
@@ -149,13 +150,30 @@ var tests = {
   //     fh.apps.remove(options, createdApp.guid, function(error, data) {
   //       console.log(arguments);
   //       cb(error);
-  //     })
+  //     });
   //   }
   // },
 
+  'upload': function(cb) {
+
+
+    fh.account.upload(options, {
+      fields: {
+        dest: "iphone",
+        resourceType: "privatekey",
+        buildType: "distribution"
+      },
+      filename: "C:\\Users\\Dan\\Dropbox\\FeedHenry-App-Resources\\iOS\\Enterprise\\20110808\\private keys\\privatekey.p12"
+
+    }, function(err, res) {
+      console.log(res);
+      cb(err);
+    });
+  },
+
   'logout': function(cb) {
     fh.auth.logout(options, function(error, data) {
-      console.log(arguments);
+      //console.log(arguments);
       cb(error);
     });
   }
