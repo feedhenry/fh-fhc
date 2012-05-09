@@ -9,4 +9,4 @@ exports.files   = require("./lib/files");
 exports.config  = require("./lib/configuration");
 exports.git     = require("./lib/git");
 exports.build   = require("./lib/build.js");
-exports.account = require("./lib/account.js");
+exports.resources = require("./lib/resources.js");

@@ -151,17 +151,24 @@ var tests = {
   //     });
   //   }
   // },
+  'list resources': function(cb) {
+    fh.resources.list(options, "android", function(err, data) {
+      console.log(data);
+
+      cb(err);
+    });
+  },
 
   'upload': function(cb) {
 
 
-    fh.account.upload(options, {
+    fh.resources.upload(options, {
       fields: {
         dest: "iphone",
         resourceType: "privatekey",
         buildType: "distribution"
       },
-      filename: "C:\\Users\\Dan\\Dropbox\\FeedHenry-App-Resources\\iOS\\Enterprise\\20110808\\private keys\\privatekey.p12"
+      filename: "C:\\Users\\Daniel\\Dropbox\\FeedHenry-App-Resources\\iOS\\Enterprise\\20110808\\private keys\\privatekey.p12"
 
     }, function(err, res) {
       console.log(res);
