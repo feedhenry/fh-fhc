@@ -1,34 +1,20 @@
 { 
-  "name" : "fh-fhc",
-  "description" : "A Command Line Interface for FeedHenry",
-  "keywords" : [ "cli", "feedhenry" ],
-  "version": "0.6.13-BUILD-NUMBER",
-  "preferGlobal" : true,
+  "name" : "fh-module",
+  "description" : "A node module for communicating with the feedhenry platform for FeedHenry",
+  "keywords" : [ "module", "feedhenry" ],
+  "version": "0.1.1",
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
    "directories" : {
-     "doc" : "./doc",
-     "man" : "./man1",
-     "lib" : "./lib",
-     "bin" : "./bin"
+     "lib" : "./lib"
   },
-  "main" : "./fh-fhc.js",
-  "bin" : { 
-    "fhc": "./bin/fhc.js"
-  },
+  "main" : "./main.js",
   "dependencies" :{
-    "semver" : "1",
-    "abbrev" : "1",
-    "nopt" : "1", 
     "async" : "*",
     "request" : "*",
-    "vmcjs" : "*",
-    "findit" : "*",
-    "cli-table" : "*", 
-    "datejs" : "*"
+    "vmcjs" : "*"
   },
   "devDependencies" : {
-    "ronn" : "" 
   },
   "engines" : {
     "node" : "0.4 || 0.6"
