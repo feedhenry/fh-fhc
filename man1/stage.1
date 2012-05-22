@@ -1,0 +1,28 @@
+.\" Generated with Ronnjs/v0.1
+.\" http://github.com/kapouer/ronnjs/
+.
+.TH "FHC\-STAGE" "1" "February 2012" "" ""
+.
+.SH "NAME"
+\fBfhc-stage\fR \-\- Stage FeedHenry Applications
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc stage <appId> 
+fhc stage <appId> \-\-live \-\-clean
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command can be used to stage your FeedHenry applications, either to the \'development\' or \'live\' FeedHenry environment\. The \'\-\-clean\' flag can be used to do a full clean restage, which has the following effect:
+ \- cleans out all old application log files
+ \- will remove any cached node npm modules and do an \'npm install\' from scratch\.
+.
+.SH "Examples"
+.
+.nf
+fhc stage mfLkParVTDcr80\-uEk8OhEfT \-\-live
+.
+.fi
+
