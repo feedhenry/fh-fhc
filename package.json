@@ -24,7 +24,7 @@
     "request" : "*",
     "vmcjs" : "*",
     "findit" : "*",
-    "cli-table" : "*", 
+    "cli-table" : "https://github.com/danielconnor/cli-table/tarball/master",
     "datejs" : "*"
   },
   "devDependencies" : {
