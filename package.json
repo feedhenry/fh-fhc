@@ -24,14 +24,14 @@
     "request" : "*",
     "vmcjs" : "*",
     "findit" : "*",
-    "cli-table" : "https://github.com/danielconnor/cli-table/tarball/master",
+    "cli-table" : "*", 
     "datejs" : "*"
   },
   "devDependencies" : {
     "ronn" : "" 
   },
   "engines" : {
-    "node" : "0.4 || 0.6"
+    "node" : "0.4 || 0.8 || 0.6"
   },
   "scripts" : { 
     "test" : "expresso -I lib"
