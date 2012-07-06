@@ -3,7 +3,7 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## SYNOPSIS
 
-    fhc local app=<appId> domain=<domain> port=<port> package=<package>
+    fhc local proxy=<true|false> watch=<true|false> app=<appId> packages=<package[,package...]> domain=<domain> port=<port> package=<package> index=<indexfile>
     
 ## DESCRIPTION
 
