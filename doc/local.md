@@ -8,7 +8,9 @@ fhc-local(1) -- Creates Local Server For Local Development
 ## DESCRIPTION
 
 This command can be used to allow you to locally develop applications and still make calls to the FH cloud.
+It must be run from the root of your app( i.e. the folder which contains your cloud, client and shared directories)
 
+None of the parameters are required. Just running "fhc local" will try to run the cloud code locally.
 
 ### proxy
 
