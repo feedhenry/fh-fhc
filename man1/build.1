@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-BUILD" "1" "March 2012" "" ""
+.TH "FHC\-BUILD" "1" "July 2012" "" ""
 .
 .SH "NAME"
 \fBfhc-build\fR \-\- Build FeedHenry Applications
@@ -10,7 +10,7 @@
 .
 .nf
 fhc build app=<appId> destination=<destination> version=<version> config=<config>  stage=<true|false> keypass=<private\-key\-password> certpass=<certificate\-password> download=<true|false>
-  where <destination> is one of: android, iphone
+  where <destination> is one of: andriod, iphone, ipad, ios(for universal binary), blackberry, windowsphone7
   where <version> is specific to the destination (e\.g\. Android version 4\.0)
   where <config> is either \'debug\' (default), \'distribution\', or \'release\'
   where <stage> is either \'true\' or \'false\', default is false
