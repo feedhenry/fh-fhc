@@ -23,9 +23,7 @@
     "async" : "*",
     "request" : "*",
     "vmcjs" : "*",
-    "findit" : "*",
-    "cli-table" : "*", 
-    "datejs" : "*"
+    "cli-table" : "*"
   },
   "devDependencies" : {
     "ronn" : "" 
