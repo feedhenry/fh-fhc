@@ -23,7 +23,7 @@
     "async" : "*",
     "request" : "*",
     "vmcjs" : "*",
-    "cli-table" : "*"
+    "cli-table" : "https://github.com/LearnBoost/cli-table/tarball/master"
   },
   "devDependencies" : {
     "ronn" : "" 
