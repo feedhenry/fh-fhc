@@ -23,15 +23,13 @@
     "async" : "*",
     "request" : "*",
     "vmcjs" : "*",
-    "findit" : "*",
-    "cli-table" : "*", 
-    "datejs" : "*"
+    "cli-table" : "https://github.com/LearnBoost/cli-table/tarball/master"
   },
   "devDependencies" : {
     "ronn" : "" 
   },
   "engines" : {
-    "node" : "0.4 || 0.6"
+    "node" : ">=0.4"
   },
   "scripts" : { 
     "test" : "expresso -I lib"
