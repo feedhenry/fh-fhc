@@ -31,5 +31,6 @@ exports.adminpolicies = require('./lib/admin-policies.js');
 exports.adminstoreitems = require('./lib/admin-storeitems.js');
 exports.adminappstore = require('./lib/admin-appstore.js');
 exports.auth = require('./lib/auth.js');
+exports.session = require('./lib/session.js');
 
 
