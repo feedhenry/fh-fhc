@@ -25,5 +25,12 @@ exports.configuration = require('./lib/configuration.js');
 exports.account = require('./lib/account.js');
 exports.hosts = require('./lib/hosts.js');
 exports.cloudfoundry = require('./lib/cloudfoundry.js');
+exports.adminusers = require('./lib/admin-users.js');
+exports.admingroups = require('./lib/admin-groups.js');
+exports.adminpolicies = require('./lib/admin-policies.js');
+exports.adminstoreitems = require('./lib/admin-storeitems.js');
+exports.adminappstore = require('./lib/admin-appstore.js');
+exports.auth = require('./lib/auth.js');
+exports.session = require('./lib/session.js');
 
 
