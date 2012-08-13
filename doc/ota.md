@@ -1,11 +1,11 @@
-fhc-ota -- Build OTA version of an app
+fhc-ota(1) -- Build OTA version of an app
 ============================================
 
 ## SYNOPSIS
 
     fhc ota app=<appId> destination=<destination> version=<version> config=<config> keypass=<private-key-password> certpass=<certificate-password>
-      where <destination> is one of: andriod, iphone
-      where <version> is specific to the destination, see http://www.feedhenry.com/TODO
+      where <destination> is one of: android, iphone, ipad, blackberry, windowsphone7
+      where <version> is specific to the destination
       where <config> is either 'distribution' or 'release'
       'keypass' and 'certpass' only needed for 'release' builds
     
