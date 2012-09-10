@@ -33,5 +33,6 @@ exports.adminappstore = require('./lib/admin-appstore.js');
 exports.auth = require('./lib/auth.js');
 exports.session = require('./lib/session.js');
 exports.appinit = require('./lib/appinit.js');
+exports.notifications = require('./lib/notifications.js');
 
 
