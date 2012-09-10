@@ -61,21 +61,26 @@ fhc.load(conf, function (err) {
     if (data === undefined) {
       output.write("",errorHandler);     
     } else {
-      // display table if both requested and supported.. 
-      if (!conf.json && conf.table && cmd.table) {
-        console.log(cmd.table.toString());
-        output.write("", errorHandler);
-      }else {
-        // check if we have a nonjson message
-        if(!conf.json && cmd.message) {
-          output.write(cmd.message, errorHandler);
+      // display bare if specified
+      if (!conf.json && conf.bare && cmd.bare) {
+        output.write(cmd.bare, errorHandler);
+      }else {              
+        // display table if both requested and supported.. 
+        if (!conf.json && conf.table && cmd.table) {
+          console.log(cmd.table.toString());
+          output.write("", errorHandler);
         }else {
-          if (typeof data === 'string') return output.write(data, errorHandler);
-          if (conf.filter) {
-            var script = "output.write(data." + conf.filter + ", errorHandler)"; 
-            eval(script);
-          }else{
-            return output.write(data, errorHandler);
+          // check if we have a nonjson message
+          if(!conf.json && cmd.message) {
+            output.write(cmd.message, errorHandler);
+          }else {
+            if (typeof data === 'string') return output.write(data, errorHandler);
+            if (conf.filter) {
+              var script = "output.write(data." + conf.filter + ", errorHandler)"; 
+              eval(script);
+            }else{
+              return output.write(data, errorHandler);
+            }
           }
         }
       }
