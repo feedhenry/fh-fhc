@@ -1,0 +1,42 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "FHC\-APPS" "1" "September 2012" "" ""
+.
+.SH "NAME"
+\fBfhc\-apps\fR \- List FeedHenry Applications
+.
+.SH "SYNOPSIS"
+.
+.nf
+
+fhc apps
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command can be used to list your FeedHenry applications\. As with any command in FHC, passing a \'\-\-json\' flag will return the list of FeedHenry Apps in JSON format\.
+.
+.P
+You can also specify a \'\-\-bare\' flag to the \'apps\' command, e\.g\. just show app guids:
+.
+.P
+$ fhc apps \-\-bare
+.
+.P
+t2Xva0\-4X2AFsxbBzsRLSet1 VCtqRZTJWnhz5b3SbcS1LvVm DOK1rO5L2WAW7fjE_MAIehio t\-Bq8rCXHMwJSY9heXZZs8AL
+.
+.P
+show app titles only:
+.
+.P
+$ fhc apps \-\-bare=title
+.
+.P
+App 1 App 2 App 3 App 4
+.
+.P
+This makes it easy to iterate over apps from bash command line, e\.g\. to ping all dev and live endpoints of all apps:
+.
+.P
+$ for i in $(fhc apps \-\-bare);do echo "pinging: $i (dev & live)"; fhc ping $i; fhc ping $i \-\-live; done
