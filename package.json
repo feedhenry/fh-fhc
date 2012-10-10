@@ -21,7 +21,7 @@
     "abbrev" : "1",
     "nopt" : "1", 
     "async" : "*",
-    "request" : "*",
+    "request" : "~2.11",
     "vmcjs" : "*",
     "cli-table" : "https://github.com/LearnBoost/cli-table/tarball/master"
   },
