@@ -4,8 +4,9 @@ fhc-mas-appstore(1) -- View your Mobile App Store
 ## SYNOPSIS
 
 
-    fhc admin-auditlog listlogs [limit]
-       where <limit> is the maximum number of log entries to list (default is 20)
+    fhc admin-auditlog listlogs [limit=<limit>] [guid=<store item guid>] [type=<android|iphone>] [user=<user guid>] [device=<device guid>]
+       when filters (such as guid and type) are supplied then the log entry must match ALL of the filters.
+       when no limit is supplied, it defaults to 20
 
 ## DESCRIPTION
 
