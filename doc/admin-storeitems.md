@@ -8,7 +8,7 @@ fhc-admin-storeitems(1) -- Administer Store Items
     fhc admin-storeitems delete <storeitem guid>
     fhc admin-storeitems read <storeitem guid>
     fhc admin-storeitems update <storeitem guid> <name> <description> <authToken>
-    fhc admin-storeitens uploadicon <storeitem guid> <path to icon>
+    fhc admin-storeitems uploadicon <storeitem guid> <path to icon>
     fhc admin-storeitems uploadbinary <storeitem guid> <type iphone|android|ipad> <path to app binary>
     fhc admin-storeitems addpolicy <storeitem guid> <policy_guid>
     fhc admin-storeitems removepolicy <storeitem guid> <policy_guid>

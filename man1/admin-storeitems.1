@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-ADMIN\-STOREITEMS" "1" "August 2012" "" ""
+.TH "FHC\-ADMIN\-STOREITEMS" "1" "October 2012" "" ""
 .
 .SH "NAME"
 \fBfhc-admin-storeitems\fR \-\- Administer Store Items
@@ -10,15 +10,19 @@
 .
 .nf
 fhc admin\-storeitems list
-fhc admin\-storeitems create <name> <description> <authToken>
+fhc admin\-storeitems create <name> <description> <authToken>  [<restrictToGroups>]
 fhc admin\-storeitems delete <storeitem guid>
 fhc admin\-storeitems read <storeitem guid>
-fhc admin\-storeitems update <storeitem guid> <name> <description> <authToken>
-fhc admin\-storeitens uploadicon <storeitem guid> <path to icon>
+fhc admin\-storeitems update <storeitem guid> <name> <description> <authToken>  [<restrictToGroups>]
+fhc admin\-storeitems uploadicon <storeitem guid> <path to icon>
 fhc admin\-storeitems uploadbinary <storeitem guid> <type iphone|android|ipad> <path to app binary>
 fhc admin\-storeitems addpolicy <storeitem guid> <policy_guid>
 fhc admin\-storeitems removepolicy <storeitem guid> <policy_guid>
 fhc admin\-storeitems listpolicies <storeitem guid>
+fhc admin\-storeitems grouprestrict <storeitem guid> <true|false>
+fhc admin\-storeitems addgroups <storeitem guid> <group_guid>*
+fhc admin\-storeitems removegroups <storeitem guid> <group_guid>*
+
 .
 .fi
 .

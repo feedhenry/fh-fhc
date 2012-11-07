@@ -27,12 +27,18 @@ exports.hosts = require('./lib/hosts.js');
 exports.cloudfoundry = require('./lib/cloudfoundry.js');
 exports.adminusers = require('./lib/admin-users.js');
 exports.admingroups = require('./lib/admin-groups.js');
+exports.adminstoreitemgroups = require('./lib/admin-storeitemgroups.js');
 exports.adminpolicies = require('./lib/admin-policies.js');
 exports.adminstoreitems = require('./lib/admin-storeitems.js');
 exports.adminappstore = require('./lib/admin-appstore.js');
+exports.adminauditlog= require('./lib/admin-auditlog.js');
+exports.masappstore = require('./lib/mas-appstore.js');
 exports.auth = require('./lib/auth.js');
+exports.version = require('./lib/version.js');
 exports.session = require('./lib/session.js');
 exports.appinit = require('./lib/appinit.js');
 exports.notifications = require('./lib/notifications.js');
+exports.deploytarget = require('./lib/deploy-target.js');
+
 
 
