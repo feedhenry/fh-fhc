@@ -17,3 +17,4 @@ Manage the Secure Endpoints for an App. See http://docs.feedhenry.com/v2/securee
 ## Examples 
 
     fhc secureendpoints mfLkParVTDcr80-uEk8OhEfT --live
+    fhc secureendpoints auditlog mfLkParVTDcr80-uEk8OhEfT "{\"endpoint\":\"getConfig\"}"
