@@ -7,6 +7,7 @@ fhc-admin-storeitemgroups(1) -- Administer Store Item Groups
     fhc admin-storeitemgroups create <group-name> <group-description>
     fhc admin-storeitemgroups delete <group-guid>
     fhc admin-storeitemgroups read <group-guid>
+    fhc admin-storeitemgroups readByName <group-name>
     fhc admin-storeitemgroups update <group-guid> <group-name> <group-description>
     fhc admin-storeitemgroups addusers <group-guid> <user-email>*
     fhc admin-storeitemgroups removeusers <group-guid> <user-email>*
