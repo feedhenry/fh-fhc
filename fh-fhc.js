@@ -39,6 +39,8 @@ exports.session = require('./lib/session.js');
 exports.appinit = require('./lib/appinit.js');
 exports.notifications = require('./lib/notifications.js');
 exports.deploytarget = require('./lib/deploy-target.js');
+exports.secureendpoints = require('./lib/secureendpoints.js');
+exports.appendpoints = require('./lib/appendpoints.js');
 
 
 

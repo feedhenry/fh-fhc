@@ -56,6 +56,7 @@ fhc.load(conf, function (err) {
   if (err) return errorHandler(err);
 
   var cmd = fhc.commands[fhc.command];
+
   cmd(fhc.argv, function(err, data) {
     if (err) return errorHandler(err);
     if (data === undefined) {
@@ -66,7 +67,8 @@ fhc.load(conf, function (err) {
         output.write(cmd.bare, errorHandler);
       }else {              
         // display table if both requested and supported.. 
-        if (!conf.json && conf.table && cmd.table) {
+        if (!conf.json && conf.table && cmd.table) {      
+          if (cmd.message) console.log(cmd.message);
           console.log(cmd.table.toString());
           output.write("", errorHandler);
         }else {
