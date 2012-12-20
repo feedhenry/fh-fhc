@@ -1,23 +1,20 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-LOCAL" "1" "December 2012" "" ""
+.TH "FHC\-INITLOCAL" "1" "December 2012" "" ""
 .
 .SH "NAME"
-\fBfhc-local\fR \-\- Creates Local Server For Local Development
+\fBfhc-initlocal\fR \-\- Initialises Local Server files For Local Development
 .
 .SH "SYNOPSIS"
 .
 .nf
-fhc local [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>]
+fhc initlocal <appid>
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally by default\.  Before running this command, you should run fhc initlocal first, while connected to the Internet, to download some settings, scripts, and CSS files from our cloud platform\.
-.
-.P
-This command must be run from the root of your app, i\.e\. the folder which contains your cloud, client and shared directories\.
+This command connects to your current fhc target and downloads the container file for the specified app\.  It also downloads the script and CSS files that are referenced by the app container\.  The downloaded files are stored in the \.fhclocal  
 .
 .P
 None of the parameters are required\. Just running "fhc local" will try to run the cloud code locally\.
