@@ -1,42 +1,38 @@
-.\" generated with Ronn/v0.7.3
-.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-LOCAL" "1" "July 2012" "" ""
+.TH "FHC\-LOCAL" "1" "December 2012" "" ""
 .
 .SH "NAME"
-\fBfhc\-local\fR \- Creates Local Server For Local Development
+\fBfhc-local\fR \-\- Creates Local Server For Local Development
 .
 .SH "SYNOPSIS"
 .
 .nf
-
-fhc local proxy=<true|false> watch=<true|false> app=<appId> packages=<package[,package\|\.\|\.\|\.]> domain=<domain> port=<port>
+fhc local [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>]
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to allow you to locally develop applications and still make calls to the FH cloud\. It must be run from the root of your app( i\.e\. the folder which contains your cloud, client and shared directories)
+This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally by default\.  Before running this command, you should run fhc initlocal first, while connected to the Internet, to download some settings, scripts, and CSS files from our cloud platform\.
+.
+.P
+This command must be run from the root of your app, i\.e\. the folder which contains your cloud, client and shared directories\.
 .
 .P
 None of the parameters are required\. Just running "fhc local" will try to run the cloud code locally\.
 .
-.SS "proxy"
-Specifies whether act calls will be proxied through to the app specified or handled locally\. Only node\.js based apps can be handled locally\. If proxy is false no other parameters are required
-.
-.SS "app"
-the alias or guid to tell the server what app to proxy the cloud calls to
-.
-.SS "domain"
-The domain where your app is hosted\. Defaults to your current target\.
+.P
+If your cloud code uses the $fh\.cache API, it will attempt to connect to a redis server accessible from your local machine\.  The defaults for the redis parameters are; host: 127\.0\.0\.1, port: 6379, password: ""
 .
 .SS "port"
-The port you want to run the local server on\. Defaults to port 8888
+The port you want to run the local client file server on\. This defaults to port 8000\.
+.
+.SS "cloudPort"
+The port you want to run the local cloud server on\. This defaults to port 8001\.
 .
 .SS "packages"
 A list of comma seperated packages that you want to be applied
 .
-.SS "watch"
-If you are running cloud code locally (i\.e proxy=false), watch specifes whether or not you want the code to be reloaded automatically when a file is modified\. Defaults to true\.
-.
 .SH "Example"
-fhc local proxy=true domain=apps app=lfablwq3bflabd_guias_ packages=ios,iphone
+fhc local packages=ios,iphone
