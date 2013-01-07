@@ -7,13 +7,19 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## DESCRIPTION
 
-This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally by default.  Before running this command, you should run fhc initlocal first, while connected to the Internet, to download some settings, scripts, and CSS files from our cloud platform.
+This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally. Before running this command, you should run `fhc initlocal` first, while connected to the Internet, to download some settings, scripts, and CSS files from our cloud platform.
 
 This command must be run from the root of your app, i.e. the folder which contains your cloud, client and shared directories.
 
-None of the parameters are required. Just running "fhc local" will try to run the cloud code locally.
+None of the parameters are required. Just running "fhc local" will run the cloud code and server the client files locally.
 
-If your cloud code uses the $fh.cache API, it will attempt to connect to a redis server accessible from your local machine.  The defaults for the redis parameters are; host: 127.0.0.1, port: 6379, password: ""
+If you are using the $fh.cache API calls in your cloud code, you should run a locally accessible redis server.  The redis host, port, and password can be specified on the command line and default to; host: 127.0.0.1, port: 6379, password: ""
+
+If you are using the $fh.db() API calls in your cloud code, you should run a mondoDB server locally.  The mongo server is expected to be at; host: 127.0.0.1, and port: 27017, (the default mongo configuration)
+
+The client and server sides of the app will be running on seperate ports locally, by default they will be 8000 and 8001
+
+## PARAMETERS
 
 ### port
 
@@ -27,6 +33,32 @@ The port you want to run the local cloud server on. This defaults to port 8001.
 
 A list of comma seperated packages that you want to be applied
 
-## Example
+### redisHost
 
-fhc local packages=ios,iphone
+The host running the local redis server, default: 127.0.0.1
+
+### redisPort
+
+The port for the locally running redis server, default: 6379
+
+### redisPassword
+
+The password for the local redis server, default is no password.
+
+## The following parameters are not normally required to be changed from their defaults.
+
+### startCloud
+
+This parameter specifies whether or not to run the cloud part of the app. The default is "true"
+
+### localDB
+
+Connect to a local database, default is "true"
+
+#### cloudHost
+
+Value to report to the client code, as the location of the cloud code, the default is "http://127.0.0.1"
+
+## EXAMPLE
+
+fhc local packages=ios,iphone port=8000 redisHost=127.0.0.1
