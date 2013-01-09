@@ -3,15 +3,15 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## SYNOPSIS
 
-    fhc local [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>]
+    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>]
 
 ## DESCRIPTION
 
-This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally. Before running this command, you should run `fhc initlocal` first, while connected to the Internet, to download some settings, scripts, and CSS files from our cloud platform.
+This command can be used to allow you to locally develop applications, the cloud portion of your app will be run locally. If you haven't run the `fhc initlocal` command first, it will be automatically done. `fhc initlocal` requires access to the Internet, to download some settings, scripts, and CSS files from our cloud platform.
 
 This command must be run from the root of your app, i.e. the folder which contains your cloud, client and shared directories.
 
-None of the parameters are required. Just running "fhc local" will run the cloud code and server the client files locally.
+Only the `<appid>` parameter is required. Just running "fhc local <appid>" will run the cloud code and server the client files locally.
 
 If you are using the $fh.cache API calls in your cloud code, you should run a locally accessible redis server.  The redis host, port, and password can be specified on the command line and default to; host: 127.0.0.1, port: 6379, password: ""
 
