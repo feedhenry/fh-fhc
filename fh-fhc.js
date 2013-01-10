@@ -43,6 +43,7 @@ exports.secureendpoints = require('./lib/secureendpoints.js');
 exports.appendpoints = require('./lib/appendpoints.js');
 exports.start = require('./lib/start.js');
 exports.stop = require('./lib/stop.js');
+exports.restart = require('./lib/restart.js');
 
 
 
