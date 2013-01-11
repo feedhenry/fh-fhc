@@ -23,7 +23,7 @@ RELEASE_FILE_EXTERNAL = $(PACKAGE)-$(VERSION)-$(BUILD_NUMBER).tar.gz
 RELEASE_DIR = $(PACKAGE)-$(VERSION)-$(BUILD_NUMBER)
 
 # BIG TODO - run 'test' in all target - need to fix tests!
-all: clean npm_deps doc
+all: clean npm_deps docu
 
 docs = $(shell find doc -name '*.md' \
 				|sed 's|.md|.1|g' \
@@ -40,7 +40,7 @@ etags:
 man1: $(doc_subfolders)
 	[ -d man1 ] || mkdir -p man1
 
-doc: man1 $(docs)
+docu: man1 $(docs)
 
 # use `npm install ronn` for this to work.
 man1/%.1: doc/%.md
@@ -55,7 +55,7 @@ test:
 npm_deps:
 	npm install .
 
-dist: doc npm_deps
+dist: docu npm_deps
 	rm -rf $(MODULES)/expresso
 	rm -rf $(MODULES)/ronn
 	mkdir -p $(DIST_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
@@ -74,4 +74,4 @@ dist: doc npm_deps
 clean:
 	rm -rf $(DIST_DIR) $(OUTPUT_DIR) $(MODULES) $(COV_DIR)
 
-.PHONY: doc clean test man
+.PHONY: docu clean test man
