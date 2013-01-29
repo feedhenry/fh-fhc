@@ -24,6 +24,7 @@
     "request" : "~2.11",
     "vmcjs" : "*",
     "cheerio" : "*",
+    "moment": "*",
     "cli-table" : "git://github.com/LearnBoost/cli-table.git#703ab71"
   },
   "devDependencies" : {
