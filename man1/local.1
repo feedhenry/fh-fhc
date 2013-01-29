@@ -9,7 +9,7 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>]
+fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true]
 .
 .fi
 .
@@ -61,6 +61,12 @@ Connect to a local database, default is "true"
 .
 .SS "\fIcloudHost\fR"
 Value to report to the client code, as the location of the cloud code, the default is "http://127\.0\.0\.1"
+.
+.SS "\fIdebug\fR"
+When set to true, allows connecting a debugger to the node process running the cloud code (passes the "\-\-debug" parameter to node)
+.
+.SS "\fIdebugBrk\fR"
+When set to true, allows connecting a debugger to the node process running the cloud code, and waits for the debugger to connect (passes the "\-\-debug\-brk" parameter to node)
 .
 .SH "EXAMPLE"
 fhc local packages=ios,iphone port=8000 redisHost=127\.0\.0\.1
