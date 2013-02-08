@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-NOTIFICATIONS" "1" "January 2013" "" ""
+.TH "FHC\-NOTIFICATIONS" "1" "February 2013" "" ""
 .
 .SH "NAME"
 \fBfhc-notifications\fR \-\- List/Delete notifications of a FeedHenry App
@@ -10,9 +10,10 @@
 .
 .nf
 fhc notifications [list] <app\-guid>
-fhc notifications remove <app\-guid> <notification\-guid> [<notification\-guid>]
+fhc notifications auditlog <app\-guid>
+fhc notifications dismiss <app\-guid> <notification\-guid> [<notification\-guid>]
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to list or delete notification messages of a FeedHenry Application\.
+This command can be used to list or dismiss notification messages of a FeedHenry Application\.
