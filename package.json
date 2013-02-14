@@ -25,7 +25,7 @@
     "vmcjs" : "*",
     "cheerio" : "*",
     "moment": "*",
-    "cli-table" : "git://github.com/LearnBoost/cli-table.git#703ab71"
+    "cli-table" : "*"
   },
   "devDependencies" : {
     "ronn" : "" 
