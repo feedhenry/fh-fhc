@@ -2,7 +2,7 @@
   "name" : "fh-fhc",
   "description" : "A Command Line Interface for FeedHenry",
   "keywords" : [ "cli", "feedhenry" ],
-  "version": "0.7.23-BUILD-NUMBER",
+  "version": "0.7.24-BUILD-NUMBER",
   "preferGlobal" : true,
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
@@ -25,7 +25,7 @@
     "vmcjs" : "*",
     "cheerio" : "*",
     "moment": "*",
-    "cli-table" : "git://github.com/LearnBoost/cli-table.git#703ab71"
+    "cli-table" : "0.0.2"
   },
   "devDependencies" : {
     "ronn" : "" 
