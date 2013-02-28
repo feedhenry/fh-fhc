@@ -1,27 +1,30 @@
-.\" generated with Ronn/v0.7.3
-.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-STAGE" "1" "February 2012" "" ""
+.TH "FHC\-STAGE" "1" "February 2013" "" ""
 .
 .SH "NAME"
-\fBfhc\-stage\fR \- Stage FeedHenry Applications
+\fBfhc-stage\fR \-\- Stage FeedHenry Applications
 .
 .SH "SYNOPSIS"
 .
 .nf
-
-fhc stage <appId>
-fhc stage <appId> \-\-live \-\-clean
+fhc stage <appId> 
+fhc stage <appId> [approver] [comment] \-\-live \-\-clean
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to stage your FeedHenry applications, either to the \'development\' or \'live\' FeedHenry environment\. The \'\-\-clean\' flag can be used to do a full clean restage, which has the following effect: \- cleans out all old application log files \- will remove any cached node npm modules and do an \'npm install\' from scratch\.
+This command can be used to stage your FeedHenry applications, either to the \'development\' or \'live\' FeedHenry environment\. The \'\-\-clean\' flag can be used to do a full clean restage, which has the following effect:
+ \- cleans out all old application log files
+ \- will remove any cached node npm modules and do an \'npm install\' from scratch\.
+.
+.P
+When deploy to \'live\' environment, the approver\'s name or email should be set\. If it\'s not set in the command line, the user will be prompted for it\. A comment can be added for the stage but it\'s optional\.
 .
 .SH "Examples"
 .
 .nf
-
 fhc stage mfLkParVTDcr80\-uEk8OhEfT \-\-live
 .
 .fi
