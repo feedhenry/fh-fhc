@@ -1,8 +1,8 @@
-{ 
+{
   "name" : "fh-fhc",
   "description" : "A Command Line Interface for FeedHenry",
   "keywords" : [ "cli", "feedhenry" ],
-  "version": "0.7.25-BUILD-NUMBER",
+  "version": "0.7.26-BUILD-NUMBER",
   "preferGlobal" : true,
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
@@ -13,13 +13,13 @@
      "bin" : "./bin"
   },
   "main" : "./fh-fhc.js",
-  "bin" : { 
+  "bin" : {
     "fhc": "./bin/fhc.js"
   },
   "dependencies" :{
     "semver" : "1",
     "abbrev" : "1",
-    "nopt" : "1", 
+    "nopt" : "1",
     "async" : "*",
     "request" : "~2.11",
     "vmcjs" : "*",
@@ -28,12 +28,12 @@
     "cli-table" : "0.0.2"
   },
   "devDependencies" : {
-    "ronn" : "" 
+    "ronn" : ""
   },
   "engines" : {
     "node" : ">=0.4"
   },
-  "scripts" : { 
+  "scripts" : {
     "test" : "expresso -I lib"
   }
 }
