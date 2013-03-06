@@ -9,5 +9,6 @@ fhc-debug.log
 TAGS
 .idea./
 .idea/
+*.iml
 .DS_Store
 ._.DS_Store
