@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-LOCAL" "1" "January 2013" "" ""
+.TH "FHC\-LOCAL" "1" "March 2013" "" ""
 .
 .SH "NAME"
 \fBfhc-local\fR \-\- Creates Local Server For Local Development
@@ -9,7 +9,7 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true]
+fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true]
 .
 .fi
 .
@@ -59,14 +59,17 @@ This parameter specifies whether or not to run the cloud part of the app\. The d
 .SS "localDB"
 Connect to a local database, default is "true"
 .
-.SS "\fIcloudHost\fR"
+.SS "cloudHost"
 Value to report to the client code, as the location of the cloud code, the default is "http://127\.0\.0\.1"
 .
-.SS "\fIdebug\fR"
+.SS "debug"
 When set to true, allows connecting a debugger to the node process running the cloud code (passes the "\-\-debug" parameter to node)
 .
-.SS "\fIdebugBrk\fR"
+.SS "debugBrk"
 When set to true, allows connecting a debugger to the node process running the cloud code, and waits for the debugger to connect (passes the "\-\-debug\-brk" parameter to node)
+.
+.SS "decoupled"
+When set to true, prevents wrapping the contents of index\.html
 .
 .SH "EXAMPLE"
 fhc local packages=ios,iphone port=8000 redisHost=127\.0\.0\.1
