@@ -3,7 +3,7 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## SYNOPSIS
 
-    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true]
+    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true]
 
 ## DESCRIPTION
 
@@ -55,17 +55,21 @@ This parameter specifies whether or not to run the cloud part of the app. The de
 
 Connect to a local database, default is "true"
 
-#### cloudHost
+### cloudHost
 
 Value to report to the client code, as the location of the cloud code, the default is "http://127.0.0.1"
 
-#### debug
+### debug
 
 When set to true, allows connecting a debugger to the node process running the cloud code (passes the "--debug" parameter to node)
 
-#### debugBrk
+### debugBrk
 
 When set to true, allows connecting a debugger to the node process running the cloud code, and waits for the debugger to connect (passes the "--debug-brk" parameter to node)
+
+### decoupled
+
+When set to true, prevents wrapping the contents of index.html
 
 ## EXAMPLE
 
