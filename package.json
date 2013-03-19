@@ -25,7 +25,8 @@
     "vmcjs" : "*",
     "cheerio" : "*",
     "moment": "*",
-    "cli-table" : "0.0.2"
+    "cli-table" : "0.0.2",
+    "mime": "*"
   },
   "devDependencies" : {
     "ronn" : ""
