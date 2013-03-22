@@ -44,6 +44,7 @@ exports.appendpoints = require('./lib/appendpoints.js');
 exports.start = require('./lib/start.js');
 exports.stop = require('./lib/stop.js');
 exports.restart = require('./lib/restart.js');
+exports.env = require('./lib/env.js');
 
 
 
