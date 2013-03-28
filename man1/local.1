@@ -1,5 +1,5 @@
-.\" Generated with Ronnjs 0.3.8
-.\" http://github.com/kapouer/ronnjs/
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
 .TH "FHC\-LOCAL" "1" "March 2013" "" ""
 .
@@ -9,7 +9,7 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true]
+fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
 .
 .fi
 .
@@ -70,6 +70,12 @@ When set to true, allows connecting a debugger to the node process running the c
 .
 .SS "decoupled"
 When set to true, prevents wrapping the contents of index\.html
+.
+.SS "logprefix"
+ when set to true, stdout and stderr messages will be prefixed with their file types \- \'CLOUD stdout:\' and \'CLOUD stderr:\' respectively\.
+.
+.SS "loghighlight"
+ when set to true, stdout and stderr messages will be output in green or red text respectively\.
 .
 .SH "EXAMPLE"
 fhc local packages=ios,iphone port=8000 redisHost=127\.0\.0\.1
