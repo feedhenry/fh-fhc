@@ -3,7 +3,7 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## SYNOPSIS
 
-    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true]
+    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
 
 ## DESCRIPTION
 
@@ -70,6 +70,14 @@ When set to true, allows connecting a debugger to the node process running the c
 ### decoupled
 
 When set to true, prevents wrapping the contents of index.html
+
+### logprefix
+
+ when set to true, stdout and stderr messages will be prefixed with their file types - 'CLOUD stdout:' and 'CLOUD stderr:' respectively.
+
+### loghighlight
+
+ when set to true, stdout and stderr messages will be output in green or red text respectively.
 
 ## EXAMPLE
 
