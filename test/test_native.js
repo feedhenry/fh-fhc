@@ -13,7 +13,7 @@ var ini = require('../lib/utils/ini.js');
 var testguid = "c0TPJtvFbztuS2p7NhZN3oZz";
 var platform = process.platform;
 var writeDir = (platform === "linux")?"/home/"+process.env.USER : (platform === "darwin")?"/Users/"+process.env.USER+"/Downloads":"C:\Download";
-console.log(writeDir);
+console.log("writeDir = " + writeDir);
 module.exports = {
 
     "test native":function (){
@@ -21,6 +21,7 @@ module.exports = {
             request.requestFunc = mockrequest.mockRequest;
             //if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             nat(["config=apple","app="+testguid],function (err, data){
+                console.log(err);
                     assert.equal(err,null);
                     assert.equal(data.substr(0,5), "<?xml");
             });
