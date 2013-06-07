@@ -19,7 +19,7 @@ module.exports = {
     "test native":function (){
         fhc.load(function (er){
             request.requestFunc = mockrequest.mockRequest;
-            if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
+            //if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             nat(["config=apple","app="+testguid],function (err, data){
                     assert.equal(err,null);
                     assert.equal(data.substr(0,5), "<?xml");
@@ -30,7 +30,7 @@ module.exports = {
     "test native file write":function () {
         fhc.load(function (er){
             //endure we have a domain to read against
-            if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
+            //if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             nat(["config=apple","app="+testguid,"dir="+writeDir],function (err, data){
                 console.log(data);
                 assert.equal(err,null);
