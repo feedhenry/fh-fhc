@@ -2,7 +2,7 @@
   "name" : "fh-fhc",
   "description" : "A Command Line Interface for FeedHenry",
   "keywords" : [ "cli", "feedhenry" ],
-  "version": "0.7.33-BUILD-NUMBER",
+  "version": "0.8.0-BUILD-NUMBER",
   "preferGlobal" : true,
   "homepage" : "http://git.io/fh-fhc",
   "author" : "Damian Beresford <damian.beresford@feedhenry.com>",
@@ -27,7 +27,9 @@
     "moment": "2.0.0",
     "cli-table" : "0.0.2",
     "mime": "1.2.9",
-    "colors" : "0.6.0-1"
+    "colors" : "0.6.0-1",
+    "unzip" : "0.1.7",
+    "fstream" : "0.1.22"
   },
   "devDependencies" : {
     "ronn" : ""
