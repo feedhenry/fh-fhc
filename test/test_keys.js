@@ -8,6 +8,7 @@ var ini = require('utils/ini.js');
 module.exports = {
   'list keys' : function(){
     fhc.load(function(err){
+      console.log("in test list keys");
       request.requestFunc = mockrequest.mockRequest;
       keys(['user', 'list'], function(err, list){
         assert.equal(err, null);
@@ -28,6 +29,7 @@ module.exports = {
 
   'create keys' : function(){
     fhc.load(function(err){
+      console.log("in test create keys");
       request.requestFunc = mockrequest.mockRequest;
       keys(['user', 'create'], function(err, key){
         assert.isNotNull(err);
@@ -55,6 +57,7 @@ module.exports = {
 
   'revoke keys' : function(){
     fhc.load(function(err){
+      console.log("in test revoke keys");
       request.requestFunc = mockrequest.mockRequest;
       keys.skipPrompt = true;
       keys(['user', 'revoke'], function(err, key){
@@ -83,6 +86,7 @@ module.exports = {
 
   'update keys' : function () {
     fhc.load(function(err){
+      console.log("in test update keys");
       request.requestFunc = mockrequest.mockRequest;
       keys.skipPrompt = true;
       keys(['user', 'update'], function(err, key){
@@ -102,6 +106,7 @@ module.exports = {
 
   'target keys' : function(){
     fhc.load(function(err){
+      console.log("in test target keys");
       var key_val = "pviryBwt22iZ0iInufMYBuVVadfe";
       keys(['user', 'target', key_val], function(err, r){
         assert.equal(err, null);

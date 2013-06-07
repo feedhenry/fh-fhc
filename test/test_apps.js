@@ -16,9 +16,10 @@ module.exports = {
 
     'test apps': function() {      
       fhc.load(function (err) {
+        console.log("In test apps");
         set(["feedhenry", "https://apps.feedhenry.com"], function(err){
 
-        console.log("In test apps");
+        console.log("test apps err =" + err);
         request.requestFunc = mockrequest.mockRequest;
 
         // test apps list

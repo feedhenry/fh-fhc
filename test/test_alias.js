@@ -14,7 +14,7 @@ var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";
 module.exports =  {
   "test alias" : function () {
     fhc.load(function (er){
-
+      console.log("in test alias 1");
       request.requestFunc = mockrequest.mockRequest;
       ini.del(theAlias);
       alias([theAlias+"="+testAppId],function(er,data){
@@ -41,7 +41,7 @@ module.exports =  {
 
   "test reserved words" : function () {
     fhc.load(function (er){
-
+      console.log("in test alias 2");
       request.requestFunc = mockrequest.mockRequest;
       alias(["feedhenry="+testAppId],function (err, data) {
         assert.isDefined(err);
@@ -59,6 +59,7 @@ module.exports =  {
 
   "test only works when logged in" : function () {
       fhc.load(function (er){
+        console.log("in test alias 3");
         alias([theAlias+"="+"Hw1ahBfiT2KEBVq9bxz4Qc8Q"], function (err,data){
           assert.isDefined(err);
           assert.isUndefined(data);
@@ -67,7 +68,7 @@ module.exports =  {
   },
 
   "test fh appid" : function () {
-
+    console.log("in test alias 4");
     assert.equal(fhc.appId(undefined),undefined);
     //shouldn't change valid appid
     assert.equal(fhc.appId("Hw1ahBfiT2KEBVq9bxz8Qc8H"),"Hw1ahBfiT2KEBVq9bxz8Qc8H");
