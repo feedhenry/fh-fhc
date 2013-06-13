@@ -1,3 +1,7 @@
+Release 0.8.2 - 2013-06-13 - IR203 - Craig Brookes
+
+* Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime 
+
 Release 0.8.1 - 2013-06-13 - IR203 - Damian Beresford
 -----------------------------------------------------
 
