@@ -1,3 +1,8 @@
+Release 0.8.2 - 2013-06-14 - IR203 - Alan Moran
+-----------------------------------------------------
+
+* Support Ticket #1754 fhc initlocal return error if 404 on get container.
+
 Release 0.8.1 - 2013-06-13 - IR203 - Damian Beresford
 -----------------------------------------------------
 
