@@ -1,3 +1,13 @@
+Release 0.8.2 - 2013-06-14 - IR203 - Alan Moran
+-----------------------------------------------------
+
+* Support Ticket #1754 fhc initlocal return error if 404 on get container.
+
+Release 0.8.1 - 2013-06-13 - IR203 - Damian Beresford
+-----------------------------------------------------
+
+* Ticket 4088 Upgrade fh-fhc to node 0.10x: Fix for 'DEPTH_ZERO_SELF_SIGNED_CERT' issue, see: https://github.com/mikeal/request/issues/418
+
 Release 0.8.0 - 2013-05-22 - IR202 - Damian Beresford
 -----------------------------------------------------
 
