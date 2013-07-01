@@ -1,11 +1,9 @@
-fhc-notifications(1) -- List/Delete notifications of a FeedHenry App
+fhc-notifications(1) -- List notifications of a FeedHenry App
 ===================================================================
 
 ## SYNOPSIS
 
     fhc notifications [list] <app-guid> [--live]
-    fhc notifications auditlog <app-guid> [--live]
-    fhc notifications dismiss <app-guid> <notification-guid> [<notification-guid>] [--live]
     
 ## DESCRIPTION
 
