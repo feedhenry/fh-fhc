@@ -40,6 +40,7 @@ exports.appinit = require('./lib/appinit.js');
 exports.notifications = require('./lib/notifications.js');
 exports.deploytarget = require('./lib/deploy-target.js');
 exports.secureendpoints = require('./lib/secureendpoints.js');
+exports.eventalert = require('./lib/eventalert.js');
 exports.appendpoints = require('./lib/appendpoints.js');
 exports.start = require('./lib/start.js');
 exports.stop = require('./lib/stop.js');
@@ -47,6 +48,9 @@ exports.restart = require('./lib/restart.js');
 exports.env = require('./lib/env.js');
 exports.embed = require('./lib/embed.js');
 exports.resources = require('./lib/resources.js');
+exports.act = require('./lib/act.js');
+exports.runtimes = require('./lib/runtimes.js');
+
 
 
 
