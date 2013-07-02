@@ -9,7 +9,6 @@ var mockrequest = require('utils/mockrequest.js');
 module.exports = {
 
     'test login' : function() {
-      console.log("in test login");
       /* TODO
       console.log("In test login");
        

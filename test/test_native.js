@@ -18,9 +18,8 @@ module.exports = {
 
     "test native":function (){
         fhc.load(function (er){
-            console.log("in test native 1");
             request.requestFunc = mockrequest.mockRequest;
-            //if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
+            if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             nat(["config=apple","app="+testguid],function (err, data){
                 console.log(err);
                     assert.equal(err,null);
@@ -31,9 +30,8 @@ module.exports = {
 
     "test native file write":function () {
         fhc.load(function (er){
-            console.log("in test native 2");
             //endure we have a domain to read against
-            //if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
+            if(ini.get("feedhenry") === undefined)ini.set("feedhenry","https://apps.feedhenry.com");
             nat(["config=apple","app="+testguid,"dir="+writeDir],function (err, data){
                 console.log(data);
                 assert.equal(err,null);
@@ -44,7 +42,6 @@ module.exports = {
 
     "test no fail when write fails":function (){
         fhc.load(function (er){
-            console.log("in test native 3");
             nat(["config=apple","app="+testguid,"dir=somedir"],function (err, data){
                 assert.equal(err,null);
                 //should still write out the contents to the terminal
