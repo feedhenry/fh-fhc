@@ -1,4 +1,9 @@
+Release 0.9.3 - 2013-07-08 - IR205 - Wei Li
+---------------------------------------------------
+* Add support for managing cloud event alerts
+
 Release 0.9.2 - 2013-06-13 - IR203 - Craig Brookes
+-----------------------------------------------------
 * Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime 
 
 Release 0.8.2 - 2013-06-14 - IR203 - Alan Moran
