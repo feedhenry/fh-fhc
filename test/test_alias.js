@@ -10,11 +10,11 @@ var ini = require('../lib/utils/ini.js');
 
 //test the appid
 var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";
+ini.configList.push({"persistTargets": false});
 
 module.exports =  {
   "test alias" : function () {
     fhc.load(function (er){
-
       request.requestFunc = mockrequest.mockRequest;
       ini.del(theAlias);
       alias([theAlias+"="+testAppId],function(er,data){
@@ -41,7 +41,6 @@ module.exports =  {
 
   "test reserved words" : function () {
     fhc.load(function (er){
-
       request.requestFunc = mockrequest.mockRequest;
       alias(["feedhenry="+testAppId],function (err, data) {
         assert.isDefined(err);
@@ -67,7 +66,6 @@ module.exports =  {
   },
 
   "test fh appid" : function () {
-
     assert.equal(fhc.appId(undefined),undefined);
     //shouldn't change valid appid
     assert.equal(fhc.appId("Hw1ahBfiT2KEBVq9bxz8Qc8H"),"Hw1ahBfiT2KEBVq9bxz8Qc8H");

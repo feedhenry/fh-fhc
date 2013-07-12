@@ -50,7 +50,6 @@ man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
 
 test:
-	fhc set domain apps
 	env fhc_fhcfg_feedhenry="https://apps.feedhenry.com" NODE_PATH=.:./lib expresso -I lib 
 
 npm_deps:
