@@ -47,6 +47,6 @@ exports.restart = require('./lib/restart.js');
 exports.env = require('./lib/env.js');
 exports.embed = require('./lib/embed.js');
 exports.resources = require('./lib/resources.js');
-
+exports.logout = require('./lib/logout.js');
 
 
