@@ -50,7 +50,9 @@ exports.embed = require('./lib/embed.js');
 exports.resources = require('./lib/resources.js');
 exports.act = require('./lib/act.js');
 exports.runtimes = require('./lib/runtimes.js');
-
+exports.environments = require('./lib/environments.js');
+exports.suspend = require('./lib/suspend.js');
+exports.undeploy = require('./lib/undeploy.js');
 
 
 
