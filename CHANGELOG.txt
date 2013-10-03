@@ -1,3 +1,7 @@
+Release 0.11.0 - 2013-10-03 - IR211 - Damian Beresford
+------------------------------------------------------
+* Support Ticket #1787 fhc build should default the version in the same way that the studio does
+
 Release 0.10.0 - 2013-08-08 - IR207 - Damian Beresford
 ------------------------------------------------------
 * Add support for managing cloud environments
