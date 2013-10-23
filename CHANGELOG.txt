@@ -1,3 +1,7 @@
+Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
+------------------------------------------------------
+* Support Ticket #2162 Improve usage messages for fhc local
+
 Release 0.11.0 - 2013-10-03 - IR211 - Damian Beresford
 ------------------------------------------------------
 * Support Ticket #1787 fhc build should default the version in the same way that the studio does
