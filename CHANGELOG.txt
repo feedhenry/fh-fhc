@@ -1,3 +1,8 @@
+Release 0.12.0 - 2013-11-08 - IR214 - Damian Beresford
+------------------------------------------------------
+
+* Ticket 5081 fhc forms command
+
 Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
 ------------------------------------------------------
 * Support Ticket #2162 Improve usage messages for fhc local
