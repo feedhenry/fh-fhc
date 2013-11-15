@@ -55,3 +55,4 @@ exports.environments = require('./lib/environments.js');
 exports.suspend = require('./lib/suspend.js');
 exports.undeploy = require('./lib/undeploy.js');
 exports.forms = require('./lib/forms.js');
+exports.user = require('./lib/user.js');
