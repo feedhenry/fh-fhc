@@ -1,3 +1,7 @@
+Release 0.11.2 - 2013-12-03 - IR216 - Damian Beresford
+------------------------------------------------------
+* Add --registry flag to fhc, specifies which npm repo to use during a stage
+
 Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
 ------------------------------------------------------
 * Support Ticket #2162 Improve usage messages for fhc local
