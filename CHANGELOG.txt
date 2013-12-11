@@ -1,3 +1,7 @@
+Release 0.11.3 - 2013-12-11 - IR216 - Wei Li
+------------------------------------------------------
+* Add windowsphone as one if the fhc build targets
+
 Release 0.11.2 - 2013-12-03 - IR216 - Damian Beresford
 ------------------------------------------------------
 * Add --registry flag to fhc, specifies which npm repo to use during a stage
