@@ -4,7 +4,7 @@ fhc-build(1) -- Build FeedHenry Applications
 ## SYNOPSIS
 
     fhc build app=<appId> destination=<destination> version=<version> config=<config> keypass=<private-key-password> certpass=<certificate-password> download=<true|false>
-      where <destination> is one of: andriod, iphone, ipad, ios(for universal binary), blackberry, windowsphone7
+      where <destination> is one of: andriod, iphone, ipad, ios(for universal binary), blackberry, windowsphone7, windowsphone(for windows phone 8)
       where <version> is specific to the destination (e.g. Android version 4.0)
       where <config> is either 'debug' (default), 'distribution', or 'release'
       where <provisioning> is the path to the provisioning profile

@@ -1,7 +1,15 @@
+
 Release 0.12.0 - 2013-11-08 - IR214 - Damian Beresford
 ------------------------------------------------------
-
 * Ticket 5081 fhc forms command
+
+Release 0.11.3 - 2013-12-11 - IR216 - Wei Li
+------------------------------------------------------
+* Add windowsphone as one if the fhc build targets
+
+Release 0.11.2 - 2013-12-03 - IR216 - Damian Beresford
+------------------------------------------------------
+* Add --registry flag to fhc, specifies which npm repo to use during a stage
 
 Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
 ------------------------------------------------------
