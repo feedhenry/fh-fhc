@@ -1,3 +1,7 @@
+Release 0.11.4 - 2014-01-03 - IR218 - Martin Murphy
+------------------------------------------------------
+* Add support for url shortener
+
 Release 0.11.3 - 2013-12-11 - IR216 - Wei Li
 ------------------------------------------------------
 * Add windowsphone as one if the fhc build targets
