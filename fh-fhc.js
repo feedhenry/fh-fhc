@@ -58,3 +58,4 @@ exports.forms = require('./lib/forms.js');
 exports.themes = require('./lib/themes.js');
 exports.submissions = require('./lib/submissions.js');
 exports.user = require('./lib/user.js');
+exports.shortenurl = require('./lib/shortenurl.js');
