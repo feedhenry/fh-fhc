@@ -1,3 +1,8 @@
+Release 0.12.1 - 2014-01-08 - IR219 - Martin Murphy
+------------------------------------------------------
+* Ticket #5641 - add app forms groups to fhc
+* Ticket #5645 - add app forms themes and apps to groups in fh-art and fh-fhc
+
 Release 0.12.0 - 2013-11-08 - IR214 - Damian Beresford
 ------------------------------------------------------
 * Ticket 5081 fhc forms command
