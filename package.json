@@ -5,7 +5,7 @@
     "cli",
     "feedhenry"
   ],
-  "version": "0.12.1-BUILD-NUMBER",
+  "version": "1.0.0-BUILD-NUMBER",
   "preferGlobal": true,
   "homepage": "http://git.io/fh-fhc",
   "author": "Damian Beresford <damian.beresford@feedhenry.com>",
