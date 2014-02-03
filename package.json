@@ -33,7 +33,9 @@
     "colors": "0.6.0-1",
     "unzip": "0.1.7",
     "fstream": "0.1.22",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "prompt": "0.2.12",
+    "open": "0.0.4"
   },
   "devDependencies": {
     "ronn": ""
