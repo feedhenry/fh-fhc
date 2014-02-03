@@ -28,7 +28,7 @@
     "vmcjs": "0.1.11",
     "cheerio": "0.10.8",
     "moment": "~2.0.0",
-    "cli-table": "0.0.2",
+    "cli-table": "0.3.0",
     "mime": "1.2.9",
     "colors": "0.6.0-1",
     "unzip": "0.1.7",
