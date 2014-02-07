@@ -1,3 +1,23 @@
+Release 0.11.5 - 2014-01-28 - IR220 - Damian Beresford
+------------------------------------------------------
+* Add better support for http proxy
+
+Release 0.11.4 - 2014-01-03 - IR218 - Martin Murphy
+------------------------------------------------------
+* Add support for url shortener
+
+Release 0.11.3 - 2013-12-11 - IR216 - Wei Li
+------------------------------------------------------
+* Add windowsphone as one if the fhc build targets
+
+Release 0.11.2 - 2013-12-03 - IR216 - Damian Beresford
+------------------------------------------------------
+* Add --registry flag to fhc, specifies which npm repo to use during a stage
+
+Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
+------------------------------------------------------
+* Support Ticket #2162 Improve usage messages for fhc local
+
 Release 0.11.0 - 2013-10-03 - IR211 - Damian Beresford
 ------------------------------------------------------
 * Support Ticket #1787 fhc build should default the version in the same way that the studio does
