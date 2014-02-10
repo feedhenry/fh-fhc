@@ -14,7 +14,7 @@
  },
   "main": "./fh-fhc.js",
   "bin": {
-    "fh": "./bin/fhc.js"
+    "fhc": "./bin/fhc.js"
   },
   "dependencies": {
     "semver": "1",
