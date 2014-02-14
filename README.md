@@ -1,4 +1,4 @@
-FHC - FeedHenry Command Line Interface
+FHC - FeedHenry Command Line Interface [![NPM version](https://badge.fury.io/js/fh-fhc.png)](http://badge.fury.io/js/fh-fhc)
 ======================================
 
 FeedHenry CLI, the command line interface to [FeedHenry](http://www.feedhenry.com).
