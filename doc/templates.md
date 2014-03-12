@@ -3,8 +3,8 @@ fhc-templates(1) -- FeedHenry Templates
 
 ## SYNOPSIS
   
-    fhc templates apps
-    fhc templates projects
+    fhc templates apps [<template-id]
+    fhc templates projects [<template-id>]
     
 ## DESCRIPTION
 
