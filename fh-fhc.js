@@ -58,3 +58,4 @@ exports.shortenurl = require('./lib/shortenurl.js');
 exports.projects = require('./lib/projects.js');
 exports.ngui = require('./lib/ngui.js');
 exports.templates = require('./lib/templates.js');
+exports.services = require('./lib/services.js');
