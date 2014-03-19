@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.4.0
 .\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-LOCAL" "1" "March 2013" "" ""
+.TH "FHC\-LOCAL" "1" "October 2013" "" ""
 .
 .SH "NAME"
 \fBfhc-local\fR \-\- Creates Local Server For Local Development
@@ -36,6 +36,9 @@ The client and server sides of the app will be running on seperate ports locally
 .SS "port"
 The port you want to run the local client file server on\. This defaults to port 8000\.
 .
+.SS "cloudHost"
+Value to report to the client code, as the location of the cloud code, the default is "http://127\.0\.0\.1"\. It should be changed to the hostname or the ip address of the server when test on mobile devices\.
+.
 .SS "cloudPort"
 The port you want to run the local cloud server on\. This defaults to port 8001\.
 .
@@ -58,9 +61,6 @@ This parameter specifies whether or not to run the cloud part of the app\. The d
 .
 .SS "localDB"
 Connect to a local database, default is "true"
-.
-.SS "cloudHost"
-Value to report to the client code, as the location of the cloud code, the default is "http://127\.0\.0\.1"
 .
 .SS "debug"
 When set to true, allows connecting a debugger to the node process running the cloud code (passes the "\-\-debug" parameter to node)

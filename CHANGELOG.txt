@@ -1,3 +1,7 @@
+Release 0.11.1 - 2013-10-23 - IR213 - Wei Li
+------------------------------------------------------
+* Support Ticket #2162 Improve usage messages for fhc local
+
 Release 0.11.0 - 2013-10-03 - IR211 - Damian Beresford
 ------------------------------------------------------
 * Support Ticket #1787 fhc build should default the version in the same way that the studio does
@@ -12,7 +16,7 @@ Release 0.9.3 - 2013-07-08 - IR205 - Wei Li
 
 Release 0.9.2 - 2013-06-13 - IR203 - Craig Brookes
 -----------------------------------------------------
-* Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime 
+* Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime
 
 Release 0.8.2 - 2013-06-14 - IR203 - Alan Moran
 -----------------------------------------------------
@@ -29,4 +33,3 @@ Release 0.8.0 - 2013-05-22 - IR202 - Damian Beresford
 -----------------------------------------------------
 
 * Ticket 3077: fhc login json parse exception
-

@@ -25,6 +25,10 @@ The client and server sides of the app will be running on seperate ports locally
 
 The port you want to run the local client file server on. This defaults to port 8000.
 
+### cloudHost
+
+Value to report to the client code, as the location of the cloud code, the default is "http://127.0.0.1". It should be changed to the hostname or the ip address of the server when test on mobile devices.
+
 ### cloudPort
 
 The port you want to run the local cloud server on. This defaults to port 8001.
@@ -54,10 +58,6 @@ This parameter specifies whether or not to run the cloud part of the app. The de
 ### localDB
 
 Connect to a local database, default is "true"
-
-### cloudHost
-
-Value to report to the client code, as the location of the cloud code, the default is "http://127.0.0.1"
 
 ### debug
 
