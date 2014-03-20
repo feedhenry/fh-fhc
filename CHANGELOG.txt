@@ -1,3 +1,7 @@
+Release 0.11.6 - 2014-03-20 - IR224 - James Kelly
+------------------------------------------------------
+* zendesk-3351 Incorrect url being returned from fhc embed
+
 Release 0.11.5 - 2014-01-28 - IR220 - Damian Beresford
 ------------------------------------------------------
 * Add better support for http proxy
