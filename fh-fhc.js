@@ -59,3 +59,4 @@ exports.projects = require('./lib/projects.js');
 exports.ngui = require('./lib/ngui.js');
 exports.templates = require('./lib/templates.js');
 exports.services = require('./lib/services.js');
+exports.sshkeys = require('./lib/ssh-keys.js');
