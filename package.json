@@ -1,16 +1,19 @@
 {
-  "name" : "fh-fhc",
-  "description" : "A Command Line Interface for FeedHenry",
-  "keywords" : [ "cli", "feedhenry" ],
+  "name": "fh-fhc",
+  "description": "A Command Line Interface for FeedHenry",
+  "keywords": [
   "version": "0.30.0-BUILD-NUMBER",
-  "preferGlobal" : true,
-  "homepage" : "http://git.io/fh-fhc",
+    "feedhenry"
+  ],
+  "version": "0.12.1-BUILD-NUMBER",
+  "preferGlobal": true,
+  "homepage": "http://git.io/fh-fhc",
   "author" : "FeedHenry<npm@feedhenry.com>",
-   "directories" : {
-     "doc" : "./doc",
-     "man" : "./man1",
-     "lib" : "./lib",
-     "bin" : "./bin"
+  "directories": {
+    "doc": "./doc",
+    "man": "./man1",
+    "lib": "./lib",
+    "bin": "./bin"
  },
   "main": "./fh-fhc.js",
   "bin": {

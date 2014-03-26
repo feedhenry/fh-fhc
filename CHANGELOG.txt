@@ -2,9 +2,14 @@ Release 0.30.0 - 2014-03-26 - IR224 - Damian Beresford
 ------------------------------------------------------
 * FH3 support
 
-Release 0.11.5 - 2014-01-28 - IR220 - Damian Beresford
+Release 0.12.1 - 2014-01-08 - IR219 - Martin Murphy
 ------------------------------------------------------
-* Add better support for http proxy
+* Ticket #5641 - add app forms groups to fhc
+* Ticket #5645 - add app forms themes and apps to groups in fh-art and fh-fhc
+
+Release 0.12.0 - 2013-11-08 - IR214 - Damian Beresford
+------------------------------------------------------
+* Ticket 5081 fhc forms command
 
 Release 0.11.4 - 2014-01-03 - IR218 - Martin Murphy
 ------------------------------------------------------
