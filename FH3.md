@@ -43,7 +43,7 @@ The following is not feature complete for FH3 yet and is under active developmen
 * fhc build-artifacts
 * Updates to documentation
 
-A full list of tickets is available in [Assembla}(https://feedhenry.assembla.com/spaces/feedhenry-platform/tickets/5539-ngui---fhc-changes#/associations/ticket:).
+A full list of tickets is available in [Assembla](https://feedhenry.assembla.com/spaces/feedhenry-platform/tickets/5539-ngui---fhc-changes#/associations/ticket:).
 
 # New FH3 Commands
 
