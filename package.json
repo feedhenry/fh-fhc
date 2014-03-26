@@ -1,11 +1,10 @@
 {
   "name": "fh-fhc-test",
   "description": "A Command Line Interface for FeedHenry",
-  "keywords": [
   "version": "0.30.0-BUILD-NUMBER",
-    "feedhenry"
+  "keywords": [
+      "feedhenry"
   ],
-  "version": "0.12.1-BUILD-NUMBER",
   "preferGlobal": true,
   "homepage": "http://git.io/fh-fhc",
   "author" : "FeedHenry<npm@feedhenry.com>",
@@ -36,7 +35,7 @@
     "underscore": "~1.5.2"
   },
   "devDependencies": {
-    "ronn": ""
+    "ronn": "*"
   },
   "engines": {
     "node": ">=0.4"
