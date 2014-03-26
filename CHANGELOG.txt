@@ -1,3 +1,7 @@
+Release 0.30.0 - 2014-03-26 - IR224 - Damian Beresford
+------------------------------------------------------
+* FH3 support
+
 Release 0.11.5 - 2014-01-28 - IR220 - Damian Beresford
 ------------------------------------------------------
 * Add better support for http proxy

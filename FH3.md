@@ -1,11 +1,13 @@
 FHC & FeedHenry3
 ================
 
-FHC has quite a few changes for FeedHenry3, this docment outlines those changes, and also what changes are left to do for full FH3 support. The bones of this document may also be used as a developer blog post for sometime around the FH3 launch.
+FHC (version 0.30.X) has quite a few changes for FeedHenry3, this document outlines those changes, and also what changes are left to do for full FH3 support. The bones of this document may also be used as a developer blog post for sometime around the FH3 launch.
+
+Note in general that we will be using the same fhc tool to interface with both FH3 and older FH2 (i.e. there's not two versions of fhc). Over time, the older FH2 related code in fhc will be deprecated.
 
 # Installation
 
-The version of fhc in NPM is the old FH2 version. You must first uninstall your existing fhc:
+The version of fhc in NPM is the old FH2 version, and this FHC3 version is still under active development. To install fhc for FH3, you must first uninstall your existing fhc:
 
 * $ sudo npm rm -g fh-fhc
 
