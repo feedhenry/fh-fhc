@@ -3,7 +3,7 @@ FHC & FeedHenry3
 
 FHC (version 0.30.X) has quite a few changes for FeedHenry3, this document outlines those changes, and also what changes are left to do for full FH3 support. The bones of this document may also be used as a developer blog post for sometime around the FH3 launch.
 
-Note in general that we will be using the same fhc tool to interface with both FH3 and older FH2 (i.e. there's not two versions of fhc). Over time, the older FH2 related code in fhc will be deprecated.
+Note in general that we will be using the same fhc tool to interface with both FH3 and older FH2 (i.e. there's not two versions of fhc). Over time, the older FH2 related code in fhc will be deprecated. The downside to this is users hitting FH2 will see the new commands (e.g. fhc --help will show the new FH3 commands below) but will obviously not be able to use them until they are migrated to FH3.
 
 # Installation
 
@@ -44,9 +44,9 @@ The following is not feature complete for FH3 yet and is under active developmen
 
 A full list of tickets is available in [Assembla}(https://feedhenry.assembla.com/spaces/feedhenry-platform/tickets/5539-ngui---fhc-changes#/associations/ticket:).
 
-# New Commands
+# New FH3 Commands
 
-The following is a list of new fhc commands.
+The following is a list of new fhc commands, both NGUI & App Forms commands.
 
 ## fhc projects
 
@@ -108,9 +108,64 @@ $ fhc ngui
 true
 ```
 
+## fhc forms
+
+```
+$ fhc forms --help
+fhc forms [list]
+fhc forms create <form-file.json>
+fhc forms update <form-file.json>
+fhc forms get <form-id>
+fhc forms delete <form-id>
+fhc forms apps list
+fhc forms apps get <app-id>
+fhc forms apps update <app-id> <form-id>*
+fhc forms apps create <app-title> <theme-id> <form-id>*
+fhc forms formapps <form-id>
+fhc forms groups [list]
+fhc forms groups get <group-id>
+fhc forms groups update <group-id> <group-name> <user-id>* <form-id>* <app-id>* <theme-id>*   # user-id and form-id should be a comma-seperated list of values
+fhc forms groups create <group-name> <user-id>* <form-id>* <app-id>* <theme-id>*              # user-id and form-id should be a comma-seperated list of values
+fhc forms groups delete <group-id>
+fhc forms notifications [list] <form-id>
+fhc forms notifications add <form-id> <email-address>
+fhc forms notifications delete <form-id> <email-address>
+```
+
+## fhc submissions
+
+```
+$ fhc submissions --help
+fhc submissions [list]
+fhc submissions list app=<app-id> form=<form-id>
+fhc submissions get <submission-id>
+fhc submissions get <submission-id> <filename>.pdf
+fhc submissions delete <submission-id>
+fhc submissions getfile <filegroup-id> <outputfilename>
+fhc submissions submitdata <submission-file.json>
+fhc submissions submitfile <submission-id> <field-id> <file-id> <file>
+fhc submissions complete <submission-id>
+fhc submissions status <submission-id>
+fhc submissions export file=<zip-file> app=<app-id> || form=<form-id>
+fhc submissions template <app-id> <form-id>
+```
+
+## fhc themes
+
+```
+$ fhc themes --help
+fhc themes [list]
+fhc themes create <theme-file.json>
+fhc themes update <theme-file.json>
+fhc themes get <theme-id>
+fhc themes delete <theme-id>
+fhc themes app get <app-id>
+fhc themes app set <app-id> <theme-id>
+```
+
 # Changes to existing commands
 
-All of the 'App' related commands are different now in that they take an additional <project-id> parameter. 
+All of the 'App' related commands are different now in that they take an additional <project-id> parameter. Note that all other commands not listed below that take an <app-id> still work as normal (e.g. fhc start/stop/suspend/act/etc).
 
 ## fhc apps
 
