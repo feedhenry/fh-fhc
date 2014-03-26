@@ -18,7 +18,7 @@ You have two choices on installing fhc for FH3, via git or via npm:
 
 2. via git:
 
-* $ git clone git@github.com:feedhenry/fh-fhc.git 6039_services && cd fh-fhc
+* $ git clone git@github.com:feedhenry/fh-fhc.git fh3 && cd fh-fhc
 * $ npm install
 * $ sudo npm link
 
@@ -29,7 +29,7 @@ Installing via git is best if you need to flick over and back between old and ne
 
 and likewise then to flick back to the FH3 version:
 
-* $ git checkout 6039_services
+* $ git checkout fh3
 * $ npm install
 
 # The TODO list
