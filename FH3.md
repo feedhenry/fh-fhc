@@ -13,14 +13,13 @@ The version of fhc in NPM is the old FH2 version, and this FHC3 version is still
 
 You have two choices on installing fhc for FH3, via git or via npm:
 
-1. via npm:
-* $ sudo npm install -g fhc-test
+* Install via npm:
+** $ sudo npm install -g fhc-test
 
-2. via git:
-
-* $ git clone git@github.com:feedhenry/fh-fhc.git fh3 && cd fh-fhc
-* $ npm install
-* $ sudo npm link
+* Install via git:
+** $ git clone git@github.com:feedhenry/fh-fhc.git fh3 && cd fh-fhc
+** $ npm install
+** $ sudo npm link
 
 Installing via git is best if you need to flick over and back between old and newer versions of fhc. For example, for switch back to the old version of fhc:
 
