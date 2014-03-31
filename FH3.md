@@ -109,6 +109,22 @@ $ fhc ngui
 true
 ```
 
+## fhc connections
+
+```
+$ fhc connections --help
+fhc connections <project-id>
+```
+
+## fhc artifacts
+
+Build artifacts.
+
+```
+$ fhc artifacts --help
+fhc artifacts <project-id> <app-id>
+```
+
 ## fhc forms
 
 ```
