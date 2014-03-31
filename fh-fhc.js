@@ -65,3 +65,4 @@ exports.templates = require('./lib/templates.js');
 exports.services = require('./lib/services.js');
 exports.sshkeys = require('./lib/ssh-keys.js');
 exports.clone = require('./lib/clone.js');
+exports.connections = require('./lib/connections.js');
