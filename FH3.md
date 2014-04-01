@@ -93,6 +93,18 @@ fhc sshkeys add <label> <key-file>
 fhc sshkeys delete <label>
 ```
 
+## fhc user-keys
+
+```
+$ fhc user-keys --help
+fhc user-keys [list]
+fhc user-keys add <label>
+fhc user-keys read <label>
+fhc user-keys update <old-label> <new-label>
+fhc user-keys delete <label>
+fhc user-keys target [<label>]
+```
+
 ## fhc clone
 
 ```
