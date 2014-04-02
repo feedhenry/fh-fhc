@@ -194,29 +194,27 @@ fhc themes app set <app-id> <theme-id>
 
 # Changes to existing commands
 
-All of the 'App' related commands are different now in that they take an additional <project-id> parameter. Note that all other commands not listed below that take an <app-id> still work as normal (e.g. fhc start/stop/suspend/act/etc).
+## fhc apps & deprecated old apps related commands
 
-## fhc apps
+The apps command, instead of just listing apps as it did in the past, contains all apps related sub commands, e.g. read/delete/etc.
 
 ```
 $ fhc apps --help
 
-fhc apps [project-id]
+fhc apps [list] <project-id>
+fhc create <project-id> <app-title> [<template-id>]
+fhc read <project-id> <app-id>
+fhc update <project-id> <app-id> <property-name> <property-value>
+fhc delete <project-id> <app-id>
 ```
 
-## fhc read
+The following older apps related commands still exist but have been deprecated:
 
-```
-$ fhc read --help
-fhc read [project-id] <app-id>
-```
+* fhc read
+* fhc delete
+* fhc update
+* fhc delete
 
-## fhc delete
-
-```
-$ fhc delete --help
-fhc delete <app-id>
-```
 
 ## fhc import
 
