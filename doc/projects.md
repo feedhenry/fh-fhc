@@ -4,12 +4,12 @@ fhc-projects(1) -- List FeedHenry Proejcts
 ## SYNOPSIS
 
     fhc projects [list]
-    fhc projects create <project-id> [<type>]
+    fhc projects create <project-title> [<template-id>]
     fhc projects update <project-id> <prop-name> <value>
     fhc projects read <project-id>
     fhc projects delete <project-id>
-      where <project-id> is a project id
-      where <type> is a valid project type [default]
+    fhc projects clone <project-id>
+        Note 'clone' does a 'git clone' of each each App in your Project into the current working directory.
     
 ## DESCRIPTION
 
