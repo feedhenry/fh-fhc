@@ -3,17 +3,17 @@
   "description": "A Command Line Interface for FeedHenry",
   "version": "0.30.1-BUILD-NUMBER",
   "keywords": [
-      "feedhenry"
+    "feedhenry"
   ],
   "preferGlobal": true,
   "homepage": "http://git.io/fh-fhc",
-  "author" : "FeedHenry<npm@feedhenry.com>",
+  "author": "FeedHenry<npm@feedhenry.com>",
   "directories": {
     "doc": "./doc",
-    "man": "./man1", 
+    "man": "./man1",
     "lib": "./lib",
     "bin": "./bin"
- },
+  },
   "main": "./fh-fhc.js",
   "bin": {
     "fhc": "./bin/fhc.js"
@@ -32,7 +32,8 @@
     "colors": "0.6.0-1",
     "unzip": "0.1.7",
     "fstream": "0.1.22",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "open": "0.0.5"
   },
   "devDependencies": {
     "ronn": "*"
