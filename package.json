@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc-test",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "0.30.2-BUILD-NUMBER",
+  "version": "0.30.3-BUILD-NUMBER",
   "keywords": [
     "feedhenry"
   ],
