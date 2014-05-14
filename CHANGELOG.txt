@@ -7,6 +7,10 @@ Release 0.30.0 - 2014-03-26 - IR224 - Damian Beresford
 ------------------------------------------------------
 * FH3 support
 
+Release 0.14.1- 2014-04-09 - IR225 - Martin Murphy / James Kelly
+------------------------------------------------------
+* 6687-Fix close stream bug
+
 Release 0.14.0- 2014-03-20 - IR224 - Wei Li / James Kelly
 ------------------------------------------------------
 * Choose cordova version
