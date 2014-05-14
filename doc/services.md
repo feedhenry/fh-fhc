@@ -1,15 +1,15 @@
-fhc-services(1) -- List FeedHenry Proejcts
+fhc-services(1) -- List FeedHenry Services
 ==========================================
 
 ## SYNOPSIS
 
     fhc services [list]
-    fhc services create <project-id> [<type>]
-    fhc services update <project-id> <prop-name> <value>
-    fhc services read <project-id>
-    fhc services delete <project-id>
-      where <project-id> is a project id
-      where <type> is a valid project type [default]
+    fhc services create <service-id> [<type>]
+    fhc services update <service-id> <prop-name> <value>
+    fhc services read <service-id>
+    fhc services delete <service-id>
+      where <service-id> is a service id
+      where <type> is a valid service type [default]
     
 ## DESCRIPTION
 
