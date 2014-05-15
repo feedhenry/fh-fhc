@@ -33,18 +33,6 @@ and likewise then to flick back to the FH3 version:
 * $ git checkout fh3
 * $ npm install
 
-# The TODO list
-
-The following is not feature complete for FH3 yet and is under active development:
-
-* fhc local
-* fhc connections
-* fhc gitadmin
-* fhc build-artifacts
-* Updates to documentation
-
-A full list of tickets is available in [Assembla](https://feedhenry.assembla.com/spaces/feedhenry-platform/tickets/5539-ngui---fhc-changes#/associations/ticket:).
-
 # New FH3 Commands
 
 The following is a list of new fhc commands, both NGUI & App Forms commands.
