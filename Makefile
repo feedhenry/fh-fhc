@@ -34,6 +34,10 @@ doc_subfolders = $(shell find doc -type d \
 
 man: man1
 
+# work in progress
+jshint: 
+	jshint lib/*.js
+
 etags:
 	find . -name "*.js"|grep -v node_mod|grep -v lib-cov|grep -v output|xargs -e etags
 
