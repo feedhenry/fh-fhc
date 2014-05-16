@@ -1,6 +1,6 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
-var keys = require("keys.js");
+var keys = require("user-keys.js");
 var request = require('utils/request.js');
 var mockrequest = require('utils/mockrequest.js');
 var ini = require('utils/ini.js');
@@ -9,10 +9,10 @@ module.exports = {
   'list keys' : function(){
     fhc.load(function(err){
       request.requestFunc = mockrequest.mockRequest;
-      keys(['user', 'list'], function(err, list){
+      keys(['list'], function(err, list){
         assert.equal(err, null);
         assert.isNotNull(list);
-        assert.equal(list.length, 1);
+        assert.equal(list.list.length, 1);
       });
       /*keys(['app', 'list'], function(err, list){
         assert.isNotNull(err);
@@ -29,14 +29,14 @@ module.exports = {
   'create keys' : function(){
     fhc.load(function(err){
       request.requestFunc = mockrequest.mockRequest;
-      keys(['user', 'create'], function(err, key){
+      keys(['add'], function(err, key){
         assert.isNotNull(err);
       });
-      keys(['user', 'create', 'UserKey'], function(err, key){
+      keys(['add', 'UserKey'], function(err, key){
         assert.equal(err, null);
-        assert.isNotNull(key);
-        assert.isDefined(key.label);
-        assert.isDefined(key.key);
+        assert.isNotNull(key.apiKey);
+        assert.isDefined(key.apiKey.label);
+        assert.isDefined(key.apiKey.key);
       });
       /*keys(['app', 'create', '1239jncjjcd'], function(err, key){
         assert.isNotNull(err);
@@ -57,14 +57,14 @@ module.exports = {
     fhc.load(function(err){
       request.requestFunc = mockrequest.mockRequest;
       keys.skipPrompt = true;
-      keys(['user', 'revoke'], function(err, key){
+      keys(['delete'], function(err, key){
         assert.isNotNull(err);
       });
-      keys(['user', 'revoke', 'pviryBwt22iZ0iInufMYBuVVadfe'], function(err, key){
+      keys(['delete', 'UserKey'], function(err, key){
         assert.equal(err, null);
-        assert.isNotNull(key);
-        assert.isDefined(key.label);
-        assert.isDefined(key.key);
+        assert.isNotNull(key.apiKey);
+        assert.isDefined(key.apiKey.label);
+        assert.isDefined(key.apiKey.key);
       });
       /*keys(['app', 'revoke', '1239jncjjcd'], function(err, key){
         assert.isNotNull(err);
@@ -85,16 +85,16 @@ module.exports = {
     fhc.load(function(err){
       request.requestFunc = mockrequest.mockRequest;
       keys.skipPrompt = true;
-      keys(['user', 'update'], function(err, key){
+      keys(['update'], function(err, key){
         assert.isNotNull(err);
       });
-      keys(['user', 'update', 'pviryBwt22iZ0iInufMYBuVVadfe', 'UserKey-Updated'], function(err, key){
+      keys(['update', 'UserKey', 'UserKey-Updated'], function(err, key){
         assert.equal(err, null);
-        assert.isNotNull(key);
-        assert.isDefined(key.label);
-        assert.equal('UserKey-Updated', key.label);
+        assert.isNotNull(key.apiKey);
+        assert.isDefined(key.apiKey.label);
+        assert.equal('UserKey-Updated', key.apiKey.label);
       });
-      keys(['user', 'update', '1239jncjjcd'], function(err, key){
+      keys(['update', '1239jncjjcd'], function(err, key){
         assert.isNotNull(err);
       });
     });
@@ -102,11 +102,11 @@ module.exports = {
 
   'target keys' : function(){
     fhc.load(function(err){
-      var key_val = "pviryBwt22iZ0iInufMYBuVVadfe";
-      keys(['user', 'target', key_val], function(err, r){
+      var key_val = "pviryBwt22iZ0iInufMYBuVV";
+      keys(['target', 'UserKey'], function(err, r){
         assert.equal(err, null);
         assert.equal(r, key_val);
-        keys(['user', 'target'], function(err, r){
+        keys(['target'], function(err, r){
               assert.equal(err, null);
               assert.equal(r, key_val);
           });

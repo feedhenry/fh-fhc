@@ -1,3 +1,12 @@
+Release 0.30.3 - 2014-05-06 - IR227 - Cbrookes
+-----------------------------------------------------
+
+7044 add export to fhc forms
+
+Release 0.30.0 - 2014-03-26 - IR224 - Damian Beresford
+------------------------------------------------------
+* FH3 support
+
 Release 0.14.1- 2014-04-09 - IR225 - Martin Murphy / James Kelly
 ------------------------------------------------------
 * 6687-Fix close stream bug
@@ -6,6 +15,15 @@ Release 0.14.0- 2014-03-20 - IR224 - Wei Li / James Kelly
 ------------------------------------------------------
 * Choose cordova version
 * zendesk-3351 Incorrect url being returned from fhc embed
+
+Release 0.12.1 - 2014-01-08 - IR219 - Martin Murphy
+------------------------------------------------------
+* Ticket #5641 - add app forms groups to fhc
+* Ticket #5645 - add app forms themes and apps to groups in fh-art and fh-fhc
+
+Release 0.12.0 - 2013-11-08 - IR214 - Damian Beresford
+------------------------------------------------------
+* Ticket 5081 fhc forms command
 
 Release 0.11.5 - 2014-01-28 - IR220 - Damian Beresford
 ------------------------------------------------------
@@ -41,7 +59,7 @@ Release 0.9.3 - 2013-07-08 - IR205 - Wei Li
 
 Release 0.9.2 - 2013-06-13 - IR203 - Craig Brookes
 -----------------------------------------------------
-* Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime 
+* Tickey 4099 add fhc runtimes command and change fhc stage to accept a runtime
 
 Release 0.8.2 - 2013-06-14 - IR203 - Alan Moran
 -----------------------------------------------------
@@ -58,4 +76,3 @@ Release 0.8.0 - 2013-05-22 - IR202 - Damian Beresford
 -----------------------------------------------------
 
 * Ticket 3077: fhc login json parse exception
-

@@ -52,7 +52,7 @@ if (conf.usage && fhc.command !== "help") {
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
 conf._exit = true;
-fhc.load(conf, function (err) {  
+fhc.load(conf, function (err) {
   if (err) return errorHandler(err);
 
   var cmd = fhc.commands[fhc.command];
@@ -60,14 +60,14 @@ fhc.load(conf, function (err) {
   cmd(fhc.argv, function(err, data) {
     if (err) return errorHandler(err);
     if (data === undefined) {
-      output.write("",errorHandler);     
+      output.write("",errorHandler);
     } else {
       // display bare if specified
       if (!conf.json && conf.bare && cmd.bare) {
         output.write(cmd.bare, errorHandler);
-      }else {              
-        // display table if both requested and supported.. 
-        if (!conf.json && conf.table && cmd.table) {      
+      }else {
+        // display table if both requested and supported..
+        if (!conf.json && conf.table && cmd.table) {
           if (cmd.message) console.log(cmd.message);
           console.log(cmd.table.toString());
           output.write("", errorHandler);
@@ -78,7 +78,7 @@ fhc.load(conf, function (err) {
           }else {
             if (typeof data === 'string') return output.write(data, errorHandler);
             if (conf.filter) {
-              var script = "output.write(data." + conf.filter + ", errorHandler)"; 
+              var script = "output.write(data." + conf.filter + ", errorHandler)";
               eval(script);
             }else{
               return output.write(data, errorHandler);
@@ -86,7 +86,7 @@ fhc.load(conf, function (err) {
           }
         }
       }
-    }        
+    }
   });
 })
 })()

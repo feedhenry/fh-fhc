@@ -1,0 +1,37 @@
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
+.
+.TH "FHC\-SSH\-KEYS" "1" "April 2014" "" ""
+.
+.SH "NAME"
+\fBfhc-ssh-keys\fR \-\- Manage User SSH Keys
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc ssh\-keys [list]
+fhc ssh\-keys add <label> <key\-file>
+fhc ssh\-keys delete <label>
+.
+.fi
+.
+.SH "DESCRIPTION"
+Accessing your App repos via Git requires you to upload an SSH Public key\. You can upload multiple keys if you have a different key on various machines, or want to allow someone access\.
+Your SSH key is typically located in:
+.
+.P
+\fB
+~/\.ssh/id_rsa\.pub\fR
+.
+.P
+Or, to generate a new key use:
+.
+.P
+\fB
+ssh\-keygen \-t rsa \-C "your_email@example\.com"\fR
+.
+.P
+\fBImportant:\fR Any SSH key added here will have push & pull access to the Git repositories of every Project/App you can see in the Projects tab\.</div>
+.
+.P
+\fBImportant:\fR An SSH key can only be uploaded once\. If you attempt to uploaded an already existing key, even in someone else\'s account, it will fail\. This behaviour is essential for mapping keys to a Users account\.
