@@ -1,11 +1,11 @@
-Release 0.30.3 - 2014-05-06 - IR227 - Cbrookes
------------------------------------------------------
-
-7044 add export to fhc forms
+Release 0.30.1 - 2014-05-27 - IR228 - Damian Beresford
+------------------------------------------------------
+* 7277 - 'fhc projects clone' returns info in stderr field instead of stdout
 
 Release 0.30.0 - 2014-03-26 - IR224 - Damian Beresford
 ------------------------------------------------------
 * FH3 support
+* 7044 add export to fhc forms
 
 Release 0.14.1- 2014-04-09 - IR225 - Martin Murphy / James Kelly
 ------------------------------------------------------
