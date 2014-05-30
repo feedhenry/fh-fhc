@@ -1,0 +1,33 @@
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
+.
+.TH "FHC\-MIGRATE" "1" "May 2014" "" ""
+.
+.SH "NAME"
+\fBfhc-migrate\fR \-\- Migrate v2 Apps to v3 Projects
+.
+.SH "SYNOPSIS"
+.
+.nf
+fhc migrate <appId>
+fhc migrate <appId> \-\-silent
+.
+.fi
+.
+.SH "DESCRIPTION"
+This command can be used to migrate your v2 App to a v3 Project\.
+A pre\-migration check is done prior to actual migration\.
+A prompt will be shown to confirm the migration after the pre\-migration check\.
+This prompt can be silenced using the \fB\-\-silent\fR argument\.
+Migration info is printed to stdout\.
+If the pre\-migration check fails, the commands exits\.
+If the migration fails, the command exits after the platform attempts a rollback of the migration\.
+.
+.SH "Examples"
+.
+.nf
+fhc migrate mfLkParVTDcr80\-uEk8OhEfT
+fhc migrate mfLkParVTDcr80\-uEk8OhEfT \-\-silent
+.
+.fi
+
