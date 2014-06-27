@@ -1,7 +1,7 @@
 .\" Generated with Ronnjs 0.3.8
 .\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-LOGS" "1" "January 2013" "" ""
+.TH "FHC\-LOGS" "1" "June 2014" "" ""
 .
 .SH "NAME"
 \fBfhc-logs\fR \-\- FeedHenry Application Log Files
@@ -10,9 +10,9 @@
 .
 .nf
 fhc logs [get] <app\-id> [log\-name] [\-\-live]
+fhc logs tail <app\-id> [last\-N\-lines] [offset\-from] [log\-name] [\-\-live]
 fhc logs list <app\-id> [\-\-live]
 fhc logs delete <app\-id> <log\-name> [\-\-live]
-fhc logs tail <app\-id> [last\-N\-lines] | [offset\-from] [log\-name] [\-\-live]
 .
 .fi
 .

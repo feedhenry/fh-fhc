@@ -1,7 +1,7 @@
-.\" Generated with Ronnjs 0.4.0
-.\" http://github.com/kapouer/ronnjs
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-PROJECTS" "1" "April 2014" "" ""
+.TH "FHC\-PROJECTS" "1" "June 2014" "" ""
 .
 .SH "NAME"
 \fBfhc-projects\fR \-\- List FeedHenry Proejcts
@@ -10,38 +10,124 @@
 .
 .nf
 fhc projects [list]
-fhc projects create <project\-id> [<type>]
+fhc projects create <project\-title> [<template\-id>]
 fhc projects update <project\-id> <prop\-name> <value>
 fhc projects read <project\-id>
 fhc projects delete <project\-id>
-  where <project\-id> is a project id
-  where <type> is a valid project type [default]
+fhc projects clone <project\-id>
+    Note \'clone\' does a \'git clone\' of each each App in your Project into the current working directory\.
 .
 .fi
 .
 .SH "DESCRIPTION"
-This command can be used to list your FeedHenry Projects\. As with any command in FHC, passing a \'\-\-json\' flag will return the list of FeedHenry Apps in JSON format\.
+Access your FeedHenry Projects
+.
+.SS "list"
+.
+.nf
+fhc projects [list]
+.
+.fi
+.
+.P
+This command is the default option and can be used to list your FeedHenry Projects\. As with any command in FHC, passing a \'\-\-json\' flag will return the list of FeedHenry Apps in JSON format\.
 .
 .P
 You can also specify a \'\-\-bare\' flag to the \'apps\' command, e\.g\. just show app guids:
 .
-.P
-$ fhc projects \-\-bare
+.IP "" 4
 .
-.P
+.nf
+$ fhc projects \-\-bare
 t2Xva0\-4X2AFsxbBzsRLSet1
 VCtqRZTJWnhz5b3SbcS1LvVm
 DOK1rO5L2WAW7fjE_MAIehio
 t\-Bq8rCXHMwJSY9heXZZs8AL
 .
+.fi
+.
+.IP "" 0
+.
 .P
 show Project ids and titles only:
 .
-.P
-$ fhc apps \-\-bare="guid title"
+.IP "" 4
 .
-.P
+.nf
+$ fhc apps \-\-bare="guid title"
 t2Xva0\-4X2AFsxbBzsRLSet1 Project1
 VCtqRZTJWnhz5b3SbcS1LvVm Project2
 DOK1rO5L2WAW7fjE_MAIehio Project3
 t\-Bq8rCXHMwJSY9heXZZs8AL Project4
+.
+.fi
+.
+.IP "" 0
+.
+.SS "create"
+.
+.nf
+fhc projects create <project\-title> [<template\-id>]
+.
+.fi
+.
+.P
+  Create is used to create a new FeedHenry Project based on a template\.  The templates available can be listed using the \fBfhc templates projects\fR command
+.
+.IP "" 4
+.
+.nf
+fhc projects create \'FHC hello create\' hello_world_project
+.
+.fi
+.
+.IP "" 0
+.
+.P
+  If no template\-id is specified  the default of \fBbare_project\fR will be used, which will create a project containing no apps\.
+.
+.SS "update"
+.
+.nf
+fhc projects update <project\-id> <prop\-name> <value>
+.
+.fi
+.
+.P
+  The only \fBprop\-name\fR supported for updating is \fBtitle\fR\|\.  The title can be updated using a command like:
+.
+.IP "" 4
+.
+.nf
+fhc projects update DOK1rO5L2WAW7fjE_MAIehio title \'My New Project Title\'
+.
+.fi
+.
+.IP "" 0
+.
+.SS "read"
+.
+.nf
+fhc projects read <project\-id>
+Reads the information about the project specified, including the apps contained within it
+.
+.fi
+.
+.SS "delete"
+.
+.nf
+fhc projects delete <project\-id>
+Deletes the specified project
+.
+.fi
+.
+.SS "clone"
+.
+.nf
+fhc projects clone <project\-id>
+.
+.fi
+.
+.P
+  This clones each App in your Project locally\.  It does a \fBgit clone\fR of each each App in your Project into the current working directory,
+  and needs the \fBgit\fR command to be installed locally and on your current execution path\. You must also have your SSH key uploaded to the FeedHenry platform\.
