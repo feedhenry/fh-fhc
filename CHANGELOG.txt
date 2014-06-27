@@ -1,3 +1,7 @@
+Release 1.0.0 - 2014-06-27 - IR230 - Martin Murphy
+------------------------------------------------------
+* 7432 - Remove the fhc clone command in favour of fhc projects clone
+
 Release 0.30.1 - 2014-05-27 - IR228 - Damian Beresford
 ------------------------------------------------------
 * 7277 - 'fhc projects clone' returns info in stderr field instead of stdout
