@@ -43,5 +43,6 @@
   },
   "scripts": {
     "test": "expresso -I lib"
-  }
+  },
+  "license": "MIT"
 }
