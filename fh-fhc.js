@@ -66,3 +66,4 @@ exports.services = require('./lib/services.js');
 exports.sshkeys = require('./lib/ssh-keys.js');
 exports.connections = require('./lib/connections.js');
 exports.artifacts = require('./lib/artifacts.js');
+exports.adminteams = require('./lib/admin-teams.js');
