@@ -1,7 +1,7 @@
-.\" Generated with Ronnjs 0.4.0
-.\" http://github.com/kapouer/ronnjs
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
 .
-.TH "FHC\-LOCAL" "1" "October 2013" "" ""
+.TH "FHC\-LOCAL" "1" "September 2014" "" ""
 .
 .SH "NAME"
 \fBfhc-local\fR \-\- Creates Local Server For Local Development
@@ -9,7 +9,7 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc local <appid> [packages=<package[,package\.\.\.]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
+fhc local <appid> [packages=<package[,package\.\.\.]>] [clientPort=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
 .
 .fi
 .
@@ -33,7 +33,7 @@ The client and server sides of the app will be running on seperate ports locally
 .
 .SH "PARAMETERS"
 .
-.SS "port"
+.SS "clientPort"
 The port you want to run the local client file server on\. This defaults to port 8000\.
 .
 .SS "cloudHost"
@@ -78,4 +78,4 @@ When set to true, prevents wrapping the contents of index\.html
  when set to true, stdout and stderr messages will be output in green or red text respectively\.
 .
 .SH "EXAMPLE"
-fhc local packages=ios,iphone port=8000 redisHost=127\.0\.0\.1
+fhc local packages=ios,iphone clientPort=8000 redisHost=127\.0\.0\.1

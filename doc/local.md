@@ -3,7 +3,7 @@ fhc-local(1) -- Creates Local Server For Local Development
 
 ## SYNOPSIS
 
-    fhc local <appid> [packages=<package[,package...]>] [port=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
+    fhc local <appid> [packages=<package[,package...]>] [clientPort=<port>] [cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] [redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] [logprefix=false] [loghighlight=true]
 
 ## DESCRIPTION
 
@@ -21,7 +21,7 @@ The client and server sides of the app will be running on seperate ports locally
 
 ## PARAMETERS
 
-### port
+### clientPort
 
 The port you want to run the local client file server on. This defaults to port 8000.
 
@@ -81,4 +81,4 @@ When set to true, prevents wrapping the contents of index.html
 
 ## EXAMPLE
 
-fhc local packages=ios,iphone port=8000 redisHost=127.0.0.1
+fhc local packages=ios,iphone clientPort=8000 redisHost=127.0.0.1
