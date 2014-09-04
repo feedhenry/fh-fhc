@@ -1,6 +1,8 @@
 Release 0.31.2 - 2014-08-222 - IR234 - Damian Beresford
 -------------------------------------------------------
-* 6364 - Misc fh-art related fixes
+* 6364 - Misc fh-art related fixes:
+  * fix for in-memory config
+  * new 'ngui enable/disable' commands
 
 Release 0.31.1 - 2014-09-01 - IR235 - Martin Murphy
 ------------------------------------------------------
