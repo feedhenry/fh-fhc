@@ -1,6 +1,10 @@
-Release 0.31.1 - 2014-08-222 - IR234 - Damian Beresford
+Release 0.31.2 - 2014-08-222 - IR234 - Damian Beresford
 -------------------------------------------------------
 * 6364 - Misc fh-art related fixes
+
+Release 0.31.1 - 2014-09-01 - IR235 - Martin Murphy
+------------------------------------------------------
+* 7904 - fix clientPort param name in docs/local.md
 
 Release 0.31.0 - 2014-06-27 - IR230 - Martin Murphy
 ------------------------------------------------------
