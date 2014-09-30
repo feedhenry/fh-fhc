@@ -11,4 +11,4 @@ This command can be used to build an 'Embed' version of your Application.
 
 ## Examples 
 
-    fhc embed mfLkParVTDcr80-uEk8OhEfT --live
+    fhc embed mfLkParVTDcr80-uEk8OhEfT --env=<environment>

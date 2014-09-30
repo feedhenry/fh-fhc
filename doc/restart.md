@@ -3,7 +3,7 @@ fhc-restart(1) -- Restart a FeedHenry Application
 
 ## SYNOPSIS
 
-    fhc restart <app-id> [--live]
+    fhc restart <app-id> [--env=<environment>]
     
 ## DESCRIPTION
 

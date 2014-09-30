@@ -3,7 +3,7 @@ fhc-stop(1) -- Stop a FeedHenry Application
 
 ## SYNOPSIS
 
-    fhc stop <app-id> [--live]
+    fhc stop <app-id> [--env=<environment>]
     
 ## DESCRIPTION
 

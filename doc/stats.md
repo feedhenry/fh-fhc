@@ -2,8 +2,8 @@ fhc-stats(1) -- FeedHenry Stats
 ===============================
 ## SYNOPSIS
 
-    fhc stats <app-id> <stats-type> <num-results> [--live]
-    
+    fhc stats <app-id> <stats-type> <num-results> [--env=<environment>]
+
 ## DESCRIPTION
 
 Get App stats from your FeedHenry Application.
@@ -20,12 +20,9 @@ Type of stats. Options here are 'api' (in-built system stats, e.g. timing app en
 
 Number of results you want returned. Numeric value.
 
-### --live
+### --env=<environment>
 
-Use --live to see stats from your app that is staged in the 'live' environment. 'dev' stats are returned by default.
+Use --env=<environment> to see stats from your app staged in another environment. 'dev' stats are returned by default.
 
 ## EXAMPLES
-    fhc stats h2n0pg-qvar407mijmsvbapz app 10 --live
-
-
-
+    fhc stats h2n0pg-qvar407mijmsvbapz app 10 --env=live

@@ -11,4 +11,4 @@ This command can be used to list all your Cloud Endpoints.
 
 ## Examples 
 
-    fhc appendpoints mfLkParVTDcr80-uEk8OhEfT --live
+    fhc appendpoints mfLkParVTDcr80-uEk8OhEfT --env=<environment>
