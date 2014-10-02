@@ -4,7 +4,7 @@ fhc-stage(1) -- Stage FeedHenry Applications
 ## SYNOPSIS
 
     fhc stage <appId>
-    fhc stage <appId> [approver] [comment] --clean --env=<environment>
+    fhc stage <appId> [approver] [comment] --clean [--env=<environment>]
 
 ## DESCRIPTION
 
@@ -16,4 +16,4 @@ When deploy to 'live' environment, the approver's name or email should be set. I
 
 ## Examples
 
-    fhc stage mfLkParVTDcr80-uEk8OhEfT --env=<environment>
+    fhc stage mfLkParVTDcr80-uEk8OhEfT --env=dev
