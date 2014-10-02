@@ -36,7 +36,8 @@
     "open": "0.0.5"
   },
   "devDependencies": {
-    "ronn": "*"
+    "ronn": "*",
+    "proxyquire": "0.4.1"
   },
   "engines": {
     "node": ">=0.4"
