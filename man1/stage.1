@@ -1,7 +1,7 @@
-.\" Generated with Ronnjs 0.3.8
-.\" http://github.com/kapouer/ronnjs/
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-STAGE" "1" "February 2013" "" ""
+.TH "FHC\-STAGE" "1" "October 2014" "" ""
 .
 .SH "NAME"
 \fBfhc-stage\fR \-\- Stage FeedHenry Applications
@@ -9,8 +9,8 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc stage <appId> 
-fhc stage <appId> [approver] [comment] \-\-live \-\-clean
+fhc stage <appId>
+fhc stage <appId> [approver] [comment] \-\-clean [\-\-env=<environment>]
 .
 .fi
 .
@@ -25,7 +25,7 @@ When deploy to \'live\' environment, the approver\'s name or email should be set
 .SH "Examples"
 .
 .nf
-fhc stage mfLkParVTDcr80\-uEk8OhEfT \-\-live
+fhc stage mfLkParVTDcr80\-uEk8OhEfT \-\-env=dev
 .
 .fi
 
