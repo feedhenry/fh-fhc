@@ -20,7 +20,7 @@ module.exports = {
           assert.equal(data.status, 'ok');
           assert.equal(typeof data.live, 'undefined');
 
-          act(['0123', 'getCloudData','{\"name\":\"bono\"}', 'live'], function (err, data){
+          act(['0123', 'getCloudData','{\"name\":\"bono\"}', '--env=live'], function (err, data){
             assert.equal(err, null);
             assert.equal(data.status, 'ok');
             assert.equal(data.live, true);
