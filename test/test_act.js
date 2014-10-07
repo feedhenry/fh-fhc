@@ -15,7 +15,7 @@ module.exports = {
         console.log("In test act");
         request.requestFunc = mockrequest.mockRequest;
 
-        act(['0123', 'getCloudData','{\"name\":\"bono\"}'], function (err, data){
+        act(['0123', 'getCloudData','{\"name\":\"bono\"}', '--env=dev'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
           assert.equal(typeof data.live, 'undefined');

@@ -2,7 +2,7 @@ fhc-act(1) -- FeedHenry Actions
 ===============================
 ## SYNOPSIS
 
-    fhc act <app-id> <server-function> <params> [--env=<environment>]
+    fhc act <app-id> <server-function> <params> --env=<environment>
     
 ## DESCRIPTION
 

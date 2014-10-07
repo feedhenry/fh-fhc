@@ -9,14 +9,14 @@
 .SH "SYNOPSIS"
 .
 .nf
-fhc deploy\-target create name=<the name of the deploy target> platform=<cloudfoundry/stackato/appfog/ironfoundry> conf_url=<deploy url> conf_username=<user for the deploy> conf_password=<user password for the deploy> [conf_infrastructure=<infrastructure providers>] [\-\-env=<environment>]
-fhc deploy\-target update id=<id of the deploy target> name=<the name of the deploy target> platform=<cloudfoundry/stackato> conf_url=<deploy url> conf_username=<user for the deploy> conf_password=<user password for the deploy> [\-\-env=<environment>]
+fhc deploy\-target create name=<the name of the deploy target> platform=<cloudfoundry/stackato/appfog/ironfoundry> conf_url=<deploy url> conf_username=<user for the deploy> conf_password=<user password for the deploy> [conf_infrastructure=<infrastructure providers>] \-\-env=<environment>
+fhc deploy\-target update id=<id of the deploy target> name=<the name of the deploy target> platform=<cloudfoundry/stackato> conf_url=<deploy url> conf_username=<user for the deploy> conf_password=<user password for the deploy> \-\-env=<environment>
 fhc deploy\-target read <id of the deployment target>
 fhc deploy\-target list
 fhc deploy\-target delete <id of the deployment target>
-fhc deploy\-target listforapp <appid> [<platform>] [\-\-env=<environment>]
-fhc deploy\-target getapptarget <appid> [\-\-env=<environment>]
-fhc deploy\-target setapptarget <appid> <id of the deploy target> [\-\-env=<environment>]
+fhc deploy\-target listforapp <appid> [<platform>] \-\-env=<environment>
+fhc deploy\-target getapptarget <appid> \-\-env=<environment>
+fhc deploy\-target setapptarget <appid> <id of the deploy target> \-\-env=<environment>
 .
 .fi
 .

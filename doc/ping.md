@@ -3,7 +3,7 @@ fhc-ping(1) -- Ping a FeedHenry Application
 
 ## SYNOPSIS
 
-    fhc ping <app-id> [--env=<environment>]
+    fhc ping <app-id> --env=<environment>
 
 ## DESCRIPTION
 

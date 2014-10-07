@@ -4,7 +4,7 @@ fhc-resources(1) -- List resources for a FeedHenry Applications
 ## SYNOPSIS
 
     fhc resources <appId>
-    fhc resources <appId> [--env=<environment>]
+    fhc resources <appId> --env=<environment>
 
 ## DESCRIPTION
 

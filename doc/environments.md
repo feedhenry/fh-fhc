@@ -5,9 +5,9 @@ fhc-environments(1) -- FeedHenry Environments
 
     fhc environments
     fhc environments --env=<environment>
-    fhc environments resources  [--env=<environment>]
-    fhc environments cache [flush] [--env=<environment>]
-    fhc environments cache [set] [type] [value] (where 'type' is either 'percent' or 'size')  [--env=<environment>]
+    fhc environments resources  --env=<environment>
+    fhc environments cache [flush] --env=<environment>
+    fhc environments cache [set] [type] [value] (where 'type' is either 'percent' or 'size')  --env=<environment>
 
 ## DESCRIPTION
 

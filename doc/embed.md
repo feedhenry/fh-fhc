@@ -3,7 +3,7 @@ fhc-embed(1) -- Build your Application for Embed Target
 
 ## SYNOPSIS
 
-    fhc embed <app-id> [--env=<environment>]
+    fhc embed <app-id> --env=<environment>
 
 ## DESCRIPTION
 
