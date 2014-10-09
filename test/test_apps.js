@@ -46,7 +46,7 @@ module.exports = {
           assert.equal(data.status, 'ok');
         });
         // test logs
-        logs(['get', '01234567890123456789012340'], function (err, data) {
+        logs(['get', '01234567890123456789012340', 'dev'], function (err, data) {
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
@@ -54,6 +54,3 @@ module.exports = {
       });
     }
 };
-
-
-

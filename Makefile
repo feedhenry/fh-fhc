@@ -48,7 +48,7 @@ docu: man1 $(docs)
 
 # use `npm install ronn` for this to work.
 man1/%.1: doc/%.md
-	ronn --roff $< > $@
+	./node_modules/.bin/ronn --roff $< > $@
 
 man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@

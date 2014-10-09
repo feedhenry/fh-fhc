@@ -4,12 +4,12 @@ fhc-resources(1) -- List resources for a FeedHenry Applications
 ## SYNOPSIS
 
     fhc resources <appId>
-    fhc resources <appId> --live
-    
+    fhc resources <appId> --env=<environment>
+
 ## DESCRIPTION
 
-Show the resources available and being used by a FeedHenry application, either in the 'dev' or 'live' FeedHenry environment.
+Show the resources available and being used by a FeedHenry application, defaults to 'dev' environment or specify one using --env=<environment>.
 
-## Examples 
+## Examples
 
-    fhc resources mfLkParVTDcr80-uEk8OhEfT --live
+    fhc resources mfLkParVTDcr80-uEk8OhEfT --env=dev

@@ -1,16 +1,15 @@
-.\" generated with Ronn/v0.7.3
-.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-STATS" "1" "April 2012" "" ""
+.TH "FHC\-STATS" "1" "October 2014" "" ""
 .
 .SH "NAME"
-\fBfhc\-stats\fR \- FeedHenry Stats
+\fBfhc-stats\fR \-\- FeedHenry Stats
 .
 .SH "SYNOPSIS"
 .
 .nf
-
-fhc stats <app\-id> <stats\-type> <num\-results> [\-\-live]
+fhc stats <app\-id> <stats\-type> <num\-results> \-\-env=<environment>
 .
 .fi
 .
@@ -26,14 +25,13 @@ Type of stats\. Options here are \'api\' (in\-built system stats, e\.g\. timing 
 .SS "num\-results"
 Number of results you want returned\. Numeric value\.
 .
-.SS "\-\-live"
-Use \-\-live to see stats from your app that is staged in the \'live\' environment\. \'dev\' stats are returned by default\.
+.SS "\-\-env=&lt;environment&gt;"
+Use \-\-env=<environment> to see stats from your app staged in another environment\.
 .
 .SH "EXAMPLES"
 .
 .nf
-
-fhc stats h2n0pg\-qvar407mijmsvbapz app 10 \-\-live
+fhc stats h2n0pg\-qvar407mijmsvbapz app 10 \-\-env=live
 .
 .fi
 

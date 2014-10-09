@@ -3,7 +3,7 @@ fhc-start(1) -- Start a FeedHenry Application
 
 ## SYNOPSIS
 
-    fhc start <app-id> [--live]
+    fhc start <app-id> --env=<environment>
     
 ## DESCRIPTION
 

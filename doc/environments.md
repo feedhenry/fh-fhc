@@ -4,19 +4,19 @@ fhc-environments(1) -- FeedHenry Environments
 ## SYNOPSIS
 
     fhc environments
-    fhc environments [env]
-    fhc environments [env] resources
-    fhc environments [env] cache [flush]
-    fhc environments [env] cache [set] [type] [value] (where 'type' is either 'percent' or 'size')
+    fhc environments --env=<environment>
+    fhc environments resources  --env=<environment>
+    fhc environments cache [flush] --env=<environment>
+    fhc environments cache [set] [type] [value] (where 'type' is either 'percent' or 'size')  --env=<environment>
 
 ## DESCRIPTION
 
 Show the FeedHenry Environments, and the Resources used by an Environment.
 
-## Examples 
+## Examples
 
-    e.g. fhc environments dev
-    e.g. fhc environments dev resources
-    e.g. fhc environments dev cache flush
-    e.g. fhc environments dev cache set percent 50
-    e.g. fhc environments dev cache set size 524288000
+    e.g. fhc environments --env=dev
+    e.g. fhc environments resources --env=dev
+    e.g. fhc environments cache flush --env=dev
+    e.g. fhc environments cache set percent 50 --env=dev
+    e.g. fhc environments cache set size 524288000 --env=live

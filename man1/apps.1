@@ -1,7 +1,7 @@
-.\" Generated with Ronnjs 0.3.8
-.\" http://github.com/kapouer/ronnjs/
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-APPS" "1" "June 2014" "" ""
+.TH "FHC\-APPS" "1" "October 2014" "" ""
 .
 .SH "NAME"
 \fBfhc-apps\fR \-\- List FeedHenry Applications
@@ -40,7 +40,7 @@ show app titles only:
 $ fhc apps 123456 \-\-bare=title
 .
 .P
-App 1 
+App 1
 App 2
 App 3
 App 4
@@ -49,4 +49,4 @@ App 4
 This makes it easy to iterate over apps from bash command line, e\.g\. to ping all dev and live endpoints of all apps:
 .
 .P
-$ for i in $(fhc apps \-\-bare);do echo "pinging: $i (dev & live)"; fhc ping $i; fhc ping $i \-\-live; done
+$ for i in $(fhc apps \-\-bare);do echo "pinging: $i (dev & live)"; fhc ping $i \-\-env=dev; fhc ping $i \-\-env=live; done
