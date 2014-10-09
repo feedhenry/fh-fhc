@@ -9,7 +9,7 @@ fhc-apps(1) -- List FeedHenry Applications
     fhc read <project-id> <app-id>
     fhc update <project-id> <app-id> <property-name> <property-value>
     fhc delete <project-id> <app-id>
-    
+
 ## DESCRIPTION
 
 This command can be used to list your FeedHenry applications. As with any command in FHC, passing a '--json' flag will return the list of FeedHenry Apps in JSON format.
@@ -27,13 +27,11 @@ show app titles only:
 
 $ fhc apps 123456 --bare=title
 
-App 1 
+App 1
 App 2
 App 3
 App 4
 
 This makes it easy to iterate over apps from bash command line, e.g. to ping all dev and live endpoints of all apps:
 
-$ for i in $(fhc apps --bare);do echo "pinging: $i (dev & live)"; fhc ping $i; fhc ping $i --live; done
-
-
+$ for i in $(fhc apps --bare);do echo "pinging: $i (dev & live)"; fhc ping $i --env=dev; fhc ping $i --env=live; done
