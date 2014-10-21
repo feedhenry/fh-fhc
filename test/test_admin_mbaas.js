@@ -16,7 +16,7 @@ var fhReq = require('./fixtures/fhreq.js')({
 ini = require('./fixtures/ini.js')({
   'id' : '1a',
   'url' : 'http://mbaas.com',
-  'key' : '1a2b'
+  'servicekey' : '1a2b'
 });
 var restfulCmd = proxyquire('restful-cmd.js', {
   './utils/request' : fhReq,
@@ -53,7 +53,7 @@ module.exports = {
     'test admin-mbaas create': function() {
       fhc.load(function (er){
         console.log("In test admin-mbaas create");
-        adminmbaas(['create', '--url=http://mbaas.com', '--key=1a2b'], function (err, data){
+        adminmbaas(['create', '--url=http://mbaas.com', '--key=1a2b', '--id=foo'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
           assert.equal(data.url, 'http://mbaas.com');
