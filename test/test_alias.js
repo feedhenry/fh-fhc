@@ -10,7 +10,7 @@ var ini = require('../lib/utils/ini.js');
 
 //test the appid
 var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";
-ini.configList.push({"persistTargets": false});
+ini.store.persistTargets = false;
 
 module.exports =  {
   "test alias" : function () {

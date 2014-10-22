@@ -2,40 +2,29 @@
 ;(function () { // wrapper in case we're in module_context mode
 
 var path = require("path");
+var _ = require('underscore');
 var output = require("../lib/utils/output");
 var sys = require("../lib/utils/sys");
 var fhc = require("../lib/fhc");
-var ini = require("../lib/utils/ini");
 var errorHandler = require("../lib/utils/error-handler");
-var configDefs = require("../lib/utils/config-defs");
-var shorthands = configDefs.shorthands;
-var types = configDefs.types;
-var nopt = require("nopt");
 var util = require('util');
-var conf = nopt(types, shorthands);
+var conf = { _exit : true };
+var argv = require('yargs').argv;
 
-fhc.argv = conf.argv.remain;
-
-if (fhc.argv[0]) fhc.command = fhc.argv.shift();
-else conf.usage = true;
-
-// make sure that this version of node works with this version of fhc.
-//process.on("uncaughtException", errorHandler);
-
-if (conf.usage && fhc.command !== "help") {
-  fhc.argv.unshift(fhc.command);
+fhc.argv = argv._;
+if (argv._.length > 0){
+  fhc.command = _.first(argv._);
+  argv._.shift();
+}else{
   fhc.command = "help";
 }
 
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
-conf._exit = true;
-
-fhc.load(conf, function (err) {
+fhc.load(conf, function (err, conf) {
   if (err) return errorHandler(err);
 
   var cmd = fhc.getCommandFunction(fhc.command);
-
   cmd(fhc.argv, function(err, data) {
     if (err) return errorHandler(err);
     if (data === undefined) {

@@ -19,20 +19,21 @@
     "fhc": "./bin/fhc.js"
   },
   "dependencies": {
-    "semver": "1",
-    "nopt": "1",
     "async": "0.2.6",
-    "request": "~2.11",
-    "vmcjs": "0.1.11",
     "cheerio": "0.10.8",
-    "moment": "~2.0.0",
     "cli-table": "0.0.2",
-    "mime": "1.2.9",
     "colors": "0.6.0-1",
-    "unzip": "0.1.7",
     "fstream": "0.1.22",
+    "mime": "1.2.9",
+    "moment": "~2.0.0",
+    "nopt": "1",
+    "open": "0.0.5",
+    "request": "~2.11",
+    "semver": "1",
     "underscore": "~1.5.2",
-    "open": "0.0.5"
+    "unzip": "0.1.7",
+    "vmcjs": "0.1.11",
+    "yargs": "^1.3.2"
   },
   "devDependencies": {
     "ronn": "*",
