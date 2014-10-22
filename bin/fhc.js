@@ -15,11 +15,12 @@ var util = require('util');
 var conf = nopt(types, shorthands);
 
 fhc.argv = conf.argv.remain;
+
 if (fhc.argv[0]) fhc.command = fhc.argv.shift();
 else conf.usage = true;
 
 // make sure that this version of node works with this version of fhc.
-process.on("uncaughtException", errorHandler);
+//process.on("uncaughtException", errorHandler);
 
 if (conf.usage && fhc.command !== "help") {
   fhc.argv.unshift(fhc.command);
