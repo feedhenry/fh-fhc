@@ -18,12 +18,12 @@ ini = require('./fixtures/ini.js')({
   'label' : 'mynewenv',
   'targets' : '1,2,3'
 });
-var restfulCmd = proxyquire('restful-cmd.js', {
-  './utils/request' : fhReq,
-  './utils/ini' : ini 
+var restfulCmd = proxyquire('utils/restful-cmd.js', {
+  './request' : fhReq,
+  './ini' : ini 
 });
 var adminenvironments = proxyquire('admin-environments.js', {
-  './restful-cmd' : restfulCmd,
+  './utils/restful-cmd' : restfulCmd,
   './utils/ini' : ini
 });
 var request = require('utils/request.js');

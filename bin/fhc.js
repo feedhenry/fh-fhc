@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 ;(function () { // wrapper in case we're in module_context mode
-var log = require("../lib/utils/log");
-log.waitForConfig();
-log.info("ok", "it worked if it ends with");
 
-var fs = require("fs");
 var path = require("path");
 var output = require("../lib/utils/output");
 var sys = require("../lib/utils/sys");
@@ -18,30 +14,11 @@ var nopt = require("nopt");
 var util = require('util');
 var conf = nopt(types, shorthands);
 
-//log.verbose(process.argv, "cli");
-
 fhc.argv = conf.argv.remain;
-if (fhc.deref(fhc.argv[0])) fhc.command = fhc.argv.shift();
+if (fhc.argv[0]) fhc.command = fhc.argv.shift();
 else conf.usage = true;
 
-if (conf.version) {
-  console.log(fhc.version);
-  return;
-} else {
-  log("fhc@"+fhc.version, "using");
-}
-
-log("node@"+process.version, "using");
-
 // make sure that this version of node works with this version of fhc.
-var semver = require("semver");
-var nodeVer = process.version;
-var reqVer = fhc.nodeVersionRequired;
-
-if (reqVer && !semver.satisfies(nodeVer, reqVer)) {
-  return errorHandler(new Error("fhc doesn't work with node " + nodeVer + "\nRequired: node@" + reqVer), true);
-}
-
 process.on("uncaughtException", errorHandler);
 
 if (conf.usage && fhc.command !== "help") {
@@ -52,10 +29,11 @@ if (conf.usage && fhc.command !== "help") {
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
 conf._exit = true;
+
 fhc.load(conf, function (err) {
   if (err) return errorHandler(err);
 
-  var cmd = fhc.commands[fhc.command];
+  var cmd = fhc.getCommandFunction(fhc.command);
 
   cmd(fhc.argv, function(err, data) {
     if (err) return errorHandler(err);

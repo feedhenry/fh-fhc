@@ -18,12 +18,12 @@ ini = require('./fixtures/ini.js')({
   'url' : 'http://mbaas.com',
   'servicekey' : '1a2b'
 });
-var restfulCmd = proxyquire('restful-cmd.js', {
-  './utils/request' : fhReq,
-  './utils/ini' : ini 
+var restfulCmd = proxyquire('utils/restful-cmd.js', {
+  './request' : fhReq,
+  './ini' : ini 
 });
 var adminmbaas = proxyquire('admin-mbaas.js', {
-  './restful-cmd' : restfulCmd,
+  './utils/restful-cmd' : restfulCmd,
   './utils/ini' : ini
 });
 var request = require('utils/request.js');

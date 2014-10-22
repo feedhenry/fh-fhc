@@ -20,7 +20,6 @@
   },
   "dependencies": {
     "semver": "1",
-    "abbrev": "1",
     "nopt": "1",
     "async": "0.2.6",
     "request": "~2.11",
