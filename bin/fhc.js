@@ -30,6 +30,7 @@ fhc.load(conf, function (err, conf) {
     if (data === undefined) {
       output.write("",errorHandler);
     } else {
+      console.log(cmd);
       // display bare if specified
       if (!conf.json && conf.bare && cmd.bare) {
         output.write(cmd.bare, errorHandler);
