@@ -53,7 +53,7 @@ module.exports = {
     'test admin-environments create': function() {
       fhc.load(function (er){
         console.log("In test admin-environments create");
-        adminenvironments(['create', '--label=foo', '--targets=1,2,3'], function (err, data){
+        adminenvironments(['create', '--label=foo', '--targets=1,2,3', '--id=foo'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
           assert.equal(data.label, 'mynewenv');
