@@ -1,6 +1,6 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
-var keys = require("user-keys.js");
+var keys = require("cmd/common/user-keys.js");
 var request = require('utils/request.js');
 var mockrequest = require('utils/mockrequest.js');
 var ini = require('utils/ini.js');

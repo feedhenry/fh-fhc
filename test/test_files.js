@@ -3,8 +3,8 @@ var assert = require('assert');
 var fhc = require("fhc.js");
 var util = require('util');
 var request = require('utils/request.js');
-var files = require('files.js');
-var apps = require('apps.js');
+var files = require('cmd/common/files.js');
+var apps = require('cmd/common/apps.js');
 var mockrequest = require('utils/mockrequest.js');
 
 module.exports = {
@@ -42,4 +42,3 @@ module.exports = {
       });
     }
 };
-

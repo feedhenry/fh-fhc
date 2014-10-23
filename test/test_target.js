@@ -1,7 +1,7 @@
 
 var assert = require('assert');
 var fhc = require("fhc.js");
-var target = require('target.js');
+var target = require('cmd/common/target.js');
 var util = require('util');
 
 module.exports = {

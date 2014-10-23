@@ -2,7 +2,7 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
 var request = require('utils/request.js');
-var user = require('user.js');
+var user = require('cmd/common/user.js');
 var mockrequest = require('utils/mockrequest.js');
 var util = require('util');
 

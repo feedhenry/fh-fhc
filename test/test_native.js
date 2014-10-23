@@ -4,8 +4,8 @@ var fhc = require("../lib/fhc.js");
 
 var nat = require('../lib/nativecfg.js');
 
-var conf = require("../lib/fhcfg.js");
-var apps = require("../lib/apps.js");
+var conf = require("cmd/internal/fhcfg.js");
+var apps = require("cmd/common/apps.js");
 var request = require('../lib/utils/request.js');
 var mockrequest = require("../lib/utils/mockrequest.js");
 var ini = require('../lib/utils/ini.js');

@@ -2,7 +2,7 @@ var assert = require('assert');
 var fhc = require("fhc.js");
 var proxyquire = require("proxyquire");
 var actRequestMocks = require('./fixtures/act.js');
-var act = proxyquire('act.js', {
+var act = proxyquire('cmd/common/act.js', {
   'request' : actRequestMocks
 });
 var request = require('utils/request.js');

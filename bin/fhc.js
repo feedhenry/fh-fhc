@@ -18,6 +18,7 @@ if (argv._.length > 0){
 }else{
   fhc.command = "help";
 }
+conf.argv = argv;
 
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:

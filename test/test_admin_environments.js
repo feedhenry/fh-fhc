@@ -22,7 +22,7 @@ var restfulCmd = proxyquire('utils/restful-cmd.js', {
   './request' : fhReq,
   './ini' : ini 
 });
-var adminenvironments = proxyquire('admin-environments.js', {
+var adminenvironments = proxyquire('cmd/fh3/admin-environments.js', {
   './utils/restful-cmd' : restfulCmd,
   './utils/ini' : ini
 });
