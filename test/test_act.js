@@ -14,13 +14,15 @@ module.exports = {
       fhc.load(function (er){
         console.log("In test act");
         request.requestFunc = mockrequest.mockRequest;
-
-        act(['0123', 'getCloudData','{\"name\":\"bono\"}', '--env=dev'], function (err, data){
+        var argv = { 
+          _ : ['0123', 'getCloudData','{\"name\":\"bono\"}', '--env=dev']
+        };
+        act(argv, function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
           assert.equal(typeof data.live, 'undefined');
-
-          act(['0123', 'getCloudData','{\"name\":\"bono\"}', '--env=live'], function (err, data){
+          argv._[3] = '--env=live';
+          act(argv, function (err, data){
             assert.equal(err, null);
             assert.equal(data.status, 'ok');
             assert.equal(data.live, true);

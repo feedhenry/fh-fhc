@@ -26,7 +26,7 @@ fhc.load(conf, function (err, conf) {
   if (err) return errorHandler(err);
 
   var cmd = fhc.getCommandFunction(fhc.command);
-  cmd(fhc.argv, function(err, data) {
+  cmd(argv, function(err, data) {
     if (err) return errorHandler(err);
     if (data === undefined) {
       output.write("",errorHandler);
