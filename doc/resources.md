@@ -12,4 +12,4 @@ Show the resources available and being used by a FeedHenry application, defaults
 
 ## Examples
 
-    fhc resources mfLkParVTDcr80-uEk8OhEfT --env=live
+    fhc resources mfLkParVTDcr80-uEk8OhEfT --env=dev
