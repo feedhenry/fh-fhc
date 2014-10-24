@@ -1,4 +1,9 @@
-Release 0.31.2 - 2014-08-222 - IR234 - Damian Beresford
+Release 0.31.3 - 2014-10-24 - IR239 - Damian Beresford
+-------------------------------------------------------
+
+* 8109 - Add submission sanitation to forms get Submission and list Submissions.
+
+Release 0.31.2 - 2014-08-22 - IR234 - Damian Beresford
 -------------------------------------------------------
 * 6364 - Misc fh-art related fixes:
   * fix for in-memory config
