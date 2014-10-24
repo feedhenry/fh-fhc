@@ -3,11 +3,11 @@ var fhc = require("fhc.js");
 var proxyquire = require("proxyquire");
 var existingMbaas = { url : 'http://mbaas.com', id : '1a', servicekey : [] };
 var fhReq = require('./fixtures/fhreq.js')({
-  'GET /api/v2/mbaas' : [existingMbaas],
-  'GET /api/v2/mbaas/1a' : existingMbaas,
-  'POST /api/v2/mbaas' : function(doc){ return doc; },
-  'PUT /api/v2/mbaas/1a' : function(doc){ return doc; },
-  'DELETE /api/v2/mbaas/1a' : function(doc){ return doc; }
+  'GET /api/v2/mbaases' : [existingMbaas],
+  'GET /api/v2/mbaases/1a' : existingMbaas,
+  'POST /api/v2/mbaases' : function(doc){ return doc; },
+  'PUT /api/v2/mbaases/1a' : function(doc){ return doc; },
+  'DELETE /api/v2/mbaases/1a' : function(doc){ return doc; }
 }), 
 /*
   TODO: CLI parsing of arguments passed as --foo=bar is borked right now - fixing requires modifying how ini.js is used, 
@@ -16,7 +16,9 @@ var fhReq = require('./fixtures/fhreq.js')({
 ini = require('./fixtures/ini.js')({
   'id' : '1a',
   'url' : 'http://mbaas.com',
-  'servicekey' : '1a2b'
+  'servicekey' : '1a2b',
+  'username':'test',
+  'password':'test'
 });
 var restfulCmd = proxyquire('restful-cmd.js', {
   './utils/request' : fhReq,
@@ -53,7 +55,7 @@ module.exports = {
     'test admin-mbaas create': function() {
       fhc.load(function (er){
         console.log("In test admin-mbaas create");
-        adminmbaas(['create', '--url=http://mbaas.com', '--key=1a2b', '--id=foo'], function (err, data){
+        adminmbaas(['create', '--url=http://mbaas.com', '--servicekey=1a2b', '--id=foo', '--username=test', '--password=test'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
           assert.equal(data.url, 'http://mbaas.com');
@@ -63,7 +65,7 @@ module.exports = {
     'test admin-mbaas update': function() {
       fhc.load(function (er){
         console.log("In test admin-mbaas update");
-        adminmbaas(['update', '--id=1a', '--url=http://mbaas2.com', '--key=1a2b'], function (err, data){
+        adminmbaas(['update', '--id=1a', '--url=http://mbaas2.com', '--servicekey=1a2b'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
@@ -72,7 +74,7 @@ module.exports = {
     'test admin-mbaas delete': function() {
       fhc.load(function (er){
         console.log("In test admin-mbaas delete");
-        adminmbaas(['update', '--id=1a', '--url=http://mbaas2.com', '--key=1a2b'], function (err, data){
+        adminmbaas(['update', '--id=1a', '--url=http://mbaas2.com', '--servicekey=1a2b'], function (err, data){
           assert.equal(err, null);
           assert.equal(data.status, 'ok');
         });
