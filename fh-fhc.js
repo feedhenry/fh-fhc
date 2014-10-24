@@ -33,6 +33,7 @@ exports.adminstoreitems = require('./lib/admin-storeitems.js');
 exports.adminappstore = require('./lib/admin-appstore.js');
 exports.adminauditlog = require('./lib/admin-auditlog.js');
 exports.adminenvironments = require('./lib/admin-environments.js');
+exports.amdinenvironmentaliases = require('./lib/admin-environment-aliases.js');
 exports.adminmbaas = require('./lib/admin-mbaas.js');
 exports.masappstore = require('./lib/mas-appstore.js');
 exports.auth = require('./lib/auth.js');
