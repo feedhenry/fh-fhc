@@ -30,17 +30,18 @@ fhc.load(conf, function (err, conf) {
     if (data === undefined) {
       output.write("",errorHandler);
     } else {
-      console.log(cmd);
       // display bare if specified
       if (!conf.json && conf.bare && cmd.bare) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
-        if (!conf.json && conf.table && cmd.table) {
+        if (!conf.json && conf.table && (cmd.table || data._table)) {
           if (cmd.message) console.log(cmd.message);
-          console.log(cmd.table.toString());
+          var table = cmd.table || data._table;
+          console.log(table.toString());
           output.write("", errorHandler);
-        }else {
+        }else{
+          delete data._table;
           // check if we have a nonjson message
           if(!conf.json && cmd.message) {
             output.write(cmd.message, errorHandler);
