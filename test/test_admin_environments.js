@@ -23,59 +23,50 @@ var restfulCmd = proxyquire('utils/restful-cmd.js', {
   './ini' : ini 
 });
 var adminenvironments = proxyquire('cmd/fh3/admin-environments.js', {
-  './utils/restful-cmd' : restfulCmd,
+  '../../utils/restful-cmd' : restfulCmd,
   './utils/ini' : ini
 });
 var request = require('utils/request.js');
 var mockrequest = require('utils/mockrequest.js');
 module.exports = {
-    'test admin-environments list': function() {
-      fhc.load(function (er){
-        console.log("In test admin-environments list");
-        adminenvironments([], function (err, data){
-          assert.equal(err, null);
-          assert.equal(data.status, 'ok');
-          assert.equal(data.length, 1);
-          assert.equal(data[0].label, 'myexistingenv');
-        });
+    'test admin-environments list': function(cb) {  
+      adminenvironments({_ : []}, function (err, data){
+        assert.equal(err, null);
+        assert.equal(data.status, 'ok');
+        assert.equal(data.length, 1);
+        assert.equal(data[0].label, 'myexistingenv');
+        return cb();
       });
     },
-    'test admin-environments read': function() {
-      fhc.load(function (er){
-        console.log("In test admin-environments read");
-        adminenvironments(['read', '--id=1a2b'], function (err, data){
-          assert.equal(err, null);
-          assert.equal(data.status, 'ok');
-          assert.equal(data.label, 'myexistingenv');
-        });
+    'test admin-environments read': function(cb) {
+      adminenvironments({ _ : ['read', '--id=1a2b']}, function (err, data){
+        assert.equal(err, null);
+        assert.equal(data.status, 'ok');
+        assert.equal(data.label, 'myexistingenv');
+        return cb();
       });
     },
-    'test admin-environments create': function() {
-      fhc.load(function (er){
-        console.log("In test admin-environments create");
-        adminenvironments(['create', '--label=foo', '--targets=1,2,3', '--id=foo'], function (err, data){
-          assert.equal(err, null);
-          assert.equal(data.status, 'ok');
-          assert.equal(data.label, 'mynewenv');
-        });
+    'test admin-environments create': function(cb) {
+      adminenvironments({ _ : ['create', '--label=foo', '--targets=1,2,3', '--id=foo'] }, function (err, data){
+        console.log(err);
+        assert.equal(err, null);
+        assert.equal(data.status, 'ok');
+        assert.equal(data.label, 'mynewenv');
+        return cb();
       });
     },
-    'test admin-environments update': function() {
-      fhc.load(function (er){
-        console.log("In test admin-environments update");
-        adminenvironments(['update', '--id=1a --label=bar', '--targets=1,2,3'], function (err, data){
-          assert.equal(err, null);
-          assert.equal(data.status, 'ok');
-        });
+    'test admin-environments update': function(cb) {
+      adminenvironments({ _ : ['update', '--id=1a --label=bar', '--targets=1,2,3'] }, function (err, data){
+        assert.equal(err, null);
+        assert.equal(data.status, 'ok');
+        return cb();
       });
     },
-    'test admin-environments delete': function() {
-      fhc.load(function (er){
-        console.log("In test admin-environments delete");
-        adminenvironments(['update', '--id=1a --label=bar', '--targets=1,2,3'], function (err, data){
-          assert.equal(err, null);
-          assert.equal(data.status, 'ok');
-        });
+    'test admin-environments delete': function(cb) {
+      adminenvironments({ _ : ['update', '--id=1a --label=bar', '--targets=1,2,3'] }, function (err, data){
+        assert.equal(err, null);
+        assert.equal(data.status, 'ok');
+        return cb();
       });
     }
 };

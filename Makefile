@@ -54,13 +54,12 @@ man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
 
 test:
-	env fhc_fhcfg_feedhenry="https://apps.feedhenry.com" NODE_PATH=.:./lib expresso -I lib 
+	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/*
 
 npm_deps:
 	npm install .
 
 dist: docu npm_deps
-	rm -rf $(MODULES)/expresso
 	rm -rf $(MODULES)/ronn
 	mkdir -p $(DIST_DIR) $(OUTPUT_DIR)/$(RELEASE_DIR)
 	cp -r ./bin $(OUTPUT_DIR)/$(RELEASE_DIR)

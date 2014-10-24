@@ -37,13 +37,14 @@
   },
   "devDependencies": {
     "ronn": "*",
-    "proxyquire": "0.4.1"
+    "proxyquire": "0.4.1",
+    "turbo-test-runner": "*"
   },
   "engines": {
     "node": ">=0.4"
   },
   "scripts": {
-    "test": "expresso -I lib"
+    "test": "make test"
   },
   "license": "MIT"
 }
