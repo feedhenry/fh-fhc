@@ -35,13 +35,15 @@ fhc.load(conf, function (err, conf) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
-        if (!conf.json && conf.table && (cmd.table || data._table)) {
+        if (!conf.json && conf.table && (cmd.table || (data && data._table))) {
           if (cmd.message) console.log(cmd.message);
           var table = cmd.table || data._table;
           console.log(table.toString());
           output.write("", errorHandler);
         }else{
-          delete data._table;
+          if (data){
+            delete data._table;  
+          }
           // check if we have a nonjson message
           if(!conf.json && cmd.message) {
             output.write(cmd.message, errorHandler);
