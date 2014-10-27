@@ -1,12 +1,12 @@
 //tests for alias command
 var assert = require('assert');
-var fhc = require("../lib/fhc.js");
+var fhc = require("lib/fhc.js");
 var alias = require('cmd/common/alias.js');
 var conf = require("cmd/internal/fhcfg.js");
 var apps = require("cmd/common/apps.js");
-var request = require('../lib/utils/request.js');
-var mockrequest = require("../lib/utils/mockrequest.js");
-var ini = require('../lib/utils/ini.js');
+var request = require('lib/utils/request.js');
+var mockrequest = require("lib/utils/mockrequest.js");
+var ini = require('lib/utils/ini.js');
 
 //test the appid
 var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";

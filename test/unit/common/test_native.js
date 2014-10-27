@@ -1,14 +1,14 @@
 //tests for native command
 var assert = require('assert');
-var fhc = require("../lib/fhc.js");
+var fhc = require("lib/fhc.js");
 
 var nat = require('cmd/common/native.js');
 
 var conf = require("cmd/internal/fhcfg.js");
 var apps = require("cmd/common/apps.js");
-var request = require('../lib/utils/request.js');
-var mockrequest = require("../lib/utils/mockrequest.js");
-var ini = require('../lib/utils/ini.js');
+var request = require('lib/utils/request.js');
+var mockrequest = require("lib/utils/mockrequest.js");
+var ini = require('lib/utils/ini.js');
 
 var testguid = "c0TPJtvFbztuS2p7NhZN3oZz";
 var platform = process.platform;

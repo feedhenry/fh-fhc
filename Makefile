@@ -54,7 +54,7 @@ man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
 
 test:
-	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/*
+	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*
 
 npm_deps:
 	npm install .
