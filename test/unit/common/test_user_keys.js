@@ -1,14 +1,15 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
 var keys = require("cmd/common/user-keys.js");
-var request = require('utils/request.js');
-var mockrequest = require('utils/mockrequest.js');
+var userKeysNock = require('test/fixtures/user/fixture_user_keys');
 var ini = require('utils/ini.js');
-request.requestFunc = mockrequest.mockRequest;
 module.exports = {
+  setUp : function(cb){
+    return cb();
+  },
   'list keys' : function(cb){  
     keys({ _ : ['list'] }, function(err, list){
-      assert.equal(err, null);
+      assert.equal(err, null, err);
       assert.ok(list);
       assert.equal(list.list.length, 1);
       return cb();
@@ -16,9 +17,9 @@ module.exports = {
   },
   'create keys' : function(cb){  
     keys({ _ : ['add'] }, function(err, key){
-      assert.ok(!err);
+      assert.ok(!err, err);
       keys({ _ : ['add', 'UserKey'] }, function(err, key){
-        assert.equal(err, null);
+        assert.equal(err, null, err);
         assert.ok(key.apiKey);
         assert.ok(key.apiKey.label);
         assert.ok(key.apiKey.key);
@@ -31,7 +32,7 @@ module.exports = {
     keys({ _ : ['delete'] }, function(err, key){
       assert.ok(err);
       keys({ _ : ['delete', 'UserKey'] }, function(err, key){
-        assert.equal(err, null);
+        assert.equal(err, null, err);
         assert.ok(key.apiKey);
         assert.ok(key.apiKey.label);
         assert.ok(key.apiKey.key);
@@ -40,12 +41,11 @@ module.exports = {
     });  
   },
   'update keys' : function (cb) {
-    request.requestFunc = mockrequest.mockRequest;
     keys.skipPrompt = true;
     keys({ _ : ['update'] }, function(err, key){
       assert.ok(err);
       keys({ _ : ['update', 'UserKey', 'UserKey-Updated'] }, function(err, key){
-        assert.ok(!err);
+        assert.ok(!err, err);
         assert.ok(key.apiKey);
         assert.ok(key.apiKey.label);
         assert.equal('UserKey-Updated', key.apiKey.label);
@@ -60,7 +60,7 @@ module.exports = {
   'target keys' : function(cb){
     var key_val = "pviryBwt22iZ0iInufMYBuVV";
     keys({ _ : ['target', 'UserKey'] }, function(err, r){
-      assert.equal(err, null);
+      assert.equal(err, null, err);
       assert.equal(r, key_val);
       keys({ _ : ['target'] }, function(err, r){
             assert.equal(err, null);
@@ -68,5 +68,9 @@ module.exports = {
             return cb();
         });
     });
+  },
+  tearDown : function(cb){
+    userKeysNock.done();
+    return cb();
   }
 };

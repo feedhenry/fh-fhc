@@ -9,5 +9,6 @@ exports.setUp = function(finish){
 }
 
 exports.tearDown = function(finish){
+  console.log('Passed')
   return finish();
 }

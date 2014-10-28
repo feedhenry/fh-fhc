@@ -1,5 +1,5 @@
 var assert = require('assert');
-var nockBuild = require('test/fixtures/app/build');
+var nockBuild = require('test/fixtures/app/fixture_build');
 var build = require('cmd/common/build');
 var _ = require('underscore');
 module.exports = {

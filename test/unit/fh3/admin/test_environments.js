@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/admin/environments');
+var nockEnvironment = require('test/fixtures/admin/fixture_environments');
 var adminenvironments = {
   create : genericCommand(require('cmd/fh3/admin/environments/create')),
   read : genericCommand(require('cmd/fh3/admin/environments/read')),

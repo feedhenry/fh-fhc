@@ -1,16 +1,22 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
-var request = require('utils/request.js');
 var version = require('cmd/common/version.js');
-var mockrequest = require('utils/mockrequest.js');
+var versionNock = require('test/fixtures/fixture_version');
+
 module.exports = {
+  setUp : function(cb){
+    return cb();
+  },
   'test version': function(cb) {
-    request.requestFunc = mockrequest.mockRequest;
     // test version
     version({ _ : []}, function (err, data) {
-      assert.equal(err, null);
+      assert.equal(err, null, err);
       assert.ok(data);
       return cb();
     });        
+  },
+  tearDown : function(cb){
+    versionNock.done();
+    return cb();
   }
 };

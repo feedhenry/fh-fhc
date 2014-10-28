@@ -1,5 +1,5 @@
 var assert = require('assert');
-var nockLogs = require('test/fixtures/app/logs');
+var nockLogs = require('test/fixtures/app/fixture_logs');
 var logs = require('cmd/common/logs');
 module.exports = {
     'test common logs': function(cb) {
