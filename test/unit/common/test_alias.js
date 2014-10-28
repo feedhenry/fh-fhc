@@ -7,6 +7,10 @@ var apps = require("cmd/common/apps.js");
 var request = require('lib/utils/request.js');
 var mockrequest = require("lib/utils/mockrequest.js");
 var ini = require('lib/utils/ini.js');
+// Prevent saving config to disk
+ini.save = function(cb){
+  return cb(null, true);
+}
 
 //test the appid
 var testAppId = "c0TPJtvFbztuS2p7NhZN3oZz", theAlias = "analias";

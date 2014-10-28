@@ -12,9 +12,19 @@ var mockrequest = require('utils/mockrequest.js');
 var ini = require('utils/ini.js');
 var async = require('async');
 request.requestFunc = mockrequest.mockRequest;
+
 module.exports = {
+  setUp : function(cb){
+    ini.set('fhversion', 2);
+    return cb();
+  },
+  tearDown : function(cb){
+    ini.set('fhversion', 3);
+    return cb();
+  },
   'test apps list' : function(cb){
     apps({_ : []}, function (err, data) {
+      console.log(err);
       assert.ok(!err);
       assert.ok(data.list.length === 1);
       return cb();
