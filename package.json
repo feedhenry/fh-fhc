@@ -14,7 +14,7 @@
     "lib": "./lib",
     "bin": "./bin"
   },
-  "main": "./fh-fhc.js",
+  "main": "./lib/fhc.js",
   "bin": {
     "fhc": "./bin/fhc.js"
   },
