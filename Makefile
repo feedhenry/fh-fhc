@@ -52,9 +52,18 @@ man1/%.1: doc/%.md
 
 man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
+	
+test: test_unit_fh2 test_unit_fh3 test_unit_common
 
-test:
-	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*
+test_unit_fh2:
+	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/fh2/*
+	
+test_unit_fh3:
+	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/fh3/*
+
+test_unit_common:
+	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/common/*
+
 
 npm_deps:
 	npm install .
