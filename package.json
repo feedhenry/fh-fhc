@@ -34,7 +34,7 @@
     "underscore": "~1.5.2",
     "unzip": "0.1.7",
     "vmcjs": "0.1.11",
-    "yargs": "^1.3.2"
+    "yargs": "git://github.com/cianclarke/yargs.git"
   },
   "devDependencies": {
     "ronn": "*",
