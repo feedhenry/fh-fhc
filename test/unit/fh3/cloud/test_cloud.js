@@ -17,8 +17,9 @@ module.exports = {
   },
   tearDown : function(cb){
     // TODO - figure how to teardown nocks
-    nockHosts.done();
+    //nockHosts.done();
     appReadNock.done();
+    nockCloud.done();
     return cb();
   }
 };

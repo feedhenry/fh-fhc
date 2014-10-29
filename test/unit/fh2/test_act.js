@@ -33,6 +33,7 @@ module.exports = {
     appReadFixture.done();
     appHostsFixture.done();
     liveActFixture.done();
+    cloudFixture.done();
     // TODO close out cloudFixture
     return cb();
   }
