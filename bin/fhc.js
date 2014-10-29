@@ -35,8 +35,8 @@ fhc.load(conf, function (err, conf) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
-        if (!conf.json && conf.table && (cmd.table || (data && data._table))) {
-          if (cmd.message) console.log(cmd.message);
+        if (!conf.json && conf.table && (cmd && cmd.table || (data && data._table))) {
+          if (cmd && cmd.message) console.log(cmd.message);
           var table = cmd.table || data._table;
           console.log(table.toString());
           output.write("", errorHandler);
@@ -45,7 +45,7 @@ fhc.load(conf, function (err, conf) {
             delete data._table;  
           }
           // check if we have a nonjson message
-          if(!conf.json && cmd.message) {
+          if(!conf.json && cmd && cmd.message) {
             output.write(cmd.message, errorHandler);
           }else {
             if (typeof data === 'string') return output.write(data, errorHandler);
