@@ -1,9 +1,9 @@
-#version
+#VERSION
 
 ## SYNOPSIS
  fhc version
 
-Examples:
+## EXAMPLES
   fhc version    
 
 
