@@ -53,14 +53,6 @@ man1/%.1: doc/%.md
 man1/%/: doc/%/
 	@[ -d $@ ] || mkdir -p $@
 	
-test: test_unit test_accept
-
-test_unit:
-	env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*
-	
-test_accept:
-	env NODE_PATH=.:./lib ./node_modules/.bin/turbo test/accept/*
-
 npm_deps:
 	npm install .
 
@@ -82,4 +74,4 @@ dist: docu npm_deps
 clean:
 	rm -rf $(DIST_DIR) $(OUTPUT_DIR) $(MODULES) $(COV_DIR)
 
-.PHONY: docu clean test man
+.PHONY: docu clean man

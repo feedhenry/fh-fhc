@@ -1,6 +1,7 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
-var version = require('cmd/common/version.js');
+var genericCommand = require('genericCommand');
+var version = genericCommand(require('cmd/common/version.js'));
 var versionNock = require('test/fixtures/fixture_version');
 
 module.exports = {
