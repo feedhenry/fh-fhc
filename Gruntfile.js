@@ -7,7 +7,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
-      all: ['lib/*.js', 'lib/cmd/fh3/**/*.js']
+      all: ['lib/*.js', 'lib/cmd/fh3/**/*.js'],
+      options: {
+        jshintrc: true
+      }
     },
     shell: {
       unit: {

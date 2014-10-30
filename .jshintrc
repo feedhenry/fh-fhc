@@ -23,5 +23,7 @@
     "trailing"      : true,     
     "node"          : true,    
     "maxerr"        : 100, 
-    "indent"        : 2    
+    "indent"        : 2,
+    "esnext"        : true,
+    "loopfunc"      : true 
 }
