@@ -16,10 +16,9 @@ module.exports = {
     });
   }, 
   tearDown : function(cb){
-    // TODO: Tear down all nocks
     appReadNock.done();
     nockHosts.done();
-    //nockCloud.done();
+    nockCloud.done();
     return cb();
   }
 };
