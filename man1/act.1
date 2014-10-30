@@ -1,21 +1,20 @@
-.\" generated with Ronn/v0.7.3
-.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-ACT" "1" "April 2012" "" ""
+.TH "FHC\-ACT" "1" "October 2014" "" ""
 .
 .SH "NAME"
-\fBfhc\-act\fR \- FeedHenry Actions
+\fBfhc-act\fR \-\- FeedHenry Actions
 .
 .SH "SYNOPSIS"
 .
 .nf
-
-fhc act <app\-id> <server\-function> <params> [\-\-live]
+fhc act <app\-id> <server\-function> <params> \-\-env=<environment>
 .
 .fi
 .
 .SH "DESCRIPTION"
-This is a utility command to easily invoke your application server side functions in FeedHenry\.
+This is a utility command to easily invoke your application server side functions in FeedHenry\. 
 .
 .SS "app id"
 Your application id\.
@@ -29,8 +28,7 @@ The parameters that the function expects\. FeedHenry expects one JSON object to 
 .SH "EXAMPLES"
 .
 .nf
-
-fhc act h2n0pg\-qvar407mijmsvbapz helloWorld "{\e"name\e":\e"bono\e"}"
+fhc act h2n0pg\-qvar407mijmsvbapz helloWorld "{\\"name\\":\\"bono\\"}"
 .
 .fi
 

@@ -1,0 +1,10 @@
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
+fhc admin\-environment\-aliases [list]
+fhc admin\-environment\-aliases read \-\-id=<environment alias id>
+fhc admin\-environment\-aliases create \-\-environment=<environment id> \-\-environmentAlias=<environment id alias> \-\-environmentLabelAlias=<environment label alias>
+fhc admin\-environment\-aliases update \-\-id=<environment alias id> [\-\-environment=<environment id>] [\-\-environmentAlias=<environment id alias>] [\-\-environmentLabelAlias=<environment label alias>]
+fhc admin\-environment\-aliases delete \-\-id=<environment alias id>
+.
+.P
+Where: \fBid\fR is the unique id of an environment \fBenvironmentAlias\fR is the alias of the id of an environment\. Should be unique within a domain and it should not be the same as any id of existing environments\. \fBenvironmentLabelAlias\fR is the alias of the label of an environment (which will be displayed in the studio)\. Should be unique within a domain\.

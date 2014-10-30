@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "0.31.2-BUILD-NUMBER",
+  "version": "1.0.0-BUILD-NUMBER",
   "keywords": [
     "feedhenry"
   ],
@@ -36,7 +36,8 @@
     "open": "0.0.5"
   },
   "devDependencies": {
-    "ronn": "*"
+    "ronn": "*",
+    "proxyquire": "0.4.1"
   },
   "engines": {
     "node": ">=0.4"

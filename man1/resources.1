@@ -1,28 +1,26 @@
-.\" generated with Ronn/v0.7.3
-.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.\" Generated with Ronnjs 0.4.0
+.\" http://github.com/kapouer/ronnjs
 .
-.TH "FHC\-RESOURCES" "1" "October 2012" "" ""
+.TH "FHC\-RESOURCES" "1" "October 2014" "" ""
 .
 .SH "NAME"
-\fBfhc\-resources\fR \- List resources for a FeedHenry Applications
+\fBfhc-resources\fR \-\- List resources for a FeedHenry Applications
 .
 .SH "SYNOPSIS"
 .
 .nf
-
 fhc resources <appId>
-fhc resources <appId> \-\-live
+fhc resources <appId> \-\-env=<environment>
 .
 .fi
 .
 .SH "DESCRIPTION"
-Show the resources available and being used by a FeedHenry application, either in the \'dev\' or \'live\' FeedHenry environment\.
+Show the resources available and being used by a FeedHenry application, defaults to \'dev\' environment or specify one using \-\-env=<environment>\.
 .
 .SH "Examples"
 .
 .nf
-
-fhc resources mfLkParVTDcr80\-uEk8OhEfT \-\-live
+fhc resources mfLkParVTDcr80\-uEk8OhEfT \-\-env=dev
 .
 .fi
 

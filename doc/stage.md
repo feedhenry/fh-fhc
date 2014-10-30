@@ -3,9 +3,9 @@ fhc-stage(1) -- Stage FeedHenry Applications
 
 ## SYNOPSIS
 
-    fhc stage <appId> 
-    fhc stage <appId> [approver] [comment] --live --clean
-    
+    fhc stage <appId> --env=<environment>
+    fhc stage <appId> [approver] [comment] --clean --env=<environment>
+
 ## DESCRIPTION
 
 This command can be used to stage your FeedHenry applications, either to the 'development' or 'live' FeedHenry environment. The '--clean' flag can be used to do a full clean restage, which has the following effect:
@@ -14,6 +14,6 @@ This command can be used to stage your FeedHenry applications, either to the 'de
 
 When deploy to 'live' environment, the approver's name or email should be set. If it's not set in the command line, the user will be prompted for it. A comment can be added for the stage but it's optional.
 
-## Examples 
+## Examples
 
-    fhc stage mfLkParVTDcr80-uEk8OhEfT --live
+    fhc stage mfLkParVTDcr80-uEk8OhEfT --env=dev
