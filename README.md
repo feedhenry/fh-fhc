@@ -62,6 +62,12 @@ Version 1.0 of `fh-fhc` updates the structure of commands:
 	    
 Old commands export a function - new style commands export an object. 
 
+## Setting a Proxy Server
+    
+    fhc fhcfg set proxy http://host:port
+    # eg:
+    fhc fhcfg set proxy http://127.0.0.1:8080
+    
 ## Tests
 
-	make test
+	grunt test
