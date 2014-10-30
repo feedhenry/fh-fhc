@@ -9,23 +9,14 @@ var fhc = require("../lib/fhc");
 var errorHandler = require("../lib/utils/error-handler");
 var util = require('util');
 var conf = { _exit : true };
-var argv = require('yargs').argv;
-
-fhc.argv = argv._;
-if (argv._.length > 0){
-  fhc.command = _.first(argv._);
-  argv._.shift();
-}else{
-  fhc.command = "help";
-}
-conf.argv = argv;
+var argv = process.argv.slice(2);
+argv = (argv.length === 0) ? ['help'] : argv;
 
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
 fhc.load(conf, function (err, conf) {
   if (err) return errorHandler(err);
-
-  var cmd = fhc.applyCommandFunction(fhc.command, argv, function(err, data){
+  var cmd = fhc.applyCommandFunction(argv, function(err, data){
     if (err) return errorHandler(err);
     if (data === undefined) {
       output.write("",errorHandler);
