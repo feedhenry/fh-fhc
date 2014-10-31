@@ -75,7 +75,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   // Testing tasks
-  grunt.registerTask('test', ['shell:unit', 'shell:accept']);
+  grunt.registerTask('test', ['jshint', 'shell:unit', 'shell:accept']);
   grunt.registerTask('unit', ['jshint', 'shell:unit']);
   grunt.registerTask('accept', ['shell:accept']);
 
