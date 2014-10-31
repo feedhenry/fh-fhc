@@ -17,9 +17,9 @@ module.exports = {
     });    
   },
   "verify it works as a CLI with arguments" : function(cb){
-    exec('node bin/fhc.js help logs',
+    exec('node bin/fhc.js help app logs',
       function (error, stdout, stderr) {
-        assert.ok(stderr==='');
+        assert.ok(stderr==='', stderr);
         assert.ok(stdout.length > 0);
         return cb();
     });    

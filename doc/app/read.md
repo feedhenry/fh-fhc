@@ -1,8 +1,8 @@
-fhc-list(1)
+fhc-read(1)
 ===========
 ## SYNOPSIS
 
- fhc app list --project=<project>
+ fhc app read --project=<project> --app=<app>
 
 ## EXAMPLES
 
@@ -15,6 +15,7 @@ fhc-list(1)
   fhc endpoints --app=<appGuid> --env=<environmentName>                                                      
   fhc app list --project=1a2b3c                                                                              Passing project using a flag
   fhc app list 1a2b3c                                                                                        Passing project as an argument
+  fhc app read --project=1a --app=2b                                                                         Reads app with id 2b under project with id 1a
 
 
 ## OPTIONS
@@ -29,5 +30,5 @@ fhc-list(1)
 
 ## DESCRIPTION
 
-Lists apps under a project.
+Reads an app under a project.
 

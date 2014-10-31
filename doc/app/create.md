@@ -2,24 +2,27 @@ fhc-create(1)
 =============
 ## SYNOPSIS
 
- fhc app create --project=<project> [--title=<title>] [--type=<type>]
+ fhc app create --project=<project> --title=<title> [--template=<template>] [--repo=<repo>] [--branch=<branch>]
 
 ## EXAMPLES
 
   fhc version                                                                                                
   fhc app act --app=1a2b3c --fn=<serverside Function> --data=<data to send> --env=<environment>              Performs an act request on app with id 1a2b3c
   fhc app cloud --app=1a2b3c --path=<serverside path from root> --data=<Data to send> --env=<environment>    Performs a cloud request on app with id 1a2b3c
-  fhc app create --project=1a2b3c --title=My New App --type=cloud_nodejs                                     Creates a new hybrid app
+  fhc app create --project=1a2b3c --title=My New App --type=cloud_nodejs                                     Creates a new hybrid app from template
+  fhc app create --project=1a2b3c --title=My New App --repo=git:///some.com/repo.git --branch=master         Creates a new hybrid app from a git repo
 
 
 ## OPTIONS
 
-  --env, -e, -e  Environment within which the request should be performed                                       [required]
-  --data         Request body to send thru                                                                      [required]
-  --fn           Cloud function name to call                                                                    [required]
-  --path         Path of the cloud request                                                                      [required]
-  --title, -t    A title for your app                                                                         
-  --type, -y     Type of your app - e.g. client_hybrid, client_native_ios, client_native_android, cloud_nodejs  [default: "client_hybrid"]
+  --env, -e, -e  Environment within which the request should be performed                        [required]
+  --data         Request body to send thru                                                       [required]
+  --fn           Cloud function name to call                                                     [required]
+  --path         Path of the cloud request                                                       [required]
+  --title, -t    A title for your app                                                            [required]
+  --template     Template of your app - e.g. hello_world_mbaas_instance. See fhc templates apps  [default: "hello_world_mbaas_instance"]
+  --repo         Repository to clone your app from                                             
+  --branch       Git branch to clone from                                                      
 
 ## DESCRIPTION
 

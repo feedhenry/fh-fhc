@@ -1,8 +1,8 @@
-fhc-list(1)
-===========
+fhc-resources(1)
+================
 ## SYNOPSIS
 
- fhc app list --project=<project>
+ fhc app resources --app=<app> --env=<env>
 
 ## EXAMPLES
 
@@ -15,6 +15,8 @@ fhc-list(1)
   fhc endpoints --app=<appGuid> --env=<environmentName>                                                      
   fhc app list --project=1a2b3c                                                                              Passing project using a flag
   fhc app list 1a2b3c                                                                                        Passing project as an argument
+  fhc app read --project=1a --app=2b                                                                         Reads app with id 2b under project with id 1a
+  fhc resources --app=1a --env=dev                                                                           Shows the resources of the app with id 1a in the dev environment
 
 
 ## OPTIONS
@@ -29,5 +31,5 @@ fhc-list(1)
 
 ## DESCRIPTION
 
-Lists apps under a project.
+Lists resources of a cloud app
 

@@ -1,6 +1,6 @@
 var assert = require('assert');
 var nockLogs = require('test/fixtures/app/fixture_logs');
-var logs = require('cmd/common/logs');
+var logs = require('cmd/common/app/logs');
 module.exports = {
     'test common logs': function(cb) {
       logs({_ : ['1a2b3c4d5e6f7g8e9f0a1b2c', 'dev']}, function (err, data){
