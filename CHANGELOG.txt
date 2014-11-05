@@ -2,7 +2,12 @@ Release 1.0.0 - 2014-10-07 - IR238 - Cian Clarke
 ------------------------------------------------------
 * 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
 
-Release 0.31.2 - 2014-08-222 - IR234 - Damian Beresford
+Release 0.31.3 - 2014-10-24 - IR239 - Niall Donnelly
+-------------------------------------------------------
+
+* 8109 - Add submission sanitation to forms get Submission and list Submissions.
+
+Release 0.31.2 - 2014-08-22 - IR234 - Damian Beresford
 -------------------------------------------------------
 * 6364 - Misc fh-art related fixes:
   * fix for in-memory config
