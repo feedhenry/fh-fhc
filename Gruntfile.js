@@ -127,7 +127,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['test']);
   
   // dist commands
-  grunt.registerTask('dist', ['shell:dist', 'shell:clean']);
+  grunt.registerTask('dist', ['shell:clean', 'shell:dist']);
   grunt.registerTask('clean', ['shell:clean']);
   
   grunt.registerTask('docs', function(){
