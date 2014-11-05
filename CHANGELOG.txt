@@ -1,4 +1,4 @@
-Release 0.31.3 - 2014-10-24 - IR239 - Damian Beresford
+Release 0.31.3 - 2014-10-24 - IR239 - Niall Donnelly
 -------------------------------------------------------
 
 * 8109 - Add submission sanitation to forms get Submission and list Submissions.
