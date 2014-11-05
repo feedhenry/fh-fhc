@@ -2,6 +2,16 @@
 
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
+  
+  var pkgName = 'fh-fhc';
+  var distDir = './dist';
+  var outputDir = './output';
+  var pkgjs = require('./package.json');
+  var buildNumber = (process.env['BUILD_NUMBER'] || 'BUILD-NUMBER');
+  var packageVersion = pkgjs.version.replace('BUILD-NUMBER', buildNumber);
+  var releaseDir = pkgName + '-' + packageVersion;
+  var releaseFile = pkgName + '-' + packageVersion + '.tar.gz';
+
 
   // Project Configuration
   grunt.initConfig({
@@ -57,6 +67,31 @@ module.exports = function(grunt) {
           './node_modules/.bin/istanbul report --report cobertura',
           'echo "See html coverage at: `pwd`/coverage/lcov-report/index.html"'
         ].join('&&')
+      },
+      clean : {
+        options: {
+          stdout: true,
+          stderr: true,
+          failOnError: true
+        },
+        command: 'rm -rf ' + distDir + ' ' + outputDir + ' ' + releaseDir
+      },
+      dist : {
+        options: {
+          stdout: true,
+          stderr: true,
+          failOnError: true
+        },
+        command: [
+          'mkdir -p ' + distDir + ' ' + outputDir + '/' + releaseDir,
+          'cp -r ./lib ' + outputDir + '/' + releaseDir,
+          'cp -r ./doc ' + outputDir + '/' + releaseDir,
+          'cp -r ./bin ' + outputDir + '/' + releaseDir,
+          'cp ./package.json ' +  outputDir + '/' + releaseDir,
+          'echo ' +  packageVersion + ' > ' + outputDir + '/' + releaseDir + '/VERSION.txt',
+          'sed -i -e s/BUILD-NUMBER/' + buildNumber + '/ ' + outputDir + '/' + releaseDir + '/package.json',
+          'tar -czf ' + distDir + '/' + releaseFile + ' -C ' + outputDir + ' ' + releaseDir
+        ].join('&&')
       }
     },
     plato: {
@@ -90,6 +125,10 @@ module.exports = function(grunt) {
   grunt.registerTask('analysis', ['plato:src', 'open:platoReport']);
 
   grunt.registerTask('default', ['test']);
+  
+  // dist commands
+  grunt.registerTask('dist', ['shell:dist', 'shell:clean']);
+  grunt.registerTask('clean', ['shell:clean']);
   
   grunt.registerTask('docs', function(){
     var fhc = require('./lib/fhc.js'),
