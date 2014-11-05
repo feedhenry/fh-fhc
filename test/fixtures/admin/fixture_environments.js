@@ -26,5 +26,5 @@ module.exports = nock('https://apps.feedhenry.com')
 .reply(200, envReplies.crud)
 .delete('/api/v2/environments/1a', '*')
 .reply(200, envReplies.crud)
-.get('/api/v2/environments', '*')
+.get('/api/v2/environments/all', '*')
 .reply(200, envReplies.list);
