@@ -2,7 +2,7 @@ fhc-update(1)
 =============
 ## SYNOPSIS
 
- fhc admin mbaas update --id=<id> [--url=<url>] [--servicekey=<servicekey>] [--username=<username>] [--password=<password>]
+ fhc admin environments alias update --id=<id> [--environment=<environment>] [--environmentAlias=<environmentAlias>] [--environmentLabelAlias=<environmentLabelAlias>]
 
 ## EXAMPLES
 
@@ -45,11 +45,6 @@ fhc-update(1)
   fhc admin environments aliases list                                                                                                                                                                  Lists available environments
   fhc admin environments aliases read --id=<id>                                                                                                                                                        Read an environment alias by id
   fhc admin-environment-aliases update --id=<environment alias id> [--environment=<environment id>] [--environmentAlias=<environment id alias>] [--environmentLabelAlias=<environment label alias>]    Update an environment alias by id
-  fhc admin mbaas create --id=<mBaaS id> --url=<mBaaS URL> --servicekey=<mBaaS Service Key> --username=<mBaaS User Name> --password=<mBaaS Password>                                                   Creates an environment
-  fhc admin mbaas delete --id=<mBaaS id>                                                                                                                                                               
-  fhc admin mbaas list                                                                                                                                                                                 Lists available mBaaSes
-  fhc admin mbaas read --id=<mBaaS id>                                                                                                                                                                 
-  fhc admin mbaas update --id=<mBaaS id> --url=<mBaaS URL> --servicekey=<mBaaS Service Key> --username=<mBaaS User Name> --password=<mBaaS Password>                                                   Updates an environment with id <mbaasId>
 
 
 ## OPTIONS
@@ -63,18 +58,14 @@ fhc-update(1)
   --branch                 Git branch to clone from                                                                                                            
   --runtime, -r, -r        The Node.js runtime of your application, e.g. node06 or node08 or node010                                                           
   --clean, -c, -c          Do a full, clean stage. Cleans out all old application log files, removes cached node modules and does an 'npm install' from scratch
-  --id                     Some unique mBaaS identifier                                                                                                          [required]
+  --id                     Some unique identifier for your environment alias                                                                                     [required]
   --label                  A label describing your environment                                                                                                   [required]
   --targets                Comma separated list of mBaaS Target hostnames                                                                                        [required]
   --environment            The name for your environment this alias is targeting                                                                                 [required]
   --environmentAlias       An aliased name for your environment                                                                                                  [required]
   --environmentLabelAlias  Description of your environment alias                                                                                                 [required]
-  --url                    The hostname where your mBaaS exists                                                                                                  [required]
-  --servicekey             Service key to authenticate the mBaaS                                                                                                 [required]
-  --username               mBaaS Username                                                                                                                        [required]
-  --password               mBaaS Password                                                                                                                        [required]
 
 ## DESCRIPTION
 
-Update an mBaaS.
+Update an environments.
 
