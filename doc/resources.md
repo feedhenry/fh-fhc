@@ -1,4 +1,4 @@
-fhc-resources(1) -- List resources for a FeedHenry Applications
+fhc-resources(1) -- List resources for a FeedHenry Application
 ============================================
 
 ## SYNOPSIS

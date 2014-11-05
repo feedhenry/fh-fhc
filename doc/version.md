@@ -1,12 +1,15 @@
-fhc-version(1) -- FeedHenry Version Information
-===============================================
-
+fhc-version(1)
+==============
 ## SYNOPSIS
 
-    fhc version 
-    fhc version <FeedHenry-URL>
-    
+ fhc version
+
+## EXAMPLES
+
+  fhc version    
+
+
 ## DESCRIPTION
 
-This command will return the FeedHenry Version Information of the current FeedHenry Target (or the FeedHenry URL specified).
+Version info about the FeedHenry instance we're connected to
 

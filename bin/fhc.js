@@ -1,63 +1,22 @@
 #!/usr/bin/env node
 ;(function () { // wrapper in case we're in module_context mode
-var log = require("../lib/utils/log");
-log.waitForConfig();
-log.info("ok", "it worked if it ends with");
 
-var fs = require("fs");
 var path = require("path");
+var _ = require('underscore');
 var output = require("../lib/utils/output");
 var sys = require("../lib/utils/sys");
 var fhc = require("../lib/fhc");
-var ini = require("../lib/utils/ini");
 var errorHandler = require("../lib/utils/error-handler");
-var configDefs = require("../lib/utils/config-defs");
-var shorthands = configDefs.shorthands;
-var types = configDefs.types;
-var nopt = require("nopt");
 var util = require('util');
-var conf = nopt(types, shorthands);
-
-//log.verbose(process.argv, "cli");
-
-fhc.argv = conf.argv.remain;
-if (fhc.deref(fhc.argv[0])) fhc.command = fhc.argv.shift();
-else conf.usage = true;
-
-if (conf.version) {
-  console.log(fhc.version);
-  return;
-} else {
-  log("fhc@"+fhc.version, "using");
-}
-
-log("node@"+process.version, "using");
-
-// make sure that this version of node works with this version of fhc.
-var semver = require("semver");
-var nodeVer = process.version;
-var reqVer = fhc.nodeVersionRequired;
-
-if (reqVer && !semver.satisfies(nodeVer, reqVer)) {
-  return errorHandler(new Error("fhc doesn't work with node " + nodeVer + "\nRequired: node@" + reqVer), true);
-}
-
-process.on("uncaughtException", errorHandler);
-
-if (conf.usage && fhc.command !== "help") {
-  fhc.argv.unshift(fhc.command);
-  fhc.command = "help";
-}
+var conf = { _exit : true };
+var argv = process.argv.slice(2);
+argv = (argv.length === 0) ? ['help'] : argv;
 
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
-conf._exit = true;
-fhc.load(conf, function (err) {
+fhc.load(conf, function (err, conf) {
   if (err) return errorHandler(err);
-
-  var cmd = fhc.commands[fhc.command];
-
-  cmd(fhc.argv, function(err, data) {
+  var cmd = fhc.applyCommandFunction(argv, function(err, data){
     if (err) return errorHandler(err);
     if (data === undefined) {
       output.write("",errorHandler);
@@ -67,13 +26,17 @@ fhc.load(conf, function (err) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
-        if (!conf.json && conf.table && cmd.table) {
-          if (cmd.message) console.log(cmd.message);
-          console.log(cmd.table.toString());
+        if (!conf.json && conf.table && (cmd && cmd.table || (data && data._table))) {
+          if (cmd && cmd.message) console.log(cmd.message);
+          var table = cmd.table || data._table;
+          console.log(table.toString());
           output.write("", errorHandler);
-        }else {
+        }else{
+          if (data){
+            delete data._table;  
+          }
           // check if we have a nonjson message
-          if(!conf.json && cmd.message) {
+          if(!conf.json && cmd && cmd.message) {
             output.write(cmd.message, errorHandler);
           }else {
             if (typeof data === 'string') return output.write(data, errorHandler);
