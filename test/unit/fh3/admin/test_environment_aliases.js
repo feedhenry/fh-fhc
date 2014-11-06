@@ -2,11 +2,11 @@ var assert = require('assert');
 var nockEnvironmentAliases = require('test/fixtures/admin/fixture_environment_aliases');
 var genericCommand = require('genericCommand');
 var adminenvironmentaliases = {
-  create : genericCommand(require('cmd/fh3/admin/environments/aliases/create')),
-  read : genericCommand(require('cmd/fh3/admin/environments/aliases/read')),
-  update : genericCommand(require('cmd/fh3/admin/environments/aliases/update')),
-  delete : genericCommand(require('cmd/fh3/admin/environments/aliases/delete')),
-  list : genericCommand(require('cmd/fh3/admin/environments/aliases/list'))
+  create : genericCommand(require('cmd/fh3/admin/environments/alias/create')),
+  read : genericCommand(require('cmd/fh3/admin/environments/alias/read')),
+  update : genericCommand(require('cmd/fh3/admin/environments/alias/update')),
+  delete : genericCommand(require('cmd/fh3/admin/environments/alias/delete')),
+  list : genericCommand(require('cmd/fh3/admin/environments/alias/list'))
 };
 
 module.exports = {
