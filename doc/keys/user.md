@@ -1,14 +1,14 @@
-fhc-user-keys(1) -- Manage User API Keys
+fhc-keys-user(1) -- Manage User API Keys
 ========================================
 
 ## SYNOPSIS
 
-    fhc user-keys [list]
-    fhc user-keys add <label>
-    fhc user-keys read <label>
-    fhc user-keys update <old-label> <new-label>
-    fhc user-keys delete <label>
-    fhc user-keys target [<label>]
+    fhc keys user [list]
+    fhc keys user add <label>
+    fhc keys user read <label>
+    fhc keys user update <old-label> <new-label>
+    fhc keys user delete <label>
+    fhc keys user target [<label>]
     
 ## DESCRIPTION
 

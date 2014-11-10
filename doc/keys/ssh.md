@@ -1,11 +1,11 @@
-fhc-ssh-keys(1) -- Manage User SSH Keys
+fhc-keys-ssh(1) -- Manage User SSH Keys
 ======================================================
 
 ## SYNOPSIS
 
-    fhc ssh-keys [list]
-    fhc ssh-keys add <label> <key-file>
-    fhc ssh-keys delete <label>
+    fhc keys ssh [list]
+    fhc keys ssh add <label> <key-file>
+    fhc keys ssh delete <label>
     
 ## DESCRIPTION
 
@@ -25,4 +25,3 @@ ssh-keygen -t rsa -C "your_email@example.com"
 **Important:** Any SSH key added here will have push & pull access to the Git repositories of every Project/App you can see in the Projects tab.</div>
 
 **Important:** An SSH key can only be uploaded once. If you attempt to uploaded an already existing key, even in someone else's account, it will fail. This behaviour is essential for mapping keys to a Users account.
-

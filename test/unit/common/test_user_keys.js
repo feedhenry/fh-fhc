@@ -1,6 +1,6 @@
 var assert = require('assert');
 var fhc = require("fhc.js");
-var keys = require("cmd/common/user-keys.js");
+var keys = require("cmd/common/keys/user.js");
 var userKeysNock = require('test/fixtures/user/fixture_user_keys');
 var ini = require('utils/ini.js');
 module.exports = {
