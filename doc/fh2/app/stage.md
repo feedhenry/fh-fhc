@@ -1,10 +1,10 @@
-fhc-stage(1) -- Stage FeedHenry Applications
+fhc-app-stage(1) -- Stage FeedHenry Applications
 ============================================
 
 ## SYNOPSIS
 
-    fhc stage <appId> --env=<environment>
-    fhc stage <appId> [approver] [comment] --clean --env=<environment>
+    fhc app stage <appId> --env=<environment>
+    fhc app stage <appId> [approver] [comment] --clean --env=<environment>
 
 ## DESCRIPTION
 

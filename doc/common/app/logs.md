@@ -1,12 +1,12 @@
-fhc-logs(1) -- FeedHenry Application Log Files
+fhc-app-logs(1) -- FeedHenry Application Log Files
 ==============================================
 
 ## SYNOPSIS
 
-    fhc logs [get] <app-id> [log-name] --env=<environment>
-    fhc logs tail <app-id> [last-N-lines] [offset-from] [log-name] --env=<environment>
-	fhc logs list <app-id> --env=<environment>
-    fhc logs delete <app-id> <log-name> --env=<environment>
+    fhc app logs [get] <app-id> [log-name] --env=<environment>
+    fhc app logs tail <app-id> [last-N-lines] [offset-from] [log-name] --env=<environment>
+	fhc app logs list <app-id> --env=<environment>
+    fhc app logs delete <app-id> <log-name> --env=<environment>
 
 ## DESCRIPTION
 

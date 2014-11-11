@@ -1,8 +1,8 @@
-fhc-act(1) -- FeedHenry Actions
+fhc-app-act(1) -- FeedHenry Actions
 ===============================
 ## SYNOPSIS
 
-    fhc act <app-id> <server-function> <params> --env=<environment>
+    fhc app act <app-id> <server-function> <params> --env=<environment>
     
 ## DESCRIPTION
 
@@ -22,6 +22,3 @@ The parameters that the function expects. FeedHenry expects one JSON object to b
 
 ## EXAMPLES
     fhc act h2n0pg-qvar407mijmsvbapz helloWorld "{\"name\":\"bono\"}"
-
-
-

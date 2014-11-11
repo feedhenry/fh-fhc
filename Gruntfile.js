@@ -139,7 +139,7 @@ module.exports = function(grunt) {
     
     function writeDocFile(usage, cmdPath, cb){
       var splitPath = cmdPath.split(path.sep);
-      splitPath = splitPath.slice(1).join(path.sep);
+      splitPath = splitPath.join(path.sep);
       var writeTo = path.join(__dirname, 'doc', splitPath);
       writeTo = writeTo.replace(/\.js$/, '.md'); // Replace the JS extension with that of a markdown file
       
