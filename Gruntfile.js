@@ -3,10 +3,10 @@
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
   
-  var pkgName = 'fh-fhc';
   var distDir = './dist';
   var outputDir = './output';
   var pkgjs = require('./package.json');
+  var pkgName = pkgjs.name;
   var buildNumber = (process.env['BUILD_NUMBER'] || 'BUILD-NUMBER');
   var packageVersion = pkgjs.version.replace('BUILD-NUMBER', buildNumber);
   var releaseDir = pkgName + '-' + packageVersion;
