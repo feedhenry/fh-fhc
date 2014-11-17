@@ -1,4 +1,4 @@
-fhc-mas-appstore(1) -- View your Mobile App Store
+fhc-admin-auditlog(1) -- View your App Store Audit Logs
 ==================================================
 
 ## SYNOPSIS
