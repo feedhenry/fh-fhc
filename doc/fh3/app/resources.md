@@ -11,7 +11,8 @@ fhc-resources(1)
 
 ## OPTIONS
 
-  --env  The cloud environment your app is running in                                 [required]
+  --app, -a  Unique 24 character GUID of the cloud app you want to see resource info for  [required]
+  --env      The cloud environment your app is running in                                 [required]
 
 ## DESCRIPTION
 

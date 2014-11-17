@@ -12,6 +12,8 @@ fhc-list(1)
 
 ## OPTIONS
 
+  --project, -p  Unique 24 character GUID of the project you want to list apps in  [required]
+
 ## DESCRIPTION
 
 Lists apps under a project.

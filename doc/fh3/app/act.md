@@ -11,6 +11,7 @@ fhc-act(1)
 
 ## OPTIONS
 
+  --app, -a  Unique 24 character GUID of the app you want to do a request on  [required]
   --env, -e  Environment within which the request should be performed         [required]
   --data     Request body to send thru                                        [required]
   --fn       Cloud function name to call                                      [required]

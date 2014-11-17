@@ -11,6 +11,9 @@ fhc-endpoints(1)
 
 ## OPTIONS
 
+  --app, -a  Unieque 24 character GUID of your application                       [required]
+  --env, -e  The lifecycle environment your application is running in, e.g. dev  [required]
+
 ## DESCRIPTION
 
 Provides the endpoints for the specified app in the specified environment.
