@@ -12,10 +12,11 @@ fhc-create(1)
 
 ## OPTIONS
 
-  --title, -t  A title for your app                                                            [required]
-  --template   Template of your app - e.g. hello_world_mbaas_instance. See fhc templates apps  [default: "hello_world_mbaas_instance"]
-  --repo       Repository to clone your app from                                             
-  --branch     Git branch to clone from                                                      
+  --project, -p  Unique 24 character GUID of the project you want this app to be created in      [required]
+  --title, -t    A title for your app                                                            [required]
+  --template     Template of your app - e.g. hello_world_mbaas_instance. See fhc templates apps  [default: "hello_world_mbaas_instance"]
+  --repo         Repository to clone your app from                                             
+  --branch       Git branch to clone from                                                      
 
 ## DESCRIPTION
 

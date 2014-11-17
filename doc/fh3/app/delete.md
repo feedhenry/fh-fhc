@@ -11,6 +11,9 @@ fhc-delete(1)
 
 ## OPTIONS
 
+  --project, -p  Unique 24 character GUID of the project your app lives in  [required]
+  --app, -a      Unique 24 character GUID of the app you want to delete     [required]
+
 ## DESCRIPTION
 
 Deletes an app under a project.

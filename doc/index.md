@@ -21,8 +21,8 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/eventalert.html">eventalert</a>
 	<a class="col-md-3" href="fhc/files.html">files</a>
 	<a class="col-md-3" href="fhc/forms.html">forms</a>
-	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/git.html">git</a>
+	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/initlocal.html">initlocal</a>
 	<a class="col-md-3" href="fhc/local.html">local</a>
 	<a class="col-md-3" href="fhc/native.html">native</a>
