@@ -13,16 +13,16 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/admin-storeitems.html">admin-storeitems</a>
 	<a class="col-md-3" href="fhc/admin-users.html">admin-users</a>
 	<a class="col-md-3" href="fhc/apps.html">apps</a>
-	<a class="col-md-3" href="fhc/build.html">build</a>
 	<a class="col-md-3" href="fhc/call.html">call</a>
+	<a class="col-md-3" href="fhc/build.html">build</a>
 	<a class="col-md-3" href="fhc/configuration.html">configuration</a>
 	<a class="col-md-3" href="fhc/deploy-target.html">deploy-target</a>
 	<a class="col-md-3" href="fhc/env.html">env</a>
 	<a class="col-md-3" href="fhc/eventalert.html">eventalert</a>
 	<a class="col-md-3" href="fhc/files.html">files</a>
 	<a class="col-md-3" href="fhc/forms.html">forms</a>
-	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/git.html">git</a>
+	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/initlocal.html">initlocal</a>
 	<a class="col-md-3" href="fhc/local.html">local</a>
 	<a class="col-md-3" href="fhc/native.html">native</a>
@@ -88,6 +88,16 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 			<a class="col-md-5" href="fhc/admin/mbaas/list.html">list</a>
 			<a class="col-md-5" href="fhc/admin/mbaas/read.html">read</a>
 			<a class="col-md-5" href="fhc/admin/mbaas/update.html">update</a>
+		</div>
+		<div class="col-md-4">
+			<h3>teams</h3>
+			<a class="col-md-5" href="fhc/admin/teams/adduser.html">adduser</a>
+			<a class="col-md-5" href="fhc/admin/teams/create.html">create</a>
+			<a class="col-md-5" href="fhc/admin/teams/delete.html">delete</a>
+			<a class="col-md-5" href="fhc/admin/teams/list.html">list</a>
+			<a class="col-md-5" href="fhc/admin/teams/read.html">read</a>
+			<a class="col-md-5" href="fhc/admin/teams/removeuser.html">removeuser</a>
+			<a class="col-md-5" href="fhc/admin/teams/userteams.html">userteams</a>
 		</div>
 	</div>
 	<div class="col-md-12">
