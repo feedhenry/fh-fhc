@@ -11,6 +11,8 @@ fhc-create(1)
 
 ## OPTIONS
 
+  --team  a .json filename for your team  [required]
+
 ## DESCRIPTION
 
 Creates a team.

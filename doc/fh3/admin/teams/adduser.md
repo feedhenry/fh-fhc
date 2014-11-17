@@ -11,6 +11,9 @@ fhc-adduser(1)
 
 ## OPTIONS
 
+  --team  A unique team id  [required]
+  --user  A unique user id  [required]
+
 ## DESCRIPTION
 
 Add a user to a specified team.

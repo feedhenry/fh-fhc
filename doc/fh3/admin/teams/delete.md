@@ -6,10 +6,12 @@ fhc-delete(1)
 
 ## EXAMPLES
 
-  fhc admin teams delete --id=<team id>    Delete an environment by id
+  fhc admin teams delete --id=1a2b    Deletes team with id 1a2b
 
 
 ## OPTIONS
+
+  --id  Some unique identifier for your environment  [required]
 
 ## DESCRIPTION
 

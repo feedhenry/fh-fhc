@@ -13,8 +13,8 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/admin-storeitems.html">admin-storeitems</a>
 	<a class="col-md-3" href="fhc/admin-users.html">admin-users</a>
 	<a class="col-md-3" href="fhc/apps.html">apps</a>
-	<a class="col-md-3" href="fhc/call.html">call</a>
 	<a class="col-md-3" href="fhc/build.html">build</a>
+	<a class="col-md-3" href="fhc/call.html">call</a>
 	<a class="col-md-3" href="fhc/configuration.html">configuration</a>
 	<a class="col-md-3" href="fhc/deploy-target.html">deploy-target</a>
 	<a class="col-md-3" href="fhc/env.html">env</a>
@@ -43,13 +43,13 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/help.html">help</a>
 	<a class="col-md-3" href="fhc/login.html">login</a>
 	<a class="col-md-3" href="fhc/logout.html">logout</a>
-	<a class="col-md-3" href="fhc/target.html">target</a>
 	<a class="col-md-3" href="fhc/targets.html">targets</a>
+	<a class="col-md-3" href="fhc/target.html">target</a>
 	<div class="col-md-12">
 		<h3>app</h3>
 		<a class="col-md-3" href="fhc/app/act.html">act</a>
-		<a class="col-md-3" href="fhc/app/cloud.html">cloud</a>
 		<a class="col-md-3" href="fhc/app/create.html">create</a>
+		<a class="col-md-3" href="fhc/app/cloud.html">cloud</a>
 		<a class="col-md-3" href="fhc/app/delete.html">delete</a>
 		<a class="col-md-3" href="fhc/app/endpoints.html">endpoints</a>
 		<a class="col-md-3" href="fhc/app/list.html">list</a>

@@ -2,7 +2,7 @@ fhc-read(1)
 ===========
 ## SYNOPSIS
 
- fhc admin teams read [--0=<0>] --id=<id>
+ fhc admin teams read --id=<id>
 
 ## EXAMPLES
 
@@ -11,7 +11,7 @@ fhc-read(1)
 
 ## OPTIONS
 
-  -0, --id  id                                    
+  --id  A unique identifier for an environment  [required]
 
 ## DESCRIPTION
 

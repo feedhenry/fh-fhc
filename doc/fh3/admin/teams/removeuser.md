@@ -11,6 +11,9 @@ fhc-removeuser(1)
 
 ## OPTIONS
 
+  --team  A unique team id  [required]
+  --user  A unique user id  [required]
+
 ## DESCRIPTION
 
 Remove a user to a specified team.

@@ -11,6 +11,8 @@ fhc-userteams(1)
 
 ## OPTIONS
 
+  --user, -u  A unique user GUID  [required]
+
 ## DESCRIPTION
 
 Lists teams.
