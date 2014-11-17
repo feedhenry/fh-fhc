@@ -21,8 +21,8 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/eventalert.html">eventalert</a>
 	<a class="col-md-3" href="fhc/files.html">files</a>
 	<a class="col-md-3" href="fhc/forms.html">forms</a>
-	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/git.html">git</a>
+	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/initlocal.html">initlocal</a>
 	<a class="col-md-3" href="fhc/local.html">local</a>
 	<a class="col-md-3" href="fhc/native.html">native</a>
@@ -43,13 +43,13 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/help.html">help</a>
 	<a class="col-md-3" href="fhc/login.html">login</a>
 	<a class="col-md-3" href="fhc/logout.html">logout</a>
-	<a class="col-md-3" href="fhc/target.html">target</a>
 	<a class="col-md-3" href="fhc/targets.html">targets</a>
+	<a class="col-md-3" href="fhc/target.html">target</a>
 	<div class="col-md-12">
 		<h3>app</h3>
 		<a class="col-md-3" href="fhc/app/act.html">act</a>
-		<a class="col-md-3" href="fhc/app/cloud.html">cloud</a>
 		<a class="col-md-3" href="fhc/app/create.html">create</a>
+		<a class="col-md-3" href="fhc/app/cloud.html">cloud</a>
 		<a class="col-md-3" href="fhc/app/delete.html">delete</a>
 		<a class="col-md-3" href="fhc/app/endpoints.html">endpoints</a>
 		<a class="col-md-3" href="fhc/app/list.html">list</a>
@@ -88,6 +88,16 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 			<a class="col-md-5" href="fhc/admin/mbaas/list.html">list</a>
 			<a class="col-md-5" href="fhc/admin/mbaas/read.html">read</a>
 			<a class="col-md-5" href="fhc/admin/mbaas/update.html">update</a>
+		</div>
+		<div class="col-md-4">
+			<h3>teams</h3>
+			<a class="col-md-5" href="fhc/admin/teams/adduser.html">adduser</a>
+			<a class="col-md-5" href="fhc/admin/teams/create.html">create</a>
+			<a class="col-md-5" href="fhc/admin/teams/delete.html">delete</a>
+			<a class="col-md-5" href="fhc/admin/teams/list.html">list</a>
+			<a class="col-md-5" href="fhc/admin/teams/read.html">read</a>
+			<a class="col-md-5" href="fhc/admin/teams/removeuser.html">removeuser</a>
+			<a class="col-md-5" href="fhc/admin/teams/userteams.html">userteams</a>
 		</div>
 	</div>
 	<div class="col-md-12">
