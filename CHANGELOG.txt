@@ -1,3 +1,8 @@
+Release 1.0.1 - 2014-11-17 - IR241 - Cian Clarke
+------------------------------------------------------
+* Support for admin teams commands
+* Fixes numeric alias'd yargs parsing
+
 Release 1.0.0 - 2014-10-07 - IR238 - Cian Clarke
 ------------------------------------------------------
 * 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
