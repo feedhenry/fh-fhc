@@ -9,12 +9,31 @@ var fhc = require("../lib/fhc");
 var errorHandler = require("../lib/utils/error-handler");
 var util = require('util');
 var conf = { _exit : true };
+var tabtab = require('tabtab');
 var argv = process.argv.slice(2);
 argv = (argv.length === 0) ? ['help'] : argv;
+
+var _completion = function(){
+  tabtab.complete('fhc', function(err, data) {
+    if (err || !data){
+      return;
+    }
+    /*
+    // TODO: we can extend tab completion here as needed - add our flags like this:
+    if(/^--\w?/.test(data.last)) return tabtab.log(['help', 'version'], data, '--');
+    ..even out subcommands can go here
+    */
+    
+    var cmdList = _.filter(_.keys(fhc), function(key){ return key[0] !== '_'; });
+    tabtab.log(cmdList, data);
+  });
+}
 
 // now actually fire up fhc and run the command.
 // this is how to use fhc programmatically:
 fhc.load(conf, function (err, conf) {
+  _completion();
+  
   if (err) return errorHandler(err);
   var cmd = fhc.applyCommandFunction(argv, function(err, data){
     if (err) return errorHandler(err);
