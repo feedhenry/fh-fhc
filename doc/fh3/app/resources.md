@@ -6,7 +6,7 @@ fhc-resources(1)
 
 ## EXAMPLES
 
-  fhc resources --app=1a --env=dev    Shows the resources of the app with id 1a in the dev environment
+  fhc app resources --app=1a --env=dev    Shows the resources of the app with id 1a in the dev environment
 
 
 ## OPTIONS
