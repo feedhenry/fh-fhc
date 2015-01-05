@@ -16,7 +16,7 @@
   },
   "main": "./lib/fhc.js",
   "bin": {
-    "fhc": "./bin/fhc.js"
+    "fh": "./bin/fh.js"
   },
   "dependencies": {
     "async": "0.2.6",
