@@ -1,3 +1,7 @@
+Release 1.0.6 - 2015-01-08 - IR244 - David Martin
+-------------------------------------------------------
+* 8593 - Split `fhc app hosts` command into fh2 & fh3 version, where fh3 version requires an environment
+
 Release 1.0.5 - 2014-12-01 - IR242 - Cian Clarke
 -------------------------------------------------------
 * Bugfix of argv handling in some commands
