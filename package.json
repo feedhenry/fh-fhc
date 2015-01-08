@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc-beta",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "1.0.5-BUILD-NUMBER",
+  "version": "1.0.6-BUILD-NUMBER",
   "keywords": [
     "feedhenry"
   ],
@@ -10,7 +10,6 @@
   "author": "FeedHenry<npm@feedhenry.com>",
   "directories": {
     "doc": "./doc",
-    "man": "./man1",
     "lib": "./lib",
     "bin": "./bin"
   },
