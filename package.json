@@ -10,7 +10,6 @@
   "author": "FeedHenry<npm@feedhenry.com>",
   "directories": {
     "doc": "./doc",
-    "man": "./man1",
     "lib": "./lib",
     "bin": "./bin"
   },
