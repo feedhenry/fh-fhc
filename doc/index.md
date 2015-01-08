@@ -56,10 +56,9 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 		<a class="col-md-3" href="fhc/app/stage.html">stage</a>
 		<a class="col-md-3" href="fhc/app/start.html">start</a>
 		<a class="col-md-3" href="fhc/app/stop.html">stop</a>
+		<a class="col-md-3" href="fhc/app/suspend.html">suspend</a>
 		<a class="col-md-3" href="fhc/app/logs.html">logs</a>
 		<a class="col-md-3" href="fhc/app/update.html">update</a>
-		<a class="col-md-3" href="fhc/app/embed.html">embed</a>
-		<a class="col-md-3" href="fhc/app/restart.html">restart</a>
 	</div>
 	<div class="col-md-12">
 		<h3>admin</h3>
