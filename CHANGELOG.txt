@@ -1,3 +1,7 @@
+Release 1.0.8 - 2015-01-09 - IR244 - David Martin
+-------------------------------------------------------
+* 8591 - Fixed issue with auto download of App builds
+
 Release 1.0.7 - 2015-01-09 - IR244 - David Martin
 -------------------------------------------------------
 * 8600 - Using fh3 hosts endpoint for fh3 ping command
