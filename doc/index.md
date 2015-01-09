@@ -1,9 +1,10 @@
 <h1>FHC - FeedHenry Command Line Interface API</h1>
-<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version 1.0.6
+<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version 1.0.7
 of FHC. To ensure you get the most relevant help for the version of FHC you have installed, the <code>fhc help</code> command can be used.
 See <a href="https://github.com/feedhenry/fh-fhc#usage">https://github.com/feedhenry/fh-fhc#usage</a> for usage.
 To find the version of fhc you have installed, use the <code>fhc version</code> command</div>
 	<h3>fhc</h3>
+	<a class="col-md-3" href="fhc/ping.html">ping</a>
 	<a class="col-md-3" href="fhc/projects.html">projects</a>
 	<a class="col-md-3" href="fhc/admin-appstore.html">admin-appstore</a>
 	<a class="col-md-3" href="fhc/admin-auditlog.html">admin-auditlog</a>
@@ -27,7 +28,6 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/local.html">local</a>
 	<a class="col-md-3" href="fhc/notifications.html">notifications</a>
 	<a class="col-md-3" href="fhc/ota.html">ota</a>
-	<a class="col-md-3" href="fhc/ping.html">ping</a>
 	<a class="col-md-3" href="fhc/preview.html">preview</a>
 	<a class="col-md-3" href="fhc/resources.html">resources</a>
 	<a class="col-md-3" href="fhc/secureendpoints.html">secureendpoints</a>
