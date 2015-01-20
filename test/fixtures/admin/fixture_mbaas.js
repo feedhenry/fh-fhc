@@ -19,6 +19,7 @@ module.exports = nock('https://apps.feedhenry.com')
   return '*';
 })
 .post('/api/v2/mbaases', '*')
+.times(2)
 .reply(200, envReplies.crud)
 .get('/api/v2/mbaases/1a2b', '*')
 .reply(200, envReplies.crud)
