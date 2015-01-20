@@ -1,5 +1,5 @@
 <h1>FHC - FeedHenry Command Line Interface API</h1>
-<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version 1.0.7
+<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version 1.0.8
 of FHC. To ensure you get the most relevant help for the version of FHC you have installed, the <code>fhc help</code> command can be used.
 See <a href="https://github.com/feedhenry/fh-fhc#usage">https://github.com/feedhenry/fh-fhc#usage</a> for usage.
 To find the version of fhc you have installed, use the <code>fhc version</code> command</div>
@@ -17,7 +17,6 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/build.html">build</a>
 	<a class="col-md-3" href="fhc/call.html">call</a>
 	<a class="col-md-3" href="fhc/configuration.html">configuration</a>
-	<a class="col-md-3" href="fhc/deploy-target.html">deploy-target</a>
 	<a class="col-md-3" href="fhc/env.html">env</a>
 	<a class="col-md-3" href="fhc/eventalert.html">eventalert</a>
 	<a class="col-md-3" href="fhc/files.html">files</a>
@@ -26,8 +25,8 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 	<a class="col-md-3" href="fhc/import.html">import</a>
 	<a class="col-md-3" href="fhc/initlocal.html">initlocal</a>
 	<a class="col-md-3" href="fhc/local.html">local</a>
-	<a class="col-md-3" href="fhc/notifications.html">notifications</a>
 	<a class="col-md-3" href="fhc/ota.html">ota</a>
+	<a class="col-md-3" href="fhc/notifications.html">notifications</a>
 	<a class="col-md-3" href="fhc/preview.html">preview</a>
 	<a class="col-md-3" href="fhc/resources.html">resources</a>
 	<a class="col-md-3" href="fhc/secureendpoints.html">secureendpoints</a>
@@ -49,9 +48,9 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 		<a class="col-md-3" href="fhc/app/create.html">create</a>
 		<a class="col-md-3" href="fhc/app/delete.html">delete</a>
 		<a class="col-md-3" href="fhc/app/endpoints.html">endpoints</a>
-		<a class="col-md-3" href="fhc/app/hosts.html">hosts</a>
 		<a class="col-md-3" href="fhc/app/list.html">list</a>
 		<a class="col-md-3" href="fhc/app/read.html">read</a>
+		<a class="col-md-3" href="fhc/app/hosts.html">hosts</a>
 		<a class="col-md-3" href="fhc/app/resources.html">resources</a>
 		<a class="col-md-3" href="fhc/app/stage.html">stage</a>
 		<a class="col-md-3" href="fhc/app/start.html">start</a>
@@ -72,8 +71,8 @@ To find the version of fhc you have installed, use the <code>fhc version</code> 
 			<div class="col-md-3">
 				<h3>alias</h3>
 				<a class="col-md-6" href="fhc/admin/environments/alias/create.html">create</a>
-				<a class="col-md-6" href="fhc/admin/environments/alias/delete.html">delete</a>
 				<a class="col-md-6" href="fhc/admin/environments/alias/list.html">list</a>
+				<a class="col-md-6" href="fhc/admin/environments/alias/delete.html">delete</a>
 				<a class="col-md-6" href="fhc/admin/environments/alias/read.html">read</a>
 				<a class="col-md-6" href="fhc/admin/environments/alias/update.html">update</a>
 			</div>
