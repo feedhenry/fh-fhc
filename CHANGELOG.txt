@@ -1,6 +1,6 @@
-Release 1.0.0 - 2014-10-07 - IR238 - Cian Clarke
+Release 1.0.0 - 2015-01-25 - IR245 - Cian Clarke
 ------------------------------------------------------
-* 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
+* 8178 - Added support for life cycle management
 
 Release 0.31.2 - 2014-08-222 - IR234 - Damian Beresford
 -------------------------------------------------------
