@@ -95,6 +95,7 @@ module.exports = function(grunt) {
           'cp -r ./doc ' + outputDir + '/' + releaseDir,
           'cp -r ./bin ' + outputDir + '/' + releaseDir,
           'cp ./package.json ' +  outputDir + '/' + releaseDir,
+          'cp ./README.md ' +  outputDir + '/' + releaseDir,
           'echo ' +  packageVersion + ' > ' + outputDir + '/' + releaseDir + '/VERSION.txt',
           'sed -i -e s/BUILD-NUMBER/' + buildNumber + '/ ' + outputDir + '/' + releaseDir + '/package.json',
           'tar -czf ' + distDir + '/' + releaseFile + ' -C ' + outputDir + ' ' + releaseDir
