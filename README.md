@@ -35,6 +35,9 @@ To create an app from a git repository use:
 `fhc app create --project=SomeProjectId --title=WelcomeApp git://github.com/feedhenry-templates/welcome-app.git`
 
 ### As a Node.js Module
+You can also use `fh-fhc` as a Node.js module in your scripts. This is useful for scripting automated tests, mobile app client builds and cloud deploys. 
+First, install &  add it to your project dependencies by doing `npm install --save fh-fhc` from your project root.  
+Then, you can require it in your code like so:
 
     var fhc = require('./lib/fhc');
     fhc.load(function(err){
@@ -49,6 +52,17 @@ To create an app from a git repository use:
         console.log(projects);
       });
     });
+    
+Some commands require params to be passed in - these are typically passed like so:
+    
+    fhc.app.create({ title : 'Some title', project : 'someProjectId'}, function(){
+    });
+    
+Older fhc commands still pass arguments in an ordered array, as below. The environment is still specified outside the array. 
+
+    fhc.app.logs({_ : ['projectId', 'appId'], env : 'dev' }, function(){
+    });
+    
     
 ## Extending
 Version 1.0 of `fh-fhc` updates the structure of commands:
