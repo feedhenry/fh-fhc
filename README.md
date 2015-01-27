@@ -17,10 +17,10 @@ Finally, install FHC bash completion: `fhc completion >> ~/.bashrc` (or ~/.zshrc
 ## Usage
 
 ### From the Command Line
+To see the list of commands available, just run `fhc`.   
+See `fhc help` for general help, or `fhc help <someCommand>` for help on a specific command.
 
-See `fhc help` for general help, or `fhc help <command>` for help on a specific command.
-
-To get started, set the FeedHenry target and then login:
+To get started with fhc, set the FeedHenry target and then login:
 
 `$ fhc target https://apps.feedhenry.com`
 
@@ -32,7 +32,7 @@ To list your projects, use:
 
 To create an app from a git repository use:
 
-`fhc apps create StoreFinder git://github.com/feedhenry/Store-Finder.git`
+`fhc app create --project=SomeProjectId --title=WelcomeApp git://github.com/feedhenry-templates/welcome-app.git`
 
 ### As a Node.js Module
 
@@ -52,13 +52,13 @@ To create an app from a git repository use:
     
 ## Extending
 Version 1.0 of `fh-fhc` updates the structure of commands:
-  
-  lib
-    cmd # all commands go here
-      common # stuff which applies to both versions of feedhenry
-      fh2    # feedhenry 2-specific commands go here (e.g. `account`)
-      fh3    # feedhenry 3 specific commands go here (e.g. `project`)
-    internal # internal piping goes here
+    
+    lib
+      cmd # all commands go here
+        common # stuff which applies to both versions of feedhenry
+        fh2    # feedhenry 2-specific commands go here (e.g. `account`)
+        fh3    # feedhenry 3 specific commands go here (e.g. `project`)
+      internal # internal piping goes here
       
 The `common`, `fh2` and `fh3` directory structure doesn't get exposed to the user, but everything underneath does - meaning we can have a command `lib/cmd/common/fooGroup/barCommand.js`, another `lib/cmd/common/fh3/fooGroup/anotherCommand.js`, and be able to run both `fhc fooGroup barCommand` and `fhc fooGroup anotherCommand`.  
 Internal commands in the internal directory are hidden from help output, but are still call-able. 
@@ -80,4 +80,4 @@ Tests are turbo'd, nock for mocks, coverage is at least a little better than bef
     
 ## Tests
 
-  grunt test
+  `grunt test`
