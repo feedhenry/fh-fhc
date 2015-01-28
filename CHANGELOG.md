@@ -1,44 +1,20 @@
-Release 1.0.8 - 2015-01-09 - IR244 - David Martin
--------------------------------------------------------
-* 8591 - Fixed issue with auto download of App builds
-
-Release 1.0.7 - 2015-01-09 - IR244 - David Martin
--------------------------------------------------------
-* 8600 - Using fh3 hosts endpoint for fh3 ping command
-* 8614 - Added user-agent to header to bypass CSRF
-* Fixed hardcoded hosts cmd domain
-
-Release 1.0.6 - 2015-01-08 - IR244 - David Martin
--------------------------------------------------------
-* 8593 - Split `fhc app hosts` command into fh2 & fh3 version, where fh3 version requires an environment
-
-Release 1.0.5 - 2014-12-01 - IR242 - Cian Clarke
--------------------------------------------------------
-* Bugfix of argv handling in some commands
-
-Release 1.0.4 - 2014-11-25 - IR241 - Cian Clarke
--------------------------------------------------------
-* Fix fhcrc init error handling
-
-Release 1.0.3 - 2014-11-25 - IR241 - Cian Clarke
--------------------------------------------------------
-* Fix blank canvas login experience. 
-* Fix user agent string in some requests
-
-Release 1.0.2 - 2014-11-18 - IR241 - Cian Clarke & Dave Martin
--------------------------------------------------------
+Release 1.0.0 - 2014-10-07 - IR238 -> IR244 - Cian Clarke & David Martin
+------------------------------------------------------
+* 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
+* Support for admin teams commands
+* Fixes numeric alias'd yargs parsing
 * 8269 - Added cacheKey polling for Project create
 * Fix fh2 regressions
 * Updated fhc completion support
-
-Release 1.0.1 - 2014-11-17 - IR241 - Cian Clarke
-------------------------------------------------------
-* Support for admin teams commands
-* Fixes numeric alias'd yargs parsing
-
-Release 1.0.0 - 2014-10-07 - IR238 - Cian Clarke
-------------------------------------------------------
-* 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
+* Fix blank canvas login experience. 
+* Fix user agent string in some requests
+* Fix fhcrc init error handling
+* Bugfix of argv handling in some commands
+* 8593 - Split `fhc app hosts` command into fh2 & fh3 version, where fh3 version requires an environment
+* 8600 - Using fh3 hosts endpoint for fh3 ping command
+* 8614 - Added user-agent to header to bypass CSRF
+* Fixed hardcoded hosts cmd domain
+* 8591 - Fixed issue with auto download of App builds
 
 Release 0.31.3 - 2014-10-24 - IR239 - Niall Donnelly
 -------------------------------------------------------
