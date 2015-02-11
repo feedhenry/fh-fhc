@@ -3,6 +3,13 @@ Release 1.0.0 - 2014-10-07 - IR238 -> IR244 - Cian Clarke & David Martin
 * 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
 * Support for admin teams commands
 * Fixes numeric alias'd yargs parsing
+
+Release 0.31.5 - 2015-02-11 - IR246 - Martin Murphy
+-------------------------------------------------------
+* FHCLI-1 - Fix display of git url in apps list
+
+Release 0.31.4 - 2014-11-18 - IR241 - David Martin
+-------------------------------------------------------
 * 8269 - Added cacheKey polling for Project create
 * Fix fh2 regressions
 * Updated fhc completion support
