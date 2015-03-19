@@ -45,8 +45,7 @@ fhc.load(conf, function (err, conf) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
-        console.log(conf);
-        console.log(cmd.table);
+
         if (!conf.json && conf.table && (cmd && cmd.table || (data && data._table))) {
           if (cmd && cmd.message) console.log(cmd.message);
           var table = cmd.table || data._table;
