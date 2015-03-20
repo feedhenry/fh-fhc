@@ -1,8 +1,10 @@
-Release 1.0.0 - 2014-10-07 - IR238 -> IR244 - Cian Clarke & David Martin
+Release 1.0.0 - 2015-03-20 - Cian Clarke
 ------------------------------------------------------
 * 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
 * Support for admin teams commands
 * Fixes numeric alias'd yargs parsing
+* Refactor substantial portion of fhc core
+* Better docs & support for use as a module
 
 Release 0.31.5 - 2015-02-11 - IR246 - Martin Murphy
 -------------------------------------------------------
