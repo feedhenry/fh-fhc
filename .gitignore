@@ -1,3 +1,4 @@
+npm-debug.log
 lib-cov/
 dist/
 output/
@@ -13,3 +14,7 @@ TAGS
 .DS_Store
 ._.DS_Store
 dfc-debug.log
+coverage/
+*.o
+cov-*
+plato

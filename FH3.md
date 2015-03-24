@@ -72,25 +72,25 @@ where <service-id> is a service id
 where <type> is a valid service type [default]
 ```
 
-## fhc ssh-keys
+## fhc keys ssh
 
 ```
-$ fhc ssh-keys --help
-fhc sshkeys [list]
-fhc sshkeys add <label> <key-file>
-fhc sshkeys delete <label>
+$ fhc keys ssh --help
+fhc keys ssh [list]
+fhc keys ssh add <label> <key-file>
+fhc keys ssh delete <label>
 ```
 
-## fhc user-keys
+## fhc keys user
 
 ```
-$ fhc user-keys --help
-fhc user-keys [list]
-fhc user-keys add <label>
-fhc user-keys read <label>
-fhc user-keys update <old-label> <new-label>
-fhc user-keys delete <label>
-fhc user-keys target [<label>]
+$ fhc keys user --help
+fhc keys user [list]
+fhc keys user add <label>
+fhc keys user read <label>
+fhc keys user update <old-label> <new-label>
+fhc keys user delete <label>
+fhc keys user target [<label>]
 ```
 
 ## fhc clone
