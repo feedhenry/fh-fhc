@@ -1,0 +1,17 @@
+{
+  "updatedBy": "testing-admin@example.com",
+  "name": "sdsd",
+  "description": "",
+  "subscribers": [],
+  "pageRules": [],
+  "fieldRules": [],
+  "pages": [
+    {
+      "fields": []
+    }
+  ],
+  "lastUpdated": "2014-04-29T11:46:20.489Z",
+  "dateCreated": "2014-04-29T11:46:20.489Z",
+  "status": "ok",
+  "statusCode": 200
+}
