@@ -21,6 +21,7 @@
     "async": "0.2.6",
     "cheerio": "0.10.8",
     "cli-table": "0.0.2",
+    "cli-tree": "0.0.1",
     "colors": "0.6.0-1",
     "findit": "2.0.0",
     "fstream": "0.1.22",
