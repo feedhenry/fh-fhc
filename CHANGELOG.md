@@ -1,3 +1,7 @@
+Release 1.0.1 - 2015-04-09 - Gerard Ryan
+------------------------------------------------------
+* Add npm-shrinkwrap.json file to lock dependency versions
+
 Release 1.0.0 - 2015-03-20 - Cian Clarke
 ------------------------------------------------------
 * 7945 - Deprecate `--live` environment flag in favor of a mandetory `--env=<env>` flag.
@@ -15,7 +19,7 @@ Release 0.31.4 - 2014-11-18 - IR241 - David Martin
 * 8269 - Added cacheKey polling for Project create
 * Fix fh2 regressions
 * Updated fhc completion support
-* Fix blank canvas login experience. 
+* Fix blank canvas login experience.
 * Fix user agent string in some requests
 * Fix fhcrc init error handling
 * Bugfix of argv handling in some commands
