@@ -1,6 +1,6 @@
-Release 1.0.1 - 2015-04-09 - Gerard Ryan
+Release 1.0.2 - 2015-04-21 - Gerard Ryan
 ------------------------------------------------------
-* Add npm-shrinkwrap.json file to lock dependency versions
+* Fix typo in new version available message
 
 Release 1.0.0 - 2015-03-20 - Cian Clarke
 ------------------------------------------------------
