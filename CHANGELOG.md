@@ -1,6 +1,7 @@
 Release 1.0.2 - 2015-04-21 - Gerard Ryan
 ------------------------------------------------------
 * Fix typo in new version available message
+* Add shrinkwrap file to tarball
 
 Release 1.0.0 - 2015-03-20 - Cian Clarke
 ------------------------------------------------------
