@@ -23,136 +23,35 @@ module.exports = function(grunt) {
   // Project Configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    jshint: {
-      all: ['lib/*.js', 'lib/cmd/fh3/**/*.js'],
-      options: {
-        jshintrc: true
-      }
-    },
-    shell: {
-      unit: {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        command: 'env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/**/**/**/*'
-      },
-      accept: {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        // some database trouncing going on here at the moment, tests need to run in a particular order, these all need a refactor
-        command:
-          'env NODE_PATH=.:./lib ./node_modules/.bin/turbo test/accept/*'
-      },
-      coverage_unit: {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        command: [
-          'rm -rf coverage cov-unit',
-          'env NODE_PATH=.:./lib ./node_modules/.bin/istanbul cover --dir cov-unit ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*',
-          './node_modules/.bin/istanbul report',
-          'echo "See html coverage at: `pwd`/coverage/lcov-report/index.html"'
-        ].join('&&')
-      },
-      coverage_accept: {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        command: [
-          'rm -rf coverage cov-accept',
-          'env NODE_PATH=.:./lib ./node_modules/.bin/istanbul cover --dir cov-accept ./node_modules/.bin/turbo test/accept/*',
-          './node_modules/.bin/istanbul report',
-          './node_modules/.bin/istanbul report --report cobertura',
-          'echo "See html coverage at: `pwd`/coverage/lcov-report/index.html"'
-        ].join('&&')
-      },
-      clean : {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        command: 'rm -rf ' + distDir + ' ' + outputDir + ' ' + releaseDir
-      },
-      dist : {
-        options: {
-          stdout: true,
-          stderr: true,
-          failOnError: true
-        },
-        command: [
-          'mkdir -p ' + distDir + ' ' + outputDir + '/' + releaseDir,
-          'cp -r ./lib ' + outputDir + '/' + releaseDir,
-          'cp -r ./doc ' + outputDir + '/' + releaseDir,
-          'cp -r ./bin ' + outputDir + '/' + releaseDir,
-          'cp ./package.json ' +  outputDir + '/' + releaseDir,
-          'cp ./README.md ' +  outputDir + '/' + releaseDir,
-          'cp ./npm-shrinkwrap.json ' + outputDir + '/' + releaseDir,
-          'echo ' +  packageVersion + ' > ' + outputDir + '/' + releaseDir + '/VERSION.txt',
-          'sed -i -e s/BUILD-NUMBER/' + buildNumber + '/ ' + outputDir + '/' + releaseDir + '/package.json',
-          'tar -czf ' + distDir + '/' + releaseFile + ' -C ' + outputDir + ' ' + releaseDir
-        ].join('&&')
-      },
-      docsToDoxy : {
-        options : {
-          stdout: true,
-          stderr: true,
-          failOnError: false
-        },
-        command : [
-          'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',
-          'cp -rf doc/common/ ../fh-doxy/public/dev_tools/fhc/',
-          'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
-          'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md',
-        ].join('&&')
-      }
-    },
-    plato: {
-      src: {
-        options : {
-          jshint : grunt.file.readJSON('.jshintrc')
-        },
-        files: {
-          'plato': ['lib/**/*.js']
-        }
-      }
-    }
+
+    _test_runner: 'turbo',
+    _unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*',
+    _accept_args: 'test/accept/*',
+    unit: '<%= _test_runner %> <%= _unit_args %>',
+    accept: '<%= _test_runner %> <%= _accept_args %>',
+
+    unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
+    accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
+
+    docsToDoxy: [
+      'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',
+      'cp -rf doc/common/ ../fh-doxy/public/dev_tools/fhc/',
+      'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
+      'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md',
+    ]
   });
 
-  // Load NPM tasks
-  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  grunt.loadNpmTasks('grunt-fh-build');
 
-  // Testing tasks
-  grunt.registerTask('test', ['jshint', 'shell:unit', 'shell:accept']);
-  grunt.registerTask('unit', ['jshint', 'shell:unit']);
-  grunt.registerTask('accept', ['shell:accept']);
+  grunt.registerTask('test', ['fh:test']);
+  grunt.registerTask('unit', ['jshint', 'fh:unit']);
+  grunt.registerTask('accept', ['fh:accept']);
+  grunt.registerTask('coverage', ['fh:coverage']);
+  grunt.registerTask('analysis', ['fh:analysis']);
+  grunt.registerTask('dist', ['fh:dist']);
+  grunt.registerTask('default', ['fh:default']);
 
-  // Coverage tasks
-  grunt.registerTask('coverage', ['jshint', 'shell:coverage_unit', 'shell:coverage_accept']);
-  grunt.registerTask('coverage-unit', ['shell:coverage_unit']);
-  grunt.registerTask('coverage-accept', ['shell:coverage_accept']);
-
-  // Making grunt default to force in order not to break the project.
-  grunt.option('force', true);
-
-  grunt.registerTask('analysis', ['plato:src', 'open:platoReport']);
-
-  grunt.registerTask('default', ['test']);
-
-  // dist commands
-  grunt.registerTask('dist', ['shell:clean', 'shell:dist']);
-  grunt.registerTask('clean', ['shell:clean']);
-
-  grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:docsToDoxy']);
+  grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:fh-run-array:docsToDoxy']);
   grunt.registerTask('docs-index', function(){
     var fhc = require('./lib/fhc.js');
 

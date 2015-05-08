@@ -1,3 +1,8 @@
+# 2.1.1 - 2015-12-28 -  Gerard Ryan
+------------------------------------------------------
+* Use grunt-fh-build where possible, to clean up Gruntfile.js
+
+
 # 2.1.0 - 2015-11-23 - Wojciech Trocki, Wei Li
 * RHMAP-2926 - Unable to tail logs using FHC
 * RHMAP-2746 - Only disable autodeploy if it's value is set to false
