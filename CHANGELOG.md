@@ -1,3 +1,7 @@
+Release 1.1.0 - 2015-05-13 - Craig Brookes, Jason Madigan
+------------------------------------------------------
+* FHMAP-224 - Adding support for domain per user
+
 Release 1.0.2 - 2015-04-21 - Gerard Ryan
 ------------------------------------------------------
 * Fix typo in new version available message
