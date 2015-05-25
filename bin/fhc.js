@@ -23,7 +23,7 @@ var _completion = function(){
     if(/^--\w?/.test(data.last)) return tabtab.log(['help', 'version'], data, '--');
     ..even out subcommands can go here
     */
-    
+
     var cmdList = _.filter(_.keys(fhc), function(key){ return key[0] !== '_'; });
     tabtab.log(cmdList, data);
   });
@@ -33,7 +33,7 @@ var _completion = function(){
 // this is how to use fhc programmatically:
 fhc.load(conf, function (err, conf) {
   _completion();
-  
+
   if (err) return errorHandler(err);
   var cmd = fhc.applyCommandFunction(argv, function(err, data){
     if (err) return errorHandler(err);
@@ -45,6 +45,7 @@ fhc.load(conf, function (err, conf) {
         output.write(cmd.bare, errorHandler);
       }else {
         // display table if both requested and supported..
+
         if (!conf.json && conf.table && (cmd && cmd.table || (data && data._table))) {
           if (cmd && cmd.message) console.log(cmd.message);
           var table = cmd.table || data._table;
@@ -52,7 +53,7 @@ fhc.load(conf, function (err, conf) {
           output.write("", errorHandler);
         }else{
           if (data){
-            delete data._table;  
+            delete data._table;
           }
           // check if we have a nonjson message
           if(!conf.json && cmd && cmd.message) {

@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "1.0.2-BUILD-NUMBER",
+  "version": "1.1.0-BUILD-NUMBER",
   "keywords": [
     "feedhenry"
   ],
@@ -21,34 +21,35 @@
     "async": "0.2.6",
     "cheerio": "0.10.8",
     "cli-table": "0.0.2",
-    "colors": "0.6.0-1",
+    "cli-tree": "0.0.1",
+    "colors": "0.6.2",
     "findit": "2.0.0",
     "fstream": "0.1.22",
     "mime": "1.2.9",
-    "moment": "~2.0.0",
-    "nopt": "1",
+    "moment": "2.0.0",
+    "nopt": "1.0.0",
     "open": "0.0.5",
-    "request": "~2.11",
-    "semver": "1",
+    "request": "2.11.4",
+    "semver": "1.0.14",
     "tabtab": "0.0.2",
-    "underscore": "~1.5.2",
+    "underscore": "1.5.2",
     "underscore-deep-extend": "0.0.5",
     "unzip": "0.1.7",
-    "yargs": "git://github.com/cianclarke/yargs.git"
+    "yargs": "2.1.1"
   },
   "devDependencies": {
     "proxyquire": "0.4.1",
     "turbo-test-runner": "0.3.3",
-    "grunt-concurrent": "latest",
+    "grunt-concurrent": "1.0.0",
     "grunt-shell": "0.6.4",
     "istanbul": "0.2.7",
-    "load-grunt-tasks": "~0.4.0",
-    "time-grunt": "~0.3.1",
-    "grunt-open": "~0.2.3",
-    "grunt-plato": "~1.0.0",
-    "grunt-contrib-jshint": "^0.10.0",
+    "load-grunt-tasks": "0.4.0",
+    "time-grunt": "0.3.1",
+    "grunt-open": "0.2.3",
+    "grunt-plato": "1.0.0",
+    "grunt-contrib-jshint": "0.10.0",
     "fs-extra": "0.12.0",
-    "nock": "^0.48.1"
+    "nock": "0.48.1"
   },
   "engines": {
     "node": ">=0.4"
