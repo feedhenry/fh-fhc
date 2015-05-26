@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           stderr: true,
           failOnError: true
         },
-        command: 'env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*'
+        command: 'env NODE_PATH=.:./lib ./node_modules/.bin/turbo --setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/**/**/**/*'
       },
       accept: {
         options: {

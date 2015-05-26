@@ -12,7 +12,7 @@ module.exports = nock('https://apps.feedhenry.com')
   return '*';
 })
 .post('/cloud/somefunc')
-.times(2)
+.times(1)
 .reply(200, cloudReplies.act, cloudReplies.headers)
 .post('/some/custom/cloud/host')
 .reply(200, cloudReplies.act, cloudReplies.headers);
