@@ -6,9 +6,9 @@ exports.setUp = function(finish){
     ini.set("domain", "apps");      
     return finish(er);
   });
-}
+};
 
 exports.tearDown = function(finish){
-  console.log('Passed')
+  console.log('Passed');
   return finish();
-}
+};

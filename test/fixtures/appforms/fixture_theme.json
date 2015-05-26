@@ -1,0 +1,5 @@
+{
+  "_id": "somethemeid",
+  "name": "Some Theme",
+  "css": ".somethemecss {float: left}"
+}

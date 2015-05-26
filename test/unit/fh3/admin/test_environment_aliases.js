@@ -51,5 +51,5 @@ module.exports = {
   tearDown : function(done){
     nockEnvironmentAliases.done();
     return done();
-  },
+  }
 };

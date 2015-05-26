@@ -1,0 +1,32 @@
+{
+  "name":"testform1",
+  "description":"",
+  "subscribers":[
+
+  ],
+  "pageRules":[
+
+  ],
+  "fieldRules":[
+
+  ],
+  "pages":[
+    {
+      "fields":[
+        {
+          "fieldOptions":{
+            "validation":{
+              "validateImmediately":true
+            }
+          },
+          "required":true,
+          "type":"text",
+          "name":"textField",
+          "fieldCode":null,
+          "adminOnly":false,
+          "repeating":false
+        }
+      ]
+    }
+  ]
+}
