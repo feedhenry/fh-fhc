@@ -1,4 +1,9 @@
+Release 1.1.2 - 2015-06-16 - Gerard Ryan
+------------------------------------------------------
+* Fix typo in command help: andriod -> android
+
 Release 1.1.1 - 2015-06-11 - Craig Brookes
+------------------------------------------------------
 * FH-353 - reduce polling interval
 
 Release 1.1.0 - 2015-05-13 - Craig Brookes, Jason Madigan
