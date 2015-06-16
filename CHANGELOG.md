@@ -1,3 +1,7 @@
+Release 1.1.3 - 2015-06-16 - Wei Li
+------------------------------------------------------
+* Fix the version check. Use npm.js instead.
+
 Release 1.1.2 - 2015-06-16 - Gerard Ryan
 ------------------------------------------------------
 * Fix typo in command help: andriod -> android
