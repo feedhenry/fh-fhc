@@ -1,3 +1,7 @@
+Release 1.1.4 - 2015-06-19 - Wei Li
+------------------------------------------------------
+* Cache the current version of fhc so that the cached data will be invalidated if fhc version is changed.
+
 Release 1.1.3 - 2015-06-16 - Wei Li
 ------------------------------------------------------
 * Fix the version check. Use npm.js instead.
