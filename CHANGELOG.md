@@ -1,3 +1,7 @@
+Release 2.0.0 - 2015-08-19 - Niall Donnelly
+------------------------------------------------------
+* FH-42 - Appforms LCM Functionality. New API For Appforms Functions
+
 Release 1.1.5 - 2015-07-16 - Jason Madigan
 ------------------------------------------------------
 * Shrinkwrap was invalid - re-shrinkwrapped
