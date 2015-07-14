@@ -1,3 +1,7 @@
+Release 1.1.5 - 2015-07-16 - Jason Madigan
+------------------------------------------------------
+* Shrinkwrap was invalid - re-shrinkwrapped
+
 Release 1.1.4 - 2015-06-19 - Wei Li
 ------------------------------------------------------
 * Cache the current version of fhc so that the cached data will be invalidated if fhc version is changed.

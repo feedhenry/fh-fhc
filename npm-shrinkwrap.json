@@ -1,6 +1,6 @@
 {
   "name": "fh-fhc",
-  "version": "1.0.2-BUILD-NUMBER",
+  "version": "1.1.4-BUILD-NUMBER",
   "dependencies": {
     "async": {
       "version": "0.2.6",
@@ -467,9 +467,9 @@
       }
     },
     "semver": {
-      "version": "1.0.14",
-      "from": "semver@1.0.14",
-      "resolved": "https://registry.npmjs.org/semver/-/semver-1.0.14.tgz"
+      "version": "4.3.6",
+      "from": "semver@4.3.6",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-4.3.6.tgz"
     },
     "tabtab": {
       "version": "0.0.2",
