@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "2.0.0-BUILD-NUMBER",
+  "version": "2.0.1-BUILD-NUMBER",
   "_minPlatformVersion": "7.15.0-1661",
   "keywords": [
     "feedhenry"
