@@ -1,3 +1,8 @@
+Release 2.0.2 - 2015-08-25 - Niall Donnelly
+------------------------------------------------------
+
+* FH-1844 - Fix for undefined required version.
+
 Release 2.0.1 - 2015-08-20 - Shannon Poole
 ------------------------------------------------------
 * FH-1709 - Fix argument passing for apps create
