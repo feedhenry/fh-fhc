@@ -220,7 +220,7 @@ module.exports = function(grunt) {
     indexFile = path.join(docsDir, 'index.md');
     indexOutput = [
     '<h1>FHC - FeedHenry Command Line Interface API</h1>',
-    '<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version ' + fhc._version.replace('-BUILD-NUMBER', ''),
+    '<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version ' + fhc._version.replace('+BUILD-NUMBER', ''),
     'of FHC. To ensure you get the most relevant help for the version of FHC you have installed, the <code>fhc help</code> command can be used.',
     'See <a href="https://github.com/feedhenry/fh-fhc#usage">https://github.com/feedhenry/fh-fhc#usage</a> for usage.',
     'To find the version of fhc you have installed, use the <code>fhc version</code> command</div>'
