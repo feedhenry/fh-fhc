@@ -1,3 +1,12 @@
+Release 2.0.5 - 2015-10-22 - David Martin
+------------------------------------------------------
+
+* RHMAP-2648
+** Change downgrade message to a version that works
+** Set publish tag to `latest-2`
+** Look for `latest-2` tag when checking for updates
+** Change -BUILD-NUMBER to +BUILD-NUMBER
+
 Release 2.0.4 - 2015-09-03 - Niall Donnelly
 ------------------------------------------------------
 
