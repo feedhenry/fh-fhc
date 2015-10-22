@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "1.1.5-BUILD-NUMBER",
+  "version": "1.2.0+BUILD-NUMBER",
   "keywords": [
     "feedhenry"
   ],
@@ -16,6 +16,9 @@
   "main": "./lib/fhc.js",
   "bin": {
     "fhc": "./bin/fhc.js"
+  },
+  "publishConfig": {
+    "tag": "latest-1"
   },
   "dependencies": {
     "async": "0.2.6",
