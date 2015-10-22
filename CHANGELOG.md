@@ -1,3 +1,10 @@
+Release 1.2.0 - 2015-10-22 - David Martin
+------------------------------------------------------
+* RHMAP-2648
+** Set publish tag to `latest-1`
+** Look for `latest-1` tag when checking for updates
+** Change -BUILD-NUMBER to +BUILD-NUMBER
+
 Release 1.1.5 - 2015-07-16 - Jason Madigan
 ------------------------------------------------------
 * Shrinkwrap was invalid - re-shrinkwrapped
