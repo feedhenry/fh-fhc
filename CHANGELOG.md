@@ -1,6 +1,8 @@
+# 2.1.0 - 2015-11-23 - Wojciech Trocki
+* RHMAP-2926 - Unable to tail logs using FHC
+
 Release 2.0.5 - 2015-10-22 - David Martin
 ------------------------------------------------------
-
 * RHMAP-2648
 ** Change downgrade message to a version that works
 ** Set publish tag to `latest-2`
@@ -9,7 +11,6 @@ Release 2.0.5 - 2015-10-22 - David Martin
 
 Release 2.0.4 - 2015-09-03 - Niall Donnelly
 ------------------------------------------------------
-
 * FH-1941 - Fixed Importing Apps From Github
 
 Release 2.0.3 - 2015-08-28 - Martin Murphy
