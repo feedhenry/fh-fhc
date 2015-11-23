@@ -1,7 +1,10 @@
+Release 2.1.0 - 2015-11-23 - Wei Li
+------------------------------------------------------
+* RHMAP-2746 - Add support for configuring auto deploy
+
 Release 2.0.5 - 2015-11-23 - Wojciech Trocki
 ------------------------------------------------------
 * RHMAP-2926 - Unable to tail logs using FHC
-
 
 Release 2.0.4 - 2015-09-03 - Niall Donnelly
 ------------------------------------------------------
