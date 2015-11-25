@@ -1,3 +1,7 @@
+Release 2.1.1 - 2015-11-26 - Wojciech Trocki
+------------------------------------------------------
+* RHMAP-2482 - Expose semver version of core in fhc version
+
 Release 2.1.0 - 2015-11-23 - Wei Li
 ------------------------------------------------------
 * RHMAP-2746 - Add support for configuring auto deploy
