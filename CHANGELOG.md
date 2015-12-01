@@ -1,5 +1,6 @@
 # 2.1.0 - 2015-11-23 - Wojciech Trocki, Wei Li
 * RHMAP-2926 - Unable to tail logs using FHC
+* Environment should be optional when creating projects/services/apps
 * RHMAP-2482 - Expose semver version of core in fhc version
 * RHMAP-2746 - Add support for configuring auto deploy
 
