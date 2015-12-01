@@ -1,3 +1,6 @@
+Release 2.1.2 - 2015-12-01 - Wei Li
+* Environment should be optional when creating projects/services/apps
+
 Release 2.1.1 - 2015-11-26 - Wojciech Trocki
 ------------------------------------------------------
 * RHMAP-2482 - Expose semver version of core in fhc version
