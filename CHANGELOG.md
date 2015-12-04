@@ -1,4 +1,9 @@
+Release 2.1.3 - 2015-12-04 - Wei Li
+------------------------------------------------------
+* RHMAP-3085 - Fix an issue with export form submissions
+
 Release 2.1.2 - 2015-12-01 - Wei Li
+------------------------------------------------------
 * Environment should be optional when creating projects/services/apps
 
 Release 2.1.1 - 2015-11-26 - Wojciech Trocki
