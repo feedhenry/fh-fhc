@@ -1,3 +1,7 @@
+Release 2.1.4 - 2015-12-04 - Wei Li
+------------------------------------------------------
+* RHMAP-3082 - Fix an issue with autodeploy when stage apps
+
 Release 2.1.3 - 2015-12-04 - Wei Li
 ------------------------------------------------------
 * RHMAP-3085 - Fix an issue with export form submissions
