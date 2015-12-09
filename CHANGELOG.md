@@ -1,5 +1,6 @@
 # 2.1.0 - 2015-11-23 - Wojciech Trocki, Wei Li
 * RHMAP-2926 - Unable to tail logs using FHC
+* RHMAP-2746 - Only disable autodeploy if it's value is set to false
 * RHMAP-3082 - Fix an issue with autodeploy when stage apps
 * RHMAP-3085 - Fix an issue with export form submissions
 * Environment should be optional when creating projects/services/apps
