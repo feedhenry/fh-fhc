@@ -1,3 +1,7 @@
+Release 2.1.5 - 2015-12-04 - Wei Li
+------------------------------------------------------
+* RHMAP-2746 - Only disable autodeploy if it's value is set to false
+
 Release 2.1.4 - 2015-12-04 - Wei Li
 ------------------------------------------------------
 * RHMAP-3082 - Fix an issue with autodeploy when stage apps
