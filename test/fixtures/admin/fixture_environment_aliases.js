@@ -1,7 +1,7 @@
 var nock = require('nock');
 var existingEnvAlias = { id : '1a', environmentId:'dev', environmentIdAlias:'myDev', environmentLabelAlias:'My Dev'};
 var envReplies = {
-  crud : function(url, req){
+  crud : function(){
     return existingEnvAlias;
   },
   list : function(){
@@ -13,7 +13,7 @@ var envReplies = {
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/api/v2/environmentaliases', '*')

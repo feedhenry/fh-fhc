@@ -69,7 +69,7 @@ var headers = { 'Content-Type': 'application/json' };
 
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/box/srv/1.1/ide/apps/api/list', '*')

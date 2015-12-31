@@ -1,5 +1,4 @@
 var nock = require('nock');
-var assert = require('assert');
 
 var userReadReply = function(){
   return {
@@ -14,7 +13,7 @@ var userReadReply = function(){
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/box/srv/1.1/ide/apps/user/read', '*')

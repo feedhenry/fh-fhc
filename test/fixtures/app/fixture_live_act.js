@@ -1,6 +1,6 @@
 var nock = require('nock');
 module.exports = nock('https://apps-live.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/cloud/somefunc')

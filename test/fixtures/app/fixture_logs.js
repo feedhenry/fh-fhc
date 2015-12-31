@@ -1,5 +1,4 @@
 var nock = require('nock');
-var assert = require('assert');
 
 var logReply = function(){
   return {
@@ -12,7 +11,7 @@ var logReply = function(){
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/box/srv/1.1/ide/apps/app/logs', '*')

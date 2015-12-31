@@ -1,12 +1,9 @@
-
 var assert = require('assert');
-var fhc = require("fhc.js");
 var target = require('cmd/fhc/target.js');
-var util = require('util');
 
 module.exports = {
   'test target': function(cb) {
-    target({_ : []}, function (err, data) {
+    target({_ : []}, function (err) {
       assert.equal(err, null);
       return cb();
       
@@ -17,7 +14,6 @@ module.exports = {
       //   console.log(data);
       //   return cb();
       // });        
-      
-    });        
+    });
   }
 };

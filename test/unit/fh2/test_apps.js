@@ -1,13 +1,9 @@
 var assert = require('assert');
-var util = require('util');
 var apps = require('cmd/common/apps.js');
-var target = require('cmd/fhc/target.js');
 var read = require('cmd/fh2/app/read.js');
 var deletes = require('cmd/fh2/app/delete.js');
 var create = require('cmd/fh2/app/create.js');
-var fhcfg = require('cmd/fhc/fhcfg.js');
 var ini = require('utils/ini.js');
-var async = require('async');
 var nockAppList = require('test/fixtures/app/fixture_applist')(1);
 var nockAppCrd = require('test/fixtures/app/fixture_create_read_delete');
 
