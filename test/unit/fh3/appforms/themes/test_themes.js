@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/appforms/fixture_themes');
+require('test/fixtures/appforms/fixture_themes');
 var appformsthemes = {
   create : genericCommand(require('cmd/fh3/appforms/themes/create')),
   read : genericCommand(require('cmd/fh3/appforms/themes/read')),
@@ -33,19 +33,19 @@ module.exports = {
     });
   },
   'test appforms-forms update': function(cb) {
-    appformsthemes.update({ id: 'somethemeid', themefile : "test/fixtures/appforms/fixture_form.json" }, function (err, data){
+    appformsthemes.update({ id: 'somethemeid', themefile : "test/fixtures/appforms/fixture_form.json" }, function (err){
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms delete': function(cb) {
-    appformsthemes.delete({ id : 'somethemeid' }, function (err, data){
+    appformsthemes.delete({ id : 'somethemeid' }, function (err){
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms clone': function(cb) {
-    appformsthemes.clone({ id : 'somethemeid' }, function (err, data){
+    appformsthemes.clone({ id : 'somethemeid' }, function (err){
       assert.equal(err, null);
       return cb();
     });

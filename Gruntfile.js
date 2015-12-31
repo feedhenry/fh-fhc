@@ -3,14 +3,6 @@
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
-  var distDir = './dist';
-  var outputDir = './output';
-  var pkgjs = require('./package.json');
-  var pkgName = pkgjs.name;
-  var buildNumber = (process.env['BUILD_NUMBER'] || 'BUILD-NUMBER');
-  var packageVersion = pkgjs.version.replace('BUILD-NUMBER', buildNumber);
-  var releaseDir = pkgName + '-' + packageVersion;
-  var releaseFile = pkgName + '-' + packageVersion + '.tar.gz';
   var path = require('path');
   var fs = require('fs-extra');
   var async = require('async');
@@ -18,20 +10,18 @@ module.exports = function(grunt) {
   var underscoreDeepExtend = require('underscore-deep-extend');
   _.mixin({deepExtend: underscoreDeepExtend(_)});
 
-
-
   // Project Configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    _test_runner: 'turbo',
-    _unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*',
-    _accept_args: 'test/accept/*',
-    unit: '<%= _test_runner %> <%= _unit_args %>',
-    accept: '<%= _test_runner %> <%= _accept_args %>',
-
-    unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
-    accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
+    // TODO Disabled turbo tests - moving to mocha.
+    //_test_runner: 'turbo',
+    //_unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*',
+    //_accept_args: 'test/accept/*',
+    //unit: '<%= _test_runner %> <%= _unit_args %>',
+    //accept: '<%= _test_runner %> <%= _accept_args %>',
+    //unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
+    //accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
 
     docsToDoxy: [
       'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',
@@ -56,15 +46,15 @@ module.exports = function(grunt) {
     var fhc = require('./lib/fhc.js');
 
     /*
-      Generates the contents of an index.html file for the tree of (fh3) commands, nicely formatted
+     Generates the contents of an index.html file for the tree of (fh3) commands, nicely formatted
      */
-    function _genIndex(tree, level, parent){
+    function _genIndex(tree, level){
       var output = [],
-      recursors = [], // keep these until last in any list so the .cols look nice
-      keys = Object.keys(tree),
-      indent = Array(level).join('\t'),
-      colSpan = (level <= 2) ? 12 : (12/level),
-      innerColSpan = 12/colSpan+2;
+        recursors = [], // keep these until last in any list so the .cols look nice
+        keys = Object.keys(tree),
+        indent = Array(level).join('\t'),
+        colSpan = (level <= 2) ? 12 : (12/level),
+        innerColSpan = 12/colSpan+2;
 
       if (level > 1) {
         output.push(indent + '<div class="col-md-' + colSpan + '">');
@@ -73,9 +63,9 @@ module.exports = function(grunt) {
 
       for (var i=0; i<keys.length; i++){
         var key = keys[i],
-        cmd = tree[key],
-        cmdPath = cmd._path,
-        name = cmd._cmdName;
+          cmd = tree[key],
+          cmdPath = cmd._path,
+          name = cmd._cmdName;
 
         if (key[0] === '_'){
           continue;
@@ -114,15 +104,15 @@ module.exports = function(grunt) {
       return output;
     }
     var treeForDoxy = _.deepExtend({}, fhc._tree.fh3, fhc._tree.common, fhc._tree.fhc),
-    indexOutput = _genIndex(treeForDoxy, 1),
-    docsDir = path.join(__dirname, 'doc'),
-    indexFile = path.join(docsDir, 'index.md');
+      indexOutput = _genIndex(treeForDoxy, 1),
+      docsDir = path.join(__dirname, 'doc'),
+      indexFile = path.join(docsDir, 'index.md');
     indexOutput = [
-    '<h1>FHC - FeedHenry Command Line Interface API</h1>',
-    '<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version ' + fhc._version.replace('+BUILD-NUMBER', ''),
-    'of FHC. To ensure you get the most relevant help for the version of FHC you have installed, the <code>fhc help</code> command can be used.',
-    'See <a href="https://github.com/feedhenry/fh-fhc#usage">https://github.com/feedhenry/fh-fhc#usage</a> for usage.',
-    'To find the version of fhc you have installed, use the <code>fhc version</code> command</div>'
+      '<h1>FHC - FeedHenry Command Line Interface API</h1>',
+      '<div class="alert alert-info"><strong>Note: </strong> This API Reference is for version ' + fhc._version.replace('+BUILD-NUMBER', ''),
+      'of FHC. To ensure you get the most relevant help for the version of FHC you have installed, the <code>fhc help</code> command can be used.',
+      'See <a href="https://github.com/feedhenry/fh-fhc#usage">https://github.com/feedhenry/fh-fhc#usage</a> for usage.',
+      'To find the version of fhc you have installed, use the <code>fhc version</code> command</div>'
     ].concat(indexOutput);
     // for docs, we're only interested in FH3 commands & don't want to talk about fh2 or internal ones
 
@@ -132,15 +122,14 @@ module.exports = function(grunt) {
 
   grunt.registerTask('docs-generate', function(){
     var fhc = require('./lib/fhc.js'),
-    help = require('./lib/cmd/fhc/help.js'),
-    docsDir = path.join(__dirname, 'doc');
+      help = require('./lib/cmd/fhc/help.js'),
+      docsDir = path.join(__dirname, 'doc');
 
     function writeDocFile(usage, cmd, cb){
       var cmdPath = cmd._path,
-      writeTo;
+        writeTo;
       cmdPath = cmdPath.replace(/\.js$/, '.md'); // Replace the JS extension with that of a markdown file
-      writeTo = path.join(docsDir, cmdPath),
-      // now write the file
+      writeTo = path.join(docsDir, cmdPath);
       fs.outputFile(writeTo, usage, cb);
     }
 
@@ -149,7 +138,7 @@ module.exports = function(grunt) {
       var keys = Object.keys(tree);
       for (var i=0; i<keys.length; i++){
         var key = keys[i],
-        cmd = tree[key];
+          cmd = tree[key];
 
         // If it's a new-style command, push the getter onto the stack-o-getters..
         if (cmd.demand){
@@ -170,13 +159,13 @@ module.exports = function(grunt) {
         }
       }
       return writerFns;
-    };
+    }
 
     var done = this.async();
 
-    fhc.load(function(conf){
+    fhc.load(function(){
       var tree = fhc._tree,
-      writers = genDocs(tree, done);
+        writers = genDocs(tree, done);
       async.parallel(writers, done);
     });
   });

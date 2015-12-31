@@ -1,6 +1,6 @@
 var exec = require('child_process').exec,
-assert = require('assert'),
-nockLogs = require('test/fixtures/app/fixture_logs');
+assert = require('assert');
+require('test/fixtures/app/fixture_logs');
 
 module.exports = {
   setUp : function(cb){

@@ -17,7 +17,7 @@ var cloudReplies = {
 
 module.exports = function(n){
   return nock('https://apps.feedhenry.com')
-  .filteringRequestBody(function(path) {
+  .filteringRequestBody(function() {
     return '*';
   })
   .post('/box/srv/1.1/ide/apps/app/hosts', '*')

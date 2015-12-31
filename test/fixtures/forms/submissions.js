@@ -294,7 +294,7 @@ var nock = require('nock');
 var headers = { 'Content-Type': 'application/json' };
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/api/v2/forms/submission', '*')

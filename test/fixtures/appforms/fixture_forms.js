@@ -1,7 +1,7 @@
 var nock = require('nock');
 
 var envReplies = {
-  crud : function(url, req){
+  crud : function(){
     return {
       _id: "someformid",
       name: "Some Test Form"
@@ -13,7 +13,7 @@ var envReplies = {
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-  .filteringRequestBody(function(path) {
+  .filteringRequestBody(function() {
     return '*';
   })
   .post('/api/v2/appforms/forms', '*')
