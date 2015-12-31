@@ -1,6 +1,7 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/admin/fixture_mbaas');
+var _ = require('underscore');
+require('test/fixtures/admin/fixture_mbaas');
 var adminmbaas = {
   create : genericCommand(require('cmd/fh3/admin/mbaas/create')),
   read : genericCommand(require('cmd/fh3/admin/mbaas/read')),

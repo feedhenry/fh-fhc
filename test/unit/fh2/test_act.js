@@ -1,12 +1,11 @@
 var assert = require('assert');
-var fhc = require("fhc.js");
-var proxyquire = require("proxyquire");
-var actRequestMocks = require('test/fixtures/act.js');
+
 var act = require('cmd/fh2/app/act.js');
 var cloudFixture = require('test/fixtures/app/fixture_cloud');
 var appReadFixture = require('test/fixtures/app/fixture_appread')(2);
 var liveActFixture = require('test/fixtures/app/fixture_live_act');
 var appHostsFixture = require('test/fixtures/app/fixture_hosts')(2);
+var actRequestFixture = require('test/fixtures/act.js');
 
 module.exports = {
   setUp : function(cb){
@@ -34,7 +33,7 @@ module.exports = {
     appHostsFixture.done();
     liveActFixture.done();
     cloudFixture.done();
-    // TODO close out cloudFixture
+    actRequestFixture.done();
     return cb();
   }
 };

@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/appforms/fixture_env_forms');
+require('test/fixtures/appforms/fixture_env_forms');
 var appformsenvforms = {
   list : genericCommand(require('cmd/fh3/appforms/environments/forms/list')),
   read : genericCommand(require('cmd/fh3/appforms/environments/forms/read')),
@@ -11,6 +11,8 @@ var appformsenvforms = {
   undeploy : genericCommand(require('cmd/fh3/appforms/environments/forms/undeploy')),
   update : genericCommand(require('cmd/fh3/appforms/environments/forms/update'))
 };
+
+
 module.exports = {
   'test appforms-forms list': function(cb) {
     appformsenvforms.list({environment: "someenv"}, function (err, data){
@@ -42,7 +44,7 @@ module.exports = {
     });
   },
   'test appforms-forms undeploy': function(cb) {
-    appformsenvforms.undeploy({ environment: "someenv", id : 'someformid' }, function (err, data){
+    appformsenvforms.undeploy({ environment: "someenv", id : 'someformid' }, function (err){
       assert.equal(err, null);
       return cb();
     });
@@ -62,7 +64,7 @@ module.exports = {
     });
   },
   'test appforms-forms promote': function(cb) {
-    appformsenvforms.promote({from: "someenvfrom", to: "someenvto", id: "someformid"}, function (err, data){
+    appformsenvforms.promote({from: "someenvfrom", to: "someenvto", id: "someformid"}, function (err){
       assert.equal(err, null);
       return cb();
     });
