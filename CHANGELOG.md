@@ -1,3 +1,7 @@
+# 2.3.0 - 2016-01-08 - Niall Donnelly
+------------------------------------------------------
+* RHMAP-2430 - Add Data Source APIs
+
 # 2.1.1 - 2015-12-28 -  Gerard Ryan
 ------------------------------------------------------
 * Use grunt-fh-build where possible, to clean up Gruntfile.js
