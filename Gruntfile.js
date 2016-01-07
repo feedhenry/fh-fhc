@@ -17,8 +17,7 @@ module.exports = function(grunt) {
     _test_runner: './node_modules/.bin/turbo',
     _unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit',
     _accept_args: 'test/accept/*',
-    unit: ['env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/fh3/**/*',
-      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'],
+    unit: ['env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/fh3/**/*', 'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'],
     accept: 'env NODE_PATH=.:./lib <%= _test_runner %> <%= _accept_args %>',
     unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
     accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
@@ -27,7 +26,7 @@ module.exports = function(grunt) {
       'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',
       'cp -rf doc/common/ ../fh-doxy/public/dev_tools/fhc/',
       'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
-      'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md',
+      'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md'
     ]
   });
 
