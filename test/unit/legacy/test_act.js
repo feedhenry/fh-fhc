@@ -1,18 +1,16 @@
 var assert = require('assert');
-
 var act = require('cmd/fh2/app/act.js');
 var cloudFixture = require('test/fixtures/app/fixture_cloud');
 var appReadFixture = require('test/fixtures/app/fixture_appread')(2);
 var liveActFixture = require('test/fixtures/app/fixture_live_act');
 var appHostsFixture = require('test/fixtures/app/fixture_hosts')(2);
-var actRequestFixture = require('test/fixtures/act.js');
 
 module.exports = {
   setUp : function(cb){
     return cb();
   },
-  'test act functions': function(cb) {  
-    var argv = { 
+  'test act functions': function(cb) {
+    var argv = {
       _ : ['0123', 'somefunc','{\"name\":\"bono\"}', '--env=dev']
     };
     act(argv, function (err, data){
@@ -33,7 +31,6 @@ module.exports = {
     appHostsFixture.done();
     liveActFixture.done();
     cloudFixture.done();
-    actRequestFixture.done();
     return cb();
   }
 };

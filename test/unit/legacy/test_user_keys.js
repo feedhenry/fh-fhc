@@ -41,14 +41,14 @@ module.exports = {
   },
   'update keys' : function (cb) {
     keys.skipPrompt = true;
-    keys({ _ : ['update'] }, function(err, key){
+    keys({ _ : ['update'] }, function(err){
       assert.ok(err);
       keys({ _ : ['update', 'UserKey', 'UserKey-Updated'] }, function(err, key){
         assert.ok(!err, err);
         assert.ok(key.apiKey);
         assert.ok(key.apiKey.label);
         assert.equal('UserKey-Updated', key.apiKey.label);
-        keys({ _ : ['update', '1239jncjjcd'] }, function(err, key){
+        keys({ _ : ['update', '1239jncjjcd'] }, function(err){
           assert.ok(err);
           return cb();
         });

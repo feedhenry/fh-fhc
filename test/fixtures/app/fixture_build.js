@@ -1,5 +1,4 @@
 var nock = require('nock');
-var assert = require('assert');
 
 function _cacheKeyUrl(n){
   return '/box/srv/1.1/dat/log/read?cacheKeys=[{%22cacheKey%22:%22cachekeybeehatch%22,%22start%22:' + n + '}]';

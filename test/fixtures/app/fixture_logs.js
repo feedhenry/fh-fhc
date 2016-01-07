@@ -14,5 +14,5 @@ module.exports = nock('https://apps.feedhenry.com')
 .filteringRequestBody(function() {
   return '*';
 })
-.post('/box/srv/1.1/ide/apps/app/logs', '*')
+.get('/api/v2/mbaas/apps/dev/apps/1a2b3c4d5e6f7g8e9f0a1b2c/logs', '*')
 .reply(200, logReply, { 'Content-Type': 'application/json' });

@@ -10,5 +10,5 @@ module.exports = nock('https://apps.feedhenry.com')
   .filteringRequestBody(function (){
     return '*';
   })
-  .post('/cloud/somefunc')
+  .post('/some/custom/cloud/host')
   .reply(200, cloudReplies.act, cloudReplies.headers);
