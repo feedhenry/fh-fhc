@@ -277,9 +277,9 @@
       "resolved": "https://registry.npmjs.org/tabtab/-/tabtab-0.0.2.tgz"
     },
     "underscore": {
-      "version": "1.5.2",
-      "from": "underscore@1.5.2",
-      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.5.2.tgz"
+      "version": "1.8.0",
+      "from": "underscore@1.8.0",
+      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.8.0.tgz"
     },
     "underscore-deep-extend": {
       "version": "0.0.5",
