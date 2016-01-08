@@ -14,7 +14,7 @@ module.exports = {
       assert(data.ok === true);
       return cb();
     });
-  }, 
+  },
   tearDown : function(cb){
     appReadNock.done();
     nockHosts.done();

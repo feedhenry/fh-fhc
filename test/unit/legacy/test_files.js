@@ -1,5 +1,4 @@
 var assert = require('assert');
-var util = require('util');
 var files = require('cmd/common/files.js');
 var apps = require('cmd/common/apps.js');
 var filesNock = require('test/fixtures/app/fixture_files.js');
@@ -40,5 +39,8 @@ module.exports = {
         assert.equal(data.status, 'ok');
         return cb();
       });  
+    },
+    tearDown: function (cb){
+      return cb();
     }
 };

@@ -14,14 +14,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // TODO Disabled turbo tests - moving to mocha.
-    //_test_runner: 'turbo',
-    //_unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit/*/*',
-    //_accept_args: 'test/accept/*',
-    //unit: '<%= _test_runner %> <%= _unit_args %>',
-    //accept: '<%= _test_runner %> <%= _accept_args %>',
-    //unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
-    //accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
+    _test_runner: './node_modules/.bin/turbo',
+    _unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit',
+    _accept_args: 'test/accept/*',
+    unit: ['env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/fh3/**/*',
+      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'],
+    accept: 'env NODE_PATH=.:./lib <%= _test_runner %> <%= _accept_args %>',
+    unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
+    accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
 
     docsToDoxy: [
       'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',

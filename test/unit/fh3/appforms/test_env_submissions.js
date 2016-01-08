@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-require('test/fixtures/appforms/fixture_env_forms');
+require('test/fixtures/appforms/fixture_env_submissions');
 var appformsenvsubmissions = {
   list: genericCommand(require('cmd/fh3/appforms/environments/submissions/list')),
   read: genericCommand(require('cmd/fh3/appforms/environments/submissions/read')),
