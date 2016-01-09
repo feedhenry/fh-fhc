@@ -1,3 +1,7 @@
+# 2.3.0 - 2016-01-09 -  CBrookes
+
+* RHMAP-3751 add decoupled property to mbaas create update
+
 # 2.1.1 - 2015-12-28 -  Gerard Ryan
 ------------------------------------------------------
 * Use grunt-fh-build where possible, to clean up Gruntfile.js
