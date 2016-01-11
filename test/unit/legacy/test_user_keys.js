@@ -1,8 +1,7 @@
 var assert = require('assert');
-var fhc = require("fhc.js");
 var keys = require("cmd/common/keys/user.js");
 var userKeysNock = require('test/fixtures/user/fixture_user_keys');
-var ini = require('utils/ini.js');
+
 module.exports = {
   setUp : function(cb){
     return cb();
@@ -16,7 +15,7 @@ module.exports = {
     });
   },
   'create keys' : function(cb){  
-    keys({ _ : ['add'] }, function(err, key){
+    keys({ _ : ['add'] }, function(err){
       assert.ok(!err, err);
       keys({ _ : ['add', 'UserKey'] }, function(err, key){
         assert.equal(err, null, err);
@@ -29,7 +28,7 @@ module.exports = {
   },
   'revoke keys' : function(cb){
     keys.skipPrompt = true;
-    keys({ _ : ['delete'] }, function(err, key){
+    keys({ _ : ['delete'] }, function(err){
       assert.ok(err);
       keys({ _ : ['delete', 'UserKey'] }, function(err, key){
         assert.equal(err, null, err);
@@ -42,14 +41,14 @@ module.exports = {
   },
   'update keys' : function (cb) {
     keys.skipPrompt = true;
-    keys({ _ : ['update'] }, function(err, key){
+    keys({ _ : ['update'] }, function(err){
       assert.ok(err);
       keys({ _ : ['update', 'UserKey', 'UserKey-Updated'] }, function(err, key){
         assert.ok(!err, err);
         assert.ok(key.apiKey);
         assert.ok(key.apiKey.label);
         assert.equal('UserKey-Updated', key.apiKey.label);
-        keys({ _ : ['update', '1239jncjjcd'] }, function(err, key){
+        keys({ _ : ['update', '1239jncjjcd'] }, function(err){
           assert.ok(err);
           return cb();
         });

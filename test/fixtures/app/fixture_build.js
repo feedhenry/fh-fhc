@@ -1,5 +1,4 @@
 var nock = require('nock');
-var assert = require('assert');
 
 function _cacheKeyUrl(n){
   return '/box/srv/1.1/dat/log/read?cacheKeys=[{%22cacheKey%22:%22cachekeybeehatch%22,%22start%22:' + n + '}]';
@@ -25,7 +24,7 @@ var buildReplies = {
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-.filteringRequestBody(function(path) {
+.filteringRequestBody(function() {
   return '*';
 })
 .post('/box/srv/1.1/wid/apps/android/1a2b3c4d5e6f7g8e9f0a1b2d/deliver', '*')

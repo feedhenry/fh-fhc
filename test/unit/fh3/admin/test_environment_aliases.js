@@ -37,13 +37,13 @@ module.exports = {
     });
   },
   'test admin-environment-aliases update': function(done) {
-    adminenvironmentaliases.update( { id : '1a', environmentLabelAlias : 'My Dev 2'}, function (err, data){
+    adminenvironmentaliases.update( { id : '1a', environmentLabelAlias : 'My Dev 2'}, function (err){
       assert.equal(err, null);
       return done();
     });
   },
   'test admin-environment-aliases delete': function(done) {  
-    adminenvironmentaliases.delete({id : '1a'}, function (err, data){
+    adminenvironmentaliases.delete({id : '1a'}, function (err){
       assert.equal(err, null);
       return done();
     });

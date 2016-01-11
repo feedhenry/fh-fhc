@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/appforms/fixture_forms');
+require('test/fixtures/appforms/fixture_forms');
 var appformsforms = {
   create : genericCommand(require('cmd/fh3/appforms/forms/create')),
   read : genericCommand(require('cmd/fh3/appforms/forms/read')),
@@ -9,6 +9,8 @@ var appformsforms = {
   list : genericCommand(require('cmd/fh3/appforms/forms/list')),
   clone: genericCommand(require('cmd/fh3/appforms/forms/clone'))
 };
+
+
 module.exports = {
   'test appforms-forms list': function(cb) {
     appformsforms.list({}, function (err, data){
@@ -33,19 +35,19 @@ module.exports = {
     });
   },
   'test appforms-forms update': function(cb) {
-    appformsforms.update({ id: 'someformid', formfile : "test/fixtures/appforms/fixture_form.json" }, function (err, data){
+    appformsforms.update({ id: 'someformid', formfile : "test/fixtures/appforms/fixture_form.json" }, function (err){
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms delete': function(cb) {
-    appformsforms.delete({ id : 'someformid' }, function (err, data){
+    appformsforms.delete({ id : 'someformid' }, function (err){
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms clone': function(cb) {
-    appformsforms.clone({ id : 'someformid' }, function (err, data){
+    appformsforms.clone({ id : 'someformid' }, function (err){
       assert.equal(err, null);
       return cb();
     });

@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockEnvironment = require('test/fixtures/appforms/fixture_env_submissions');
+require('test/fixtures/appforms/fixture_env_submissions');
 var appformsenvsubmissions = {
   list: genericCommand(require('cmd/fh3/appforms/environments/submissions/list')),
   read: genericCommand(require('cmd/fh3/appforms/environments/submissions/read')),
@@ -64,7 +64,7 @@ module.exports = {
       environment: "someenv",
       id: "somesubmissionid",
       submissiondata: "test/fixtures/appforms/fixture_submission.json"
-    }, function (err, data) {
+    }, function (err) {
       assert.equal(err, null);
       return cb();
     });

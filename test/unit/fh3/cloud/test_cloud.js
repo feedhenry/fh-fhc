@@ -1,6 +1,6 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
-var nockCloud = require('test/fixtures/app/fixture_cloud');
+var nockCloud2 = require('test/fixtures/app/fixture_cloud2');
 var nockHosts = require('test/fixtures/app/fixture_hosts')(1);
 var appReadNock = require('test/fixtures/app/fixture_appread.js')(1);
 var cloud = genericCommand(require('cmd/fh3/app/cloud'));
@@ -16,10 +16,9 @@ module.exports = {
     });
   },
   tearDown : function(cb){
-    // TODO - figure how to teardown nocks
-    //nockHosts.done();
+    nockHosts.done();
+    nockCloud2.done();
     appReadNock.done();
-    nockCloud.done();
     return cb();
   }
 };

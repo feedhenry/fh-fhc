@@ -1,8 +1,13 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
+<<<<<<< HEAD
   "version": "2.2.1+BUILD-NUMBER",
   "_minPlatformVersion": "7.15.0-1661",
+=======
+  "version": "2.2.0-BUILD-NUMBER",
+  "_minPlatformVersion": "3.5.0",
+>>>>>>> master
   "keywords": [
     "feedhenry"
   ],
@@ -33,6 +38,7 @@
     "mime": "1.2.9",
     "moment": "2.0.0",
     "nopt": "1.0.0",
+    "once": "^1.3.2",
     "open": "0.0.5",
     "request": "2.11.4",
     "semver": "4.3.6",
@@ -53,6 +59,7 @@
     "grunt-open": "0.2.3",
     "grunt-plato": "1.0.0",
     "grunt-contrib-jshint": "0.10.0",
+    "grunt-fh-build": "^0.0.14",
     "fs-extra": "0.12.0",
     "nock": "0.48.1"
   },

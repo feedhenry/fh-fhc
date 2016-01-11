@@ -1,5 +1,4 @@
 var assert = require('assert');
-var fhc = require("fhc.js");
 var user = require('cmd/common/user.js');
 var userReadNock = require('test/fixtures/user/fixture_user_read.js');
 var util = require('util');

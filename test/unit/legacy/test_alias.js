@@ -2,8 +2,6 @@
 var assert = require('assert');
 var fhc = require("lib/fhc.js");
 var alias = require('cmd/fh2/alias.js');
-var conf = require("cmd/fhc/fhcfg.js");
-var apps = require("cmd/common/apps.js");
 var appListNock = require('test/fixtures/app/fixture_applist.js')(4);
 var ini = require('lib/utils/ini.js');
 // Prevent saving config to disk
