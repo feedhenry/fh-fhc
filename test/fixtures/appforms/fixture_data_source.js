@@ -8,7 +8,8 @@ module.exports = {
       serviceGuid: testServiceGuid,
       refreshInterval: 1,
       description: "A Data Source",
-      endpoint: "/someendpoint"
+      endpoint: "/someendpoint",
+      numAuditLogEntries: 100
     };
   },
   apiResponse: function(){
@@ -62,6 +63,22 @@ module.exports = {
       key: "dskey2",
       value: "DS Value 2",
       selected: true
+    }];
+  },
+  withAuditLogs: function(){
+    var self = this;
+    var ds = this.withData();
+
+    ds.auditLogs =  [{
+      updateTimestamp: new Date(),
+      serviceGuid: testServiceGuid,
+      endpoint: ds.endpoint,
+      lastRefreshed: new Date(),
+      data: self.dsDataSet(),
+      dataHash: "123456",
+      currentStatus: {
+        status: "ok"
+      }
     }];
   },
   withError: function(){

@@ -41,7 +41,7 @@ module.exports = {
     });
   },
   "test create data source": function(done){
-    appformsDataSources.create({name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, refreshInterval: mockDs.refreshInterval, description: mockDs.description}, function(err, data){
+    appformsDataSources.create({name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, refreshInterval: mockDs.refreshInterval, description: mockDs.description, numAuditLogEntries: 100}, function(err, data){
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, "dscreated");
 

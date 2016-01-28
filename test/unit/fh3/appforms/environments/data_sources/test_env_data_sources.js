@@ -12,7 +12,8 @@ var appformsEnvDataSources = {
   list : genericCommand(require('cmd/fh3/appforms/environments/data-sources/list')),
   read : genericCommand(require('cmd/fh3/appforms/environments/data-sources/read')),
   validate: genericCommand(require('cmd/fh3/appforms/environments/data-sources/validate')),
-  refresh: genericCommand(require('cmd/fh3/appforms/environments/data-sources/refresh'))
+  refresh: genericCommand(require('cmd/fh3/appforms/environments/data-sources/refresh')),
+  auditLogs: genericCommand(require('cmd/fh3/appforms/environments/data-sources/audit-logs'))
 };
 
 
@@ -67,6 +68,16 @@ module.exports = {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
+
+      done();
+    });
+  },
+  "test get data source audit logs": function(done){
+    appformsEnvDataSources.auditLogs({environment: mockEnvId, id: mockDs._id}, function(err, data){
+      assert.ok(!err, "Expected No Error " + err);
+      assert.equal(data._id, mockDs._id);
+      assert.ok(data.data, "Expected A Data Response");
+      assert.ok(data.data.auditLogs, "Expected A Data Source Audit Log Response");
 
       done();
     });

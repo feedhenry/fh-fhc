@@ -17,4 +17,6 @@ module.exports = nock('https://apps.feedhenry.com')
   .post('/api/v2/mbaas/someenv/appforms/data_sources/validate', _.omit(mockDs, "_id"))
   .reply(200, dsFixtures.withValidationResultValid())
   .post('/api/v2/mbaas/someenv/appforms/data_sources/' + mockDs._id + '/refresh')
-  .reply(200, dsFixtures.withData());
+  .reply(200, dsFixtures.withData())
+  .get('/api/v2/mbaas/someenv/appforms/data_sources/' + mockDs._id + "/audit_logs")
+  .reply(200, dsFixtures.withAuditLogs());
