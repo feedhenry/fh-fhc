@@ -8,7 +8,8 @@ module.exports = {
       serviceGuid: testServiceGuid,
       refreshInterval: 1,
       description: "A Data Source",
-      endpoint: "/someendpoint"
+      endpoint: "/someendpoint",
+      numAuditLogEntries: 100
     };
   },
   apiResponse: function(){
