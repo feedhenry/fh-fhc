@@ -1,3 +1,7 @@
+# 2.4.0 - 2016-01-08 - Niall Donnelly
+------------------------------------------------------
+* RHMAP-2430 - Add Data Source APIs
+
 # 2.3.0 - 2016-01-09 -  CBrookes
 
 * RHMAP-3751 add decoupled property to mbaas create update
