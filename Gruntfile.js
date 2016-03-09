@@ -18,7 +18,9 @@ module.exports = function(grunt) {
     _unit_args: '--setUp ./test/setupTeardown.js --tearDown ./test/setupTeardown.js test/unit',
     _accept_args: 'test/accept/*',
     unit: ['env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/fh3/**/*',
-      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'],
+      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/common/*',
+      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'
+      ],
     accept: 'env NODE_PATH=.:./lib <%= _test_runner %> <%= _accept_args %>',
     unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
     accept_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _accept_args %>',
