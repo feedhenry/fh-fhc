@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       'cp -rf doc/fh3/ ../fh-doxy/public/dev_tools/fhc/',
       'cp -rf doc/common/ ../fh-doxy/public/dev_tools/fhc/',
       'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
-      'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md',
+      'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md'
     ]
   });
 

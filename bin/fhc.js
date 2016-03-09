@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-;(function () { // wrapper in case we're in module_context mode
+(function () { // wrapper in case we're in module_context mode
   var fhc = require("../lib/fhc");
   var errorHandler = require("../lib/utils/error-handler");
   var cmdCompletion = require("../lib/utils/cmd-completion");

@@ -2,7 +2,7 @@ var nock = require('nock');
 
 var envReplies = {
   crud : function(){
-    return { 
+    return {
       status : 'ok',
       _id : '1a',
       url : 'http://www.mbaas.com',

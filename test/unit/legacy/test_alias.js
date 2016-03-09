@@ -7,7 +7,7 @@ var ini = require('lib/utils/ini.js');
 // Prevent saving config to disk
 ini.save = function(cb){
   return cb(null, true);
-}
+};
 
 //test the appid
 var testAppId = "pviryBwt22iZ0iInufMYBuVV", theAlias = "analias";
@@ -40,12 +40,12 @@ module.exports =  {
     });
   },
   "test only works when logged in" : function (cb) {
-      var argv = { _ : [theAlias+"="+"Hw1ahBfiT2KEBVq9bxz4Qc8Q"]};
-      alias(argv, function (err,data){
-        assert.ok(err);
-        assert.ok(!data);
-        return cb();
-      });
+    var argv = { _ : [theAlias+"="+"Hw1ahBfiT2KEBVq9bxz4Qc8Q"]};
+    alias(argv, function (err,data){
+      assert.ok(err);
+      assert.ok(!data);
+      return cb();
+    });
   },
   "test fh appid" : function (cb) {
     assert.equal(fhc.appId(undefined),undefined);

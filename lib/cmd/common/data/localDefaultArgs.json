@@ -1,0 +1,102 @@
+{
+  "fh3": {
+    "required": true,
+    "val": "false",
+    "type": "boolean"
+  },
+  "clientDir": {
+    "required": true,
+    "val": "./client",
+    "type": "string"
+  },
+  "clientHost": {
+    "required": true,
+    "val": "http://127.0.0.1",
+    "type": "string"
+  },
+  "clientPort": {
+    "required": true,
+    "val": 8000,
+    "type": "number"
+  },
+  "cloudDir": {
+    "required": true,
+    "val": "./cloud",
+    "type": "string"
+  },
+  "cloudHost": {
+    "required": true,
+    "val": "http://127.0.0.1",
+    "type": "string"
+  },
+  "cloudPort": {
+    "required": true,
+    "val": 8001,
+    "type": "number"
+  },
+  "startCloud": {
+    "required": true,
+    "val": true,
+    "type": "boolean"
+  },
+  "debug": {
+    "required": false,
+    "val": false,
+    "type": "boolean"
+  },
+  "debugBrk": {
+    "required": false,
+    "val": false,
+    "type": "boolean"
+  },
+  "redisHost": {
+    "required": true,
+    "val": "127.0.0.1",
+    "type": "string"
+  },
+  "redisPort": {
+    "required": true,
+    "val": 6379,
+    "type": "number"
+  },
+  "redisPassword": {
+    "required": false,
+    "val": "",
+    "type": "string"
+  },
+  "usePackages": {
+    "required": false,
+    "val": true,
+    "type": "boolean"
+  },
+  "packages": {
+    "required": false,
+    "val": "",
+    "type": "string"
+  },
+  "localDB": {
+    "required": true,
+    "val": "true",
+    "type": "boolean"
+  },
+  "decoupled": {
+    "required": false,
+    "val": false,
+    "type": "boolean"
+  },
+  "logprefix": {
+    "required": true,
+    "val": "false",
+    "type": "boolean"
+  },
+  "loghighlight": {
+    "required": true,
+    "val": "true",
+    "type": "boolean"
+  },
+  "openClient": {
+    "required": true,
+    "val": "false",
+    "type": "boolean"
+  }
+}
