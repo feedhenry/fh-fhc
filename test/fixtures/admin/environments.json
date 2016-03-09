@@ -1,0 +1,16 @@
+[
+    {
+      "status" : "ok",
+      "_id" : "1a",
+      "label" : "My env",
+      "targets" : ["http://www.1.com", "http://www.2.com"]
+    },
+    {
+      "status" : "ok",
+      "_id" : "2a",
+      "label" : "Another env",
+      "autoDeployOnCreate" : true,
+      "autoDeployOnUpdate" : true,
+      "targets" : ["http://www.1.com", "http://www.2.com"]
+    }
+]
