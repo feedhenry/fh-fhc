@@ -1,6 +1,6 @@
 {
   "name": "fh-fhc",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "dependencies": {
     "async": {
       "version": "0.2.9",

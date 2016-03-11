@@ -1,4 +1,4 @@
-# 2.4.0 - 2016-03-11 -  Niall Donnelly
+# 2.6.0 - 2016-03-11 -  Niall Donnelly
 
 * RHMAP-1722 - Data Sources APIs
 
