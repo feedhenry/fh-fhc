@@ -13,7 +13,7 @@ module.exports = {
       assert.equal(err, null, err);
       assert.ok(data);
       return cb();
-    });        
+    });
   },
   tearDown : function(cb){
     versionNock.done();

@@ -42,7 +42,7 @@ module.exports = {
       return done();
     });
   },
-  'test admin-environment-aliases delete': function(done) {  
+  'test admin-environment-aliases delete': function(done) {
     adminenvironmentaliases.delete({id : '1a'}, function (err){
       assert.equal(err, null);
       return done();

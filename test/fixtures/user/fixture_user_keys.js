@@ -15,7 +15,7 @@ var mockKeyList = function(){
       "revokedEmail" : null
     }]
   };
-}
+};
 
 var mockKeyCreate = function(){
   return {
@@ -31,7 +31,7 @@ var mockKeyCreate = function(){
       "revokedEmail" : null
     }
   };
-}
+};
 
 var mockKeyRevoked = function(){
   return {
@@ -47,7 +47,7 @@ var mockKeyRevoked = function(){
       "revokedEmail" : "tester@example.com"
     }
   };
-}
+};
 
 var mockKeyUpdated = function(){
   return {
