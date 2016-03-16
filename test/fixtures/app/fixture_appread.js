@@ -13,7 +13,7 @@ module.exports = function(n){
       "app": {
         "guid": "1a",
         "config" : {
-          "scm" : "scmconfig"
+          "scm" : "scmconfig" 
         }
       },
       "inst": {
@@ -24,4 +24,4 @@ module.exports = function(n){
       "status": "ok"
     };
   }, headers);
-};
+}

@@ -26,7 +26,7 @@ var mockSubmission = {
 
 var envReplies = {
   list: function(){
-    return [mockSubmission];
+    return [mockSubmission]
   },
   get: function(){
     return mockSubmission;

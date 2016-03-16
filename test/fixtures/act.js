@@ -7,7 +7,7 @@ var request = function (params, cb) {
     body = {status: 'ok', live: true};
   }
   return cb(null, {statusCode: 200}, body);
-};
+}
 request.defaults = function () {
   return request;
 };

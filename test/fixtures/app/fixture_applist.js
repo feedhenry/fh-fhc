@@ -13,46 +13,46 @@ module.exports = function(n){
       "status": "ok",
       "list": [
         {
-          "config": {
-            "preview": {
-              "device": "generic"
-            }
-          },
-          "description": "A tabbed application which displays news feeds",
-          "id": "pviryBwt22iZ0iInufMYBuVV",
-          "modified": "2011-07-28 13:27:30",
-          "title": "tempApp",
-          "version": 0,
-          "width": 320
-        }, {
-          "config": {
-            "nodejs": {
-              "enabled": "true"
+            "config": {
+                "preview": {
+                    "device": "generic"
+                }
             },
-            "preview": {
-              "device": "iphone_3"
-            }
-          },
-          "description": "First App",
-          "id": "ZYeFBUOfKr7peAtIvTHY4R0F",
-          "modified": "2011-07-28 14:34:12",
-          "title": "Test",
-          "version": 92,
-          "width": 320
+            "description": "A tabbed application which displays news feeds",
+            "id": "pviryBwt22iZ0iInufMYBuVV",
+            "modified": "2011-07-28 13:27:30",
+            "title": "tempApp",
+            "version": 0,
+            "width": 320
         }, {
-          "config": {
-            "nodejs.enabled": "true"
-          },
-          "description": "test123",
-          "id": "rDfYZe-Lz5RGTRQQsIV9ovFn",
-          "modified": "2011-07-27 12:14:02",
-          "title": "test123",
-          "version": 21,
-          "width": 200
+            "config": {
+                "nodejs": {
+                    "enabled": "true"
+                },
+                "preview": {
+                    "device": "iphone_3"
+                }
+            },
+            "description": "First App",
+            "id": "ZYeFBUOfKr7peAtIvTHY4R0F",
+            "modified": "2011-07-28 14:34:12",
+            "title": "Test",
+            "version": 92,
+            "width": 320
+        }, {
+            "config": {
+                "nodejs.enabled": "true"
+            },
+            "description": "test123",
+            "id": "rDfYZe-Lz5RGTRQQsIV9ovFn",
+            "modified": "2011-07-27 12:14:02",
+            "title": "test123",
+            "version": 21,
+            "width": 200
         }
       ],
       "nodejs": { "enabled": "true"},
       "preview": {"device": "iphone_3"}
     };
   }, headers);
-};
+}

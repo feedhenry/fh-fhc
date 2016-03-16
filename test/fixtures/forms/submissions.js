@@ -288,7 +288,7 @@ var mockSubmissionList = {
   status: "ok",
   statusCode: 200,
   submissions: [mockSubmissionGet]
-};
+}
 
 var nock = require('nock');
 var headers = { 'Content-Type': 'application/json' };
@@ -298,6 +298,6 @@ module.exports = nock('https://apps.feedhenry.com')
   return '*';
 })
 .post('/api/v2/forms/submission', '*')
-.reply(200, function(){ return mockSubmissionList; }, headers)
+.reply(200, function(){ return mockSubmissionList }, headers)
 .get('/api/v2/forms/submission/5449109299e98c45145f8267', '*')
-.reply(200, function(){ return mockSubmissionGet; }, headers);
+.reply(200, function(){ return mockSubmissionGet }, headers);

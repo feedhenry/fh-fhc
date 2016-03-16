@@ -7,7 +7,7 @@ module.exports = {
   setUp : function(cb){
     return cb();
   },
-  'test user': function(cb) {
+  'test user': function(cb) {  
     user({ _ : ['']}, function (err, data) {
       assert.equal(err, null, "Err not null: " + util.inspect(err));
       assert.ok(data);

@@ -1,5 +1,5 @@
 var exec = require('child_process').exec,
-  assert = require('assert');
+assert = require('assert');
 require('test/fixtures/app/fixture_logs');
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
         assert.ok(stdout.length > 0);
         assert.ok(stdout.indexOf('Usage')>-1);
         return cb();
-      });
+    });    
   },
   "verify it works as a CLI with arguments" : function(cb){
     exec('node bin/fhc.js help app logs',
@@ -22,6 +22,6 @@ module.exports = {
         assert.ok(stderr==='', stderr);
         assert.ok(stdout.length > 0);
         return cb();
-      });
+    });    
   }
 };

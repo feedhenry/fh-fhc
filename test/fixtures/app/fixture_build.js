@@ -19,7 +19,7 @@ var buildReplies = {
     }];
   },
   cacheKeyBuildSuccess : function(){
-    return [{"action":{"ota_url":"https://ota.com/android.zip","url":"https://apk.com/android.apk"},"cacheKey":"cachekeybeehatch","error":"","log":["Build complete"],"status":"complete"}];
+    return [{"action":{"ota_url":"https://ota.com/android.zip","url":"https://apk.com/android.apk"},"cacheKey":"cachekeybeehatch","error":"","log":["Build complete"],"status":"complete"}]
   }
 };
 

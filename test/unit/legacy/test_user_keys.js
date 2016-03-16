@@ -6,7 +6,7 @@ module.exports = {
   setUp : function(cb){
     return cb();
   },
-  'list keys' : function(cb){
+  'list keys' : function(cb){  
     keys({ _ : ['list'] }, function(err, list){
       assert.equal(err, null, err);
       assert.ok(list);
@@ -14,7 +14,7 @@ module.exports = {
       return cb();
     });
   },
-  'create keys' : function(cb){
+  'create keys' : function(cb){  
     keys({ _ : ['add'] }, function(err){
       assert.ok(!err, err);
       keys({ _ : ['add', 'UserKey'] }, function(err, key){
@@ -37,7 +37,7 @@ module.exports = {
         assert.ok(key.apiKey.key);
         return cb();
       });
-    });
+    });  
   },
   'update keys' : function (cb) {
     keys.skipPrompt = true;
@@ -62,10 +62,10 @@ module.exports = {
       assert.equal(err, null, err);
       assert.equal(r, key_val);
       keys({ _ : ['target'] }, function(err, r){
-        assert.equal(err, null);
-        assert.equal(r, key_val);
-        return cb();
-      });
+            assert.equal(err, null);
+            assert.equal(r, key_val);
+            return cb();
+        });
     });
   },
   tearDown : function(cb){
