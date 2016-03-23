@@ -59,5 +59,17 @@ module.exports = {
       assert.equal(err, null);
       return cb();
     });
+  },
+  'test appforms-forms import non-file path': function(cb) {
+    appformsforms.import({file: 'bin'}, function(err) {
+      assert.ok(/not a file/.test(err.toString()));
+      return cb();
+    });
+  },
+  'test appforms-forms import non-existing file': function(cb) {
+    appformsforms.import({file: 'does-not-exist.zip'}, function(err) {
+      assert.ok(/not found/.test(err.toString()));
+      return cb();
+    });
   }
 };
