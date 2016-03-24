@@ -2,6 +2,8 @@ var assert = require('assert');
 var genericCommand = require('genericCommand');
 require('test/fixtures/appforms/fixture_forms');
 var fs = require('fs');
+var os = require('os');
+var path = require('path');
 
 var appformsforms = {
   create : genericCommand(require('cmd/fh3/appforms/forms/create')),
@@ -56,15 +58,24 @@ module.exports = {
     });
   },
   'test appforms-forms export': function(cb) {
-    appformsforms.export({ file: 'test/fixtures/appforms/fixture_export.zip'}, function (err) {
+    appformsforms.export({ file: path.join(os.tmpdir(), 'fixture_export.zip')}, function (err) {
       assert.equal(err, null);
-      fs.unlink('test/fixtures/appforms/fixture_export.zip', cb);
+      return cb();
     });
   },
   'test appforms-forms export non-zip file extension': function(cb) {
     appformsforms.export({ file : 'exportedfile' }, function (err){
       assert.equal(err, 'Expected the output file to have a .zip extension');
       return cb();
+    });
+  },
+  tearDown : function(cb){
+    var file = path.join(os.tmpdir(), 'fixture_export.zip');
+    fs.stat(file, function (err) {
+      if (err) {
+        return cb();
+      }
+      fs.unlink(file, cb);
     });
   }
 };
