@@ -1,4 +1,5 @@
 var nock = require('nock');
+var fs = require('fs');
 
 var envReplies = {
   crud : function(){
@@ -27,4 +28,8 @@ module.exports = nock('https://apps.feedhenry.com')
   .delete('/api/v2/appforms/forms/someformid', '*')
   .reply(200, envReplies.crud)
   .post('/api/v2/appforms/forms/someformid/clone', '*')
-  .reply(200, envReplies.crud);
+  .reply(200, envReplies.crud)
+  .get('/api/v2/appforms/forms/export', '*')
+  .reply(204, function(uri, requestBody) {
+    return fs.createReadStream('test/fixtures/appforms/export_file.zip');
+  });
