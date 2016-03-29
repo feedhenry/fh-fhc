@@ -27,4 +27,6 @@ module.exports = nock('https://apps.feedhenry.com')
   .delete('/api/v2/appforms/forms/someformid', '*')
   .reply(200, envReplies.crud)
   .post('/api/v2/appforms/forms/someformid/clone', '*')
+  .reply(200, envReplies.crud)
+  .post('/api/v2/appforms/forms/import', '*')
   .reply(200, envReplies.crud);
