@@ -19,7 +19,8 @@ module.exports = function(grunt) {
     _accept_args: 'test/accept/*',
     unit: ['env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/fh3/**/*',
       'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/common/*',
-      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*'
+      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/legacy/*',
+      'env NODE_PATH=.:./lib <%= _test_runner %> <%= _unit_args %>/lib/*'
       ],
     accept: 'env NODE_PATH=.:./lib <%= _test_runner %> <%= _accept_args %>',
     unit_cover: 'istanbul cover --dir cov-unit <%= _test_runner %> -- <%= _unit_args %>',
@@ -30,10 +31,27 @@ module.exports = function(grunt) {
       'cp -rf doc/common/ ../fh-doxy/public/dev_tools/fhc/',
       'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
       'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md'
-    ]
+    ],
+
+    jsxgettext: {
+      pot: {
+        files: [
+          {
+            src: ['lib/**/*.js'],
+            dest: 'po/fh-fhc.pot'
+          }
+        ],
+        options: {
+          keyword: [
+            '_', 'N_'
+          ],
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-fh-build');
+  grunt.loadNpmTasks('grunt-jsxgettext');
 
   grunt.registerTask('test', ['fh:test']);
   grunt.registerTask('unit', ['jshint', 'fh:unit']);
