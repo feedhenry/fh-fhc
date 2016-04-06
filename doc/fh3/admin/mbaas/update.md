@@ -6,18 +6,18 @@ fhc-update(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas update --id=<mBaaS id> --url=<mBaaS URL> --servicekey=<mBaaS Service Key> --username=<mBaaS User Name> --password=<mBaaS Password>    Updates an environment with id <mbaasId>
+  fhc admin mbaas update --id=<MBaaS id> --url=<MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password>    Updates an environment with id <mbaasId>
 
 
 ## OPTIONS
 
-  --id          Some unique mBaaS identifier           [required]
-  --url         The hostname where your mBaaS exists 
-  --servicekey  Service key to authenticate the mBaaS
-  --username    mBaaS Username                       
-  --password    mBaaS Password                       
+  --id          Some unique MBaaS identifier           [required]
+  --url         The hostname where your MBaaS exists 
+  --servicekey  Service key to authenticate the MBaaS
+  --username    MBaaS Username                       
+  --password    MBaaS Password                       
 
 ## DESCRIPTION
 
-Update an mBaaS.
+Update an MBaaS.
 

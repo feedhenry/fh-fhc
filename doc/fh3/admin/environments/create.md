@@ -13,7 +13,7 @@ fhc-create(1)
 
   --id       Some unique identifier for your environment     [required]
   --label    A label describing your environment             [required]
-  --targets  Comma separated list of mBaaS Target hostnames  [required]
+  --targets  Comma separated list of MBaaS Target hostnames  [required]
 
 ## DESCRIPTION
 
