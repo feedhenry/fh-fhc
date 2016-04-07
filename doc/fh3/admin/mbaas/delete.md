@@ -6,14 +6,14 @@ fhc-delete(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas delete --id=<mBaaS id>    
+  fhc admin mbaas delete --id=<MBaaS id>    
 
 
 ## OPTIONS
 
-  --id  Some unique mBaaS identifier  [required]
+  --id  Some unique MBaaS identifier  [required]
 
 ## DESCRIPTION
 
-Delete an mBaaS.
+Delete an MBaaS.
 
