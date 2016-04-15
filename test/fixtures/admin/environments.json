@@ -1,16 +1,64 @@
 [
-    {
-      "status" : "ok",
-      "_id" : "1a",
-      "label" : "My env",
-      "targets" : ["http://www.1.com", "http://www.2.com"]
+  {
+    "__v": 0,
+    "_id": "570d0d345a819c0227359d51",
+    "created": "2016-04-12T14:59:00.486Z",
+    "domain": "testing",
+    "id": "1a",
+    "label": "lbl1",
+    "modified": "2016-04-12T14:59:00.486Z",
+    "order": 1,
+    "owner": "Sn7gq9WFhE4UZ9vVzTu__8Fw",
+    "target": {
+      "type": "feedhenry",
+      "enabled": true,
+      "editable": true,
+      "decoupled": false,
+      "__v": 0,
+      "id": "testTarget1",
+      "_id": "57066064b401165623d088fc",
+      "label": "testlbl1",
+      "password": "doe",
+      "username": "john",
+      "servicekey": "skey",
+      "url": "http://hello.world",
+      "owner": "Sn7gq9WFhE4UZ9vVzTu__8Fw",
+      "domain": "testing",
+      "modified": "2016-04-07T13:28:04.431Z",
+      "created": "2016-04-07T13:28:04.431Z"
     },
-    {
-      "status" : "ok",
-      "_id" : "2a",
-      "label" : "Another env",
-      "autoDeployOnCreate" : true,
-      "autoDeployOnUpdate" : true,
-      "targets" : ["http://www.1.com", "http://www.2.com"]
-    }
+    "enabled": true
+  },
+  {
+    "__v": 0,
+    "_id": "570d0d345a819c0227359d52",
+    "created": "2016-04-12T14:59:00.486Z",
+    "domain": "testing",
+    "id": "2a",
+    "label": "lbl2",
+    "modified": "2016-04-12T14:59:00.486Z",
+    "order": 1,
+    "owner": "Sn7gq9WFhE4UZ9vVzTu__8Fw",
+    "autoDeployOnCreate" : true,
+    "autoDeployOnUpdate" : true,
+    "target": {
+      "type": "feedhenry",
+      "enabled": true,
+      "editable": true,
+      "decoupled": false,
+      "__v": 0,
+      "id": "testTarget2",
+      "_id": "57066064b401165623d088fb",
+      "label": "testlbl2",
+      "password": "doe",
+      "username": "john",
+      "servicekey": "skey",
+      "url": "http://hello.world",
+      "owner": "Sn7gq9WFhE4UZ9vVzTu__8Fw",
+      "domain": "testing",
+      "modified": "2016-04-07T13:28:04.431Z",
+      "created": "2016-04-07T13:28:04.431Z"
+    },
+    "enabled": true
+  }
 ]

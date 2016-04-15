@@ -6,10 +6,10 @@ fhc-list(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas list     Lists available mBaaSes
+  fhc admin mbaas list     Lists available MBaaSes
 
 
 ## DESCRIPTION
 
-Lists available mBaaSes.
+Lists available MBaaSes.
 
