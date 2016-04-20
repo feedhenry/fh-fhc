@@ -1,6 +1,6 @@
 var nock = require('nock');
 
-var userReadReply = function(){
+var userReadReply = function() {
   return {
     displayName: 'Foo Bar',
     domain: 'apps',
