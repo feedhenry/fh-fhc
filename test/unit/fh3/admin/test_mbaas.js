@@ -9,7 +9,7 @@ var adminmbaas = {
   delete : genericCommand(require('cmd/fh3/admin/mbaas/delete')),
   list : genericCommand(require('cmd/fh3/admin/mbaas/list'))
 };
-var anMBaaS = {url : 'http://mbaas.com', servicekey : 'svckey', id : '1a2b', username : 'test', password : 'test'};
+var anMBaaS = {url : 'http://mbaas.com', servicekey : 'svckey', id : '1a2b', username : 'test', password : 'test', 'editable': true};
 module.exports = {
   'test admin-mbaas list': function(cb) {
     adminmbaas.list(_.clone(anMBaaS), function(err, data) {
