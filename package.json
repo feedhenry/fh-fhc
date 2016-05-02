@@ -20,7 +20,7 @@
     "fhc": "./bin/fhc.js"
   },
   "publishConfig": {
-    "tag": "latest-3"
+    "tag": "latest-2"
   },
   "dependencies": {
     "async": "0.2.9",
