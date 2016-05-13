@@ -36,11 +36,8 @@
     "nopt": "1.0.0",
     "once": "^1.3.2",
     "open": "0.0.5",
-<<<<<<< 569541a9000540d8b8252d8b049f7c1dbdae6cc0
     "os-locale": "1.4.0",
-=======
     "progress": "^1.1.8",
->>>>>>> RHMAP-6712 add export read and status commands
     "request": "2.11.4",
     "semver": "4.3.6",
     "tabtab": "0.0.2",
