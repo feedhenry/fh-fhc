@@ -1,6 +1,6 @@
 {
   "name": "fh-fhc",
-  "version": "2.7.2-BUILD-NUMBER",
+  "version": "2.7.3-BUILD-NUMBER",
   "dependencies": {
     "async": {
       "version": "0.2.9",
@@ -206,6 +206,32 @@
       "from": "https://registry.npmjs.org/moment/-/moment-2.0.0.tgz",
       "resolved": "https://registry.npmjs.org/moment/-/moment-2.0.0.tgz"
     },
+    "node-gettext": {
+      "version": "1.1.0",
+      "from": "https://registry.npmjs.org/node-gettext/-/node-gettext-1.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/node-gettext/-/node-gettext-1.1.0.tgz",
+      "dependencies": {
+        "gettext-parser": {
+          "version": "1.1.2",
+          "from": "https://registry.npmjs.org/gettext-parser/-/gettext-parser-1.1.2.tgz",
+          "resolved": "https://registry.npmjs.org/gettext-parser/-/gettext-parser-1.1.2.tgz",
+          "dependencies": {
+            "encoding": {
+              "version": "0.1.12",
+              "from": "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz",
+              "resolved": "https://registry.npmjs.org/encoding/-/encoding-0.1.12.tgz",
+              "dependencies": {
+                "iconv-lite": {
+                  "version": "0.4.13",
+                  "from": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz",
+                  "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.13.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "nopt": {
       "version": "1.0.0",
       "from": "https://registry.npmjs.org/nopt/-/nopt-1.0.0.tgz",
@@ -234,6 +260,25 @@
       "version": "0.0.5",
       "from": "https://registry.npmjs.org/open/-/open-0.0.5.tgz",
       "resolved": "https://registry.npmjs.org/open/-/open-0.0.5.tgz"
+    },
+    "os-locale": {
+      "version": "1.4.0",
+      "from": "https://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz",
+      "resolved": "https://registry.npmjs.org/os-locale/-/os-locale-1.4.0.tgz",
+      "dependencies": {
+        "lcid": {
+          "version": "1.0.0",
+          "from": "https://registry.npmjs.org/lcid/-/lcid-1.0.0.tgz",
+          "resolved": "https://registry.npmjs.org/lcid/-/lcid-1.0.0.tgz",
+          "dependencies": {
+            "invert-kv": {
+              "version": "1.0.0",
+              "from": "https://registry.npmjs.org/invert-kv/-/invert-kv-1.0.0.tgz",
+              "resolved": "https://registry.npmjs.org/invert-kv/-/invert-kv-1.0.0.tgz"
+            }
+          }
+        }
+      }
     },
     "request": {
       "version": "2.11.4",
