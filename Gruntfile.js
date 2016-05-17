@@ -47,18 +47,45 @@ module.exports = function(grunt) {
           ],
         }
       }
+    },
+
+    zanata: {
+      push: {
+        options: {
+          url: 'https://translate.zanata.org',
+          project: 'fh-fhc',
+          'project-version': 'master',
+          'project-type': 'gettext',
+        },
+        files: [
+          {src: 'po', type: 'source'}
+        ]
+      },
+      pull: {
+        options: {
+          url: 'https://translate.zanata.org',
+          project: 'fh-fhc',
+          'project-version': 'master',
+          'project-type': 'gettext',
+        },
+        files: [
+          {src: 'po', type: 'trans'}
+        ]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-fh-build');
   grunt.loadNpmTasks('grunt-jsxgettext');
+  grunt.loadNpmTasks('grunt-zanata-js');
 
   grunt.registerTask('test', ['fh:test']);
   grunt.registerTask('unit', ['jshint', 'fh:unit']);
   grunt.registerTask('accept', ['fh:accept']);
   grunt.registerTask('coverage', ['fh:coverage']);
   grunt.registerTask('analysis', ['fh:analysis']);
-  grunt.registerTask('dist', ['fh:dist']);
+  grunt.registerTask('potupload', ['jsxgettext:pot', 'zanata:push']);
+  grunt.registerTask('dist', ['zanata:pull', 'fh:dist']);
   grunt.registerTask('default', ['fh:default']);
 
   grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:fh-run-array:docsToDoxy']);
