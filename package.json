@@ -1,8 +1,8 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "2.9.1-BUILD-NUMBER",
-  "_minPlatformVersion": "3.10.0",
+  "version": "2.10.0-BUILD-NUMBER",
+  "_minPlatformVersion": "3.11.0",
   "keywords": [
     "feedhenry"
   ],
@@ -44,6 +44,7 @@
     "underscore": "1.8.0",
     "underscore-deep-extend": "0.0.5",
     "unzip": "0.1.7",
+    "tar": "2.2.1",
     "yargs": "2.1.1"
   },
   "devDependencies": {

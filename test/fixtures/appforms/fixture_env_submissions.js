@@ -1,5 +1,6 @@
 var nock = require('nock');
 var fs = require('fs');
+var _ = require('underscore');
 
 var filePath = 'test/fixtures/appforms/test_file.json';
 
@@ -26,7 +27,11 @@ var mockSubmission = {
 
 var envReplies = {
   list: function(){
-    return [mockSubmission];
+    return {
+      pages: 22,
+      total: 4000,
+      submissions: [mockSubmission]
+    };
   },
   get: function(){
     return mockSubmission;
@@ -41,6 +46,10 @@ module.exports = nock('https://apps.feedhenry.com')
     return '*';
   })
   .get('/api/v2/mbaas/someenv/appforms/submissions', '*')
+  .query({
+    page: 1,
+    limit: 10
+  })
   .reply(200, envReplies.list)
   .get('/api/v2/mbaas/someenv/appforms/submissions/somesubmissionid', '*')
   .reply(200, envReplies.get)
