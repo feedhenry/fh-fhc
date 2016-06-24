@@ -95,3 +95,20 @@ Tests are turbo'd, nock for mocks, coverage is at least a little better than bef
 ## Tests
 
   `grunt test`
+
+## Internationalization
+
+all of the strings expecting to be internationalized has to be passed through i18n._() function like:
+
+```js
+module.exports = {
+  'desc': i18n._('Version info about the FeedHenry instance we\'re connected to'),
+  ...
+}
+```
+
+To get strings translated, we use the Zanata, the web-based translation platform. the source strings file has to be uploaded into the Zanata server. that can be done with:
+
+    grunt potupload
+
+Prior to do that, please make sure you have an account on the Zanata server. if not, please visit https://translate.zanata.org and follow up the steps at http://docs.zanata.org/en/release/user-guide/account/account-sign-up/ to create an account, and http://zanata-client.readthedocs.io/en/latest/configuration/ to store the API key into $HOME/.config/zanata.ini.

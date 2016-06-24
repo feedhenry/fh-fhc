@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "2.10.0-BUILD-NUMBER",
+  "version": "2.10.1-BUILD-NUMBER",
   "_minPlatformVersion": "3.11.0",
   "keywords": [
     "feedhenry"
@@ -57,6 +57,7 @@
     "grunt-open": "0.2.3",
     "grunt-plato": "1.0.0",
     "grunt-shell": "0.6.4",
+    "grunt-zanata-js": "0.0.4",
     "istanbul": "0.2.7",
     "jsxgettext": "0.8.2",
     "load-grunt-tasks": "0.4.0",
