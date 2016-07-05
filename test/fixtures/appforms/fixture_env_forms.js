@@ -30,7 +30,7 @@ var envReplies = {
         }
       }]
     }
-    ]
+    ];
   }
 };
 

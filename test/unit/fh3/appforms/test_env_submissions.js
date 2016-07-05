@@ -11,18 +11,23 @@ var appformsenvsubmissions = {
   filter: genericCommand(require('cmd/fh3/appforms/environments/submissions/filter'))
 };
 
+var page = 1;
+var limit = 10;
+
 module.exports = {
   'test appforms-submissions list': function (cb) {
-    appformsenvsubmissions.list({environment: "someenv"}, function (err, data) {
+    appformsenvsubmissions.list({environment: "someenv", page: page, limit: limit}, function (err, data) {
       assert.equal(err, null);
+      assert.ok(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'somesubmissionid');
       return cb();
     });
   },
   'test appforms-submissions filter': function (cb) {
-    appformsenvsubmissions.filter({environment: "someenv", formid: "someformid", projectid: "someformproject"}, function (err, data) {
+    appformsenvsubmissions.filter({environment: "someenv", formid: "someformid", projectid: "someformproject", page: page, limit: limit}, function (err, data) {
       assert.equal(err, null);
+      assert.ok(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'somesubmissionid');
       return cb();

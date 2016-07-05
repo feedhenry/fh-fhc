@@ -13,7 +13,7 @@ fhc-update(1)
 
   --id       Some unique identifier for your environment     [required]
   --label    A label describing your environment           
-  --targets  Comma separated list of mBaaS Target hostnames
+  --targets  Comma separated list of MBaaS Target hostnames
 
 ## DESCRIPTION
 

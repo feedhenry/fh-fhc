@@ -6,14 +6,14 @@ fhc-read(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas read --id=<mBaaS id>    
+  fhc admin mbaas read --id=<MBaaS id>    
 
 
 ## OPTIONS
 
-  --id  Some unique mBaaS identifier  [required]
+  --id  Some unique MBaaS identifier  [required]
 
 ## DESCRIPTION
 
-Read an mBaaS.
+Read an MBaaS.
 

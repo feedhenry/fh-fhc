@@ -1,15 +1,15 @@
 var nock = require('nock');
 
 var envReplies = {
-  crud : function(){
-    return { 
+  crud : function() {
+    return {
       status : 'ok',
       _id : '1a',
       url : 'http://www.mbaas.com',
       targets : ['http://www.1.com', 'http://www.2.com']
     };
   },
-  list : function(){
+  list : function() {
     return [envReplies.crud()];
   }
 };

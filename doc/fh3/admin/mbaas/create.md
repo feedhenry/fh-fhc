@@ -6,18 +6,18 @@ fhc-create(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas create --id=<mBaaS id> --url=<mBaaS URL> --servicekey=<mBaaS Service Key> --username=<mBaaS User Name> --password=<mBaaS Password>    Creates an environment
+  fhc admin mbaas create --id=<MBaaS id> --url=<MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password>    Creates an environment
 
 
 ## OPTIONS
 
-  --id          Some unique identifier for your mBaaS  [required]
-  --url         The hostname where your mBaaS exists   [required]
-  --servicekey  Service key to authenticate the mBaaS  [required]
-  --username    mBaaS Username                         [required]
-  --password    mBaaS Password                         [required]
+  --id          Some unique identifier for your MBaaS  [required]
+  --url         The hostname where your MBaaS exists   [required]
+  --servicekey  Service key to authenticate the MBaaS  [required]
+  --username    MBaaS Username                         [required]
+  --password    MBaaS Password                         [required]
 
 ## DESCRIPTION
 
-Creates an mBaaS.
+Creates an MBaaS.
 
