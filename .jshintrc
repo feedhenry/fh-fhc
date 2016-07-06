@@ -1,4 +1,7 @@
 {
+    "globals": {
+      "i18n": true
+    },
     "asi"           : true,
     "camelcase"     : false,
     "bitwise"       : false,
