@@ -1,6 +1,8 @@
 var assert = require('assert');
+var fs = require('fs');
 var genericCommand = require('genericCommand');
 require('test/fixtures/appforms/fixture_env_submissions');
+var submissionExportMocks = require('test/fixtures/appforms/fixture_env_submission_export');
 var appformsenvsubmissions = {
   list: genericCommand(require('cmd/fh3/appforms/environments/submissions/list')),
   read: genericCommand(require('cmd/fh3/appforms/environments/submissions/read')),
@@ -8,7 +10,9 @@ var appformsenvsubmissions = {
   update: genericCommand(require('cmd/fh3/appforms/environments/submissions/update')),
   create: genericCommand(require('cmd/fh3/appforms/environments/submissions/create')),
   delete: genericCommand(require('cmd/fh3/appforms/environments/submissions/delete')),
-  filter: genericCommand(require('cmd/fh3/appforms/environments/submissions/filter'))
+  filter: genericCommand(require('cmd/fh3/appforms/environments/submissions/filter')),
+  exportcsv : genericCommand(require('cmd/fh3/appforms/environments/submissions/exportcsv')),
+  csvExportReset : genericCommand(require('cmd/fh3/appforms/environments/submissions/csvExportReset'))
 };
 
 var page = 1;
@@ -72,6 +76,66 @@ module.exports = {
     }, function (err) {
       assert.equal(err, null);
       return cb();
+    });
+  },
+  'test appforms-submissions exportcsv async': function (cb) {
+    var csvExportAsyncRequests = submissionExportMocks.getCSVExportAsyncMocks();
+    var getCSVExportAsyncFileDownloadMocks = submissionExportMocks.getCSVExportAsyncFileDownloadMocks();
+    var testOutputZipFile = 'testexportasync.zip';
+
+    appformsenvsubmissions.exportcsv({
+      environment: "someenv",
+      async: "true",
+      output: testOutputZipFile
+    }, function(err) {
+      assert.equal(null, err, "Expected no error : " + err);
+
+      //Making sure that the required endpoints were called for async submission export.
+      csvExportAsyncRequests.done();
+
+      //Making sure the exported file has been downloaded
+      getCSVExportAsyncFileDownloadMocks.done();
+
+      //Cleaning up the output file if it exists.
+      fs.unlink(testOutputZipFile, function(){
+        cb();
+      });
+    });
+  },
+  'test appforms-submissions exportcsv async unavailable': function (cb) {
+    var csvExportAsyncRequests = submissionExportMocks.getCSVExportAsyncUnavailable();
+    var testOutputZipFile = 'testexportasync.zip';
+
+    appformsenvsubmissions.exportcsv({
+      environment: "someenv",
+      async: "true",
+      output: testOutputZipFile
+    }, function(err) {
+      assert.ok(err.indexOf("available") > -1, "Expected the error message to show that async submissions export is unavailable.");
+
+      //Making sure that the required endpoints were called for async submission export.
+      csvExportAsyncRequests.done();
+
+      cb();
+    });
+  },
+  'test appforms-submissions exportcsv sync': function (cb) {
+    var csvExportSyncRequests = submissionExportMocks.getCSVExportSyncMocks();
+    var testOutputZipFile = 'testexportsync.zip';
+
+    appformsenvsubmissions.exportcsv({
+      environment: "someenv",
+      output: testOutputZipFile
+    }, function(err) {
+      assert.equal(null, err, "Expected no error : " + err);
+
+      //Making sure that the required endpoints were called for sync submission export.
+      csvExportSyncRequests.done();
+
+      //Cleaning up the output file if it exists.
+      fs.unlink(testOutputZipFile, function(){
+        cb();
+      });
     });
   }
 };
