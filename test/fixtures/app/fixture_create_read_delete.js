@@ -53,5 +53,7 @@ module.exports = nock('https://apps.feedhenry.com')
 .reply(200, appReplies.delete, appReplies.headers)
 .post('/box/srv/1.1/ide/apps/app/read', '*')
 .reply(200, appReplies.read, appReplies.headers)
-.get('/box/srv/1.1/dat/log/read?cacheKeys=[{%22cacheKey%22:%228dc3da1987bc66c8676ed51c21798479%22,%22start%22:0}]', '*')
+.get('/box/srv/1.1/dat/log/read').query(function(actualQueryObject){
+    return true;
+  })
 .reply(200, function(){ return {}; }, appReplies.headers);

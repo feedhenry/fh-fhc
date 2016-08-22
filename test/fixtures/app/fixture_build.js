@@ -1,7 +1,7 @@
 var nock = require('nock');
 
 function _cacheKeyUrl(n){
-  return '/box/srv/1.1/dat/log/read?cacheKeys=[{%22cacheKey%22:%22cachekeybeehatch%22,%22start%22:' + n + '}]';
+  return '/box/srv/1.1/dat/log/read';
 }
 
 var buildReplies = {
@@ -29,9 +29,5 @@ module.exports = nock('https://apps.feedhenry.com')
 })
 .post('/box/srv/1.1/wid/apps/android/1a2b3c4d5e6f7g8e9f0a1b2d/deliver', '*')
 .reply(200, buildReplies.deliver, buildReplies.headers)
-.get(_cacheKeyUrl(0), '*')
-.reply(200, buildReplies.cacheKey, buildReplies.headers)
-.get(_cacheKeyUrl(1), '*')
-.reply(200, buildReplies.cacheKey, buildReplies.headers)
-.get(_cacheKeyUrl(2), '*')
+.get(_cacheKeyUrl(0)).query(true)
 .reply(200, buildReplies.cacheKeyBuildSuccess, buildReplies.headers);
