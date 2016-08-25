@@ -1,7 +1,7 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "2.12.0-BUILD-NUMBER",
+  "version": "2.12.1-BUILD-NUMBER",
   "_minPlatformVersion": "3.11.0",
   "keywords": [
     "feedhenry"
@@ -61,13 +61,13 @@
     "istanbul": "0.2.7",
     "jsxgettext": "0.8.2",
     "load-grunt-tasks": "0.4.0",
-    "nock": "5.0.0",
+    "nock": "8.0.0",
     "proxyquire": "0.4.1",
     "time-grunt": "0.3.1",
     "turbo-test-runner": "0.3.3"
   },
   "engines": {
-    "node": ">=0.4"
+    "node": ">=0.8 <= 4.4"
   },
   "scripts": {
     "test": "grunt test"
