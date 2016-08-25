@@ -1,4 +1,5 @@
 var nock = require('nock');
+var data = require('./environments');
 
 var envReplies = {
   crud : function() {
@@ -27,4 +28,13 @@ module.exports = nock('https://apps.feedhenry.com')
 .delete('/api/v2/mbaases/1a2b', '*')
 .reply(200, envReplies.crud)
 .get('/api/v2/mbaases', '*')
-.reply(200, envReplies.list);
+.reply(200, envReplies.list)
+//Required for the environments tests
+.get('/api/v2/mbaases/testTarget1', '*')
+.reply(200, data[0])
+.get('/api/v2/mbaases/testTarget2', '*')
+.reply(200, data[1])
+.get('/api/v2/mbaases/testTarget1', '*')
+.reply(200, data[0])
+.get('/api/v2/mbaases/testTarget1', '*')
+.reply(200, data[0]);
