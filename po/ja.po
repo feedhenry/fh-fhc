@@ -1,69 +1,70 @@
+# Akira TAGOH <tagoh@fedoraproject.org>, 2016. #zanata
+# tnagamot <tnagamot@redhat.com>, 2016. #zanata
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2016-09-09 01:39+0000\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"PO-Revision-Date: 2016-07-27 10:21-0400\n"
+"Last-Translator: tnagamot <tnagamot@redhat.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"X-Generator: Zanata 3.9.5\n"
 
 #: lib/cmd/common/-v.js:5
 msgid "Version info about this tool"
-msgstr ""
+msgstr "このツールに関するバージョン情報"
 
 #: lib/cmd/common/-v.js:14
 #: lib/cmd/common/version.js:58
 msgid "FHC Version: "
-msgstr ""
+msgstr "FHC バージョン: "
 
 #: lib/cmd/common/admin-appstore.js:3
 msgid "Operations on the MAM App Store"
-msgstr ""
+msgstr "MAM アプリストアでの操作"
 
 #: lib/cmd/common/admin-appstore.js:58
 #: lib/cmd/common/admin-appstore.js:66
 #: lib/cmd/common/admin-storeitems.js:113
 msgid "Error Listing items: "
-msgstr ""
+msgstr "アイテムの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-appstore.js:75
 msgid "Error updating store: "
-msgstr ""
+msgstr "ストアの更新でエラー: "
 
 #: lib/cmd/common/admin-appstore.js:82
 msgid "Error removing item from appstore: "
-msgstr ""
+msgstr "アプリストアからアイテム削除でエラー: "
 
 #: lib/cmd/common/admin-appstore.js:89
 msgid "Error reading store: "
-msgstr ""
+msgstr "ストアの読み込みでエラー: "
 
 #: lib/cmd/common/admin-appstore.js:102
 #: lib/cmd/common/admin-appstore.js:123
 #: lib/cmd/common/admin-appstore.js:130
 #: lib/cmd/common/admin-storeitems.js:154
 msgid "Error updating item: "
-msgstr ""
+msgstr "アイテムの更新でエラー: "
 
 #: lib/cmd/common/admin-appstore.js:116
 #: lib/cmd/common/admin-policies.js:102
 msgid "Error listing policies: "
-msgstr ""
+msgstr "ポリシーの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-auditlog.js:4
 msgid "Audit logs for the MAM App Store"
-msgstr ""
+msgstr "MAM アプリストアの監査ログ"
 
 #: lib/cmd/common/admin-auditlog.js:32
 msgid "Error Listing log: "
-msgstr ""
+msgstr "ログの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-devices.js:5
 msgid "Operations specific to devices connected to the MAM App Store"
-msgstr ""
+msgstr "MAM アプリストアに接続しているデバイスに固有の操作"
 
 #: lib/cmd/common/admin-devices.js:19
 #: lib/cmd/common/admin-policies.js:44
@@ -73,29 +74,29 @@ msgstr ""
 #: lib/cmd/common/eventalert.js:29
 #: lib/cmd/common/secureendpoints.js:21
 msgid "Invalid arguments for '%s':"
-msgstr ""
+msgstr "'%s' の無効な引数:"
 
 #: lib/cmd/common/admin-devices.js:61
 msgid "Error listing devices: "
-msgstr ""
+msgstr "デバイスの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-devices.js:68
 #: lib/cmd/common/admin-devices.js:86
 #: lib/cmd/common/admin-devices.js:97
 msgid "Error updating device: "
-msgstr ""
+msgstr "デバイスの更新でエラー"
 
 #: lib/cmd/common/admin-devices.js:75
 msgid "Error reading device: "
-msgstr ""
+msgstr "デバイスの読み込みでエラー: "
 
 #: lib/cmd/common/admin-devices.js:104
 msgid "Error listing device users: "
-msgstr ""
+msgstr "デバイスユーザーの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-policies.js:13
 msgid "Operations on Auth Policies for connecting to 3rd party auth systems"
-msgstr ""
+msgstr "サードパーティーの認証システムに接続するための認証ポリシーでの操作"
 
 #: lib/cmd/common/admin-policies.js:17
 msgid ""
@@ -103,12 +104,17 @@ msgid ""
 "    where <policy-type> is one of: OAUTH1 | OAUTH2 | LDAP | OPENID | "
 "FEEDHENRY"
 msgstr ""
+"\n"
+"    ここでの <policy-type> は、次のいずれかになります: OAUTH1 | OAUTH2 | LDAP | OPENID | "
+"FEEDHENRY"
 
 #: lib/cmd/common/admin-policies.js:18
 msgid ""
 "\n"
 "    where <config> is a json object corresponding to the policy type, e.g."
 msgstr ""
+"\n"
+"    ここでの <config> は、ポリシータイプに対応する json オブジェクトです。例:"
 
 #: lib/cmd/common/admin-policies.js:19
 msgid ""
@@ -116,6 +122,9 @@ msgid ""
 "          for OAuth2: \"{\"clientId\": \"1234567890.apps.example.com\",  "
 "\"clientSecret\": \"Wfv8DQw80hhyaBqnW37x5R23\", \"provider\": \"GOOGLE\"}\""
 msgstr ""
+"\n"
+"          OAuth2 では: \"{\"clientId\": \"1234567890.apps.example.com\",  "
+"\"clientSecret\": \"Wfv8DQw80hhyaBqnW37x5R23\", \"provider\": \"GOOGLE\"}\""
 
 #: lib/cmd/common/admin-policies.js:20
 msgid ""
@@ -124,6 +133,10 @@ msgid ""
 "\"ldap://foo.example.com:389, \"dn\": \"ou=people,dc=example,dc=com\", "
 "\"dn_prefix\": \"cn\", \"provider\": \"LDAP\"}"
 msgstr ""
+"\n"
+"          LDAP では: \"{\"authmethod\": \"simple\", \"url\": "
+"\"ldap://foo.example.com:389, \"dn\": \"ou=people,dc=example,dc=com\", "
+"\"dn_prefix\": \"cn\", \"provider\": \"LDAP\"}"
 
 #: lib/cmd/common/admin-policies.js:21
 msgid ""
@@ -131,6 +144,9 @@ msgid ""
 "                       authmethod can be one of: \"simple\", "
 "\"DIGEST-MD5\", \"CRAM-MD5\", or \"GSSAPI\""
 msgstr ""
+"\n"
+"                       authmethod は、次のいずれかになります: "
+"\"simple\"、\"DIGEST-MD5\"、\"CRAM-MD5\" または \"GSSAPI\""
 
 #: lib/cmd/common/admin-policies.js:22
 msgid ""
@@ -138,6 +154,8 @@ msgid ""
 "    where <check-user-exists> is one of: true | false. The default here is "
 "'false'."
 msgstr ""
+"\n"
+"    ここでの <check-user-exists> は、true | false のいずれかになります。デフォルトは 'false' です。"
 
 #: lib/cmd/common/admin-policies.js:23
 msgid ""
@@ -145,12 +163,14 @@ msgid ""
 "    where <check-user-approved> is one of: true | false. The default here "
 "is 'false'."
 msgstr ""
+"\n"
+"    ここでの <check-user-approved> は、true | false のいずれかになります。デフォルトは 'false' です。"
 
 #: lib/cmd/common/admin-policies.js:82
 #: lib/cmd/common/admin-storeitemgroups.js:76
 #: lib/cmd/common/eventalert.js:78
 msgid "Unknown command '%s'."
-msgstr ""
+msgstr "不明なコマンド '%s'。"
 
 #: lib/cmd/common/admin-policies.js:82
 #: lib/cmd/common/admin-storeitemgroups.js:76
@@ -165,174 +185,174 @@ msgstr ""
 #: lib/cmd/common/secureendpoints.js:54
 #: lib/cmd/fh2/app/embed.js:16
 msgid "Usage: "
-msgstr ""
+msgstr "使用量: "
 
 #: lib/cmd/common/admin-policies.js:97
 msgid "'<policy-type>' must be one of %s"
-msgstr ""
+msgstr "'<policy-type>' は %s のいずれかである必要があります"
 
 #: lib/cmd/common/admin-policies.js:118
 #: lib/cmd/common/admin-policies.js:162
 msgid "Error parsing 'configurations' paramater: "
-msgstr ""
+msgstr "'configurations' パラメーターの解析でエラー: "
 
 #: lib/cmd/common/admin-policies.js:130
 msgid "Error creating policy: "
-msgstr ""
+msgstr "ポリシーの作成でエラー: "
 
 #: lib/cmd/common/admin-policies.js:138
 msgid "Error deleting policy: "
-msgstr ""
+msgstr "ポリシーの削除でエラー: "
 
 #: lib/cmd/common/admin-policies.js:146
 msgid "Error reading policy: "
-msgstr ""
+msgstr "ポリシーの読み込みでエラー: "
 
 #: lib/cmd/common/admin-policies.js:175
 msgid "Error updating policy: "
-msgstr ""
+msgstr "ポリシーの更新でエラー: "
 
 #: lib/cmd/common/admin-policies.js:183
 msgid "Error listing users policies: "
-msgstr ""
+msgstr "ユーザーポリシーの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-policies.js:191
 msgid "Error adding users to policy: "
-msgstr ""
+msgstr "ポリシーへのユーザー追加でエラー: "
 
 #: lib/cmd/common/admin-policies.js:199
 msgid "Error removing users from policy: "
-msgstr ""
+msgstr "ポリシーからのユーザー削除でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:5
 msgid "Administer App Store Item Groups in the MAM App Store"
-msgstr ""
+msgstr "MAM アプリストア内のアプリストアアイテムグループを管理"
 
 #: lib/cmd/common/admin-storeitemgroups.js:82
 msgid "Error listing groups: "
-msgstr ""
+msgstr "グループの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:93
 msgid "Error creating group: "
-msgstr ""
+msgstr "グループの作成でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:101
 msgid "Error deleting group: "
-msgstr ""
+msgstr "グループの削除でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:109
 #: lib/cmd/common/admin-storeitemgroups.js:121
 msgid "Error reading group: "
-msgstr ""
+msgstr "グループの読み込みでエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:129
 msgid "Error listing storeitems: "
-msgstr ""
+msgstr "ストアアイテムの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:140
 #: lib/cmd/common/admin-users.js:88
 msgid "Error listing users: "
-msgstr ""
+msgstr "ユーザーの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:159
 msgid "Can not find group with name %s"
-msgstr ""
+msgstr "名前 %s を持つグループが見つかりません"
 
 #: lib/cmd/common/admin-storeitemgroups.js:174
 msgid "Error updating group: "
-msgstr ""
+msgstr "グループの更新でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:185
 msgid "Error adding users: "
-msgstr ""
+msgstr "ユーザーの追加でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:196
 msgid "Error removing users: "
-msgstr ""
+msgstr "ユーザーの削除でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:207
 msgid "Error adding apps: "
-msgstr ""
+msgstr "アプリの追加でエラー: "
 
 #: lib/cmd/common/admin-storeitemgroups.js:218
 msgid "Error removing apps: "
-msgstr ""
+msgstr "アプリの削除でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:4
 msgid "Administer MAM App Store Store Items"
-msgstr ""
+msgstr "MAM アプリストアのアイテム管理"
 
 #: lib/cmd/common/admin-storeitems.js:83
 #: lib/cmd/common/admin-storeitems.js:118
 msgid "Error reading item: "
-msgstr ""
+msgstr "アイテムの読み込みでエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:97
 msgid "Error set restrict-to-groups flag on item: "
-msgstr ""
+msgstr "グループ限定のフラグをアイテムに設定の際にエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:101
 msgid "Error adding policy to item: "
-msgstr ""
+msgstr "アイテムへのポリシー追加でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:105
 msgid "Error removing policy from item: "
-msgstr ""
+msgstr "アイテムからのポリシー削除でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:109
 msgid "Error Listing item policies: "
-msgstr ""
+msgstr "アイテムポリシーの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:134
 msgid "Error creating item: "
-msgstr ""
+msgstr "アイテムの作成でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:140
 msgid "Error deleting item: "
-msgstr ""
+msgstr "アイテムの削除でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:167
 msgid "Error adding groups to storeitem: "
-msgstr ""
+msgstr "storeitem へのグループ追加でエラー: "
 
 #: lib/cmd/common/admin-storeitems.js:171
 msgid "Error removing groups from storeitem: "
-msgstr ""
+msgstr "storeitem からのグループ削除でエラー: "
 
 #: lib/cmd/common/admin-users.js:11
 msgid "Administer FeedHenry Users"
-msgstr ""
+msgstr "FeedHenry ユーザーの管理"
 
 #: lib/cmd/common/admin-users.js:103
 #: lib/cmd/common/admin-users.js:130
 msgid "username is undefined"
-msgstr ""
+msgstr "ユーザー名が定義されていません"
 
 #: lib/cmd/common/admin-users.js:106
 msgid "Error creating user: "
-msgstr ""
+msgstr "ユーザーの作成でエラー: "
 
 #: lib/cmd/common/admin-users.js:115
 msgid "Error deleting user: "
-msgstr ""
+msgstr "ユーザーの削除でエラー: "
 
 #: lib/cmd/common/admin-users.js:133
 #: lib/cmd/common/admin-users.js:148
 #: lib/cmd/common/admin-users.js:155
 msgid "Error updating user: "
-msgstr ""
+msgstr "ユーザーの更新でエラー: "
 
 #: lib/cmd/common/admin-users.js:141
 msgid "Error reading user: "
-msgstr ""
+msgstr "ユーザーの読み込みでエラー: "
 
 #: lib/cmd/common/admin-users.js:170
 msgid "Error listing user devices: "
-msgstr ""
+msgstr "ユーザーデバイスの一覧表示でエラー: "
 
 #: lib/cmd/common/admin-users.js:177
 msgid "Error listing user installed apps: "
-msgstr ""
+msgstr "ユーザーがインストールしたアプリの一覧表示でエラー: "
 
 #: lib/cmd/common/app/update.js:61
 #: lib/cmd/common/build.js:194
@@ -342,86 +362,94 @@ msgstr ""
 #: lib/common.js:716
 #: lib/common.js:724
 msgid "Error reading app: "
-msgstr ""
+msgstr "アプリの読み込みでエラー: "
 
 #: lib/cmd/common/app/update.js:67
 msgid "Config property set ok"
-msgstr ""
+msgstr "設定プロパティーを ok に設定"
 
 #: lib/cmd/common/app/update.js:101
 #: lib/cmd/common/git.js:89
 msgid "Error updating app: "
-msgstr ""
+msgstr "アプリの更新でエラー: "
 
 #: lib/cmd/common/app/update.js:104
 msgid "Property set ok"
-msgstr ""
+msgstr "プロパティーを ok に設定"
 
 #: lib/cmd/common/app/update.js:106
 #: lib/cmd/common/git.js:94
 msgid "Error setting property: "
-msgstr ""
+msgstr "プロパティーの設定でエラー: "
 
 #: lib/cmd/common/appinit.js:6
 msgid "Makes a client app init call with the cloud"
-msgstr ""
+msgstr "クラウドでクライアントアプリ init コールを行う"
 
 #: lib/cmd/common/appinit.js:36
 msgid "Error in init: "
-msgstr ""
+msgstr "init でエラー: "
 
 #: lib/cmd/common/apps.js:6
 msgid "Lists applications"
-msgstr ""
+msgstr "アプリケーションを一覧表示"
 
 #: lib/cmd/common/apps.js:64
 msgid ""
 "The 'fhc apps %s' command is deprecated. Please use 'fhc %s' command "
 "instead."
-msgstr ""
+msgstr "'fhc apps %s' コマンドは廃止されました。代わりに 'fhc %s' コマンドを使用してください。"
 
 #: lib/cmd/common/auth.js:5
 msgid "Performs an auth call against an Auth Policy"
-msgstr ""
+msgstr "認証ポリシーに対してauth コールを実行"
 
 #: lib/cmd/common/auth.js:7
 msgid ""
 "\n"
 "    where <policy-id> is an Auth Policy Id"
 msgstr ""
+"\n"
+"    ここでの <policy-id> は認証ポリシー ID です"
 
 #: lib/cmd/common/auth.js:8
 msgid ""
 "\n"
 "    where <client-token> is typically an App Id"
 msgstr ""
+"\n"
+"    ここでの <client-token> は通常、アプリ ID です"
 
 #: lib/cmd/common/auth.js:9
 msgid ""
 "\n"
 "    where <device> is an identifier for the device"
 msgstr ""
+"\n"
+"    ここでの <device> デバイスの識別子です"
 
 #: lib/cmd/common/auth.js:10
 msgid ""
 "\n"
 "    where <params> are the auth parameters specific to the auth policy"
 msgstr ""
+"\n"
+"    ここでの <params> は、認証ポリシーに固有の auth パラメーターです"
 
 #: lib/cmd/common/auth.js:20
 #: lib/cmd/common/eventalert.js:37
 #: lib/cmd/common/session.js:17
 #: lib/cmd/common/session.js:27
 msgid "Invalid arguments:"
-msgstr ""
+msgstr "無効な引数:"
 
 #: lib/cmd/common/auth.js:39
 msgid "Error in auth call: "
-msgstr ""
+msgstr "auth コールでエラー: "
 
 #: lib/cmd/common/build.js:4
 msgid "Builds a client application"
-msgstr ""
+msgstr "クラウドアプリをビルド"
 
 #: lib/cmd/common/build.js:6
 #: lib/cmd/common/build.js:21
@@ -430,6 +458,10 @@ msgid ""
 "where <destination> is one of: android, iphone, ipad, ios(for universal "
 "binary), blackberry, windowsphone7, windowsphone (windows phone 8)"
 msgstr ""
+"\n"
+"ここでの <destination> は、次のいずれかになります: "
+"android、iphone、ipad、ios(ユニバーサルバイナリー)、blackberry、windowsphone7、windowsphone "
+"(windows phone 8)"
 
 #: lib/cmd/common/build.js:7
 #: lib/cmd/common/build.js:22
@@ -437,6 +469,8 @@ msgid ""
 "\n"
 "where <version> is specific to the destination (e.g. Android version 4.0)"
 msgstr ""
+"\n"
+"ここでの <version> は宛先固有です (例: Android バージョン 4.0)"
 
 #: lib/cmd/common/build.js:8
 #: lib/cmd/common/build.js:23
@@ -444,12 +478,16 @@ msgid ""
 "\n"
 "where <config> is either 'debug' (default), 'distribution', or 'release'"
 msgstr ""
+"\n"
+"ここでの <config> は、'debug' (デフォルト)、'distribution'、または 'release' のいずれかになります"
 
 #: lib/cmd/common/build.js:9
 msgid ""
 "\n"
 "where <provisioning> is the path to the provisioning profile"
 msgstr ""
+"\n"
+"ここでの <provisioning> は、プロビジョニングプロファイルへのパスです"
 
 #: lib/cmd/common/build.js:10
 #: lib/cmd/common/build.js:25
@@ -458,12 +496,17 @@ msgid ""
 "where <cordova_version> is for specifying which version of Cordova to use. "
 "Currently supported: either 2.2 or 3.3. Only valid for Android for now."
 msgstr ""
+"\n"
+"ここでの <cordova_version> は、使用する Cordova のバージョンを特定するものです。現在対応しているのは、2.2 または "
+"3.3 です。当面は Android のみ有効となります。"
 
 #: lib/cmd/common/build.js:11
 msgid ""
 "\n"
 "where <tag name> is the name of a tag to be built."
 msgstr ""
+"\n"
+"ここでの <tag name> は、ビルドするタグの名前です。"
 
 #: lib/cmd/common/build.js:12
 #: lib/cmd/common/build.js:26
@@ -472,12 +515,16 @@ msgid ""
 "where <branch name> is the name of the git branch to build, defaults to "
 "'master'"
 msgstr ""
+"\n"
+"ここでの <branch name> は、ビルドする git ブランチ名です。デフォルトは 'master' になりなす"
 
 #: lib/cmd/common/build.js:13
 msgid ""
 "\n"
 "where <commit hash> is the full hash of the commit to build."
 msgstr ""
+"\n"
+"ここでの <commit hash> は、ビルドするコミットの完全なハッシュです。"
 
 #: lib/cmd/common/build.js:14
 #: lib/cmd/common/ota.js:11
@@ -485,12 +532,16 @@ msgid ""
 "\n"
 "'keypass' and 'certpass' only needed for 'release' builds"
 msgstr ""
+"\n"
+"'release' ビルドのみに必要となる 'keypass' および 'certpass' "
 
 #: lib/cmd/common/build.js:15
 msgid ""
 "\n"
 "'provisioning' is only optional for iphone or ipad builds"
 msgstr ""
+"\n"
+"'provisioning' は iphone または ipad ビルドでオプションのみになります"
 
 #: lib/cmd/common/build.js:19
 msgid ""
@@ -498,12 +549,16 @@ msgid ""
 "where <tag name> is the name of a connection tag for the cloud app, must be "
 "in Semantic Version format, e.g. 0.0.1."
 msgstr ""
+"\n"
+"ここで、<tag name> はクラウドアプリの接続大愚の名前であり、セマンティックバージョン形式 (例: 0.0.1) である必要があります。"
 
 #: lib/cmd/common/build.js:20
 msgid ""
 "\n"
 "where <environment id> is the id of a target environment, e.g. dev"
 msgstr ""
+"\n"
+"ここで、<environment id> はターゲット環境 (例: dev) の ID です。"
 
 #: lib/cmd/common/build.js:24
 msgid ""
@@ -511,6 +566,9 @@ msgid ""
 "where <bundleId> is the unique bundle identifier of the credential bundle. "
 "You can get it using 'fhc credentials list'. Required for all iOS builds."
 msgstr ""
+"\n"
+"ここで、<bundleId> はクレデンシャルバンドルの一意のバンドル ID です。これは 'fhc credentials list' "
+"を使用して取得できます。すべての iOS ビルドに必要です。"
 
 #: lib/cmd/common/build.js:27
 msgid ""
@@ -518,170 +576,181 @@ msgid ""
 "where <commit hash> is the full hash of the commit to build, if not the "
 "head of the branch. Must be used with <branch name>"
 msgstr ""
+"\n"
+"ここでの <commit hash> は、ブランチヘッドでない場合、ビルドするコミットの完全なハッシュになります。<branch name> "
+"と使用する必要があります"
 
 #: lib/cmd/common/build.js:28
 msgid ""
 "\n"
 "'keypass' only needed for 'release' builds"
 msgstr ""
+"\n"
+"'keypass' は 'release' ビルドにのみ必要です。"
 
 #: lib/cmd/common/build.js:54
 #: lib/cmd/common/local.js:243
 #: lib/cmd/common/ota.js:52
 msgid "Error processing args: "
-msgstr ""
+msgstr "args 処理でエラー: "
 
 #: lib/cmd/common/build.js:74
 msgid "Missing 'app' parameter"
-msgstr ""
+msgstr "'app' パラメーターがありません"
 
 #: lib/cmd/common/build.js:77
 msgid "Missing 'destination' parameter"
-msgstr ""
+msgstr "'destination' パラメーターがありません"
 
 #: lib/cmd/common/build.js:86
 msgid "Missing 'keypass' parameter"
-msgstr ""
+msgstr "'keypass' パラメーターがありません"
 
 #: lib/cmd/common/build.js:90
 msgid "Missing 'certpass' parameter"
-msgstr ""
+msgstr "'certpass' パラメーターがありません"
 
 #: lib/cmd/common/build.js:112
 msgid "Missing 'project' parameter"
-msgstr ""
+msgstr "'project' パラメーターがありません"
 
 #: lib/cmd/common/build.js:115
 msgid "Missing 'cloud_app' parameter"
-msgstr ""
+msgstr "'cloud_app' パラメーターがありません"
 
 #: lib/cmd/common/build.js:118
 msgid "Missing 'tag' parameter"
-msgstr ""
+msgstr "'tag' パラメーターがありません"
 
 #: lib/cmd/common/build.js:121
 msgid "Missing 'bundleId' parameter"
-msgstr ""
+msgstr "不明な 'bundleId' パラメーター"
 
 #: lib/cmd/common/build.js:124
 msgid "Missing 'environment' parameter"
-msgstr ""
+msgstr "不明な 'environment' パラメーター"
 
 #: lib/cmd/common/build.js:208
 msgid ""
 "\n"
 "Download URL: "
 msgstr ""
+"\n"
+"ダウンロード URL: "
 
 #: lib/cmd/common/build.js:217
 msgid ""
 "\n"
 "Downloaded file: "
 msgstr ""
+"\n"
+"ダウンロードしたファイル: "
 
 #: lib/cmd/common/build.js:241
 msgid "Provisioning profile uploaded"
-msgstr ""
+msgstr "プロビジョニングプロファイルがアップロードされました"
 
 #: lib/cmd/common/build.js:244
 msgid "Failed to upload provisioning profile. Response is "
-msgstr ""
+msgstr "プロビジョニングプロファイルのアップロードに失敗しました。応答は"
 
 #: lib/cmd/common/build.js:267
 msgid "Unexpected response code for file download: "
-msgstr ""
+msgstr "ファイルのダウンロードで予期しない応答コード: "
 
 #: lib/cmd/common/build.js:267
 msgid " message: "
-msgstr ""
+msgstr "メッセージ:"
 
 #: lib/cmd/common/build.js:287
 msgid "Finish stream event received"
-msgstr ""
+msgstr "受信したストリームイベントの終了"
 
 #: lib/cmd/common/build.js:292
 msgid "close stream event received"
-msgstr ""
+msgstr "受信したストリームイベントを閉じる"
 
 #: lib/cmd/common/build.js:297
 msgid "End of netork stream received"
-msgstr ""
+msgstr "受信したネットワークストリームの末尾"
 
 #: lib/cmd/common/build.js:303
 msgid "Error downloading build: "
-msgstr ""
+msgstr "ビルドのダウンロードでエラー: "
 
 #: lib/cmd/common/call.js:4
 msgid "Call a FeedHenry system URL"
-msgstr ""
+msgstr "FeedHenry システム URL を呼び出す"
 
 #: lib/cmd/common/cluster.js:4
 msgid "Manage cluster"
-msgstr ""
+msgstr "クラスター管理"
 
 #: lib/cmd/common/cluster.js:34
 #: lib/cmd/common/clusterprops.js:48
 #: lib/cmd/common/clusterprops.js:59
 msgid "Error reading Cluster Props: "
-msgstr ""
+msgstr "クラスタープロパティーの読み込みでエラー: "
 
 #: lib/cmd/common/cluster.js:57
 #: lib/cmd/common/cluster.js:71
 #: lib/cmd/fh3/admin/domains.js:32
 msgid "failed to create cluster user"
-msgstr ""
+msgstr "クラスターユーザーの作成に失敗しました"
 
 #: lib/cmd/common/cluster.js:86
 msgid "failed to read cluster user"
-msgstr ""
+msgstr "クラスターユーザーの読み込みに失敗しました"
 
 #: lib/cmd/common/cluster.js:130
 msgid "not updating anything? "
-msgstr ""
+msgstr "更新しませんか?"
 
 #: lib/cmd/common/clusterprops.js:4
 msgid "Manage clusterprops"
-msgstr ""
+msgstr "クラスタープロパティーの管理"
 
 #: lib/cmd/common/clusterprops.js:42
 #: lib/cmd/fh3/connections.js:34
 #: lib/cmd/fh3/projects.js:48
 msgid "Invalid action: "
-msgstr ""
+msgstr "無効なアクション: "
 
 #: lib/cmd/common/clusterprops.js:90
 msgid "failed to create cluster prop"
-msgstr ""
+msgstr "クラスタープロパティーの作成に失敗しました"
 
 #: lib/cmd/common/clusterprops.js:104
 msgid "failed to delete cluster prop"
-msgstr ""
+msgstr "クラスタープロパティーの削���に失敗しました"
 
 #: lib/cmd/common/configuration.js:10
 msgid "Manage client app configuration properties"
-msgstr ""
+msgstr "クライアントアプリせってプロパティーの管理"
 
 #: lib/cmd/common/configuration.js:14
 msgid ""
 "\n"
 "where destination can be one of: %s or 'all'"
 msgstr ""
+"\n"
+"宛先は %s か 'all' のいずれかになります"
 
 #: lib/cmd/common/configuration.js:54
 msgid "Error listing destination config: "
-msgstr ""
+msgstr "宛先設定の一覧表示でエラー: "
 
 #: lib/cmd/common/configuration.js:82
 msgid "Error setting destination config: "
-msgstr ""
+msgstr "宛先設定の設定でエラー: "
 
 #: lib/cmd/common/configuration.js:95
 msgid "Usage:"
-msgstr ""
+msgstr "使用量:"
 
 #: lib/cmd/common/deploy-target.js:12
 msgid "Operations on Cloud Deploy Targets"
-msgstr ""
+msgstr "クラウドデプロイターゲットでの操作"
 
 #: lib/cmd/common/deploy-target.js:21
 msgid ""
@@ -689,50 +758,53 @@ msgid ""
 "[conf_infrastructure] parameter is required if platform is appfog and "
 "possible values are: aws, eu-aws, ap-aws, rs, hp"
 msgstr ""
+"\n"
+"プラットフォームが appfog で値が aws、eu-aws、ap-aws、rs、hp の場合、[conf_infrastructure] "
+"パラメーターが必要です"
 
 #: lib/cmd/common/deploy-target.js:88
 msgid "Error listing deploy targets: "
-msgstr ""
+msgstr "デプロイターゲットの一覧表示でエラー: "
 
 #: lib/cmd/common/deploy-target.js:112
 msgid "Invalid infrastructure value : "
-msgstr ""
+msgstr "無効なインフラストラクチャーの値 : "
 
 #: lib/cmd/common/deploy-target.js:134
 msgid "Error creating deploy target: "
-msgstr ""
+msgstr "デプロイターゲットの作成でエラー: "
 
 #: lib/cmd/common/deploy-target.js:144
 msgid "Error updating deploy target: "
-msgstr ""
+msgstr "デプロイターゲットの更新でエラー: "
 
 #: lib/cmd/common/deploy-target.js:156
 msgid "Error reading deploy target: "
-msgstr ""
+msgstr "デプロイターゲットの読み込みでエラー: "
 
 #: lib/cmd/common/deploy-target.js:168
 msgid "Error deleting deploy target: "
-msgstr ""
+msgstr "デプロイターゲットの削除でエラー: "
 
 #: lib/cmd/common/deploy-target.js:187
 msgid "Error listing available deploy targets for app : "
-msgstr ""
+msgstr "アプリで利用可能なデプロイターゲットの一覧表示でエラー: "
 
 #: lib/cmd/common/deploy-target.js:200
 msgid "Error getting deploy target for app : "
-msgstr ""
+msgstr "アプリ用デプロイターゲットの取得でエラー: "
 
 #: lib/cmd/common/deploy-target.js:214
 msgid "Error setting deploy target for app : "
-msgstr ""
+msgstr "アプリ用デプロイターゲットの設定でエラー: "
 
 #: lib/cmd/common/env.js:5
 msgid "Cloud app environment variables"
-msgstr ""
+msgstr "クラウドアプリの環境変数"
 
 #: lib/cmd/common/eventalert.js:3
 msgid "Manage alerts of a FeedHenry App"
-msgstr ""
+msgstr "FeedHenry アプリの警告を管理"
 
 #: lib/cmd/common/eventalert.js:12
 msgid ""
@@ -740,32 +812,35 @@ msgid ""
 "For the valid values for eventCategories, eventSeverities and eventNames, "
 "please run 'fhc eventalert listOptions' to see the full list"
 msgstr ""
+"\n"
+"eventCategories、eventSeverities および eventNames の有効な値については、'fhc eventalert "
+"listOptions' を実行して完全な一覧を参照してください。"
 
 #: lib/cmd/common/eventalert.js:100
 #: lib/cmd/common/eventalert.js:124
 msgid "Error creating alert: "
-msgstr ""
+msgstr "警告の作成でエラー: "
 
 #: lib/cmd/common/eventalert.js:135
 msgid "Error cloning alert: "
-msgstr ""
+msgstr "警告のクローンでエラー: "
 
 #: lib/cmd/common/eventalert.js:146
 #: lib/cmd/common/eventalert.js:157
 msgid "Error deleting alert: "
-msgstr ""
+msgstr "警告の削除でエラー: "
 
 #: lib/cmd/common/eventalert.js:169
 msgid "Error listing alerts: "
-msgstr ""
+msgstr "警告の一覧表示でエラー: "
 
 #: lib/cmd/common/eventalert.js:177
 msgid "Error listing alert options: "
-msgstr ""
+msgstr "警告オプションの一覧表示でエラー: "
 
 #: lib/cmd/common/files.js:10
 msgid "Manage application files"
-msgstr ""
+msgstr "アプリケーションファイルの管理"
 
 #: lib/cmd/common/files.js:93
 #: lib/cmd/common/files.js:157
@@ -773,7 +848,7 @@ msgstr ""
 #: lib/cmd/common/initlocal.js:263
 #: lib/cmd/fh2/app/read.js:41
 msgid "No appId specified!"
-msgstr ""
+msgstr "appId が指定されていません!"
 
 #: lib/cmd/common/files.js:93
 #: lib/cmd/common/files.js:115
@@ -788,54 +863,54 @@ msgstr ""
 #: lib/cmd/internal/df.js:174
 #: lib/genericCommand.js:13
 msgid "Usage:\n"
-msgstr ""
+msgstr "使用量:\n"
 
 #: lib/cmd/common/files.js:102
 msgid "Error listing file: "
-msgstr ""
+msgstr "ファイルの一覧表示でエラー: "
 
 #: lib/cmd/common/files.js:115
 #: lib/cmd/common/files.js:124
 msgid "No fileId specified!"
-msgstr ""
+msgstr "フィールドが指定されていません!"
 
 #: lib/cmd/common/files.js:119
 msgid "Error reading file: "
-msgstr ""
+msgstr "ファイルの読み込みでエラー: "
 
 #: lib/cmd/common/files.js:127
 msgid "No file specified!"
-msgstr ""
+msgstr "ファイルが指定されていません!"
 
 #: lib/cmd/common/files.js:134
 msgid "File not found: "
-msgstr ""
+msgstr "ファイルが見つかりません: "
 
 #: lib/cmd/common/files.js:138
 #: lib/cmd/common/files.js:145
 msgid "Error updating file: "
-msgstr ""
+msgstr "ファイルの更新でエラー: "
 
 #: lib/cmd/common/files.js:147
 msgid "No file contents specified."
-msgstr ""
+msgstr "ファイルのコンテンツが指定されていません。"
 
 #: lib/cmd/common/files.js:165
 msgid "Error creating file: "
-msgstr ""
+msgstr "ファイルの作成でエラー: "
 
 #: lib/cmd/common/files.js:179
 msgid "Error deleting file: "
-msgstr ""
+msgstr "ファイルの削除でエラー: "
 
 #: lib/cmd/common/git.js:4
 msgid "Git operations on a FeedHenry App which doesn't have it's own repo"
-msgstr ""
+msgstr "独自のレポジトリーがない FeedHenry アプリ上での Git 操作"
 
 #: lib/cmd/common/git.js:51
 #: lib/cmd/common/git.js:84
 msgid "'%s' is not a Git based Application"
-msgstr ""
+msgstr "'%s' は Git ベースのアプリケーションではありません"
 
 #: lib/cmd/common/git.js:110
 msgid "appId is required to perform a clean clone"
@@ -848,16 +923,16 @@ msgstr ""
 #: lib/cmd/common/git.js:137
 #: lib/cmd/common/git.js:139
 msgid "Error in Git pull: "
-msgstr ""
+msgstr "Git プルでエラー: "
 
 #: lib/cmd/common/git.js:178
 #: lib/cmd/common/git.js:180
 msgid "Error reading Git properties: "
-msgstr ""
+msgstr "Git プロパティーの読み込みでエラー: "
 
 #: lib/cmd/common/import.js:5
 msgid "Import a previously exported FeedHenry zipfile"
-msgstr ""
+msgstr "以前にエクスポートされた FeedHenry zip ファイルをインポート"
 
 #: lib/cmd/common/import.js:8
 #: lib/cmd/fh2/app/create.js:9
@@ -867,80 +942,86 @@ msgid ""
 "the specified environment automatically. Set it to 'none' if it should not "
 "be deployed to anywhere."
 msgstr ""
+"\n"
+"注記: --env "
+"が提供されてアプリがデプロイされる場合、アプリは自動的に指定された環境にデプロイされます。どこにもデプロイされないようにするには、'none' "
+"に設定します。"
 
 #: lib/cmd/common/import.js:9
 msgid ""
 "\n"
 "Note: if no file or repo is specified, a bare git repo is created"
 msgstr ""
+"\n"
+"注記: ファイルまたはレポジトリーが指定されていない場合は、ベア git レポジトリーが作成されます。"
 
 #: lib/cmd/common/import.js:46
 #: lib/cmd/common/import.js:85
 #: lib/cmd/common/keys/ssh.js:71
 msgid "File doesn't exist: "
-msgstr ""
+msgstr "ファイルが存在しません: "
 
 #: lib/cmd/common/import.js:57
 msgid "Import complete: GUID: "
-msgstr ""
+msgstr "インポート完了: GUID: "
 
 #: lib/cmd/common/import.js:101
 msgid "Error importing file: "
-msgstr ""
+msgstr "ファイルのインポートでエラー: "
 
 #: lib/cmd/common/import.js:128
 #: lib/cmd/common/import.js:143
 msgid "Error importing git repo: "
-msgstr ""
+msgstr "Git レポジトリーのインポートでエラー: "
 
 #: lib/cmd/common/initlocal.js:7
 msgid "Initialises Local Server files For Local Development"
-msgstr ""
+msgstr "ローカル開発用のローカルサーバーファイルの初期化"
 
 #: lib/cmd/common/initlocal.js:84
 msgid "Translated app container url: %s, to local url: %s"
-msgstr ""
+msgstr "翻訳済みアプリコンテナ url: %s、をローカル url に: %s"
 
 #: lib/cmd/common/initlocal.js:97
 msgid "Downloaded container file: "
-msgstr ""
+msgstr "ダウンロード済みコンテナファイル: "
 
 #: lib/cmd/common/initlocal.js:102
 #: lib/cmd/common/initlocal.js:292
 msgid "Files Saved."
-msgstr ""
+msgstr "ファイルが保存されました。"
 
 #: lib/cmd/common/initlocal.js:178
 msgid "No existing application.js file, creating"
-msgstr ""
+msgstr "既存の application.js ファイルがありません。。作成中"
 
 #: lib/cmd/common/initlocal.js:195
 msgid "Error installing fh-db locally - "
-msgstr ""
+msgstr "fh-db のローカルインストールでエラー - "
 
 #: lib/cmd/common/initlocal.js:239
 msgid "No environment variables set."
-msgstr ""
+msgstr "環境変数が設定されていません。"
 
 #: lib/cmd/common/initlocal.js:265
 msgid "Getting app container from url: "
-msgstr ""
+msgstr "アプリコンテナを url から取得: "
 
 #: lib/cmd/common/initlocal.js:265
 msgid ", domain: "
-msgstr ""
+msgstr "、ドメイン: "
 
 #: lib/cmd/common/initlocal.js:286
 msgid "Downloaded client App container file and %d script files"
-msgstr ""
+msgstr "クライアントアプリコンテナファイルと %d スクリプトファイルをダウンロードしました"
 
 #: lib/cmd/common/keys/ssh.js:4
 msgid "Manage User SSH Keys"
-msgstr ""
+msgstr "ユーザー SSH キーの管理"
 
 #: lib/cmd/common/keys/ssh.js:34
 msgid "Invalid action %s"
-msgstr ""
+msgstr "無効なアクション %s"
 
 #: lib/cmd/common/keys/ssh.js:56
 #: lib/cmd/common/keys/ssh.js:65
@@ -959,56 +1040,56 @@ msgstr ""
 #: lib/cmd/fh3/services.js:103
 #: lib/cmd/fh3/services.js:139
 msgid "Invalid arguments"
-msgstr ""
+msgstr "無効な引数"
 
 #: lib/cmd/common/keys/ssh.js:60
 #: lib/cmd/common/keys/user.js:140
 msgid "Error deleting key: "
-msgstr ""
+msgstr "キーの削除でエラー: "
 
 #: lib/cmd/common/keys/ssh.js:82
 msgid "Error adding Key: "
-msgstr ""
+msgstr "キーの追加でエラー: "
 
 #: lib/cmd/common/keys/user.js:4
 msgid "Manage user API Keys"
-msgstr ""
+msgstr "ユーザー API キーの管理"
 
 #: lib/cmd/common/keys/user.js:53
 msgid "Error reading Api Keys: "
-msgstr ""
+msgstr "Api キーの読み込みでエラー: "
 
 #: lib/cmd/common/keys/user.js:70
 msgid "Key not found: "
-msgstr ""
+msgstr "キーが見つかりません: "
 
 #: lib/cmd/common/keys/user.js:92
 msgid "Error add Api Key: "
-msgstr ""
+msgstr "Api キーの追加でエラー: "
 
 #: lib/cmd/common/keys/user.js:119
 msgid "Error updating key: "
-msgstr ""
+msgstr "キーの更新でエラー: "
 
 #: lib/cmd/common/local.js:3
 msgid "Creates Local Server For Local Development"
-msgstr ""
+msgstr "ローカル開発用のローカルサーバーを作成"
 
 #: lib/cmd/common/local.js:6
 msgid ""
 " This command (or the equivalent 'fhc initlocal <appID>') must be run at "
 "least\n"
-msgstr ""
+msgstr "少なくとも、このコマンド (または同等の 'fhc initlocal <appID>') を実行する必要があります\n"
 
 #: lib/cmd/common/local.js:11
 msgid ""
 " where <appID> is the application id (aside from the initial call this "
 "parameter is optional)"
-msgstr ""
+msgstr " ここでの <appID> は、アプリケーション IDです (最初の呼び出しを覗いて、このパラメーターはオプションです)"
 
 #: lib/cmd/common/local.js:13
 msgid " Valid options including: "
-msgstr ""
+msgstr " 有効なオプションは以下の通りです: "
 
 #: lib/cmd/common/local.js:14
 msgid ""
@@ -1016,6 +1097,8 @@ msgid ""
 "packages & shared folder logic will be ignored (as these are depricated in "
 "FH3)"
 msgstr ""
+"   fh3 : これは FeedHenry 3 プロジェクトです。デフォルト値は、false です。true の場合、パッケージ & "
+"共有フォルダー論理は無視されます (これらは FH3 では廃止のため)"
 
 #: lib/cmd/common/local.js:15
 msgid ""
@@ -1023,6 +1106,8 @@ msgid ""
 "value is ./client. Useful in FeedHenry 3 where client and cloud are "
 "separate git repos"
 msgstr ""
+"   clientDir : 実行するクライアントコードを含むディレクトリー。デフォルト値は、./client。クライアントとクラウドが別個の git "
+"レポジトリーの場合、FeedHenry 3 で便利です。"
 
 #: lib/cmd/common/local.js:16
 msgid ""
@@ -1030,12 +1115,14 @@ msgid ""
 "code. Default value is http://127.0.0.1. Specify the ip address or the host "
 "name of the server if you want to test client from a mobile device."
 msgstr ""
+"   clientHost : クライアントコードに使用する IP アドレスまたはホスト名です。デフォルト値は、http://127.0.0.1 "
+"です。モバイルデバイスからクライアントをテストする場合は、IP アドレスまたはホスト名を指定してください。"
 
 #: lib/cmd/common/local.js:17
 msgid ""
 "   clientPort : the port that serves your client content. Default value is "
 "8000. "
-msgstr ""
+msgstr "   clientPort : クライアントコンテンツに応じるポート。デフォルト値は、8000 です。"
 
 #: lib/cmd/common/local.js:18
 msgid ""
@@ -1043,6 +1130,8 @@ msgid ""
 "value is ./cloud. Useful in FeedHenry 3 where client and cloud are separate "
 "git repos"
 msgstr ""
+"   cloudDir : 実行するクラウドコードを含むディレクトリー。デフォルト値は、./cloud。クライアントとクラウドが別個の git "
+"レポジ���リーの場合、FeedHenry 3 で便利です。"
 
 #: lib/cmd/common/local.js:19
 msgid ""
@@ -1052,46 +1141,50 @@ msgid ""
 "also specify remote cloud code to target for local client development (e.g. "
 "cloud code running in the FH cloud)"
 msgstr ""
+"   cloudHost : クラウドコードに使用する IP アドレスまたはホスト名です。デフォルト値は、http://127.0.0.1 "
+"です。モバイルデバイスからクラウドコードをテストする場合は、IP "
+"アドレスまたはホスト名を指定してください。ローカルクライアント開発用のターゲットとなるリモートクラウドコードを指定することもできます (例: FH "
+"クラウドで実行するクラウドコード)。"
 
 #: lib/cmd/common/local.js:20
 msgid ""
 "   cloudPort : the port number used for serving the cloud code. Default "
 "value is 8001."
-msgstr ""
+msgstr "   cloudPort : クラウドコードに対応するポート番号。デフォルト値は、8001 です。"
 
 #: lib/cmd/common/local.js:21
 msgid ""
 "   startCloud : should the cloud code started automatically. Default value "
 "is true."
-msgstr ""
+msgstr "   startCloud : クラウドコードが自動的に開始します。デフォルト値は、true です。"
 
 #: lib/cmd/common/local.js:22
 msgid "   debug : turn on debugger for Node Inspector. Default value is false."
-msgstr ""
+msgstr "   debug : Node Inspector 用のデバッガーをオンにします。デフォルト値は、false です。"
 
 #: lib/cmd/common/local.js:23
 msgid ""
 "   debugBrk : pause the script on the first line for the Node Inspector. "
 "Default value is false."
-msgstr ""
+msgstr "   debugBrk : Node Inspector の最初の行のスクリプトを一時停止します。デフォルト値は、false です。"
 
 #: lib/cmd/common/local.js:24
 msgid ""
 "   redisHost : specify the host name or ip address for the redis server. "
 "Default value is 127.0.0.1."
-msgstr ""
+msgstr "   redisHost : redis サーバーのホスト名または IP アドレスを指定します。デフォルト値は、127.0.0.1 です。"
 
 #: lib/cmd/common/local.js:25
 msgid ""
 "   redisPort : specify the port number for the redis server. Default value "
 "is 6379."
-msgstr ""
+msgstr "   redisPort : redis サーバーのポート番号を指定します。デフォルト値は、6379 です。"
 
 #: lib/cmd/common/local.js:26
 msgid ""
 "   redisPassword : specify the password for the redis server if "
 "authentication is required."
-msgstr ""
+msgstr "   redisPassword : 認証が必要な場合、redis サーバーのパスワードを指定します。"
 
 #: lib/cmd/common/local.js:27
 msgid ""
@@ -1099,10 +1192,12 @@ msgid ""
 "default value is 'default' means it will load from 'client/default' folder, "
 "specify a different value if you want to load from another client folder."
 msgstr ""
+"   packages: クライアントアプリ用に読み込まれるクライアントフォルダーです。デフォルト値は 'default' で、その場合 "
+"'client/default' フォルダーから読み込まれます。別のクライアントフォルダーから読み込む場合は、異なる値を指定してください。"
 
 #: lib/cmd/common/local.js:28
 msgid "   localDB : specify if local MongoDB should be used. Default value is true."
-msgstr ""
+msgstr "   localDB : ローカルの MongoDB を使用するか指定します。デフォルト値は、true です。"
 
 #: lib/cmd/common/local.js:29
 msgid ""
@@ -1110,18 +1205,22 @@ msgid ""
 "there will be no wrappers around the conents in index.html file. Default "
 "value is false."
 msgstr ""
+"   decoupled : クライアントアプリを分離するか指定します。分離ビルドの場合、index.html "
+"ファイルのコンテンツにはラッパーがありません。デフォルト値は、false です。"
 
 #: lib/cmd/common/local.js:30
 msgid ""
 "   logprefix : indicate whether stdout and stderr messages should be "
 "prefixed, Default value is false."
-msgstr ""
+msgstr "   logprefix : stdout および stderr メッセージに接頭辞をつけるかどうかを示します。デフォルト値は、false です。"
 
 #: lib/cmd/common/local.js:31
 msgid ""
 "   loghighlight : indicate whether stdout and stderr messages should be "
 "output in green or red color text respectively. Default value is true."
 msgstr ""
+"   loghighlight : stdout および stderr "
+"メッセージをそれぞれ緑と赤のテキストで出力するかどうかを示します。デフォルト値は、true です。"
 
 #: lib/cmd/common/local.js:32
 msgid ""
@@ -1129,54 +1228,56 @@ msgid ""
 "http://127.0.0.1:8000) should be opened in the default browser when fhc "
 "local starts. Default value is false."
 msgstr ""
+"   openClient : fhc のローカル起動時に、クライアント URL (通常は http://127.0.0.1:8000) "
+"をデフォルトのブラウザーで開くかどうかを示します。デフォルト値は、false です。"
 
 #: lib/cmd/common/local.js:33
 msgid " Examples : "
-msgstr ""
+msgstr "例: "
 
 #: lib/cmd/common/local.js:39
 msgid " For more details, please run"
-msgstr ""
+msgstr "詳細情報については、以下を実行してください。"
 
 #: lib/cmd/common/local.js:77
 msgid "Missing '%s' parameter"
-msgstr ""
+msgstr "'%s' パラメーターがありません"
 
 #: lib/cmd/common/local.js:99
 msgid "Invalid type for parameter%s"
-msgstr ""
+msgstr "パラメーター %s のタイプが無効です"
 
 #: lib/cmd/common/local.js:144
 msgid ": exited with code %s"
-msgstr ""
+msgstr ":コード %s で終了しました"
 
 #: lib/cmd/common/local.js:172
 msgid "Resolved file: "
-msgstr ""
+msgstr "解決済みのファイル: "
 
 #: lib/cmd/common/local.js:172
 msgid "exists"
-msgstr ""
+msgstr "存在します"
 
 #: lib/cmd/common/local.js:172
 msgid "does not exist"
-msgstr ""
+msgstr "存在しません"
 
 #: lib/cmd/common/local.js:175
 msgid "Not found\n"
-msgstr ""
+msgstr "見つかりません\n"
 
 #: lib/cmd/common/local.js:183
 msgid "App index served without wrapping"
-msgstr ""
+msgstr "アプリインデックスがラッピングなしで実行されました"
 
 #: lib/cmd/common/local.js:190
 msgid "App index.html inserted into container"
-msgstr ""
+msgstr "アプリの index.html がコンテナに挿入されました"
 
 #: lib/cmd/common/local.js:193
 msgid "Using %s as cloud host"
-msgstr ""
+msgstr "%s をクラウドホストとして使用"
 
 #: lib/cmd/common/local.js:247
 msgid ""
@@ -1185,121 +1286,131 @@ msgid ""
 "\n"
 "Usage: "
 msgstr ""
+"エラー : 'fhc initlocal <appId>' または 'fhc local <appId>' "
+"は呼ばれていません。説明は使用を参照してください。\n"
+"\n"
+"使用: "
 
 #: lib/cmd/common/local.js:253
 msgid "Please wait while the local directory is initialized"
-msgstr ""
+msgstr "ローカルディレクトリーの初期化中です。お待ちください。"
 
 #: lib/cmd/common/local.js:256
 msgid ""
 "One time initialization complete.\n"
 "Launching local services."
 msgstr ""
+"一回のみの初期化が完了しました。\n"
+"ローカルサービスを開始します。"
 
 #: lib/cmd/common/local.js:258
 msgid "Unexpected error during initialization. Is the guid '%s' correct?"
-msgstr ""
+msgstr "初期化中に予期しないエラーが発生しました。guid '%s' は正しいですか?"
 
 #: lib/cmd/common/local.js:278
 msgid "Packages list: "
-msgstr ""
+msgstr "パッケージ一覧: "
 
 #: lib/cmd/common/local.js:281
 msgid "starting cloud code on port %s"
-msgstr ""
+msgstr "ポート %s でクラウドコードを開始"
 
 #: lib/cmd/common/local.js:301
 msgid "running local requires application.js and package.json in your cloud code"
-msgstr ""
+msgstr "ローカルでの実行にはクラウドコードに application.js と package.json が必要となります"
 
 #: lib/cmd/common/local.js:311
 msgid "Starting cloud code with debug enabled, you will need to connect a debugger"
-msgstr ""
+msgstr "デバッグを有効にしてクラウドコードを開始しています。デバッガーに接続する必要があります。"
 
 #: lib/cmd/common/local.js:314
 msgid "Starting cloud code with debug enabled, you may connect a debugger"
-msgstr ""
+msgstr "デバッグを有効にしてクラウドコードを開始しています。デバッガーに接続してください。"
 
 #: lib/cmd/common/local.js:318
 msgid "cloud application exitted."
-msgstr ""
+msgstr "クラウドアプリが終了しました。"
 
 #: lib/cmd/common/local.js:325
 msgid "exit code: "
-msgstr ""
+msgstr "終了コード: "
 
 #: lib/cmd/common/local.js:341
 msgid "Serving App files on port: "
-msgstr ""
+msgstr "ポートでアプリファイルに応答: "
 
 #: lib/cmd/common/local.js:342
 msgid "go to %s:%s/ in your browser"
-msgstr ""
+msgstr "ブラウザーで %s:%s/ に移動"
 
 #: lib/cmd/common/local.js:354
 msgid "mimetype for %s is %s"
-msgstr ""
+msgstr "%s の mimetype は %s です"
 
 #: lib/cmd/common/local.js:385
 msgid "Received app init mesasge."
-msgstr ""
+msgstr "アプリ init メッセージを受信。"
 
 #: lib/cmd/common/local.js:395
 msgid "Container file requested: "
-msgstr ""
+msgstr "要求されたコンテナファイル: "
 
 #: lib/cmd/common/local.js:411
 #: lib/cmd/common/local.js:417
 msgid "FH3 file requested "
-msgstr ""
+msgstr "要求された FH3 ファイル"
 
 #: lib/cmd/common/local.js:430
 msgid "App client file requested: "
-msgstr ""
+msgstr "要求されたアプリクライアントファイル: "
 
 #: lib/cmd/common/ngui.js:3
 msgid "Check status, enable or disable FeedHenry version 3"
-msgstr ""
+msgstr "ステータスの確認、FeedHenry バージョン 3 を有効または無効にする"
 
 #: lib/cmd/common/ngui.js:5
 msgid ""
 "\n"
 "fhc ngui enable  - enable FH3 for the current user"
 msgstr ""
+"\n"
+"fhc ngui 有効  - 現行ユーザーで FH3 を有効にする"
 
 #: lib/cmd/common/ngui.js:6
 msgid ""
 "\n"
 "fhc ngui disable - disable FH3 for the current user"
 msgstr ""
+"\n"
+"fhc ngui 無効 - 現行ユーザーで FH3 を無効にする"
 
 #: lib/cmd/common/ngui.js:32
 msgid "No user details, possibly not logged in?"
-msgstr ""
+msgstr "ユーザーの詳細がありません。ログインしていない可能性はありますか?"
 
 #: lib/cmd/common/ngui.js:35
 msgid "No user prefs! - "
-msgstr ""
+msgstr "ユーザー設定がありません! - "
 
 #: lib/cmd/common/ngui.js:75
 msgid "Error calling user props"
-msgstr ""
+msgstr "ユーザー props の呼び出し中にエラー"
 
 #: lib/cmd/common/notifications.js:4
 msgid "List notifications of a FeedHenry App"
-msgstr ""
+msgstr "FeedHenry アプリの通知を一覧表示"
 
 #: lib/cmd/common/notifications.js:34
 msgid "No app guid specified."
-msgstr ""
+msgstr "アプリ guid が指定されていません。"
 
 #: lib/cmd/common/notifications.js:42
 msgid "Error getting event logs for app: "
-msgstr ""
+msgstr "アプリのイベントログ取得中にエラー: "
 
 #: lib/cmd/common/ota.js:6
 msgid "Build OTA version of an app"
-msgstr ""
+msgstr "アプリの OTA バージョンをビルド"
 
 #: lib/cmd/common/ota.js:8
 msgid ""
@@ -1307,22 +1418,29 @@ msgid ""
 "where <destination> is one of: android, iphone, ipad, blackberry, "
 "windowsphone7"
 msgstr ""
+"\n"
+"ここでの <destination> は、次のいずれかになります: "
+"android、iphone、ipad、blackberry、windowsphone7"
 
 #: lib/cmd/common/ota.js:9
 msgid ""
 "\n"
 "where <version> is specific to the destination"
 msgstr ""
+"\n"
+"ここでの <version> は宛先固有です"
 
 #: lib/cmd/common/ota.js:10
 msgid ""
 "\n"
 "where <config> is always distribution or release for OTA"
 msgstr ""
+"\n"
+"ここでの <config> は、常に OTAのディストリビューションまたはリリースです"
 
 #: lib/cmd/common/preview.js:6
 msgid "Opens the App Preview of a client app"
-msgstr ""
+msgstr "クライアントアプリのアプリプレビューを開く"
 
 #: lib/cmd/common/preview.js:54
 msgid ""
@@ -1332,255 +1450,280 @@ msgid ""
 " or:\n"
 "    fhc set browser lynx\n"
 msgstr ""
+"ブラウザーで %s を開くことに失敗しました。\n"
+"'ブラウザー' の設定がなされていない可能性があります。以下を試してくださ���。\n"
+"    fhc set browser google-chrome\n"
+" または\n"
+"    fhc set browser lynx\n"
 
 #: lib/cmd/common/resources.js:4
 msgid "List resources for a FeedHenry Cloud Environment"
-msgstr ""
+msgstr "FeedHenry クラウド環境の理想的を一覧表示"
 
 #: lib/cmd/common/resources.js:8
 msgid ""
 "\n"
 "e.g. fhc resources cache flush --env=dev"
 msgstr ""
+"\n"
+"例: fhc resources cache flush --env=dev"
 
 #: lib/cmd/common/resources.js:9
 msgid ""
 "\n"
 "e.g. fhc resources cache set --type=percent --value=50 --env=dev"
 msgstr ""
+"\n"
+"例: fhc resources cache set --type=percent --value=50 --env=dev"
 
 #: lib/cmd/common/resources.js:10
 msgid ""
 "\n"
 "e.g. fhc resources cache set --type=size --value=524288000 --env=live"
 msgstr ""
+"\n"
+"例: fhc resources cache set --type=size --value=524288000 --env=live"
 
 #: lib/cmd/common/resources.js:11
 msgid ""
 "\n"
 "To set unlimited cache size, use 'fhc cache set --type=size --value=-1'\n"
 msgstr ""
+"\n"
+"キャッシュサイズを無制限に設定するには、'fhc cache set --type=size --value=-1' を使用します\n"
 
 #: lib/cmd/common/resources.js:43
 msgid ""
 "No environment specified. Specify using --env=<environment> flag. Available "
 "environments: "
-msgstr ""
+msgstr "環境が指定されていません。--env=<environment> フラグを使用して指定してください。利用可能な環境は以下の通りですです: "
 
 #: lib/cmd/common/resources.js:45
 #: lib/cmd/common/resources.js:70
 #: lib/cmd/common/resources.js:80
 msgid "Call failed: "
-msgstr ""
+msgstr "呼び出しに失敗: "
 
 #: lib/cmd/common/resources.js:50
 msgid "Invalid arguments - must specify command flush or set."
-msgstr ""
+msgstr "無効な引数 - コマンド flush または set を指定する必要があります。"
 
 #: lib/cmd/common/resources.js:60
 msgid "Missing cache set param type or value"
-msgstr ""
+msgstr "キャッシュ設定パラメーターのタイプまたは値がありません"
 
 #: lib/cmd/common/resources.js:64
 msgid "Invalid action. \n"
-msgstr ""
+msgstr "無効なアクション。\n"
 
 #: lib/cmd/common/runtimes.js:22
 msgid "failed to get runtimes: "
-msgstr ""
+msgstr "ランタイムの取得に失敗しました: "
 
 #: lib/cmd/common/runtimes.js:34
 msgid "Lists cloud runtimes available"
-msgstr ""
+msgstr "利用可能なクラウドランタイムを一覧表示"
 
 #: lib/cmd/common/secureendpoints.js:3
 msgid "Manage an Apps Secure Endpoints"
-msgstr ""
+msgstr "アプリの安全なエンドポイントを管理"
 
 #: lib/cmd/common/secureendpoints.js:10
 msgid ""
 "\n"
 "where 'default' can be either 'https' or 'appapikey'"
 msgstr ""
+"\n"
+"ここでの 'default' は、'https' または 'appapikey' のいずれかになります"
 
 #: lib/cmd/common/secureendpoints.js:11
 msgid ""
 "\n"
 "Use 'fhc appendpoints' to list an Apps endpoints."
 msgstr ""
+"\n"
+"'fhc appendpoints' を使用して、アプリのエンドポイントを一覧表示します。"
 
 #: lib/cmd/common/secureendpoints.js:54
 msgid "Unknown command '%s'. "
-msgstr ""
+msgstr "不明なコマンド '%s'。"
 
 #: lib/cmd/common/secureendpoints.js:61
 msgid "Error getting secureendpoints: "
-msgstr ""
+msgstr "secureendpoints の取得中にエラー: "
 
 #: lib/cmd/common/secureendpoints.js:67
 msgid "App Security: "
-msgstr ""
+msgstr "アプリセキュリティー: "
 
 #: lib/cmd/common/secureendpoints.js:69
 msgid ""
 "\n"
 "Endpoint Overrides:"
 msgstr ""
+"\n"
+"エンドポイントの上書き:"
 
 #: lib/cmd/common/secureendpoints.js:80
 msgid "'default' must be 'https' or 'appapikey': "
-msgstr ""
+msgstr "'default' は 'https' または 'appapikey' である必要があります: "
 
 #: lib/cmd/common/secureendpoints.js:85
 msgid "Error setting default secureendpoint: "
-msgstr ""
+msgstr "デフォルトの secureendpoint 設定中にエラー: "
 
 #: lib/cmd/common/secureendpoints.js:91
 msgid "'security' must be 'https' or 'appapikey': "
-msgstr ""
+msgstr "'security' は 'https' または 'appapikey' である必要があります: "
 
 #: lib/cmd/common/secureendpoints.js:99
 msgid "Error overriding secureendpoint: "
-msgstr ""
+msgstr "secureendpoint の上書き中にエラー: "
 
 #: lib/cmd/common/secureendpoints.js:106
 msgid "Error removing override: "
-msgstr ""
+msgstr "上書きの削除中にエラー: "
 
 #: lib/cmd/common/secureendpoints.js:117
 msgid "Error parsing json: "
-msgstr ""
+msgstr "json の解析中にエラー: "
 
 #: lib/cmd/common/secureendpoints.js:123
 msgid "Error getting auditlog: "
-msgstr ""
+msgstr "auditlog の取得中にエラー: "
 
 #: lib/cmd/common/session.js:6
 msgid "Verify a FeedHenry Auth Policies Session"
-msgstr ""
+msgstr "FeedHenry 認証ポリシーセッションを検証"
 
 #: lib/cmd/common/session.js:33
 msgid "Error in verify session call: "
-msgstr ""
+msgstr "セッションコールの検証でエラー"
 
 #: lib/cmd/common/session.js:41
 msgid "Error in session info call: "
-msgstr ""
+msgstr "セッション情報コールでエラー: "
 
 #: lib/cmd/common/shortenurl.js:5
 msgid "Shorten a URL with the henr.ie URL shortener"
-msgstr ""
+msgstr "henr.ie URL で URL を短縮"
 
 #: lib/cmd/common/shortenurl.js:18
 msgid "Error in shortenurl: "
-msgstr ""
+msgstr "shortenurl でエラー: "
 
 #: lib/cmd/common/stats.js:4
 msgid "Feedhenry cloud application statistics, counters & timers"
-msgstr ""
+msgstr "Feedhenry クラウドアプリ統計値、カウンター & タイマー"
 
 #: lib/cmd/common/stats.js:29
 msgid "Error reading app statistics: "
-msgstr ""
+msgstr "アプリ統計値の読み込みでエラー: "
 
 #: lib/cmd/common/templates.js:8
 msgid "App & Project Templates"
-msgstr ""
+msgstr "アプリ & プロジェクトテンプレート"
 
 #: lib/cmd/common/templates.js:84
 #: lib/cmd/common/templates.js:113
 msgid "Error reading Templates: "
-msgstr ""
+msgstr "テンプレートの読み込みでエラー: "
 
 #: lib/cmd/common/templates.js:181
 msgid "No tempId specified!"
-msgstr ""
+msgstr "tempId が指定されていません!"
 
 #: lib/cmd/common/templates.js:216
 msgid "options: "
-msgstr ""
+msgstr "オプション: "
 
 #: lib/cmd/common/templates.js:222
 msgid "writing file: "
-msgstr ""
+msgstr "ファイルの書き込み中: "
 
 #: lib/cmd/common/templates.js:226
 msgid "request end"
-msgstr ""
+msgstr "要求終了"
 
 #: lib/cmd/common/templates.js:230
 msgid "Extracting template source..."
-msgstr ""
+msgstr "テンプレートソースを展開中..."
 
 #: lib/cmd/common/templates.js:235
 msgid "unzip process exited with code %s"
-msgstr ""
+msgstr "解凍プロセスがコード %s で終了"
 
 #: lib/cmd/common/templates.js:238
 msgid "Template copied to local file system"
-msgstr ""
+msgstr "テンプレートをローカルファイルシステムにコピー"
 
 #: lib/cmd/common/templates.js:242
 msgid "Got error: "
-msgstr ""
+msgstr "エラーが発生しました: "
 
 #: lib/cmd/common/templates.js:246
 msgid "Downloading template source..."
-msgstr ""
+msgstr "テンプレートソースのダウンロード中..."
 
 #: lib/cmd/common/user.js:4
 msgid "User information"
-msgstr ""
+msgstr "ユーザー情報"
 
 #: lib/cmd/common/user.js:15
 msgid ""
 "You are not logged in. Login with fhc login <user> <passwd> or fhc keys "
 "user target <api-key>."
 msgstr ""
+"ログインしていません。fhc ログイン <user> <passwd> または fhc キーのユーザーターゲット <api-key> "
+"でログインしてください。"
 
 #: lib/cmd/common/user.js:31
 msgid "Not logged in"
-msgstr ""
+msgstr "ログインしていません"
 
 #: lib/cmd/common/version.js:22
 msgid "Version info about the FeedHenry instance we're connected to"
-msgstr ""
+msgstr "接続先の FeedHenry インスタンスについてのバージョン情報"
 
 #: lib/cmd/common/version.js:25
 msgid "Displays version in json format"
-msgstr ""
+msgstr "JSON 形式でバージョンを表示"
 
 #: lib/cmd/common/version.js:59
 msgid " (Up to date)"
-msgstr ""
+msgstr " (最新)"
 
 #: lib/cmd/common/version.js:61
 msgid "FeedHenry Product Version: "
-msgstr ""
+msgstr "FeedHenry 製品バージョン: "
 
 #: lib/cmd/common/version.js:63
 msgid "FeedHenry Platform Version: "
-msgstr ""
+msgstr "FeedHenry プラットフォームバージョン: "
 
 #: lib/cmd/common/version.js:118
 msgid "Error checking latest version"
-msgstr ""
+msgstr "最新バージョンの確認中にエラー"
 
 #: lib/cmd/common/version.js:120
 msgid ""
 "Warning - newer FHC version available (%s). To update, run\n"
 "npm install -g fh-fhc"
 msgstr ""
+"警告 - 新しいバージョンの FHC が利用可能です (%s)。アップデートするには、以下を実行してください。\n"
+"npm install -g fh-fhc"
 
 #: lib/cmd/common/version.js:137
 msgid ""
 "The Platform You Are Targeting Is Not Compatible With This Version (%s) Of "
 "fhc. Please Install A Previous Version: npm install fh-fhc@^%s.0.0"
 msgstr ""
+"ターゲットとしているプラットフォームは、fhc のこのバージョン (%s) "
+"と互換性がありません。以前のバージョンを以下のコマンドでインストールしてください: npm install fh-fhc@^%s.0.0"
 
 #: lib/cmd/fh2/account.js:4
 msgid "Manage your FeedHenry Account Resources"
-msgstr ""
+msgstr "FeedHenry ���カウントリソースの管理"
 
 #: lib/cmd/fh2/account.js:6
 msgid ""
@@ -1628,53 +1771,88 @@ msgid ""
 "request, not supported yet)\n"
 " where <password> is the password used to encrypt the private key (required)"
 msgstr ""
+"\n"
+"ここでの <destination> は、次のいずれかです : android、iphone または blackberry\n"
+" ここでの <file-path> はアップロードするファイルの絶対パスです\n"
+" ここでの <resource> は、次のいずれかです : 証明書 (iphone および android が使用)、プライベートキー (iphone "
+"および android が使用)、csk または db (Blackberry が使用)\n"
+" ここでの <config> は、debug または distribution のいずれかです (宛先が iphone の場合に必要。デフォルトは "
+"debug)\n"
+" もしくは\n"
+" fhc account upload-resources-batch <destination> <resource-directory>\n"
+" ここでの <destination> は、次のいずれかになります : android、iphone、blackberry またはすべて\n"
+" ここでの <resource-directory> は、リソースを格納しているディレクトリーにします。\n"
+" このコマンドは、各宛先に適したリソースのタイプを見つけて、それらを自動的にアップロードします。\n"
+" これを実行するには、以下の方法でリソー���を整理してください。\n"
+"  1. 宛先が all の場合、各リソースファイルは実際の宛先を示した親ディレクトリーを持ちます。\n"
+"  2. 各リソースファイルは、リソースタイプを拡張子または少なくともその名前の一部として使用します。\n"
+"  3. 各リソースファイルは、宛先を示した親ディレクトリーを持ちます。\n"
+"  4. ios リソースの場合、設定を示した親ディレクトリーを持ちます。\n"
+"  5. 各設定で 2 つ以上のリソースファイルがある場合は、その設定ではファイルはアップロードされません。\n"
+" 例:\n"
+" --Resources\n"
+"  |--iphone\n"
+"    |--debug\n"
+"      |--developer.certificate\n"
+"      |--developer.privatekey\n"
+"  |--android\n"
+"    |--developer.certificate\n"
+"    |--developer.privatekey\n"
+"  |--blackberry\n"
+"    |--sigtool.csk\n"
+"    |--sigtool.db\n"
+" または\n"
+" fhc account generate-resource <destination> <resource-type> <password>\n"
+" ここでの <destination> は、android または iphone (今のところ未対応) のいずれかです\n"
+" ここでの <resource-type> は、certificate または csr (証明書署名要求、今のところ未対応)\n"
+" ここでの <password> は、プライベートキーの暗号化に使用するパスワードになります (必須)"
 
 #: lib/cmd/fh2/account.js:73
 msgid "Can not find file : "
-msgstr ""
+msgstr "ファイルが見つかりません : "
 
 #: lib/cmd/fh2/account.js:77
 msgid "Unknown destination : "
-msgstr ""
+msgstr "未知の宛先 : "
 
 #: lib/cmd/fh2/account.js:81
 msgid "Missing resource type"
-msgstr ""
+msgstr "リソースタイプがありません"
 
 #: lib/cmd/fh2/account.js:97
 msgid "Uploading resource : path : %s, destination : %s, config : %s, type : %s"
-msgstr ""
+msgstr "リソースをアップロード中 : パス : %s、宛先 : %s、設定 : %s、タイプ : %s"
 
 #: lib/cmd/fh2/account.js:110
 msgid "Can not find directory "
-msgstr ""
+msgstr "ディレクトリーが見つかりません"
 
 #: lib/cmd/fh2/account.js:117
 msgid "%s is a file. Please use 'fhc account upload-resource' instead."
-msgstr ""
+msgstr "%s はファイルです。代わりに 'fhc account upload-resource' を使用してください。"
 
 #: lib/cmd/fh2/account.js:151
 msgid ""
 "Found more than 1 resources for destination %s, config : %s, type : %s. "
 "Ignored."
-msgstr ""
+msgstr "宛先 %s、設定 : %s、タイプ : %s で 2 つ以上のリソースが見つかりました。無視します。"
 
 #: lib/cmd/fh2/account.js:162
 #: lib/cmd/fh2/account.js:179
 msgid "Done"
-msgstr ""
+msgstr "完了"
 
 #: lib/cmd/fh2/account.js:176
 msgid "Error generating account resource:"
-msgstr ""
+msgstr "アカウントリソースの生成中にエラー:"
 
 #: lib/cmd/fh2/account.js:177
 msgid "Response of generating resource %s for %s : "
-msgstr ""
+msgstr "リソース %s (%s 用) の生成の応答: "
 
 #: lib/cmd/fh2/account.js:188
 msgid "Error listing account resources:"
-msgstr ""
+msgstr "アカウントリソースの一覧表示でエラー:"
 
 #: lib/cmd/fh2/account.js:193
 msgid ""
@@ -1683,175 +1861,185 @@ msgid ""
 "want to continue ? \n"
 " (Y/N):"
 msgstr ""
+"警告: "
+"アカウントでアンドロイド用の既存のディストリビューション証明書が見つかりました。これは上書きされ、元に戻すことができなくなります。本当に実行しますか? "
+"\n"
+" (Y/N):"
 
 #: lib/cmd/fh2/account.js:205
 msgid "Destination %s is not supported at the moment. "
-msgstr ""
+msgstr "宛先 %s は、現在サポートされていません。"
 
 #: lib/cmd/fh2/account.js:295
 msgid ""
 "Invalid resource type for iphone : %s. It should be either certificate or "
 "privatekey"
-msgstr ""
+msgstr "iphone で無効なリソースタイプ : %s。証明書かプライベートキーのどちらにしてください。"
 
 #: lib/cmd/fh2/account.js:298
 msgid ""
 "Invalid resource config for iphone : %s. It should be either debug or "
 "distribution"
-msgstr ""
+msgstr "iphone で無効なリソース設定: %s。debug または distribution のいずれかにしてください"
 
 #: lib/cmd/fh2/account.js:304
 msgid ""
 "Invalid resource type for android : %s. It should be either certificate or "
 "privatekey"
-msgstr ""
+msgstr "アンドロイドで無効なリソースタイプ : %s。証明書かプライベートキーのどちらにしてください"
 
 #: lib/cmd/fh2/account.js:310
 msgid "Invalid resource type for blackberry : %s. It should be either csk or db"
-msgstr ""
+msgstr "blackberry で無効なリソースタイプ : %s。csk か db のどちらにしてください"
 
 #: lib/cmd/fh2/account.js:327
 #: lib/cmd/fh3/credentials.js:16
 #: lib/cmd/fh3/projects.js:24
 #: lib/cmd/fh3/services.js:24
 msgid "Usage: \n"
-msgstr ""
+msgstr "使用量: \n"
 
 #: lib/cmd/fh2/alias.js:5
 msgid "Set an alias for 24 character app id's"
-msgstr ""
+msgstr "24 文字のアプリ ID にエイリアスを設定"
 
 #: lib/cmd/fh2/alias.js:37
 msgid "an error occurred setting the alias"
-msgstr ""
+msgstr "エイリアスの設定中にエラーが発生しました"
 
 #: lib/cmd/fh2/alias.js:58
 msgid "no guid found"
-msgstr ""
+msgstr "Guid が見つかりません"
 
 #: lib/cmd/fh2/alias.js:69
 msgid "an alias must be less than 24 chars"
-msgstr ""
+msgstr "エイリアスは 24 文字未満にする必要があります"
 
 #: lib/cmd/fh2/alias.js:71
 msgid "%s is reserved"
-msgstr ""
+msgstr "%s が予約されました"
 
 #: lib/cmd/fh2/alias.js:76
 msgid "the alias %s already exists. Override ? (y/n)"
-msgstr ""
+msgstr "エイリアス %s はすでに存在します。上書きしますか ? (y/n)"
 
 #: lib/cmd/fh2/alias.js:81
 msgid "alias cancelled"
-msgstr ""
+msgstr "エイリアスがキャンセルされました"
 
 #: lib/cmd/fh2/app/act.js:4
 msgid "Perform a FeedHenry act request"
-msgstr ""
+msgstr "FeedHenry アクション要求を実行"
 
 #: lib/cmd/fh2/app/act.js:47
 msgid "Live environment not available for Rhino Apps"
-msgstr ""
+msgstr "Rhino Apps で利用可能な実稼働環境がありません"
 
 #: lib/cmd/fh2/app/act.js:59
 msgid "Error in act: "
-msgstr ""
+msgstr "アクションでエラー: "
 
 #: lib/cmd/fh2/app/act.js:92
 #: lib/cmd/fh3/app/_baseCloudRequest.js:67
 #: lib/cmd/internal/df.js:154
 msgid "Bad response: "
-msgstr ""
+msgstr "無効な応答: "
 
 #: lib/cmd/fh2/app/act.js:92
 #: lib/cmd/fh3/app/_baseCloudRequest.js:67
 msgid " code: "
-msgstr ""
+msgstr " コード: "
 
 #: lib/cmd/fh2/app/create.js:5
 msgid "Creates a FeedHenry app"
-msgstr ""
+msgstr "FeedHenry アプリを作成する"
 
 #: lib/cmd/fh2/app/create.js:69
 msgid "Error creating new app: "
-msgstr ""
+msgstr "新規アプリの作成中にエラー: "
 
 #: lib/cmd/fh2/app/create.js:74
 msgid ""
 "\n"
 "App created, id: "
 msgstr ""
+"\n"
+"アプリ���作成、id: "
 
 #: lib/cmd/fh2/app/create.js:76
 msgid ""
 "\n"
 "Detected a private repository.\n"
 msgstr ""
+"\n"
+"プライベートリポジトリーを検出しました。\n"
 
 #: lib/cmd/fh2/app/create.js:77
 msgid ""
 "Please add the following public key to your repository's authorised keys.\n"
 "\n"
 msgstr ""
+"以下のパブリックキーをリポジトリーの認証キーに追加してください\n"
+"\n"
 
 #: lib/cmd/fh2/app/create.js:79
 msgid "Once added, you can trigger a pull using the following command:\n"
-msgstr ""
+msgstr "追加し終わったら、以下のコマンドを使用してプルを開始できます:\n"
 
 #: lib/cmd/fh2/app/create.js:115
 #: lib/cmd/fh3/app/create.js:75
 #: lib/cmd/fh3/projects.js:120
 #: lib/cmd/fh3/services.js:131
 msgid "Template not found: "
-msgstr ""
+msgstr "テンプレートが見つかりません: "
 
 #: lib/cmd/fh2/app/delete.js:5
 msgid "Deletes a FeedHenry app"
-msgstr ""
+msgstr "FeedHenry アプリを削除"
 
 #: lib/cmd/fh2/app/delete.js:45
 msgid "Error deleting app: "
-msgstr ""
+msgstr "アプリの削除中にエラー: "
 
 #: lib/cmd/fh2/app/delete.js:49
 msgid "Deleted: "
-msgstr ""
+msgstr "削除しました: "
 
 #: lib/cmd/fh2/app/embed.js:5
 msgid "Build your Application for Embed Target"
-msgstr ""
+msgstr "埋め込みターゲット用のアプリをビルド"
 
 #: lib/cmd/fh2/app/embed.js:16
 msgid "Invalid arguments for fhc embed."
-msgstr ""
+msgstr "fhc embed に対する無効な引数。"
 
 #: lib/cmd/fh2/app/embed.js:26
 msgid "Error: "
-msgstr ""
+msgstr "エラー: "
 
 #: lib/cmd/fh2/app/endpoints.js:5
 msgid "List the endpoints exposed by a cloud app"
-msgstr ""
+msgstr "クラウドアプリが公開したエンドポイントを一覧表示"
 
 #: lib/cmd/fh2/app/endpoints.js:32
 msgid "Error getting app endpoints: "
-msgstr ""
+msgstr "アプリのエンドポイント取得中にエラー: "
 
 #: lib/cmd/fh2/app/endpoints.js:36
 msgid "Endpoints: "
-msgstr ""
+msgstr "エンドポイント: "
 
 #: lib/cmd/fh2/app/hosts.js:5
 msgid "Lists the cloud hosts available for a cloud app"
-msgstr ""
+msgstr "クラウドアプリで利用可能なクラウドホストを一覧表示"
 
 #: lib/cmd/fh2/app/hosts.js:19
 msgid "Error in hosts: "
-msgstr ""
+msgstr "ホストでエラー: "
 
 #: lib/cmd/fh2/app/logs.js:6
 msgid "Cloud application log Files"
-msgstr ""
+msgstr "クラウドアプリログファイル"
 
 #: lib/cmd/fh2/app/logs.js:12
 msgid ""
@@ -1859,38 +2047,44 @@ msgid ""
 " Note: log tail defaults to the current std-out log file & display last "
 "1000 lines of log file"
 msgstr ""
+"\n"
+" 注記: ログの末尾は現在の std-out ログファイルをデフォルトにして、ログファイルの最後の 1000 行を表示します"
 
 #: lib/cmd/fh2/app/logs.js:13
 msgid ""
 "\n"
 "       To specify an offset, pass -1 for the last-N-lines param - e.g. "
 msgstr ""
+"\n"
+"       オフセットを指定するには、last-N-lines パラメーターに -1 を渡します - 例 "
 
 #: lib/cmd/fh2/app/logs.js:15
 msgid ""
 "\n"
 "       This will return all log entries from position 12345 onwards"
 msgstr ""
+"\n"
+"       これで 12345 の位置以降のログエントリーすべてが返されます。"
 
 #: lib/cmd/fh2/app/logs.js:81
 msgid "Error getting logs: "
-msgstr ""
+msgstr "ログの取得中にエラー: "
 
 #: lib/cmd/fh2/app/logs.js:117
 msgid "Error deleting log: "
-msgstr ""
+msgstr "ログの削除中にエラー: "
 
 #: lib/cmd/fh2/app/logs.js:167
 msgid "offset undefined"
-msgstr ""
+msgstr "オフセットが定義されていません"
 
 #: lib/cmd/fh2/app/restart.js:5
 msgid "Restart a cloud app"
-msgstr ""
+msgstr "クラウドアプリを再起動"
 
 #: lib/cmd/fh2/app/stage.js:4
 msgid "Stage a cloud app"
-msgstr ""
+msgstr "クラウドアプリをステージ"
 
 #: lib/cmd/fh2/app/stage.js:9
 msgid ""
@@ -1898,67 +2092,71 @@ msgid ""
 "Approver is required if stage to Live environment. If it's not provided "
 "from the command line, user will be prompted for it."
 msgstr ""
+"\n"
+"実稼働環境にステージするには、承認者が必要になります。これがコマンドラインから提供されない場合は、プロンプト表示されます。"
 
 #: lib/cmd/fh2/app/stage.js:10
 msgid ""
 "\n"
 "Comment is optional and should only be provided if Approver is set."
 msgstr ""
+"\n"
+"コメントはオプションで、承認者が設定されている場合にのみ提供してください。"
 
 #: lib/cmd/fh2/app/stage.js:48
 msgid "runtime needs to be set as runtime=node08"
-msgstr ""
+msgstr "ランタイムは、runtime=node08 と設定する必要があります。"
 
 #: lib/cmd/fh2/app/stage.js:71
 #: lib/cmd/internal/df.js:173
 #: lib/cmd/internal/messaging.js:82
 msgid "Wrong arguments for or unknown action: "
-msgstr ""
+msgstr "無効な引数または未知のアクション: "
 
 #: lib/cmd/fh2/app/stage.js:86
 msgid "Please enter approver:"
-msgstr ""
+msgstr "承認者を入力してください:"
 
 #: lib/cmd/fh2/app/stage.js:92
 msgid "Please enter comment:"
-msgstr ""
+msgstr "コメントを入力してください:"
 
 #: lib/cmd/fh2/app/stage.js:103
 msgid "Approver name/email is required to stage to live environment."
-msgstr ""
+msgstr "実稼働にステージするには、承認者の名前/メールアドレスが必要です。"
 
 #: lib/cmd/fh2/app/stage.js:140
 msgid "Error staging app: "
-msgstr ""
+msgstr "アプリのステージ中にエラー: "
 
 #: lib/cmd/fh2/app/stage.js:149
 msgid "App staged ok.."
-msgstr ""
+msgstr "アプリのステージが成功.."
 
 #: lib/cmd/fh2/app/start.js:5
 msgid "Start a cloud app"
-msgstr ""
+msgstr "クラウドアプリを起動"
 
 #: lib/cmd/fh2/app/start.js:27
 #: lib/cmd/fh2/app/stop.js:28
 msgid "Error starting app: "
-msgstr ""
+msgstr "アプリの起動中にエラー: "
 
 #: lib/cmd/fh2/app/start.js:29
 msgid "App Started"
-msgstr ""
+msgstr "アプリが起動しました"
 
 #: lib/cmd/fh2/app/stop.js:4
 msgid "Stop a cloud app"
-msgstr ""
+msgstr "クラウドアプリを停止"
 
 #: lib/cmd/fh2/app/stop.js:30
 msgid "App Stopped"
-msgstr ""
+msgstr "アプリが停止されました"
 
 #: lib/cmd/fh2/app/suspend.js:4
 msgid "Suspend a cloud application"
-msgstr ""
+msgstr "クラウドアプリを一時停止"
 
 #: lib/cmd/fh2/app/suspend.js:5
 msgid ""
@@ -1966,63 +2164,66 @@ msgid ""
 "'cloud' (default) or 'embed')\n"
 "e.g. fhc suspend 12345 cloud --env=dev"
 msgstr ""
+"fhc suspend <app-id> [apptype] --env=<environment> (ここでの 'apptype' "
+"は、'cloud' (デフォルト) または 'embed')\n"
+"例: fhc suspend 12345 cloud --env=dev"
 
 #: lib/cmd/fh2/app/suspend.js:34
 msgid "Error suspending app: "
-msgstr ""
+msgstr "アプリの一時停止でエラー: "
 
 #: lib/cmd/fh2/app/suspend.js:36
 msgid "App Suspended"
-msgstr ""
+msgstr "アプリが一時停止されました"
 
 #: lib/cmd/fh2/init.js:9
 msgid "Bootstrap a New Project"
-msgstr ""
+msgstr "新規プロジェクトのブートストラップ"
 
 #: lib/cmd/fh2/init.js:24
 msgid "Directory must be empty to run init!"
-msgstr ""
+msgstr "init を実行するにはディレクトリーが空である必要があります。"
 
 #: lib/cmd/fh2/init.js:29
 msgid "Fetching project ZIP from GitHub... "
-msgstr ""
+msgstr "GitHub からプロジェクト ZIP をフェッチ中 ... "
 
 #: lib/cmd/fh2/init.js:35
 msgid "done!"
-msgstr ""
+msgstr "完了"
 
 #: lib/cmd/fh2/init.js:36
 msgid "Processing ZIP file... "
-msgstr ""
+msgstr "ZIP ファイルの処理中... "
 
 #: lib/cmd/fh2/init.js:51
 msgid "Done!"
-msgstr ""
+msgstr "完了"
 
 #: lib/cmd/fh2/init.js:52
 msgid "Project init complete."
-msgstr ""
+msgstr "プロジェクトの初期化が完了。"
 
 #: lib/cmd/fh2/init.js:57
 msgid "Failed!"
-msgstr ""
+msgstr "失敗しました。"
 
 #: lib/cmd/fh2/ping.js:6
 #: lib/cmd/fh3/ping.js:6
 msgid "Ping a FeedHenry cloud app"
-msgstr ""
+msgstr "FeedHenry クラウドアプリを ping"
 
 #: lib/cmd/fh2/ping.js:29
 msgid "Error pinging app: "
-msgstr ""
+msgstr "アプリの ping 中にエラー: "
 
 #: lib/cmd/fh2/ping.js:31
 msgid "Ping: "
-msgstr ""
+msgstr "Ping: "
 
 #: lib/cmd/fh2/undeploy.js:4
 msgid "Undeploy a cloud app"
-msgstr ""
+msgstr "クラウドアプリをデプロイ解除"
 
 #: lib/cmd/fh2/undeploy.js:5
 msgid ""
@@ -2030,48 +2231,51 @@ msgid ""
 "'cloud' (default) or 'embed')\n"
 "e.g. fhc undeploy 12345 cloud --env=dev"
 msgstr ""
+"fhc undeploy <app-id> [apptype] --env=<environment> (ここでの 'apptype' "
+"は、'cloud' (デフォルト) または 'embed')\n"
+"e.g. fhc undeploy 12345 cloud --env=dev"
 
 #: lib/cmd/fh2/undeploy.js:36
 msgid "Error undeploying app: "
-msgstr ""
+msgstr "アプリのデプロイ解除でエラー: "
 
 #: lib/cmd/fh2/undeploy.js:41
 msgid "App Undeployed"
-msgstr ""
+msgstr "アプリがデプロイ解除されました"
 
 #: lib/cmd/fh3/admin/domains.js:7
 msgid "Manage Domains"
-msgstr ""
+msgstr "ドメイン管理"
 
 #: lib/cmd/fh3/admin/domains.js:28
 msgid "type must be one of admin or developer"
-msgstr ""
+msgstr "タイプは admin か developer のいずれかにする必要があります"
 
 #: lib/cmd/fh3/admin/domains.js:38
 msgid "Error checking domain availability: "
-msgstr ""
+msgstr "ドメインのアベイラビリティー確認中にエラー: "
 
 #: lib/cmd/fh3/admin/environments/create.js:6
 msgid "Creates an environment."
-msgstr ""
+msgstr "環境を作成"
 
 #: lib/cmd/fh3/admin/environments/create.js:8
 msgid "Creates an environment"
-msgstr ""
+msgstr "環境を作成"
 
 #: lib/cmd/fh3/admin/environments/create.js:12
 msgid "Unique identifier for your environment"
-msgstr ""
+msgstr "環境の一意の識別子"
 
 #: lib/cmd/fh3/admin/environments/create.js:13
 #: lib/cmd/fh3/admin/environments/update.js:12
 msgid "A label describing your environment"
-msgstr ""
+msgstr "環境を記述しているラベル"
 
 #: lib/cmd/fh3/admin/environments/create.js:14
 #: lib/cmd/fh3/admin/environments/update.js:13
 msgid "unique identifier for an existing MBaaS Target"
-msgstr ""
+msgstr "既存の MBaaS ターゲットの一意の識別子"
 
 #: lib/cmd/fh3/admin/environments/create.js:15
 msgid ""
@@ -2083,53 +2287,53 @@ msgstr ""
 msgid ""
 "option used to setup automatic deployment to this environment when creating "
 "new project/app."
-msgstr ""
+msgstr "新規プロジェクト/アプリの作成時に、この環境に自動デプロイメントを設定するオプション。"
 
 #: lib/cmd/fh3/admin/environments/create.js:17
 msgid ""
 "option used to setup automatic deployment to this environment when making "
 "source code changes within app."
-msgstr ""
+msgstr "アプリ内でのソースコードの変更時に、この環境に自動デプロイメントを設定するオプション。"
 
 #: lib/cmd/fh3/admin/environments/delete.js:3
 msgid "Delete an environment"
-msgstr ""
+msgstr "環境を削除"
 
 #: lib/cmd/fh3/admin/environments/delete.js:4
 msgid "Delete an environment by id"
-msgstr ""
+msgstr "ID ごとの環境を削除"
 
 #: lib/cmd/fh3/admin/environments/delete.js:8
 #: lib/cmd/fh3/admin/environments/update.js:11
 #: lib/cmd/fh3/admin/teams/delete.js:10
 msgid "Some unique identifier for your environment"
-msgstr ""
+msgstr "環境の一意の識別子"
 
 #: lib/cmd/fh3/admin/environments/list.js:5
 msgid "Lists available environments."
-msgstr ""
+msgstr "利用可能な環境を一覧表示"
 
 #: lib/cmd/fh3/admin/environments/list.js:8
 msgid "Lists available environments"
-msgstr ""
+msgstr "利用可能な環境を一覧表示"
 
 #: lib/cmd/fh3/admin/environments/read.js:3
 #: lib/cmd/fh3/admin/environments/read.js:4
 msgid "Read an environment by id"
-msgstr ""
+msgstr "ID ごとに環境を読み込む"
 
 #: lib/cmd/fh3/admin/environments/read.js:8
 #: lib/cmd/fh3/admin/teams/read.js:10
 msgid "A unique identifier for an environment"
-msgstr ""
+msgstr "環境の一意の識別子"
 
 #: lib/cmd/fh3/admin/environments/update.js:6
 msgid "Update an environments."
-msgstr ""
+msgstr "環境を更新"
 
 #: lib/cmd/fh3/admin/environments/update.js:7
 msgid "Update an environment by id"
-msgstr ""
+msgstr "ID ごとに環境を更新"
 
 #: lib/cmd/fh3/admin/environments/update.js:14
 msgid "OpenShift token required to create the environment project"
@@ -2171,383 +2375,385 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:3
 msgid "Get a new bearer token for an mbaas"
-msgstr ""
+msgstr "mbaas の新規ベアラートークンを取得"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:4
 msgid "Gets a new bearer token"
-msgstr ""
+msgstr "新規ベアラートークンを取得"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:8
 msgid "The host where your MBaaS exists"
-msgstr ""
+msgstr "MBaaS が存在するホスト"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:9
 msgid "MBaaS username"
-msgstr ""
+msgstr "MBaaS ユーザー名"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:10
 msgid "MBaaS password"
-msgstr ""
+msgstr "MBaaS パスワード"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:11
 msgid "The id for the MBaaS"
-msgstr ""
+msgstr "MBaaS の ID"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:3
 msgid "Creates an MBaaS."
-msgstr ""
+msgstr "MBaaS を作成"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:8
 msgid "Some unique identifier for your MBaaS"
-msgstr ""
+msgstr "MBaaS の一意の識別子"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:9
 #: lib/cmd/fh3/admin/mbaas/update.js:9
 msgid "The hostname where your MBaaS exists"
-msgstr ""
+msgstr "MBaaS が存在するホスト名"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:10
 #: lib/cmd/fh3/admin/mbaas/update.js:10
 msgid "Service key to authenticate the MBaaS"
-msgstr ""
+msgstr "MBaaS を認証するサービスキー"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:11
 #: lib/cmd/fh3/admin/mbaas/update.js:11
 msgid "MBaaS Username"
-msgstr ""
+msgstr "MBaaS ユーザー名"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:12
 #: lib/cmd/fh3/admin/mbaas/update.js:12
 msgid "MBaaS Password"
-msgstr ""
+msgstr "MBaaS パスワード"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:13
 #: lib/cmd/fh3/admin/mbaas/update.js:13
 msgid "flag them mbaas as decoupled"
-msgstr ""
+msgstr "MBaaS を分離としてフラグ"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:14
 #: lib/cmd/fh3/admin/mbaas/update.js:14
 msgid "The size of the MBaaS"
-msgstr ""
+msgstr "MBaaS のサイズ"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:15
 msgid "A label to apply to the MBaaS, defaults to id if not specified"
-msgstr ""
+msgstr "MBaaS に適用するラベル。指定されない場合は ID がデフォルト。"
 
 #: lib/cmd/fh3/admin/mbaas/create.js:16
 #: lib/cmd/fh3/admin/mbaas/update.js:16
 msgid "Determines if the MBaaS target is editable for non-reseller users"
-msgstr ""
+msgstr "MBaaS ターゲットがリセラー以外のユーザーに編集可能かどうかを決定します。"
 
 #: lib/cmd/fh3/admin/mbaas/delete.js:3
 msgid "Delete an MBaaS."
-msgstr ""
+msgstr "MBaaS を削除"
 
 #: lib/cmd/fh3/admin/mbaas/delete.js:8
 #: lib/cmd/fh3/admin/mbaas/read.js:8
 #: lib/cmd/fh3/admin/mbaas/update.js:8
 msgid "Some unique MBaaS identifier"
-msgstr ""
+msgstr "MBaaS の一意の識別子"
 
 #: lib/cmd/fh3/admin/mbaas/list.js:5
 msgid "Lists available MBaaSes."
-msgstr ""
+msgstr "利用可能な  MBaaS を一覧表示"
 
 #: lib/cmd/fh3/admin/mbaas/list.js:8
 msgid "Lists available MBaaSes"
-msgstr ""
+msgstr "利用可能な  MBaaS を一覧表示"
 
 #: lib/cmd/fh3/admin/mbaas/read.js:3
 msgid "Read an MBaaS."
-msgstr ""
+msgstr "MBaaS を読み込む"
 
 #: lib/cmd/fh3/admin/mbaas/update.js:3
 msgid "Update an MBaaS."
-msgstr ""
+msgstr "MBaaS を更新"
 
 #: lib/cmd/fh3/admin/mbaas/update.js:15
 msgid "A label to apply to the MBaaS"
-msgstr ""
+msgstr "MBaaS に適用するラベル"
 
 #: lib/cmd/fh3/admin/status.js:4
 msgid "Manage status"
-msgstr ""
+msgstr "ステータス管理"
 
 #: lib/cmd/fh3/admin/status.js:17
 msgid "Invalid component"
-msgstr ""
+msgstr "無効なコンポーネント"
 
 #: lib/cmd/fh3/admin/status.js:23
 msgid "error getting status"
-msgstr ""
+msgstr "ステータスの取得中にエラー: "
 
 #: lib/cmd/fh3/admin/teams/_addremoveuser.js:12
 msgid "A unique team id"
-msgstr ""
+msgstr "一意のチーム ID"
 
 #: lib/cmd/fh3/admin/teams/_addremoveuser.js:13
 msgid "A unique user id"
-msgstr ""
+msgstr "一意のユーザー ID"
 
 #: lib/cmd/fh3/admin/teams/adduser.js:3
 msgid "Add a user to a specified team."
-msgstr ""
+msgstr "指定されたチームにユーザーを追加"
 
 #: lib/cmd/fh3/admin/teams/adduser.js:4
 msgid "Add user 2b to team 1a"
-msgstr ""
+msgstr "ユーザー 2b をチーム 1a に追加"
 
 #: lib/cmd/fh3/admin/teams/create.js:4
 msgid "Creates a team."
-msgstr ""
+msgstr "チームを作成"
 
 #: lib/cmd/fh3/admin/teams/create.js:5
 msgid "Creates a team from file myteam.json"
-msgstr ""
+msgstr "myteam.json ファイルからチームを作成"
 
 #: lib/cmd/fh3/admin/teams/create.js:11
 msgid "a .json filename for your team"
-msgstr ""
+msgstr "チームの .json ファイル名"
 
 #: lib/cmd/fh3/admin/teams/create.js:25
 msgid "Failed to parse team def"
-msgstr ""
+msgstr "チームのデフォルト値の解析に失敗"
 
 #: lib/cmd/fh3/admin/teams/delete.js:3
 msgid "Delete a team."
-msgstr ""
+msgstr "チームを削除"
 
 #: lib/cmd/fh3/admin/teams/delete.js:4
 msgid "Deletes team with id 1a2b"
-msgstr ""
+msgstr "ID 1a2b のチームを削除"
 
 #: lib/cmd/fh3/admin/teams/list.js:5
 #: lib/cmd/fh3/admin/teams/userteams.js:3
 msgid "Lists teams."
-msgstr ""
+msgstr "チームを一覧表示"
 
 #: lib/cmd/fh3/admin/teams/list.js:6
 msgid "Lists available teams"
-msgstr ""
+msgstr "利用可能なチームを一覧表示"
 
 #: lib/cmd/fh3/admin/teams/read.js:3
 #: lib/cmd/fh3/admin/teams/read.js:4
 msgid "Read a team by id"
-msgstr ""
+msgstr "ID ごとにチームを読み込む"
 
 #: lib/cmd/fh3/admin/teams/removeuser.js:3
 msgid "Remove a user from a specified team."
-msgstr ""
+msgstr "指定されたチームからユーザーを削除"
 
 #: lib/cmd/fh3/admin/teams/removeuser.js:4
 msgid "Remove user 2b from team 1a"
-msgstr ""
+msgstr "ユーザー 2b をチーム 1a から削除"
 
 #: lib/cmd/fh3/admin/teams/userteams.js:4
 msgid "Lists user teams with id 1a2b"
-msgstr ""
+msgstr "ID 1a2b のユーザーチームを一覧表示"
 
 #: lib/cmd/fh3/admin/teams/userteams.js:11
 msgid "A unique user GUID"
-msgstr ""
+msgstr "一意のユーザー GUID"
 
 #: lib/cmd/fh3/app/_baseCloudCommand.js:17
 msgid "Unique 24-character GUID of your application"
-msgstr ""
+msgstr "アプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/_baseCloudCommand.js:18
 msgid "The lifecycle environment your application is running in, e.g. dev"
-msgstr ""
+msgstr "アプリが稼働するライフサイクル環境。例: dev"
 
 #: lib/cmd/fh3/app/_baseCloudRequest.js:18
 msgid "Unique 24 character GUID of the app you want to do a request on"
-msgstr ""
+msgstr "要求を実行したいアプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/_baseCloudRequest.js:19
 msgid "Environment within which the request should be performed"
-msgstr ""
+msgstr "要求が実行される環境"
 
 #: lib/cmd/fh3/app/_baseCloudRequest.js:20
 msgid "Request body to send thru"
-msgstr ""
+msgstr "送信される要求本文"
 
 #: lib/cmd/fh3/app/_baseCloudRequest.js:36
 msgid "App %s not found for environment %s"
-msgstr ""
+msgstr "環境 %s ではアプリ %s は見つかりませんでした"
 
 #: lib/cmd/fh3/app/act.js:3
 msgid "Performs an act request on a cloud app."
-msgstr ""
+msgstr "クラウドアプリ上でアクション要求を実行"
 
 #: lib/cmd/fh3/app/act.js:4
 msgid "Cloud function name to call"
-msgstr ""
+msgstr "呼び出すクラウド機能名"
 
 #: lib/cmd/fh3/app/act.js:9
 msgid "Performs an act request on app with id 1a2b3c"
-msgstr ""
+msgstr "ID 1a2b3c のアプリ上でアクション要求を実行"
 
 #: lib/cmd/fh3/app/cloud.js:3
 msgid "Performs a cloud request on a cloud app"
-msgstr ""
+msgstr "クラウドアプリ上でクラウド要求を実行"
 
 #: lib/cmd/fh3/app/cloud.js:5
 msgid "Path of the cloud request"
-msgstr ""
+msgstr "クラウドリクエストのパス"
 
 #: lib/cmd/fh3/app/cloud.js:9
 msgid "Performs a cloud request on app with id 1a2b3c"
-msgstr ""
+msgstr "ID 1a2b3c のアプリ上でクラウド要求を実行"
 
 #: lib/cmd/fh3/app/create.js:8
 msgid "Creates an application."
-msgstr ""
+msgstr "アプリを作成"
 
 #: lib/cmd/fh3/app/create.js:12
 msgid "Creates a new hybrid app from template"
-msgstr ""
+msgstr "テンプレートから新規ハイブリッドアプリを作成"
 
 #: lib/cmd/fh3/app/create.js:16
 msgid "Creates a new hybrid app from a git repo"
-msgstr ""
+msgstr "Git レポジトリーから新規ハイブリッドアプリを作成"
 
 #: lib/cmd/fh3/app/create.js:28
 msgid "Unique 24 character GUID of the project you want this app to be created in."
-msgstr ""
+msgstr "このアプリを作成するプロジェクトの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/create.js:29
 msgid "The type of app."
-msgstr ""
+msgstr "アプリのタイプ。"
 
 #: lib/cmd/fh3/app/create.js:30
 msgid "A title for your app."
-msgstr ""
+msgstr "アプリのタイトル。"
 
 #: lib/cmd/fh3/app/create.js:31
 msgid ""
 "Template of your app - e.g. hello_world_mbaas_instance. See fhc templates "
 "apps."
-msgstr ""
+msgstr "アプリのテンプレート - 例: hello_world_mbaas_instance。fhc テンプレートアプリを参照"
 
 #: lib/cmd/fh3/app/create.js:32
 msgid "Repository to clone your app from."
-msgstr ""
+msgstr "アプリのクローン元となるリポジトリー"
 
 #: lib/cmd/fh3/app/create.js:33
 msgid "Git branch to clone from."
-msgstr ""
+msgstr "クローン元となる Git ブランチ"
 
 #: lib/cmd/fh3/app/create.js:34
 msgid ""
 "If specified and the app is deployable, the app will be deployed to this "
 "environment automatically. Set it to \"none\" will not deploy the app."
-msgstr ""
+msgstr "指定されていてアプリがデプロイ可能な場合、アプリは自動的にこの環境にデプロイされます。\"none\" に設定するとアプリはデプロイされません。"
 
 #: lib/cmd/fh3/app/create.js:35
 msgid ""
 "Optional. If this is set to true, the command will wait until the app is "
 "deployed (if enabled)."
-msgstr ""
+msgstr "オプション。これを true に設定すると、アプリがデプロイされるまでコマンドは待機します (有効な場合)。"
 
 #: lib/cmd/fh3/app/delete.js:5
 msgid "Deletes an app under a project."
-msgstr ""
+msgstr "プロジェクト下のアプリを削除"
 
 #: lib/cmd/fh3/app/delete.js:6
 msgid "Deletes app with id 2b under project with id 1a"
-msgstr ""
+msgstr "ID 1a のプロジェクト下の ID 2b のアプリを削除"
 
 #: lib/cmd/fh3/app/delete.js:15
 #: lib/cmd/fh3/app/read.js:15
 msgid "Unique 24 character GUID of the project your app lives in"
-msgstr ""
+msgstr "アプリがあるプロジェクトの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/delete.js:16
 #: lib/cmd/fh3/app/hosts.js:15
 #: lib/cmd/fh3/app/read.js:16
 msgid "Unique 24 character GUID of the app you want to delete"
-msgstr ""
+msgstr "削除するアプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/endpoints.js:4
 msgid "Provides the endpoints for the specified app in the specified environment."
-msgstr ""
+msgstr "指定された環境内の指定されたアプリのエンドポイントを提供"
 
 #: lib/cmd/fh3/app/hosts.js:5
 msgid "Gets the host for a cloud app in an environment."
-msgstr ""
+msgstr "環境内のクラウドアプリのホストを取得"
 
 #: lib/cmd/fh3/app/hosts.js:6
 msgid "Gets the host for the 2b app in the dev environment"
-msgstr ""
+msgstr "dev 環境の 2b アプリのホストを取得"
 
 #: lib/cmd/fh3/app/hosts.js:16
 msgid "Environment to look up the host for"
-msgstr ""
+msgstr "ホストを検索する環境"
 
 #: lib/cmd/fh3/app/list.js:4
 msgid "Lists apps under a project."
-msgstr ""
+msgstr "プロジェクト下のアプリを一覧表示"
 
 #: lib/cmd/fh3/app/list.js:6
 msgid "Passing project using a flag"
-msgstr ""
+msgstr "フラグを使用しているプロジェクトを渡します"
 
 #: lib/cmd/fh3/app/list.js:7
 msgid "Passing project as an argument"
-msgstr ""
+msgstr "プロジェクトを引数として渡します"
 
 #: lib/cmd/fh3/app/list.js:15
 msgid "Unique 24 character GUID of the project you want to list apps in"
-msgstr ""
+msgstr "アプリを一覧表示するプロジェクトの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/logs/delete.js:5
 msgid "Delete log file from specified environment"
-msgstr ""
+msgstr "指定された環境からログファイルを削除"
 
 #: lib/cmd/fh3/app/logs/delete.js:8
 msgid "Removes \"env.log\" file from \"dev\" environment"
-msgstr ""
+msgstr "\"dev\" 環境から \"env.log\" ファイルを削除"
 
 #: lib/cmd/fh3/app/logs/delete.js:20
 #: lib/cmd/fh3/app/logs/get.js:21
 #: lib/cmd/fh3/app/logs/list.js:23
 #: lib/cmd/fh3/app/logs/tail.js:27
 msgid "Unique 24 character GUID of your application."
-msgstr ""
+msgstr "アプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/logs/delete.js:21
 #: lib/cmd/fh3/app/logs/get.js:22
 #: lib/cmd/fh3/app/logs/list.js:24
 #: lib/cmd/fh3/app/logs/tail.js:28
 msgid "Application Environment ID (dev, prod)"
-msgstr ""
+msgstr "アプリケーション環境 ID (dev、prod)"
 
 #: lib/cmd/fh3/app/logs/delete.js:22
 msgid "Full name of log file including extension"
-msgstr ""
+msgstr "拡張子を含むログファイルの完全名"
 
 #: lib/cmd/fh3/app/logs/get.js:5
 msgid "Fetch log file contents from specified environment."
-msgstr ""
+msgstr "指定された環境からログファイルのコンテンツをフェッチ"
 
 #: lib/cmd/fh3/app/logs/get.js:8
 msgid ""
 "Fetching log \"env.dev.log\" file from \"dev\" environment \n"
 " Content of the log file will be printed on standard output."
 msgstr ""
+"\"dev\" 環境から \"env.dev.log\" ログファイルをフェッチ \n"
+" ログファイルのコンテンツは標準出力にプリントされます。"
 
 #: lib/cmd/fh3/app/logs/get.js:23
 msgid "Full name of file to download"
-msgstr ""
+msgstr "ダウンロードするファイルの完全名"
 
 #: lib/cmd/fh3/app/logs/list.js:10
 msgid "Get list of application log files"
-msgstr ""
+msgstr "アプリのログファイル一覧を取得"
 
 #: lib/cmd/fh3/app/logs/list.js:13
 msgid "Fetch list of application log files for \"dev\" environment\n"
-msgstr ""
+msgstr "\"dev\" 環境のアプリケーションログファイル一覧をフェッチ\n"
 
 #: lib/cmd/fh3/app/logs/tail.js:7
 msgid ""
@@ -2555,149 +2761,157 @@ msgid ""
 "over the time. By default command will display most recent stdout and "
 "stderr logs."
 msgstr ""
+"アプリケーションログファイルの末尾の部分を表示し、長期にわたってその変化を監視します。デフォルトでは、コマンドは最新の stdout および "
+"stderr のログを表示します。"
 
 #: lib/cmd/fh3/app/logs/tail.js:11
 msgid "Monitors and displays the last \"100\" lines of \"std.out.log\""
-msgstr ""
+msgstr "\"std.out.log\" の最後の 100 行を監視、表示します。"
 
 #: lib/cmd/fh3/app/logs/tail.js:29
 msgid "Number of last lines from file that will be fetched"
-msgstr ""
+msgstr "フェッチされるファイルからの最後の行数"
 
 #: lib/cmd/fh3/app/logs/tail.js:30
 msgid "Log file offset used as starting point for reading log"
-msgstr ""
+msgstr "ログ読み取りの開始地点として使用されるログファイルオフセット"
 
 #: lib/cmd/fh3/app/logs/tail.js:31
 msgid "Name of log file"
-msgstr ""
+msgstr "ログファイル名"
 
 #: lib/cmd/fh3/app/logs/tail.js:69
 msgid ""
 "No log file specified. Fetching logs from latest log files. \n"
 "Standard output: "
 msgstr ""
+"ログファイルが指定されていません。最新のログファイルからログをフェッチします。\n"
+"標準出力: "
 
 #: lib/cmd/fh3/app/logs/tail.js:70
 msgid ""
 "\n"
 "Error log: "
 msgstr ""
+"\n"
+"エラーログ: "
 
 #: lib/cmd/fh3/app/logs/tail.js:73
 msgid "Cannot get latest log files. Fetching standard output log."
-msgstr ""
+msgstr "最新のログファイルを取得できません。標準出力ログをフェッチします。"
 
 #: lib/cmd/fh3/app/read.js:5
 msgid "Reads an app under a project."
-msgstr ""
+msgstr "プロジェクト下のアプリを読み込む"
 
 #: lib/cmd/fh3/app/read.js:6
 msgid "Reads app with id 2b under project with id 1a"
-msgstr ""
+msgstr "ID 1a のプロジェクト下の ID 2b のアプリを読み込む"
 
 #: lib/cmd/fh3/app/resources.js:7
 msgid "Lists resources of a cloud app"
-msgstr ""
+msgstr "クラウドアプリのリソースを一覧表示"
 
 #: lib/cmd/fh3/app/resources.js:9
 msgid "Shows the resources of the app with id 1a in the dev environment"
-msgstr ""
+msgstr "dev 環境の ID 1a のアプリのリソースを表示"
 
 #: lib/cmd/fh3/app/resources.js:17
 msgid "Unique 24 character GUID of the cloud app you want to see resource info for"
-msgstr ""
+msgstr "リソース情報を確かめたいクラウドアプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/resources.js:18
 msgid "The cloud environment your app is running in"
-msgstr ""
+msgstr "アプリが実行中であるクラウド環境"
 
 #: lib/cmd/fh3/app/resources.js:32
 msgid "App with id %s not found"
-msgstr ""
+msgstr "ID %s のアプリが見つかりません"
 
 #: lib/cmd/fh3/app/stage.js:6
 msgid "Stages a cloud application."
-msgstr ""
+msgstr "クラウドアプリをステージ"
 
 #: lib/cmd/fh3/app/stage.js:13
 msgid "The Node.js runtime of your application, e.g. node06 or node08 or node010"
-msgstr ""
+msgstr "アプリの Node.js ランタイム。例: node06、node08 または node010"
 
 #: lib/cmd/fh3/app/stage.js:14
 msgid ""
 "Do a full, clean stage. Cleans out all old application log files, removes "
 "cached node modules and does an 'npm install' from scratch"
 msgstr ""
+"完全なクリーンステージを実行。すべての古いアプリケーションログファイルを取り除き、キャッシュされたノードモジュールを削除し、ゼロから 'npm "
+"install' を実行します。"
 
 #: lib/cmd/fh3/app/stage.js:15
 msgid "Deploy the app automatically when the app repo is updated"
-msgstr ""
+msgstr "アプリレポジトリーが更新されると、アプリを自動的にデプロイします"
 
 #: lib/cmd/fh3/app/stage.js:16
 msgid "Specifies if you'd like to deploy a 'branch' or 'tag'"
-msgstr ""
+msgstr "'branch' または 'tag' をデプロイするかどうかを指定します"
 
 #: lib/cmd/fh3/app/stage.js:17
 msgid ""
 "The commit hash you'd like to deploy if gitRef.type is 'branch'. HEAD will "
 "use the latest code for that branch"
-msgstr ""
+msgstr "gitRef.type が 'branch' の場合にデプロイするコミットハッシュ。HEAD はこのブランチに最新のコードを使用します"
 
 #: lib/cmd/fh3/app/stage.js:18
 msgid "The name of the branch you'd like to deploy"
-msgstr ""
+msgstr "デプロイするブランチ名"
 
 #: lib/cmd/fh3/app/start.js:3
 msgid ""
 "Starts a cloud application. This command will only work if the app has "
 "previously been deployed"
-msgstr ""
+msgstr "クラウドアプリを起動します。このコマンドは、アプリが以前にデプロイされている場合にのみ機能します"
 
 #: lib/cmd/fh3/app/stop.js:3
 msgid ""
 "Stops a cloud application. This command will only work if the app has "
 "previously been deployed"
-msgstr ""
+msgstr "クラウドアプリを停止します。このコマンドは、アプリが以前にデプロイされている場合にのみ機能します"
 
 #: lib/cmd/fh3/app/suspend.js:3
 msgid ""
 "Suspends a cloud application. This command will only work if the app has "
 "previously been deployed"
-msgstr ""
+msgstr "クラウドアプリを一時停止します。このコマンドは、アプリが以前にデプロイされている場合にのみ機能します"
 
 #: lib/cmd/fh3/app/undeploy.js:7
 msgid "Undeploy an app given the domain and environment it is deployed to"
-msgstr ""
+msgstr "アプリのデプロイ解除"
 
 #: lib/cmd/fh3/app/undeploy.js:10
 msgid "Undeploy <app-id> from environment <environment> in domain <domain>"
-msgstr ""
+msgstr "ドメイン <domain> の環境 <environment> から <app-id> をデプロイ解除"
 
 #: lib/cmd/fh3/app/undeploy.js:22
 msgid "Unique 24 character GUID of the application to undeploy"
-msgstr ""
+msgstr "デプロイ解除するアプリの一意の 24 文字 GUID"
 
 #: lib/cmd/fh3/app/undeploy.js:23
 msgid "The ID of the environment from where to undeploy the app"
-msgstr ""
+msgstr "アプリをデプロイ解除する環境の ID"
 
 #: lib/cmd/fh3/app/undeploy.js:24
 msgid "The name of the domain from where to undeploy the app"
-msgstr ""
+msgstr "アプリをデプロイ解除するドメイン名"
 
 #: lib/cmd/fh3/app/undeploy.js:25
 msgid "If this flag is present then {embed: true} will be sent"
-msgstr ""
+msgstr "フラグがある場合は、{embed: true} が送信されます"
 
 #: lib/cmd/fh3/app/undeploy.js:48
 msgid "Embed flag set to %s"
-msgstr ""
+msgstr "%s に送信された埋め込みフラグ"
 
 #: lib/cmd/fh3/appdata/export/download.js:12
 #: lib/cmd/fh3/appdata/export/download.js:18
 msgid "Download the result of a completed export job by job_id"
-msgstr ""
+msgstr "job_id 別に完了済みエクスポートジョブの結果をダウンロード"
 
 #: lib/cmd/fh3/appdata/export/download.js:23
 #: lib/cmd/fh3/appdata/export/list.js:18
@@ -2709,7 +2923,7 @@ msgstr ""
 #: lib/cmd/fh3/appdata/import/start.js:95
 #: lib/cmd/fh3/appdata/import/status.js:64
 msgid "Environment id"
-msgstr ""
+msgstr "環境 ID"
 
 #: lib/cmd/fh3/appdata/export/download.js:24
 #: lib/cmd/fh3/appdata/export/list.js:19
@@ -2721,930 +2935,930 @@ msgstr ""
 #: lib/cmd/fh3/appdata/import/start.js:96
 #: lib/cmd/fh3/appdata/import/status.js:65
 msgid "Application id"
-msgstr ""
+msgstr "アプリケーション ID"
 
 #: lib/cmd/fh3/appdata/export/download.js:25
 #: lib/cmd/fh3/appdata/export/read.js:23
 #: lib/cmd/fh3/appdata/export/status.js:67
 msgid "Export job id"
-msgstr ""
+msgstr "エクスポートジョブ ID"
 
 #: lib/cmd/fh3/appdata/export/download.js:26
 msgid "Path and filename of downloaded file"
-msgstr ""
+msgstr "ダウンロードされたファイルのパスとファイル名"
 
 #: lib/cmd/fh3/appdata/export/download.js:37
 msgid "The file at path [%s] already exists. Aborting."
-msgstr ""
+msgstr "パス [%s] にファイルがすでに存在します。中止中。"
 
 #: lib/cmd/fh3/appdata/export/download.js:42
 msgid "Error downloading export"
-msgstr ""
+msgstr "エクスポートのダウンロード中にエラーが発生しました"
 
 #: lib/cmd/fh3/appdata/export/list.js:10
 #: lib/cmd/fh3/appdata/export/list.js:13
 msgid ""
 "List all current and historic export jobs given an application and "
 "environment id"
-msgstr ""
+msgstr "アプリケーションおよび環境 ID が提供された現在および過去のすべてのエクスポートジョブを一覧表示"
 
 #: lib/cmd/fh3/appdata/export/read.js:11
 #: lib/cmd/fh3/appdata/export/read.js:16
 #: lib/cmd/fh3/appdata/import/read.js:10
 #: lib/cmd/fh3/appdata/import/read.js:15
 msgid "Return the whole job definition in JSON format"
-msgstr ""
+msgstr "全体のジョブ定義を JSON 形式で返す"
 
 #: lib/cmd/fh3/appdata/export/start.js:11
 #: lib/cmd/fh3/appdata/export/start.js:14
 msgid ""
 "Start a new data export job for the given application in the given "
 "environment"
-msgstr ""
+msgstr "該当する環境で該当するアプリケーションの新しいデータエクスポートジョブを開始"
 
 #: lib/cmd/fh3/appdata/export/start.js:17
 msgid "Start a new data export job and stop the app without asking"
-msgstr ""
+msgstr "新しいデータエクスポートを開始し、尋ねずにアプリを停止"
 
 #: lib/cmd/fh3/appdata/export/start.js:20
 msgid "Start a new data export job without stopping the app"
-msgstr ""
+msgstr "アプリを停止せずに新しいデータエクスポートジョブを開始"
 
 #: lib/cmd/fh3/appdata/export/start.js:27
 msgid "override the stop-application prompt"
-msgstr ""
+msgstr "アプリケーション停止プロンプトを上書き"
 
 #: lib/cmd/fh3/appdata/export/start.js:41
 msgid "Do you want to stop the application first?"
-msgstr ""
+msgstr "最初にアプリケーションを停止しますか?"
 
 #: lib/cmd/fh3/appdata/export/start.js:42
 msgid "The application data might be outdated if you choose not to. (Y/n):"
-msgstr ""
+msgstr "アプリケーションデータが古い可能性があります (そのように選択しない場合)。(Y/n):"
 
 #: lib/cmd/fh3/appdata/export/start.js:56
 msgid "Error exporting data: "
-msgstr ""
+msgstr "データのエクスポート中にエラーが発生しました"
 
 #: lib/cmd/fh3/appdata/export/start.js:62
 msgid "Created a new export job with ID: "
-msgstr ""
+msgstr "ID とともに新しいエクスポートジョブを作成: "
 
 #: lib/cmd/fh3/appdata/export/start.js:63
 #: lib/cmd/fh3/appdata/import/start.js:107
 msgid ". To check on the job status you can use the following command: \n"
-msgstr ""
+msgstr "ジョブステータスを確認するために、次のコマンドを使用できます: \n"
 
 #: lib/cmd/fh3/appdata/export/status.js:37
 #: lib/cmd/fh3/appdata/import/status.js:36
 msgid "No progress information in response"
-msgstr ""
+msgstr "応答に進捗情報がありません"
 
 #: lib/cmd/fh3/appdata/export/status.js:55
 #: lib/cmd/fh3/appdata/export/status.js:60
 #: lib/cmd/fh3/appdata/import/status.js:54
 #: lib/cmd/fh3/appdata/import/status.js:59
 msgid "Poll for job status"
-msgstr ""
+msgstr "ジョブステータスのポーリング"
 
 #: lib/cmd/fh3/appdata/export/status.js:68
 #: lib/cmd/fh3/appdata/import/status.js:67
 msgid "Polling interval in milliseconds (default is 2000)"
-msgstr ""
+msgstr "ミリ秒単位のポーリング間隔 (デフォルト値は 2000)"
 
 #: lib/cmd/fh3/appdata/export/status.js:84
 #: lib/cmd/fh3/appdata/import/status.js:83
 msgid "Polling job progress. Press `q` to quit"
-msgstr ""
+msgstr "ポーリングジョブが進行中です。中止するには `q` を押してください"
 
 #: lib/cmd/fh3/appdata/export/status.js:88
 msgid "Job progress:"
-msgstr ""
+msgstr "ジョブの進捗状況:"
 
 #: lib/cmd/fh3/appdata/export/status.js:106
 #: lib/cmd/fh3/appdata/import/status.js:107
 msgid "Cannot query progress: Job has failed"
-msgstr ""
+msgstr "進捗状況を問い合わせることができません。ジョブが失敗しました"
 
 #: lib/cmd/fh3/appdata/import/list.js:9
 #: lib/cmd/fh3/appdata/import/list.js:12
 msgid ""
 "List all current and historic import jobs given an application and "
 "environment id"
-msgstr ""
+msgstr "アプリケーションおよび環境 ID が提供された現在および過去のすべてのインポートジョブを一覧表示"
 
 #: lib/cmd/fh3/appdata/import/read.js:22
 #: lib/cmd/fh3/appdata/import/status.js:66
 msgid "Import job id"
-msgstr ""
+msgstr "インポートジョブ ID"
 
 #: lib/cmd/fh3/appdata/import/start.js:54
 msgid "Error importing data: "
-msgstr ""
+msgstr "データのインポート中に発生したエラー: "
 
 #: lib/cmd/fh3/appdata/import/start.js:87
 #: lib/cmd/fh3/appdata/import/start.js:90
 msgid ""
 "Start a new data import job for the given application in the given "
 "environment"
-msgstr ""
+msgstr "該当する環境で該当するアプリケーションの新しいデータインポートジョブを開始"
 
 #: lib/cmd/fh3/appdata/import/start.js:97
 msgid "path to the file to be uploaded"
-msgstr ""
+msgstr "アップロードするファイルのパス"
 
 #: lib/cmd/fh3/appdata/import/start.js:106
 msgid "Created a new import job with ID: "
-msgstr ""
+msgstr "ID とともに新しいインポートジョブを作成: "
 
 #: lib/cmd/fh3/appdata/import/status.js:89
 msgid "Job progress: [:bar] :current/:total :percent :elapseds :etas"
-msgstr ""
+msgstr "ジョブの進行状況: [:bar] :current/:total :percent :elapseds :etas"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:5
 msgid "Create a new data source."
-msgstr ""
+msgstr "新規データソースを作成"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:6
 #: lib/cmd/fh3/appforms/data-sources/read.js:6
 msgid "Read a single data source"
-msgstr ""
+msgstr "単一のデータソースを読み込む"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:10
 #: lib/cmd/fh3/appforms/data-sources/update.js:13
 msgid "Name of the data source to create"
-msgstr ""
+msgstr "作成するデータソースの名前"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:11
 #: lib/cmd/fh3/appforms/data-sources/update.js:14
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:13
 msgid "The ID of the service to associate with the data source"
-msgstr ""
+msgstr "データソースに関連付けるサービスの ID"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:12
 #: lib/cmd/fh3/appforms/data-sources/update.js:15
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:14
 msgid "A valid path to the endpoint to be polled for data"
-msgstr ""
+msgstr "データポーリングのためのエンドポイントへの有効なパス"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:13
 #: lib/cmd/fh3/appforms/data-sources/update.js:16
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:15
 msgid "The time, in minutes, between data polling"
-msgstr ""
+msgstr "データポーリング間の時間 (分単位)"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:14
 #: lib/cmd/fh3/appforms/data-sources/update.js:17
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:16
 msgid "Description for the data source"
-msgstr ""
+msgstr "データソースの説明"
 
 #: lib/cmd/fh3/appforms/data-sources/create.js:15
 #: lib/cmd/fh3/appforms/data-sources/update.js:18
 msgid "Number of Audit Log entries to store"
-msgstr ""
+msgstr "保存する監査ログエントリー数"
 
 #: lib/cmd/fh3/appforms/data-sources/list.js:5
 #: lib/cmd/fh3/appforms/data-sources/list.js:6
 msgid "Lists all data sources."
-msgstr ""
+msgstr "全データソースを一覧表示"
 
 #: lib/cmd/fh3/appforms/data-sources/read.js:5
 msgid "Read a single data source."
-msgstr ""
+msgstr "単一のデータソースを読み込む"
 
 #: lib/cmd/fh3/appforms/data-sources/read.js:10
 #: lib/cmd/fh3/appforms/environments/data-sources/audit-logs.js:12
 #: lib/cmd/fh3/appforms/environments/data-sources/read.js:11
 msgid "ID of the data source to read"
-msgstr ""
+msgstr "読み込むデータソースの ID"
 
 #: lib/cmd/fh3/appforms/data-sources/remove.js:3
 #: lib/cmd/fh3/appforms/data-sources/remove.js:4
 msgid "Remove a single data source."
-msgstr ""
+msgstr "単一のデータソースを削除"
 
 #: lib/cmd/fh3/appforms/data-sources/remove.js:8
 msgid "ID of the data source to remove"
-msgstr ""
+msgstr "削除するデータソースの ID"
 
 #: lib/cmd/fh3/appforms/data-sources/update.js:7
 #: lib/cmd/fh3/appforms/data-sources/update.js:8
 msgid "Update a data source."
-msgstr ""
+msgstr "データソースを更新"
 
 #: lib/cmd/fh3/appforms/data-sources/update.js:12
 msgid "ID Of The Data Source To Update"
-msgstr ""
+msgstr "更新するデータソースの ID"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/audit-logs.js:6
 #: lib/cmd/fh3/appforms/environments/data-sources/audit-logs.js:7
 msgid "Read a single data source, including Audit Logs deployed to an environment."
-msgstr ""
+msgstr "単一のデータソースを読み込む。環境にデプロイする監査ログを含む。"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/audit-logs.js:11
 #: lib/cmd/fh3/appforms/environments/data-sources/read.js:10
 msgid "ID of environment to read data source data from"
-msgstr ""
+msgstr "データソースの読み込み元となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/audit-logs.js:13
 msgid "Limit the number of results displayed"
-msgstr ""
+msgstr "表示する結果の数を制限"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/list.js:5
 #: lib/cmd/fh3/appforms/environments/data-sources/list.js:6
 msgid "List all data sources deployed to an environment"
-msgstr ""
+msgstr "環境にデプロイする全データソースを一覧表示"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/list.js:10
 msgid "ID of environment to list data sources"
-msgstr ""
+msgstr "データソースを一覧表示する環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/read.js:5
 #: lib/cmd/fh3/appforms/environments/data-sources/read.js:6
 msgid "Read a single data source deployed to an environment"
-msgstr ""
+msgstr "環境にデプロイする単一のデータソースを読み込む"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/refresh.js:5
 #: lib/cmd/fh3/appforms/environments/data-sources/refresh.js:6
 msgid "Force a refresh of a single data source deployed to an environment"
-msgstr ""
+msgstr "環境にデプロイする単一のデータソースを強制的にリフレッシュ"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/refresh.js:10
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:11
 msgid "ID of environment to refresh"
-msgstr ""
+msgstr "リフレッシュする環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/refresh.js:11
 msgid "ID of the data source to refresh"
-msgstr ""
+msgstr "リフレッシュするデータソースの ID"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:6
 msgid ""
 "Validate a data source definition against an environment. this will "
 "validate that the service is deployed and the data set is valid."
-msgstr ""
+msgstr "環境に対するデータソースの定義を検証。サービスがデプロイされ、データセットが有効であることが検証されます。"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:7
 msgid "Validate a data source definition against an environment"
-msgstr ""
+msgstr "環境に対するデータソースの定義を検証"
 
 #: lib/cmd/fh3/appforms/environments/data-sources/validate.js:12
 msgid "Name of the data source to validate"
-msgstr ""
+msgstr "検証するデータソースの名前"
 
 #: lib/cmd/fh3/appforms/environments/forms/copytocore.js:3
 #: lib/cmd/fh3/appforms/environments/forms/copytocore.js:6
 msgid "Copy A Form Definition From An Environment To Master Copy."
-msgstr ""
+msgstr "フォーム定義を環境からマスターコピーにコピー"
 
 #: lib/cmd/fh3/appforms/environments/forms/copytocore.js:11
 #: lib/cmd/fh3/appforms/environments/forms/update.js:14
 msgid "ID Of Form To Update"
-msgstr ""
+msgstr "更新するフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/copytocore.js:12
 msgid "ID Of Environment To Copy Form From"
-msgstr ""
+msgstr "フォームのコピー元となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/deploy.js:3
 #: lib/cmd/fh3/appforms/environments/forms/deploy.js:6
 #: lib/cmd/fh3/appforms/environments/forms/undeploy.js:6
 msgid "Deploy A Single Form To An Environment"
-msgstr ""
+msgstr "単一フォームを環境にデプロイ"
 
 #: lib/cmd/fh3/appforms/environments/forms/deploy.js:11
 msgid "ID Of Form To Deploy"
-msgstr ""
+msgstr "デプロイするフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/deploy.js:12
 msgid "ID Of Environment To Deploy To"
-msgstr ""
+msgstr "デプロイ先となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/lifecycle.js:3
 #: lib/cmd/fh3/appforms/environments/forms/lifecycle.js:6
 msgid "Get Deployment Information For All Forms And Environments"
-msgstr ""
+msgstr "すべてのフォームおよび環境のデプロイメント情報を取得"
 
 #: lib/cmd/fh3/appforms/environments/forms/list.js:4
 #: lib/cmd/fh3/appforms/environments/forms/list.js:5
 msgid "List All Forms Deployed To An Environment"
-msgstr ""
+msgstr "環境にデプロイする全フォームを一覧表示"
 
 #: lib/cmd/fh3/appforms/environments/forms/list.js:9
 #: lib/cmd/fh3/appforms/environments/forms/update.js:15
 #: lib/cmd/fh3/appforms/environments/submissions/list.js:14
 #: lib/cmd/fh3/appforms/environments/submissions/read.js:11
 msgid "ID Of Environment To List Forms"
-msgstr ""
+msgstr "フォームを一覧表示する環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/promote.js:3
 #: lib/cmd/fh3/appforms/environments/forms/promote.js:6
 msgid "Promote A Form From One Environment To Another"
-msgstr ""
+msgstr "フォームをある環境から別の環境にプロモート"
 
 #: lib/cmd/fh3/appforms/environments/forms/promote.js:11
 msgid "ID Of Form To Promote"
-msgstr ""
+msgstr "プロモートするフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/promote.js:12
 msgid "ID Of Environment To Promote Form From"
-msgstr ""
+msgstr "フォームのプロモート元となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/promote.js:13
 msgid "ID Of Environment To Promote Form To"
-msgstr ""
+msgstr "フォームのプロモート先となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/read.js:4
 msgid "Read A Single Form From An Environment."
-msgstr ""
+msgstr "単一フォームを環境から読み込む"
 
 #: lib/cmd/fh3/appforms/environments/forms/read.js:5
 #: lib/cmd/fh3/appforms/forms/read.js:4
 msgid "Read A Single Form"
-msgstr ""
+msgstr "単一フォームを読み込む"
 
 #: lib/cmd/fh3/appforms/environments/forms/read.js:9
 #: lib/cmd/fh3/appforms/forms/read.js:8
 msgid "ID Of Form To Read"
-msgstr ""
+msgstr "読み込むフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/read.js:10
 msgid "Environment To Read Form From"
-msgstr ""
+msgstr "フォームの読み込み元となる環境"
 
 #: lib/cmd/fh3/appforms/environments/forms/undeploy.js:3
 msgid "Undeploy A Single Form To An Environment"
-msgstr ""
+msgstr "単一フォームを環境にデプロイ解除"
 
 #: lib/cmd/fh3/appforms/environments/forms/undeploy.js:11
 msgid "ID Of Form To Undeploy"
-msgstr ""
+msgstr "デプロイ解除するフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/undeploy.js:12
 msgid "ID Of Environment To Undeploy Form From"
-msgstr ""
+msgstr "フォームをデプロイ解除する環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/forms/update.js:6
 msgid "Update A Single Form In An Environment"
-msgstr ""
+msgstr "環境内で単一フォームを更新"
 
 #: lib/cmd/fh3/appforms/environments/forms/update.js:9
 msgid "Update A Single Form Deployed To An Environment"
-msgstr ""
+msgstr "環境にデプロイされた単一フォームを更新"
 
 #: lib/cmd/fh3/appforms/environments/forms/update.js:16
 msgid "Path To Form JSON File"
-msgstr ""
+msgstr "フォーム JSON ファイルへのパス"
 
 #: lib/cmd/fh3/appforms/environments/forms/update.js:32
 #: lib/cmd/fh3/appforms/forms/create.js:27
 #: lib/cmd/fh3/appforms/forms/update.js:31
 msgid "Invalid Form JSON Object"
-msgstr ""
+msgstr "無効なフォーム JSON オブジェクト"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:7
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:10
 msgid "Add A Single File To A Submission"
-msgstr ""
+msgstr "送信に単一ファイルを追加"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:15
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:15
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:15
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:15
 msgid "ID Of Environment The Submission Is Located In"
-msgstr ""
+msgstr "送信がある環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:16
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:16
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:16
 msgid "ID Of Submission Containing The File"
-msgstr ""
+msgstr "ファイルを含む送信の ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:17
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:17
 msgid "ID Of File To Upload"
-msgstr ""
+msgstr "アップロードするファイルの ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:18
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:18
 msgid "ID Of Field The File Is Being Added To"
-msgstr ""
+msgstr "ファイルが追加されるフィールドの ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:19
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:19
 msgid "Path To File To Upload"
-msgstr ""
+msgstr "アップロードするファイルのパス"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:31
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:31
 msgid "The file at path %s does not exist."
-msgstr ""
+msgstr "パス %s のファイルは存在しません。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/addfile.js:35
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:35
 msgid "The file at path %s is not a file."
-msgstr ""
+msgstr "パス %s のファイルは、ファイルではありません。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/complete.js:4
 #: lib/cmd/fh3/appforms/environments/submissions/complete.js:5
 msgid "Mark A Pending Submission As Complete"
-msgstr ""
+msgstr "保留中の送信を完了とマークします"
 
 #: lib/cmd/fh3/appforms/environments/submissions/complete.js:9
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:15
 #: lib/cmd/fh3/appforms/environments/submissions/csvExportReset.js:9
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:14
 msgid "Environment Id"
-msgstr ""
+msgstr "環境 ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/complete.js:10
 msgid "Submission Id"
-msgstr ""
+msgstr "送信 ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:7
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:10
 msgid "Create A New Submission"
-msgstr ""
+msgstr "新しい送信を作成"
 
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:16
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:15
 msgid "Path To JSON Submission Data"
-msgstr ""
+msgstr "JSON 送信データへのパス"
 
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:17
 msgid "Project Guid To Associate The Submission With"
-msgstr ""
+msgstr "送信に関連付けるプロジェクト Guid"
 
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:28
 #: lib/cmd/fh3/appforms/forms/create.js:20
 msgid "Error Reading File At %s"
-msgstr ""
+msgstr "%s のファイル読み込み中にエラー"
 
 #: lib/cmd/fh3/appforms/environments/submissions/create.js:35
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:31
 msgid "Invalid Submission JSON Object"
-msgstr ""
+msgstr "無効な送信 JSON オブジェクト"
 
 #: lib/cmd/fh3/appforms/environments/submissions/csvExportReset.js:4
 #: lib/cmd/fh3/appforms/environments/submissions/csvExportReset.js:5
 msgid "Reset a submission CSV export for a single environment"
-msgstr ""
+msgstr "単一環境の送信 CSV エクスポートをリセット"
 
 #: lib/cmd/fh3/appforms/environments/submissions/delete.js:4
 #: lib/cmd/fh3/appforms/environments/submissions/delete.js:5
 msgid "Delete A Submission"
-msgstr ""
+msgstr "送信を削除"
 
 #: lib/cmd/fh3/appforms/environments/submissions/delete.js:9
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:14
 msgid "Environment ID"
-msgstr ""
+msgstr "環境 ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/delete.js:10
 #: lib/cmd/fh3/appforms/environments/submissions/read.js:12
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:16
 msgid "Submission ID"
-msgstr ""
+msgstr "送信 ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:88
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:91
 msgid "Export A Set Of Submissions A Zip File Contain CSV Files"
-msgstr ""
+msgstr " Zip アーカイブのフォーム送信を CSV 形式でエクスポート"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:96
 msgid "ID Of Environment To Export Submissions From"
-msgstr ""
+msgstr "送信のエクスポート元となる環境の ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:97
 msgid "File To Download Zip File To. Must Have A .zip Extension."
-msgstr ""
+msgstr "Zip ファイルのダウンロード先となるファイル。.zip 拡張子が必要です。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:98
 msgid "Headers To Use In The Exported CSV Files. Can Either Be name or fieldCode"
-msgstr ""
+msgstr "エクスポートされた CSV ファイルで使用するヘッダー。名前またはフィールドコードとすることができます。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:99
 msgid "ID Of Form To Filter Submissions By"
-msgstr ""
+msgstr "送信をフィルタリングするフォームの ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:100
 msgid "Project GUID To Filter Submissions By"
-msgstr ""
+msgstr "送信をフィルタリングするプロジェクト GUID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:101
 msgid ""
 "Use The Asynchronous Submission CSV Export Process. This is useful for "
 "large numbers of submissions. Requires MBaaS Version > 4.1."
-msgstr ""
+msgstr "非同期送信 CSV エクスポートプロセスを使用します。これは大量の送信の場合に役に立ちます。MBaaS バージョン 4.1 以上が必要です。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:122
 msgid "Expected The Output File To Have A .zip Extension"
-msgstr ""
+msgstr "出力ファイルには .zip 拡張子が必要です"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportcsv.js:127
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:33
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:30
 msgid "The file at path %s already exists."
-msgstr ""
+msgstr "パス %s のファイルはすでに存在します。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:7
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:10
 msgid "Export A Single Submission As A PDF File"
-msgstr ""
+msgstr "単一送信を PDF ファイルとしてエクスポート"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:16
 msgid "ID Of Submission To Export"
-msgstr ""
+msgstr "エクスポートする送信の ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:17
 msgid "Path To File To Export Submission To. Must Have A .pdf Extension."
-msgstr ""
+msgstr "送信のエクスポート先となるファイルへのパス。.pdf 拡張子が必要です。"
 
 #: lib/cmd/fh3/appforms/environments/submissions/exportpdf.js:28
 msgid "Expected The Output File To Have A .pdf Extension"
-msgstr ""
+msgstr "出力ファイルには .pdf 拡張子が必要です"
 
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:6
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:9
 msgid "Filter Submissions By Form Or Project Id"
-msgstr ""
+msgstr "送信をフォームまたはプロジェクト ID でフィルター"
 
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:15
 msgid "Filter By Project ID"
-msgstr ""
+msgstr "プロジェクト ID でのフィルター"
 
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:16
 msgid "Filter By Form ID"
-msgstr ""
+msgstr "フォーム ID でのフィルター"
 
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:17
 #: lib/cmd/fh3/appforms/environments/submissions/list.js:15
 msgid "Page number to list"
-msgstr ""
+msgstr "一覧表示するページ番号"
 
 #: lib/cmd/fh3/appforms/environments/submissions/filter.js:18
 #: lib/cmd/fh3/appforms/environments/submissions/list.js:16
 msgid "Number of submissions per page"
-msgstr ""
+msgstr "各ページの送信の数"
 
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:7
 msgid "Read A Single Submission File"
-msgstr ""
+msgstr "単一送信ファイルを読み込む"
 
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:10
 msgid "Download A Single Submission File"
-msgstr ""
+msgstr "単一送信ファイルをダウンロード"
 
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:17
 msgid "ID Of File To Download"
-msgstr ""
+msgstr "ダウンロードするファイルの ID"
 
 #: lib/cmd/fh3/appforms/environments/submissions/getfile.js:18
 msgid "Path To Output Downloaded File To"
-msgstr ""
+msgstr "ダウンロードされたファイルの出力先となるパス"
 
 #: lib/cmd/fh3/appforms/environments/submissions/list.js:6
 #: lib/cmd/fh3/appforms/environments/submissions/list.js:9
 msgid "List All Submissions Deployed To An Environment"
-msgstr ""
+msgstr "環境にデプロイする全送信を一覧表示"
 
 #: lib/cmd/fh3/appforms/environments/submissions/read.js:3
 #: lib/cmd/fh3/appforms/environments/submissions/read.js:6
 msgid "Read A Single Submission"
-msgstr ""
+msgstr "単一送信を読み込む"
 
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:6
 #: lib/cmd/fh3/appforms/environments/submissions/update.js:9
 msgid "Update An Existing Submission"
-msgstr ""
+msgstr "既存の送信を更新"
 
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:7
 #: lib/cmd/fh3/appforms/environments/submissions/updatefile.js:10
 msgid "Update A Single File In A Submission"
-msgstr ""
+msgstr "送信内の単一ファイルを更新"
 
 #: lib/cmd/fh3/appforms/forms/clone.js:3
 #: lib/cmd/fh3/appforms/forms/clone.js:4
 msgid "Clones An Existing Form"
-msgstr ""
+msgstr "既存のフォームをクローン"
 
 #: lib/cmd/fh3/appforms/forms/clone.js:8
 msgid "ID Of Form To Clone"
-msgstr ""
+msgstr "クローンするフォームの ID"
 
 #: lib/cmd/fh3/appforms/forms/create.js:6
 msgid "Creates A New Form."
-msgstr ""
+msgstr "新規フォームを作成"
 
 #: lib/cmd/fh3/appforms/forms/create.js:7
 msgid "Creates A New Form"
-msgstr ""
+msgstr "新規フォームを作成"
 
 #: lib/cmd/fh3/appforms/forms/create.js:11
 #: lib/cmd/fh3/appforms/forms/update.js:15
 msgid "A Path To A File Containing A Valid JSON Definition Of A Form"
-msgstr ""
+msgstr "フォームの有効な JSON 定義を含むファイルへのパス"
 
 #: lib/cmd/fh3/appforms/forms/delete.js:3
 msgid "Deletes A Single Form. This will undeploy all forms from all environments."
-msgstr ""
+msgstr "単一フォームを削除これですべての環境からすべてのフォームがデプロイ解除されます。"
 
 #: lib/cmd/fh3/appforms/forms/delete.js:4
 msgid "Deletes A Single Form."
-msgstr ""
+msgstr "単一フォームを削除"
 
 #: lib/cmd/fh3/appforms/forms/delete.js:8
 msgid "ID Of The Form To Remove."
-msgstr ""
+msgstr "削除するフォームの ID。"
 
 #: lib/cmd/fh3/appforms/forms/export.js:7
 msgid ""
 "Export all the forms defined in a given domain. (Platform version >= 3.10.0 "
 "required.)"
-msgstr ""
+msgstr "該当ドメインで定義された全フォームをエクスポート (プラットフォームバージョン 3.10.0 以上が必要)"
 
 #: lib/cmd/fh3/appforms/forms/export.js:10
 msgid "Export all the forms contained in your domain to an output zip file."
-msgstr ""
+msgstr "ドメインに含まれる全フォームを出力 zip ファイルにエクスポート。"
 
 #: lib/cmd/fh3/appforms/forms/export.js:15
 msgid "Output zip file containing the forms export."
-msgstr ""
+msgstr "エクスポートするファイルを含む出力 zip ファイル。"
 
 #: lib/cmd/fh3/appforms/forms/export.js:26
 msgid "Expected the output file to have a .zip extension"
-msgstr ""
+msgstr "出力ファイルには .zip 拡張子が必要です"
 
 #: lib/cmd/fh3/appforms/forms/import.js:8
 msgid ""
 "Imports a zip file containing definitions for multiple forms, intended to "
 "be used with *export* (Platform version >= 3.10.0 required.)"
-msgstr ""
+msgstr "複数フォームの定義を含む zip ファイルをインポートします。*export* とともに使用 (プラットフォームバージョン 3.10.0 以上が必要)"
 
 #: lib/cmd/fh3/appforms/forms/import.js:9
 msgid "Imports forms contained in the zip file"
-msgstr ""
+msgstr "zip ファイルに含まれるフォームをインポート"
 
 #: lib/cmd/fh3/appforms/forms/import.js:13
 msgid "Path to a file"
-msgstr ""
+msgstr "ファイルへのパス"
 
 #: lib/cmd/fh3/appforms/forms/import.js:21
 msgid "File %s not found"
-msgstr ""
+msgstr "ファイル %s が見つかりません"
 
 #: lib/cmd/fh3/appforms/forms/import.js:24
 msgid "%s is not a file"
-msgstr ""
+msgstr "%s はファイル���はありません"
 
 #: lib/cmd/fh3/appforms/forms/import.js:30
 msgid "File %s uploaded successfully"
-msgstr ""
+msgstr "ファイル %s が正常にアップロードされました"
 
 #: lib/cmd/fh3/appforms/forms/list.js:3
 #: lib/cmd/fh3/appforms/forms/list.js:4
 msgid "Lists All Forms."
-msgstr ""
+msgstr "すべてのフォームを一覧表示"
 
 #: lib/cmd/fh3/appforms/forms/read.js:3
 msgid "Read A Single Form."
-msgstr ""
+msgstr "単一送信を読み込む"
 
 #: lib/cmd/fh3/appforms/forms/update.js:6
 msgid "Update A Single Form."
-msgstr ""
+msgstr "単一フォームを更新"
 
 #: lib/cmd/fh3/appforms/forms/update.js:9
 msgid "Update A Single Form"
-msgstr ""
+msgstr "単一フォームを更新"
 
 #: lib/cmd/fh3/appforms/forms/update.js:14
 msgid "ID Of The Form To Update"
-msgstr ""
+msgstr "更新するフォームの ID"
 
 #: lib/cmd/fh3/appforms/projects/create.js:5
 msgid "Create A Single Form Project."
-msgstr ""
+msgstr "単一フォームプロジェクトを作成"
 
 #: lib/cmd/fh3/appforms/projects/create.js:8
 msgid "Create A Single Form Project"
-msgstr ""
+msgstr "単一フォームプロジェクトを作成"
 
 #: lib/cmd/fh3/appforms/projects/create.js:13
 msgid "GUID Of The Form Project To Create"
-msgstr ""
+msgstr "作成するフォームプロジェクトの GUID"
 
 #: lib/cmd/fh3/appforms/projects/create.js:14
 #: lib/cmd/fh3/appforms/projects/update.js:14
 msgid "The ID Of The Theme To Associate With The Form Project"
-msgstr ""
+msgstr "フォームプロジェクトに関連付けるテーマの ID"
 
 #: lib/cmd/fh3/appforms/projects/create.js:15
 #: lib/cmd/fh3/appforms/projects/update.js:15
 msgid "Comma-separated List Of Form IDs To Associate With The Form Project"
-msgstr ""
+msgstr "フォームプロジェクトに関連付けるフォーム ID のコンマ区切りの一覧"
 
 #: lib/cmd/fh3/appforms/projects/list.js:3
 #: lib/cmd/fh3/appforms/projects/list.js:4
 msgid "Lists All Forms Projects"
-msgstr ""
+msgstr "全フォームプロジェクトを一覧表示"
 
 #: lib/cmd/fh3/appforms/projects/read.js:3
 #: lib/cmd/fh3/appforms/projects/read.js:6
 msgid "Read A Single Form Project"
-msgstr ""
+msgstr "単一フォームプロジェクトを読み込む"
 
 #: lib/cmd/fh3/appforms/projects/read.js:11
 msgid "GUID Of Form Project To Read"
-msgstr ""
+msgstr "読み込むフォームプロジェクトの GUID"
 
 #: lib/cmd/fh3/appforms/projects/update.js:5
 msgid "Update A Single Form Project."
-msgstr ""
+msgstr "単一フォームプロジェクトを更新"
 
 #: lib/cmd/fh3/appforms/projects/update.js:8
 msgid "Update A Single Form Project"
-msgstr ""
+msgstr "単一フォームプロジェクトを更新"
 
 #: lib/cmd/fh3/appforms/projects/update.js:13
 msgid "GUID Of The Form Project To Update"
-msgstr ""
+msgstr "更新するフォームプロジェクトの GUID"
 
 #: lib/cmd/fh3/appforms/templates/forms/import.js:3
 #: lib/cmd/fh3/appforms/templates/forms/import.js:6
 msgid "Imports A Single Form Template."
-msgstr ""
+msgstr "単一フォームテンプレートをインポート"
 
 #: lib/cmd/fh3/appforms/templates/forms/import.js:11
 msgid "Form Template ID To Import"
-msgstr ""
+msgstr "インポートするフォームテンプレート ID"
 
 #: lib/cmd/fh3/appforms/templates/forms/import.js:12
 msgid "New Name For Imported Form"
-msgstr ""
+msgstr "インポートされたフォームの新しい名前"
 
 #: lib/cmd/fh3/appforms/templates/forms/import.js:13
 msgid "Description For Imported Form"
-msgstr ""
+msgstr "インポートされたフォームの説明"
 
 #: lib/cmd/fh3/appforms/templates/forms/list.js:4
 #: lib/cmd/fh3/appforms/templates/forms/list.js:5
 msgid "Lists All Form Templates."
-msgstr ""
+msgstr "すべてのフォームテンプレートを一覧表示"
 
 #: lib/cmd/fh3/appforms/templates/forms/read.js:4
 #: lib/cmd/fh3/appforms/templates/forms/read.js:5
 msgid "Reads A Single Form Template."
-msgstr ""
+msgstr "単一フォームテンプレートを読み込む"
 
 #: lib/cmd/fh3/appforms/templates/forms/read.js:9
 msgid "Form Template ID"
-msgstr ""
+msgstr "フォームテンプレート ID"
 
 #: lib/cmd/fh3/appforms/templates/themes/import.js:3
 #: lib/cmd/fh3/appforms/templates/themes/import.js:6
 msgid "Imports A Single Theme Template."
-msgstr ""
+msgstr "単一テーマテンプレートをインポート"
 
 #: lib/cmd/fh3/appforms/templates/themes/import.js:11
 msgid "Theme Template ID To Import"
-msgstr ""
+msgstr "インポートするテーマテンプレート ID"
 
 #: lib/cmd/fh3/appforms/templates/themes/import.js:12
 msgid "New Name For Imported Theme"
-msgstr ""
+msgstr "インポートされたテーマの新しい名前"
 
 #: lib/cmd/fh3/appforms/templates/themes/import.js:13
 msgid "Description For Imported Theme"
-msgstr ""
+msgstr "インポートされたテーマの説明"
 
 #: lib/cmd/fh3/appforms/templates/themes/list.js:4
 #: lib/cmd/fh3/appforms/templates/themes/list.js:5
 msgid "Lists All Theme Templates."
-msgstr ""
+msgstr "すべてのテーマテンプレートを一覧表示"
 
 #: lib/cmd/fh3/appforms/templates/themes/read.js:4
 #: lib/cmd/fh3/appforms/templates/themes/read.js:5
 msgid "Reads A Single Theme Template."
-msgstr ""
+msgstr "単一テーマテンプレートを読み込む"
 
 #: lib/cmd/fh3/appforms/templates/themes/read.js:9
 msgid "Theme Template ID"
-msgstr ""
+msgstr "テーマテンプレート ID"
 
 #: lib/cmd/fh3/appforms/themes/clone.js:3
 #: lib/cmd/fh3/appforms/themes/clone.js:4
 msgid "Clones An Existing Theme"
-msgstr ""
+msgstr "既存のテーマをクローン"
 
 #: lib/cmd/fh3/appforms/themes/clone.js:8
 msgid "ID Of Theme To Clone"
-msgstr ""
+msgstr "クローンするテーマの ID"
 
 #: lib/cmd/fh3/appforms/themes/create.js:5
 msgid "Creates A New Theme."
-msgstr ""
+msgstr "新規テーマを作成"
 
 #: lib/cmd/fh3/appforms/themes/create.js:6
 msgid "Create A New Theme"
-msgstr ""
+msgstr "新規テーマを作成"
 
 #: lib/cmd/fh3/appforms/themes/create.js:10
 #: lib/cmd/fh3/appforms/themes/update.js:12
 msgid "A Path To A File Containing A Valid JSON Definition Of A Theme"
-msgstr ""
+msgstr "テーマの有効な JSON 定義を含むファイルへのパス"
 
 #: lib/cmd/fh3/appforms/themes/create.js:24
 #: lib/cmd/fh3/appforms/themes/update.js:28
 msgid "Invalid Theme JSON Object"
-msgstr ""
+msgstr "無効なテーマ JSON オブジェクト"
 
 #: lib/cmd/fh3/appforms/themes/delete.js:4
 #: lib/cmd/fh3/appforms/themes/delete.js:5
 msgid "Delete A Single Theme."
-msgstr ""
+msgstr "単一テーマを削除"
 
 #: lib/cmd/fh3/appforms/themes/delete.js:9
 msgid "ID Of The Theme To Remove."
-msgstr ""
+msgstr "削除するテーマの ID。"
 
 #: lib/cmd/fh3/appforms/themes/list.js:4
 #: lib/cmd/fh3/appforms/themes/list.js:5
 msgid "Lists All Themes."
-msgstr ""
+msgstr "すべてのテーマを一覧表示"
 
 #: lib/cmd/fh3/appforms/themes/read.js:4
 msgid "Read A Single Theme."
-msgstr ""
+msgstr "単一テーマを読み込む"
 
 #: lib/cmd/fh3/appforms/themes/read.js:5
 msgid "Read A Single Theme"
-msgstr ""
+msgstr "単一テーマを読み込む"
 
 #: lib/cmd/fh3/appforms/themes/read.js:9
 msgid "ID Of Theme To Read"
-msgstr ""
+msgstr "読み込むテーマの ID"
 
 #: lib/cmd/fh3/appforms/themes/update.js:6
 msgid "Update A Single Theme."
-msgstr ""
+msgstr "単一テーマを更新"
 
 #: lib/cmd/fh3/appforms/themes/update.js:7
 msgid "Update A Single Theme"
-msgstr ""
+msgstr "単一テーマを更新"
 
 #: lib/cmd/fh3/appforms/themes/update.js:11
 msgid "ID Of The Theme To Update"
-msgstr ""
+msgstr "更新するテーマの ID"
 
 #: lib/cmd/fh3/artifacts.js:4
 msgid "Lists build artifacts of an application"
-msgstr ""
+msgstr "アプリのビルドアーティファクトを一覧表示"
 
 #: lib/cmd/fh3/artifacts.js:20
 msgid "Error reading Artifacts: "
-msgstr ""
+msgstr "アーティファクトの読み込み中にエラー: "
 
 #: lib/cmd/fh3/clone.js:5
 msgid "Performs a git clone of a feedhenry application"
-msgstr ""
+msgstr "feedhenry アプリケーションの git clone を実行"
 
 #: lib/cmd/fh3/clone.js:21
 msgid "App does not have a git repo!"
-msgstr ""
+msgstr "アプリには git レポジトリーがありません。"
 
 #: lib/cmd/fh3/connections.js:4
 msgid "Manage connections between client and cloud apps"
-msgstr ""
+msgstr "クライアントアプリとクラウドアプリの接続を管理"
 
 #: lib/cmd/fh3/connections.js:49
 msgid "Connection not found: "
-msgstr ""
+msgstr "接続が見つかりません: "
 
 #: lib/cmd/fh3/connections.js:67
 msgid "Error reading Connections: "
-msgstr ""
+msgstr "接続の読み込みでエラー: "
 
 #: lib/cmd/fh3/credentials.js:4
 msgid "Operations on credential bundles"
-msgstr ""
+msgstr "認証情報バンドルでの操作"
 
 #: lib/cmd/fh3/credentials.js:28
 msgid "Invalid credentials action %s"
-msgstr ""
+msgstr "無効な認証情報アク���ョン %s"
 
 #: lib/cmd/fh3/credentials.js:33
 msgid "Error reading credentials: "
-msgstr ""
+msgstr "認証情報の読み込み中にエラー: "
 
 #: lib/cmd/fh3/ping.js:41
 msgid "Non 2xx response \"%s\""
-msgstr ""
+msgstr "Non 2xx response \"%s\""
 
 #: lib/cmd/fh3/projects.js:4
 msgid "Manage projects"
-msgstr ""
+msgstr "プロジェクトを管理"
 
 #: lib/cmd/fh3/projects.js:11
 msgid ""
@@ -3653,6 +3867,9 @@ msgid ""
 "deployed to the specified environment automatically. Set it to 'none' if it "
 "should not be deployed to anywhere."
 msgstr ""
+"\n"
+"注記: プロジェクト作成時に --env "
+"が設定されている場合、クラウドアプリは自動的に指定された環境にデプロイされます。どこにもデプロイされないようにするには、'none' に設定します。"
 
 #: lib/cmd/fh3/projects.js:12
 msgid ""
@@ -3660,34 +3877,40 @@ msgid ""
 "Note 'clone' does a 'git clone' of each each App in your Project into the "
 "current working directory."
 msgstr ""
+"\n"
+"'clone' は、プロジェクト内の各アプリの 'git clone' を作業中のディレクトリーに実行することに注意してください。"
 
 #: lib/cmd/fh3/projects.js:95
 msgid "Error creating project: "
-msgstr ""
+msgstr "プロジェクトの作成中にエラー: "
 
 #: lib/cmd/fh3/projects.js:146
 msgid "Error reading Project: "
-msgstr ""
+msgstr "プロジェクトの読み込み中にエラー: "
 
 #: lib/cmd/fh3/projects.js:154
 msgid "Error deleting project: "
-msgstr ""
+msgstr "プロジェクトの削除中にエラー: "
 
 #: lib/cmd/fh3/services.js:4
 msgid "Manage FeedHenry Services"
-msgstr ""
+msgstr "FeedHenry サービスを管理"
 
 #: lib/cmd/fh3/services.js:11
 msgid ""
 "\n"
 "where <service-id> is a service id"
 msgstr ""
+"\n"
+"ここでの <service-id> は、サービス ID です"
 
 #: lib/cmd/fh3/services.js:12
 msgid ""
 "\n"
 "where <type> is a valid service type [default]"
 msgstr ""
+"\n"
+"ここでの <type> は、有効なサービスタイプ [デフォルト] です"
 
 #: lib/cmd/fh3/services.js:13
 msgid ""
@@ -3696,322 +3919,342 @@ msgid ""
 "specified environment automatically. Set it to 'none' if it should not be "
 "deployed to anywhere."
 msgstr ""
+"\n"
+"--env "
+"が提供されてアプリがデプロイされる場合、アプリは自動的に指定された環境にデプロイされます。どこにもデプロイされないようにするには、'none' "
+"に設定します。"
 
 #: lib/cmd/fh3/services.js:50
 msgid "Invalid service action %s"
-msgstr ""
+msgstr "無効なサービスアクション %s"
 
 #: lib/cmd/fh3/services.js:119
 msgid "Error creating service: "
-msgstr ""
+msgstr "サービスの作成中にエラー: "
 
 #: lib/cmd/fh3/services.js:157
 msgid "Error reading Service: "
-msgstr ""
+msgstr "サービスの読み込み中にエラー: "
 
 #: lib/cmd/fh3/services.js:165
 msgid "Error deleting service: "
-msgstr ""
+msgstr "サービスの削除中にエラー: "
 
 #: lib/cmd/fhc/completion.js:5
 msgid "Tab Completion for FHC"
-msgstr ""
+msgstr "FHC のタブ完了"
 
 #: lib/cmd/fhc/fhcfg.js:5
 msgid "Manage the fhc Configuration File"
-msgstr ""
+msgstr "fhc 設定ファイルの管理"
 
 #: lib/cmd/fhc/fhcfg.js:52
 msgid "No EDITOR config or environ set."
-msgstr ""
+msgstr "EDITOR 設定または環境が設定されていません。"
 
 #: lib/cmd/fhc/fhcfg.js:102
 msgid "no key provided"
-msgstr ""
+msgstr "キーがありません"
 
 #: lib/cmd/fhc/help.js:11
 msgid "Help with the FeedHenry Command"
-msgstr ""
+msgstr "FeedHenry コマンドのヘルプ"
 
 #: lib/cmd/fhc/help.js:13
 msgid "Retrieves help for all of FHC"
-msgstr ""
+msgstr "全 FHC のヘルプを取得"
 
 #: lib/cmd/fhc/help.js:14
 msgid "Retrieves help with the app command"
-msgstr ""
+msgstr "アプリコマンドのヘルプを取得"
 
 #: lib/cmd/fhc/help.js:20
 msgid ""
 "Forces the return of JSON output even if config is set otherwise - useful "
 "in scripts"
-msgstr ""
+msgstr "他の設定になっていても、JSON 出力の戻り値を強制します。スクリプトで有用です"
 
 #: lib/cmd/fhc/help.js:23
 msgid "Forces the return of table output even if config is set otherwise"
-msgstr ""
+msgstr "他の設定になっていても、表出力の戻り値を強制します"
 
 #: lib/cmd/fhc/help.js:45
 msgid "Error - command not found: "
-msgstr ""
+msgstr "エラー - コマンドが見つかりません: "
 
 #: lib/cmd/fhc/help.js:70
 msgid "FeedHenry CLI, the Command Line Interface to FeedHenry."
-msgstr ""
+msgstr "FeedHenry CLI、FeedHenry のコマンドラインインターフェース。"
 
 #: lib/cmd/fhc/help.js:71
 msgid ""
 "\n"
 "Usage: fhc <command>"
 msgstr ""
+"\n"
+"使用: fhc <command>"
 
 #: lib/cmd/fhc/help.js:73
 msgid "where <command> is one of: "
-msgstr ""
+msgstr "ここでの <command> は、次のいずれかです: "
 
 #: lib/cmd/fhc/help.js:75
 msgid ""
 "\n"
 "or an FHC command: "
 msgstr ""
+"\n"
+"または FHC コマンド: "
 
 #: lib/cmd/fhc/help.js:78
 msgid ""
 "\n"
 "Add --help to any command for quick help, or use fhc help <command>."
 msgstr ""
+"\n"
+"コマンドに --help を追加してクイックヘルプを表示するか、fhc help <command> を使用します。"
 
 #: lib/cmd/fhc/help.js:83
 msgid " <action>"
-msgstr ""
+msgstr " <action>"
 
 #: lib/cmd/fhc/help.js:84
 msgid "Where <action> is one of:"
-msgstr ""
+msgstr "ここでの <action> は、次のいずれかです:"
 
 #: lib/cmd/fhc/help.js:95
 msgid "No action specified. Usage: \n"
-msgstr ""
+msgstr "アクションが指定されていません。使用: \n"
 
 #: lib/cmd/fhc/help.js:106
 msgid "No usage for this command found"
-msgstr ""
+msgstr "このコマンドの使用方法が見つかりません"
 
 #: lib/cmd/fhc/help.js:166
 msgid "Global Options"
-msgstr ""
+msgstr "グローバルオプション"
 
 #: lib/cmd/fhc/login.js:25
 msgid ""
 "fhc login <username> <password>\n"
 "You are prompted for username/password if none are provided."
 msgstr ""
+"fhc login <username> <password>\n"
+"提供されない場合は、ユーザー名/パスワードが要求されます。"
 
 #: lib/cmd/fhc/login.js:26
 msgid "Login to FeedHenry"
-msgstr ""
+msgstr "FeedHenry にログイン"
 
 #: lib/cmd/fhc/login.js:32
 msgid "You must compile node with ssl support to use login"
-msgstr ""
+msgstr "ログインで使用するノードを SSL サポートでコンパイルする必要があります"
 
 #: lib/cmd/fhc/login.js:41
 msgid "Username: "
-msgstr ""
+msgstr "ユーザー名: "
 
 #: lib/cmd/fhc/login.js:48
 #: lib/cmd/fhc/login.js:61
 msgid "Password: "
-msgstr ""
+msgstr "パスワード: "
 
 #: lib/cmd/fhc/login.js:70
 msgid "Please specify username and password."
-msgstr ""
+msgstr "ユーザー名とパスワードを指定してください。"
 
 #: lib/cmd/fhc/login.js:98
 msgid "Failed to fetch FeedHenry cookie."
-msgstr ""
+msgstr "FeedHenry クッキーのフェッチに失敗しました。"
 
 #: lib/cmd/fhc/login.js:122
 msgid "Redirecting to %s"
-msgstr ""
+msgstr "%s にリダイレクト中"
 
 #: lib/cmd/fhc/login.js:132
 msgid ""
 "Please sign into the App Studio via your Browser to create a Domain. You "
 "will then be able to target and login to this domain."
 msgstr ""
+"ドメインを作成するには、ブラウザで App Studio "
+"にサインインしてください。サインインすると、このドメインをターゲットとしてログインできるようになります。"
 
 #: lib/cmd/fhc/login.js:134
 msgid ""
 "Multiple domains not supported for signover yet - please target the "
 "specific domain you want to login to"
 msgstr ""
+"複数ドメインではサインオーバー (管理ドメインにログインし、その下にある別のドメインにリダイレクトされること) "
+"はまだサポートされていません。ログインする特定のドメインをターゲットとしてください"
 
 #: lib/cmd/fhc/login.js:137
 msgid "login failed: "
-msgstr ""
+msgstr "ログインに失敗しました: "
 
 #: lib/cmd/fhc/login.js:168
 msgid "Authorized user %s"
-msgstr ""
+msgstr "承認ユーザー %s"
 
 #: lib/cmd/fhc/login.js:172
 msgid "Successfully logged into %s"
-msgstr ""
+msgstr "%s へのログインに成功しました"
 
 #: lib/cmd/fhc/logout.js:5
 msgid "Logout from FeedHenry"
-msgstr ""
+msgstr "FeedHenry からログアウト"
 
 #: lib/cmd/fhc/logout.js:26
 msgid "Successfully logged out of %s"
-msgstr ""
+msgstr "%s からのログアウトに成功しました"
 
 #: lib/cmd/fhc/target.js:4
 msgid "Get/Set the FeedHenry FHC Target URL"
-msgstr ""
+msgstr "FeedHenry FHC ターゲット URL の取得/設定"
 
 #: lib/cmd/fhc/target.js:28
 msgid ""
 "You have not targetted a domain - please target one via `fhc target "
 "<hostname>`"
-msgstr ""
+msgstr "ドメインをターゲットに設定していません - `fhc target <hostname>` でターゲット設定してください"
 
 #: lib/cmd/fhc/target.js:38
 msgid "No http/https given, assuming https://"
-msgstr ""
+msgstr "http/https が提供されていません。https:// と想定します"
 
 #: lib/cmd/fhc/target.js:50
 msgid "Invalid target: "
-msgstr ""
+msgstr "無効なターゲット"
 
 #: lib/cmd/fhc/target.js:106
 msgid "Successfully targeted: "
-msgstr ""
+msgstr "ターゲット設定に成功しました: "
 
 #: lib/cmd/fhc/target.js:116
 msgid ""
 "Your login has expired - please log in again!\n"
 " "
 msgstr ""
+"ログインの有効期限が切れました。再度ログインしてください。\n"
+" "
 
 #: lib/cmd/fhc/target.js:132
 msgid "Successfully targeted %s"
-msgstr ""
+msgstr "%s のターゲット設定に成功しました"
 
 #: lib/cmd/fhc/target.js:133
 msgid " - now, log in.\n"
-msgstr ""
+msgstr " - 現在、ログイン。\n"
 
 #: lib/cmd/fhc/targets.js:7
 msgid "List the stored FeedHenry Targets"
-msgstr ""
+msgstr "保存された FeedHenry ターゲットを一覧表示"
 
 #: lib/cmd/fhc/targets.js:72
 msgid "Error getting targets: "
-msgstr ""
+msgstr "ターゲット取得中にエラー: "
 
 #: lib/cmd/internal/df.js:7
 msgid "DynoFarm commands"
-msgstr ""
+msgstr "DynoFarm コマンド"
 
 #: lib/cmd/internal/df.js:99
 msgid "Error parsing apps: "
-msgstr ""
+msgstr "アプリ解析中にエラー: "
 
 #: lib/cmd/internal/df.js:136
 msgid "Error parsing: "
-msgstr ""
+msgstr "解析中にエラー: "
 
 #: lib/cmd/internal/df.js:161
 msgid "Error parsing app: "
-msgstr ""
+msgstr "アプリ解析中にエラー: "
 
 #: lib/cmd/internal/df.js:182
 msgid "Must define DynoFarm URLs before accessing FeedHenry DynoFarm Server."
-msgstr ""
+msgstr "FeedHenry DynoFarm サーバーにアクセスする前に DynoFarm URL を定義する必要があります。"
 
 #: lib/cmd/internal/messaging.js:9
 msgid "FeedHenry messaging client"
-msgstr ""
+msgstr "FeedHenry メッセージングクライアント"
 
 #: lib/cmd/internal/messaging.js:82
 msgid ""
 "\n"
 "Usage:\n"
 msgstr ""
+"\n"
+"使用:\n"
 
 #: lib/common.js:22
 #: lib/common.js:44
 #: lib/common.js:68
 #: lib/common.js:91
 msgid "No remoteData returned. Raw response is: "
-msgstr ""
+msgstr "remoteData が返されませんでした。生応答は以下のとおりです: "
 
 #: lib/common.js:26
 #: lib/common.js:48
 #: lib/common.js:72
 #: lib/common.js:95
 msgid "Error, check your login details.. \n"
-msgstr ""
+msgstr "エラー。ログイン情報を確認してください。\n"
 
 #: lib/common.js:116
 msgid "\"Error, check app is deployed and guid is correct..."
-msgstr ""
+msgstr "\"エラー。アプリがデプロイされ、guid が間違っていないことを確認してください。"
 
 #: lib/common.js:126
 msgid "polling for cacheKey: %s start: %s to complete"
-msgstr ""
+msgstr "cacheKey のポーリング中: %s 開始: 完了するまで %s"
 
 #: lib/common.js:144
 msgid "Progress: "
-msgstr ""
+msgstr "進捗状況: "
 
 #: lib/common.js:668
 msgid "Error reading template: "
-msgstr ""
+msgstr "テンプレートの読み込み中にエラー: "
 
 #: lib/common.js:672
 #: lib/common.js:676
 msgid "Error reading Projects: "
-msgstr ""
+msgstr "プロジェクトの読み込み中にエラー: "
 
 #: lib/common.js:915
 msgid "Error creating env var: "
-msgstr ""
+msgstr "環境変数の作成中にエラー: "
 
 #: lib/common.js:919
 msgid "Error reading env var: "
-msgstr ""
+msgstr "環境変数の読み込み中にエラー: "
 
 #: lib/common.js:929
 msgid "Error updating env var: "
-msgstr ""
+msgstr "環境変数の更新中にエラー: "
 
 #: lib/common.js:933
 msgid "Error deleting env var: "
-msgstr ""
+msgstr "環境変数の削除中にエラー: "
 
 #: lib/common.js:937
 msgid "Error listing env var: "
-msgstr ""
+msgstr "環境変数の一覧表示中にエラー: "
 
 #: lib/common.js:941
 msgid "Error unseting env var:"
-msgstr ""
+msgstr "環境変数の設定解除中にエラー: "
 
 #: lib/common.js:945
 msgid "Error pushing env vars:"
-msgstr ""
+msgstr "環境変数のプッシュ中にエラー: "
 
 #: lib/common.js:949
 msgid "Error listing deployed env vars:"
-msgstr ""
+msgstr "デプロイ済み環境変数の一覧表示中にエラー: "
 
 #: lib/common.js:958
 msgid "Invalid argument format: "
-msgstr ""
+msgstr "無効な引数形式: "
 
 #: lib/fhc.js:55
 msgid ""
@@ -4020,32 +4263,38 @@ msgid ""
 "And you have: %s\n"
 "which is not satisfactory.\n"
 msgstr ""
+"\n"
+"fhc はノードバージョンが必要です: %s\n"
+"以下があります: %s\n"
+"これは十分ではありません。\n"
 
 #: lib/fhc.js:137
 msgid "Command not found: "
-msgstr ""
+msgstr "コマンドが見つかりません: "
 
 #: lib/fhc.js:177
 msgid "Unable to determine domain - please login again."
-msgstr ""
+msgstr "ドメインを判定できません。もう一度ログインしてください。"
 
 #: lib/utils/async-map.js:21
 msgid "No callback provided to asyncMap"
-msgstr ""
+msgstr "asyncMap にコールバックが提供されていません"
 
 #: lib/utils/error-handler.js:14
 msgid "Command executed with success."
-msgstr ""
+msgstr "コマンド実行が成功しました。"
 
 #: lib/utils/error-handler.js:17
 msgid ""
 "cb() never called!\n"
 " "
 msgstr ""
+"cb() は呼ばれていません。\n"
+" "
 
 #: lib/utils/error-handler.js:19
 msgid "Command executed with error"
-msgstr ""
+msgstr "コマンドの実行でエラー"
 
 #: lib/utils/error-handler.js:31
 msgid "Request ID: "
@@ -4053,47 +4302,47 @@ msgstr ""
 
 #: lib/utils/error-handler.js:38
 msgid "Callback called more than once."
-msgstr ""
+msgstr "コールバックは 2 回以上呼び出されました。"
 
 #: lib/utils/error-handler.js:57
 msgid "Connection refused!"
-msgstr ""
+msgstr "接続が拒否されました。"
 
 #: lib/utils/error-handler.js:58
 msgid "Check if your target server is reachable and you have v"
-msgstr ""
+msgstr "ターゲットサーバーが到達可能であることを確認します"
 
 #: lib/utils/fhlogin.js:18
 msgid "You must compile node with ssl support to use the login feature"
-msgstr ""
+msgstr "ログイン機能で使用するノードを SSL サポートでコンパイルする必要があります"
 
 #: lib/utils/fhlogin.js:36
 msgid "Login error, problem contacting: "
-msgstr ""
+msgstr "ログインエラー。連絡に問題。"
 
 #: lib/utils/fhlogin.js:44
 msgid "Error parsing response: "
-msgstr ""
+msgstr "応答の解析中にエラー: "
 
 #: lib/utils/fhlogin.js:67
 msgid "Could not login! "
-msgstr ""
+msgstr "ログインできませんでした。"
 
 #: lib/utils/ini.js:25
 msgid "Error reading user config file"
-msgstr ""
+msgstr "ユーザー設定ファイルの読み込み中にエラー"
 
 #: lib/utils/ini.js:96
 msgid "Environment is now specified with the --env=<environment> flag"
-msgstr ""
+msgstr "環境は --env=<environment> フラグで指定されています"
 
 #: lib/utils/ini.js:106
 msgid "Environment is mandatory - specify using --env=<environment>"
-msgstr ""
+msgstr "環境は必須です。--env=<environment> を使って指定してください。"
 
 #: lib/utils/ini.js:107
 msgid "Environment must be specified"
-msgstr ""
+msgstr "環境を指定する必要があります"
 
 #: lib/utils/mbaas-token-check.js:7
 msgid "Error checking MBaaS type"
@@ -4109,52 +4358,52 @@ msgstr ""
 
 #: lib/utils/millicore.js:17
 msgid "Error reading JSON response: "
-msgstr ""
+msgstr "JSON 応答の読み込み中にエラー: "
 
 #: lib/utils/millicore.js:17
 msgid "Response: "
-msgstr ""
+msgstr "応答: "
 
 #: lib/utils/output.js:147
 msgid "Stream not writable"
-msgstr ""
+msgstr "ストリームは書き込み可能ではありません"
 
 #: lib/utils/prompt.js:63
 msgid "cancelled"
-msgstr ""
+msgstr "キャンセル"
 
 #: lib/utils/request.js:46
 msgid "Error - not 2xx status code. (%s)\n"
-msgstr ""
+msgstr "エラー - 2xx ステータスコードではありません。(%s)\n"
 
 #: lib/utils/request.js:78
 msgid "favicon.ico isn't a package, it's a picture."
-msgstr ""
+msgstr "favicon.ico はパッケージではなく、ピクチャーです。"
 
 #: lib/utils/request.js:195
 msgid "error parsing json"
-msgstr ""
+msgstr "JSON の解析中にエラー"
 
 #: lib/utils/request.js:268
 msgid "Error Uploading File"
-msgstr ""
+msgstr "ファイルのアップロード中にエラー"
 
 #: lib/utils/request.js:309
 msgid "Saved to %s"
-msgstr ""
+msgstr "%s に保存"
 
 #: lib/utils/request.js:460
 msgid "Must target a feedhenry domain first."
-msgstr ""
+msgstr "feedhenry ドメインを最初にターゲットにする必要があります。"
 
 #: lib/utils/request.js:470
 msgid "Must define messaging URL before accessing FeedHenry Message Server."
-msgstr ""
+msgstr "FeedHenry メッセージサーバーにアクセスする前にメッセージング URL を定義する必要があります。"
 
 #: lib/utils/rm-rf.js:23
 msgid "rm must have a target"
-msgstr ""
+msgstr "rm はターゲットを持つ必要があります"
 
 #: lib/utils/rm-rf.js:68
 msgid "Refusing to delete non-fhc file"
-msgstr ""
+msgstr "fhc 以外のファイルの削除を拒否"
