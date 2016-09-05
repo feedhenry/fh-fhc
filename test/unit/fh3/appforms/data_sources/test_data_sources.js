@@ -35,7 +35,9 @@ module.exports = {
   },
   "test read data source not found": function(done){
     appformsDataSources.read({id: "wrongdsid"}, function(err, data){
-      assert.ok(err.indexOf("Found") > -1, "Expected Not Found Error Message");
+      assert.ok(err.toString().indexOf("Found") > -1, "Expected Not Found Error Message");
+      //An error response should have a request ID (See test/fixtures/appforms/fixture_data_sources)
+      assert.equal('dsrequest1234', err.requestId);
       assert.ok(!data, "Expected No Data");
       done();
     });
