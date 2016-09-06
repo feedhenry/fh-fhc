@@ -26,7 +26,7 @@ module.exports = nock('https://apps.feedhenry.com')
   .times(2)
   .reply(404, {
     userDetail: "Data Source Not Found"
-  })
+  }, {'x-fh-request-id': "dsrequest1234"})
   .post('/api/v2/appforms/data_sources', _.omit(mockDs, "_id"))
   .reply(200, mockDSCreated)
   .put('/api/v2/appforms/data_sources/' + mockDs._id, requiredDSUpdate)

@@ -7,6 +7,11 @@ var envReplies = {
       name: "Some Test Form"
     };
   },
+  error: {
+    userDetail: "Environment with ID wrongenvid not found.",
+    systemDetail: "Environment with ID wrongenvid not found.",
+    code: "FH-SUPERCORE-ERROR"
+  },
   list : function(){
     return [envReplies.crud()];
   },
@@ -53,4 +58,7 @@ module.exports = nock('https://apps.feedhenry.com')
   .delete('/api/v2/mbaas/someenv/appforms/forms/someformid', '*')
   .reply(200, envReplies.crud)
   .get('/api/v2/mbaas/appforms/lifecycle', '*')
-  .reply(200, envReplies.lifecycle);
+  .reply(200, envReplies.lifecycle)
+  //An error condition with a request id header
+  .post('/api/v2/mbaas/wrongenvid/appforms/forms/someformid/deploy', '*')
+  .reply(500, envReplies.error, {'x-fh-request-id': "requestid12345"});
