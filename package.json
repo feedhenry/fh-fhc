@@ -70,7 +70,8 @@
     "node": ">=0.8 <= 4.4"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "sleep infinity"
   },
   "license": "MIT"
 }
