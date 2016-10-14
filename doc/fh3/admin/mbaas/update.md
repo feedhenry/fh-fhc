@@ -19,19 +19,21 @@ fhc-update(1)
 
 ### FeedHenry MBaaS Target
 
-    --id              Some unique identifier for your MBaaS                   [required]
+    --id              Some unique identifier for your MBaaS                     [required]
     --url             The hostname where your MBaaS exists                    
     --servicekey      Service key to authenticate the MBaaS                   
     --username        MBaaS Username                                          
-    --password        MBaaS Password                                          
+    --password        MBaaS Password
+    --label           Label for MBaaS Target                                        
 
 ### OpenShift 3 MBaaS Target
 
-    --id            Some unique identifier for your MBaaS                   [required]
-    --url           URL where the OpenShift Master(s) API is available      
-    --servicekey    The FHMBAAS_KEY environment variable value              
-    --routerDNSUrl  The wildcard DNS entry for your OpenShift Router        
-    --fhMbaasHost   Exposed route where fh-mbaas is running in OpenShift 3
+    --id              Some unique identifier for your MBaaS                     [required]
+    --url             URL where the OpenShift Master(s) API is available      
+    --servicekey      The FHMBAAS_KEY environment variable value              
+    --routerDNSUrl    The wildcard DNS entry for your OpenShift Router        
+    --fhMbaasHost     Exposed route where fh-mbaas is running in OpenShift 3
+    --label           Label for MBaaS Target
 
 ## DESCRIPTION
 

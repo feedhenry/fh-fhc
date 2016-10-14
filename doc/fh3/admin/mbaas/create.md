@@ -25,15 +25,17 @@ fhc-create(1)
     --username        MBaaS Username                                          [required]
     --password        MBaaS Password                                          [required]
     --type            Type of MBaaS Target (feedhenry)                        [required]
+    --label           Label for MBaaS Target
 
 ### OpenShift 3 MBaaS Target
 
-    --id            Some unique identifier for your MBaaS                   [required]
-    --url           URL where the OpenShift Master(s) API is available      [required]
-    --servicekey    The FHMBAAS_KEY environment variable value              [required]
-    --routerDNSUrl  The wildcard DNS entry for your OpenShift Router        [required]
-    --fhMbaasHost   Exposed route where fh-mbaas is running in OpenShift 3  [required]
-    --type          Type of MBaaS Target (openshift3)                       [required]
+    --id              Some unique identifier for your MBaaS                   [required]
+    --url             URL where the OpenShift Master(s) API is available      [required]
+    --servicekey      The FHMBAAS_KEY environment variable value              [required]
+    --routerDNSUrl    The wildcard DNS entry for your OpenShift Router        [required]
+    --fhMbaasHost     Exposed route where fh-mbaas is running in OpenShift 3  [required]
+    --type            Type of MBaaS Target (openshift3)                       [required]
+    --label           Label for MBaaS Target
 
 ## DESCRIPTION
 
