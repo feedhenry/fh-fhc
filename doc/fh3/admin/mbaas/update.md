@@ -6,18 +6,35 @@ fhc-update(1)
 
 ## EXAMPLES
 
-  fhc admin mbaas update --id=<MBaaS id> --url=<MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password>    Updates an environment with id <mbaasId>
+ fhc admin mbaas create --id=<MBaaS id> --url=<FeedHenry MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password> --label=<MBaaS label>
+
+ **Updates FeedHenry MBaaS Target**
+
+ fhc admin mbaas update --id=<MBaaS id> --url=<OpenShift Master URL> --servicekey=<MBaaS Service Key> --routerDNSUrl=<OpenShift Router DNS> --fhMbaasHost=<MBaaS URL> --label=<MBaaS label>
+
+ **Updates OpenShift 3 MBaaS Target**
 
 
 ## OPTIONS
 
-  --id          Some unique MBaaS identifier           [required]
-  --url         The hostname where your MBaaS exists 
-  --servicekey  Service key to authenticate the MBaaS
-  --username    MBaaS Username                       
-  --password    MBaaS Password                       
+### FeedHenry MBaaS Target
+
+    --id              Some unique identifier for your MBaaS                     [required]
+    --url             The hostname where your MBaaS exists                    
+    --servicekey      Service key to authenticate the MBaaS                   
+    --username        MBaaS Username                                          
+    --password        MBaaS Password
+    --label           Label for MBaaS Target                                        
+
+### OpenShift 3 MBaaS Target
+
+    --id              Some unique identifier for your MBaaS                     [required]
+    --url             URL where the OpenShift Master(s) API is available      
+    --servicekey      The FHMBAAS_KEY environment variable value              
+    --routerDNSUrl    The wildcard DNS entry for your OpenShift Router        
+    --fhMbaasHost     Exposed route where fh-mbaas is running in OpenShift 3
+    --label           Label for MBaaS Target
 
 ## DESCRIPTION
 
-Update an MBaaS.
-
+Updates an MBaaS Target.
