@@ -38,7 +38,7 @@
     "open": "0.0.5",
     "os-locale": "1.4.0",
     "progress": "^1.1.8",
-    "request": "2.11.4",
+    "request": "2.74.0",
     "semver": "4.3.6",
     "tabtab": "0.0.2",
     "underscore": "1.8.0",
