@@ -1,5 +1,6 @@
-# [Unreleased]
+# 2.16.3
 * FH-2850 - Allow team assignment when creating a user with fhc
+* Fixed import of zip file
 
 # 2.6.0 - 2016-03-11 -  Niall Donnelly
 
