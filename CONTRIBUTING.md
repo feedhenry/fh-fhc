@@ -19,7 +19,7 @@
 ### Project Setup
 * Fork the repo.
 
-* Clone your forked repo locally
+* Clone your forked repo locally.
 
 * Link the package:
  ```sh
@@ -27,7 +27,8 @@
   ```
 
  This will create a globally-installed symbolic link allowing changes to be made to code and testing of fhc commands without reinstalling the package.
-* Setup git upstream remote
+
+* Setup git upstream remote:
  ```sh
  git remote add upstream https://github.com/feedhenry/fh-fhc.git
   ```
@@ -50,7 +51,7 @@
 * In GitHub, send a pull request to fh-fhc:master.
 
 ### After the pull request is merged
-* Delete your branch locally and in origin
+* Delete your branch locally and in origin:
  ```sh
  git checkout master
   ```
@@ -63,7 +64,7 @@
  git branch -D my-fix-branch
   ```
 
- * Update master from upstream to pull your PR changes
-  ```sh
+* Update master from upstream to pull your PR changes
+ ```sh
  git pull upstream master
   ```
