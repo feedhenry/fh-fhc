@@ -1,3 +1,6 @@
+# [Unreleased]
+* Added CONTRIBUTING file
+
 # 2.16.3
 * FH-2850 - Allow team assignment when creating a user with fhc
 * Fixed import of zip file
