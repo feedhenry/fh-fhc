@@ -3,6 +3,8 @@ FHC - FeedHenry Command Line Interface [![NPM version](https://badge.fury.io/js/
 
 FeedHenry CLI, the command line interface to [FeedHenry](http://www.feedhenry.com).
 
+> Want to contribute? Checkout [CONTRIBUTING.md](./CONTRIBUTING.md)
+
 ## Installation
 
 * Install [Node.js](http://nodejs.org/)
