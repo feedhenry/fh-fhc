@@ -113,3 +113,6 @@ To get strings translated, we use the Zanata, the web-based translation platform
     grunt potupload
 
 Prior to do that, please make sure you have an account on the Zanata server. if not, please visit https://translate.zanata.org and follow up the steps at http://docs.zanata.org/en/release/user-guide/account/account-sign-up/ to create an account, and http://zanata-client.readthedocs.io/en/latest/configuration/ to store the API key into $HOME/.config/zanata.ini.
+
+## Node version :
+FHC requires node 4.4.x version
