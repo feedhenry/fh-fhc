@@ -9,7 +9,7 @@ module.exports = {
   'test cordova migrate': function(cb) {
     migrate({app : '1a'}, function (err, data){
       assert.equal(err, null, err);
-      assert(data.ok === true);
+      assert(data.ok);
       return cb();
     });
   },
