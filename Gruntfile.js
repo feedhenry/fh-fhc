@@ -77,6 +77,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-fh-build');
   grunt.loadNpmTasks('grunt-jsxgettext');
+  grunt.loadNpmTasks('grunt-zanata-js');
 
   grunt.registerTask('test', ['fh:test']);
   grunt.registerTask('unit', ['jshint', 'fh:unit']);
@@ -84,7 +85,7 @@ module.exports = function(grunt) {
   grunt.registerTask('coverage', ['fh:coverage']);
   grunt.registerTask('analysis', ['fh:analysis']);
   grunt.registerTask('potupload', ['jsxgettext:pot', 'zanata:push']);
-  grunt.registerTask('dist', ['fh:dist']);
+  grunt.registerTask('dist', ['zanata:pull', 'fh:dist']);
   grunt.registerTask('default', ['fh:default']);
 
   grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:fh-run-array:docsToDoxy']);
