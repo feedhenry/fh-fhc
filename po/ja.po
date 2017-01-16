@@ -1,15 +1,17 @@
 # Akira TAGOH <tagoh@fedoraproject.org>, 2016. #zanata
+# jito <jito@redhat.com>, 2016. #zanata
+# kmoriguc <kmoriguc@redhat.com>, 2016. #zanata
 # tnagamot <tnagamot@redhat.com>, 2016. #zanata
 #, fuzzy
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"PO-Revision-Date: 2016-07-27 10:21-0400\n"
-"Last-Translator: tnagamot <tnagamot@redhat.com>\n"
+"PO-Revision-Date: 2016-12-05 07:51-0500\n"
+"Last-Translator: kmoriguc <kmoriguc@redhat.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
-"X-Generator: Zanata 3.9.5\n"
+"X-Generator: Zanata 3.9.6\n"
 
 #: lib/cmd/common/-v.js:5
 msgid "Version info about this tool"
@@ -722,7 +724,7 @@ msgstr "クラスタープロパティーの作成に失敗しました"
 
 #: lib/cmd/common/clusterprops.js:104
 msgid "failed to delete cluster prop"
-msgstr "クラスタープロパティーの削���に失敗しました"
+msgstr "クラスタープロパティーの削除に失敗しました"
 
 #: lib/cmd/common/configuration.js:10
 msgid "Manage client app configuration properties"
@@ -914,11 +916,11 @@ msgstr "'%s' は Git ベースのアプリケーションではありません"
 
 #: lib/cmd/common/git.js:110
 msgid "appId is required to perform a clean clone"
-msgstr ""
+msgstr "クリーンなクローンを実行するには appId が必要です"
 
 #: lib/cmd/common/git.js:123
 msgid "Error in clean clone, unexpected response format"
-msgstr ""
+msgstr "クリーンなクローンで予期しない応答形式によってエラーが発生しました"
 
 #: lib/cmd/common/git.js:137
 #: lib/cmd/common/git.js:139
@@ -1131,7 +1133,7 @@ msgid ""
 "git repos"
 msgstr ""
 "   cloudDir : 実行するクラウドコードを含むディレクトリー。デフォルト値は、./cloud。クライアントとクラウドが別個の git "
-"レポジ���リーの場合、FeedHenry 3 で便利です。"
+"レポジトリーの場合、FeedHenry 3 で便利です。"
 
 #: lib/cmd/common/local.js:19
 msgid ""
@@ -1451,7 +1453,7 @@ msgid ""
 "    fhc set browser lynx\n"
 msgstr ""
 "ブラウザーで %s を開くことに失敗しました。\n"
-"'ブラウザー' の設定がなされていない可能性があります。以下を試してくださ���。\n"
+"'ブラウザー' の設定がなされていない可能性があります。以下を試してください。\n"
 "    fhc set browser google-chrome\n"
 " または\n"
 "    fhc set browser lynx\n"
@@ -1723,7 +1725,7 @@ msgstr ""
 
 #: lib/cmd/fh2/account.js:4
 msgid "Manage your FeedHenry Account Resources"
-msgstr "FeedHenry ���カウントリソースの管理"
+msgstr "FeedHenry アカウントリソースの管理"
 
 #: lib/cmd/fh2/account.js:6
 msgid ""
@@ -1783,7 +1785,7 @@ msgstr ""
 " ここでの <destination> は、次のいずれかになります : android、iphone、blackberry またはすべて\n"
 " ここでの <resource-directory> は、リソースを格納しているディレクトリーにします。\n"
 " このコマンドは、各宛先に適したリソースのタイプを見つけて、それらを自動的にアップロードします。\n"
-" これを実行するには、以下の方法でリソー���を整理してください。\n"
+" これを実行するには、以下の方法でリソースを整理してください。\n"
 "  1. 宛先が all の場合、各リソースファイルは実際の宛先を示した親ディレクトリーを持ちます。\n"
 "  2. 各リソースファイルは、リソースタイプを拡張子または少なくともその名前の一部として使用します。\n"
 "  3. 各リソースファイルは、宛先を示した親ディレクトリーを持ちます。\n"
@@ -1964,7 +1966,7 @@ msgid ""
 "App created, id: "
 msgstr ""
 "\n"
-"アプリ���作成、id: "
+"アプリを作成、id: "
 
 #: lib/cmd/fh2/app/create.js:76
 msgid ""
@@ -2282,6 +2284,8 @@ msgid ""
 "OpenShift token required to create an OpenShift environment project (can be "
 "obtained from OpenShift at /oauth/token/request)"
 msgstr ""
+"OpenShift 環境プロジェクトの作成に必要な OpenShift トークン ( OpenShift の /oauth/token/request "
+"から取得可能)"
 
 #: lib/cmd/fh3/admin/environments/create.js:16
 msgid ""
@@ -2320,7 +2324,7 @@ msgstr "利用可能な環境を一覧表示"
 #: lib/cmd/fh3/admin/environments/read.js:3
 #: lib/cmd/fh3/admin/environments/read.js:4
 msgid "Read an environment by id"
-msgstr "ID ごとに環境を読み込む"
+msgstr "ID ごとの環境を読み込む"
 
 #: lib/cmd/fh3/admin/environments/read.js:8
 #: lib/cmd/fh3/admin/teams/read.js:10
@@ -2337,41 +2341,41 @@ msgstr "ID ごとに環境を更新"
 
 #: lib/cmd/fh3/admin/environments/update.js:14
 msgid "OpenShift token required to create the environment project"
-msgstr ""
+msgstr "環境プロジェクトの作成に必要な OpenShift トークン"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:6
 msgid ""
 "Search for log entries associated with a request ID. This requires "
 "aggregated logging to be enabled."
-msgstr ""
+msgstr "要求 ID に関連するログエントリーを検索します。これには、集約ロギングを有効にする必要があります。"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:9
 msgid ""
 "Searching for log entries associated with request ID: "
 "07401646-b55e-4b9f-a181-c42f2fcbfd17"
-msgstr ""
+msgstr "要求 ID 07401646-b55e-4b9f-a181-c42f2fcbfd17 に関連するログエントリーの検索中"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:13
 msgid "A request ID to search for."
-msgstr ""
+msgstr "検索する要求 ID。"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:14
 msgid "A comma-separated list of project names to search for logs in."
-msgstr ""
+msgstr "ログを検索するプロジェクト名のコンマ区切りリスト。"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:15
 msgid "The maximum number of log entries returned. Default is 1000."
-msgstr ""
+msgstr "返されるログエントリーの最大数。デフォルトは 1000 です。"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:16
 msgid ""
 "The order of entries, by timestamp, to be displayed. The available options "
 "are 'first' or 'last'"
-msgstr ""
+msgstr "表示されるタイムスタンプによるエントリーの順序。利用可能なオプションは 'first' か 'last' です。"
 
 #: lib/cmd/fh3/admin/logs/syslogs.js:32
 msgid "orderBy can either be 'first' or 'last'"
-msgstr ""
+msgstr "orderBy は 'first' または 'last' を指定できます"
 
 #: lib/cmd/fh3/admin/mbaas/bearertoken.js:3
 msgid "Get a new bearer token for an mbaas"
@@ -3610,7 +3614,7 @@ msgstr "ファイル %s が見つかりません"
 
 #: lib/cmd/fh3/appforms/forms/import.js:24
 msgid "%s is not a file"
-msgstr "%s はファイル���はありません"
+msgstr "%s はファイルではありません"
 
 #: lib/cmd/fh3/appforms/forms/import.js:30
 msgid "File %s uploaded successfully"
@@ -3846,7 +3850,7 @@ msgstr "認証情報バンドルでの操作"
 
 #: lib/cmd/fh3/credentials.js:28
 msgid "Invalid credentials action %s"
-msgstr "無効な認証情報アク���ョン %s"
+msgstr "無効な認証情報アクション %s"
 
 #: lib/cmd/fh3/credentials.js:33
 msgid "Error reading credentials: "
@@ -4298,7 +4302,7 @@ msgstr "コマンドの実行でエラー"
 
 #: lib/utils/error-handler.js:31
 msgid "Request ID: "
-msgstr ""
+msgstr "要求 ID: "
 
 #: lib/utils/error-handler.js:38
 msgid "Callback called more than once."
@@ -4346,15 +4350,15 @@ msgstr "環境を指定する必要があります"
 
 #: lib/utils/mbaas-token-check.js:7
 msgid "Error checking MBaaS type"
-msgstr ""
+msgstr "MBaaS タイプの確認エラー"
 
 #: lib/utils/mbaas-token-check.js:18
 msgid "OpenShift targets require a token to be provided"
-msgstr ""
+msgstr "OpenShift のターゲットにトークンを提供する必要があります"
 
 #: lib/utils/mbaas-token-check.js:22
 msgid "FeedHenry targets do not accept tokens"
-msgstr ""
+msgstr "FeedHenry のターゲットはトークンを許可しません"
 
 #: lib/utils/millicore.js:17
 msgid "Error reading JSON response: "
