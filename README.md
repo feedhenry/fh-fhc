@@ -64,6 +64,13 @@ Older fhc commands still pass arguments in an ordered array, as below. The envir
     fhc.app.logs({_ : ['projectId', 'appId'], env : 'dev' }, function(){
     });
 
+### From Docker
+
+To use FHC via docker, run commands like:
+
+`$ docker run -v $HOME:/root -it feedhenry/fhc target https://rhmap.cup.feedhenry.io`
+
+We mount `$HOME` into the the container to persist configuration in `~/.fhcrc` & `~/.fhctargets` on the host.
 
 ## Extending
 Version 1.0 of `fh-fhc` updates the structure of commands:
