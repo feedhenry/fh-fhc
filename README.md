@@ -70,7 +70,41 @@ To use FHC via docker, run commands like:
 
 `$ docker run -v $HOME:/root -it feedhenry/fhc target https://rhmap.cup.feedhenry.io`
 
-We mount `$HOME` into the the container to persist configuration in `~/.fhcrc` & `~/.fhctargets` on the host.
+We mount `$HOME` into the the container to persist configuration in `~/.fhcrc` & `~/.fhctargets` on the host. You may want to alias this `docker run` command to `fhc`, by adding an alias to your shell's config:
+
+```
+alias fhc='docker run -v $HOME:/root -it feedhenry/fhc'
+```
+
+Now you'll be able to run commands similar to:
+
+```
+fhc target https://rhmap.cup.feedhenry.io
+```
+
+#### Building & Releasing for Docker
+
+To build:
+
+`$ docker build -t feedhenry/fhc .`
+
+Get your Image ID via:
+
+`$ docker images | grep fhc`
+`feedhenry/fhc          latest              0618027d8d57        8 minutes ago       749 MB`
+
+Tag this as latest & the version in `package.json`:
+
+`$ docker tag 0618027d8d57 feedhenry/fhc:latest`
+`$ docker tag 0618027d8d57 feedhenry/fhc:2.17.3`
+
+Push your images (you may need to login):
+
+`$ docker push feedhenry/fhc`
+
+Finally, verify your push by visiting:
+
+[https://hub.docker.com/r/feedhenry/fhc/tags/](https://hub.docker.com/r/feedhenry/fhc/tags/)
 
 ## Extending
 Version 1.0 of `fh-fhc` updates the structure of commands:
