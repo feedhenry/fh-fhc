@@ -5,13 +5,6 @@ var filesNock = require('test/fixtures/app/fixture_files.js');
 var appReadNock = require('test/fixtures/app/fixture_appread.js')(3);
 
 module.exports = {
-  'test file list': function(cb) {
-    files({ _ : ['list', '0123']}, function (err, data) {
-      assert.equal(err, null, err);
-      assert.ok(data.children.length>0);
-      return cb();
-    });
-  },
   'test files read' : function(cb){
     files({ _ : ['read', '0123']}, function (err, data) {
       assert.equal(err, null, err);
