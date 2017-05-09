@@ -726,30 +726,6 @@ msgstr "クラスタープロパティーの作成に失敗しました"
 msgid "failed to delete cluster prop"
 msgstr "クラスタープロパティーの削除に失敗しました"
 
-#: lib/cmd/common/configuration.js:10
-msgid "Manage client app configuration properties"
-msgstr "クライアントアプリせってプロパティーの管理"
-
-#: lib/cmd/common/configuration.js:14
-msgid ""
-"\n"
-"where destination can be one of: %s or 'all'"
-msgstr ""
-"\n"
-"宛先は %s か 'all' のいずれかになります"
-
-#: lib/cmd/common/configuration.js:54
-msgid "Error listing destination config: "
-msgstr "宛先設定の一覧表示でエラー: "
-
-#: lib/cmd/common/configuration.js:82
-msgid "Error setting destination config: "
-msgstr "宛先設定の設定でエラー: "
-
-#: lib/cmd/common/configuration.js:95
-msgid "Usage:"
-msgstr "使用量:"
-
 #: lib/cmd/common/deploy-target.js:12
 msgid "Operations on Cloud Deploy Targets"
 msgstr "クラウドデプロイターゲットでの操作"
