@@ -840,24 +840,6 @@ msgstr "警告の一覧表示でエラー: "
 msgid "Error listing alert options: "
 msgstr "警告オプションの一覧表示でエラー: "
 
-#: lib/cmd/common/files.js:10
-msgid "Manage application files"
-msgstr "アプリケーションファイルの管理"
-
-#: lib/cmd/common/files.js:93
-#: lib/cmd/common/files.js:157
-#: lib/cmd/common/files.js:171
-#: lib/cmd/common/initlocal.js:263
-#: lib/cmd/fh2/app/read.js:41
-msgid "No appId specified!"
-msgstr "appId が指定されていません!"
-
-#: lib/cmd/common/files.js:93
-#: lib/cmd/common/files.js:115
-#: lib/cmd/common/files.js:124
-#: lib/cmd/common/files.js:127
-#: lib/cmd/common/files.js:157
-#: lib/cmd/common/files.js:171
 #: lib/cmd/common/initlocal.js:263
 #: lib/cmd/common/templates.js:181
 #: lib/cmd/fh2/app/read.js:41
@@ -866,44 +848,6 @@ msgstr "appId が指定されていません!"
 #: lib/genericCommand.js:13
 msgid "Usage:\n"
 msgstr "使用量:\n"
-
-#: lib/cmd/common/files.js:102
-msgid "Error listing file: "
-msgstr "ファイルの一覧表示でエラー: "
-
-#: lib/cmd/common/files.js:115
-#: lib/cmd/common/files.js:124
-msgid "No fileId specified!"
-msgstr "フィールドが指定されていません!"
-
-#: lib/cmd/common/files.js:119
-msgid "Error reading file: "
-msgstr "ファイルの読み込みでエラー: "
-
-#: lib/cmd/common/files.js:127
-msgid "No file specified!"
-msgstr "ファイルが指定されていません!"
-
-#: lib/cmd/common/files.js:134
-msgid "File not found: "
-msgstr "ファイルが見つかりません: "
-
-#: lib/cmd/common/files.js:138
-#: lib/cmd/common/files.js:145
-msgid "Error updating file: "
-msgstr "ファイルの更新でエラー: "
-
-#: lib/cmd/common/files.js:147
-msgid "No file contents specified."
-msgstr "ファイルのコンテンツが指定されていません。"
-
-#: lib/cmd/common/files.js:165
-msgid "Error creating file: "
-msgstr "ファイルの作成でエラー: "
-
-#: lib/cmd/common/files.js:179
-msgid "Error deleting file: "
-msgstr "ファイルの削除でエラー: "
 
 #: lib/cmd/common/git.js:4
 msgid "Git operations on a FeedHenry App which doesn't have it's own repo"
