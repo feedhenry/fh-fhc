@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2016-09-09 01:39+0000\n"
+"POT-Creation-Date: 2017-05-09 02:04+0000\n"
 
 #: lib/cmd/common/-v.js:5
 msgid "Version info about this tool"
@@ -49,7 +49,7 @@ msgid "Error updating item: "
 msgstr ""
 
 #: lib/cmd/common/admin-appstore.js:116
-#: lib/cmd/common/admin-policies.js:102
+#: lib/cmd/common/admin-policies.js:104
 msgid "Error listing policies: "
 msgstr ""
 
@@ -66,7 +66,7 @@ msgid "Operations specific to devices connected to the MAM App Store"
 msgstr ""
 
 #: lib/cmd/common/admin-devices.js:19
-#: lib/cmd/common/admin-policies.js:44
+#: lib/cmd/common/admin-policies.js:46
 #: lib/cmd/common/admin-storeitemgroups.js:24
 #: lib/cmd/common/admin-users.js:32
 #: lib/cmd/common/deploy-target.js:30
@@ -101,7 +101,7 @@ msgstr ""
 msgid ""
 "\n"
 "    where <policy-type> is one of: OAUTH1 | OAUTH2 | LDAP | OPENID | "
-"FEEDHENRY"
+"FEEDHENRY | MBAAS"
 msgstr ""
 
 #: lib/cmd/common/admin-policies.js:18
@@ -135,72 +135,80 @@ msgstr ""
 #: lib/cmd/common/admin-policies.js:22
 msgid ""
 "\n"
+"          for MBAAS: "
+"\"{\"provider\":\"MBAAS\",\"mbaas\":\"mqijsw3tgpn6htwmbbg27jl6\",\""
+"authEndpoint\":\"/test\",\"defaultEnvironment\":\"dev\"}\""
+msgstr ""
+
+#: lib/cmd/common/admin-policies.js:23
+msgid ""
+"\n"
 "    where <check-user-exists> is one of: true | false. The default here is "
 "'false'."
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:23
+#: lib/cmd/common/admin-policies.js:24
 msgid ""
 "\n"
 "    where <check-user-approved> is one of: true | false. The default here "
 "is 'false'."
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:82
+#: lib/cmd/common/admin-policies.js:84
 #: lib/cmd/common/admin-storeitemgroups.js:76
 #: lib/cmd/common/eventalert.js:78
 msgid "Unknown command '%s'."
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:82
+#: lib/cmd/common/admin-policies.js:84
 #: lib/cmd/common/admin-storeitemgroups.js:76
-#: lib/cmd/common/build.js:54
+#: lib/cmd/common/build.js:56
 #: lib/cmd/common/clusterprops.js:18
 #: lib/cmd/common/eventalert.js:78
 #: lib/cmd/common/keys/ssh.js:19
 #: lib/cmd/common/keys/user.js:23
 #: lib/cmd/common/local.js:243
 #: lib/cmd/common/notifications.js:34
-#: lib/cmd/common/ota.js:52
+#: lib/cmd/common/ota.js:53
 #: lib/cmd/common/secureendpoints.js:54
 #: lib/cmd/fh2/app/embed.js:16
 msgid "Usage: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:97
+#: lib/cmd/common/admin-policies.js:99
 msgid "'<policy-type>' must be one of %s"
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:118
-#: lib/cmd/common/admin-policies.js:162
+#: lib/cmd/common/admin-policies.js:120
+#: lib/cmd/common/admin-policies.js:164
 msgid "Error parsing 'configurations' paramater: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:130
+#: lib/cmd/common/admin-policies.js:132
 msgid "Error creating policy: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:138
+#: lib/cmd/common/admin-policies.js:140
 msgid "Error deleting policy: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:146
+#: lib/cmd/common/admin-policies.js:148
 msgid "Error reading policy: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:175
+#: lib/cmd/common/admin-policies.js:177
 msgid "Error updating policy: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:183
+#: lib/cmd/common/admin-policies.js:185
 msgid "Error listing users policies: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:191
+#: lib/cmd/common/admin-policies.js:193
 msgid "Error adding users to policy: "
 msgstr ""
 
-#: lib/cmd/common/admin-policies.js:199
+#: lib/cmd/common/admin-policies.js:201
 msgid "Error removing users from policy: "
 msgstr ""
 
@@ -335,7 +343,7 @@ msgid "Error listing user installed apps: "
 msgstr ""
 
 #: lib/cmd/common/app/update.js:61
-#: lib/cmd/common/build.js:194
+#: lib/cmd/common/build.js:196
 #: lib/cmd/fh2/app/embed.js:35
 #: lib/common.js:654
 #: lib/common.js:662
@@ -349,7 +357,7 @@ msgid "Config property set ok"
 msgstr ""
 
 #: lib/cmd/common/app/update.js:101
-#: lib/cmd/common/git.js:89
+#: lib/cmd/common/git.js:95
 msgid "Error updating app: "
 msgstr ""
 
@@ -358,7 +366,7 @@ msgid "Property set ok"
 msgstr ""
 
 #: lib/cmd/common/app/update.js:106
-#: lib/cmd/common/git.js:94
+#: lib/cmd/common/git.js:100
 msgid "Error setting property: "
 msgstr ""
 
@@ -424,190 +432,212 @@ msgid "Builds a client application"
 msgstr ""
 
 #: lib/cmd/common/build.js:6
-#: lib/cmd/common/build.js:21
+#: lib/cmd/common/build.js:20
 msgid ""
 "\n"
-"where <destination> is one of: android, iphone, ipad, ios(for universal "
-"binary), blackberry, windowsphone7, windowsphone (windows phone 8)"
+"\n"
 msgstr ""
 
 #: lib/cmd/common/build.js:7
-#: lib/cmd/common/build.js:22
 msgid ""
 "\n"
-"where <version> is specific to the destination (e.g. Android version 4.0)"
+"\t<destination>         One of: android, iphone, ipad, ios(for universal "
+"binary), blackberry, windowsphone7, windowsphone (windows phone 8)."
 msgstr ""
 
 #: lib/cmd/common/build.js:8
-#: lib/cmd/common/build.js:23
 msgid ""
 "\n"
-"where <config> is either 'debug' (default), 'distribution', or 'release'"
+"\t<version>             Specific to the destination (e.g. Android version "
+"4.0)."
 msgstr ""
 
 #: lib/cmd/common/build.js:9
 msgid ""
 "\n"
-"where <provisioning> is the path to the provisioning profile"
+"\t<config>              Either 'debug' (default), 'distribution', or "
+"'release'."
 msgstr ""
 
 #: lib/cmd/common/build.js:10
-#: lib/cmd/common/build.js:25
 msgid ""
 "\n"
-"where <cordova_version> is for specifying which version of Cordova to use. "
-"Currently supported: either 2.2 or 3.3. Only valid for Android for now."
+"\t<provisioning>        The path to the provisioning profile."
 msgstr ""
 
 #: lib/cmd/common/build.js:11
-msgid ""
-"\n"
-"where <tag name> is the name of a tag to be built."
-msgstr ""
-
-#: lib/cmd/common/build.js:12
 #: lib/cmd/common/build.js:26
 msgid ""
 "\n"
-"where <branch name> is the name of the git branch to build, defaults to "
-"'master'"
+"\t<cordova_version>     For specifying which version of Cordova to use. "
+"Currently supported: either 2.2 or 3.3. Only valid for Android for now."
+msgstr ""
+
+#: lib/cmd/common/build.js:12
+#: lib/cmd/common/build.js:27
+msgid ""
+"\n"
+"\t<tag name>            The name of a connection tag for the cloud app, "
+"must be in Semantic Version format, e.g. 0.0.1."
 msgstr ""
 
 #: lib/cmd/common/build.js:13
+#: lib/cmd/common/build.js:28
 msgid ""
 "\n"
-"where <commit hash> is the full hash of the commit to build."
+"\t<branch name>         The name of the git branch to build, defaults to "
+"'master'"
 msgstr ""
 
 #: lib/cmd/common/build.js:14
-#: lib/cmd/common/ota.js:11
 msgid ""
 "\n"
-"'keypass' and 'certpass' only needed for 'release' builds"
+"\t<commit hash>         The full hash of the commit to build."
 msgstr ""
 
 #: lib/cmd/common/build.js:15
 msgid ""
 "\n"
-"'provisioning' is only optional for iphone or ipad builds"
+"\t'keypass' and 'certpass' only needed for 'release' builds"
 msgstr ""
 
-#: lib/cmd/common/build.js:19
+#: lib/cmd/common/build.js:16
 msgid ""
 "\n"
-"where <tag name> is the name of a connection tag for the cloud app, must be "
-"in Semantic Version format, e.g. 0.0.1."
+"\t'provisioning' is only optional for iphone or ipad builds"
 msgstr ""
 
-#: lib/cmd/common/build.js:20
+#: lib/cmd/common/build.js:21
 msgid ""
 "\n"
-"where <environment id> is the id of a target environment, e.g. dev"
+"\t<environment id>      The id of a target environment, e.g. dev"
+msgstr ""
+
+#: lib/cmd/common/build.js:22
+msgid ""
+"\n"
+"\t<destination>         One of: android, iphone, ipad, ios(for universal "
+"binary), blackberry, windowsphone7, windowsphone (windows phone 8)"
+msgstr ""
+
+#: lib/cmd/common/build.js:23
+msgid ""
+"\n"
+"\t<version>             Specific to the destination (e.g. Android version "
+"4.0)"
 msgstr ""
 
 #: lib/cmd/common/build.js:24
 msgid ""
 "\n"
-"where <bundleId> is the unique bundle identifier of the credential bundle. "
-"You can get it using 'fhc credentials list'. Required for all iOS builds."
+"\t<config>              Either 'debug' (default), 'distribution', or "
+"'release'"
 msgstr ""
 
-#: lib/cmd/common/build.js:27
+#: lib/cmd/common/build.js:25
 msgid ""
 "\n"
-"where <commit hash> is the full hash of the commit to build, if not the "
+"\t<bundleId>            The unique bundle identifier of the credential "
+"bundle. You can get it using 'fhc credentials list'. Required for all iOS "
+"builds."
+msgstr ""
+
+#: lib/cmd/common/build.js:29
+msgid ""
+"\n"
+"\t<commit hash>         The full hash of the commit to build, if not the "
 "head of the branch. Must be used with <branch name>"
 msgstr ""
 
-#: lib/cmd/common/build.js:28
+#: lib/cmd/common/build.js:30
 msgid ""
 "\n"
-"'keypass' only needed for 'release' builds"
+"\t'keypass' only needed for 'release' builds"
 msgstr ""
 
-#: lib/cmd/common/build.js:54
+#: lib/cmd/common/build.js:56
 #: lib/cmd/common/local.js:243
-#: lib/cmd/common/ota.js:52
+#: lib/cmd/common/ota.js:53
 msgid "Error processing args: "
 msgstr ""
 
-#: lib/cmd/common/build.js:74
+#: lib/cmd/common/build.js:76
 msgid "Missing 'app' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:77
+#: lib/cmd/common/build.js:79
 msgid "Missing 'destination' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:86
+#: lib/cmd/common/build.js:88
 msgid "Missing 'keypass' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:90
+#: lib/cmd/common/build.js:92
 msgid "Missing 'certpass' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:112
+#: lib/cmd/common/build.js:114
 msgid "Missing 'project' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:115
+#: lib/cmd/common/build.js:117
 msgid "Missing 'cloud_app' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:118
+#: lib/cmd/common/build.js:120
 msgid "Missing 'tag' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:121
+#: lib/cmd/common/build.js:123
 msgid "Missing 'bundleId' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:124
+#: lib/cmd/common/build.js:126
 msgid "Missing 'environment' parameter"
 msgstr ""
 
-#: lib/cmd/common/build.js:208
+#: lib/cmd/common/build.js:210
 msgid ""
 "\n"
 "Download URL: "
 msgstr ""
 
-#: lib/cmd/common/build.js:217
+#: lib/cmd/common/build.js:219
 msgid ""
 "\n"
 "Downloaded file: "
 msgstr ""
 
-#: lib/cmd/common/build.js:241
+#: lib/cmd/common/build.js:243
 msgid "Provisioning profile uploaded"
 msgstr ""
 
-#: lib/cmd/common/build.js:244
+#: lib/cmd/common/build.js:246
 msgid "Failed to upload provisioning profile. Response is "
 msgstr ""
 
-#: lib/cmd/common/build.js:267
+#: lib/cmd/common/build.js:269
 msgid "Unexpected response code for file download: "
 msgstr ""
 
-#: lib/cmd/common/build.js:267
+#: lib/cmd/common/build.js:269
 msgid " message: "
 msgstr ""
 
-#: lib/cmd/common/build.js:287
+#: lib/cmd/common/build.js:289
 msgid "Finish stream event received"
 msgstr ""
 
-#: lib/cmd/common/build.js:292
+#: lib/cmd/common/build.js:294
 msgid "close stream event received"
 msgstr ""
 
-#: lib/cmd/common/build.js:297
+#: lib/cmd/common/build.js:299
 msgid "End of netork stream received"
 msgstr ""
 
-#: lib/cmd/common/build.js:303
+#: lib/cmd/common/build.js:305
 msgid "Error downloading build: "
 msgstr ""
 
@@ -620,14 +650,14 @@ msgid "Manage cluster"
 msgstr ""
 
 #: lib/cmd/common/cluster.js:34
-#: lib/cmd/common/clusterprops.js:48
-#: lib/cmd/common/clusterprops.js:59
+#: lib/cmd/common/clusterprops.js:47
+#: lib/cmd/common/clusterprops.js:58
 msgid "Error reading Cluster Props: "
 msgstr ""
 
 #: lib/cmd/common/cluster.js:57
 #: lib/cmd/common/cluster.js:71
-#: lib/cmd/fh3/admin/domains.js:32
+#: lib/cmd/fh3/admin/domains.js:38
 msgid "failed to create cluster user"
 msgstr ""
 
@@ -643,17 +673,17 @@ msgstr ""
 msgid "Manage clusterprops"
 msgstr ""
 
-#: lib/cmd/common/clusterprops.js:42
+#: lib/cmd/common/clusterprops.js:41
 #: lib/cmd/fh3/connections.js:34
 #: lib/cmd/fh3/projects.js:48
 msgid "Invalid action: "
 msgstr ""
 
-#: lib/cmd/common/clusterprops.js:90
+#: lib/cmd/common/clusterprops.js:89
 msgid "failed to create cluster prop"
 msgstr ""
 
-#: lib/cmd/common/clusterprops.js:104
+#: lib/cmd/common/clusterprops.js:103
 msgid "failed to delete cluster prop"
 msgstr ""
 
@@ -763,95 +793,30 @@ msgstr ""
 msgid "Error listing alert options: "
 msgstr ""
 
-#: lib/cmd/common/files.js:10
-msgid "Manage application files"
-msgstr ""
-
-#: lib/cmd/common/files.js:93
-#: lib/cmd/common/files.js:157
-#: lib/cmd/common/files.js:171
-#: lib/cmd/common/initlocal.js:263
-#: lib/cmd/fh2/app/read.js:41
-msgid "No appId specified!"
-msgstr ""
-
-#: lib/cmd/common/files.js:93
-#: lib/cmd/common/files.js:115
-#: lib/cmd/common/files.js:124
-#: lib/cmd/common/files.js:127
-#: lib/cmd/common/files.js:157
-#: lib/cmd/common/files.js:171
-#: lib/cmd/common/initlocal.js:263
-#: lib/cmd/common/templates.js:181
-#: lib/cmd/fh2/app/read.js:41
-#: lib/cmd/fh2/app/stage.js:71
-#: lib/cmd/internal/df.js:174
-#: lib/genericCommand.js:13
-msgid "Usage:\n"
-msgstr ""
-
-#: lib/cmd/common/files.js:102
-msgid "Error listing file: "
-msgstr ""
-
-#: lib/cmd/common/files.js:115
-#: lib/cmd/common/files.js:124
-msgid "No fileId specified!"
-msgstr ""
-
-#: lib/cmd/common/files.js:119
-msgid "Error reading file: "
-msgstr ""
-
-#: lib/cmd/common/files.js:127
-msgid "No file specified!"
-msgstr ""
-
-#: lib/cmd/common/files.js:134
-msgid "File not found: "
-msgstr ""
-
-#: lib/cmd/common/files.js:138
-#: lib/cmd/common/files.js:145
-msgid "Error updating file: "
-msgstr ""
-
-#: lib/cmd/common/files.js:147
-msgid "No file contents specified."
-msgstr ""
-
-#: lib/cmd/common/files.js:165
-msgid "Error creating file: "
-msgstr ""
-
-#: lib/cmd/common/files.js:179
-msgid "Error deleting file: "
-msgstr ""
-
 #: lib/cmd/common/git.js:4
 msgid "Git operations on a FeedHenry App which doesn't have it's own repo"
 msgstr ""
 
-#: lib/cmd/common/git.js:51
-#: lib/cmd/common/git.js:84
+#: lib/cmd/common/git.js:53
+#: lib/cmd/common/git.js:89
 msgid "'%s' is not a Git based Application"
 msgstr ""
 
-#: lib/cmd/common/git.js:110
+#: lib/cmd/common/git.js:116
 msgid "appId is required to perform a clean clone"
 msgstr ""
 
-#: lib/cmd/common/git.js:123
+#: lib/cmd/common/git.js:129
 msgid "Error in clean clone, unexpected response format"
 msgstr ""
 
-#: lib/cmd/common/git.js:137
-#: lib/cmd/common/git.js:139
+#: lib/cmd/common/git.js:146
+#: lib/cmd/common/git.js:148
 msgid "Error in Git pull: "
 msgstr ""
 
-#: lib/cmd/common/git.js:178
-#: lib/cmd/common/git.js:180
+#: lib/cmd/common/git.js:188
+#: lib/cmd/common/git.js:190
 msgid "Error reading Git properties: "
 msgstr ""
 
@@ -874,22 +839,22 @@ msgid ""
 "Note: if no file or repo is specified, a bare git repo is created"
 msgstr ""
 
-#: lib/cmd/common/import.js:46
-#: lib/cmd/common/import.js:85
+#: lib/cmd/common/import.js:48
+#: lib/cmd/common/import.js:87
 #: lib/cmd/common/keys/ssh.js:71
 msgid "File doesn't exist: "
 msgstr ""
 
-#: lib/cmd/common/import.js:57
+#: lib/cmd/common/import.js:59
 msgid "Import complete: GUID: "
 msgstr ""
 
-#: lib/cmd/common/import.js:101
+#: lib/cmd/common/import.js:113
 msgid "Error importing file: "
 msgstr ""
 
-#: lib/cmd/common/import.js:128
-#: lib/cmd/common/import.js:143
+#: lib/cmd/common/import.js:134
+#: lib/cmd/common/import.js:156
 msgid "Error importing git repo: "
 msgstr ""
 
@@ -922,6 +887,20 @@ msgstr ""
 msgid "No environment variables set."
 msgstr ""
 
+#: lib/cmd/common/initlocal.js:263
+#: lib/cmd/fh2/app/read.js:41
+msgid "No appId specified!"
+msgstr ""
+
+#: lib/cmd/common/initlocal.js:263
+#: lib/cmd/common/templates.js:181
+#: lib/cmd/fh2/app/read.js:41
+#: lib/cmd/fh2/app/stage.js:71
+#: lib/cmd/internal/df.js:180
+#: lib/genericCommand.js:13
+msgid "Usage:\n"
+msgstr ""
+
 #: lib/cmd/common/initlocal.js:265
 msgid "Getting app container from url: "
 msgstr ""
@@ -949,13 +928,15 @@ msgstr ""
 #: lib/cmd/common/keys/user.js:103
 #: lib/cmd/common/keys/user.js:131
 #: lib/cmd/common/keys/user.js:153
+#: lib/cmd/fh3/admin/domains.js:14
+#: lib/cmd/fh3/admin/status.js:13
 #: lib/cmd/fh3/connections.js:41
 #: lib/cmd/fh3/connections.js:61
 #: lib/cmd/fh3/connections.js:81
 #: lib/cmd/fh3/credentials.js:22
-#: lib/cmd/fh3/projects.js:79
-#: lib/cmd/fh3/projects.js:128
-#: lib/cmd/fh3/projects.js:151
+#: lib/cmd/fh3/projects.js:83
+#: lib/cmd/fh3/projects.js:143
+#: lib/cmd/fh3/projects.js:166
 #: lib/cmd/fh3/services.js:103
 #: lib/cmd/fh3/services.js:139
 msgid "Invalid arguments"
@@ -1320,6 +1301,12 @@ msgid ""
 "where <config> is always distribution or release for OTA"
 msgstr ""
 
+#: lib/cmd/common/ota.js:11
+msgid ""
+"\n"
+"'keypass' and 'certpass' only needed for 'release' builds"
+msgstr ""
+
 #: lib/cmd/common/preview.js:6
 msgid "Opens the App Preview of a client app"
 msgstr ""
@@ -1562,17 +1549,17 @@ msgstr ""
 msgid "FeedHenry Platform Version: "
 msgstr ""
 
-#: lib/cmd/common/version.js:118
+#: lib/cmd/common/version.js:119
 msgid "Error checking latest version"
 msgstr ""
 
-#: lib/cmd/common/version.js:120
+#: lib/cmd/common/version.js:121
 msgid ""
 "Warning - newer FHC version available (%s). To update, run\n"
 "npm install -g fh-fhc"
 msgstr ""
 
-#: lib/cmd/common/version.js:137
+#: lib/cmd/common/version.js:139
 msgid ""
 "The Platform You Are Targeting Is Not Compatible With This Version (%s) Of "
 "fhc. Please Install A Previous Version: npm install fh-fhc@^%s.0.0"
@@ -1711,6 +1698,8 @@ msgid "Invalid resource type for blackberry : %s. It should be either csk or db"
 msgstr ""
 
 #: lib/cmd/fh2/account.js:327
+#: lib/cmd/fh3/admin/domains.js:48
+#: lib/cmd/fh3/admin/status.js:32
 #: lib/cmd/fh3/credentials.js:16
 #: lib/cmd/fh3/projects.js:24
 #: lib/cmd/fh3/services.js:24
@@ -1757,14 +1746,14 @@ msgstr ""
 msgid "Error in act: "
 msgstr ""
 
-#: lib/cmd/fh2/app/act.js:92
-#: lib/cmd/fh3/app/_baseCloudRequest.js:67
-#: lib/cmd/internal/df.js:154
+#: lib/cmd/fh2/app/act.js:93
+#: lib/cmd/fh3/app/_baseCloudRequest.js:70
+#: lib/cmd/internal/df.js:160
 msgid "Bad response: "
 msgstr ""
 
-#: lib/cmd/fh2/app/act.js:92
-#: lib/cmd/fh3/app/_baseCloudRequest.js:67
+#: lib/cmd/fh2/app/act.js:93
+#: lib/cmd/fh3/app/_baseCloudRequest.js:70
 msgid " code: "
 msgstr ""
 
@@ -1800,7 +1789,7 @@ msgstr ""
 
 #: lib/cmd/fh2/app/create.js:115
 #: lib/cmd/fh3/app/create.js:75
-#: lib/cmd/fh3/projects.js:120
+#: lib/cmd/fh3/projects.js:132
 #: lib/cmd/fh3/services.js:131
 msgid "Template not found: "
 msgstr ""
@@ -1910,7 +1899,7 @@ msgid "runtime needs to be set as runtime=node08"
 msgstr ""
 
 #: lib/cmd/fh2/app/stage.js:71
-#: lib/cmd/internal/df.js:173
+#: lib/cmd/internal/df.js:179
 #: lib/cmd/internal/messaging.js:82
 msgid "Wrong arguments for or unknown action: "
 msgstr ""
@@ -1987,23 +1976,23 @@ msgstr ""
 msgid "Fetching project ZIP from GitHub... "
 msgstr ""
 
-#: lib/cmd/fh2/init.js:35
+#: lib/cmd/fh2/init.js:36
 msgid "done!"
 msgstr ""
 
-#: lib/cmd/fh2/init.js:36
+#: lib/cmd/fh2/init.js:37
 msgid "Processing ZIP file... "
 msgstr ""
 
-#: lib/cmd/fh2/init.js:51
+#: lib/cmd/fh2/init.js:52
 msgid "Done!"
 msgstr ""
 
-#: lib/cmd/fh2/init.js:52
+#: lib/cmd/fh2/init.js:53
 msgid "Project init complete."
 msgstr ""
 
-#: lib/cmd/fh2/init.js:57
+#: lib/cmd/fh2/init.js:58
 msgid "Failed!"
 msgstr ""
 
@@ -2039,15 +2028,19 @@ msgstr ""
 msgid "App Undeployed"
 msgstr ""
 
-#: lib/cmd/fh3/admin/domains.js:7
+#: lib/cmd/fh3/admin/domains.js:8
 msgid "Manage Domains"
 msgstr ""
 
-#: lib/cmd/fh3/admin/domains.js:28
+#: lib/cmd/fh3/admin/domains.js:22
+msgid "Invalid domains command %s"
+msgstr ""
+
+#: lib/cmd/fh3/admin/domains.js:34
 msgid "type must be one of admin or developer"
 msgstr ""
 
-#: lib/cmd/fh3/admin/domains.js:38
+#: lib/cmd/fh3/admin/domains.js:44
 msgid "Error checking domain availability: "
 msgstr ""
 
@@ -2103,6 +2096,12 @@ msgstr ""
 #: lib/cmd/fh3/admin/environments/update.js:11
 #: lib/cmd/fh3/admin/teams/delete.js:10
 msgid "Some unique identifier for your environment"
+msgstr ""
+
+#: lib/cmd/fh3/admin/environments/delete.js:9
+msgid ""
+"OpenShift token required to delete an OpenShift environment project (can be "
+"obtained from OpenShift at /oauth/token/request)"
 msgstr ""
 
 #: lib/cmd/fh3/admin/environments/list.js:5
@@ -2194,50 +2193,66 @@ msgid "The id for the MBaaS"
 msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/create.js:3
-msgid "Creates an MBaaS."
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:8
-msgid "Some unique identifier for your MBaaS"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:9
-#: lib/cmd/fh3/admin/mbaas/update.js:9
-msgid "The hostname where your MBaaS exists"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:10
-#: lib/cmd/fh3/admin/mbaas/update.js:10
-msgid "Service key to authenticate the MBaaS"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:11
-#: lib/cmd/fh3/admin/mbaas/update.js:11
-msgid "MBaaS Username"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:12
-#: lib/cmd/fh3/admin/mbaas/update.js:12
-msgid "MBaaS Password"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:13
-#: lib/cmd/fh3/admin/mbaas/update.js:13
-msgid "flag them mbaas as decoupled"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:14
-#: lib/cmd/fh3/admin/mbaas/update.js:14
-msgid "The size of the MBaaS"
-msgstr ""
-
-#: lib/cmd/fh3/admin/mbaas/create.js:15
-msgid "A label to apply to the MBaaS, defaults to id if not specified"
+msgid "Creates an MBaaS Target."
 msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/create.js:16
-#: lib/cmd/fh3/admin/mbaas/update.js:16
-msgid "Determines if the MBaaS target is editable for non-reseller users"
+msgid "Some unique identifier for your MBaaS"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:17
+#: lib/cmd/fh3/admin/mbaas/update.js:17
+msgid ""
+"[FeedHenry] The hostname where your MBaaS exists / [OpenShift 3] URL where "
+"the OpenShift Master(s) API is available (e.g. "
+"https://master.openshift.example.com:8443)"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:18
+#: lib/cmd/fh3/admin/mbaas/update.js:18
+msgid "Service key to authenticate the MBaaS"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:19
+#: lib/cmd/fh3/admin/mbaas/update.js:19
+msgid "[FeedHenry] MBaaS Username"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:20
+#: lib/cmd/fh3/admin/mbaas/update.js:20
+msgid "[FeedHenry] MBaaS Password"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:21
+#: lib/cmd/fh3/admin/mbaas/update.js:21
+msgid ""
+"[OpenShift 3] The wildcard DNS entry for your OpenShift Router (e.g. "
+"*.cloudapps.example.com)"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:22
+#: lib/cmd/fh3/admin/mbaas/update.js:22
+msgid ""
+"[OpenShift 3] Exposed route where fh-mbaas is running in OpenShift 3 (e.g. "
+"https://my-mbaas.openshift.example.com)"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:23
+msgid "The type of MBaaS Target (feedhenry/openshift3)"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:24
+#: lib/cmd/fh3/admin/mbaas/update.js:23
+msgid "flag them mbaas as decoupled"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:25
+#: lib/cmd/fh3/admin/mbaas/update.js:24
+msgid "The size of the MBaaS"
+msgstr ""
+
+#: lib/cmd/fh3/admin/mbaas/create.js:26
+msgid "A label to apply to the MBaaS, defaults to id if not specified"
 msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/delete.js:3
@@ -2246,7 +2261,7 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/delete.js:8
 #: lib/cmd/fh3/admin/mbaas/read.js:8
-#: lib/cmd/fh3/admin/mbaas/update.js:8
+#: lib/cmd/fh3/admin/mbaas/update.js:16
 msgid "Some unique MBaaS identifier"
 msgstr ""
 
@@ -2263,10 +2278,10 @@ msgid "Read an MBaaS."
 msgstr ""
 
 #: lib/cmd/fh3/admin/mbaas/update.js:3
-msgid "Update an MBaaS."
+msgid "Update an MBaaS Target."
 msgstr ""
 
-#: lib/cmd/fh3/admin/mbaas/update.js:15
+#: lib/cmd/fh3/admin/mbaas/update.js:25
 msgid "A label to apply to the MBaaS"
 msgstr ""
 
@@ -2274,11 +2289,11 @@ msgstr ""
 msgid "Manage status"
 msgstr ""
 
-#: lib/cmd/fh3/admin/status.js:17
+#: lib/cmd/fh3/admin/status.js:20
 msgid "Invalid component"
 msgstr ""
 
-#: lib/cmd/fh3/admin/status.js:23
+#: lib/cmd/fh3/admin/status.js:26
 msgid "error getting status"
 msgstr ""
 
@@ -2360,19 +2375,19 @@ msgstr ""
 msgid "The lifecycle environment your application is running in, e.g. dev"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:18
+#: lib/cmd/fh3/app/_baseCloudRequest.js:20
 msgid "Unique 24 character GUID of the app you want to do a request on"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:19
+#: lib/cmd/fh3/app/_baseCloudRequest.js:21
 msgid "Environment within which the request should be performed"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:20
+#: lib/cmd/fh3/app/_baseCloudRequest.js:22
 msgid "Request body to send thru"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:36
+#: lib/cmd/fh3/app/_baseCloudRequest.js:38
 msgid "App %s not found for environment %s"
 msgstr ""
 
@@ -2466,6 +2481,7 @@ msgstr ""
 #: lib/cmd/fh3/app/delete.js:16
 #: lib/cmd/fh3/app/hosts.js:15
 #: lib/cmd/fh3/app/read.js:16
+#: lib/cmd/fh3/cordova/migrate.js:13
 msgid "Unique 24 character GUID of the app you want to delete"
 msgstr ""
 
@@ -3626,6 +3642,18 @@ msgstr ""
 msgid "Error reading Connections: "
 msgstr ""
 
+#: lib/cmd/fh3/cordova/migrate.js:5
+msgid ""
+"Migrate a Cordova Light app (config.json) to a full cordova app "
+"(config.xml)."
+msgstr ""
+
+#: lib/cmd/fh3/cordova/migrate.js:6
+msgid ""
+"Migrate a cordova light app (config.json) to a full cordova app "
+"(config.xml) with id 2b"
+msgstr ""
+
 #: lib/cmd/fh3/credentials.js:4
 msgid "Operations on credential bundles"
 msgstr ""
@@ -3661,15 +3689,15 @@ msgid ""
 "current working directory."
 msgstr ""
 
-#: lib/cmd/fh3/projects.js:95
+#: lib/cmd/fh3/projects.js:99
 msgid "Error creating project: "
 msgstr ""
 
-#: lib/cmd/fh3/projects.js:146
+#: lib/cmd/fh3/projects.js:161
 msgid "Error reading Project: "
 msgstr ""
 
-#: lib/cmd/fh3/projects.js:154
+#: lib/cmd/fh3/projects.js:169
 msgid "Error deleting project: "
 msgstr ""
 
@@ -3801,30 +3829,30 @@ msgstr ""
 msgid "Global Options"
 msgstr ""
 
-#: lib/cmd/fhc/login.js:25
+#: lib/cmd/fhc/login.js:24
 msgid ""
 "fhc login <username> <password>\n"
 "You are prompted for username/password if none are provided."
 msgstr ""
 
-#: lib/cmd/fhc/login.js:26
+#: lib/cmd/fhc/login.js:25
 msgid "Login to FeedHenry"
 msgstr ""
 
-#: lib/cmd/fhc/login.js:32
+#: lib/cmd/fhc/login.js:31
 msgid "You must compile node with ssl support to use login"
 msgstr ""
 
-#: lib/cmd/fhc/login.js:41
+#: lib/cmd/fhc/login.js:40
 msgid "Username: "
 msgstr ""
 
-#: lib/cmd/fhc/login.js:48
-#: lib/cmd/fhc/login.js:61
+#: lib/cmd/fhc/login.js:47
+#: lib/cmd/fhc/login.js:60
 msgid "Password: "
 msgstr ""
 
-#: lib/cmd/fhc/login.js:70
+#: lib/cmd/fhc/login.js:69
 msgid "Please specify username and password."
 msgstr ""
 
@@ -3849,7 +3877,9 @@ msgid ""
 msgstr ""
 
 #: lib/cmd/fhc/login.js:137
-msgid "login failed: "
+msgid ""
+"There was an error with your Username/Password combination. Please try "
+"again."
 msgstr ""
 
 #: lib/cmd/fhc/login.js:168
@@ -3904,6 +3934,10 @@ msgstr ""
 msgid " - now, log in.\n"
 msgstr ""
 
+#: lib/cmd/fhc/target.js:140
+msgid "error pinging target"
+msgstr ""
+
 #: lib/cmd/fhc/targets.js:7
 msgid "List the stored FeedHenry Targets"
 msgstr ""
@@ -3916,19 +3950,19 @@ msgstr ""
 msgid "DynoFarm commands"
 msgstr ""
 
-#: lib/cmd/internal/df.js:99
+#: lib/cmd/internal/df.js:101
 msgid "Error parsing apps: "
 msgstr ""
 
-#: lib/cmd/internal/df.js:136
+#: lib/cmd/internal/df.js:141
 msgid "Error parsing: "
 msgstr ""
 
-#: lib/cmd/internal/df.js:161
+#: lib/cmd/internal/df.js:167
 msgid "Error parsing app: "
 msgstr ""
 
-#: lib/cmd/internal/df.js:182
+#: lib/cmd/internal/df.js:188
 msgid "Must define DynoFarm URLs before accessing FeedHenry DynoFarm Server."
 msgstr ""
 
@@ -3977,39 +4011,39 @@ msgstr ""
 msgid "Error reading Projects: "
 msgstr ""
 
-#: lib/common.js:915
+#: lib/common.js:919
 msgid "Error creating env var: "
 msgstr ""
 
-#: lib/common.js:919
+#: lib/common.js:923
 msgid "Error reading env var: "
 msgstr ""
 
-#: lib/common.js:929
+#: lib/common.js:933
 msgid "Error updating env var: "
 msgstr ""
 
-#: lib/common.js:933
+#: lib/common.js:937
 msgid "Error deleting env var: "
 msgstr ""
 
-#: lib/common.js:937
+#: lib/common.js:941
 msgid "Error listing env var: "
 msgstr ""
 
-#: lib/common.js:941
+#: lib/common.js:945
 msgid "Error unseting env var:"
 msgstr ""
 
-#: lib/common.js:945
+#: lib/common.js:949
 msgid "Error pushing env vars:"
 msgstr ""
 
-#: lib/common.js:949
+#: lib/common.js:953
 msgid "Error listing deployed env vars:"
 msgstr ""
 
-#: lib/common.js:958
+#: lib/common.js:962
 msgid "Invalid argument format: "
 msgstr ""
 
@@ -4099,11 +4133,11 @@ msgstr ""
 msgid "Error checking MBaaS type"
 msgstr ""
 
-#: lib/utils/mbaas-token-check.js:18
+#: lib/utils/mbaas-token-check.js:16
 msgid "OpenShift targets require a token to be provided"
 msgstr ""
 
-#: lib/utils/mbaas-token-check.js:22
+#: lib/utils/mbaas-token-check.js:20
 msgid "FeedHenry targets do not accept tokens"
 msgstr ""
 
@@ -4123,31 +4157,31 @@ msgstr ""
 msgid "cancelled"
 msgstr ""
 
-#: lib/utils/request.js:46
+#: lib/utils/request.js:45
 msgid "Error - not 2xx status code. (%s)\n"
 msgstr ""
 
-#: lib/utils/request.js:78
+#: lib/utils/request.js:77
 msgid "favicon.ico isn't a package, it's a picture."
 msgstr ""
 
-#: lib/utils/request.js:195
+#: lib/utils/request.js:194
 msgid "error parsing json"
 msgstr ""
 
-#: lib/utils/request.js:268
+#: lib/utils/request.js:267
 msgid "Error Uploading File"
 msgstr ""
 
-#: lib/utils/request.js:309
+#: lib/utils/request.js:308
 msgid "Saved to %s"
 msgstr ""
 
-#: lib/utils/request.js:460
+#: lib/utils/request.js:463
 msgid "Must target a feedhenry domain first."
 msgstr ""
 
-#: lib/utils/request.js:470
+#: lib/utils/request.js:473
 msgid "Must define messaging URL before accessing FeedHenry Message Server."
 msgstr ""
 
