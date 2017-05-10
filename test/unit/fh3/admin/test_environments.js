@@ -38,7 +38,7 @@ module.exports = {
     adminenvironments.create({ label: 'lbl1', target: 'testTarget1', id: '1a' }, function(err, data) {
       assert.equal(err, null);
 
-      assert.equal(data.target.id, 'testTarget1');
+      assert.equal(data.target, 'testTarget1');
       assert.equal(data.label, 'lbl1');
       assert.equal(data.id, '1a');
       return cb();
