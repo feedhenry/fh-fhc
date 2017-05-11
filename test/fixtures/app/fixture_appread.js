@@ -1,14 +1,14 @@
 var nock = require('nock');
 var headers = { 'Content-Type': 'application/json' };
 
-module.exports = function(n){
+module.exports = function(n) {
   return nock('https://apps.feedhenry.com')
   .filteringRequestBody(function() {
     return '*';
   })
   .post('/box/srv/1.1/ide/apps/app/read', '*')
   .times(n)
-  .reply(200, function(){
+  .reply(200, function() {
     return {
       "app": {
         "guid": "1a",

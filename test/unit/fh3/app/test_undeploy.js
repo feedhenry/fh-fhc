@@ -3,14 +3,14 @@ var assert = require('assert');
 var url = require('url');
 
 module.exports = {
-  'test app undeploy command happy path': function (done) {
+  'test app undeploy command happy path': function(done) {
     var params = {
       env: "dev",
       domain: "testing",
       id: "j7hslnrb257zkr4qzjndoqkl"
     };
 
-    undeploy.preCmd(params, function (err, parsed) {
+    undeploy.preCmd(params, function(err, parsed) {
       // If embed flag is not set we must send false
       assert.equal(err, null);
       assert.equal(parsed.embed, false);
@@ -29,7 +29,7 @@ module.exports = {
     });
   },
 
-  'test app undeploy command with embed flag set': function (done) {
+  'test app undeploy command with embed flag set': function(done) {
     var params = {
       env: "dev",
       domain: "testing",
@@ -37,7 +37,7 @@ module.exports = {
       id: "j7hslnrb257zkr4qzjndoqkl"
     };
 
-    undeploy.preCmd(params, function (err, parsed) {
+    undeploy.preCmd(params, function(err, parsed) {
       assert.equal(err, null);
       // If embed flag is not set we must send false
       assert.equal(parsed.embed, true);

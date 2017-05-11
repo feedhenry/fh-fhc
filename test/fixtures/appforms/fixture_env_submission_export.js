@@ -30,17 +30,17 @@ var mockSubmission = {
 };
 
 var envReplies = {
-  list: function(){
+  list: function() {
     return {
       pages: 22,
       total: 4000,
       submissions: [mockSubmission]
     };
   },
-  get: function(){
+  get: function() {
     return mockSubmission;
   },
-  getFile: function(){
+  getFile: function() {
     return fs.createReadStream(filePath);
   },
   exportStatusInProgress: function() {
@@ -55,7 +55,7 @@ var envReplies = {
       message: 'Async CSV export is unavailable for this environment'
     };
   },
-  exportStatusComplete: function () {
+  exportStatusComplete: function() {
     return {
       status: 'complete',
       message: 'Submission CSV Export complete',

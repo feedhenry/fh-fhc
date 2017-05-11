@@ -5,4 +5,4 @@ module.exports = nock('https://apps.feedhenry.com')
   return '*';
 })
 .get('/sys/info/version', '*')
-.reply(200, function(){ return '0.5.0-39'; });
+.reply(200, function() { return '0.5.0-39'; });

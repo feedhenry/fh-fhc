@@ -1,15 +1,15 @@
 var nock = require('nock');
 
-function _cacheKeyUrl(n){
+function _cacheKeyUrl(n) {
   return '/box/srv/1.1/dat/log/read';
 }
 
 var buildReplies = {
   headers : { 'Content-Type': 'application/json' },
-  deliver : function(){
+  deliver : function() {
     return { "cacheKey": "cachekeybeehatch" };
   },
-  cacheKey : function(){
+  cacheKey : function() {
     return [{
       "action": {},
       "cacheKey": "cachekeybeehatch",
@@ -18,7 +18,7 @@ var buildReplies = {
       "status": "pending"
     }];
   },
-  cacheKeyBuildSuccess : function(){
+  cacheKeyBuildSuccess : function() {
     return [{"action":{"ota_url":"https://ota.com/android.zip","url":"https://apk.com/android.apk"},"cacheKey":"cachekeybeehatch","error":"","log":["Build complete"],"status":"complete"}];
   }
 };

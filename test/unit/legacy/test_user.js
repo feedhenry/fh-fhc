@@ -5,7 +5,7 @@ var util = require('util');
 
 module.exports = {
   'test user': function(cb) {
-    user({ _ : ['']}, function (err, data) {
+    user({ _ : ['']}, function(err, data) {
       assert.equal(err, null, "Err not null: " + util.inspect(err));
       assert.ok(data);
       return cb();

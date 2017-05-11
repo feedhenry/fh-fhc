@@ -1,6 +1,6 @@
 var nock = require('nock');
 
-var logReply = function(){
+var logReply = function() {
   return {
     "log": {
       "stderr": "",

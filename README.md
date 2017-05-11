@@ -41,13 +41,13 @@ First, install &  add it to your project dependencies by doing `npm install --sa
 Then, you can require it in your code like so:
 
     var fhc = require('./lib/fhc');
-    fhc.load(function(err){
-      if (err){
+    fhc.load(function(err) {
+      if (err) {
         // Something went wrong
       }
       // FHC started up OK - we can now perform commands, like listing projects:
-      fhc.projects({_ : []}, function(err, projects){
-        if (err){
+      fhc.projects({_ : []}, function(err, projects) {
+        if (err) {
           // Handle error
         }
         console.log(projects);
@@ -56,12 +56,12 @@ Then, you can require it in your code like so:
 
 Some commands require params to be passed in - these are typically passed like so:
 
-    fhc.app.create({ title : 'Some title', project : 'someProjectId'}, function(){
+    fhc.app.create({ title : 'Some title', project : 'someProjectId'}, function() {
     });
 
 Older fhc commands still pass arguments in an ordered array, as below. The environment is still specified outside the array.
 
-    fhc.app.logs({_ : ['projectId', 'appId'], env : 'dev' }, function(){
+    fhc.app.logs({_ : ['projectId', 'appId'], env : 'dev' }, function() {
     });
 
 ### From Docker

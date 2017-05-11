@@ -1,7 +1,7 @@
 var nock = require('nock');
 var cloudReplies = {
   headers : { 'Content-Type': 'application/json' },
-  hosts : function(){
+  hosts : function() {
     return {
       "hosts": {
         "development-name": "ngui-demo-1a",
@@ -15,7 +15,7 @@ var cloudReplies = {
   }
 };
 
-module.exports = function(n){
+module.exports = function(n) {
   return nock('https://apps.feedhenry.com')
   .filteringRequestBody(function() {
     return '*';

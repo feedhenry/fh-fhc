@@ -1,7 +1,7 @@
 var nock = require('nock');
 var appReplies = {
   headers : { 'Content-Type': 'application/json' },
-  create : function(){
+  create : function() {
     return {
       "guid": "Ts0J1_NG799HL8ER4arN3LKZ",
       "status": "ok",
@@ -9,7 +9,7 @@ var appReplies = {
       "_etag": "\"kP99hYXTFI6RIs5xpi2N2F\""
     };
   },
-  read : function(){
+  read : function() {
     return {
       "app": {
         "config": {},
@@ -30,7 +30,7 @@ var appReplies = {
       "_etag": "\"9MivSOQ-3BCUBr0X8hvZjk\""
     };
   },
-  delete : function(){
+  delete : function() {
     return {
       "inst": {
         "id": "vMjTeuszvyOKzfERgXlWc721",
@@ -53,7 +53,7 @@ module.exports = nock('https://apps.feedhenry.com')
 .reply(200, appReplies.delete, appReplies.headers)
 .post('/box/srv/1.1/ide/apps/app/read', '*')
 .reply(200, appReplies.read, appReplies.headers)
-.get('/box/srv/1.1/dat/log/read').query(function(actualQueryObject){
+.get('/box/srv/1.1/dat/log/read').query(function(actualQueryObject) {
     return true;
   })
-.reply(200, function(){ return {}; }, appReplies.headers);
+.reply(200, function() { return {}; }, appReplies.headers);

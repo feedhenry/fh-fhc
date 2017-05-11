@@ -89,13 +89,13 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['fh:default']);
 
   grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:fh-run-array:docsToDoxy']);
-  grunt.registerTask('docs-index', function(){
+  grunt.registerTask('docs-index', function() {
     var fhc = require('./lib/fhc.js');
 
     /*
      Generates the contents of an index.html file for the tree of (fh3) commands, nicely formatted
      */
-    function _genIndex(tree, level){
+    function _genIndex(tree, level) {
       var output = [],
         recursors = [], // keep these until last in any list so the .cols look nice
         keys = Object.keys(tree),
@@ -108,30 +108,30 @@ module.exports = function(grunt) {
       }
       output.push(indent + '\t<h3>' + tree._groupName + '</h3>');
 
-      for (var i=0; i<keys.length; i++){
+      for (var i=0; i<keys.length; i++) {
         var key = keys[i],
           cmd = tree[key],
           cmdPath = cmd._path,
           name = cmd._cmdName;
 
-        if (key[0] === '_'){
+        if (key[0] === '_') {
           continue;
         }
 
         // Add an entry to our index.md file
-        if (typeof cmd === 'object'){
+        if (typeof cmd === 'object') {
           // recurse
           var recurseRes = _genIndex(cmd, level+1);
           // For 1st-level commands, we want to make sure the sub-commands appear last in the list
-          if (level === 1){
+          if (level === 1) {
             recursors = recursors.concat(recurseRes);
-          }else{
+          } else {
             output = output.concat(recurseRes);
           }
-        }else{
+        } else {
           // First check if a docs article exists for this command - if not, let's not write it to this index..
           var docMdPath = path.join('doc', cmdPath.replace(/\.js$/, '.md'));
-          if (!fs.existsSync(docMdPath)){
+          if (!fs.existsSync(docMdPath)) {
             console.log('Warning: No docs file found for ' + docMdPath);
             continue;
           }
@@ -167,12 +167,12 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('docs-generate', function(){
+  grunt.registerTask('docs-generate', function() {
     var fhc = require('./lib/fhc.js'),
       help = require('./lib/cmd/fhc/help.js'),
       docsDir = path.join(__dirname, 'doc');
 
-    function writeDocFile(usage, cmd, cb){
+    function writeDocFile(usage, cmd, cb) {
       var cmdPath = cmd._path,
         writeTo;
       cmdPath = cmdPath.replace(/\.js$/, '.md'); // Replace the JS extension with that of a markdown file
@@ -180,19 +180,19 @@ module.exports = function(grunt) {
       fs.outputFile(writeTo, usage, cb);
     }
 
-    function genDocs(tree){
+    function genDocs(tree) {
       var writerFns = [];
       var keys = Object.keys(tree);
-      for (var i=0; i<keys.length; i++){
+      for (var i=0; i<keys.length; i++) {
         var key = keys[i],
           cmd = tree[key];
 
         // If it's a new-style command, push the getter onto the stack-o-getters..
-        if (cmd.demand){
-          (function(safeClosureCmd){
-            writerFns.push(function(cb){
-              help.singleCommandUsageToMd(safeClosureCmd, function(err, usage){
-                if (err){
+        if (cmd.demand) {
+          (function(safeClosureCmd) {
+            writerFns.push(function(cb) {
+              help.singleCommandUsageToMd(safeClosureCmd, function(err, usage) {
+                if (err) {
                   return cb(err);
                 }
                 return writeDocFile(usage, safeClosureCmd, cb);
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
             });
           })(cmd);
 
-        }else if (typeof cmd === 'object'){
+        } else if (typeof cmd === 'object') {
           // recurse
           writerFns = writerFns.concat(genDocs(cmd));
         }
@@ -210,7 +210,7 @@ module.exports = function(grunt) {
 
     var done = this.async();
 
-    fhc.load(function(){
+    fhc.load(function() {
       var tree = fhc._tree,
         writers = genDocs(tree, done);
       async.parallel(writers, done);

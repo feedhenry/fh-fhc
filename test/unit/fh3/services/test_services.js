@@ -9,8 +9,8 @@ var mockDataSource = dataSourceFixtures.get();
 
 
 module.exports = {
-  "It Should List Data Sources For A Service": function(done){
-    servicesCmd({_: ['data-sources', mockService.guid]}, function(err, serviceDataSources){
+  "It Should List Data Sources For A Service": function(done) {
+    servicesCmd({_: ['data-sources', mockService.guid]}, function(err, serviceDataSources) {
       assert.ok(!err, "Expected No Error");
       //Should be an array of data sources.
       assert.equal(mockDataSource._id, serviceDataSources[0]._id);

@@ -11,7 +11,7 @@ var appformsthemes = {
 };
 module.exports = {
   'test appforms-forms list': function(cb) {
-    appformsthemes.list({}, function (err, data){
+    appformsthemes.list({}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'somethemeid');
@@ -19,33 +19,33 @@ module.exports = {
     });
   },
   'test appforms-forms read': function(cb) {
-    appformsthemes.read({ id : 'somethemeid'}, function (err, data){
+    appformsthemes.read({ id : 'somethemeid'}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somethemeid');
       return cb();
     });
   },
   'test appforms-forms create': function(cb) {
-    appformsthemes.create({ themefile : "test/fixtures/appforms/fixture_form.json" }, function (err, data){
+    appformsthemes.create({ themefile : "test/fixtures/appforms/fixture_form.json" }, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somethemeid');
       return cb();
     });
   },
   'test appforms-forms update': function(cb) {
-    appformsthemes.update({ id: 'somethemeid', themefile : "test/fixtures/appforms/fixture_form.json" }, function (err){
+    appformsthemes.update({ id: 'somethemeid', themefile : "test/fixtures/appforms/fixture_form.json" }, function(err) {
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms delete': function(cb) {
-    appformsthemes.delete({ id : 'somethemeid' }, function (err){
+    appformsthemes.delete({ id : 'somethemeid' }, function(err) {
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms clone': function(cb) {
-    appformsthemes.clone({ id : 'somethemeid' }, function (err){
+    appformsthemes.clone({ id : 'somethemeid' }, function(err) {
       assert.equal(err, null);
       return cb();
     });
