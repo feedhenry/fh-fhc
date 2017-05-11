@@ -7,7 +7,11 @@
     "feedhenry"
   ],
   "preferGlobal": true,
-  "homepage": "http://git.io/fh-fhc",
+  "homepage": "https://github.com/feedhenry/fh-fhc",
+  "repository" : {
+    "type" : "git",
+    "url" : "git+https://github.com/feedhenry/fh-fhc.git"
+  },
   "author": "FeedHenry<npm@feedhenry.com>",
   "directories": {
     "doc": "./doc",
