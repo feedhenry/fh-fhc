@@ -63,7 +63,6 @@
   },
   "extends": "eslint:recommended",
   "rules": {
-    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     "array-callback-return": "warn",
     "complexity": ["warn", 20],
     "eqeqeq": "error",
