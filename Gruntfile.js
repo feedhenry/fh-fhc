@@ -2,6 +2,7 @@
 
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
+  require('load-grunt-tasks')(grunt)
 
   var path = require('path');
   var fs = require('fs-extra');
@@ -32,6 +33,13 @@ module.exports = function(grunt) {
       'cp -rf doc/fhc/ ../fh-doxy/public/dev_tools/fhc/',
       'cp doc/index.md ../fh-doxy/public/dev_tools/fhc.md'
     ],
+
+    eslint: {
+      options: {
+        configFile: '.eslintrc.json'
+      },
+      target: ['lib/**/*.js']
+    },
 
     jsxgettext: {
       pot: {
