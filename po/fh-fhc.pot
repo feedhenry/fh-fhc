@@ -687,28 +687,6 @@ msgstr ""
 msgid "failed to delete cluster prop"
 msgstr ""
 
-#: lib/cmd/common/configuration.js:10
-msgid "Manage client app configuration properties"
-msgstr ""
-
-#: lib/cmd/common/configuration.js:14
-msgid ""
-"\n"
-"where destination can be one of: %s or 'all'"
-msgstr ""
-
-#: lib/cmd/common/configuration.js:54
-msgid "Error listing destination config: "
-msgstr ""
-
-#: lib/cmd/common/configuration.js:82
-msgid "Error setting destination config: "
-msgstr ""
-
-#: lib/cmd/common/configuration.js:95
-msgid "Usage:"
-msgstr ""
-
 #: lib/cmd/common/deploy-target.js:12
 msgid "Operations on Cloud Deploy Targets"
 msgstr ""
