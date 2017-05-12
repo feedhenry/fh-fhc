@@ -87,7 +87,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jsxgettext');
   grunt.loadNpmTasks('grunt-zanata-js');
 
-  grunt.registerTask('test', ['fh:test']);
+  grunt.registerTask('test', ['eslint','fh:test']);
   grunt.registerTask('unit', ['jshint', 'fh:unit']);
   grunt.registerTask('accept', ['fh:accept']);
   grunt.registerTask('coverage', ['fh:coverage']);
