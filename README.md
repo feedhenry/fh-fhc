@@ -167,3 +167,14 @@ Prior to do that, please make sure you have an account on the Zanata server. if 
 
 ## Node version :
 FHC requires node 4.4.x version
+
+## Javascript style & syntax
+
+Javascript style & syntax can be checked using:
+
+```
+grunt eslint
+```
+
+* eslint configuration is in `.eslintrc.json`
+* If eslint has any errors, the build will fail
