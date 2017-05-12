@@ -1,13 +1,13 @@
 var nock = require('nock');
 var cloudReplies = {
   headers: {'Content-Type': 'application/json'},
-  act: function (){
+  act: function() {
     return {ok: true, status: 'ok'};
   }
 };
 
 module.exports = nock('https://apps.feedhenry.com')
-  .filteringRequestBody(function (){
+  .filteringRequestBody(function() {
     return '*';
   })
   .post('/some/custom/cloud/host')

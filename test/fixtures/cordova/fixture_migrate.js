@@ -1,7 +1,7 @@
 var nock = require('nock');
 var cloudReplies = {
   headers: {'Content-Type': 'application/json'},
-  response: function (){
+  response: function() {
     return {ok: true, status: 'ok'};
   }
 };

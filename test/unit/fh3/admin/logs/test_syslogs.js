@@ -12,7 +12,7 @@ module.exports = {
     adminLogs.syslogs({
       requestId: mockRequestId,
       projects: "core,mbaas"
-    }, function(err, searchResponse){
+    }, function(err, searchResponse) {
       assert.ok(!err, "Expected no error " + err);
 
       //The search response should be JSON

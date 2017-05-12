@@ -1,13 +1,13 @@
 var nock = require('nock');
 
 var envReplies = {
-  crud : function(){
+  crud : function() {
     return {
       _id: "somethemeid",
       name: "Some Test Theme"
     };
   },
-  list : function(){
+  list : function() {
     return [envReplies.crud()];
   }
 };

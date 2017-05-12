@@ -19,8 +19,8 @@ var page = 1;
 var limit = 10;
 
 module.exports = {
-  'test appforms-submissions list': function (cb) {
-    appformsenvsubmissions.list({environment: "someenv", page: page, limit: limit}, function (err, data) {
+  'test appforms-submissions list': function(cb) {
+    appformsenvsubmissions.list({environment: "someenv", page: page, limit: limit}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
@@ -28,8 +28,8 @@ module.exports = {
       return cb();
     });
   },
-  'test appforms-submissions filter': function (cb) {
-    appformsenvsubmissions.filter({environment: "someenv", formid: "someformid", projectid: "someformproject", page: page, limit: limit}, function (err, data) {
+  'test appforms-submissions filter': function(cb) {
+    appformsenvsubmissions.filter({environment: "someenv", formid: "someformid", projectid: "someformproject", page: page, limit: limit}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
@@ -37,48 +37,48 @@ module.exports = {
       return cb();
     });
   },
-  'test appforms-submissions read': function (cb) {
-    appformsenvsubmissions.read({environment: "someenv", id: "somesubmissionid"}, function (err, data) {
+  'test appforms-submissions read': function(cb) {
+    appformsenvsubmissions.read({environment: "someenv", id: "somesubmissionid"}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somesubmissionid');
       return cb();
     });
   },
-  'test appforms-submissions complete': function (cb) {
-    appformsenvsubmissions.complete({environment: "someenv", id: "somesubmissionid"}, function (err, data) {
+  'test appforms-submissions complete': function(cb) {
+    appformsenvsubmissions.complete({environment: "someenv", id: "somesubmissionid"}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somesubmissionid');
       return cb();
     });
   },
-  'test appforms-submissions create': function (cb) {
+  'test appforms-submissions create': function(cb) {
     appformsenvsubmissions.create({
       environment: "someenv",
       submissiondata: "test/fixtures/appforms/fixture_submission.json"
-    }, function (err, data) {
+    }, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somesubmissionid');
       return cb();
     });
   },
-  'test appforms-submissions delete': function (cb) {
-    appformsenvsubmissions.delete({environment: "someenv", id: "somesubmissionid"}, function (err, data) {
+  'test appforms-submissions delete': function(cb) {
+    appformsenvsubmissions.delete({environment: "someenv", id: "somesubmissionid"}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'somesubmissionid');
       return cb();
     });
   },
-  'test appforms-submissions update': function (cb) {
+  'test appforms-submissions update': function(cb) {
     appformsenvsubmissions.update({
       environment: "someenv",
       id: "somesubmissionid",
       submissiondata: "test/fixtures/appforms/fixture_submission.json"
-    }, function (err) {
+    }, function(err) {
       assert.equal(err, null);
       return cb();
     });
   },
-  'test appforms-submissions exportcsv async': function (cb) {
+  'test appforms-submissions exportcsv async': function(cb) {
     var csvExportAsyncRequests = submissionExportMocks.getCSVExportAsyncMocks();
     var getCSVExportAsyncFileDownloadMocks = submissionExportMocks.getCSVExportAsyncFileDownloadMocks();
     var testOutputZipFile = 'testexportasync.zip';
@@ -97,12 +97,12 @@ module.exports = {
       getCSVExportAsyncFileDownloadMocks.done();
 
       //Cleaning up the output file if it exists.
-      fs.unlink(testOutputZipFile, function(){
+      fs.unlink(testOutputZipFile, function() {
         cb();
       });
     });
   },
-  'test appforms-submissions exportcsv async unavailable': function (cb) {
+  'test appforms-submissions exportcsv async unavailable': function(cb) {
     var csvExportAsyncRequests = submissionExportMocks.getCSVExportAsyncUnavailable();
     var testOutputZipFile = 'testexportasync.zip';
 
@@ -119,7 +119,7 @@ module.exports = {
       cb();
     });
   },
-  'test appforms-submissions exportcsv sync': function (cb) {
+  'test appforms-submissions exportcsv sync': function(cb) {
     var csvExportSyncRequests = submissionExportMocks.getCSVExportSyncMocks();
     var testOutputZipFile = 'testexportsync.zip';
 
@@ -133,7 +133,7 @@ module.exports = {
       csvExportSyncRequests.done();
 
       //Cleaning up the output file if it exists.
-      fs.unlink(testOutputZipFile, function(){
+      fs.unlink(testOutputZipFile, function() {
         cb();
       });
     });

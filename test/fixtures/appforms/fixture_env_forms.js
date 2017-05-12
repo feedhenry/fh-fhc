@@ -1,7 +1,7 @@
 var nock = require('nock');
 
 var envReplies = {
-  crud : function(){
+  crud : function() {
     return {
       _id: "someformid",
       name: "Some Test Form"
@@ -12,10 +12,10 @@ var envReplies = {
     systemDetail: "Environment with ID wrongenvid not found.",
     code: "FH-SUPERCORE-ERROR"
   },
-  list : function(){
+  list : function() {
     return [envReplies.crud()];
   },
-  lifecycle: function(){
+  lifecycle: function() {
     return [ {
       _id: "someformid",
       name: "Some Form",

@@ -1,7 +1,7 @@
 var testServiceGuid = "someserviceguid";
 
 module.exports = {
-  get: function(){
+  get: function() {
     return {
       _id: "somedatasource",
       name: "Some Data Source",
@@ -12,7 +12,7 @@ module.exports = {
       numAuditLogEntries: 100
     };
   },
-  apiResponse: function(){
+  apiResponse: function() {
     var ds = this.get();
 
     ds.service = {
@@ -22,7 +22,7 @@ module.exports = {
 
     return ds;
   },
-  withData: function(){
+  withData: function() {
     var ds = this.apiResponse();
 
     ds.currentStatus = {
@@ -32,7 +32,7 @@ module.exports = {
 
     return ds;
   },
-  withValidationResultValid: function(){
+  withValidationResultValid: function() {
     var ds = this.apiResponse();
 
     ds.validationResult = {
@@ -43,7 +43,7 @@ module.exports = {
 
     return ds;
   },
-  withValidationResultInvalid: function(){
+  withValidationResultInvalid: function() {
     var ds = this.apiResponse();
 
     ds.validationResult = {
@@ -54,7 +54,7 @@ module.exports = {
 
     return ds;
   },
-  dsDataSet: function(){
+  dsDataSet: function() {
     return [{
       key: "dskey1",
       value: "DS Value 1",
@@ -65,7 +65,7 @@ module.exports = {
       selected: true
     }];
   },
-  withAuditLogs: function(){
+  withAuditLogs: function() {
     var self = this;
     var ds = this.withData();
 
@@ -81,7 +81,7 @@ module.exports = {
       }
     }];
   },
-  withError: function(){
+  withError: function() {
     var ds = this.apiResponse();
 
     ds.currentStatus = {

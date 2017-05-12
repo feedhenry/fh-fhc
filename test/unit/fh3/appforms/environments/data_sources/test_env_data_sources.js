@@ -18,8 +18,8 @@ var appformsEnvDataSources = {
 
 
 module.exports = {
-  "test list environment data sources": function(done){
-    appformsEnvDataSources.list({environment: mockEnvId}, function(err, data){
+  "test list environment data sources": function(done) {
+    appformsEnvDataSources.list({environment: mockEnvId}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.ok(data._table, "Expected A Table For Listing Data Sources");
       assert.equal(data[0]._id, mockDs._id);
@@ -28,8 +28,8 @@ module.exports = {
       done();
     });
   },
-  "test read environment data source": function(done){
-    appformsEnvDataSources.read({environment: mockEnvId, id: mockDs._id}, function(err, data){
+  "test read environment data source": function(done) {
+    appformsEnvDataSources.read({environment: mockEnvId, id: mockDs._id}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
@@ -37,16 +37,16 @@ module.exports = {
       done();
     });
   },
-  "test read environment data source not found": function(done){
-    appformsEnvDataSources.read({environment: mockEnvId, id: "wrongdsid"}, function(err, data){
+  "test read environment data source not found": function(done) {
+    appformsEnvDataSources.read({environment: mockEnvId, id: "wrongdsid"}, function(err, data) {
       assert.ok(err.indexOf("Found") > -1, "Expected Not Found Error Message");
       assert.ok(!data, "Expected No Data");
 
       done();
     });
   },
-  "test validate environment data source": function(done){
-    appformsEnvDataSources.validate({environment: mockEnvId, name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, description: mockDs.description, refreshInterval: mockDs.refreshInterval}, function(err, data){
+  "test validate environment data source": function(done) {
+    appformsEnvDataSources.validate({environment: mockEnvId, name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, description: mockDs.description, refreshInterval: mockDs.refreshInterval}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.validationResult.valid, "Expected A Valid Response");
@@ -54,8 +54,8 @@ module.exports = {
       done();
     });
   },
-  "test validate environment data source invalid": function(done){
-    appformsEnvDataSources.validate({environment: mockEnvId, name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, description: mockDs.description, refreshInterval: mockDs.refreshInterval}, function(err, data){
+  "test validate environment data source invalid": function(done) {
+    appformsEnvDataSources.validate({environment: mockEnvId, name: mockDs.name, serviceGuid: mockDs.serviceGuid, endpoint: mockDs.endpoint, description: mockDs.description, refreshInterval: mockDs.refreshInterval}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
@@ -63,8 +63,8 @@ module.exports = {
       done();
     });
   },
-  "test refresh environment data source": function(done){
-    appformsEnvDataSources.refresh({environment: mockEnvId, id: mockDs._id}, function(err, data){
+  "test refresh environment data source": function(done) {
+    appformsEnvDataSources.refresh({environment: mockEnvId, id: mockDs._id}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
@@ -72,8 +72,8 @@ module.exports = {
       done();
     });
   },
-  "test get data source audit logs": function(done){
-    appformsEnvDataSources.auditLogs({environment: mockEnvId, id: mockDs._id}, function(err, data){
+  "test get data source audit logs": function(done) {
+    appformsEnvDataSources.auditLogs({environment: mockEnvId, id: mockDs._id}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");

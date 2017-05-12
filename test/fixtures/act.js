@@ -1,4 +1,4 @@
-var request = function (params, cb) {
+var request = function(params, cb) {
   var uri = params.uri || params.url,
     body = {};
   if (uri.match(/https:\/\/*.+-dev.feedhenry.com/)) {
@@ -8,7 +8,7 @@ var request = function (params, cb) {
   }
   return cb(null, {statusCode: 200}, body);
 };
-request.defaults = function () {
+request.defaults = function() {
   return request;
 };
 

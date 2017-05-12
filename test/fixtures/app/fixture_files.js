@@ -12,7 +12,7 @@ var mockFileRead = {
   "_etag": "\"HI51UacMWn1k8dE6O0qvS-\""
 };
 
-function mockFileList(){
+function mockFileList() {
   return {
     "children": [
       {
@@ -107,14 +107,14 @@ function mockFileList(){
   };
 }
 
-function mockFileUpdate(){
+function mockFileUpdate() {
   return {
     "status": "ok",
     "_etag": "\"2kGtWojqx9Rc38alMU8w8k\""
   };
 }
 
-function mockFileCreate (){
+function mockFileCreate () {
   return {
     guid: 'rDfYZYkRMYfEGaREzgm9Mu-5',
     path: '/client/default/js/test14432.js',
@@ -124,7 +124,7 @@ function mockFileCreate (){
   };
 }
 
-function mockFileDelete(){
+function mockFileDelete() {
   return {
     status: 'ok',
     _etag: '"2kGtWojqx9Rc38alMU8w8k"'

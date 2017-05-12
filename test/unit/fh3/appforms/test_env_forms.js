@@ -15,7 +15,7 @@ var appformsenvforms = {
 
 module.exports = {
   'test appforms-forms list': function(cb) {
-    appformsenvforms.list({environment: "someenv"}, function (err, data){
+    appformsenvforms.list({environment: "someenv"}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'someformid');
@@ -23,28 +23,28 @@ module.exports = {
     });
   },
   'test appforms-forms read': function(cb) {
-    appformsenvforms.read({ environment: "someenv", id : 'someformid'}, function (err, data){
+    appformsenvforms.read({ environment: "someenv", id : 'someformid'}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'someformid');
       return cb();
     });
   },
   'test appforms-forms update': function(cb) {
-    appformsenvforms.update({ environment: "someenv", id: 'someformid', formfile : "test/fixtures/appforms/fixture_form.json" }, function (err, data){
+    appformsenvforms.update({ environment: "someenv", id: 'someformid', formfile : "test/fixtures/appforms/fixture_form.json" }, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'someformid');
       return cb();
     });
   },
   'test appforms-forms deploy': function(cb) {
-    appformsenvforms.deploy({ id: 'someformid', environment: "someenv" }, function (err, data){
+    appformsenvforms.deploy({ id: 'someformid', environment: "someenv" }, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'someformid');
       return cb();
     });
   },
   'test appforms-forms deploy wrong environment': function(cb) {
-    appformsenvforms.deploy({ id: 'someformid', environment: "wrongenvid" }, function (err){
+    appformsenvforms.deploy({ id: 'someformid', environment: "wrongenvid" }, function(err) {
       assert.ok(err, "Expected an error");
       //An error should produce a request ID (see fixture_env_forms.js)
       assert.equal('requestid12345', err.requestId);
@@ -53,27 +53,27 @@ module.exports = {
     });
   },
   'test appforms-forms undeploy': function(cb) {
-    appformsenvforms.undeploy({ environment: "someenv", id : 'someformid' }, function (err){
+    appformsenvforms.undeploy({ environment: "someenv", id : 'someformid' }, function(err) {
       assert.equal(err, null);
       return cb();
     });
   },
   'test appforms-forms lifecycle': function(cb) {
-    appformsenvforms.lifecycle({}, function (err, data){
+    appformsenvforms.lifecycle({}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data[0].deployments[0].dev._id, 'someformid');
       return cb();
     });
   },
   'test appforms-forms copytocore': function(cb) {
-    appformsenvforms.copytocore({environment: "someenv", id: "someformid"}, function (err, data){
+    appformsenvforms.copytocore({environment: "someenv", id: "someformid"}, function(err, data) {
       assert.equal(err, null);
       assert.equal(data._id, 'someformid');
       return cb();
     });
   },
   'test appforms-forms promote': function(cb) {
-    appformsenvforms.promote({from: "someenvfrom", to: "someenvto", id: "someformid"}, function (err){
+    appformsenvforms.promote({from: "someenvfrom", to: "someenvto", id: "someformid"}, function(err) {
       assert.equal(err, null);
       return cb();
     });

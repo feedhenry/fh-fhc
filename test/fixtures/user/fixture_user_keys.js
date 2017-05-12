@@ -1,7 +1,7 @@
 var nock = require('nock');
 var assert = require('assert');
 
-var mockKeyList = function(){
+var mockKeyList = function() {
   return   {
     "status" : "ok",
     "list" : [{
@@ -17,7 +17,7 @@ var mockKeyList = function(){
   };
 };
 
-var mockKeyCreate = function(){
+var mockKeyCreate = function() {
   return {
     "status" : "ok",
     "apiKey" : {
@@ -33,7 +33,7 @@ var mockKeyCreate = function(){
   };
 };
 
-var mockKeyRevoked = function(){
+var mockKeyRevoked = function() {
   return {
     "status" : "ok",
     "apiKey" : {
@@ -49,7 +49,7 @@ var mockKeyRevoked = function(){
   };
 };
 
-var mockKeyUpdated = function(){
+var mockKeyUpdated = function() {
   return {
     "status" : "ok",
     "apiKey" : {

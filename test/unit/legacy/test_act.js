@@ -6,19 +6,19 @@ var liveActFixture = require('test/fixtures/app/fixture_live_act');
 var appHostsFixture = require('test/fixtures/app/fixture_hosts')(2);
 
 module.exports = {
-  setUp : function(cb){
+  setUp : function(cb) {
     return cb();
   },
   'test act functions': function(cb) {
     var argv = {
       _ : ['0123', 'somefunc','{\"name\":\"bono\"}', '--env=dev']
     };
-    act(argv, function (err, data){
+    act(argv, function(err, data) {
       assert.ok(!err, err);
       assert.equal(data.status, 'ok');
       assert.equal(typeof data.live, 'undefined');
       argv._[3] = '--env=live';
-      act(argv, function (err, data){
+      act(argv, function(err, data) {
         assert.equal(err, null, err);
         assert.equal(data.status, 'ok');
         assert.equal(data.live, true);
@@ -26,7 +26,7 @@ module.exports = {
       });
     });
   },
-  tearDown : function(cb){
+  tearDown : function(cb) {
     appReadFixture.done();
     appHostsFixture.done();
     liveActFixture.done();

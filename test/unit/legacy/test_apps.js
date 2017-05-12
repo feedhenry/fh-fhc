@@ -7,45 +7,45 @@ var ini = require('utils/ini.js');
 require('test/fixtures/app/fixture_create_read_delete');
 
 module.exports = {
-  setUp : function(cb){
+  setUp : function(cb) {
     ini.set('fhversion', 2);
     return cb();
   },
-  tearDown : function(cb){
+  tearDown : function(cb) {
     ini.set('fhversion', 3);
     return cb();
   },
-  'test apps list' : function(cb){
-    apps({_ : []}, function (err, data) {
+  'test apps list' : function(cb) {
+    apps({_ : []}, function(err, data) {
       assert.ok(!err, err);
       assert.ok(data.list.length > 0);
       return cb();
     });
   },
-  'test read' : function(cb){
+  'test read' : function(cb) {
 
-    read({_ : ['0123']}, function (err, data) {
+    read({_ : ['0123']}, function(err, data) {
       assert.equal(err, null, err);
       assert.equal(data.status, 'ok');
       return cb();
     });
   },
-  'test delete' : function(cb){
-    deletes({_ : ['0123'] }, function (err, data) {
+  'test delete' : function(cb) {
+    deletes({_ : ['0123'] }, function(err, data) {
       assert.equal(err, null, err);
       assert.equal(data[0].status, 'ok');
       return cb();
     });
   },
-  'test delete (multiple)' : function(cb){
-    deletes({_ : ['0123', '456', '789']}, function (err, data) {
+  'test delete (multiple)' : function(cb) {
+    deletes({_ : ['0123', '456', '789']}, function(err, data) {
       assert.equal(err, null, err);
       assert.equal(data[0].status, 'ok');
       return cb();
     });
   },
-  'test create' : function(cb){
-    create({ _ : ['foo1']}, function (err, data) {
+  'test create' : function(cb) {
+    create({ _ : ['foo1']}, function(err, data) {
       assert.equal(err, null, err);
       assert.equal(data.status, 'ok');
       return cb();
