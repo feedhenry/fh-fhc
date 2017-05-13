@@ -10,8 +10,9 @@ fhc-create(1)
 
   * Creates a new hybrid app from template.
 
-
+```
   fhc app create --project=1a2b3c --title=My New App --type=cloud_nodejs --repo=git:///some.com/repo.git --branch=refs/heads/my-branch    
+```
 
   * Creates a new hybrid app from a git repo.
 
