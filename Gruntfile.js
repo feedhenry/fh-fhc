@@ -1,5 +1,9 @@
 'use strict';
 
+var ZANATA_URL = 'https://translate.zanata.org';
+var ZANATA_PROJECT = 'fh-fhc';
+var ZANATA_PROJECT_TYPE = 'gettext';
+
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
   require('load-grunt-tasks')(grunt)
@@ -57,27 +61,66 @@ module.exports = function(grunt) {
       }
     },
 
-    zanata: {
-      push: {
+    'gettext-markdown': {
+      md2pot: {
+        files: [
+          {src: 'doc/**/*.md', dest: 'po-doc/help.pot'}
+        ]
+      },
+      po2md: {
         options: {
-          url: 'https://translate.zanata.org',
-          project: 'fh-fhc',
+          validate: true,
+          base_path: 'doc'
+        },
+        files: [
+          {src: 'po-doc/*.po', dest: 'doc/languages/__lang__/__path__/__name__.md'}
+        ]
+      }
+    },
+
+    zanata: {
+      push_fhc: {
+        options: {
+          url: ZANATA_URL,
+          project: ZANATA_PROJECT,
           'project-version': 'master',
-          'project-type': 'gettext',
+          'project-type': ZANATA_PROJECT_TYPE,
         },
         files: [
           {src: 'po', type: 'source'}
         ]
       },
-      pull: {
+      push_help: {
         options: {
-          url: 'https://translate.zanata.org',
-          project: 'fh-fhc',
+          url: ZANATA_URL,
+          project: ZANATA_PROJECT,
           'project-version': 'master',
-          'project-type': 'gettext',
+          'project-type': ZANATA_PROJECT_TYPE,
         },
         files: [
-          {src: 'po', type: 'trans'}
+          {src: 'po-doc', type: 'source'}
+        ]
+      },
+      pull_fhc: {
+        options: {
+          url: ZANATA_URL,
+          project: ZANATA_PROJECT,
+          'project-version': 'master',
+          'project-type': ZANATA_PROJECT_TYPE,
+        },
+        files: [
+          {src: 'po', type: 'trans', docId: 'fh-fhc'}
+        ]
+      },
+      pull_help: {
+        options: {
+          url: ZANATA_URL,
+          project: ZANATA_PROJECT,
+          'project-version': 'master',
+          'project-type': ZANATA_PROJECT_TYPE,
+        },
+        files: [
+          {src: 'po-doc', type: 'trans', docId: 'help'}
         ]
       }
     }
@@ -86,14 +129,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-fh-build');
   grunt.loadNpmTasks('grunt-jsxgettext');
   grunt.loadNpmTasks('grunt-zanata-js');
+  grunt.loadNpmTasks('grunt-gettext-markdown');
 
   grunt.registerTask('test', ['eslint','fh:test']);
   grunt.registerTask('unit', ['jshint', 'fh:unit']);
   grunt.registerTask('accept', ['fh:accept']);
   grunt.registerTask('coverage', ['fh:coverage']);
   grunt.registerTask('analysis', ['fh:analysis']);
-  grunt.registerTask('potupload', ['jsxgettext:pot', 'zanata:push']);
-  grunt.registerTask('dist', ['zanata:pull', 'fh:dist']);
+  grunt.registerTask('potupload', ['jsxgettext:pot', 'zanata:push_fhc', 'zanata:push_help']);
+  grunt.registerTask('updatetransonly', ['gettext-markdown:po2md']);
+  grunt.registerTask('updatetrans', ['zanata:pull_fhc', 'zanata:pull_help', 'updatetransonly']);
+  grunt.registerTask('dist', ['updatetrans', 'fh:dist']);
   grunt.registerTask('default', ['fh:default']);
 
   grunt.registerTask('docs', ['docs-generate', 'docs-index', 'shell:fh-run-array:docsToDoxy']);

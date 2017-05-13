@@ -1,0 +1,3487 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2017-05-12 07:58+0000\n"
+"Plural-Forms: \n"
+
+#: doc/common/admin-appstore.md:0
+msgid "fhc-admin-appstore(1) -- Administer your App Store"
+msgstr ""
+
+#: doc/common/admin-appstore.md:1
+#: doc/common/admin-auditlog.md:1
+#: doc/common/admin-devices.md:1
+#: doc/common/admin-policies.md:1
+#: doc/common/admin-storeitemgroups.md:1
+#: doc/common/admin-storeitems.md:1
+#: doc/common/admin-users.md:1
+#: doc/common/app/logs.md:1
+#: doc/common/app/update.md:1
+#: doc/common/apps.md:1
+#: doc/common/build.md:1
+#: doc/common/call.md:1
+#: doc/common/configuration.md:1
+#: doc/common/deploy-target.md:1
+#: doc/common/env.md:1
+#: doc/common/environments.md:1
+#: doc/common/eventalert.md:1
+#: doc/common/forms.md:1
+#: doc/common/git.md:1
+#: doc/common/import.md:1
+#: doc/common/initlocal.md:1
+#: doc/common/keys/ssh.md:1
+#: doc/common/keys/user.md:1
+#: doc/common/local.md:1
+#: doc/common/notifications.md:1
+#: doc/common/ota.md:1
+#: doc/common/preview.md:1
+#: doc/common/resources.md:1
+#: doc/common/search.md:1
+#: doc/common/secureendpoints.md:1
+#: doc/common/services.md:1
+#: doc/common/stats.md:1
+#: doc/common/templates.md:1
+#: doc/common/user.md:1
+#: doc/common/version.md:1
+#: doc/fh2/account.md:1
+#: doc/fh2/alias.md:1
+#: doc/fh2/app/act.md:1
+#: doc/fh2/app/create.md:1
+#: doc/fh2/app/delete.md:1
+#: doc/fh2/app/embed.md:1
+#: doc/fh2/app/endpoints.md:1
+#: doc/fh2/app/hosts.md:1
+#: doc/fh2/app/read.md:1
+#: doc/fh2/app/restart.md:1
+#: doc/fh2/app/stage.md:1
+#: doc/fh2/app/start.md:1
+#: doc/fh2/app/stop.md:1
+#: doc/fh2/init.md:1
+#: doc/fh2/ping.md:1
+#: doc/fh3/admin/environments/alias/create.md:1
+#: doc/fh3/admin/environments/alias/delete.md:1
+#: doc/fh3/admin/environments/alias/list.md:1
+#: doc/fh3/admin/environments/alias/read.md:1
+#: doc/fh3/admin/environments/alias/update.md:1
+#: doc/fh3/admin/environments/create.md:1
+#: doc/fh3/admin/environments/delete.md:1
+#: doc/fh3/admin/environments/list.md:1
+#: doc/fh3/admin/environments/read.md:1
+#: doc/fh3/admin/environments/update.md:1
+#: doc/fh3/admin/mbaas/create.md:1
+#: doc/fh3/admin/mbaas/delete.md:1
+#: doc/fh3/admin/mbaas/list.md:1
+#: doc/fh3/admin/mbaas/read.md:1
+#: doc/fh3/admin/mbaas/update.md:1
+#: doc/fh3/admin/teams/adduser.md:1
+#: doc/fh3/admin/teams/create.md:1
+#: doc/fh3/admin/teams/delete.md:1
+#: doc/fh3/admin/teams/list.md:1
+#: doc/fh3/admin/teams/read.md:1
+#: doc/fh3/admin/teams/removeuser.md:1
+#: doc/fh3/admin/teams/userteams.md:1
+#: doc/fh3/app/act.md:1
+#: doc/fh3/app/cloud.md:1
+#: doc/fh3/app/create.md:1
+#: doc/fh3/app/delete.md:1
+#: doc/fh3/app/endpoints.md:1
+#: doc/fh3/app/hosts.md:1
+#: doc/fh3/app/list.md:1
+#: doc/fh3/app/read.md:1
+#: doc/fh3/app/resources.md:1
+#: doc/fh3/app/stage.md:1
+#: doc/fh3/app/start.md:1
+#: doc/fh3/app/stop.md:1
+#: doc/fh3/app/suspend.md:1
+#: doc/fh3/ping.md:1
+#: doc/fh3/projects.md:1
+#: doc/fhc/completion.md:1
+#: doc/fhc/fhcfg.md:1
+#: doc/fhc/help.md:1
+#: doc/fhc/login.md:1
+#: doc/fhc/logout.md:1
+#: doc/fhc/target.md:1
+#: doc/fhc/targets.md:1
+#: doc/internal/df.md:1
+#: doc/internal/messaging.md:1
+msgid "SYNOPSIS"
+msgstr ""
+
+#: doc/common/admin-appstore.md:2
+msgid ""
+"fhc admin-appstore list\n"
+"fhc admin-appstore read\n"
+"fhc admin-appstore update <name> <description> <appid1,apppid2>\n"
+"fhc admin-appstore updatefield <fieldname> <fieldvalue>\n"
+"fhc admin-appstore listitems\n"
+"fhc admin-appstore additem <StoreItem Guid>\n"
+"fhc admin-appstore removeitem <StoreItem Guid>\n"
+"fhc admin-appstore listpolicies\n"
+"fhc admin-appstore addpolicy <policyid>\n"
+"fhc admin-appstore removepolicy <policyid>"
+msgstr ""
+
+#: doc/common/admin-appstore.md:3
+#: doc/common/admin-auditlog.md:3
+#: doc/common/admin-devices.md:3
+#: doc/common/admin-policies.md:3
+#: doc/common/admin-storeitemgroups.md:3
+#: doc/common/admin-storeitems.md:3
+#: doc/common/admin-users.md:3
+#: doc/common/app/logs.md:3
+#: doc/common/app/update.md:3
+#: doc/common/apps.md:3
+#: doc/common/build.md:3
+#: doc/common/call.md:3
+#: doc/common/configuration.md:4
+#: doc/common/deploy-target.md:3
+#: doc/common/env.md:3
+#: doc/common/environments.md:3
+#: doc/common/eventalert.md:3
+#: doc/common/forms.md:3
+#: doc/common/git.md:3
+#: doc/common/import.md:3
+#: doc/common/initlocal.md:3
+#: doc/common/keys/ssh.md:3
+#: doc/common/keys/user.md:3
+#: doc/common/local.md:3
+#: doc/common/notifications.md:3
+#: doc/common/ota.md:3
+#: doc/common/preview.md:3
+#: doc/common/resources.md:3
+#: doc/common/search.md:3
+#: doc/common/secureendpoints.md:3
+#: doc/common/services.md:3
+#: doc/common/stats.md:3
+#: doc/common/templates.md:3
+#: doc/common/user.md:3
+#: doc/common/version.md:5
+#: doc/fh2/account.md:3
+#: doc/fh2/alias.md:3
+#: doc/fh2/app/act.md:3
+#: doc/fh2/app/create.md:3
+#: doc/fh2/app/delete.md:3
+#: doc/fh2/app/embed.md:3
+#: doc/fh2/app/endpoints.md:3
+#: doc/fh2/app/hosts.md:3
+#: doc/fh2/app/read.md:3
+#: doc/fh2/app/restart.md:3
+#: doc/fh2/app/stage.md:3
+#: doc/fh2/app/start.md:3
+#: doc/fh2/app/stop.md:3
+#: doc/fh2/init.md:3
+#: doc/fh2/ping.md:3
+#: doc/fh3/admin/environments/alias/create.md:7
+#: doc/fh3/admin/environments/alias/delete.md:7
+#: doc/fh3/admin/environments/alias/list.md:5
+#: doc/fh3/admin/environments/alias/read.md:7
+#: doc/fh3/admin/environments/alias/update.md:7
+#: doc/fh3/admin/environments/create.md:7
+#: doc/fh3/admin/environments/delete.md:7
+#: doc/fh3/admin/environments/list.md:5
+#: doc/fh3/admin/environments/read.md:7
+#: doc/fh3/admin/environments/update.md:7
+#: doc/fh3/admin/mbaas/create.md:13
+#: doc/fh3/admin/mbaas/delete.md:7
+#: doc/fh3/admin/mbaas/list.md:5
+#: doc/fh3/admin/mbaas/read.md:7
+#: doc/fh3/admin/mbaas/update.md:13
+#: doc/fh3/admin/teams/adduser.md:7
+#: doc/fh3/admin/teams/create.md:7
+#: doc/fh3/admin/teams/delete.md:7
+#: doc/fh3/admin/teams/list.md:5
+#: doc/fh3/admin/teams/read.md:7
+#: doc/fh3/admin/teams/removeuser.md:7
+#: doc/fh3/admin/teams/userteams.md:7
+#: doc/fh3/app/act.md:7
+#: doc/fh3/app/cloud.md:7
+#: doc/fh3/app/create.md:20
+#: doc/fh3/app/delete.md:7
+#: doc/fh3/app/endpoints.md:7
+#: doc/fh3/app/hosts.md:7
+#: doc/fh3/app/list.md:7
+#: doc/fh3/app/read.md:7
+#: doc/fh3/app/resources.md:7
+#: doc/fh3/app/stage.md:7
+#: doc/fh3/app/start.md:7
+#: doc/fh3/app/stop.md:7
+#: doc/fh3/app/suspend.md:7
+#: doc/fh3/ping.md:3
+#: doc/fh3/projects.md:3
+#: doc/fhc/completion.md:3
+#: doc/fhc/fhcfg.md:3
+#: doc/fhc/help.md:3
+#: doc/fhc/login.md:3
+#: doc/fhc/logout.md:3
+#: doc/fhc/target.md:3
+#: doc/fhc/targets.md:3
+#: doc/internal/df.md:3
+#: doc/internal/messaging.md:3
+msgid "DESCRIPTION"
+msgstr ""
+
+#: doc/common/admin-appstore.md:4
+#: doc/common/admin-storeitems.md:4
+msgid ""
+"This command allows you to Administer your FeedHenry App Store. See "
+"http://docs.feedhenry.com/v2/mas.html for more information."
+msgstr ""
+
+#: doc/common/admin-auditlog.md:0
+msgid "fhc-admin-auditlog(1) -- View your App Store Audit Logs"
+msgstr ""
+
+#: doc/common/admin-auditlog.md:2
+msgid ""
+"fhc admin-auditlog listlogs [limit=<limit>] [guid=<store item guid>] "
+"[type=<android|iphone>] [user=<user guid>] [device=<device guid>]\n"
+"   when filters (such as guid and type) are supplied then the log entry "
+"must match ALL of the filters.\n"
+"   when no limit is supplied, it defaults to 20"
+msgstr ""
+
+#: doc/common/admin-auditlog.md:4
+msgid ""
+"This command allows you to View your FeedHenry Mobile App Store Audit Logs. "
+"See http://docs.feedhenry.com/v2/mas.html for more information."
+msgstr ""
+
+#: doc/common/admin-devices.md:0
+msgid "fhc-admin-devices(1) -- Administer Devices"
+msgstr ""
+
+#: doc/common/admin-devices.md:2
+msgid ""
+"fhc devices list\n"
+"fhc devices read <device-id>\n"
+"fhc devices update <device-id> <label>\n"
+"fhc devices enable <device-id> <true|false>\n"
+"fhc devices purgedata <device-id> <true|false>\n"
+"fhc devices listusers <device-id>\n"
+"fhc devices listapps <device-id>"
+msgstr ""
+
+#: doc/common/admin-devices.md:4
+msgid ""
+"This command allows you to Administer Devices on the FeedHenry Platform, "
+"see http://docs.feedhenry.com/v2/deviceadmin.html for more information. "
+msgstr ""
+
+#: doc/common/admin-policies.md:0
+msgid "fhc-admin-policies(1) -- Administer Auth Policies"
+msgstr ""
+
+#: doc/common/admin-policies.md:2
+msgid ""
+"fhc policies list\n"
+"fhc policies create <policy-id> <policy-type> <config> "
+"[<check-user-exists>] [<check-user-approved>]\n"
+"fhc policies update <guid> <policy-id> <policy-type> <config> "
+"[<check-user-exists>] [<check-user-approved>]\n"
+"    where <policy-type> is one of: OAUTH1 | OAUTH2 | LDAP | OPENID | "
+"FEEDHENRY\n"
+"    where <config> is a json object corresponding to the policy type, e.g.\n"
+"          for OAuth2: \"{\"clientId\": \"1234567890.apps.example.com\",  "
+"\"clientSecret\": \"Wfv8DQw80hhyaBqnW37x5R23\", \"provider\": \"GOOGLE\"}\"\n"
+"          for LDAP: \"{\"authmethod\": \"simple\", \"url\": "
+"\"ldap://foo.example.com:389, \"dn\": \"ou=people,dc=example,dc=com\", "
+"\"dn_prefix\": \"cn\", \"provider\": \"LDAP\"}\n"
+"                       authmethod can be one of: \"simple\", "
+"\"DIGEST-MD5\", \"CRAM-MD5\", or \"GSSAPI\"\n"
+"    where <check-user-exists> is one of: true | false. The default here is "
+"'false'.\n"
+"    where <check-user-approved> is one of: true | false. The default here "
+"is 'false'.\n"
+"fhc policies delete <guid>\n"
+"fhc policies read <policy-id>\n"
+"fhc policies users <policy-id>\n"
+"fhc policies addusers <policy-guid> <user-id>*\n"
+"fhc policies removeusers <policy-guid> <user-id>*"
+msgstr ""
+
+#: doc/common/admin-policies.md:4
+msgid ""
+"This command allows you to Administer Auth Policies on the FeedHenry "
+"Platform. For more information, see "
+"http://docs.feedhenry.com/v2/authadmin.html."
+msgstr ""
+
+#: doc/common/admin-storeitemgroups.md:0
+msgid "fhc-admin-storeitemgroups(1) -- Administer Store Item Groups"
+msgstr ""
+
+#: doc/common/admin-storeitemgroups.md:2
+msgid ""
+"fhc admin-storeitemgroups list\n"
+"fhc admin-storeitemgroups create <group-name> <group-description>\n"
+"fhc admin-storeitemgroups delete <group-guid>\n"
+"fhc admin-storeitemgroups read <group-guid>\n"
+"fhc admin-storeitemgroups readByName <group-name>\n"
+"fhc admin-storeitemgroups update <group-guid> <group-name> "
+"<group-description>\n"
+"fhc admin-storeitemgroups addusers <group-guid> <user-email>*\n"
+"fhc admin-storeitemgroups removeusers <group-guid> <user-email>*\n"
+"fhc admin-storeitemgroups addstoreitems <group-guid> <storeitem-id>*\n"
+"fhc admin-storeitemgroups removestoreitems <group-guid> <storeitem-id>*"
+msgstr ""
+
+#: doc/common/admin-storeitemgroups.md:4
+msgid ""
+"This command allows you to Administer your FeedHenry Store Item Groups. See "
+"http://docs.feedhenry.com/v2/storeitemgroupadmin.html for more information."
+msgstr ""
+
+#: doc/common/admin-storeitems.md:0
+msgid "fhc-admin-storeitems(1) -- Administer Store Items"
+msgstr ""
+
+#: doc/common/admin-storeitems.md:2
+msgid ""
+"fhc admin-storeitems list\n"
+"fhc admin-storeitems create <name> [description=<description>] "
+"[authToken=<authToken>] [restrictToGroups=<restrictToGroups>]\n"
+"fhc admin-storeitems delete <storeitem guid>\n"
+"fhc admin-storeitems read <storeitem guid>\n"
+"fhc admin-storeitems update <storeitem guid> <name> <description> "
+"<authToken> [<restrictToGroups>]\n"
+"fhc admin-storeitems uploadicon <storeitem guid> <path to icon>\n"
+"fhc admin-storeitems uploadbinary <storeitem guid> <type "
+"iphone|android|ipad> <path to app binary>\n"
+"fhc admin-storeitems addpolicy <storeitem guid> <policy_guid>\n"
+"fhc admin-storeitems removepolicy <storeitem guid> <policy_guid>\n"
+"fhc admin-storeitems listpolicies <storeitem guid>\n"
+"fhc admin-storeitems grouprestrict <storeitem guid> <true|false>\n"
+"fhc admin-storeitems addgroups <storeitem guid> <group_guid>*\n"
+"fhc admin-storeitems removegroups <storeitem guid> <group_guid>*\n"
+"fhc admin-storeitems binaryversions <storeitem guid>"
+msgstr ""
+
+#: doc/common/admin-users.md:0
+msgid "fhc-admin-users(1) -- Administer FeedHenry Users"
+msgstr ""
+
+#: doc/common/admin-users.md:2
+msgid ""
+"fhc admin-users list\n"
+"fhc admin-users create username=<username> [password=<password>] "
+"[email=<email>] [name=<name>] [roles=<roles>] [authpolicies=<authpolicies>] "
+"[invite=<invitation>] [teams=<teamIds>]\n"
+"fhc admin-users delete <username>\n"
+"fhc admin-users read <username>\n"
+"fhc admin-users update username=<username> [password=<password>] "
+"[email=<email>] [name=<name>] [roles=<roles>] [authpolicies=<authpolicies>] "
+"[inviation=<invitation>] [teams=<teamIds>] [enabled=<enabled>]\n"
+"fhc admin-users enable <username>\n"
+"fhc admin-users disable <username>\n"
+"fhc admin-users changeroles <username> <roles>\n"
+"fhc admin-users changeauthpolicies <username> <authpolicies>\n"
+"fhc admin-users listdevices <username>\n"
+"fhc admin-users listinstallapps <username>\n"
+"fhc admin-users import <path-to-csv-file> [invite] [<roles> <authpolicies>]"
+msgstr ""
+
+#: doc/common/admin-users.md:4
+msgid ""
+"This command allows you to Administer Users on the FeedHenry Platform. For "
+"more information, see http://docs.feedhenry.com/v2/useradmin.html."
+msgstr ""
+
+#: doc/common/admin-users.md:5
+#: doc/common/deploy-target.md:5
+#: doc/common/environments.md:5
+#: doc/common/resources.md:5
+#: doc/common/secureendpoints.md:5
+#: doc/fh2/app/create.md:5
+#: doc/fh2/app/embed.md:5
+#: doc/fh2/app/endpoints.md:5
+#: doc/fh2/app/stage.md:15
+msgid "Examples"
+msgstr ""
+
+#: doc/common/admin-users.md:6
+msgid ""
+"fhc admin-users create username=testuser email=testuser@test.com "
+"teams=5783b4d706bb371b0960eff9,5783b21b0fd0211e09f218e9"
+msgstr ""
+
+#: doc/common/app/logs.md:0
+msgid "fhc-app-logs(1) -- FeedHenry Application Log Files"
+msgstr ""
+
+#: doc/common/app/logs.md:2
+msgid ""
+"fhc app logs [get] <app-id> [log-name] --env=<environment>\n"
+"fhc app logs tail <app-id> [last-N-lines] [offset-from] [log-name] "
+"--env=<environment>\n"
+"fhc app logs list <app-id> --env=<environment>\n"
+"fhc app logs delete <app-id> <log-name> --env=<environment>"
+msgstr ""
+
+#: doc/common/app/logs.md:4
+msgid ""
+"This command can be used to list/retrieve/delete/tail your Application log "
+"files."
+msgstr ""
+
+#: doc/common/app/logs.md:5
+msgid ""
+"Note: log tail defaults to the current std-out log file & display last 1000 "
+"lines of log file. To specify an offset, pass -1 for the last-N-lines "
+"param. e.g."
+msgstr ""
+
+#: doc/common/app/logs.md:6
+msgid "fhc logs tail -1 12345"
+msgstr ""
+
+#: doc/common/app/logs.md:7
+msgid "This will return all log entries from position 12345 onwards."
+msgstr ""
+
+#: doc/common/app/logs.md:8
+#: doc/common/ota.md:5
+#: doc/common/preview.md:6
+#: doc/common/search.md:5
+#: doc/common/stats.md:13
+#: doc/common/version.md:3
+#: doc/fh2/alias.md:9
+#: doc/fh2/app/act.md:11
+#: doc/fh3/admin/environments/alias/create.md:3
+#: doc/fh3/admin/environments/alias/delete.md:3
+#: doc/fh3/admin/environments/alias/list.md:3
+#: doc/fh3/admin/environments/alias/read.md:3
+#: doc/fh3/admin/environments/alias/update.md:3
+#: doc/fh3/admin/environments/create.md:3
+#: doc/fh3/admin/environments/delete.md:3
+#: doc/fh3/admin/environments/list.md:3
+#: doc/fh3/admin/environments/read.md:3
+#: doc/fh3/admin/environments/update.md:3
+#: doc/fh3/admin/mbaas/create.md:3
+#: doc/fh3/admin/mbaas/delete.md:3
+#: doc/fh3/admin/mbaas/list.md:3
+#: doc/fh3/admin/mbaas/read.md:3
+#: doc/fh3/admin/mbaas/update.md:3
+#: doc/fh3/admin/teams/adduser.md:3
+#: doc/fh3/admin/teams/create.md:3
+#: doc/fh3/admin/teams/delete.md:3
+#: doc/fh3/admin/teams/list.md:3
+#: doc/fh3/admin/teams/read.md:3
+#: doc/fh3/admin/teams/removeuser.md:3
+#: doc/fh3/admin/teams/userteams.md:3
+#: doc/fh3/app/act.md:3
+#: doc/fh3/app/cloud.md:3
+#: doc/fh3/app/create.md:3
+#: doc/fh3/app/delete.md:3
+#: doc/fh3/app/endpoints.md:3
+#: doc/fh3/app/hosts.md:3
+#: doc/fh3/app/list.md:3
+#: doc/fh3/app/read.md:3
+#: doc/fh3/app/resources.md:3
+#: doc/fh3/app/stage.md:3
+#: doc/fh3/app/start.md:3
+#: doc/fh3/app/stop.md:3
+#: doc/fh3/app/suspend.md:3
+#: doc/fhc/target.md:5
+#: doc/internal/messaging.md:5
+msgid "EXAMPLES"
+msgstr ""
+
+#: doc/common/app/logs.md:9
+msgid "fhc logs mfLkParVTDcr80-uEk8OhEfT --env=dev"
+msgstr ""
+
+#: doc/common/app/update.md:0
+msgid "fhc-update(1) -- Update a FeedHenry Application Properties"
+msgstr ""
+
+#: doc/common/app/update.md:2
+msgid "fhc update <app-id> <property-name> <property-value>\""
+msgstr ""
+
+#: doc/common/app/update.md:4
+msgid "This command can be used to update FeedHenry Application properties."
+msgstr ""
+
+#: doc/common/apps.md:0
+msgid "fhc-apps(1) -- List FeedHenry Applications"
+msgstr ""
+
+#: doc/common/apps.md:2
+msgid ""
+"fhc apps [list] <project-id>\n"
+"fhc create <project-id> <app-title> [<template-id>]\n"
+"fhc create <project-id> <app-title> <template-type> <git-repo> "
+"[<git-branch>]\n"
+"fhc read <project-id> <app-id>\n"
+"fhc update <project-id> <app-id> <property-name> <property-value>\n"
+"fhc delete <project-id> <app-id>"
+msgstr ""
+
+#: doc/common/apps.md:4
+msgid ""
+"This command can be used to list your FeedHenry applications. As with any "
+"command in FHC, passing a '--json' flag will return the list of FeedHenry "
+"Apps in JSON format."
+msgstr ""
+
+#: doc/common/apps.md:5
+#: doc/common/services.md:5
+#: doc/fh3/projects.md:8
+msgid ""
+"You can also specify a '--bare' flag to the 'apps' command, e.g. just show "
+"app guids:"
+msgstr ""
+
+#: doc/common/apps.md:6
+msgid "$ fhc apps 123456 --bare"
+msgstr ""
+
+#: doc/common/apps.md:7
+#: doc/common/services.md:7
+msgid ""
+"t2Xva0-4X2AFsxbBzsRLSet1\n"
+"VCtqRZTJWnhz5b3SbcS1LvVm\n"
+"DOK1rO5L2WAW7fjE_MAIehio\n"
+"t-Bq8rCXHMwJSY9heXZZs8AL"
+msgstr ""
+
+#: doc/common/apps.md:8
+msgid "show app titles only:"
+msgstr ""
+
+#: doc/common/apps.md:9
+msgid "$ fhc apps 123456 --bare=title"
+msgstr ""
+
+#: doc/common/apps.md:10
+msgid ""
+"App 1\n"
+"App 2\n"
+"App 3\n"
+"App 4"
+msgstr ""
+
+#: doc/common/apps.md:11
+msgid ""
+"This makes it easy to iterate over apps from bash command line, e.g. to "
+"ping all dev and live endpoints of all apps:"
+msgstr ""
+
+#: doc/common/apps.md:12
+msgid ""
+"$ for i in $(fhc apps --bare);do echo \"pinging: $i (dev & live)\"; fhc "
+"ping $i --env=dev; fhc ping $i --env=live; done"
+msgstr ""
+
+#: doc/common/build.md:0
+msgid "fhc-build(1) -- Build FeedHenry Applications"
+msgstr ""
+
+#: doc/common/build.md:2
+msgid ""
+"  fhc build app=<appId> destination=<destination> version=<version> "
+"config=<config> keypass=<private-key-password> "
+"certpass=<certificate-password> download=<true|false> "
+"cordova_version=<cordova-version>\n"
+"\n"
+"  <destination>         One of: android, iphone, ipad, ios(for universal "
+"binary), blackberry, windowsphone7, windowsphone (windows phone 8).\n"
+"  <version>             Specific to the destination (e.g. Android version "
+"4.0).\n"
+"  <config>              Either 'debug' (default), 'distribution', or "
+"'release'.\n"
+"  <provisioning>        The path to the provisioning profile.\n"
+"  <cordova_version>     For specifying which version of Cordova to use. "
+"Currently supported: either 2.2 or 3.3. Only valid for Android for now.\n"
+"  <tag name>            The name of a connection tag for the cloud app, "
+"must be in Semantic Version format, e.g. 0.0.1.\")\n"
+"  'keypass' and 'certpass' only needed for 'release' builds\n"
+"  'provisioning' is only optional for iphone or ipad builds"
+msgstr ""
+
+#: doc/common/build.md:4
+msgid "This command can be used to build your FeedHenry applications."
+msgstr ""
+
+#: doc/common/build.md:5
+msgid ""
+"e.g.\n"
+"fhc build app=mfLkParVTDcr80-uEk8OhEfT destination=iphone "
+"config=distribution keypass=password certpass= version=4.0 "
+"cordova_version=3.3"
+msgstr ""
+
+#: doc/common/call.md:0
+msgid "fhc-call(1) -- FeedHenry Call Url"
+msgstr ""
+
+#: doc/common/call.md:2
+msgid "fhc call <url> [<method> <params>]"
+msgstr ""
+
+#: doc/common/call.md:4
+msgid ""
+"This command will call the specified FeedHenry url (using the given method "
+"or 'GET' by default, and passing the given parameters, if any)"
+msgstr ""
+
+#: doc/common/configuration.md:0
+msgid "fhc-configuration(1) -- Manage Application Configuration Properties"
+msgstr ""
+
+#: doc/common/configuration.md:2
+msgid ""
+"fhc configuration [list] <app-id>\n"
+"fhc configuration [list] <app-id> <destination>\n"
+"fhc configuration set <app-id> <destination> <key> <value>"
+msgstr ""
+
+#: doc/common/configuration.md:3
+msgid ""
+"where destination can be one of: studio, android, embed, iphone, ipad, "
+"blackberry, windowsphone7 or 'all'"
+msgstr ""
+
+#: doc/common/configuration.md:5
+msgid ""
+"This command can be used to manage an Applications Destination "
+"Configuration properties."
+msgstr ""
+
+#: doc/common/deploy-target.md:0
+msgid "fhc-deploy-target(1) -- FeedHenry Deploy Targets"
+msgstr ""
+
+#: doc/common/deploy-target.md:2
+msgid ""
+"fhc deploy-target create name=<the name of the deploy target> "
+"platform=<cloudfoundry/stackato/appfog/ironfoundry> conf_url=<deploy url> "
+"conf_username=<user for the deploy> conf_password=<user password for the "
+"deploy> [conf_infrastructure=<infrastructure providers>] "
+"--env=<environment>\n"
+"fhc deploy-target update id=<id of the deploy target> name=<the name of the "
+"deploy target> platform=<cloudfoundry/stackato> conf_url=<deploy url> "
+"conf_username=<user for the deploy> conf_password=<user password for the "
+"deploy> --env=<environment>\n"
+"fhc deploy-target read <id of the deployment target>\n"
+"fhc deploy-target list\n"
+"fhc deploy-target delete <id of the deployment target>\n"
+"fhc deploy-target listforapp <appid> [<platform>] --env=<environment>\n"
+"fhc deploy-target getapptarget <appid> --env=<environment>\n"
+"fhc deploy-target setapptarget <appid> <id of the deploy target> "
+"--env=<environment>"
+msgstr ""
+
+#: doc/common/deploy-target.md:4
+msgid ""
+"This command can be used to manage the deployment targets as described "
+"[here](http://docs.feedhenry.com/v2/deployment_targets.html). You can also "
+"use this command to get/set a deployment target for an app."
+msgstr ""
+
+#: doc/common/deploy-target.md:6
+msgid ""
+"fhc deploy-target create name=FirstDeployTarget platform=cloudfoundry "
+"env=all conf_url=http://api.cloudfoundry.com conf_username=user@example.com "
+"conf_password=password\n"
+"fhc deploy-target listforapp 123456789012345678901234 cloudfoundry "
+"--env=dev\n"
+"fhc deploy-target setapptarget 123456789012345678901234 "
+"abcdefghijklmnopqrstuvwx --env=dev"
+msgstr ""
+
+#: doc/common/env.md:0
+msgid "fhc-env(1) -- Manage Cloud Environment Variables For Apps"
+msgstr ""
+
+#: doc/common/env.md:2
+msgid ""
+"fhc env create <app-guid> <var_name> [<var_value>] --env=<environment>\n"
+"fhc env update <app-guid> <var_id> [<new_var_name>] [<var_value>] "
+"--env=<environment>\n"
+"fhc env read <app-guid> <var_id> --env=<environment>\n"
+"fhc env list <app-guid> --env=<environment>\n"
+"fhc env listDeployed <app-guid> [includeSystemEnvironmentVariables] "
+"--env=<environment>\n"
+"fhc env unset <app-guid> <var_id> --env=<environment>\"\n"
+"fhc env delete <app-guid> <var_id>\n"
+"fhc env push <app-guid> --env=<environment>"
+msgstr ""
+
+#: doc/common/env.md:4
+msgid ""
+"Set a value per-environment for each environment variable name by using the "
+"--env=<environment> flag. Any changes of the environment variables will not "
+"be applied to the cloud applications until they are pushed."
+msgstr ""
+
+#: doc/common/environments.md:0
+msgid "fhc-environments(1) -- FeedHenry Environments"
+msgstr ""
+
+#: doc/common/environments.md:2
+msgid ""
+"fhc environments\n"
+"fhc environments --env=<environment>\n"
+"fhc environments resources  --env=<environment>\n"
+"fhc environments cache [flush] --env=<environment>\n"
+"fhc environments cache [set] [type] [value] (where 'type' is either "
+"'percent' or 'size')  --env=<environment>"
+msgstr ""
+
+#: doc/common/environments.md:4
+msgid "Show the FeedHenry Environments, and the Resources used by an Environment."
+msgstr ""
+
+#: doc/common/environments.md:6
+msgid ""
+"e.g. fhc environments --env=dev\n"
+"e.g. fhc environments resources --env=dev\n"
+"e.g. fhc environments cache flush --env=dev\n"
+"e.g. fhc environments cache set percent 50 --env=dev\n"
+"e.g. fhc environments cache set size 524288000 --env=live"
+msgstr ""
+
+#: doc/common/eventalert.md:0
+msgid "fhc-eventalert(1) -- Manage alerts of a FeedHenry App"
+msgstr ""
+
+#: doc/common/eventalert.md:2
+msgid ""
+"fhc eventalert listOptions\n"
+"fhc eventalert create <appid> alertName categories=eventCategories "
+"severities=eventSeverities events=eventNames emails=emailAddresses "
+"--env=<environment>\n"
+"fhc eventalert clone <alertId> --env=<environment>\n"
+"fhc eventalert delete <alertId>\n"
+"fhc eventalert list <appId>\n"
+"fhc eventalert read <alertId>\n"
+"fhc eventalert read <appid> alertName\n"
+"fhc eventalert update <alertId> alertName categories=eventCategories "
+"severities=eventSeverities events=eventNames emails=emailAddresses"
+msgstr ""
+
+#: doc/common/eventalert.md:4
+msgid ""
+"This command can be used to manage alerts for an app. For the valid values "
+"for eventCategories, eventSeverities and eventNames, please run 'fhc "
+"eventalert listOptions' to see the full list."
+msgstr ""
+
+#: doc/common/forms.md:0
+msgid "fhc-forms(1) -- Manage App Forms"
+msgstr ""
+
+#: doc/common/forms.md:2
+msgid ""
+"fhc forms [list]\n"
+"fhc forms create <form-file.json>\n"
+"fhc forms update <form-file.json>\n"
+"fhc forms get <form-id>\n"
+"fhc forms delete <form-id>\n"
+"fhc forms apps list\n"
+"fhc forms apps get <app-id>\n"
+"fhc forms apps update <app-id> <form-id>*\n"
+"fhc forms apps create <app-title> <theme-id> <form-id>*\n"
+"fhc forms formapps <form-id>\n"
+"fhc forms groups [list]\n"
+"fhc forms groups get <group-id>\n"
+"fhc forms groups update <group-id> <group-name> <user-id>* <form-id>* "
+"<app-id>* <theme-id>*   # user-id and form-id should be a comma-seperated "
+"list of values\n"
+"fhc forms groups create <group-name> <user-id>* <form-id>* <app-id>* "
+"<theme-id>*              # user-id and form-id should be a comma-seperated "
+"list of values\n"
+"fhc forms groups delete <group-id>\n"
+"fhc forms notifications [list] <form-id>fhc forms notifications add "
+"<form-id> <email-address>\n"
+"fhc forms notifications delete <form-id> <email-address>"
+msgstr ""
+
+#: doc/common/forms.md:4
+msgid ""
+"Update FeedHenry App Forms JSON definitions, themes, form apps, groups and "
+"notifications from the command line."
+msgstr ""
+
+#: doc/common/git.md:0
+msgid "fhc-git(1) -- FeedHenry App Git Actions"
+msgstr ""
+
+#: doc/common/git.md:2
+msgid ""
+"fhc git [props] <app-id>\n"
+"fhc git set <app-id> <git-prop-name> <git-prop-value>\n"
+"fhc git pull <app-id>"
+msgstr ""
+
+#: doc/common/git.md:4
+msgid "This command can be used to perform your FeedHenry Git actions on your App."
+msgstr ""
+
+#: doc/common/import.md:0
+msgid "fhc-import(1) -- Import FeedHenry zipfile"
+msgstr ""
+
+#: doc/common/import.md:2
+msgid "fhc import <FeedHenry zip file>"
+msgstr ""
+
+#: doc/common/import.md:4
+msgid "This command can be used to an existing FeedHenry zipfile."
+msgstr ""
+
+#: doc/common/initlocal.md:0
+msgid "fhc-initlocal(1) -- Initialises Local Server files For Local Development"
+msgstr ""
+
+#: doc/common/initlocal.md:2
+msgid "fhc initlocal <appid>"
+msgstr ""
+
+#: doc/common/initlocal.md:4
+msgid ""
+"This command prepares the app in the current directory for running locally. "
+"It connects to your current fhc target and downloads the container file for "
+"the specified app. It also downloads the script and CSS files that are "
+"referenced by the app container, so that they are available when running "
+"the app locally.\n"
+"The downloaded files are stored in the .fhclocal subdirectory"
+msgstr ""
+
+#: doc/common/keys/ssh.md:0
+msgid "fhc-keys-ssh(1) -- Manage User SSH Keys"
+msgstr ""
+
+#: doc/common/keys/ssh.md:2
+msgid ""
+"fhc keys ssh [list]\n"
+"fhc keys ssh add <label> <key-file>\n"
+"fhc keys ssh delete <label>"
+msgstr ""
+
+#: doc/common/keys/ssh.md:4
+msgid ""
+"Accessing your App repos via Git requires you to upload an SSH Public key. "
+"You can upload multiple keys if you have a different key on various "
+"machines, or want to allow someone access.\n"
+"Your SSH key is typically located in:"
+msgstr ""
+
+#: doc/common/keys/ssh.md:5
+msgid "~/.ssh/id_rsa.pub"
+msgstr ""
+
+#: doc/common/keys/ssh.md:6
+msgid "Or, to generate a new key use:"
+msgstr ""
+
+#: doc/common/keys/ssh.md:7
+msgid "ssh-keygen -t rsa -C \"your_email@example.com\""
+msgstr ""
+
+#: doc/common/keys/ssh.md:8
+msgid ""
+"**Important:** Any SSH key added here will have push & pull access to the "
+"Git repositories of every Project/App you can see in the Projects tab.</div>"
+msgstr ""
+
+#: doc/common/keys/ssh.md:9
+msgid ""
+"**Important:** An SSH key can only be uploaded once. If you attempt to "
+"uploaded an already existing key, even in someone else's account, it will "
+"fail. This behaviour is essential for mapping keys to a Users account."
+msgstr ""
+
+#: doc/common/keys/user.md:0
+msgid "fhc-keys-user(1) -- Manage User API Keys"
+msgstr ""
+
+#: doc/common/keys/user.md:2
+msgid ""
+"fhc keys user [list]\n"
+"fhc keys user add <label>\n"
+"fhc keys user read <label>\n"
+"fhc keys user update <old-label> <new-label>\n"
+"fhc keys user delete <label>\n"
+"fhc keys user target [<label>]"
+msgstr ""
+
+#: doc/common/keys/user.md:4
+msgid ""
+"User API keys can be viewed, created and revoked in this section of the "
+"Account area. These keys can be used for accessing the Platform "
+"programmatically. They provide an alternative to the traditional username "
+"and password access method. When logged in with a username and password, a "
+"cookie is returned to the user, which is sent along with every subsequent "
+"request. A User API key is similar to a cookie, but sent in a header called "
+"_X-FH-AUTH-USER_. This header should be sent with every request."
+msgstr ""
+
+#: doc/common/keys/user.md:5
+msgid ""
+"By default, you will have no User API keys (with the exception of any "
+"system created keys e.g. _FH_MBAAS_API_key_). Multiple API keys can be "
+"created, so its a good idea to give each a unique label. The key value will "
+"be generated automatically. Labels can be modified later if required. If "
+"you no longer require a specific key or wish to prevent it from being used "
+"any more (for security reasons), simple Delete/Revoke it."
+msgstr ""
+
+#: doc/common/local.md:0
+msgid "fhc-local(1) -- Creates Local Server For Local Development"
+msgstr ""
+
+#: doc/common/local.md:2
+msgid ""
+"fhc local <appid> [packages=<package[,package...]>] [clientPort=<port>] "
+"[cloudPort=<port>] [redisHost=<redisServer>] [redisPort=<redisPort>] "
+"[redisPassword=<password>] [debug=true] [debugBrk=true] [decoupled=true] "
+"[logprefix=false] [loghighlight=true]"
+msgstr ""
+
+#: doc/common/local.md:4
+msgid ""
+"This command can be used to allow you to locally develop applications, the "
+"cloud portion of your app will be run locally. If you haven't run the `fhc "
+"initlocal` command first, it will be automatically done. `fhc initlocal` "
+"requires access to the Internet, to download some settings, scripts, and "
+"CSS files from our cloud platform."
+msgstr ""
+
+#: doc/common/local.md:5
+msgid ""
+"This command must be run from the root of your app, i.e. the folder which "
+"contains your cloud, client and shared directories."
+msgstr ""
+
+#: doc/common/local.md:6
+msgid ""
+"Only the `<appid>` parameter is required. Just running \"fhc local "
+"<appid>\" will run the cloud code and server the client files locally."
+msgstr ""
+
+#: doc/common/local.md:7
+msgid ""
+"If you are using the $fh.cache API calls in your cloud code, you should run "
+"a locally accessible redis server.  The redis host, port, and password can "
+"be specified on the command line and default to; host: 127.0.0.1, port: "
+"6379, password: \"\""
+msgstr ""
+
+#: doc/common/local.md:8
+msgid ""
+"If you are using the $fh.db() API calls in your cloud code, you should run "
+"a mondoDB server locally.  The mongo server is expected to be at; host: "
+"127.0.0.1, and port: 27017, (the default mongo configuration)"
+msgstr ""
+
+#: doc/common/local.md:9
+msgid ""
+"The client and server sides of the app will be running on seperate ports "
+"locally, by default they will be 8000 and 8001"
+msgstr ""
+
+#: doc/common/local.md:10
+msgid "PARAMETERS"
+msgstr ""
+
+#: doc/common/local.md:11
+msgid "clientPort"
+msgstr ""
+
+#: doc/common/local.md:12
+msgid ""
+"The port you want to run the local client file server on. This defaults to "
+"port 8000."
+msgstr ""
+
+#: doc/common/local.md:13
+msgid "cloudHost"
+msgstr ""
+
+#: doc/common/local.md:14
+msgid ""
+"Value to report to the client code, as the location of the cloud code, the "
+"default is \"http://127.0.0.1\". It should be changed to the hostname or "
+"the ip address of the server when test on mobile devices."
+msgstr ""
+
+#: doc/common/local.md:15
+msgid "cloudPort"
+msgstr ""
+
+#: doc/common/local.md:16
+msgid ""
+"The port you want to run the local cloud server on. This defaults to port "
+"8001."
+msgstr ""
+
+#: doc/common/local.md:17
+msgid "packages"
+msgstr ""
+
+#: doc/common/local.md:18
+msgid "A list of comma seperated packages that you want to be applied"
+msgstr ""
+
+#: doc/common/local.md:19
+msgid "redisHost"
+msgstr ""
+
+#: doc/common/local.md:20
+msgid "The host running the local redis server, default: 127.0.0.1"
+msgstr ""
+
+#: doc/common/local.md:21
+msgid "redisPort"
+msgstr ""
+
+#: doc/common/local.md:22
+msgid "The port for the locally running redis server, default: 6379"
+msgstr ""
+
+#: doc/common/local.md:23
+msgid "redisPassword"
+msgstr ""
+
+#: doc/common/local.md:24
+msgid "The password for the local redis server, default is no password."
+msgstr ""
+
+#: doc/common/local.md:25
+msgid ""
+"The following parameters are not normally required to be changed from their "
+"defaults."
+msgstr ""
+
+#: doc/common/local.md:26
+msgid "startCloud"
+msgstr ""
+
+#: doc/common/local.md:27
+msgid ""
+"This parameter specifies whether or not to run the cloud part of the app. "
+"The default is \"true\""
+msgstr ""
+
+#: doc/common/local.md:28
+msgid "localDB"
+msgstr ""
+
+#: doc/common/local.md:29
+msgid "Connect to a local database, default is \"true\""
+msgstr ""
+
+#: doc/common/local.md:30
+msgid "debug"
+msgstr ""
+
+#: doc/common/local.md:31
+msgid ""
+"When set to true, allows connecting a debugger to the node process running "
+"the cloud code (passes the \"--debug\" parameter to node)"
+msgstr ""
+
+#: doc/common/local.md:32
+msgid "debugBrk"
+msgstr ""
+
+#: doc/common/local.md:33
+msgid ""
+"When set to true, allows connecting a debugger to the node process running "
+"the cloud code, and waits for the debugger to connect (passes the "
+"\"--debug-brk\" parameter to node)"
+msgstr ""
+
+#: doc/common/local.md:34
+msgid "decoupled"
+msgstr ""
+
+#: doc/common/local.md:35
+msgid "When set to true, prevents wrapping the contents of index.html"
+msgstr ""
+
+#: doc/common/local.md:36
+msgid "logprefix"
+msgstr ""
+
+#: doc/common/local.md:37
+msgid ""
+" when set to true, stdout and stderr messages will be prefixed with their "
+"file types - 'CLOUD stdout:' and 'CLOUD stderr:' respectively."
+msgstr ""
+
+#: doc/common/local.md:38
+msgid "loghighlight"
+msgstr ""
+
+#: doc/common/local.md:39
+msgid ""
+" when set to true, stdout and stderr messages will be output in green or "
+"red text respectively."
+msgstr ""
+
+#: doc/common/local.md:40
+msgid "EXAMPLE"
+msgstr ""
+
+#: doc/common/local.md:41
+msgid "fhc local packages=ios,iphone clientPort=8000 redisHost=127.0.0.1"
+msgstr ""
+
+#: doc/common/notifications.md:0
+msgid "fhc-notifications(1) -- List notifications of a FeedHenry App"
+msgstr ""
+
+#: doc/common/notifications.md:2
+msgid "fhc notifications [list] <app-guid> --env=<environment>"
+msgstr ""
+
+#: doc/common/notifications.md:4
+msgid ""
+"This command can be used to list or dismiss notification messages of a "
+"FeedHenry Application."
+msgstr ""
+
+#: doc/common/ota.md:0
+msgid "fhc-ota(1) -- Build OTA version of an app"
+msgstr ""
+
+#: doc/common/ota.md:2
+msgid ""
+"fhc ota app=<appId> destination=<destination> version=<version> "
+"config=<config> keypass=<private-key-password> "
+"certpass=<certificate-password>\n"
+"  where <destination> is one of: android, iphone, ipad, blackberry, "
+"windowsphone7\n"
+"  where <version> is specific to the destination\n"
+"  where <config> is either 'distribution' or 'release'\n"
+"  'keypass' and 'certpass' only needed for 'release' builds"
+msgstr ""
+
+#: doc/common/ota.md:4
+msgid ""
+"This command can be used to return the OTA (Over The Air) installer URL of "
+"a Feedhenry application. To function, you must have an 'In-House' "
+"distribution certificate installed in the Feedhenry Studio. This command "
+"returns both the OTA install URL and a corresponding convenience short URL."
+msgstr ""
+
+#: doc/common/ota.md:6
+msgid ""
+"fhc ota app=mfLkParVTDcr80-uEk8OhEfT destination=iphone config=distribution "
+"keypass=password certpass= version=4.0"
+msgstr ""
+
+#: doc/common/preview.md:0
+msgid "fhc-preview(1) -- FeedHenry Application Preview"
+msgstr ""
+
+#: doc/common/preview.md:2
+msgid ""
+"fhc preview [show] <app-id>\n"
+"fhc preview url <app-id> "
+msgstr ""
+
+#: doc/common/preview.md:4
+msgid ""
+"This command can be used to preview your application in your browser. By "
+"default, the 'open' command is the default command used on OSX to open the "
+"preview url, otherwise 'google-chrome' is the default command."
+msgstr ""
+
+#: doc/common/preview.md:5
+msgid ""
+"To set your default brower: fhc set browser firefox\n"
+"Or on windows: fhc set browser start"
+msgstr ""
+
+#: doc/common/preview.md:7
+msgid "fhc preview mfLkParVTDcr80-uEk8OhEfT"
+msgstr ""
+
+#: doc/common/resources.md:0
+msgid "fhc-resources(1) -- List resources for a FeedHenry Application"
+msgstr ""
+
+#: doc/common/resources.md:2
+msgid ""
+"fhc resources <appId>\n"
+"fhc resources <appId> --env=<environment>"
+msgstr ""
+
+#: doc/common/resources.md:4
+msgid ""
+"Show the resources available and being used by a FeedHenry application, "
+"defaults to 'dev' environment or specify one using --env=<environment>."
+msgstr ""
+
+#: doc/common/resources.md:6
+msgid "fhc resources mfLkParVTDcr80-uEk8OhEfT --env=dev"
+msgstr ""
+
+#: doc/common/search.md:0
+msgid "fhc-search(1) -- Search FeedHenry Applications"
+msgstr ""
+
+#: doc/common/search.md:2
+msgid "fhc search <query>"
+msgstr ""
+
+#: doc/common/search.md:4
+msgid "This command can be used to search your FeedHenry applications."
+msgstr ""
+
+#: doc/common/search.md:6
+msgid "fhc search \"node\""
+msgstr ""
+
+#: doc/common/secureendpoints.md:0
+msgid "fhc-secureendpoints(1) -- Manage an Apps Secure Endpoints"
+msgstr ""
+
+#: doc/common/secureendpoints.md:2
+msgid ""
+"fhc secureendpoints [get] <app-id> --env=<environment>\n"
+"fhc secureendpoints set-default <app-id> <default> --env=<environment>\n"
+"fhc secureendpoints set-override <app-id> <endpoint> <default> "
+"--env=<environment>\n"
+"fhc secureendpoints remove-override <app-id> <endpoint> --env=<environment>\n"
+"fhc secureendpoints auditlog <app-id> --env=<environment>\n"
+"where 'default' can be either 'https' or 'appapikey'. Use 'fhc "
+"appendpoints' to list an Apps endpoints."
+msgstr ""
+
+#: doc/common/secureendpoints.md:4
+msgid ""
+"Manage the Secure Endpoints for an App. See "
+"http://docs.feedhenry.com/v2/secureendpoints_api.html for more information."
+msgstr ""
+
+#: doc/common/secureendpoints.md:6
+msgid ""
+"fhc secureendpoints mfLkParVTDcr80-uEk8OhEfT --env=dev\n"
+"fhc secureendpoints auditlog mfLkParVTDcr80-uEk8OhEfT "
+"\"{\\\"endpoint\\\":\\\"getConfig\\\"}\""
+msgstr ""
+
+#: doc/common/services.md:0
+msgid "fhc-services(1) -- List FeedHenry Services"
+msgstr ""
+
+#: doc/common/services.md:2
+msgid ""
+"fhc services [list]\n"
+"fhc services create <service-id> [<type>]\n"
+"fhc services update <service-id> <prop-name> <value>\n"
+"fhc services read <service-id>\n"
+"fhc services delete <service-id>\n"
+"  where <service-id> is a service id\n"
+"  where <type> is a valid service type [default]"
+msgstr ""
+
+#: doc/common/services.md:4
+msgid ""
+"This command can be used to list your FeedHenry Services. As with any "
+"command in FHC, passing a '--json' flag will return the list of FeedHenry "
+"Apps in JSON format."
+msgstr ""
+
+#: doc/common/services.md:6
+msgid "$ fhc services --bare"
+msgstr ""
+
+#: doc/common/services.md:8
+#: doc/fh3/projects.md:10
+msgid "show Project ids and titles only:"
+msgstr ""
+
+#: doc/common/services.md:9
+msgid "$ fhc apps --bare=\"guid title\""
+msgstr ""
+
+#: doc/common/services.md:10
+msgid ""
+"t2Xva0-4X2AFsxbBzsRLSet1 Project1\n"
+"VCtqRZTJWnhz5b3SbcS1LvVm Project2\n"
+"DOK1rO5L2WAW7fjE_MAIehio Project3\n"
+"t-Bq8rCXHMwJSY9heXZZs8AL Project4"
+msgstr ""
+
+#: doc/common/stats.md:0
+msgid "fhc-stats(1) -- FeedHenry Stats"
+msgstr ""
+
+#: doc/common/stats.md:2
+msgid "fhc stats <app-id> <stats-type> <num-results> --env=<environment>"
+msgstr ""
+
+#: doc/common/stats.md:4
+msgid "Get App stats from your FeedHenry Application."
+msgstr ""
+
+#: doc/common/stats.md:5
+#: doc/fh2/alias.md:5
+#: doc/fh2/app/act.md:5
+msgid "app id"
+msgstr ""
+
+#: doc/common/stats.md:6
+#: doc/fh2/alias.md:6
+#: doc/fh2/app/act.md:6
+msgid "Your application id."
+msgstr ""
+
+#: doc/common/stats.md:7
+msgid "stats-type"
+msgstr ""
+
+#: doc/common/stats.md:8
+msgid ""
+"Type of stats. Options here are 'api' (in-built system stats, e.g. timing "
+"app end points, etc) or 'app' (stats a developer has put in their code "
+"using feedhenry.stats() API)."
+msgstr ""
+
+#: doc/common/stats.md:9
+msgid "num-results"
+msgstr ""
+
+#: doc/common/stats.md:10
+msgid "Number of results you want returned. Numeric value."
+msgstr ""
+
+#: doc/common/stats.md:11
+msgid "--env=<environment>"
+msgstr ""
+
+#: doc/common/stats.md:12
+msgid ""
+"Use --env=<environment> to see stats from your app staged in another "
+"environment."
+msgstr ""
+
+#: doc/common/stats.md:14
+msgid "fhc stats h2n0pg-qvar407mijmsvbapz app 10 --env=live"
+msgstr ""
+
+#: doc/common/templates.md:0
+msgid "fhc-templates(1) -- FeedHenry Templates"
+msgstr ""
+
+#: doc/common/templates.md:2
+msgid ""
+"fhc templates apps [<template-id]\n"
+"fhc templates projects [<template-id>]"
+msgstr ""
+
+#: doc/common/templates.md:4
+msgid ""
+"View App and Projects Templates in FeedHenry. Each Template can be used "
+"when creating a new Project/App. See ```fhc help create```."
+msgstr ""
+
+#: doc/common/user.md:0
+msgid "fhc-user(1) -- FeedHenry User Information"
+msgstr ""
+
+#: doc/common/user.md:2
+msgid "fhc user "
+msgstr ""
+
+#: doc/common/user.md:4
+msgid "This command will return FeedHenry information about the logged in user."
+msgstr ""
+
+#: doc/common/version.md:0
+msgid "fhc-version(1)"
+msgstr ""
+
+#: doc/common/version.md:2
+msgid " fhc version"
+msgstr ""
+
+#: doc/common/version.md:4
+msgid "  fhc version    "
+msgstr ""
+
+#: doc/common/version.md:6
+msgid "Version info about the FeedHenry instance we're connected to"
+msgstr ""
+
+#: doc/fh2/account.md:0
+msgid "fhc-account -- Manage your FeedHenry Account Resources"
+msgstr ""
+
+#: doc/fh2/account.md:2
+msgid ""
+" fhc account upload-resource <destination> <file-path> <resource-type> "
+"<config>\n"
+"   where <destination> is one of : android, iphone or blackberry\n"
+"   where <file-path> is the absolute path of the file to upload\n"
+"   where <resource> is one of : certificate (used by iphone and android), "
+"privatekey (used by iphone and android), csk or db (used by Blackberry)\n"
+"   where <config> is one of : debug or distribution (required if "
+"destination is iphone, default is debug)\n"
+" or\n"
+" fhc account upload-resources-batch <destination> <resource-directory>\n"
+"   where <destination> is one of : android, iphone, blackberry or all\n"
+"   where <resource-directory> should be the directory where resources are "
+"located.\n"
+" or \n"
+" fhc account generate-resource <destination> <resource-type> <password>\n"
+"   where <destination> is one of android or iphone (not supported yet)\n"
+"   where <resource-type> is one of certificate or csr (certificate signing "
+"request, not supported yet)\n"
+"   where <password> is the password used to encrypt the private key "
+"(required)    "
+msgstr ""
+
+#: doc/fh2/account.md:4
+msgid ""
+"This command will try to find the correct type of resources for each "
+"destination and upload them automatically. \n"
+"To do that, you should organize your resources in the following way: "
+msgstr ""
+
+#: doc/fh2/account.md:7
+msgid ""
+"If the destination is all, each resource file should have one parent "
+"directory indicates its actual destination."
+msgstr ""
+
+#: doc/fh2/account.md:10
+msgid ""
+"Each resource file should be better use the resource type as its extention "
+"or at least part of the name."
+msgstr ""
+
+#: doc/fh2/account.md:13
+msgid ""
+"Each resource file should have one parent directory inticating its "
+"destination."
+msgstr ""
+
+#: doc/fh2/account.md:16
+msgid ""
+"For ios resources, each of them should have one parent directory indicating "
+"its config."
+msgstr ""
+
+#: doc/fh2/account.md:19
+msgid ""
+"If more than one resource file is found for one set of configuration, no "
+"file will be uploaded for that configuration."
+msgstr ""
+
+#: doc/fh2/account.md:21
+msgid "Example:"
+msgstr ""
+
+#: doc/fh2/account.md:22
+msgid "--Resources"
+msgstr ""
+
+#: doc/fh2/account.md:23
+msgid "|--iphone"
+msgstr ""
+
+#: doc/fh2/account.md:24
+msgid " |--debug"
+msgstr ""
+
+#: doc/fh2/account.md:25
+msgid "   |--developer.certificate"
+msgstr ""
+
+#: doc/fh2/account.md:26
+msgid "   |--developer.privatekey"
+msgstr ""
+
+#: doc/fh2/account.md:27
+msgid "|--android"
+msgstr ""
+
+#: doc/fh2/account.md:28
+msgid " |--developer.certificate"
+msgstr ""
+
+#: doc/fh2/account.md:29
+msgid " |--developer.privatekey"
+msgstr ""
+
+#: doc/fh2/account.md:30
+msgid "|--blackberry"
+msgstr ""
+
+#: doc/fh2/account.md:31
+msgid " |--sigtool.csk"
+msgstr ""
+
+#: doc/fh2/account.md:32
+msgid " |--sigtool.db"
+msgstr ""
+
+#: doc/fh2/alias.md:0
+msgid "fhc-alias(1) -- FeedHenry Actions"
+msgstr ""
+
+#: doc/fh2/alias.md:2
+msgid "fhc alias <alias>=<app-id>"
+msgstr ""
+
+#: doc/fh2/alias.md:4
+msgid "This is a utility command to set an alias for the 24 character appid "
+msgstr ""
+
+#: doc/fh2/alias.md:7
+msgid "alias"
+msgstr ""
+
+#: doc/fh2/alias.md:8
+msgid "Simple name that is easy to remember"
+msgstr ""
+
+#: doc/fh2/alias.md:10
+msgid "fhc alias myapp=2ifjg-dsf343hjlo97dhnvh5"
+msgstr ""
+
+#: doc/fh2/app/act.md:0
+msgid "fhc-app-act(1) -- FeedHenry Actions"
+msgstr ""
+
+#: doc/fh2/app/act.md:2
+msgid "fhc app act <app-id> <server-function> <params> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/act.md:4
+msgid ""
+"This is a utility command to easily invoke your application server side "
+"functions in FeedHenry. "
+msgstr ""
+
+#: doc/fh2/app/act.md:7
+msgid "server function"
+msgstr ""
+
+#: doc/fh2/app/act.md:8
+msgid ""
+"The name of the server side function you wish to call, this will be a "
+"method in your server side 'main.js' file."
+msgstr ""
+
+#: doc/fh2/app/act.md:9
+msgid "params"
+msgstr ""
+
+#: doc/fh2/app/act.md:10
+msgid ""
+"The parameters that the function expects. FeedHenry expects one JSON object "
+"to be passed here which contains all the function parameters."
+msgstr ""
+
+#: doc/fh2/app/act.md:12
+msgid "fhc act h2n0pg-qvar407mijmsvbapz helloWorld \"{\\\"name\\\":\\\"bono\\\"}\""
+msgstr ""
+
+#: doc/fh2/app/create.md:0
+msgid "fhc-app-create(1) -- Create FeedHenry Applications"
+msgstr ""
+
+#: doc/fh2/app/create.md:2
+msgid ""
+"fhc app create <project-id> <app-title> [<template-id>]\n"
+"fhc app create <project-id> <app-title> <template-type> <git-repo> "
+"<git-branch>"
+msgstr ""
+
+#: doc/fh2/app/create.md:4
+msgid "This command can be used to create a new FeedHenry Application."
+msgstr ""
+
+#: doc/fh2/app/create.md:6
+msgid ""
+"fhc app create 123454 foo cloud_nodejs https://github.com/foo.git\n"
+"fhc app create 123454 foo hello_world_mbaas_instance"
+msgstr ""
+
+#: doc/fh2/app/delete.md:0
+msgid "fhc-app-delete(1) -- Delete FeedHenry Applications"
+msgstr ""
+
+#: doc/fh2/app/delete.md:2
+msgid "fhc app delete <app-id> "
+msgstr ""
+
+#: doc/fh2/app/delete.md:4
+msgid "This command can be used to delete a new FeedHenry Application."
+msgstr ""
+
+#: doc/fh2/app/embed.md:0
+msgid "fhc-app-embed(1) -- Build your Application for Embed Target"
+msgstr ""
+
+#: doc/fh2/app/embed.md:2
+msgid "fhc app embed <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/embed.md:4
+msgid "This command can be used to build an 'Embed' version of your Application."
+msgstr ""
+
+#: doc/fh2/app/embed.md:6
+msgid "fhc app embed mfLkParVTDcr80-uEk8OhEfT --env=dev"
+msgstr ""
+
+#: doc/fh2/app/endpoints.md:0
+msgid "fhc-app-endpoints(1) -- List Cloud App Endpoints"
+msgstr ""
+
+#: doc/fh2/app/endpoints.md:2
+msgid "fhc app endpoints <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/endpoints.md:4
+msgid "This command can be used to list all your Cloud Endpoints."
+msgstr ""
+
+#: doc/fh2/app/endpoints.md:6
+msgid "fhc app endpoints mfLkParVTDcr80-uEk8OhEfT --env=dev"
+msgstr ""
+
+#: doc/fh2/app/hosts.md:0
+msgid "fhc-app-hosts(1) -- FeedHenry hosts"
+msgstr ""
+
+#: doc/fh2/app/hosts.md:2
+msgid "fhc app hosts <app-id> "
+msgstr ""
+
+#: doc/fh2/app/hosts.md:4
+msgid "This is a utility command to see the various hosts an App has."
+msgstr ""
+
+#: doc/fh2/app/read.md:0
+msgid "fhc-app-read(1) -- Read FeedHenry Application Proprties"
+msgstr ""
+
+#: doc/fh2/app/read.md:2
+msgid "fhc app read <app-id> "
+msgstr ""
+
+#: doc/fh2/app/read.md:4
+msgid "This command can be used to read a FeedHenry Application's Properties."
+msgstr ""
+
+#: doc/fh2/app/restart.md:0
+msgid "fhc-restart(1) -- Restart a FeedHenry Application"
+msgstr ""
+
+#: doc/fh2/app/restart.md:2
+msgid "fhc app restart <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/restart.md:4
+msgid "This command can be used to restart a FeedHenry Application."
+msgstr ""
+
+#: doc/fh2/app/stage.md:0
+msgid "fhc-app-stage(1) -- Stage FeedHenry Applications"
+msgstr ""
+
+#: doc/fh2/app/stage.md:2
+msgid ""
+"fhc app stage <appId> --env=<environment>\n"
+"fhc app stage <appId> [approver] [comment] --clean --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/stage.md:4
+msgid ""
+"This command can be used to stage your FeedHenry applications, either to "
+"the 'development' or 'live' FeedHenry environment. The '--clean' flag can "
+"be used to do a full clean restage, which has the following effect:"
+msgstr ""
+
+#: doc/fh2/app/stage.md:7
+msgid "cleans out all old application log files"
+msgstr ""
+
+#: doc/fh2/app/stage.md:10
+msgid ""
+"will remove any cached node npm modules and do an 'npm install' from "
+"scratch."
+msgstr ""
+
+#: doc/fh2/app/stage.md:14
+msgid ""
+"When deploy to 'live' environment, the approver's name or email should be "
+"set. If it's not set in the command line, the user will be prompted for it. "
+"A comment can be added for the stage but it's optional."
+msgstr ""
+
+#: doc/fh2/app/stage.md:16
+msgid "fhc stage mfLkParVTDcr80-uEk8OhEfT --env=dev"
+msgstr ""
+
+#: doc/fh2/app/start.md:0
+msgid "fhc-app-start(1) -- Start a FeedHenry Application"
+msgstr ""
+
+#: doc/fh2/app/start.md:2
+msgid "fhc app start <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/start.md:4
+msgid "This command can be used to start a FeedHenry Application."
+msgstr ""
+
+#: doc/fh2/app/stop.md:0
+msgid "fhc-app-stop(1) -- Stop a FeedHenry Application"
+msgstr ""
+
+#: doc/fh2/app/stop.md:2
+msgid "fhc app stop <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/app/stop.md:4
+msgid "This command can be used to stop a FeedHenry Application."
+msgstr ""
+
+#: doc/fh2/init.md:0
+msgid "fhc-init(1) -- Bootstrap a New Project"
+msgstr ""
+
+#: doc/fh2/init.md:2
+msgid "fhc init"
+msgstr ""
+
+#: doc/fh2/init.md:4
+msgid ""
+"Initialises a simple project structure in the current directory (if empty) "
+"by\n"
+"pulling in a project template from GitHub."
+msgstr ""
+
+#: doc/fh2/ping.md:0
+#: doc/fh3/ping.md:0
+msgid "fhc-ping(1) -- Ping a FeedHenry Application"
+msgstr ""
+
+#: doc/fh2/ping.md:2
+#: doc/fh3/ping.md:2
+msgid "fhc ping <app-id> --env=<environment>"
+msgstr ""
+
+#: doc/fh2/ping.md:4
+#: doc/fh3/ping.md:4
+msgid "This command can be used to ping a FeedHenry Application."
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:0
+#: doc/fh3/admin/environments/create.md:0
+#: doc/fh3/admin/mbaas/create.md:0
+#: doc/fh3/admin/teams/create.md:0
+#: doc/fh3/app/create.md:0
+msgid "fhc-create(1)"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:2
+msgid ""
+" fhc admin environments alias create --environment=<environment> "
+"--environmentAlias=<environmentAlias> "
+"--environmentLabelAlias=<environmentLabelAlias>"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:4
+msgid ""
+"  fhc admin-environment-aliases create --environment=<environment id> "
+"--environmentAlias=<environment id alias> "
+"--environmentLabelAlias=<environment label alias>    Creates an environment "
+"alias"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:5
+#: doc/fh3/admin/environments/alias/delete.md:5
+#: doc/fh3/admin/environments/alias/read.md:5
+#: doc/fh3/admin/environments/alias/update.md:5
+#: doc/fh3/admin/environments/create.md:5
+#: doc/fh3/admin/environments/delete.md:5
+#: doc/fh3/admin/environments/read.md:5
+#: doc/fh3/admin/environments/update.md:5
+#: doc/fh3/admin/mbaas/create.md:8
+#: doc/fh3/admin/mbaas/delete.md:5
+#: doc/fh3/admin/mbaas/read.md:5
+#: doc/fh3/admin/mbaas/update.md:8
+#: doc/fh3/admin/teams/adduser.md:5
+#: doc/fh3/admin/teams/create.md:5
+#: doc/fh3/admin/teams/delete.md:5
+#: doc/fh3/admin/teams/read.md:5
+#: doc/fh3/admin/teams/removeuser.md:5
+#: doc/fh3/admin/teams/userteams.md:5
+#: doc/fh3/app/act.md:5
+#: doc/fh3/app/cloud.md:5
+#: doc/fh3/app/create.md:18
+#: doc/fh3/app/delete.md:5
+#: doc/fh3/app/endpoints.md:5
+#: doc/fh3/app/hosts.md:5
+#: doc/fh3/app/list.md:5
+#: doc/fh3/app/read.md:5
+#: doc/fh3/app/resources.md:5
+#: doc/fh3/app/stage.md:5
+#: doc/fh3/app/start.md:5
+#: doc/fh3/app/stop.md:5
+#: doc/fh3/app/suspend.md:5
+msgid "OPTIONS"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:6
+msgid ""
+"  --environment            The name for your environment this alias is "
+"targeting  [required]\n"
+"  --environmentAlias       An aliased name for your environment             "
+"      [required]\n"
+"  --environmentLabelAlias  Description of your environment alias            "
+"      [required]"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/create.md:8
+#: doc/fh3/admin/environments/create.md:8
+msgid "Creates an environments."
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/delete.md:0
+#: doc/fh3/admin/environments/delete.md:0
+#: doc/fh3/admin/mbaas/delete.md:0
+#: doc/fh3/admin/teams/delete.md:0
+#: doc/fh3/app/delete.md:0
+msgid "fhc-delete(1)"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/delete.md:2
+msgid " fhc admin environments alias delete --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/delete.md:4
+msgid ""
+"  fhc admin environments alias delete --id=<environment alias id>    Delete "
+"an environment alias by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/delete.md:6
+msgid "  --id  Some unique identifier for your environment alias  [required]"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/delete.md:8
+msgid "Delete an environment alias."
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/list.md:0
+#: doc/fh3/admin/environments/list.md:0
+#: doc/fh3/admin/mbaas/list.md:0
+#: doc/fh3/admin/teams/list.md:0
+#: doc/fh3/app/list.md:0
+msgid "fhc-list(1)"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/list.md:2
+msgid " fhc admin environments alias list"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/list.md:4
+msgid "  fhc admin environments aliases list     Lists available environments"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/list.md:6
+msgid "Lists environment aliases."
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/read.md:0
+#: doc/fh3/admin/environments/read.md:0
+#: doc/fh3/admin/mbaas/read.md:0
+#: doc/fh3/admin/teams/read.md:0
+#: doc/fh3/app/read.md:0
+msgid "fhc-read(1)"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/read.md:2
+msgid " fhc admin environments alias read --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/read.md:4
+msgid ""
+"  fhc admin environments aliases read --id=<id>     Read an environment "
+"alias by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/read.md:6
+#: doc/fh3/admin/environments/read.md:6
+#: doc/fh3/admin/teams/read.md:6
+msgid "  --id  A unique identifier for an environment  [required]"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/read.md:8
+msgid "Read an environment alias by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/update.md:0
+#: doc/fh3/admin/environments/update.md:0
+#: doc/fh3/admin/mbaas/update.md:0
+msgid "fhc-update(1)"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/update.md:2
+msgid ""
+" fhc admin environments alias update --id=<id> "
+"[--environment=<environment>] [--environmentAlias=<environmentAlias>] "
+"[--environmentLabelAlias=<environmentLabelAlias>]"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/update.md:4
+msgid ""
+"  fhc admin-environment-aliases update --id=<environment alias id> "
+"[--environment=<environment id>] [--environmentAlias=<environment id "
+"alias>] [--environmentLabelAlias=<environment label alias>]    Update an "
+"environment alias by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/update.md:6
+msgid ""
+"  --id                     Some unique identifier for your environment "
+"alias - retrieve this from the list command  [required]\n"
+"  --environment            The name for your environment this alias is "
+"targeting                                  \n"
+"  --environmentAlias       An aliased name for your environment             "
+"                                      \n"
+"  --environmentLabelAlias  Description of your environment alias            "
+"                                      "
+msgstr ""
+
+#: doc/fh3/admin/environments/alias/update.md:8
+#: doc/fh3/admin/environments/update.md:8
+msgid "Update an environments."
+msgstr ""
+
+#: doc/fh3/admin/environments/create.md:2
+msgid " fhc admin environments create --id=<id> --label=<label> --targets=<targets>"
+msgstr ""
+
+#: doc/fh3/admin/environments/create.md:4
+msgid ""
+"  fhc admin environments create --id=<environment id> --label=<label> "
+"--targets=<mbaasTargetId1>,<mbaasTargetId2>    Creates an environment"
+msgstr ""
+
+#: doc/fh3/admin/environments/create.md:6
+msgid ""
+"  --id       Some unique identifier for your environment     [required]\n"
+"  --label    A label describing your environment             [required]\n"
+"  --targets  Comma separated list of MBaaS Target hostnames  [required]"
+msgstr ""
+
+#: doc/fh3/admin/environments/delete.md:2
+msgid " fhc admin environments delete --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/environments/delete.md:4
+msgid ""
+"  fhc admin environments delete --id=<environment id>    Delete an "
+"environment by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/delete.md:6
+#: doc/fh3/admin/teams/delete.md:6
+msgid "  --id  Some unique identifier for your environment  [required]"
+msgstr ""
+
+#: doc/fh3/admin/environments/delete.md:8
+msgid "Delete an environments."
+msgstr ""
+
+#: doc/fh3/admin/environments/list.md:2
+msgid " fhc admin environments list"
+msgstr ""
+
+#: doc/fh3/admin/environments/list.md:4
+msgid "  fhc admin environments list     Lists available environments"
+msgstr ""
+
+#: doc/fh3/admin/environments/list.md:6
+msgid "Lists available environments."
+msgstr ""
+
+#: doc/fh3/admin/environments/read.md:2
+msgid " fhc admin environments read --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/environments/read.md:4
+msgid "  fhc admin environments read --id=<id>     Read an environment by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/read.md:8
+msgid "Read an environment by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/update.md:2
+msgid ""
+" fhc admin environments update --id=<id> [--label=<label>] "
+"[--targets=<targets>]"
+msgstr ""
+
+#: doc/fh3/admin/environments/update.md:4
+msgid ""
+"  fhc admin environments update --id=<environment id> --label=<label> "
+"--targets=<mbaasTargetId1>,<mbaasTargetId2>    Update an environment by id"
+msgstr ""
+
+#: doc/fh3/admin/environments/update.md:6
+msgid ""
+"  --id       Some unique identifier for your environment     [required]\n"
+"  --label    A label describing your environment           \n"
+"  --targets  Comma separated list of MBaaS Target hostnames"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:2
+msgid ""
+"  `fhc admin mbaas create --id=<id> --url=<url> --servicekey=<servicekey> "
+"--username=<username> --password=<password>`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:4
+msgid ""
+"  `fhc admin mbaas create --id=<MBaaS id> --url=<FeedHenry MBaaS URL> "
+"--servicekey=<MBaaS Service Key> --username=<MBaaS User Name> "
+"--password=<MBaaS Password> --type=feedhenry`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:5
+msgid "  **Creates FeedHenry MBaaS Target**"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:6
+msgid ""
+"  `fhc admin mbaas create --id=<MBaaS id> --url=<OpenShift Master URL> "
+"--servicekey=<MBaaS Service Key> --routerDNSUrl=<OpenShift Router DNS> "
+"--fhMbaasHost=<MBaaS URL> --type=openshift3`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:7
+msgid "  **Creates OpenShift 3 MBaaS Target**"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:9
+#: doc/fh3/admin/mbaas/update.md:9
+msgid "FeedHenry MBaaS Target"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:10
+msgid ""
+"--id              Some unique identifier for your MBaaS                     "
+"                                                [required]\n"
+"--url             The hostname where your MBaaS exists                      "
+"                                                [required]\n"
+"--servicekey      Service key to authenticate the MBaaS                     "
+"                                                [required]\n"
+"--username        MBaaS Username                                            "
+"                                                [required]\n"
+"--password        MBaaS Password                                            "
+"                                                [required]\n"
+"--type            Type of MBaaS Target (feedhenry)                          "
+"                                                [required]\n"
+"--label           Label for MBaaS Target"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:11
+#: doc/fh3/admin/mbaas/update.md:11
+msgid "OpenShift 3 MBaaS Target"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:12
+msgid ""
+"--id              Some unique identifier for your MBaaS                     "
+"                                                [required]\n"
+"--url             URL where the OpenShift Master(s) API is available (e.g. "
+"https://master.openshift.example.com:8443)       [required]\n"
+"--servicekey      The FHMBAAS_KEY environment variable value                "
+"                                                [required]\n"
+"--routerDNSUrl    The wildcard DNS entry for your OpenShift Router (e.g. "
+"\\*.cloudapps.example.com)                          [required]\n"
+"--fhMbaasHost     Exposed route where fh-mbaas is running in OpenShift 3 "
+"(e.g. https://my-mbaas.openshift.example.com)      [required]\n"
+"--type            Type of MBaaS Target (openshift3)                         "
+"                                                [required]\n"
+"--label           Label for MBaaS Target"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/create.md:14
+msgid "Creates an MBaaS Target."
+msgstr ""
+
+#: doc/fh3/admin/mbaas/delete.md:2
+msgid "  `fhc admin mbaas delete --id=<id>`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/delete.md:4
+msgid "  `fhc admin mbaas delete --id=<MBaaS id>`    "
+msgstr ""
+
+#: doc/fh3/admin/mbaas/delete.md:6
+#: doc/fh3/admin/mbaas/read.md:6
+msgid "--id  Some unique MBaaS identifier  [required]"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/delete.md:8
+msgid "Delete an MBaaS."
+msgstr ""
+
+#: doc/fh3/admin/mbaas/list.md:2
+msgid "  `fhc admin mbaas list`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/list.md:4
+msgid "  `fhc admin mbaas list`     Lists available MBaaSes"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/list.md:6
+msgid "Lists available MBaaSes."
+msgstr ""
+
+#: doc/fh3/admin/mbaas/read.md:2
+msgid "  `fhc admin mbaas read --id=<id>`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/read.md:4
+msgid "  `fhc admin mbaas read --id=<MBaaS id>`   "
+msgstr ""
+
+#: doc/fh3/admin/mbaas/read.md:8
+msgid "Read an MBaaS."
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:2
+msgid ""
+"  `fhc admin mbaas update --id=<id> [--url=<url>] "
+"[--servicekey=<servicekey>] [--username=<username>] [--password=<password>]`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:4
+msgid ""
+"  `fhc admin mbaas create --id=<MBaaS id> --url=<FeedHenry MBaaS URL> "
+"--servicekey=<MBaaS Service Key> --username=<MBaaS User Name> "
+"--password=<MBaaS Password> --label=<MBaaS label>`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:5
+msgid " **Updates FeedHenry MBaaS Target**"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:6
+msgid ""
+"  `fhc admin mbaas update --id=<MBaaS id> --url=<OpenShift Master URL> "
+"--servicekey=<MBaaS Service Key> --routerDNSUrl=<OpenShift Router DNS> "
+"--fhMbaasHost=<MBaaS URL> --label=<MBaaS label>`"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:7
+msgid " **Updates OpenShift 3 MBaaS Target**"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:10
+msgid ""
+"--id              Some unique identifier for your MBaaS                     "
+"                                          [required]\n"
+"--url             The hostname where your MBaaS exists                    \n"
+"--servicekey      Service key to authenticate the MBaaS                   \n"
+"--username        MBaaS Username                                          \n"
+"--password        MBaaS Password\n"
+"--label           Label for MBaaS Target                                    "
+"    "
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:12
+msgid ""
+"--id              Some unique identifier for your MBaaS                     "
+"                                          [required]\n"
+"--url             URL where the OpenShift Master(s) API is available (e.g. "
+"https://master.openshift.example.com:8443)\n"
+"--servicekey      The FHMBAAS_KEY environment variable value\n"
+"--routerDNSUrl    The wildcard DNS entry for your OpenShift Router (e.g. "
+"\\*.cloudapps.example.com)\n"
+"--fhMbaasHost     Exposed route where fh-mbaas is running in OpenShift 3 "
+"(e.g. https://my-mbaas.openshift.example.com)\n"
+"--label           Label for MBaaS Target"
+msgstr ""
+
+#: doc/fh3/admin/mbaas/update.md:14
+msgid "Updates an MBaaS Target."
+msgstr ""
+
+#: doc/fh3/admin/teams/adduser.md:0
+msgid "fhc-adduser(1)"
+msgstr ""
+
+#: doc/fh3/admin/teams/adduser.md:2
+msgid " fhc admin teams adduser --team=<team> --user=<user>"
+msgstr ""
+
+#: doc/fh3/admin/teams/adduser.md:4
+msgid "  fhc admin teams adduser --team=1a --user=2b    Add user 2b to team 1a"
+msgstr ""
+
+#: doc/fh3/admin/teams/adduser.md:6
+#: doc/fh3/admin/teams/removeuser.md:6
+msgid ""
+"  --team  A unique team id  [required]\n"
+"  --user  A unique user id  [required]"
+msgstr ""
+
+#: doc/fh3/admin/teams/adduser.md:8
+msgid "Add a user to a specified team."
+msgstr ""
+
+#: doc/fh3/admin/teams/create.md:2
+msgid " fhc admin teams create --team=<team>"
+msgstr ""
+
+#: doc/fh3/admin/teams/create.md:4
+msgid ""
+"  fhc admin teams create --team=myteam.json    Creates a team from file "
+"myteam.json"
+msgstr ""
+
+#: doc/fh3/admin/teams/create.md:6
+msgid "  --team  a .json filename for your team  [required]"
+msgstr ""
+
+#: doc/fh3/admin/teams/create.md:8
+msgid "Creates a team."
+msgstr ""
+
+#: doc/fh3/admin/teams/delete.md:2
+msgid " fhc admin teams delete --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/teams/delete.md:4
+msgid "  fhc admin teams delete --id=1a2b    Deletes team with id 1a2b"
+msgstr ""
+
+#: doc/fh3/admin/teams/delete.md:8
+msgid "Delete a team."
+msgstr ""
+
+#: doc/fh3/admin/teams/list.md:2
+msgid " fhc admin teams list"
+msgstr ""
+
+#: doc/fh3/admin/teams/list.md:4
+msgid "  fhc admin teams list     Lists available teams"
+msgstr ""
+
+#: doc/fh3/admin/teams/list.md:6
+#: doc/fh3/admin/teams/userteams.md:8
+msgid "Lists teams."
+msgstr ""
+
+#: doc/fh3/admin/teams/read.md:2
+msgid " fhc admin teams read --id=<id>"
+msgstr ""
+
+#: doc/fh3/admin/teams/read.md:4
+msgid "  fhc admin teams read --id=<id>     Read a team by id"
+msgstr ""
+
+#: doc/fh3/admin/teams/read.md:8
+msgid "Read a team by id"
+msgstr ""
+
+#: doc/fh3/admin/teams/removeuser.md:0
+msgid "fhc-removeuser(1)"
+msgstr ""
+
+#: doc/fh3/admin/teams/removeuser.md:2
+msgid " fhc admin teams removeuser --team=<team> --user=<user>"
+msgstr ""
+
+#: doc/fh3/admin/teams/removeuser.md:4
+msgid ""
+"  fhc admin teams removeuser --team=1a --user=2b    Remove user 2b to team "
+"1a"
+msgstr ""
+
+#: doc/fh3/admin/teams/removeuser.md:8
+msgid "Remove a user to a specified team."
+msgstr ""
+
+#: doc/fh3/admin/teams/userteams.md:0
+msgid "fhc-userteams(1)"
+msgstr ""
+
+#: doc/fh3/admin/teams/userteams.md:2
+msgid " fhc admin teams userteams --user=<user>"
+msgstr ""
+
+#: doc/fh3/admin/teams/userteams.md:4
+msgid "  admin teams userteams --user=1a2b    Lists user teams with id 1a2b"
+msgstr ""
+
+#: doc/fh3/admin/teams/userteams.md:6
+msgid "  --user, -u  A unique user GUID  [required]"
+msgstr ""
+
+#: doc/fh3/app/act.md:0
+msgid "fhc-act(1)"
+msgstr ""
+
+#: doc/fh3/app/act.md:2
+msgid " fhc app act --app=<app> --env=<env> --data=<data> --fn=<fn>"
+msgstr ""
+
+#: doc/fh3/app/act.md:4
+msgid ""
+"  fhc app act --app=1a2b3c --fn=<serverside Function> --data=<data to send> "
+"--env=<environment>    Performs an act request on app with id 1a2b3c"
+msgstr ""
+
+#: doc/fh3/app/act.md:6
+msgid ""
+"  --app, -a  Unique 24 character GUID of the app you want to do a request "
+"on  [required]\n"
+"  --env, -e  Environment within which the request should be performed       "
+"  [required]\n"
+"  --data     Request body to send thru                                      "
+"  [required]\n"
+"  --fn       Cloud function name to call                                    "
+"  [required]"
+msgstr ""
+
+#: doc/fh3/app/act.md:8
+msgid "Performs an act request on a cloud app."
+msgstr ""
+
+#: doc/fh3/app/cloud.md:0
+msgid "fhc-cloud(1)"
+msgstr ""
+
+#: doc/fh3/app/cloud.md:2
+msgid " fhc app cloud --app=<app> --env=<env> --data=<data> --path=<path>"
+msgstr ""
+
+#: doc/fh3/app/cloud.md:4
+msgid ""
+"  fhc app cloud --app=1a2b3c --path=<serverside path from root> "
+"--data=<Data to send> --env=<environment>    Performs a cloud request on "
+"app with id 1a2b3c"
+msgstr ""
+
+#: doc/fh3/app/cloud.md:6
+msgid ""
+"  --app, -a  Unique 24 character GUID of the app you want to do a request "
+"on  [required]\n"
+"  --env, -e  Environment within which the request should be performed       "
+"  [required]\n"
+"  --data     Request body to send thru                                      "
+"  [required]\n"
+"  --path     Path of the cloud request                                      "
+"  [required]"
+msgstr ""
+
+#: doc/fh3/app/cloud.md:8
+msgid "Performs a cloud request on a cloud app"
+msgstr ""
+
+#: doc/fh3/app/create.md:2
+msgid ""
+" fhc app create --project=<project> --title=<title> --type=cloud_nodejs "
+"[--template=<template>] [--repo=<repo>] "
+"[--branch=<refs/heads/my-branch-name>]"
+msgstr ""
+
+#: doc/fh3/app/create.md:4
+msgid "  fhc app create --project=1a2b3c --title=My New App --type=cloud_nodejs"
+msgstr ""
+
+#: doc/fh3/app/create.md:7
+msgid "Creates a new hybrid app from template."
+msgstr ""
+
+#: doc/fh3/app/create.md:11
+msgid ""
+"  fhc app create --project=1a2b3c --title=My New App --type=cloud_nodejs "
+"--repo=git:///some.com/repo.git --branch=refs/heads/my-branch    "
+msgstr ""
+
+#: doc/fh3/app/create.md:14
+msgid "Creates a new hybrid app from a git repo."
+msgstr ""
+
+#: doc/fh3/app/create.md:19
+msgid ""
+"  --project, -p  Unique 24 character GUID of the project you want this app "
+"to be created in.      [required]\n"
+"  --title, -t    A title for your app.                                      "
+"                      [required]\n"
+"  --type    The type of application.                                        "
+"                  [required]\n"
+"  --template    Template of your app - e.g. hello_world_mbaas_instance. See "
+"fhc templates apps.  [default: \"hello_world_mbaas_instance\"]\n"
+"  --repo      Repository to clone your app from.                            "
+"                 \n"
+"  --branch    Git branch to clone from. Takes format '--branch "
+"refs/heads/my-branch-name' [default: master]\n"
+"  --env   If specified and the app is deployable, the app will be deployed "
+"to this environment automatically. Set it to \"none\" will not deploy the "
+"app.\n"
+"  --wait    Optional. If this is set to true, the command will wait until "
+"the app is deployed (if enabled).                                           "
+"      "
+msgstr ""
+
+#: doc/fh3/app/create.md:21
+msgid "  Creates an application."
+msgstr ""
+
+#: doc/fh3/app/delete.md:2
+msgid " fhc app delete --project=<project> --app=<app>"
+msgstr ""
+
+#: doc/fh3/app/delete.md:4
+msgid ""
+"  fhc app delete --project=1a --app=2b    Deletes app with id 2b under "
+"project with id 1a"
+msgstr ""
+
+#: doc/fh3/app/delete.md:6
+#: doc/fh3/app/read.md:6
+msgid ""
+"  --project, -p  Unique 24 character GUID of the project your app lives in  "
+"[required]\n"
+"  --app, -a      Unique 24 character GUID of the app you want to delete     "
+"[required]"
+msgstr ""
+
+#: doc/fh3/app/delete.md:8
+msgid "Deletes an app under a project."
+msgstr ""
+
+#: doc/fh3/app/endpoints.md:0
+msgid "fhc-endpoints(1)"
+msgstr ""
+
+#: doc/fh3/app/endpoints.md:2
+msgid " fhc app endpoints --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/endpoints.md:4
+msgid "  fhc endpoints --app=<appGuid> --env=<environmentName>    "
+msgstr ""
+
+#: doc/fh3/app/endpoints.md:6
+#: doc/fh3/app/start.md:6
+#: doc/fh3/app/stop.md:6
+#: doc/fh3/app/suspend.md:6
+msgid ""
+"  --app, -a  Unieque 24 character GUID of your application                  "
+"     [required]\n"
+"  --env, -e  The lifecycle environment your application is running in, e.g. "
+"dev  [required]"
+msgstr ""
+
+#: doc/fh3/app/endpoints.md:8
+msgid "Provides the endpoints for the specified app in the specified environment."
+msgstr ""
+
+#: doc/fh3/app/hosts.md:0
+msgid "fhc-hosts(1)"
+msgstr ""
+
+#: doc/fh3/app/hosts.md:2
+msgid " fhc app hosts --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/hosts.md:4
+msgid ""
+"  fhc app hosts --app=2b --env=dev    Gets the host for the 2b app in the "
+"dev environment"
+msgstr ""
+
+#: doc/fh3/app/hosts.md:6
+msgid ""
+"  --app, -a  Unique 24 character GUID of the app you want to delete  "
+"[required]\n"
+"  --env, -e  Environment to look up the host for                     "
+"[required]"
+msgstr ""
+
+#: doc/fh3/app/hosts.md:8
+msgid "Gets the host for a cloud app in an environment."
+msgstr ""
+
+#: doc/fh3/app/list.md:2
+msgid " fhc app list --project=<project>"
+msgstr ""
+
+#: doc/fh3/app/list.md:4
+msgid ""
+"  fhc app list --project=1a2b3c    Passing project using a flag\n"
+"  fhc app list 1a2b3c              Passing project as an argument"
+msgstr ""
+
+#: doc/fh3/app/list.md:6
+msgid ""
+"  --project, -p  Unique 24 character GUID of the project you want to list "
+"apps in  [required]"
+msgstr ""
+
+#: doc/fh3/app/list.md:8
+msgid "Lists apps under a project."
+msgstr ""
+
+#: doc/fh3/app/read.md:2
+msgid " fhc app read --project=<project> --app=<app>"
+msgstr ""
+
+#: doc/fh3/app/read.md:4
+msgid ""
+"  fhc app read --project=1a --app=2b    Reads app with id 2b under project "
+"with id 1a"
+msgstr ""
+
+#: doc/fh3/app/read.md:8
+msgid "Reads an app under a project."
+msgstr ""
+
+#: doc/fh3/app/resources.md:0
+msgid "fhc-resources(1)"
+msgstr ""
+
+#: doc/fh3/app/resources.md:2
+msgid " fhc app resources --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/resources.md:4
+msgid ""
+"  fhc app resources --app=1a --env=dev    Shows the resources of the app "
+"with id 1a in the dev environment"
+msgstr ""
+
+#: doc/fh3/app/resources.md:6
+msgid ""
+"  --app, -a  Unique 24 character GUID of the cloud app you want to see "
+"resource info for  [required]\n"
+"  --env      The cloud environment your app is running in                   "
+"              [required]"
+msgstr ""
+
+#: doc/fh3/app/resources.md:8
+msgid "Lists resources of a cloud app"
+msgstr ""
+
+#: doc/fh3/app/stage.md:0
+msgid "fhc-stage(1)"
+msgstr ""
+
+#: doc/fh3/app/stage.md:2
+msgid ""
+" fhc app stage --app=<app> --env=<env> [--runtime=<runtime>] "
+"[--clean=<clean>]"
+msgstr ""
+
+#: doc/fh3/app/stage.md:4
+msgid "  fhc stage --app=<appGuid> --env=<environmentName>    "
+msgstr ""
+
+#: doc/fh3/app/stage.md:6
+msgid ""
+"  --app, -a      Unieque 24 character GUID of your application              "
+"                                                                           ["
+"required]\n"
+"  --env, -e      The lifecycle environment your application is running in, "
+"e.g. dev                                                                    "
+"[required]\n"
+"  --runtime, -r  The Node.js runtime of your application, e.g. node06 or "
+"node08 or node010                                                           "
+"\n"
+"  --clean, -c    Do a full, clean stage. Cleans out all old application log "
+"files, removes cached node modules and does an 'npm install' from scratch"
+msgstr ""
+
+#: doc/fh3/app/stage.md:8
+msgid "Stages a cloud application."
+msgstr ""
+
+#: doc/fh3/app/start.md:0
+msgid "fhc-start(1)"
+msgstr ""
+
+#: doc/fh3/app/start.md:2
+msgid " fhc app start --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/start.md:4
+msgid "  fhc start --app=<appGuid> --env=<environmentName>    "
+msgstr ""
+
+#: doc/fh3/app/start.md:8
+msgid ""
+"starts a cloud application. This command will only work if the app has "
+"previously been deployed"
+msgstr ""
+
+#: doc/fh3/app/stop.md:0
+msgid "fhc-stop(1)"
+msgstr ""
+
+#: doc/fh3/app/stop.md:2
+msgid " fhc app stop --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/stop.md:4
+msgid "  fhc stop --app=<appGuid> --env=<environmentName>    "
+msgstr ""
+
+#: doc/fh3/app/stop.md:8
+msgid ""
+"stops a cloud application. This command will only work if the app has "
+"previously been deployed"
+msgstr ""
+
+#: doc/fh3/app/suspend.md:0
+msgid "fhc-suspend(1)"
+msgstr ""
+
+#: doc/fh3/app/suspend.md:2
+msgid " fhc app suspend --app=<app> --env=<env>"
+msgstr ""
+
+#: doc/fh3/app/suspend.md:4
+msgid "  fhc suspend --app=<appGuid> --env=<environmentName>    "
+msgstr ""
+
+#: doc/fh3/app/suspend.md:8
+msgid ""
+"suspends a cloud application. This command will only work if the app has "
+"previously been deployed"
+msgstr ""
+
+#: doc/fh3/projects.md:0
+msgid "fhc-projects(1) -- List FeedHenry Proejcts"
+msgstr ""
+
+#: doc/fh3/projects.md:2
+msgid ""
+"fhc projects [list]\n"
+"fhc projects create <project-title> [<template-id>]\n"
+"fhc projects update <project-id> <prop-name> <value>\n"
+"fhc projects read <project-id>\n"
+"fhc projects delete <project-id>\n"
+"fhc projects clone <project-id>\n"
+"    Note 'clone' does a 'git clone' of each each App in your Project into "
+"the current working directory."
+msgstr ""
+
+#: doc/fh3/projects.md:4
+msgid "Access your FeedHenry Projects"
+msgstr ""
+
+#: doc/fh3/projects.md:5
+#: doc/fhc/fhcfg.md:46
+msgid "list"
+msgstr ""
+
+#: doc/fh3/projects.md:6
+msgid "fhc projects [list]"
+msgstr ""
+
+#: doc/fh3/projects.md:7
+msgid ""
+"This command is the default option and can be used to list your FeedHenry "
+"Projects. As with any command in FHC, passing a '--json' flag will return "
+"the list of FeedHenry Apps in JSON format."
+msgstr ""
+
+#: doc/fh3/projects.md:9
+msgid ""
+"$ fhc projects --bare\n"
+"\n"
+"t2Xva0-4X2AFsxbBzsRLSet1\n"
+"VCtqRZTJWnhz5b3SbcS1LvVm\n"
+"DOK1rO5L2WAW7fjE_MAIehio\n"
+"t-Bq8rCXHMwJSY9heXZZs8AL"
+msgstr ""
+
+#: doc/fh3/projects.md:11
+msgid ""
+"$ fhc apps --bare=\"guid title\"\n"
+"\n"
+"t2Xva0-4X2AFsxbBzsRLSet1 Project1\n"
+"VCtqRZTJWnhz5b3SbcS1LvVm Project2\n"
+"DOK1rO5L2WAW7fjE_MAIehio Project3\n"
+"t-Bq8rCXHMwJSY9heXZZs8AL Project4"
+msgstr ""
+
+#: doc/fh3/projects.md:12
+msgid "create"
+msgstr ""
+
+#: doc/fh3/projects.md:13
+msgid "fhc projects create <project-title> [<template-id>]"
+msgstr ""
+
+#: doc/fh3/projects.md:14
+msgid ""
+"  Create is used to create a new FeedHenry Project based on a template.  "
+"The templates available can be listed using the ```fhc templates "
+"projects``` command"
+msgstr ""
+
+#: doc/fh3/projects.md:15
+msgid "fhc projects create 'FHC hello create' hello_world_project"
+msgstr ""
+
+#: doc/fh3/projects.md:16
+msgid ""
+"  If no template-id is specified  the default of ```bare_project``` will be "
+"used, which will create a project containing no apps."
+msgstr ""
+
+#: doc/fh3/projects.md:17
+msgid "update"
+msgstr ""
+
+#: doc/fh3/projects.md:18
+msgid "fhc projects update <project-id> <prop-name> <value>"
+msgstr ""
+
+#: doc/fh3/projects.md:19
+msgid ""
+"  The only ```prop-name``` supported for updating is ```title```.  The "
+"title can be updated using a command like:"
+msgstr ""
+
+#: doc/fh3/projects.md:20
+msgid "fhc projects update DOK1rO5L2WAW7fjE_MAIehio title 'My New Project Title'"
+msgstr ""
+
+#: doc/fh3/projects.md:21
+msgid "read"
+msgstr ""
+
+#: doc/fh3/projects.md:22
+msgid ""
+"fhc projects read <project-id>\n"
+"\n"
+"Reads the information about the project specified, including the apps "
+"contained within it"
+msgstr ""
+
+#: doc/fh3/projects.md:23
+#: doc/fhc/fhcfg.md:49
+msgid "delete"
+msgstr ""
+
+#: doc/fh3/projects.md:24
+msgid ""
+"fhc projects delete <project-id>\n"
+"\n"
+"Deletes the specified project"
+msgstr ""
+
+#: doc/fh3/projects.md:25
+msgid "clone"
+msgstr ""
+
+#: doc/fh3/projects.md:26
+msgid "fhc projects clone <project-id>"
+msgstr ""
+
+#: doc/fh3/projects.md:27
+msgid ""
+"  This clones each App in your Project locally.  It does a ```git clone``` "
+"of each each App in your Project into the current working directory,\n"
+"  and needs the ```git``` command to be installed locally and on your "
+"current execution path. You must also have your SSH key uploaded to the "
+"FeedHenry platform."
+msgstr ""
+
+#: doc/fhc/completion.md:0
+msgid "fhc-completion(1) -- Tab Completion for FHC"
+msgstr ""
+
+#: doc/fhc/completion.md:2
+msgid ". <(fhc completion)"
+msgstr ""
+
+#: doc/fhc/completion.md:4
+msgid "Enables tab-completion in all fhc commands."
+msgstr ""
+
+#: doc/fhc/completion.md:5
+msgid ""
+"The synopsis above\n"
+"loads the completions into your current shell.  Adding it to\n"
+"your ~/.bashrc or ~/.zshrc will make the completions available\n"
+"everywhere."
+msgstr ""
+
+#: doc/fhc/completion.md:6
+msgid ""
+"You may of course also pipe the output of fhc completion to a file\n"
+"such as `/usr/local/etc/bash_completion.d/fhc` if you have a system\n"
+"that will read that file for you."
+msgstr ""
+
+#: doc/fhc/completion.md:7
+msgid ""
+"When `COMP_CWORD`, `COMP_LINE`, and `COMP_POINT` are defined in the\n"
+"environment, `fhc completion` acts in \"plumbing mode\", and outputs\n"
+"completions based on the arguments."
+msgstr ""
+
+#: doc/fhc/fhc.md:0
+msgid "FHC"
+msgstr ""
+
+#: doc/fhc/fhc.md:1
+msgid "Dependencies"
+msgstr ""
+
+#: doc/fhc/fhc.md:2
+msgid "Install node.js &amp; npm."
+msgstr ""
+
+#: doc/fhc/fhc.md:3
+msgid ""
+"Follow instructions on <a href=\"http://nodejs.org/\">nodejs.org</a> for "
+"your OS. This will add 2 command line applications: <code>node</code> and "
+"<code>npm</code>"
+msgstr ""
+
+#: doc/fhc/fhc.md:4
+msgid ""
+"###Install FHC\n"
+"Execute the following in a terminal/command prompt:"
+msgstr ""
+
+#: doc/fhc/fhc.md:5
+msgid "npm install -g fh-fhc"
+msgstr ""
+
+#: doc/fhc/fhc.md:6
+msgid "If installing on Linux, you may need to run this command as a sudoer:"
+msgstr ""
+
+#: doc/fhc/fhc.md:7
+msgid "sudo npm install -g fh-fhc"
+msgstr ""
+
+#: doc/fhc/fhc.md:8
+msgid ""
+"`fhc` will now be available from your command line (if you use zsh, do a "
+"`hash -r` to pick it up)"
+msgstr ""
+
+#: doc/fhc/fhc.md:9
+msgid ""
+"To test FHC is installed correctly, and to show the version you have "
+"installed, use:"
+msgstr ""
+
+#: doc/fhc/fhc.md:10
+msgid "fhc -v"
+msgstr ""
+
+#: doc/fhc/fhc.md:11
+msgid ""
+"<span style=\"font-size: 23px;line-height: 35px\">Command Completion (Linux "
+"and Mac only)</span>\n"
+"The FHC bash completion script allows Tab completion of the various FHC "
+"commands, including completing app identifiers when performing actions on a "
+"single app. To install the FHC bash completion script, execute the "
+"following:"
+msgstr ""
+
+#: doc/fhc/fhc.md:12
+msgid "fhc completion >> ~/.bashrc"
+msgstr ""
+
+#: doc/fhc/fhc.md:13
+msgid ""
+"If you're using an alternative shell to bash, you should append the output "
+"of <code>fhc completion</code> to the relevant file e.g. ~/.zshrc for "
+"zsh</p>"
+msgstr ""
+
+#: doc/fhc/fhc.md:14
+msgid "Usage"
+msgstr ""
+
+#: doc/fhc/fhc.md:15
+msgid "fhc <command> [args]"
+msgstr ""
+
+#: doc/fhc/fhc.md:16
+msgid ""
+"Use `fhc help` for general help, or `fhc help [command]` for help on a "
+"specific command."
+msgstr ""
+
+#: doc/fhc/fhc.md:17
+msgid "To get started, set the target and then login:"
+msgstr ""
+
+#: doc/fhc/fhc.md:18
+msgid ""
+"fhc target https://[your-studio-domain].feedhenry.com\n"
+"fhc login [email address] [password]"
+msgstr ""
+
+#: doc/fhc/fhc.md:19
+msgid "To list your projects, use:"
+msgstr ""
+
+#: doc/fhc/fhc.md:20
+msgid "fhc projects"
+msgstr ""
+
+#: doc/fhc/fhc.md:21
+msgid "Configuration"
+msgstr ""
+
+#: doc/fhc/fhc.md:22
+msgid ""
+"fhc is extremely configurable.  It reads its configuration options from\n"
+"5 places."
+msgstr ""
+
+#: doc/fhc/fhc.md:25
+msgid "Command line switches:  "
+msgstr ""
+
+#: doc/fhc/fhc.md:26
+msgid "Set a config with `--key val`.  All keys take a value, even if they"
+msgstr ""
+
+#: doc/fhc/fhc.md:27
+msgid "are booleans (the config parser doesn't know what the options are at"
+msgstr ""
+
+#: doc/fhc/fhc.md:28
+msgid "the time of parsing.)  If no value is provided, then the option is set"
+msgstr ""
+
+#: doc/fhc/fhc.md:29
+msgid "to boolean `true`."
+msgstr ""
+
+#: doc/fhc/fhc.md:32
+msgid "Environment Variables:  "
+msgstr ""
+
+#: doc/fhc/fhc.md:33
+msgid "Set any config by prefixing the name in an environment variable with"
+msgstr ""
+
+#: doc/fhc/fhc.md:34
+msgid "`fhc_config_`.  For example, `export fhc_config_key=val`."
+msgstr ""
+
+#: doc/fhc/fhc.md:37
+msgid "User Configs:  "
+msgstr ""
+
+#: doc/fhc/fhc.md:38
+msgid "The file at $HOME/.fhcrc is an ini-formatted list of configs.  If"
+msgstr ""
+
+#: doc/fhc/fhc.md:39
+msgid "present, it is parsed.  If the `userconfig` option is set in the cli"
+msgstr ""
+
+#: doc/fhc/fhc.md:40
+msgid "or env, then that will be used instead."
+msgstr ""
+
+#: doc/fhc/fhc.md:43
+msgid "Global Configs:  "
+msgstr ""
+
+#: doc/fhc/fhc.md:44
+msgid "The file found at ../etc/fhcrc (from the node executable, by default"
+msgstr ""
+
+#: doc/fhc/fhc.md:45
+msgid "this resolves to /usr/local/etc/fhcrc) will be parsed if it is found."
+msgstr ""
+
+#: doc/fhc/fhc.md:46
+msgid "If the `globalconfig` option is set in the cli, env, or user config,"
+msgstr ""
+
+#: doc/fhc/fhc.md:47
+msgid "then that file is parsed instead."
+msgstr ""
+
+#: doc/fhc/fhc.md:50
+msgid "Defaults:  "
+msgstr ""
+
+#: doc/fhc/fhc.md:51
+msgid "fhc's default configuration options are defined in"
+msgstr ""
+
+#: doc/fhc/fhc.md:52
+msgid "lib/utils/config-defs.js.  These must not be changed."
+msgstr ""
+
+#: doc/fhc/fhc.md:56
+msgid "See `fhc help config` for much much more information."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:0
+msgid "fhc-fhcfg(1) -- Manage the fhc Configuration File"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:2
+msgid ""
+"fhc fhcfg set <key> <value> [--global]\n"
+"fhc fhcfg get <key>\n"
+"fhc fhcfg delete <key>\n"
+"fhc fhcfg list\n"
+"fhc fhcfg edit"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:4
+msgid "fhc gets its configuration values from 5 sources, in this priority:"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:7
+msgid "cli:"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:8
+msgid "The command line flags.  Putting `--foo bar` on the command line sets the"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:9
+msgid "`foo` configuration parameter to `\"bar\"`.  A `--` argument tells the cli"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:10
+msgid "parser to stop reading flags.  A `--flag` parameter that is at the *end* of"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:11
+msgid "the command will be given the value of `true`."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:14
+msgid "env:"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:15
+msgid "Any environment variables that start with `fhc_fhcfg_` will be interpreted"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:16
+msgid "as a configuration parameter.  For example, putting `fhc_fhcfg_foo=bar` in"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:17
+msgid "your environment will set the `foo` configuration parameter to `bar`.  Any"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:18
+msgid ""
+"environment configurations that are not given a value will be given the "
+"value"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:19
+msgid "of `true`.  Config values are case-insensitive, so `FHCFG_FOO=bar` will"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:20
+msgid "work the same."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:23
+msgid "$HOME/.fhcrc (or the `userconfig` param, if set above):"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:24
+msgid "This file is an ini-file formatted list of `key = value` parameters."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:27
+msgid "$PREFIX/etc/fhcrc (or the `globalconfig` param, if set above):"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:28
+msgid "This file is an ini-file formatted list of `key = value` parameters"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:31
+msgid "default configs:"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:32
+msgid "This is a set of configuration parameters that are internal to fhc, and are"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:33
+msgid "defaults if nothing else is specified."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:37
+msgid "Sub-commands"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:38
+msgid "fhcfg supports the following sub-commands:"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:39
+msgid "set"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:40
+msgid "fhc fhcfg set key value"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:41
+msgid "Sets the config key to the value."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:42
+msgid "If value is omitted, then it sets it to \"true\"."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:43
+msgid "get"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:44
+msgid "fhc fhcfg get key"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:45
+msgid "Echo the config value to stdout."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:47
+msgid "fhc fhcfg list"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:48
+msgid "Show all the config settings."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:50
+msgid "fhc fhcfg delete key"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:51
+msgid "Deletes the key from all configuration files."
+msgstr ""
+
+#: doc/fhc/fhcfg.md:52
+msgid "edit"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:53
+msgid "fhc fhcfg edit"
+msgstr ""
+
+#: doc/fhc/fhcfg.md:54
+msgid ""
+"Opens the config file in an editor.  Use the `--global` flag to edit the "
+"global config."
+msgstr ""
+
+#: doc/fhc/help.md:0
+msgid "fhc-help(1)"
+msgstr ""
+
+#: doc/fhc/help.md:2
+msgid " fhc help"
+msgstr ""
+
+#: doc/fhc/help.md:4
+msgid "Help with the FeedHenry Command"
+msgstr ""
+
+#: doc/fhc/login.md:0
+msgid "fhc-login(1) -- Login to FeedHenry"
+msgstr ""
+
+#: doc/fhc/login.md:2
+msgid "fhc login <username> <password>"
+msgstr ""
+
+#: doc/fhc/login.md:4
+msgid "If none are provided, the username and password are read in from prompts."
+msgstr ""
+
+#: doc/fhc/login.md:5
+msgid "CONFIGURATION"
+msgstr ""
+
+#: doc/fhc/login.md:6
+msgid "feedhenry"
+msgstr ""
+
+#: doc/fhc/login.md:7
+msgid "Default: https://apps.feedhenry.com"
+msgstr ""
+
+#: doc/fhc/login.md:8
+msgid "The FeedHenry base URL."
+msgstr ""
+
+#: doc/fhc/logout.md:0
+msgid "fhc-logout(1) -- Logout of FeedHenry"
+msgstr ""
+
+#: doc/fhc/logout.md:2
+msgid "fhc logout "
+msgstr ""
+
+#: doc/fhc/logout.md:4
+msgid "Logs out the current user."
+msgstr ""
+
+#: doc/fhc/target.md:0
+msgid "fhc-target(1) -- Get/Set the FeedHenry Target URL"
+msgstr ""
+
+#: doc/fhc/target.md:2
+msgid ""
+"fhc target\n"
+"fhc target <feedhenry-url>\n"
+"fhc target <feedhenry-url> <user> <password>"
+msgstr ""
+
+#: doc/fhc/target.md:4
+msgid "This command will get or set the FeedHenry Target URL."
+msgstr ""
+
+#: doc/fhc/target.md:6
+msgid "fhc target https://apps.feedhenry.com"
+msgstr ""
+
+#: doc/fhc/targets.md:0
+msgid "fhc-targets(1) -- List the stored FeedHenry Targets"
+msgstr ""
+
+#: doc/fhc/targets.md:2
+msgid "fhc targets"
+msgstr ""
+
+#: doc/fhc/targets.md:4
+msgid ""
+"This command will list all the FeedHenry Targets, i.e. successful logins "
+"that have been made with fhc."
+msgstr ""
+
+#: doc/index.md:0
+msgid "<h1>FHC - FeedHenry Command Line Interface API</h1>"
+msgstr ""
+
+#: doc/index.md:1
+msgid ""
+"<div class=\"alert alert-info\"><strong>Note: </strong> This API Reference "
+"is for version 1.0.7\n"
+"of FHC. To ensure you get the most relevant help for the version of FHC you "
+"have installed, the <code>fhc help</code> command can be used.\n"
+"See <a "
+"href=\"https://github.com/feedhenry/fh-fhc#usage\">https://github.com/"
+"feedhenry/fh-fhc#usage</a> for usage.\n"
+"To find the version of fhc you have installed, use the <code>fhc "
+"version</code> command</div>\n"
+"    <h3>fhc</h3>\n"
+"    <a class=\"col-md-3\" href=\"fhc/ping.html\">ping</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/projects.html\">projects</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/admin-appstore.html\">admin-appstore</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/admin-auditlog.html\">admin-auditlog</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/admin-devices.html\">admin-devices</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/admin-policies.html\">admin-policies</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/admin-storeitemgroups.html\">admin-storeitemgroups</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/admin-storeitems.html\">admin-storeitems</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/admin-users.html\">admin-users</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/apps.html\">apps</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/build.html\">build</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/call.html\">call</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/configuration.html\">configuration</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/deploy-target.html\">deploy-target</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/env.html\">env</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/eventalert.html\">eventalert</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/files.html\">files</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/forms.html\">forms</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/git.html\">git</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/import.html\">import</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/initlocal.html\">initlocal</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/local.html\">local</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/notifications.html\">notifications</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/ota.html\">ota</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/preview.html\">preview</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/resources.html\">resources</a>\n"
+"    <a class=\"col-md-3\" "
+"href=\"fhc/secureendpoints.html\">secureendpoints</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/stats.html\">stats</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/templates.html\">templates</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/user.html\">user</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/version.html\">version</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/completion.html\">completion</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/fhcfg.html\">fhcfg</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/help.html\">help</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/login.html\">login</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/logout.html\">logout</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/target.html\">target</a>\n"
+"    <a class=\"col-md-3\" href=\"fhc/targets.html\">targets</a>\n"
+"    <div class=\"col-md-12\">\n"
+"        <h3>app</h3>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/act.html\">act</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/cloud.html\">cloud</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/create.html\">create</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/delete.html\">delete</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/endpoints.html\">endpoints</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/hosts.html\">hosts</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/list.html\">list</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/read.html\">read</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/resources.html\">resources</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/stage.html\">stage</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/start.html\">start</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/stop.html\">stop</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/suspend.html\">suspend</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/logs.html\">logs</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/app/update.html\">update</a>\n"
+"    </div>\n"
+"    <div class=\"col-md-12\">\n"
+"        <h3>admin</h3>\n"
+"        <div class=\"col-md-4\">\n"
+"            <h3>environments</h3>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/environments/create.html\">create</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/environments/delete.html\">delete</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/environments/list.html\">list</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/environments/read.html\">read</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/environments/update.html\">update</a>\n"
+"            <div class=\"col-md-3\">\n"
+"                <h3>alias</h3>\n"
+"                <a class=\"col-md-6\" "
+"href=\"fhc/admin/environments/alias/create.html\">create</a>\n"
+"                <a class=\"col-md-6\" "
+"href=\"fhc/admin/environments/alias/delete.html\">delete</a>\n"
+"                <a class=\"col-md-6\" "
+"href=\"fhc/admin/environments/alias/list.html\">list</a>\n"
+"                <a class=\"col-md-6\" "
+"href=\"fhc/admin/environments/alias/read.html\">read</a>\n"
+"                <a class=\"col-md-6\" "
+"href=\"fhc/admin/environments/alias/update.html\">update</a>\n"
+"            </div>\n"
+"        </div>\n"
+"        <div class=\"col-md-4\">\n"
+"            <h3>mbaas</h3>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/mbaas/create.html\">create</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/mbaas/delete.html\">delete</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/mbaas/list.html\">list</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/mbaas/read.html\">read</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/mbaas/update.html\">update</a>\n"
+"        </div>\n"
+"        <div class=\"col-md-4\">\n"
+"            <h3>teams</h3>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/adduser.html\">adduser</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/create.html\">create</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/delete.html\">delete</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/list.html\">list</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/read.html\">read</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/removeuser.html\">removeuser</a>\n"
+"            <a class=\"col-md-5\" "
+"href=\"fhc/admin/teams/userteams.html\">userteams</a>\n"
+"        </div>\n"
+"    </div>\n"
+"    <div class=\"col-md-12\">\n"
+"        <h3>keys</h3>\n"
+"        <a class=\"col-md-3\" href=\"fhc/keys/ssh.html\">ssh</a>\n"
+"        <a class=\"col-md-3\" href=\"fhc/keys/user.html\">user</a>\n"
+"    </div>"
+msgstr ""
+
+#: doc/internal/df.md:0
+msgid "fhc-dynofarm(1) -- FeedHenry DynoFarm"
+msgstr ""
+
+#: doc/internal/df.md:2
+msgid ""
+"fhc df ping\n"
+"fhc df version\n"
+"fhc df apps\n"
+"fhc df logs <app-name>\n"
+"fhc df start <app-name>\n"
+"fhc df restart <app-name>\n"
+"fhc df stop <app-name>\n"
+"fhc df delete <app-name>"
+msgstr ""
+
+#: doc/internal/df.md:4
+msgid ""
+"This command can be used to interact with the FeedHenry DynoFarm. The "
+"'dynofarm' config property should be set to the urls of the DynoFarm, and "
+"these should be in the *exact* order as they are specified in FeedHenry."
+msgstr ""
+
+#: doc/internal/messaging.md:0
+msgid "fhc-messaging(1) -- FeedHenry Messaging Client"
+msgstr ""
+
+#: doc/internal/messaging.md:2
+msgid ""
+"fhc messaging ping\n"
+"fhc messaging version\n"
+"fhc messaging stats\n"
+"fhc messaging topics\n"
+"fhc messaging topic <topic> <query>\n"
+"fhc messaging message <topic> <id>\n"
+"fhc messaging add <topic> <msg>"
+msgstr ""
+
+#: doc/internal/messaging.md:4
+msgid ""
+"This command can be used to interact with the FeedHenry Message Server. The "
+"'messaging' config property should be set to the url of the Message Server, "
+"i.e. 'fhc config edit' and set the messaging url as appropriate.  "
+msgstr ""
+
+#: doc/internal/messaging.md:6
+msgid ""
+"Query messages in a topic:\n"
+"\n"
+"fhc messaging topic foo \"bar=123&baz=345\""
+msgstr ""
