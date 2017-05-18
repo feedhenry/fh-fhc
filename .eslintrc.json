@@ -82,6 +82,9 @@
       "before": true,
       "after": true
     }],
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
     "curly": ["error", "all"]
   }
 }
