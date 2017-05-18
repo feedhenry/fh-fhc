@@ -77,6 +77,7 @@
     "no-trailing-spaces": "error",
     "semi": ["error", "always"],
     "space-before-blocks": "error",
+    "no-nested-ternary": "error",
     "space-before-function-paren": ["error", "never"],
     "keyword-spacing": ["error", {
       "before": true,
