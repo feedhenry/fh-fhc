@@ -17,7 +17,6 @@
     "url": "https://issues.jboss.org/projects/FH/issues"
   },
   "directories": {
-    "doc": "./doc",
     "lib": "./lib",
     "bin": "./bin",
     "test": "./test"
