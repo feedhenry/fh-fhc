@@ -1,0 +1,115 @@
+[
+  {
+    "_id":"5502e3155afd8f2a5b44c065",
+    "code":"default-support-owner",
+    "created":"1426252565641",
+    "desc":"A team that gives users access only to the things they create",
+    "name":"Owner Only (support domain)",
+    "updated":"1495559538166",
+    "bosLabel":"default",
+    "business-objects":{
+      "cluster/reseller/customer/domain/drag-and-drop-app/project":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app/theme":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app/form":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app":[
+        "*"
+      ],
+      "cluster/reseller/customer/domain/project":[
+
+      ],
+      "cluster/reseller/customer/domain/service":[
+
+      ],
+      "cluster":[
+        "sam1-core"
+      ],
+      "cluster/reseller":[
+        "t-ub7fDklyz-gwe3oL5DPupH"
+      ],
+      "cluster/reseller/customer":[
+        "44WKNggefW9N0ggTtqN2SFuF"
+      ],
+      "cluster/reseller/customer/domain":[
+        "FoaFm98S9y_7NpNPuNjLVc-3"
+      ],
+      "cluster/reseller/customer/domain/admin/environment":[
+        "*"
+      ]
+    },
+    "users":[
+      "lqd6q6lyo4y4yxc7qrjdpoye",
+      "wq33zkoi47rmzr4h5yzxzr57"
+    ],
+    "perms":{
+      "cluster/reseller/customer/domain/drag-and-drop-app":"write",
+      "cluster/reseller/customer/domain/project":"write",
+      "cluster/reseller/customer/domain/service":"write",
+      "cluster/reseller/customer/domain/admin/environment":"read"
+    },
+    "defaultTeam":true
+  },
+  {
+    "_id":"552d0926d471ccc066a6919d",
+    "code":"default-support-openshift",
+    "created":"1429014821999",
+    "desc":"A team that gives users only access to their own entities, including Environments & MBaaS Targets",
+    "name":"OpenShift Team (support domain)",
+    "updated":"1495559538232",
+    "bosLabel":"default",
+    "business-objects":{
+      "cluster/reseller/customer/domain/drag-and-drop-app/project":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app/theme":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app/form":[
+
+      ],
+      "cluster/reseller/customer/domain/drag-and-drop-app":[
+
+      ],
+      "cluster/reseller/customer/domain/project":[
+
+      ],
+      "cluster/reseller/customer/domain/service":[
+
+      ],
+      "cluster":[
+        "sam1-core"
+      ],
+      "cluster/reseller":[
+        "t-ub7fDklyz-gwe3oL5DPupH"
+      ],
+      "cluster/reseller/customer":[
+        "44WKNggefW9N0ggTtqN2SFuF"
+      ],
+      "cluster/reseller/customer/domain":[
+        "FoaFm98S9y_7NpNPuNjLVc-3"
+      ],
+      "cluster/reseller/customer/domain/admin/environment":[
+
+      ],
+      "cluster/reseller/customer/domain/admin/mbaas-target":[
+
+      ]
+    },
+    "users":[
+      "lqd6q6lyo4y4yxc7qrjdpoye"
+    ],
+    "perms":{
+      "cluster/reseller/customer/domain/drag-and-drop-app":"write",
+      "cluster/reseller/customer/domain/project":"write",
+      "cluster/reseller/customer/domain/service":"write",
+      "cluster/reseller/customer/domain/admin/environment":"write",
+      "cluster/reseller/customer/domain/admin/mbaas-target":"write"
+    },
+    "defaultTeam":true
+  }
+]
