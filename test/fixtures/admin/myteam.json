@@ -1,0 +1,15 @@
+{
+  "desc":"My Test Team",
+  "name":"My Test Team",
+  "users":[
+    "lqd6q6lyo4y4yxc7qrjdpoye",
+    "wq33zkoi47rmzr4h5yzxzr57"
+  ],
+  "perms":{
+    "cluster/reseller/customer/domain/drag-and-drop-app":"write",
+    "cluster/reseller/customer/domain/project":"write",
+    "cluster/reseller/customer/domain/service":"write",
+    "cluster/reseller/customer/domain/admin/environment":"read"
+  },
+  "defaultTeam":false
+}
