@@ -58,6 +58,7 @@
     "grunt-contrib-jshint": "0.10.0",
     "grunt-eslint": "^19.0.0",
     "grunt-fh-build": "0.5.0",
+    "grunt-gettext-markdown": "0.1.1",
     "grunt-jsxgettext": "1.0.0",
     "grunt-open": "0.2.3",
     "grunt-plato": "1.0.0",
