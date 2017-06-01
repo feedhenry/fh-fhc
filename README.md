@@ -178,3 +178,8 @@ grunt eslint
 
 * eslint configuration is in `.eslintrc.json`
 * If eslint has any errors, the build will fail
+
+## Report Bug/Issue:
+
+* Where: [https://issues.jboss.org/projects/FH/issues](https://issues.jboss.org/projects/FH/issues)
+* Use the field component as 'fhc' to track the issues for this project

@@ -13,6 +13,9 @@
     "url" : "git+https://github.com/feedhenry/fh-fhc.git"
   },
   "author": "FeedHenry<npm@feedhenry.com>",
+  "bugs": {
+    "url": "https://issues.jboss.org/projects/FH/issues"
+  },
   "directories": {
     "doc": "./doc",
     "lib": "./lib",
@@ -72,7 +75,7 @@
     "turbo-test-runner": "0.3.3"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4.4"
   },
   "scripts": {
     "test": "grunt test"
