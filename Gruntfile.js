@@ -2,11 +2,8 @@
 
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
-  require('load-grunt-tasks')(grunt)
+  require('load-grunt-tasks')(grunt);
 
-  var path = require('path');
-  var fs = require('fs-extra');
-  var async = require('async');
   var _ = require('underscore');
   var underscoreDeepExtend = require('underscore-deep-extend');
   _.mixin({deepExtend: underscoreDeepExtend(_)});
@@ -45,7 +42,7 @@ module.exports = function(grunt) {
         options: {
           keyword: [
             '_', 'N_'
-          ],
+          ]
         }
       }
     },
@@ -56,7 +53,7 @@ module.exports = function(grunt) {
           url: 'https://translate.zanata.org',
           project: 'fh-fhc',
           'project-version': 'master',
-          'project-type': 'gettext',
+          'project-type': 'gettext'
         },
         files: [
           {src: 'po', type: 'source'}
@@ -67,7 +64,7 @@ module.exports = function(grunt) {
           url: 'https://translate.zanata.org',
           project: 'fh-fhc',
           'project-version': 'master',
-          'project-type': 'gettext',
+          'project-type': 'gettext'
         },
         files: [
           {src: 'po', type: 'trans'}
@@ -81,7 +78,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-zanata-js');
 
   grunt.registerTask('test', ['eslint','fh:test']);
-  grunt.registerTask('unit', ['jshint', 'fh:unit']);
+  grunt.registerTask('unit', ['eslint', 'fh:unit']);
   grunt.registerTask('accept', ['fh:accept']);
   grunt.registerTask('coverage', ['fh:coverage']);
   grunt.registerTask('analysis', ['fh:analysis']);
