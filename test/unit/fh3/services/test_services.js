@@ -4,6 +4,7 @@ require('test/fixtures/services/fixture_services');
 
 var allServicesCmd = {
   read: genericCommand(require('cmd/fh3/services/read')),
+  list: genericCommand(require('cmd/fh3/services/list')),
   delete: genericCommand(require('cmd/fh3/services/delete')),
   update: genericCommand(require('cmd/fh3/services/update')),
   datasources: genericCommand(require('cmd/fh3/services/data-sources'))
@@ -29,6 +30,12 @@ module.exports = {
   },
   "test fhc services delete --service": function(cb) {
     allServicesCmd.delete({service:mockService.guid}, function(err) {
+      assert.equal(err, null);
+      return cb();
+    });
+  },
+  "test fhc services list ": function(cb) {
+    allServicesCmd.list({json:true}, function(err) {
       assert.equal(err, null);
       return cb();
     });
