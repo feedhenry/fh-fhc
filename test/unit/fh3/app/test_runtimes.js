@@ -6,6 +6,7 @@ module.exports = {
   'test app runtimes command --id': function(done) {
     var params = {
       domain: "testing",
+      env: "eee",
       id: "j7hslnrb257zkr4qzjndoqkl"
     };
 
