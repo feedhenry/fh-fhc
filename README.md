@@ -59,10 +59,14 @@ Some commands require params to be passed in - these are typically passed like s
     fhc.app.create({ title : 'Some title', project : 'someProjectId'}, function() {
     });
 
+
 Older fhc commands still pass arguments in an ordered array, as below. The environment is still specified outside the array.
 
     fhc.app.logs({_ : ['projectId', 'appId'], env : 'dev' }, function() {
     });
+
+*Observation* : The older commands have been changed to work as the new ones. In the future, all commands should work without the
+need to pass the params in an ordered array.
 
 ### From Docker
 
@@ -183,3 +187,8 @@ grunt eslint
 
 * Where: [https://issues.jboss.org/projects/FH/issues](https://issues.jboss.org/projects/FH/issues)
 * Use the field component as 'fhc' to track the issues for this project
+
+## RHMAP Supportability
+
+If you use FeedHenry 2.x, the latest supported version of FHC tool is `1.2.0`.
+Red Hat recommends that you upgrade to the latest version of RHMAP studio as soon as possible.
