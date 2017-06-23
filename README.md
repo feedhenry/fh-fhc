@@ -190,5 +190,4 @@ grunt eslint
 
 ## RHMAP Supportability
 
-If you use FeedHenry 2.x, the latest supported version of FHC tool is `1.2.0`.
-Red Hat recommends that you upgrade to the latest version of RHMAP studio as soon as possible.
+If you are targetting a version of RHMAP < `3.5.0` then install an older version of `fh-fhc` with `npm install fh-fhc@latest-1`.
