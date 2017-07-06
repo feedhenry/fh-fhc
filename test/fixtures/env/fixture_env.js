@@ -24,7 +24,7 @@ var dataList = [{
       "dev": "valorupdate"
     },
     "varName": "Test2",
-    "masked": false,
+    "masked": true,
     "appId": "3ukgif3bygcn54fd4sysnkkc",
     "sysGroupFlags": 65567,
     "sysGroupList": "",
@@ -75,6 +75,7 @@ module.exports = nock('https://apps.feedhenry.com')
   .post('/box/api/apps/1a/env/dev/envvars')
   .reply(200, data)
   .put('/box/api/apps/1a/env/dev/envvars/2b')
+  .times(2)
   .reply(200, data)
   .delete('/box/api/apps/1a/env/dev/envvars/2b')
   .reply(200, {})
@@ -85,7 +86,7 @@ module.exports = nock('https://apps.feedhenry.com')
     "result": null
   })
   .get('/box/api/apps/1a/env/dev/envvars')
-  .times(3)
+  .times(4)
   .reply(200, dataList)
   .put('/box/api/apps/1a/env/dev/envvars/2b/unset')
   .reply(200, data)
