@@ -17,9 +17,10 @@ var data = {
     "cluster/reseller/customer": "test88888848888839084888",
     "cluster/reseller/customer/user": "test88888848888839084888"
   },
+
   "keys": [
     {
-      "key": "ssh-rsa ",
+      "key": "ssh-rsaXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
       "name": "My_Personal_Key_1472563094058"
     }
   ],
@@ -266,5 +267,8 @@ var data = {
 
 
 module.exports = nock('https://apps.feedhenry.com')
-  .get('box/srv/1.1/ide/testing/user/read')
+  .get('/box/srv/1.1/ide/testing/user/read')
+  .reply(200, data)
+  .get('/box/srv/1.1/ide/apps/user/read')
+  .times(4)
   .reply(200, data);
