@@ -1,16 +1,16 @@
 {
   "name": "fh-fhc",
   "description": "A Command Line Interface for FeedHenry",
-  "version": "2.18.4-BUILD-NUMBER",
+  "version": "2.18.5-BUILD-NUMBER",
   "_minPlatformVersion": "3.11.0",
   "keywords": [
     "feedhenry"
   ],
   "preferGlobal": true,
   "homepage": "https://github.com/feedhenry/fh-fhc",
-  "repository" : {
-    "type" : "git",
-    "url" : "git+https://github.com/feedhenry/fh-fhc.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feedhenry/fh-fhc.git"
   },
   "author": "FeedHenry<npm@feedhenry.com>",
   "bugs": {
@@ -44,6 +44,7 @@
     "open": "0.0.5",
     "os-locale": "1.4.0",
     "progress": "^1.1.8",
+    "qrcode-terminal": "^0.11.0",
     "request": "2.74.0",
     "semver": "4.3.6",
     "tabtab": "0.0.2",
