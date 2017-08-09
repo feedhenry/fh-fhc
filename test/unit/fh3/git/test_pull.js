@@ -59,13 +59,13 @@ module.exports = nock('https://apps.feedhenry.com')
       title: 'Cloud App',
       width: 0 },
     status: 'ok' })
-  .post("/box/api/projects/null/apps/1a/pull")
+  .post("/box/api/projects/1a/apps/1a/pull")
   .times(2)
   .reply(200,{ cacheKeys:
     [ 'somechachekey' ] }
   )
-  .post("/box/srv/1.1/pub/app/null/refresh")
-  .times(3)
+  .post("/box/srv/1.1/pub/app/1a/refresh")
+  .times(4)
   .reply(200, { cacheKey: 'somechachekey',
     fileKey: 'df8a50567f66cb19bc3a7153459b0448',
     status: 'ok' }
@@ -74,7 +74,7 @@ module.exports = nock('https://apps.feedhenry.com')
 
 module.exports = {
   'test fhc pullCmd --app': function(cb) {
-    pullCmd({app:'1a'}, function(err, data) {
+    pullCmd({app:'1a'}, function(err) {
       assert.equal(err, null);
       return cb();
     });
