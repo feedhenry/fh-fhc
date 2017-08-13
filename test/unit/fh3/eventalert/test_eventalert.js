@@ -39,7 +39,7 @@ module.exports = {
       assert.equal(table['0'][0], '4ulbq3zkggc5ttzpydneaphv');
       assert.equal(table['0'][1], 'clone');
       assert.equal(table['0'][2], 'emails@test.com,emails2@test.com');
-      assert.equal(table['0'][3], true);
+      assert.equal(table['0'][3], 'Yes');
       assert.equal(table['0'][4], 'APP_STATE,APP_ENVIRONMENT');
       assert.equal(table['0'][5], 'CRASHED');
       assert.equal(table['0'][6], 'INFO,WARN,ERROR,FATAL');
