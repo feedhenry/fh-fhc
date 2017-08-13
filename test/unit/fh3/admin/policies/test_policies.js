@@ -101,8 +101,8 @@ module.exports = {
       assert.equal(table['0'][0], 'iu5ig63cnt65jzxlntypuwib');
       assert.equal(table['0'][1], 'FeedHenry');
       assert.equal(table['0'][2], 'FEEDHENRY');
-      assert.equal(table['0'][3], true);
-      assert.equal(table['0'][4], true);
+      assert.equal(table['0'][3], 'Yes');
+      assert.equal(table['0'][4], 'Yes');
       return cb();
     });
   },
