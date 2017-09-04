@@ -1,6 +1,6 @@
 {
   "name": "fh-fhc",
-  "version": "3.0.6-BUILD-NUMBER",
+  "version": "3.0.7-BUILD-NUMBER",
   "dependencies": {
     "async": {
       "version": "0.2.9",
