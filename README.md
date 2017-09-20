@@ -12,8 +12,6 @@ FeedHenry CLI, the command line interface to [FeedHenry](http://www.feedhenry.co
 `fhc` should now be available on your command line.  
 `fhc -v` will tell you what version of fhc you have installed.
 
-Finally, install FHC bash completion: `fhc completion >> ~/.bashrc` (or ~/.zshrc)
-
 ## Usage
 
 ### From the Command Line

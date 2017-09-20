@@ -8,428 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-05 18:49+0000\n"
-
-#: lib/cmd/common/admin-storeitems.js:4
-msgid "Administer MAM App Store Store Items"
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:111
-#: lib/cmd/common/admin-storeitems.js:148
-msgid "Error reading item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:127
-msgid "Error set restrict-to-groups flag on item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:131
-msgid "Error adding policy to item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:135
-msgid "Error removing policy from item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:139
-msgid "Error Listing item policies: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:143
-msgid "Error Listing items: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:164
-msgid "Error creating item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:170
-msgid "Error deleting item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:184
-#: lib/cmd/fh3/admin/appstore/item/add.js:23
-#: lib/cmd/fh3/admin/appstore/policy/add.js:23
-#: lib/cmd/fh3/admin/appstore/update.js:39
-msgid "Error updating item: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:197
-msgid "Error adding groups to storeitem: "
-msgstr ""
-
-#: lib/cmd/common/admin-storeitems.js:201
-msgid "Error removing groups from storeitem: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:11
-msgid "Administer FeedHenry Users"
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:32
-#: lib/cmd/common/deploy-target.js:29
-msgid "Invalid arguments for '%s':"
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:110
-msgid "Error listing users: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:127
-#: lib/cmd/common/admin-users.js:158
-msgid "username is undefined"
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:130
-msgid "Error creating user: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:141
-msgid "Error deleting user: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:161
-#: lib/cmd/common/admin-users.js:180
-#: lib/cmd/common/admin-users.js:189
-msgid "Error updating user: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:171
-msgid "Error reading user: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:206
-msgid "Error listing user devices: "
-msgstr ""
-
-#: lib/cmd/common/admin-users.js:215
-msgid "Error listing user installed apps: "
-msgstr ""
-
-#: lib/cmd/common/appinit.js:6
-msgid "Makes a client app init call with the cloud"
-msgstr ""
-
-#: lib/cmd/common/appinit.js:37
-msgid "Error in init: "
-msgstr ""
-
-#: lib/cmd/common/auth.js:5
-msgid "Performs an auth call against an Auth Policy"
-msgstr ""
-
-#: lib/cmd/common/auth.js:7
-msgid ""
-"\n"
-"    where <policy-id> is an Auth Policy Id"
-msgstr ""
-
-#: lib/cmd/common/auth.js:8
-msgid ""
-"\n"
-"    where <client-token> is typically an App Id"
-msgstr ""
-
-#: lib/cmd/common/auth.js:9
-msgid ""
-"\n"
-"    where <device> is an identifier for the device"
-msgstr ""
-
-#: lib/cmd/common/auth.js:10
-msgid ""
-"\n"
-"    where <params> are the auth parameters specific to the auth policy"
-msgstr ""
-
-#: lib/cmd/common/auth.js:20
-msgid "Invalid arguments:"
-msgstr ""
-
-#: lib/cmd/common/auth.js:39
-msgid "Error in auth call: "
-msgstr ""
-
-#: lib/cmd/common/build.js:4
-msgid "Builds a client application"
-msgstr ""
-
-#: lib/cmd/common/build.js:6
-msgid ""
-"\n"
-"\n"
-msgstr ""
-
-#: lib/cmd/common/build.js:7
-msgid ""
-"\n"
-"\t<environment id>      The id of a target environment, e.g. dev"
-msgstr ""
-
-#: lib/cmd/common/build.js:8
-msgid ""
-"\n"
-"\t<destination>         One of: android, iphone, ipad, ios(for universal "
-"binary), blackberry, windowsphone7, windowsphone (windows phone 8)"
-msgstr ""
-
-#: lib/cmd/common/build.js:9
-msgid ""
-"\n"
-"\t<version>             Specific to the destination (e.g. Android version "
-"4.0)"
-msgstr ""
-
-#: lib/cmd/common/build.js:10
-msgid ""
-"\n"
-"\t<config>              Either 'debug' (default), 'distribution', or "
-"'release'"
-msgstr ""
-
-#: lib/cmd/common/build.js:11
-msgid ""
-"\n"
-"\t<bundleId>            The unique bundle identifier of the credential "
-"bundle. You can get it using 'fhc credentials list'. Required for all iOS "
-"builds."
-msgstr ""
-
-#: lib/cmd/common/build.js:12
-msgid ""
-"\n"
-"\t<cordova_version>     For specifying which version of Cordova to use. "
-"Currently supported: either 2.2 or 3.3. Only valid for Android for now."
-msgstr ""
-
-#: lib/cmd/common/build.js:13
-msgid ""
-"\n"
-"\t<tag name>            The name of a connection tag for the cloud app, "
-"must be in Semantic Version format, e.g. 0.0.1."
-msgstr ""
-
-#: lib/cmd/common/build.js:14
-msgid ""
-"\n"
-"\t<branch name>         The name of the git branch to build, defaults to "
-"'master'"
-msgstr ""
-
-#: lib/cmd/common/build.js:15
-msgid ""
-"\n"
-"\t<commit hash>         The full hash of the commit to build, if not the "
-"head of the branch. Must be used with <branch name>"
-msgstr ""
-
-#: lib/cmd/common/build.js:16
-msgid ""
-"\n"
-"\t'keypass' only needed for 'release' builds"
-msgstr ""
-
-#: lib/cmd/common/build.js:40
-#: lib/cmd/common/ota.js:53
-msgid "Error processing args: "
-msgstr ""
-
-#: lib/cmd/common/build.js:40
-#: lib/cmd/common/clusterprops.js:18
-#: lib/cmd/common/ota.js:53
-msgid "Usage: "
-msgstr ""
-
-#: lib/cmd/common/build.js:53
-msgid "Missing 'app' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:56
-msgid "Missing 'destination' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:65
-msgid "Missing 'keypass' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:69
-msgid "Missing 'certpass' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:91
-msgid "Missing 'project' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:94
-msgid "Missing 'cloud_app' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:97
-msgid "Missing 'bundleId' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:100
-msgid "Missing 'environment' parameter"
-msgstr ""
-
-#: lib/cmd/common/build.js:170
-#: lib/cmd/fh3/app/update/config.js:42
-#: lib/common.js:676
-#: lib/common.js:684
-#: lib/common.js:746
-#: lib/common.js:754
-msgid "Error reading app: "
-msgstr ""
-
-#: lib/cmd/common/build.js:199
-msgid ""
-"\n"
-"Downloaded file: "
-msgstr ""
-
-#: lib/cmd/common/build.js:205
-msgid ""
-"\n"
-"Download URL: "
-msgstr ""
-
-#: lib/cmd/common/build.js:207
-msgid ""
-"\n"
-"OTA URL: "
-msgstr ""
-
-#: lib/cmd/common/build.js:270
-msgid "Unexpected response code for file download: "
-msgstr ""
-
-#: lib/cmd/common/build.js:270
-msgid " message: "
-msgstr ""
-
-#: lib/cmd/common/build.js:290
-msgid "Finish stream event received"
-msgstr ""
-
-#: lib/cmd/common/build.js:295
-msgid "close stream event received"
-msgstr ""
-
-#: lib/cmd/common/build.js:300
-msgid "End of netork stream received"
-msgstr ""
-
-#: lib/cmd/common/build.js:306
-msgid "Error downloading build: "
-msgstr ""
-
-#: lib/cmd/common/cluster.js:4
-msgid "Manage cluster"
-msgstr ""
-
-#: lib/cmd/common/cluster.js:34
-#: lib/cmd/common/clusterprops.js:47
-#: lib/cmd/common/clusterprops.js:62
-msgid "Error reading Cluster Props: "
-msgstr ""
-
-#: lib/cmd/common/cluster.js:57
-#: lib/cmd/common/cluster.js:71
-msgid "failed to create cluster user"
-msgstr ""
-
-#: lib/cmd/common/cluster.js:86
-msgid "failed to read cluster user"
-msgstr ""
-
-#: lib/cmd/common/cluster.js:130
-msgid "not updating anything? "
-msgstr ""
-
-#: lib/cmd/common/clusterprops.js:4
-msgid "Manage clusterprops"
-msgstr ""
-
-#: lib/cmd/common/clusterprops.js:41
-msgid "Invalid action: "
-msgstr ""
-
-#: lib/cmd/common/clusterprops.js:101
-msgid "failed to create cluster prop"
-msgstr ""
-
-#: lib/cmd/common/clusterprops.js:119
-msgid "failed to delete cluster prop"
-msgstr ""
-
-#: lib/cmd/common/configuration.js:10
-msgid "Manage client app configuration properties"
-msgstr ""
-
-#: lib/cmd/common/configuration.js:14
-msgid ""
-"\n"
-"where destination can be one of: %s or 'all'"
-msgstr ""
-
-#: lib/cmd/common/configuration.js:60
-msgid "Error listing destination config: "
-msgstr ""
-
-#: lib/cmd/common/configuration.js:92
-msgid "Error setting destination config: "
-msgstr ""
-
-#: lib/cmd/common/configuration.js:105
-msgid "Usage:"
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:12
-msgid "Operations on Cloud Deploy Targets"
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:21
-msgid ""
-"\n"
-"[conf_infrastructure] parameter is required if platform is appfog and "
-"possible values are: aws, eu-aws, ap-aws, rs, hp"
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:87
-msgid "Error listing deploy targets: "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:111
-msgid "Invalid infrastructure value : "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:133
-msgid "Error creating deploy target: "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:143
-msgid "Error updating deploy target: "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:155
-msgid "Error reading deploy target: "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:167
-msgid "Error deleting deploy target: "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:186
-msgid "Error listing available deploy targets for app : "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:199
-msgid "Error getting deploy target for app : "
-msgstr ""
-
-#: lib/cmd/common/deploy-target.js:213
-msgid "Error setting deploy target for app : "
-msgstr ""
+"POT-Creation-Date: 2017-09-20 18:56+0000\n"
 
 #: lib/cmd/common/ota.js:6
 msgid "Build OTA version of an app"
@@ -458,6 +37,15 @@ msgstr ""
 msgid ""
 "\n"
 "'keypass' and 'certpass' only needed for 'release' builds"
+msgstr ""
+
+#: lib/cmd/common/ota.js:53
+msgid "Error processing args: "
+msgstr ""
+
+#: lib/cmd/common/ota.js:53
+#: lib/cmd/internal/clusterprops.js:18
+msgid "Usage: "
 msgstr ""
 
 #: lib/cmd/fh3/-v.js:5
@@ -498,19 +86,23 @@ msgid "Unique user RHMAP user id.(E.g user@rhmap.com)"
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/auditlog/list.js:29
+#: lib/cmd/fh3/auth.js:24
 msgid "Unique 24 character GUID of the device"
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/auditlog/list.js:30
-#: lib/cmd/fh3/admin/appstore/item/add.js:20
-#: lib/cmd/fh3/admin/appstore/item/delete.js:20
-#: lib/cmd/fh3/admin/appstore/item/list.js:15
 #: lib/cmd/fh3/admin/appstore/policy/add.js:20
 #: lib/cmd/fh3/admin/appstore/policy/delete.js:20
 #: lib/cmd/fh3/admin/appstore/policy/list.js:15
 #: lib/cmd/fh3/admin/appstore/read.js:15
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:29
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/list.js:15
+#: lib/cmd/fh3/admin/appstore/storeitems/read.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:32
 #: lib/cmd/fh3/admin/appstore/update.js:26
 #: lib/cmd/fh3/admin/appstore/updatefield.js:23
+#: lib/cmd/fh3/build.js:63
 #: lib/cmd/fh3/git/pull.js:24
 #: lib/cmd/fh3/import.js:39
 #: lib/cmd/fh3/secureendpoints/auditlog.js:26
@@ -532,49 +124,6 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/auditlog/list.js:60
 msgid "No audit logs found"
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/add.js:7
-msgid "Add Store Item into App Store)."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/add.js:10
-msgid "Add the store item with <id> into the App Store"
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/add.js:19
-#: lib/cmd/fh3/admin/appstore/item/delete.js:19
-msgid "Unique 24 character GUID of the store item."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/add.js:28
-msgid "Item Store added successfully."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/delete.js:7
-msgid "Delete Store Item from App Store)."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/delete.js:10
-msgid "Delete Store Item with <id> from the App Store"
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/delete.js:23
-#: lib/cmd/fh3/admin/appstore/policy/delete.js:23
-#: lib/cmd/fh3/admin/policies/delete.js:23
-msgid "Error deleting policy: "
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/delete.js:28
-msgid "Item Store deleted successfully."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/list.js:5
-msgid "List Store Items from the App Store)."
-msgstr ""
-
-#: lib/cmd/fh3/admin/appstore/item/list.js:8
-msgid "List all Store Items from the App Store"
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/itemgroups/create.js:6
@@ -623,6 +172,15 @@ msgstr ""
 #: lib/cmd/fh3/admin/policies/users/add.js:23
 #: lib/cmd/fh3/admin/policies/users/delete.js:23
 #: lib/cmd/fh3/admin/policies/users/list.js:20
+#: lib/cmd/fh3/admin/users/changeauthpolicies.js:22
+#: lib/cmd/fh3/admin/users/changeroles.js:22
+#: lib/cmd/fh3/admin/users/create.js:44
+#: lib/cmd/fh3/admin/users/delete.js:20
+#: lib/cmd/fh3/admin/users/disable.js:19
+#: lib/cmd/fh3/admin/users/enable.js:19
+#: lib/cmd/fh3/admin/users/list.js:16
+#: lib/cmd/fh3/admin/users/read.js:20
+#: lib/cmd/fh3/admin/users/update.js:47
 #: lib/cmd/fh3/connections/read.js:24
 #: lib/cmd/fh3/connections/update.js:36
 #: lib/cmd/fh3/credential/list.js:37
@@ -809,6 +367,11 @@ msgstr ""
 msgid "Unique 24 character GUID of the policy."
 msgstr ""
 
+#: lib/cmd/fh3/admin/appstore/policy/add.js:23
+#: lib/cmd/fh3/admin/appstore/update.js:39
+msgid "Error updating item: "
+msgstr ""
+
 #: lib/cmd/fh3/admin/appstore/policy/add.js:28
 msgid "Policy added successfully."
 msgstr ""
@@ -819,6 +382,11 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/policy/delete.js:10
 msgid "Delete policy with <id> from the App Store"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/policy/delete.js:23
+#: lib/cmd/fh3/admin/policies/delete.js:23
+msgid "Error deleting policy: "
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/policy/delete.js:28
@@ -839,6 +407,245 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/read.js:8
 msgid "Read App Store of this domain"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:7
+msgid "Add groups into restrictions of the store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:10
+msgid "Add <group> into restrictions of the store item with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/binaryversions.js:18
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:19
+#: lib/cmd/fh3/admin/appstore/storeitems/delgroups.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/delpolicy.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/grouprestrict.js:20
+#: lib/cmd/fh3/admin/appstore/storeitems/listpolicies.js:17
+#: lib/cmd/fh3/admin/appstore/storeitems/read.js:19
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:27
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:21
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadicon.js:19
+msgid "Unique 24 character GUID of the store item."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:21
+#: lib/cmd/fh3/admin/appstore/storeitems/delgroups.js:21
+msgid "Unique 24 character GUID of the group."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:24
+msgid "Error adding groups to storeitem: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:7
+msgid "Add policy into store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:10
+msgid "Add <policy> into store item with <id> into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:21
+msgid "Unique 24 character GUID of the auth policy"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:24
+#: lib/cmd/fh3/admin/appstore/storeitems/delpolicy.js:27
+msgid "Error adding policy to item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/binaryversions.js:7
+msgid "Check the binary versions of a store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/binaryversions.js:10
+msgid "Check the binary versions of the store item with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/binaryversions.js:21
+msgid "Error reading binary item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:7
+msgid "Create store item into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:10
+msgid ""
+"Create store item with <name>, <description>, <authpolicies>, "
+"<restrictToGroups>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:25
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:28
+msgid "Name of the store item."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:26
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:29
+msgid "Description of the store item."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:27
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:30
+msgid "AuthToken of the store item."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:28
+msgid ""
+"Defaul value is false. Boolean to define that the item store will be "
+"restrict to groups"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:43
+msgid "Error creating storeitem: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/create.js:48
+msgid "Store Item created successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:7
+msgid "Delete store item from AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:10
+msgid "Delete Store Item with <id> from the App Store"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:23
+msgid "Error deleting store item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delete.js:28
+msgid "Item Store deleted successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delgroups.js:7
+msgid "Delete group from the restrictions of the store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delgroups.js:10
+msgid "Delete <group> from the restrictions of the store item with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delgroups.js:24
+msgid "Error removing groups from storeitem: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delpolicy.js:7
+msgid "Delete policy from store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delpolicy.js:10
+msgid "Delete <policy> from store item with <id> into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/delpolicy.js:21
+msgid "Unique 24 character GUID of the auth policy."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/grouprestrict.js:7
+msgid "Update group restriction of the store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/grouprestrict.js:10
+msgid "Update <restrictToGroups> of the store item with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/grouprestrict.js:21
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:31
+msgid "Boolean to define that the item store will be restrict to groups"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/grouprestrict.js:24
+msgid "Error set restrict-to-groups flag on item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/list.js:5
+msgid "List all store items from AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/list.js:8
+msgid "List all Store Items from the App Store"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/listpolicies.js:6
+msgid "List all policies from store item into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/listpolicies.js:9
+msgid "List all policies from store item with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/listpolicies.js:20
+msgid "Error Listing item policies: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/read.js:7
+msgid "Read store item from AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/read.js:10
+msgid "Read store item with <id> from the App Store"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/read.js:23
+msgid "Error reading store item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:7
+msgid "Update store item into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:10
+msgid ""
+"Update the <name>, <description>, <authpolicies>, <restrictToGroups> of the "
+"item store with <id>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:46
+msgid "Error updating storeitem: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/update.js:51
+msgid "Store Item update successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:6
+msgid "Upload binary for store item into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:9
+msgid "Upload <binary> for store item with <id> into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:22
+msgid "Type/platform of the binary"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:23
+msgid "Binary which will be updload."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:28
+msgid "Invalid type informed :"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadicon.js:6
+msgid "Upload icon for store item into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadicon.js:9
+msgid "Upload icon <icon> for store item with <id> into AppStore"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/uploadicon.js:20
+msgid "Icon which will be updload."
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/update.js:7
@@ -1551,6 +1358,250 @@ msgstr ""
 msgid "A unique user GUID"
 msgstr ""
 
+#: lib/cmd/fh3/admin/users/changeauthpolicies.js:5
+msgid "Change auth policies of the a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeauthpolicies.js:9
+msgid "Change <authpolicies> of the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeauthpolicies.js:20
+#: lib/cmd/fh3/admin/users/changeroles.js:20
+msgid "Username of the user which will be changed."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeauthpolicies.js:21
+#: lib/cmd/fh3/admin/users/create.js:40
+#: lib/cmd/fh3/admin/users/import.js:27
+#: lib/cmd/fh3/admin/users/update.js:42
+msgid ""
+"Unique 24 character GUID of Auth Policies. Run '$fhc admin policies list' "
+"to check it."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeroles.js:5
+msgid "Change roles of the a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeroles.js:9
+msgid "Change <roles> of the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/changeroles.js:21
+#: lib/cmd/fh3/admin/users/create.js:39
+#: lib/cmd/fh3/admin/users/import.js:26
+#: lib/cmd/fh3/admin/users/update.js:41
+msgid "Roles permissions for the user. (E.g 'sub')"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:6
+msgid "Create a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:10
+msgid ""
+"Create a RHMAP user with <username>, <password>, <email>, <name>, <roles>, "
+"<authpolicies>, <invitation>, <teamIds>, <groups>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:35
+msgid "Username of the new user."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:36
+msgid "Email of the new user. It will be used to send the invite email."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:37
+#: lib/cmd/fh3/admin/users/update.js:39
+msgid "Password for this user login into RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:38
+msgid "Name of the new user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:41
+msgid ""
+"Boolean to define if is to  send or not an email invitation for this new "
+"user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:42
+msgid "Unique 24 character GUID of the teams which the new user will be a member"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:43
+msgid "Unique 24 character GUID of the groups which the new user will be a member"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:72
+msgid "Error creating user: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:77
+msgid "User created successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/delete.js:6
+msgid "Delete a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/delete.js:10
+msgid "Delete the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/delete.js:19
+msgid "Username of the user which will be deleted."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/delete.js:23
+msgid "Error deleting user: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/delete.js:28
+msgid "User deleted successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/disable.js:5
+msgid "Disable a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/disable.js:9
+msgid "Disable the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/disable.js:18
+msgid "Username of the user which will be disable."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/enable.js:5
+msgid "Enable a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/enable.js:9
+msgid "Enable the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/enable.js:18
+msgid "Username of the user which will be enable."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/import.js:6
+msgid "Import users from a csv file to RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/import.js:10
+msgid ""
+"Import users from <file> to RHMAP with options for <invite>, <roles> and "
+"<authpolicies>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/import.js:24
+msgid "Path and name of the csv file with the users which will be imported to RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/import.js:25
+#: lib/cmd/fh3/admin/users/update.js:43
+msgid "Boolean to define if is to send or not an email invitation for this user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/list.js:5
+msgid "List RHMAP Users"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/list.js:9
+msgid "List all users of the target domain"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/list.js:27
+msgid "No users found for the target domain"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listdevices.js:6
+msgid "List devices from RHMAP Users"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listdevices.js:10
+msgid "List all devices from the RHMAP user with <username>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listdevices.js:18
+#: lib/cmd/fh3/admin/users/listinstallapps.js:18
+msgid "Username of the RHMAP user."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listdevices.js:21
+msgid "Error listing user devices: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listinstallapps.js:6
+msgid "List all instaled apps from RHMAP Users"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listinstallapps.js:10
+msgid "List all installed apps from the RHMAP user with <username>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/listinstallapps.js:21
+msgid "Error listing user installed apps: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/read.js:6
+msgid "Read a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/read.js:10
+msgid "Read the user with <username> from RHMAP"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/read.js:19
+msgid "Username of the user which will be read."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/read.js:23
+msgid "Error reading user: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:6
+msgid "Update a RHMAP User"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:10
+msgid ""
+"Update <password>, <email>, <name>, <roles>, <authpolicies>, <invite>, "
+"<teams>, <groups>, <enabled> from the a RHMAP user with <username>"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:37
+msgid "Username of the user which will be update."
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:38
+msgid "Email of the user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:40
+msgid "Name of the user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:44
+msgid "Unique 24 character GUID of the teams which the user will be a member"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:45
+msgid "Unique 24 character GUID of the groups which the user will be a member"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:46
+msgid "True for enable the user and false for disable"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/update.js:78
+msgid "Error updating user: "
+msgstr ""
+
 #: lib/cmd/fh3/app/_baseCloudCommand.js:17
 msgid "Unique 24-character GUID of your application"
 msgstr ""
@@ -1721,6 +1772,7 @@ msgstr ""
 #: lib/cmd/fh3/app/logs/get.js:21
 #: lib/cmd/fh3/app/logs/list.js:23
 #: lib/cmd/fh3/app/logs/tail.js:27
+#: lib/cmd/fh3/appinit.js:19
 #: lib/cmd/fh3/clone.js:20
 msgid "Unique 24 character GUID of your application."
 msgstr ""
@@ -2036,6 +2088,15 @@ msgstr ""
 #: lib/cmd/fh3/projects/update.js:26
 #: lib/cmd/fh3/services/update.js:25
 msgid "Value of the property"
+msgstr ""
+
+#: lib/cmd/fh3/app/update/config.js:42
+#: lib/cmd/fh3/build.js:229
+#: lib/common.js:700
+#: lib/common.js:708
+#: lib/common.js:770
+#: lib/common.js:778
+msgid "Error reading app: "
 msgstr ""
 
 #: lib/cmd/fh3/app/update/config.js:47
@@ -2947,6 +3008,26 @@ msgstr ""
 msgid "ID Of The Theme To Update"
 msgstr ""
 
+#: lib/cmd/fh3/appinit.js:5
+msgid "Makes a client app init call with the cloud"
+msgstr ""
+
+#: lib/cmd/fh3/appinit.js:8
+msgid "Make the client <app> with the <key> init call with the cloud"
+msgstr ""
+
+#: lib/cmd/fh3/appinit.js:20
+msgid "App API Key of the client application"
+msgstr ""
+
+#: lib/cmd/fh3/appinit.js:21
+msgid "Parameters for this init call"
+msgstr ""
+
+#: lib/cmd/fh3/appinit.js:31
+msgid "Error in init: "
+msgstr ""
+
 #: lib/cmd/fh3/artifacts.js:4
 msgid "Lists build artifacts of an application"
 msgstr ""
@@ -2956,7 +3037,167 @@ msgid "Lists build artifacts of the <app-id>"
 msgstr ""
 
 #: lib/cmd/fh3/artifacts.js:14
+#: lib/cmd/fh3/auth.js:23
 msgid "Unique 24 character GUID of your client application."
+msgstr ""
+
+#: lib/cmd/fh3/auth.js:6
+msgid "Performs an auth call against an Auth Policy"
+msgstr ""
+
+#: lib/cmd/fh3/auth.js:9
+msgid "Performs a auth call against  Auth Policy"
+msgstr ""
+
+#: lib/cmd/fh3/auth.js:22
+msgid "Unique 24 character GUID of your Auth Policy."
+msgstr ""
+
+#: lib/cmd/fh3/auth.js:25
+msgid "The auth parameters specific to the auth policy"
+msgstr ""
+
+#: lib/cmd/fh3/auth.js:36
+msgid "Error in auth call: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:15
+msgid "Builds a client application"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:47
+#: lib/cmd/fh3/import.js:32
+msgid "Unique 24 character GUID of the project."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:48
+msgid "Unique 24 character GUID of the client app which will be built."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:49
+msgid ""
+"Unique 24 character GUID of the cloud app which the client app will connect "
+"to."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:50
+msgid ""
+"The name of a connection tag for the cloud app, must be in Semantic Version "
+"format, e.g. 0.0.1. See: http://semver.org."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:51
+msgid "The id of a target environment, e.g. dev."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:52
+msgid ""
+"One of: android, iphone, ipad, ios(for universal binary), blackberry, "
+"windowsphone7, windowsphone (windows phone 8)."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:53
+msgid "Specific to the destination (e.g. Android version 4.0)."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:54
+msgid "Either 'debug' (default), 'distribution', or 'release'."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:55
+msgid "Private key password of the bundleId, only needed for 'release' builds."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:56
+msgid "Certificate password."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:57
+msgid "Boolean value to inform to download or not the built when it finish."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:58
+msgid ""
+"The unique bundle identifier of the credential bundle. You can get it using "
+"'fhc credentials list'. Required for all iOS builds."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:59
+msgid ""
+"For specifying which version of Cordova to use. Currently supported: either "
+"2.2 or 3.3. Only valid for Android for now."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:60
+msgid "Long value of URL that you want shorter for the henr.ie URL."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:61
+msgid "The name of the git branch to build, defaults to 'master'."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:62
+msgid ""
+"The full hash of the commit to build, if not the head of the branch. Must "
+"be used with <branch name>."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:70
+msgid "Missing 'privateKeyPass' parameter"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:73
+msgid "Missing 'certpass' parameter"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:79
+msgid "Missing 'bundleId' parameter"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:99
+msgid "Error processing params: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:178
+msgid ""
+"\n"
+"OTA URL: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:200
+msgid ""
+"\n"
+"Downloaded file: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:214
+msgid ""
+"\n"
+"Download URL: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:322
+msgid "Unexpected response code for file download: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:322
+msgid " message: "
+msgstr ""
+
+#: lib/cmd/fh3/build.js:342
+msgid "Finish stream event received"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:347
+msgid "close stream event received"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:352
+msgid "End of netork stream received"
+msgstr ""
+
+#: lib/cmd/fh3/build.js:358
+msgid "Error downloading build: "
 msgstr ""
 
 #: lib/cmd/fh3/call.js:5
@@ -3488,10 +3729,6 @@ msgstr ""
 msgid ""
 "Import <gitRepo> into <gitBranch> and create a new application with <title> "
 "into <project> deployed into <environment>"
-msgstr ""
-
-#: lib/cmd/fh3/import.js:32
-msgid "Unique 24 character GUID of the project."
 msgstr ""
 
 #: lib/cmd/fh3/import.js:33
@@ -4207,10 +4444,6 @@ msgstr ""
 msgid "RHMAP Version: "
 msgstr ""
 
-#: lib/cmd/fhc/completion.js:5
-msgid "Tab Completion for FHC"
-msgstr ""
-
 #: lib/cmd/fhc/fhcfg.js:5
 msgid "Manage the fhc Configuration File"
 msgstr ""
@@ -4402,6 +4635,118 @@ msgstr ""
 msgid "Error getting targets: "
 msgstr ""
 
+#: lib/cmd/internal/cluster.js:4
+msgid "Manage cluster"
+msgstr ""
+
+#: lib/cmd/internal/cluster.js:34
+#: lib/cmd/internal/clusterprops.js:47
+#: lib/cmd/internal/clusterprops.js:62
+msgid "Error reading Cluster Props: "
+msgstr ""
+
+#: lib/cmd/internal/cluster.js:57
+#: lib/cmd/internal/cluster.js:71
+msgid "failed to create cluster user"
+msgstr ""
+
+#: lib/cmd/internal/cluster.js:86
+msgid "failed to read cluster user"
+msgstr ""
+
+#: lib/cmd/internal/cluster.js:130
+msgid "not updating anything? "
+msgstr ""
+
+#: lib/cmd/internal/clusterprops.js:4
+msgid "Manage clusterprops"
+msgstr ""
+
+#: lib/cmd/internal/clusterprops.js:41
+msgid "Invalid action: "
+msgstr ""
+
+#: lib/cmd/internal/clusterprops.js:101
+msgid "failed to create cluster prop"
+msgstr ""
+
+#: lib/cmd/internal/clusterprops.js:119
+msgid "failed to delete cluster prop"
+msgstr ""
+
+#: lib/cmd/internal/configuration.js:10
+msgid "Manage client app configuration properties"
+msgstr ""
+
+#: lib/cmd/internal/configuration.js:14
+msgid ""
+"\n"
+"where destination can be one of: %s or 'all'"
+msgstr ""
+
+#: lib/cmd/internal/configuration.js:60
+msgid "Error listing destination config: "
+msgstr ""
+
+#: lib/cmd/internal/configuration.js:92
+msgid "Error setting destination config: "
+msgstr ""
+
+#: lib/cmd/internal/configuration.js:105
+msgid "Usage:"
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:12
+msgid "Operations on Cloud Deploy Targets"
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:21
+msgid ""
+"\n"
+"[conf_infrastructure] parameter is required if platform is appfog and "
+"possible values are: aws, eu-aws, ap-aws, rs, hp"
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:29
+msgid "Invalid arguments for '%s':"
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:87
+msgid "Error listing deploy targets: "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:111
+msgid "Invalid infrastructure value : "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:133
+msgid "Error creating deploy target: "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:143
+msgid "Error updating deploy target: "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:155
+msgid "Error reading deploy target: "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:167
+msgid "Error deleting deploy target: "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:186
+msgid "Error listing available deploy targets for app : "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:199
+msgid "Error getting deploy target for app : "
+msgstr ""
+
+#: lib/cmd/internal/deploy-target.js:213
+msgid "Error setting deploy target for app : "
+msgstr ""
+
 #: lib/cmd/internal/df.js:7
 msgid "DynoFarm commands"
 msgstr ""
@@ -4468,37 +4813,39 @@ msgstr ""
 msgid "Progress: "
 msgstr ""
 
-#: lib/common.js:690
-msgid "Error reading template: "
-msgstr ""
-
-#: lib/common.js:694
-#: lib/common.js:706
-msgid "Error reading Projects: "
-msgstr ""
-
-#: lib/common.js:698
-msgid "Error creating service: "
-msgstr ""
-
-#: lib/common.js:702
-msgid "Error creating project: "
-msgstr ""
-
-#: lib/common.js:778
-msgid "Error deleting app: "
-msgstr ""
-
-#: lib/common.js:987
-msgid "Invalid argument format: "
-msgstr ""
-
-#: lib/common.js:1029
+#: lib/common.js:427
+#: lib/common.js:1053
 msgid "Yes"
 msgstr ""
 
-#: lib/common.js:1031
+#: lib/common.js:429
+#: lib/common.js:1055
 msgid "No"
+msgstr ""
+
+#: lib/common.js:714
+msgid "Error reading template: "
+msgstr ""
+
+#: lib/common.js:718
+#: lib/common.js:730
+msgid "Error reading Projects: "
+msgstr ""
+
+#: lib/common.js:722
+msgid "Error creating service: "
+msgstr ""
+
+#: lib/common.js:726
+msgid "Error creating project: "
+msgstr ""
+
+#: lib/common.js:802
+msgid "Error deleting app: "
+msgstr ""
+
+#: lib/common.js:1011
+msgid "Invalid argument format: "
 msgstr ""
 
 #: lib/fhc.js:53
