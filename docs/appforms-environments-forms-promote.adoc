@@ -1,0 +1,13 @@
+[[appforms-environments-forms-promote]]
+= appforms environments forms promote
+----
+fhc appforms environments forms promote --id=<id> --from=<from> --to=<to>
+
+  fhc appforms environments forms promote --id=<ID Of Form To Promote> --from=<ID Of Environment To Promote From> --to=<ID Of Environment To Promote To>    Promote A Form From One Environment To Another
+
+
+  --id    ID Of Form To Promote                   [required]
+  --from  ID Of Environment To Promote Form From  [required]
+  --to    ID Of Environment To Promote Form To    [required]
+
+----

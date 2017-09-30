@@ -1,0 +1,13 @@
+[[appforms-environments-submissions-create]]
+= appforms environments submissions create
+----
+fhc appforms environments submissions create --environment=<environment> --submissiondata=<submissiondata> [--projectid=<projectid>]
+
+  fhc appforms environments submissions create --environment=<Environment Id> --submissiondata=<Path To JSON Submission Data> --projectid=<project to associate the submission with>    Create A New Submission
+
+
+  --environment     Environment Id                                 [required]
+  --submissiondata  Path To JSON Submission Data                   [required]
+  --projectid       Project Guid To Associate The Submission With
+
+----

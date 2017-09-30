@@ -1,0 +1,13 @@
+[[services-update]]
+= services update
+----
+fhc services update --service=<service> --propName=<propName> --propValue=<propValue>
+
+  fhc services create --service=<service> --propName=<propName> --propValue=<propValue>    Update service via create a new property or by updating a existing.
+
+
+  --service, -s    Unique 24 character GUID of the service  [required]
+  --propName, -p   Name of the property.                    [required]
+  --propValue, -v  Value of the property                    [required]
+
+----

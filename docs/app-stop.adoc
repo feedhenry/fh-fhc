@@ -1,0 +1,12 @@
+[[app-stop]]
+= app stop
+----
+fhc app stop --app=<app> --env=<env>
+
+  fhc app stop --app=<appGuid> --env=<environmentName>    
+
+
+  --app, -a  Unique 24-character GUID of your application                        [required]
+  --env, -e  The lifecycle environment your application is running in, e.g. dev  [required]
+
+----

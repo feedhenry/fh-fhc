@@ -1,0 +1,14 @@
+[[app-undeploy]]
+= app undeploy
+----
+fhc app undeploy --id=<id> --env=<env> [--domain=<domain>] [--embed=<embed>]
+
+  fhc app undeploy --id=<app-id> --env=<environment> --domain=<domain>    Undeploy <app-id> from environment <environment> in domain <domain>
+
+
+  --id, -i      Unique 24 character GUID of the application to undeploy   [required]
+  --env, -e     The ID of the environment from where to undeploy the app  [required]
+  --domain, -d  The name of the domain from where to undeploy the app   
+  --embed       If this flag is present then {embed: true} will be sent 
+
+----

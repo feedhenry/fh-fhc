@@ -1,0 +1,11 @@
+[[admin-teams-delete]]
+= admin teams delete
+----
+fhc admin teams delete --id=<id>
+
+  fhc admin teams delete --id=1a2b    Deletes team with id 1a2b
+
+
+  --id  Some unique identifier for your environment  [required]
+
+----

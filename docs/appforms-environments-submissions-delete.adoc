@@ -1,0 +1,12 @@
+[[appforms-environments-submissions-delete]]
+= appforms environments submissions delete
+----
+fhc appforms environments submissions delete --environment=<environment> [--id=<id>]
+
+  fhc appforms environments submissions delete --environment=<Environment Id> --id=<Submission Id>     Delete A Submission
+
+
+  --environment  Environment ID  [required]
+  --id           Submission ID 
+
+----

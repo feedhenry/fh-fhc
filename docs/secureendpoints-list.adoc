@@ -1,0 +1,8 @@
+[[secureendpoints-list]]
+= secureendpoints list
+----
+fhc secureendpoints list
+ list secureendpoints
+ 
+ 
+----

@@ -1,0 +1,14 @@
+[[stats]]
+= stats
+----
+fhc stats --app=<app> --type=<type> --num=<num> --env=<env>
+
+  fhc stats --app=<app> --type=<type> --num=<num> --env=<environment>    Delete the credential bundle with the id=<bundle-id>
+
+
+  --app, -a   Unique 24 character GUID of the application                      [required]
+  --type, -t  Type of the stats.                                               [required]
+  --num, -n   Number of result that you expected                               [required]
+  --env, -e   Environment where the app is deployed and do you want the stats  [required]
+
+----

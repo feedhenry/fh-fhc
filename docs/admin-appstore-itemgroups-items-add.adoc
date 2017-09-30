@@ -1,0 +1,13 @@
+[[admin-appstore-itemgroups-items-add]]
+= admin appstore itemgroups items add
+----
+fhc admin appstore itemgroups items add --guid=<guid> --item=<item> [--json=<json>]
+
+  fhc admin appstore itemgroups items add --guid=<guid> --item=<item>    Add <item> into the App Store Item Group with <guid>
+
+
+  --guid, -g  Unique 24 character GUID of the item group  [required]
+  --item, -i  Unique 24 character GUID of the Item Store  [required]
+  --json, -j  Output in json format                     
+
+----

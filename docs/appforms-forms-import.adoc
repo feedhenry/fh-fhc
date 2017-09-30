@@ -1,0 +1,11 @@
+[[appforms-forms-import]]
+= appforms forms import
+----
+fhc appforms forms import --file=<file>
+
+  fhc appforms forms import --file=<path to zip file>    Imports forms contained in the zip file
+
+
+  --file  Path to a file  [required]
+
+----

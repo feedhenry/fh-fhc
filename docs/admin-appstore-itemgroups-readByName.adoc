@@ -1,0 +1,12 @@
+[[admin-appstore-itemgroups-readByName]]
+= admin appstore itemgroups readByName
+----
+fhc admin appstore itemgroups readByName --name=<name> [--json=<json>]
+
+  fhc admin appstore itemgroups readByName --name=<name>    Read App Store Item Group with <name>
+
+
+  --name, -n  Name of the item group  [required]
+  --json, -j  Output in json format 
+
+----

@@ -1,0 +1,11 @@
+[[admin-environments-read]]
+= admin environments read
+----
+fhc admin environments read --id=<id>
+
+  fhc admin environments read --id=<id>     Read an environment by id
+
+
+  --id  A unique identifier for an environment  [required]
+
+----

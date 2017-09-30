@@ -1,0 +1,14 @@
+[[env-delete]]
+= env delete
+----
+fhc env delete --app=<app> --id=<id> [--env=<env>] [--json=<json>]
+
+  fhc env delete --app=<app> --id=<id> --env=<environment>    Delete the cloud app environment variables with the <id> from the <app> in the <env>
+
+
+  --app, -a   Unique 24 character GUID of the cloud app.                                                   [required]
+  --id, -i    Unique 24 character GUID of the environment variable.                                        [required]
+  --env, -e   Default value is dev. Environment ID for which you want to create the environment variable.
+  --json, -j  Output in json format                                                                      
+
+----

@@ -1,0 +1,11 @@
+[[appforms-forms-delete]]
+= appforms forms delete
+----
+fhc appforms forms delete --id=<id>
+
+  fhc appforms forms delete --id=<ID Of Form To Delete>    Deletes A Single Form.
+
+
+  --id  ID Of The Form To Remove.  [required]
+
+----

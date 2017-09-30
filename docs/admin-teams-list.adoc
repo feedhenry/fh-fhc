@@ -1,0 +1,8 @@
+[[admin-teams-list]]
+= admin teams list
+----
+fhc admin teams list
+ list admin teams
+ 
+ 
+----

@@ -1,0 +1,12 @@
+[[services-data]]
+= services data
+----
+fhc services data-sources --service=<service> [--json=<json>]
+
+  fhc services data-sources --service=<service>    List all data-sources of the <service>
+
+
+  --service, -s  Unique 24 character GUID of the service  [required]
+  --json, -j     Output into json format                
+
+----

@@ -1,0 +1,8 @@
+[[appforms-themes-list]]
+= appforms themes list
+----
+fhc appforms themes list
+ list appforms themes 
+ 
+ 
+----

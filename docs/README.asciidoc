@@ -1,0 +1,68 @@
+= FHC Documentation
+The goal is to produce:
+
+* a reference doc of all commands
+* a user guide to get a new user up and running with fhc
+
+== Creating Reference Doc from Scratch
+
+. Determine all the commands:
++
+----
+cd lib/cmd/fh3
+find .
+----
+This lists all the potential commands 
+. Use list from 1 to create a shell script to run all the commands, say `fhc-all.sh`
+. Run script and capture output_name
++
+----
+fhc-all.sh > out.txt 2>error.txt
+----
+. Parse error.txt for prompts using parse.pl
+. Parse result to split files and add asciidoc using parse2.pl
+
+NOTE: This gets the prompts for commands that require a parameter, and does not reture list commands
+
+== List commands
+ 
+* fhc resources list
+* fhc eventalert list
+* fhc credential list
+* fhc secureendpoints list
+* fhc keys ssh list
+* fhc keys user list
+* fhc connections list
+* fhc env list
+* fhc appdata import list
+* fhc appdata export list
+* fhc notifications list
+* fhc admin teams list
+* fhc admin environments list
+* fhc admin mbaas list
+* fhc admin devices list
+* fhc admin devices list
+* fhc admin devices list
+* fhc admin policies list
+* fhc admin policies users list
+* fhc admin appstore auditlog list
+* fhc admin appstore itemgroups list
+* fhc admin appstore policy list
+* fhc admin appstore storeitems list
+* fhc admin appstore storeitems list
+* fhc admin users list
+* fhc admin users list
+* fhc admin users list
+* fhc services list
+* fhc app logs list
+* fhc app list
+* fhc projects list
+* fhc appforms forms list
+* fhc appforms data-sources list
+* fhc appforms environments forms list
+* fhc appforms environments submissions list
+* fhc appforms environments data-sources list
+* fhc appforms templates forms list
+* fhc appforms templates themes list
+* fhc appforms themes list
+* fhc appforms projects list

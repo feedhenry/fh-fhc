@@ -1,0 +1,17 @@
+[[env-update]]
+= env update
+----
+fhc env update --app=<app> --id=<id> [--value=<value>] [--env=<env>] [--mask=<mask>] [--json=<json>]
+
+  fhc env update --app=<app> --id=<id> --value=<value> --env=<environment>    Update the cloud app environment variables with the <id> from the <app> in the <env> with the <name> and <value>
+  fhc env update --app=<app> --id=<id> --mask                                 Update the cloud app environment variables with the <id> from the <app> in the <env> to be masked
+
+
+  --app, -a    Unique 24 character GUID of the cloud app.                                                   [required]
+  --id, -i     Unique 24 character GUID of the environment variable.                                        [required]
+  --value, -v  Value of the environment variable.                                                         
+  --env, -e    Default value is dev. Environment ID for which you want to create the environment variable.
+  --mask, -m   Mask the value of this Environment Variable                                                
+  --json, -j   Output in json format                                                                      
+
+----

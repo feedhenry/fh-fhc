@@ -1,0 +1,15 @@
+[[appforms-environments-submissions-addfile]]
+= appforms environments submissions addfile
+----
+fhc appforms environments submissions addfile --environment=<environment> --id=<id> --fileid=<fileid> --fieldid=<fieldid> --file=<file>
+
+  fhc appforms environments submissions addfile --environment=<ID Of Environment The Submission Is Located In> --id=<Submission ID> --fieldid=<ID Of Field The File Is Being Added To>--fileid=<New ID For The File> --file=<Path To File To Upload>    Add A Single File To A Submission
+
+
+  --environment  ID Of Environment The Submission Is Located In  [required]
+  --id           ID Of Submission Containing The File            [required]
+  --fileid       ID Of File To Upload                            [required]
+  --fieldid      ID Of Field The File Is Being Added To          [required]
+  --file         Path To File To Upload                          [required]
+
+----

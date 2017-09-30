@@ -1,0 +1,14 @@
+[[projects-update]]
+= projects update
+----
+fhc projects update --project=<project> --propName=<propName> --propValue=<propValue> [--json=<json>]
+
+  fhc projects create --project=<project> --propName=<propName> --propValue=<propValue>    Update project via create a new property or by updating a existing.
+
+
+  --project, -s    Unique 24 character GUID of the project  [required]
+  --propName, -p   Name of the property.                    [required]
+  --propValue, -v  Value of the property                    [required]
+  --json, -j       Output in json format                  
+
+----

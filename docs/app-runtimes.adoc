@@ -1,0 +1,13 @@
+[[app-runtimes]]
+= app runtimes
+----
+fhc app runtimes --id=<id> --env=<env> [--domain=<domain>]
+
+  fhc app runtimes --id=<app-id> --env=<environment> --domain=<domain>    Runtimes <app-id> from the <environment> in domain <domain>
+
+
+  --id, -i      Unique 24 character GUID of the application                                            [required]
+  --env, -e     Unique 24 character GUID of the environment where this cloud application is deployed.  [required]
+  --domain, -d  The name of the domain from where the app is                                         
+
+----

@@ -1,0 +1,12 @@
+[[appforms-themes-update]]
+= appforms themes update
+----
+fhc appforms themes update --id=<id> --themefile=<themefile>
+
+  fhc appforms themes update --id=<id of theme to update> --themefile=<path to theme json file>    Update A Single Theme
+
+
+  --id         ID Of The Theme To Update                                       [required]
+  --themefile  A Path To A File Containing A Valid JSON Definition Of A Theme  [required]
+
+----

@@ -1,0 +1,12 @@
+[[appforms-environments-forms-read]]
+= appforms environments forms read
+----
+fhc appforms environments forms read --id=<id> --environment=<environment>
+
+  fhc appforms environments forms read --environment=<Environment To Read The Form From> --id=<ID Of Form To Read>    Read A Single Form
+
+
+  --id           ID Of Form To Read             [required]
+  --environment  Environment To Read Form From  [required]
+
+----

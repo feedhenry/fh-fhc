@@ -1,0 +1,12 @@
+[[admin-teams-adduser]]
+= admin teams adduser
+----
+fhc admin teams adduser --team=<team> --user=<user>
+
+  fhc admin teams adduser --team=1a --user=2b    Add user 2b to team 1a
+
+
+  --team  A unique team id  [required]
+  --user  A unique user id  [required]
+
+----

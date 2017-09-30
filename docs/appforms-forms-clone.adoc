@@ -1,0 +1,11 @@
+[[appforms-forms-clone]]
+= appforms forms clone
+----
+fhc appforms forms clone --id=<id>
+
+  fhc appforms forms clone --id=<ID Of Form To Clone>    Clones An Existing Form
+
+
+  --id  ID Of Form To Clone  [required]
+
+----

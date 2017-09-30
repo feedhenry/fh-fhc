@@ -1,0 +1,11 @@
+[[appforms-environments-submissions-csvExportReset]]
+= appforms environments submissions csvExportReset
+----
+fhc appforms environments submissions csvExportReset --environment=<environment>
+
+  fhc appforms environments submissions csvExportReset --environment=<Environment Id>     Reset a submission CSV export for a single environment
+
+
+  --environment  Environment Id  [required]
+
+----

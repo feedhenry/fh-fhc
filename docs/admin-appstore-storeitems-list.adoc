@@ -1,0 +1,8 @@
+[[admin-appstore-storeitems-list]]
+= admin appstore storeitems list
+----
+fhc admin appstore storeitems list
+ list admin appstore storeitems
+ 
+ 
+----

@@ -1,0 +1,14 @@
+[[admin-environments-update]]
+= admin environments update
+----
+fhc admin environments update --id=<id> [--label=<label>] [--target=<target>] [--token=<token>]
+
+  fhc admin environments update --id=<environment id> --label=<label> --target=<mbaasTargetId> --token=<token>    Update an environment by id
+
+
+  --id      Some unique identifier for your environment                 [required]
+  --label   A label describing your environment                       
+  --target  unique identifier for an existing MBaaS Target            
+  --token   OpenShift token required to create the environment project
+
+----

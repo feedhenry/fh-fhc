@@ -1,0 +1,13 @@
+[[clone]]
+= clone
+----
+fhc clone --app=<app> --project=<project> [--local=<local>]
+
+  fhc clone --project=<project> --app=<app> --local=<local>    Performs a git clone of the <app> from the project <project> into the path <local>
+
+
+  --app, -a      Unique 24 character GUID of your application.  [required]
+  --project, -p  Unique 24 character GUID of your project       [required]
+  --local, -a    Path where you want the application be cloned
+
+----

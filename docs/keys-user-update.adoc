@@ -1,0 +1,13 @@
+[[keys-user-update]]
+= keys user update
+----
+fhc keys user update --label=<label> --value=<value> [--json=<json>]
+
+  fhc keys user update --label=<label> --value=<value>    Update the <lable> with the <new> value for label
+
+
+  --label, -l  Label of the API Key that you want to update.  [required]
+  --value, -n  Value for update the label.                    [required]
+  --json, -j   Output in json format                        
+
+----

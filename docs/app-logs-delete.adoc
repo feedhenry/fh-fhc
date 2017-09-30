@@ -1,0 +1,13 @@
+[[app-logs-delete]]
+= app logs delete
+----
+fhc app logs delete --app=<app> --env=<env> --logname=<logname>
+
+  fhc app logs delete --app=2bf4gg3gfefsdgfdsg4fdgs34 --env=dev --logname=env.log    Removes "env.log" file from "dev" environment
+
+
+  --app, -a      Unique 24 character GUID of your application.  [required]
+  --env, -e      Application Environment ID (dev, prod)         [required]
+  --logname, -f  Full name of log file including extension      [required]
+
+----

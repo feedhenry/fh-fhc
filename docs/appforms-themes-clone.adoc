@@ -1,0 +1,11 @@
+[[appforms-themes-clone]]
+= appforms themes clone
+----
+fhc appforms themes clone --id=<id>
+
+  fhc appforms themes clone --id=<ID Of Theme To Clone>    Clones An Existing Theme
+
+
+  --id  ID Of Theme To Clone  [required]
+
+----

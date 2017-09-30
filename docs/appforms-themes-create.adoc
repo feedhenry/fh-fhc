@@ -1,0 +1,11 @@
+[[appforms-themes-create]]
+= appforms themes create
+----
+fhc appforms themes create --themefile=<themefile>
+
+  fhc appforms themes create --themefile=<path to theme json file>    Create A New Theme
+
+
+  --themefile  A Path To A File Containing A Valid JSON Definition Of A Theme  [required]
+
+----

@@ -1,0 +1,15 @@
+[[services-create]]
+= services create
+----
+fhc services create --title=<title> [--template=<template>] [--env=<env>]
+
+  fhc services create --title=<title>                                              Create a service with the <title>
+  fhc services create --title=<title> --template=<template>                        Create a service with the <title> and <template>
+  fhc services create --title=<title> --template=<template> --env=<environment>    Create a service with the <title> and <template>, after deploy it on <environment>
+
+
+  --title, -t     Title of the Service that you want create                                                         [required]
+  --template, -t  Unique 24 character GUID of the template                                                        
+  --env, -e       Unique 24 character GUID of the environment that you want deploy the project after it be created
+
+----

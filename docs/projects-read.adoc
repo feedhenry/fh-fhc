@@ -1,0 +1,11 @@
+[[projects-read]]
+= projects read
+----
+fhc projects read --project=<project>
+
+  fhc projects read --project=<project>    Read the <project>
+
+
+  --project, -p  Unique 24 character GUID of the project  [required]
+
+----

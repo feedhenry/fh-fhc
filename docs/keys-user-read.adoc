@@ -1,0 +1,12 @@
+[[keys-user-read]]
+= keys user read
+----
+fhc keys user read --label=<label> [--json=<json>]
+
+  fhc keys user read --label=<label>    Read a user API Key with the <label>
+
+
+  --label, -l  Label of the API Key Management that you want to read.  [required]
+  --json, -j   Output in json format                                 
+
+----

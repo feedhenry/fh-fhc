@@ -1,0 +1,5 @@
+[[templates-services]]
+= templates services
+----
+fhc templates services
+ lists all service templates

@@ -1,0 +1,14 @@
+[[env-unset]]
+= env unset
+----
+fhc env unset --app=<app> --id=<id> [--env=<env>] [--json=<json>]
+
+  fhc env unset --app=<app> --id=<id> --env=<environment>    Unset cloud app environment variables from the <app> and <env>
+
+
+  --app, -a   Unique 24 character GUID of the cloud app.                                                  [required]
+  --id, -i    Unique 24 character GUID of the environment variable.                                       [required]
+  --env, -e   Default value is dev. Environment ID for which you want to create the environment variable
+  --json, -j  Output in json format                                                                     
+
+----

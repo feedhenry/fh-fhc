@@ -1,0 +1,8 @@
+[[admin-mbaas-list]]
+= admin mbaas list
+----
+fhc admin mbaas list
+ list admin mbaas
+ 
+ 
+----

@@ -1,0 +1,12 @@
+[[appforms-projects-create]]
+= appforms projects create
+----
+fhc appforms projects create --id=<id> --theme=<theme> --forms=<forms>
+
+  fhc appforms projects create --id=<GUID Of Project To Associate With Forms> --theme=<ID Of Theme To Associate With The Project> --forms=<formId1>,<formId2>    Create A Single Form Project
+
+
+  --id     GUID Of The Form Project To Create                                   [required]
+  --theme  The ID Of The Theme To Associate With The Form Project               [required]
+  --forms  Comma-separated List Of Form IDs To Associate With The Form Project  [required]
+----

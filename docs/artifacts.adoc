@@ -1,0 +1,11 @@
+[[artifacts]]
+= artifacts
+----
+fhc artifacts --app=<app>
+
+  fhc artifacts --app=<app-id>    Lists build artifacts of the <app-id>
+
+
+  --app, -a  Unique 24 character GUID of your client application.  [required]
+
+----

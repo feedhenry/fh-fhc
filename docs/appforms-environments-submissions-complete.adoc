@@ -1,0 +1,12 @@
+[[appforms-environments-submissions-complete]]
+= appforms environments submissions complete
+----
+fhc appforms environments submissions complete --environment=<environment> --id=<id>
+
+  fhc appforms environments submissions complete --environment=<Environment Id> --id=<Submission Id>     Mark A Pending Submission As Complete
+
+
+  --environment  Environment Id  [required]
+  --id           Submission Id   [required]
+
+----

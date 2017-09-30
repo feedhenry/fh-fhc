@@ -1,0 +1,13 @@
+[[call]]
+= call
+----
+fhc call --url=<url> [--method=<method>] [--data=<data>]
+
+  fhc call --url=<url> --method=<method> --data=<data>    Call the <url> via the <method> with the data=<data>
+
+
+  --url, -u     URL that you want call                                   [required]
+  --method, -m  Options: [GET, PUT, POST, DELETE]. Default value is GET
+  --data, -d    Data in JSON format. (E.g. {name:'name'}               
+
+----

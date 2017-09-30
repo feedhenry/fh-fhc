@@ -1,0 +1,13 @@
+[[appforms-environments-submissions-exportpdf]]
+= appforms environments submissions exportpdf
+----
+fhc appforms environments submissions exportpdf --environment=<environment> --id=<id> --output=<output>
+
+  fhc appforms environments submissions exportpdf --environment=<ID Of Environment The Submission Is Located In> --id=<Submission ID> --output=<File To Download Submission To>.pdf    Export A Single Submission As A PDF File
+
+
+  --environment  ID Of Environment The Submission Is Located In                     [required]
+  --id           ID Of Submission To Export                                         [required]
+  --output       Path To File To Export Submission To. Must Have A .pdf Extension.  [required]
+
+----

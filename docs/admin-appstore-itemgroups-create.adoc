@@ -1,0 +1,13 @@
+[[admin-appstore-itemgroups-create]]
+= admin appstore itemgroups create
+----
+fhc admin appstore itemgroups create --name=<name> --description=<description> [--json=<json>]
+
+  fhc admin appstore itemgroups create --name=<name> --description=<description>    Create App Store Item Group with the <name> and <description>
+
+
+  --name, -n         Name of the item group         [required]
+  --description, -d  Description of the item group  [required]
+  --json, -j         Output in json format        
+
+----

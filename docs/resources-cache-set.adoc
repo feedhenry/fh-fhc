@@ -1,0 +1,15 @@
+[[resources-cache-set]]
+= resources cache set
+----
+fhc resources cache set --env=<env> --type=<type> --value=<value>
+
+  fhc resources cache set --env=<environment> --type=<type> --value=<value>    Set cache into the <environment> as <value> <type>
+  fhc resources cache set --type=size --value=524288000 --env=live             Set cache into the <live> as <524288000> <size>
+  fhc resources cache set --type=size --value=50 --env=live                    Set resources cache into the <live> as <50> <percent>
+
+
+  --env, -e    Environment ID which you want flush the cache                          [required]
+  --type, -t   The type is percent or size                                            [required]
+  --value, -v  The value is the size into Bits or a percent of available into domain  [required]
+
+----

@@ -1,0 +1,8 @@
+[[app-logs-list]]
+= app logs list
+----
+fhc app logs list
+ list all apps logs
+ 
+ 
+----

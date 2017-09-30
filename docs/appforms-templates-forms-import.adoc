@@ -1,0 +1,13 @@
+[[appforms-templates-forms-import]]
+= appforms templates forms import
+----
+fhc appforms templates forms import --id=<id> --name=<name> [--description=<description>]
+
+  fhc appforms templates forms import --id=<Template ID> --name=<Name Of New Imported Form> --description=<Description For New Form>    Imports A Single Form Template.
+
+
+  --id           Form Template ID To Import     [required]
+  --name         New Name For Imported Form     [required]
+  --description  Description For Imported Form
+
+----

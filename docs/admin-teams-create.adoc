@@ -1,0 +1,11 @@
+[[admin-teams-create]]
+= admin teams create
+----
+fhc admin teams create --team=<team>
+
+  fhc admin teams create --team=myteam.json    Creates a team from file myteam.json
+
+
+  --team  a .json filename for your team  [required]
+
+----

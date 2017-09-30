@@ -1,0 +1,11 @@
+[[resources-cache-flush]]
+= resources cache flush
+----
+fhc resources cache flush --env=<env>
+
+  fhc resources cache flush --env=<environment>    Flush the cache of the env=<environment>
+
+
+  --env, -e  Environment ID which you want flush the cache  [required]
+
+----

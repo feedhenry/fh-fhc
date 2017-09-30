@@ -1,0 +1,21 @@
+[[app-stage]]
+= app stage
+----
+fhc app stage --app=<app> --env=<env> [--runtime=<runtime>] [--clean=<clean>] [--autodeploy=<autodeploy>] [--gitRefType=<gitRefType>] [--gitRefHash=<gitRefHash>] [--gitRefValue=<gitRefValue>]
+
+  fhc app stage --app=<cloud-app-id> --env=<environment>                                                                              Deploy of cloud application <app-id> on <environment> (Defaults to branch:master)
+  fhc app stage --app=<cloud-app-id> --env=<environment> --runtime=<runtime> --clean=false --autodeploy=true                          Deploy of cloud application <cloud-app-id> on <environment> with the <runtime> without Clean Stage option selected and 'Auto Deploy' option selected.
+  fhc app stage --app=<cloud-app-id> --env=<environment> --runtime=<runtime> --gitRefType=<gitRef-type> --gitRefHash=<gitRef-hash>    Deploy of cloud application <cloud-app-id> on <environment> with the <runtime> with 'branch' or 'tag' informed and the commit hash that you'd like to deploy.
+  fhc app stage --app=<cloud-app-id> --env=<environment> --runtime=<runtime> --gitRefValue=<gitRef-value>                             Deploy of cloud application <cloud-app-id> on <environment> with the <runtime> with the name of the branch that you'd like to deploy.
+
+
+  --app, -a            Unique 24 character GUID of the cloud app you want to see resource info for                                                                                      [required]
+  --env, -e            The cloud environment your app is running in                                                                                                                     [required]
+  --runtime, -r        The Node.js runtime of your application. (E.g. node08, node010 or node4.). To check the available runtimes use '$fhc app runtimes --id=<cloud-app-id>'         
+  --clean, -c          Options 'true' or 'false'. Do a full, clean stage. Cleans out all old application log files, removes cached node modules and does an 'npm install' from scratch
+  --autodeploy, --ad   Options 'true' or 'false'. Deploy the app automatically when the app repo is updated                                                                           
+  --gitRefType, --gt   Specifies if you'd like to deploy a 'branch' or 'tag'                                                                                                          
+  --gitRefHash, --gh   The commit hash you'd like to deploy if gitRef.type is 'branch'. The default value is HEAD.                                                                    
+  --gitRefValue, --gv  The name of the branch you'd like to deploy                                                                                                                    
+
+----

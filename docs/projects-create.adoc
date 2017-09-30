@@ -1,0 +1,16 @@
+[[projects-create]]
+= projects create
+----
+fhc projects create --title=<title> [--template=<template>] [--env=<env>] [--json=<json>]
+
+  fhc projects create --title=<title>                                              Create a  with the <title>
+  fhc projects create --title=<title> --template=<template>                        Create a project with the <title> and <template>
+  fhc projects create --title=<title> --template=<template> --env=<environment>    Create a project with the <title> and <template>, after deploy it on <environment>
+
+
+  --title, -t       Title of the Project that you want create                                                         [required]
+  --template, --tp  Unique 24 character GUID of the template                                                        
+  --env, -e         Unique 24 character GUID of the environment that you want deploy the project after it be created
+  --json, -j        Output in json format                                                                           
+
+----

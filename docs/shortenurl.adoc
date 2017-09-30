@@ -1,0 +1,11 @@
+[[shortenurl]]
+= shortenurl
+----
+fhc shortenurl --url=<url>
+
+  fhc shortenurl --url=<url>    Shorten the <url> with the henr.ie URL shortener (E.g http://henr.ie/2s7DFXA)
+
+
+  --url, -u  Long value of URL that you want shorter for the henr.ie URL  [required]
+
+----

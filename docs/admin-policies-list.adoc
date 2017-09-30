@@ -1,0 +1,8 @@
+[[admin-policies-list]]
+= admin policies list
+----
+fhc admin policies list
+ list admin policies
+ 
+ 
+----

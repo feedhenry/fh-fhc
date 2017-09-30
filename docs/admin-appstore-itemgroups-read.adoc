@@ -1,0 +1,12 @@
+[[admin-appstore-itemgroups-read]]
+= admin appstore itemgroups read
+----
+fhc admin appstore itemgroups read --guid=<guid> [--json=<json>]
+
+  fhc admin appstore itemgroups read --guid=<guid>    Read App Store Item Group with <guid>
+
+
+  --guid, -g  Unique 24 character GUID of the item group  [required]
+  --json, -j  Output in json format                     
+
+----

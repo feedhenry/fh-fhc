@@ -1,0 +1,15 @@
+[[app-logs-tail]]
+= app logs tail
+----
+fhc app logs tail --app=<app> --env=<env> [--last=<last>] [--offset=<offset>] [--logname=<logname>]
+
+  fhc app logs tail --app=2bf4gg3gfefsdgfdsg4fdgs34 --env=dev --last=100 --logname=std.out.log    Monitors and displays the last "100" lines of "std.out.log"
+
+
+  --app, -a      Unique 24 character GUID of your application.           [required]
+  --env, -e      Application Environment ID (dev, prod)                  [required]
+  --last, -l     Number of last lines from file that will be fetched   
+  --offset, -o   Log file offset used as starting point for reading log
+  --logname, -f  Name of log file                                      
+
+----

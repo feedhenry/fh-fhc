@@ -1,0 +1,12 @@
+[[app-read]]
+= app read
+----
+fhc app read --project=<project> --app=<app>
+
+  fhc app read --project=1a --app=2b    Reads app with id 2b under project with id 1a
+
+
+  --project, -p  Unique 24 character GUID of the project your app lives in  [required]
+  --app, -a      Unique 24 character GUID of the app you want to read       [required]
+
+----

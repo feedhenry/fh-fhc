@@ -1,0 +1,14 @@
+[[admin-domains-create]]
+= admin domains create
+----
+fhc admin domains create --name=<name> --type=<type> [--theme=<theme>] [--parent=<parent>]
+
+  fhc admin domains create --name=<name> --type=<type> --theme=<theme> --parent=<parent>     Create a domain with the <name>, type<type>, <theme> and <parent>
+
+
+  --name, -n     Name of the domain                                     [required]
+  --type, -t     The type of the domain need be 'admin' or 'developer'  [required]
+  --theme, --th  The theme of the domain                              
+  --parent, -p   Unique 24 character GUID of your parent domain       
+
+----

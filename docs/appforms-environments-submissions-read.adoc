@@ -1,0 +1,12 @@
+[[appforms-environments-submissions-read]]
+= appforms environments submissions read
+----
+fhc appforms environments submissions read --environment=<environment> --id=<id>
+
+  fhc appforms environments submissions list --environment=<ID Of Environment To List Submissions> --id=<Submission ID>    Read A Single Submission
+
+
+  --environment  ID Of Environment To List Forms  [required]
+  --id           Submission ID                    [required]
+
+----

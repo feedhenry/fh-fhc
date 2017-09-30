@@ -1,0 +1,12 @@
+[[env-push]]
+= env push
+----
+fhc env push --app=<app> [--env=<env>]
+
+  fhc env push --app=<app> --env=<environment>    Push cloud app environment variables from the <app> and <env>
+
+
+  --app, -a  Unique 24 character GUID of the cloud app.                                                  [required]
+  --env, -e  Default value is dev. Environment ID for which you want to create the environment variable
+
+----

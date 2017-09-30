@@ -1,0 +1,8 @@
+[[admin-appstore-policy-list]]
+= admin appstore policy list
+----
+fhc admin appstore policy list
+ list admin appstore policy
+ 
+ 
+----

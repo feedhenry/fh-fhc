@@ -1,0 +1,13 @@
+[[git-pull]]
+= git pull
+----
+fhc git pull --app=<app> [--clean=<clean>] [--json=<json>]
+
+  fhc git pull --app=<app> [--clean] [--json]    Git pull the <app>
+
+
+  --app, -a    Unique 24 character GUID of the application  [required]
+  --clean, -c  Clean the application before pull          
+  --json, -j   Output into json format                    
+
+----

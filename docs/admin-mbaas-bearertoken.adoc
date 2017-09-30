@@ -1,0 +1,14 @@
+[[admin-mbaas-bearertoken]]
+= admin mbaas bearertoken
+----
+fhc admin mbaas bearertoken --url=<url> --username=<username> --password=<password> --mbaasid=<mbaasid>
+
+  fhc admin mbaas bearertoken --username=<user@host.tld>, --password<userpassword> --url=<openshiftURL> --mbaasid=<mbaasid>    Gets a new bearer token
+
+
+  --url       The host where your MBaaS exists  [required]
+  --username  MBaaS username                    [required]
+  --password  MBaaS password                    [required]
+  --mbaasid   The id for the MBaaS              [required]
+
+----

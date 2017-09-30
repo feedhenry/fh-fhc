@@ -1,0 +1,15 @@
+[[appforms-environments-submissions-filter]]
+= appforms environments submissions filter
+----
+fhc appforms environments submissions filter --environment=<environment> [--projectid=<projectid>] [--formid=<formid>] --page=<page> --limit=<limit>
+
+  fhc appforms environments submissions filter --environment=<Environment Id> [projectid=<Filter By Project ID>] [formid=<Filter By Form ID>]    Filter Submissions By Form Or Project Id
+
+
+  --environment  Environment ID                  [required]
+  --projectid    Filter By Project ID          
+  --formid       Filter By Form ID             
+  --page         Page number to list             [required]
+  --limit        Number of submissions per page  [required]
+
+----

@@ -1,0 +1,11 @@
+[[preview-show]]
+= preview show
+----
+fhc preview show --app=<app>
+
+  fhc preview show --app=<app>    Show the preview of the <app>
+
+
+  --app, -a  Unique 24 character GUID of the application  [required]
+
+----

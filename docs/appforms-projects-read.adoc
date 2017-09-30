@@ -1,0 +1,11 @@
+[[appforms-projects-read]]
+= appforms projects read
+----
+fhc appforms projects read --id=<id>
+
+  fhc appforms projects read --id=<ID Of Form Project To Read>    Read A Single Form Project
+
+
+  --id  GUID Of Form Project To Read  [required]
+
+----

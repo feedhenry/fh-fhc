@@ -1,0 +1,12 @@
+[[admin-teams-removeuser]]
+= admin teams removeuser
+----
+fhc admin teams removeuser --team=<team> --user=<user>
+
+  fhc admin teams removeuser --team=1a --user=2b    Remove user 2b to team 1a
+
+
+  --team  A unique team id  [required]
+  --user  A unique user id  [required]
+
+----

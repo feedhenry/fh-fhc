@@ -1,0 +1,14 @@
+[[admin-logs-syslogs]]
+= admin logs syslogs
+----
+fhc admin logs syslogs --requestId=<requestId> --projects=<projects> [--numLogEntries=<numLogEntries>] [--orderBy=<orderBy>]
+
+  fhc admin syslogs --requestId="07401646-b55e-4b9f-a181-c42f2fcbfd17" --projects="core,mbaas"    Searching for log entries associated with request ID: 07401646-b55e-4b9f-a181-c42f2fcbfd17
+
+
+  --requestId      A request ID to search for.                                                                       [required]
+  --projects       A comma-separated list of project names to search for logs in.                                    [required]
+  --numLogEntries  The maximum number of log entries returned. Default is 1000.                                    
+  --orderBy        The order of entries, by timestamp, to be displayed. The available options are 'first' or 'last'
+
+----

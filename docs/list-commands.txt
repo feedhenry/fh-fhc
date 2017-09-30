@@ -1,0 +1,162 @@
+fhc resources list
+ list resources
+ 
+ 
+fhc eventalert list
+ list eventalert
+ 
+ 
+fhc credential list
+ list credential
+ 
+ 
+fhc secureendpoints list
+ list secureendpoints
+ 
+ 
+fhc keys ssh list
+ list keys ssh
+ 
+ 
+fhc keys user list
+ list keys user
+ 
+ 
+fhc connections list
+ list connections
+ 
+ 
+fhc env list
+ list env
+ 
+ 
+fhc appdata import list
+ list appdata import
+ 
+ 
+fhc appdata export list
+ list appdata export
+ 
+ 
+fhc notifications list
+ list notifications
+ 
+ 
+fhc admin teams list
+ list admin teams
+ 
+ 
+fhc admin environments list
+ list admin environments
+ 
+ 
+fhc admin mbaas list
+ list admin mbaas
+ 
+ 
+fhc admin devices list
+ list admin devices
+ 
+ 
+fhc admin devices list
+ list admin devices
+ 
+ 
+fhc admin devices list
+ list admin devices
+ 
+ 
+fhc admin policies list
+ list admin policies
+ 
+ 
+fhc admin policies users list
+ list admin policies users
+ 
+ 
+fhc admin appstore auditlog list
+ list admin appstore auditlog
+ 
+ 
+fhc admin appstore itemgroups list
+ list admin appstore itemgroups
+ 
+ 
+fhc admin appstore policy list
+ list admin appstore policy
+ 
+ 
+fhc admin appstore storeitems list
+ list admin appstore storeitems
+ 
+ 
+fhc admin appstore storeitems list
+ list admin appstore storeitems
+ 
+ 
+fhc admin users list
+ list admin users
+ 
+ 
+fhc admin users list
+ list admin users
+ 
+ 
+fhc admin users list
+ list admin users
+ 
+ 
+fhc services list
+ list all services
+ 
+ 
+fhc app logs list
+ list all apps logs
+ 
+ 
+fhc app list
+ list apps
+ 
+ 
+fhc projects list
+ list projects
+ 
+ 
+fhc appforms forms list
+ list forms for appsforms
+ 
+ 
+fhc appforms data-sources list
+ list data-sources
+ 
+ 
+fhc appforms environments forms list
+ list appforms environments forms 
+ 
+ 
+fhc appforms environments submissions list
+ list appforms environments submissions
+ 
+ 
+fhc appforms environments data-sources list
+ list appforms environments data-sources 
+ 
+ 
+fhc appforms templates forms list
+ list appforms templates forms 
+ 
+ 
+fhc appforms templates themes list
+ list appforms templates themes 
+ 
+ 
+fhc appforms themes list
+ list appforms themes 
+ 
+ 
+fhc appforms projects list
+ list appforms projects
+ 
+ 
+
+ 

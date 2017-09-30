@@ -1,0 +1,13 @@
+[[appdata-import-start]]
+= appdata import start
+----
+fhc appdata import start --envId=<envId> --appId=<appId> --path=<path>
+
+  fhc addpata import start --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live --path=/my/import.tar    Start a new data import job for the given application in the given environment
+
+
+  --envId  Environment id                   [required]
+  --appId  Application id                   [required]
+  --path   path to the file to be uploaded  [required]
+
+----

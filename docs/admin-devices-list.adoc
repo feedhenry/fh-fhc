@@ -1,0 +1,8 @@
+[[admin-devices-list]]
+= admin devices list
+----
+fhc admin devices list
+ list admin devices
+ 
+ 
+----

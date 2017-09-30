@@ -1,0 +1,8 @@
+fhc templates apps
+ lists all app templates
+
+fhc templates projects
+ lists all project templates
+
+fhc templates services
+ lists all service templates

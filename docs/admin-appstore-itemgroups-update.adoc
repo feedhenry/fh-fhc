@@ -1,0 +1,14 @@
+[[admin-appstore-itemgroups-update]]
+= admin appstore itemgroups update
+----
+fhc admin appstore itemgroups update --guid=<guid> [--name=<name>] [--description=<description>] [--json=<json>]
+
+  fhc admin appstore itemgroups update --guid=<guid> --name=<name> --description=<description>    Update <name> and the <description> of the App Store Item Group with <guid>
+
+
+  --guid, -g         Unique 24 character GUID of the item group  [required]
+  --name, -n         Name of the item group                    
+  --description, -d  Description of the item group             
+  --json, -j         Output in json format                     
+
+----

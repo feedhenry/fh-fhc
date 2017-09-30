@@ -1,0 +1,134 @@
+:toc: left
+
+= FHC User Guide
+
+:leveloffset: 1
+
+= Setting Up Your Environment
+
+
+[[install-fhc]]
+== Install FHC
+
+In a terminal/command prompt, execute:
+
+[source,bash]
+----
+npm install -g fh-fhc
+----
+
+NOTE: `-g` installs `fhc` globally. If installing on Linux, `sudo` might be required to complete this command.
+
+Once complete, `fhc` is available from the command line.
+
+NOTE: For the command to be available, use `hash -r` instead of *_Z shell (zsh)_* to reset the hash table.
+
+Test `fhc` is installed by verifying the `fhc` version:
+
+[source,bash]
+----
+fhc -v
+----
+
+
+
+[[command-completion-linux-and-mac-only]]
+=== Command Completion (Linux and Mac only)
+
+`fhc` bash completion script allows Tab completion of the various `fhc` commands. See the https://github.com/feedhenry/fh-fhc/blob/master/doc/fhc/fhc.md[fhc docs] for more information.
+Install `fhc` bash completion script:
+
+[source,bash]
+----
+fhc completion >> ~/.bashrc
+----
+
+NOTE: Append the output of `fhc completion` to a relevant file if an alternative shell (not `bash`) is being used. For example, `~/.zshrc` for zsh.
+
+[[usage]]
+== Usage
+
+Set the target and login:
+
+[source,bash]
+----
+fhc target https://<rhmap-studio-domain>
+fhc login <email address> <password>
+----
+
+NOTE: Once logged in, access restrictions can apply. Team Permissions determine the level of access a User has within the Platform. 
+
+
+To list projects:
+
+include::projects-list.adoc[leveloffset=+3]
+
+NOTE: To return the project list in raw JSON format, append `--json` to the end of the command, for example, `fhc projects --json`.
+
+If no projects exist, the list will be empty otherwise a list of existing projects are displayed (ordered by date lasted modified), for example:
+
+[source,bash]
+----
+--------------------------------------------------------------------------
+| Id                       | Title            | No. Apps | Last Modified |
+--------------------------------------------------------------------------
+| 1234567890abcdefghijklmn | Hello World      | 3        | 3 hours ago   |
+--------------------------------------------------------------------------
+| 9876543210zyxwvutsrqpomn | Welcome to RHMAP | 2        | 3 hours ago   |
+--------------------------------------------------------------------------
+----
+
+[[creating-a-project]]
+== Creating a Project
+
+It is possible to create a new project that contains no Client or Cloud Apps however a project *must* have a name. 
+
+Typically, a new project is created using the pre-defined templates.
+Project templates allow you to bootstrap your development by cloning the project template which typically provides at least one Client App and one Cloud App.
+
+
+include::projects-create.adoc[leveloffset=+3]
+
+Create a new project based on the `hello_world_project` template:
+[source,bash]
+----
+fhc projects create helloWorld hello_world_project
+----
+
+
+Verify successful creation of the project by searching for the new project:
+
+[source,bash]
+----
+fhc projects list| grep 'helloWorld'
+
+# Example:
+
+XME5iUr2VoBV3DbXrVF7qApG ┃ helloWorld  ┃ 2  ┃ 3 minutes ago
+# ProjectId | Title | Number of apps | Minutes since last update
+----
+
+The console output will display the recently created project that contains a Client App and a Cloud App.
+
+To list all apps in a project, select a projectId (also known as a 'guid' (Global Unique IDentifier)) and use it in conjunction with the `fhc apps`:
+
+include::projects-read.adoc[leveloffset=+3]
+
+[[adding-apps-to-a-project]]
+== Adding Apps to a Project
+
+A Project can contain many apps however, apps that have no relationship with each other should be housed in separate projects.
+Apps are normally added to a project using an existing App Template. There are a selection of App Templates available for both Client and Cloud Apps.
+
+include::templates-apps.adoc[leveloffset=+3]
+
+include::app-create.adoc[leveloffset=+3]
+
+
+NOTE: If no template is specified, a blank Client App will be selected as default.
+
+To verify the successful creation of the app, list all apps in the project.
+
+include::projects-read.adoc[leveloffset=+3]
+
+//include::stats.adoc[]

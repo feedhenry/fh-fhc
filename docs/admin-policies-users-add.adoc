@@ -1,0 +1,13 @@
+[[admin-policies-users-add]]
+= admin policies users add
+----
+fhc admin policies users add --guid=<guid> --user=<user> [--json=<json>]
+
+  fhc admin policies users add --guid=<guid> --user=<user>    Add <user> to Auth Policy with <guid>
+
+
+  --guid, -i  Unique 24 character GUID of the policy  [required]
+  --user, -u  Unique UserId into RHMAP                [required]
+  --json, -j  Output in json format                 
+
+----

@@ -1,0 +1,8 @@
+[[admin-environments-list]]
+= admin environments list
+----
+fhc admin environments list
+ list admin environments
+ 
+ 
+----

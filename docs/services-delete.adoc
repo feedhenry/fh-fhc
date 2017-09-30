@@ -1,0 +1,11 @@
+[[services-delete]]
+= services delete
+----
+fhc services delete --service=<service>
+
+  fhc services delete --service=<service>    Delete the <service>
+
+
+  --service, -s  Unique 24 character GUID of the service  [required]
+
+----

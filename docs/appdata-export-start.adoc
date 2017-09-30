@@ -1,0 +1,15 @@
+[[appdata-export-start]]
+= appdata export start
+----
+fhc appdata export start --envId=<envId> --appId=<appId> [--stopApp=<stopApp>]
+
+  fhc addpata export start --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live                Start a new data export job for the given application in the given environment
+  fhc addpata export start --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live --stopApp      Start a new data export job and stop the app without asking
+  fhc addpata export start --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live --stopApp=n    Start a new data export job without stopping the app
+
+
+  --envId    Environment id                        [required]
+  --appId    Application id                        [required]
+  --stopApp  override the stop-application prompt
+
+----

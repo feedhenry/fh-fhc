@@ -1,0 +1,12 @@
+[[keys-user-delete]]
+= keys user delete
+----
+fhc keys user delete --label=<label> [--json=<json>]
+
+  fhc keys user delete --label=<label>    Delete user API Key with the <label> of the logged in user
+
+
+  --label, -l  Label of the API Key Management that you want to delete.  [required]
+  --json, -j   Output in json format                                   
+
+----

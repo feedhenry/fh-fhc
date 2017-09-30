@@ -1,0 +1,11 @@
+[[cordova-migrate]]
+= cordova migrate
+----
+fhc cordova migrate --app=<app>
+
+  fhc cordova migrate --app=2b    Migrate a cordova light app (config.json) to a full cordova app (config.xml) with id 2b
+
+
+  --app, -a  Unique 24 character GUID of the app you want to delete  [required]
+
+----

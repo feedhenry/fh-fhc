@@ -1,0 +1,8 @@
+[[resources-list]]
+= resources list
+----
+fhc resources list
+ list resources
+ 
+ 
+----

@@ -1,0 +1,12 @@
+[[connections-read]]
+= connections read
+----
+fhc connections read --project=<project> --connection=<connection>
+
+  fhc connections read --project=<project> --connection=<connection>    Read the <connection> of the <project>
+
+
+  --project, -p     Unique 24 character GUID of the project     [required]
+  --connection, -c  Unique 24 character GUID of the connection  [required]
+
+----

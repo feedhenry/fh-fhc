@@ -1,0 +1,12 @@
+[[projects-delete]]
+= projects delete
+----
+fhc projects delete --project=<project> [--json=<json>]
+
+  fhc projects delete --project=<project>    Delete the <project>
+
+
+  --project, -p  Unique 24 character GUID of the project  [required]
+  --json, -j     Output in json format                  
+
+----

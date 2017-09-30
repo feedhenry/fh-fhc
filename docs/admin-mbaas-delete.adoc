@@ -1,0 +1,11 @@
+[[admin-mbaas-delete]]
+= admin mbaas delete
+----
+fhc admin mbaas delete --id=<id>
+
+  fhc admin mbaas delete --id=<MBaaS id>    
+
+
+  --id  Some unique MBaaS identifier  [required]
+
+----

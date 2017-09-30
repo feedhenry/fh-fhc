@@ -1,0 +1,17 @@
+[[env-create]]
+= env create
+----
+fhc env create --app=<app> --name=<name> [--value=<value>] [--env=<env>] [--mask=<mask>] [--json=<json>]
+
+  fhc env create --app=<app> --name=<name> --value=<value> --env=<environment>           Create a cloud app environment variables for the <app> in the <env> with the <name> and <value>
+  fhc env create --app=<app> --name=<name> --value=<value> --env=<environment> --mask    Create a cloud app environment variables for the <app> in the <env> with the <name> and <value> and masked
+
+
+  --app, -a    Unique 24 character GUID of the cloud app.                                                   [required]
+  --name, -n   Name of the environment variable.                                                            [required]
+  --value, -v  Value of the environment variable.                                                         
+  --env, -e    Default value is dev. Environment ID for which you want to create the environment variable.
+  --mask, -m   Mask the value of this Environment Variable                                                
+  --json, -j   Output in json format                                                                      
+
+----

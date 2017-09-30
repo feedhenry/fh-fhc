@@ -1,0 +1,12 @@
+[[preview-url]]
+= preview url
+----
+fhc preview url --app=<app> [--json=<json>]
+
+  fhc preview url --app=<app>    Show the url preview of the app
+
+
+  --app, -a   Unique 24 character GUID of the application  [required]
+  --json, -j  Output in json format                      
+
+----

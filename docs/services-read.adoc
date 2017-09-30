@@ -1,0 +1,11 @@
+[[services-read]]
+= services read
+----
+fhc services read --service=<service>
+
+  fhc services read --service=<service>    Read the <service>
+
+
+  --service, -s  Unique 24 character GUID of the service  [required]
+
+----

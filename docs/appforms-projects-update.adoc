@@ -1,0 +1,13 @@
+[[appforms-projects-update]]
+= appforms projects update
+----
+fhc appforms projects update --id=<id> [--theme=<theme>] [--forms=<forms>]
+
+  fhc appforms projects update --id=<GUID Of Form Project To Update> --theme=<ID Of Theme To Associate With The Project> --forms=<formId1>,<formId2>    Update A Single Form Project
+
+
+  --id     GUID Of The Form Project To Update                                   [required]
+  --theme  The ID Of The Theme To Associate With The Form Project             
+  --forms  Comma-separated List Of Form IDs To Associate With The Form Project
+
+----

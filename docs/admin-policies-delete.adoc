@@ -1,0 +1,12 @@
+[[admin-policies-delete]]
+= admin policies delete
+----
+fhc admin policies delete --guid=<guid> [--json=<json>]
+
+  fhc admin policies delete --guid=<guid>    Delete Auth Policy with <guid>
+
+
+  --guid, -g  Unique 24 character GUID of your policy  [required]
+  --json, -j  Output in json format                  
+
+----

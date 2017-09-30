@@ -1,0 +1,12 @@
+[[ping]]
+= ping
+----
+fhc ping --app=<app> --env=<env>
+
+  fhc ping --app=<app> --env=<environment>    Ping the cloud application <app-id>
+
+
+  --app, -a  Unique 24 character GUID of your cloud application.                                    [required]
+  --env, -e  Unique 24 character GUID of the environment where this cloud application is deployed.  [required]
+
+----

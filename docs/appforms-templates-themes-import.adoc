@@ -1,0 +1,13 @@
+[[appforms-templates-themes-import]]
+= appforms templates themes import
+----
+fhc appforms templates themes import --id=<id> --name=<name> [--description=<description>]
+
+  fhc appforms templates themes import --id=<Template ID> --name=<Name Of New Imported Theme> --description=<Description For New Theme>    Imports A Single Theme Template.
+
+
+  --id           Theme Template ID To Import     [required]
+  --name         New Name For Imported Theme     [required]
+  --description  Description For Imported Theme
+
+----

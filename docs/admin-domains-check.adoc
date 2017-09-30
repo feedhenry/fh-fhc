@@ -1,0 +1,12 @@
+[[admin-domains-check]]
+= admin domains check
+----
+fhc admin domains check --domain=<domain> [--json=<json>]
+
+  fhc admin domains check --domain=<domain>    Check the domain
+
+
+  --domain, -d  Domain that you want check (E.g support.us)  [required]
+  --json, -j    Output in json format                      
+
+----

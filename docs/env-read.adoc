@@ -1,0 +1,13 @@
+[[env-read]]
+= env read
+----
+fhc env read --app=<app> --id=<id> [--env=<env>]
+
+  fhc env read --app=<app> --id=<id> --env=<environment>    Read a cloud app environment variables with the <id> from the <app> into the <env>
+
+
+  --app, -a  Unique 24 character GUID of the cloud app.                                                  [required]
+  --id, -i   Unique 24 character GUID of the environment variable.                                       [required]
+  --env, -e  Default value is dev. Environment ID for which you want to create the environment variable
+
+----

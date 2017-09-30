@@ -1,0 +1,11 @@
+[[admin-mbaas-read]]
+= admin mbaas read
+----
+fhc admin mbaas read --id=<id>
+
+  fhc admin mbaas read --id=<MBaaS id>    
+
+
+  --id  Some unique MBaaS identifier  [required]
+
+----

@@ -1,0 +1,12 @@
+[[appforms-environments-forms-copytocore]]
+= appforms environments forms copytocore
+----
+fhc appforms environments forms copytocore --id=<id> --environment=<environment>
+
+  fhc appforms environments forms copy_to_core --id=<ID Of Form To Copy Back> --environment=<ID Of Environment To Copy Form From>    Copy A Form Definition From An Environment To Master Copy.
+
+
+  --id           ID Of Form To Update                 [required]
+  --environment  ID Of Environment To Copy Form From  [required]
+
+----

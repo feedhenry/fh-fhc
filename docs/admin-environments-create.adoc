@@ -1,0 +1,16 @@
+[[admin-environments-create]]
+= admin environments create
+----
+fhc admin environments create --id=<id> --label=<label> --target=<target> [--token=<token>] [--autoDeployOnCreate=<autoDeployOnCreate>] [--autoDeployOnUpdate=<autoDeployOnUpdate>]
+
+  fhc admin environments create --id=<environment id> --label=<label> --target=<mbaasTargetId> --token=<token>    Creates an environment
+
+
+  --id                  Unique identifier for your environment                                                                                        [required]
+  --label               A label describing your environment                                                                                           [required]
+  --target              unique identifier for an existing MBaaS Target                                                                                [required]
+  --token               OpenShift token required to create an OpenShift environment project (can be obtained from OpenShift at /oauth/token/request)
+  --autoDeployOnCreate  option used to setup automatic deployment to this environment when creating new project/app.                                
+  --autoDeployOnUpdate  option used to setup automatic deployment to this environment when making source code changes within app.                   
+
+----

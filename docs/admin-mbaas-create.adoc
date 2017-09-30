@@ -1,0 +1,22 @@
+[[admin-mbaas-create]]
+= admin mbaas create
+----
+fhc admin mbaas create --id=<id> --url=<url> --servicekey=<servicekey> [--username=<username>] [--password=<password>] [--routerDNSUrl=<routerDNSUrl>] [--fhMbaasHost=<fhMbaasHost>] --type=<type> [--decoupled=<decoupled>] [--size=<size>] [--label=<label>]
+
+  fhc admin mbaas create --id=<MBaaS id> --url=<MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password> --type=feedhenry --decoupled=<bool> --size=<MBaaS Size> --label=<MBaaS label>    Creates FeedHenry MBaaS Target
+  fhc admin mbaas create --id=<MBaaS id> --url=<OpenShift Master URL> --routerDNSUrl=<OpenShift Router DNS> --servicekey=<MBaaS Service Key> --fhMbaasHost=<MBaaS URL> --type=openshift3 --label=<MBaaS label>                        Creates OpenShift 3 MBaaS Target
+
+
+  --id            Some unique identifier for your MBaaS                                                                                                                                 [required]
+  --url           [FeedHenry] The hostname where your MBaaS exists / [OpenShift 3] URL where the OpenShift Master(s) API is available (e.g. https://master.openshift.example.com:8443)  [required]
+  --servicekey    Service key to authenticate the MBaaS                                                                                                                                 [required]
+  --username      [FeedHenry] MBaaS Username                                                                                                                                          
+  --password      [FeedHenry] MBaaS Password                                                                                                                                          
+  --routerDNSUrl  [OpenShift 3] The wildcard DNS entry for your OpenShift Router (e.g. *.cloudapps.example.com)                                                                       
+  --fhMbaasHost   [OpenShift 3] Exposed route where fh-mbaas is running in OpenShift 3 (e.g. https://my-mbaas.openshift.example.com)                                                  
+  --type          The type of MBaaS Target (feedhenry/openshift3)                                                                                                                       [required]
+  --decoupled     flag them mbaas as decoupled                                                                                                                                        
+  --size          The size of the MBaaS                                                                                                                                               
+  --label         A label to apply to the MBaaS, defaults to id if not specified                                                                                                      
+
+----

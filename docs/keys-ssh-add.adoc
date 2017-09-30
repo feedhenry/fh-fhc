@@ -1,0 +1,13 @@
+[[keys-ssh-add]]
+= keys ssh add
+----
+fhc keys ssh add --label=<label> --file=<file> [--json=<json>]
+
+  fhc keys ssh add --label=<label> --file=<file>    Import a new SSH key from <file> as <label>
+
+
+  --label, -l  Label of the ssh key that you want import.                [required]
+  --file       Path with file name of the ssh key that you want import.  [required]
+  --json, -j   Output in json format                                   
+
+----

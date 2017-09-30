@@ -1,0 +1,11 @@
+[[appforms-forms-export]]
+= appforms forms export
+----
+fhc appforms forms export --file=<file>
+
+  fhc appforms forms export --file=<Output zip file>    Export all the forms contained in your domain to an output zip file.
+
+
+  --file  Output zip file containing the forms export.  [required]
+
+----

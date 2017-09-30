@@ -1,0 +1,13 @@
+[[appforms-environments-submissions-update]]
+= appforms environments submissions update
+----
+fhc appforms environments submissions update --environment=<environment> --submissiondata=<submissiondata> --id=<id>
+
+  fhc appforms environments submissions update --environment=<Environment Id> --id=<Submission ID> --submissiondata=<Path To JSON Submission Data>     Update An Existing Submission
+
+
+  --environment     Environment Id                [required]
+  --submissiondata  Path To JSON Submission Data  [required]
+  --id              Submission ID                 [required]
+
+----

@@ -1,0 +1,14 @@
+[[app-logs-get]]
+= app logs get
+----
+fhc app logs get --app=<app> --env=<env> --logname=<logname>
+
+  fhc app logs get --app=2bf4gg3gfefsdgfdsg4fdgs34 --env=dev --logname=env.dev.log    Fetching log "env.dev.log" file from "dev" environment 
+ Content of the log file will be printed on standard output.
+
+
+  --app, -a      Unique 24 character GUID of your application.  [required]
+  --env, -e      Application Environment ID (dev, prod)         [required]
+  --logname, -l  Full name of file to download                  [required]
+
+----

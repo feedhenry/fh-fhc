@@ -1,0 +1,11 @@
+[[projects-clone]]
+= projects clone
+----
+fhc projects clone --project=<project>
+
+  fhc projects clone --project=<project>    It does a 'git clone' of each each App in your Project into the current working directory.
+
+
+  --project, -p  Unique 24 character GUID of the project  [required]
+
+----

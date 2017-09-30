@@ -1,0 +1,14 @@
+[[appdata-export-download]]
+= appdata export download
+----
+fhc appdata export download --envId=<envId> --appId=<appId> --jobId=<jobId> --file=<file>
+
+  fhc addpata export download --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live --jobId=5731da1dd3e2b283203c4054 --file=export_5ujx2eifvzaudq43nw4nmvcu.gz.tar    Download the result of a completed export job by job_id
+
+
+  --envId  Environment id                        [required]
+  --appId  Application id                        [required]
+  --jobId  Export job id                         [required]
+  --file   Path and filename of downloaded file  [required]
+
+----

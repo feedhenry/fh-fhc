@@ -1,0 +1,11 @@
+[[admin-teams-userteams]]
+= admin teams userteams
+----
+fhc admin teams userteams --user=<user>
+
+  admin teams userteams --user=1a2b    Lists user teams with id 1a2b
+
+
+  --user, -u  A unique user GUID  [required]
+
+----

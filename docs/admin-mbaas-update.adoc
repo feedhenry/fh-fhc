@@ -1,0 +1,21 @@
+[[admin-mbaas-update]]
+= admin mbaas update
+----
+fhc admin mbaas update --id=<id> [--url=<url>] [--servicekey=<servicekey>] [--username=<username>] [--password=<password>] [--routerDNSUrl=<routerDNSUrl>] [--fhMbaasHost=<fhMbaasHost>] [--decoupled=<decoupled>] [--size=<size>] [--label=<label>]
+
+  fhc admin mbaas update --id=<MBaaS id> --url=<MBaaS URL> --servicekey=<MBaaS Service Key> --username=<MBaaS User Name> --password=<MBaaS Password> --decoupled=<bool> --size=<MBaaS Size> --label=<MBaaS label>    Updates FeedHenry MBaaS Target with id <mbaasId>
+  fhc admin mbaas update --id=<MBaaS id> --url=<OpenShift Master URL> --routerDNSUrl=<OpenShift Router DNS> --servicekey=<MBaaS Service Key> --fhMbaasHost=<MBaaS URL> --label=<MBaaS label>                         Updates OpenShift 3 MBaaS Target with id <mbaasId>
+
+
+  --id            Some unique MBaaS identifier                                                                                                                                          [required]
+  --url           [FeedHenry] The hostname where your MBaaS exists / [OpenShift 3] URL where the OpenShift Master(s) API is available (e.g. https://master.openshift.example.com:8443)
+  --servicekey    Service key to authenticate the MBaaS                                                                                                                               
+  --username      [FeedHenry] MBaaS Username                                                                                                                                          
+  --password      [FeedHenry] MBaaS Password                                                                                                                                          
+  --routerDNSUrl  [OpenShift 3] The wildcard DNS entry for your OpenShift Router (e.g. *.cloudapps.example.com)                                                                       
+  --fhMbaasHost   [OpenShift 3] Exposed route where fh-mbaas is running in OpenShift 3 (e.g. https://my-mbaas.openshift.example.com)                                                  
+  --decoupled     flag them mbaas as decoupled                                                                                                                                        
+  --size          The size of the MBaaS                                                                                                                                               
+  --label         A label to apply to the MBaaS                                                                                                                                       
+
+----

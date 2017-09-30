@@ -1,0 +1,7 @@
+[[templates-projects]]
+= templates projects
+----
+fhc templates projects
+ lists all project templates
+
+----

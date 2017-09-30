@@ -1,0 +1,11 @@
+[[admin-teams-read]]
+= admin teams read
+----
+fhc admin teams read --id=<id>
+
+  fhc admin teams read --id=<id>     Read a team by id
+
+
+  --id  A unique identifier for an environment  [required]
+
+----

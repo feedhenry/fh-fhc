@@ -1,0 +1,12 @@
+[[admin-appstore-itemgroups-delete]]
+= admin appstore itemgroups delete
+----
+fhc admin appstore itemgroups delete --guid=<guid> [--json=<json>]
+
+  fhc admin appstore itemgroups delete --guid=<guid>    Delete App Store Item Group with <guid>
+
+
+  --guid, -g  Unique 24 character GUID of the item group  [required]
+  --json, -j  Output in json format                     
+
+----

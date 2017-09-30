@@ -1,0 +1,20 @@
+[[admin-policies-create]]
+= admin policies create
+----
+fhc admin policies create --id=<id> --type=<type> --configurations=<configurations> [--checkUserExists=<checkUserExists>] [--checkUserApproved=<checkUserApproved>] [--json=<json>]
+
+  fhc admin policies create --id=<id> --type=<type> --configurations=<configurations> --checkUserExists=<true|false> --checkUserApproved=<true|false>    Create Auth Policy with <id>,<type>,<checkUserExists>,<checkUserApproved> and <config>
+
+
+  --id, -i                   The Auth Policy ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [required]
+  --type, -t                 The type of the Auth Policy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [required]
+  --configurations, -c       A JSON Object corresponding to the policy type, e.g. 
+          for OAuth2: "{"clientId": "1234567890.apps.example.com",  "clientSecret": "Wfv8DQw80hhyaBqnW37x5R23", "provider": "GOOGLE"}"
+          for LDAP: "{"authmethod": "simple", "url": "ldap://foo.example.com:389, "dn": "ou=people,dc=example,dc=com", "dn_prefix": "cn", "provider": "LDAP"}
+                       authmethod can be one of: "simple", "DIGEST-MD5", "CRAM-MD5", or "GSSAPI"
+          for MBAAS: "{"provider":"MBAAS","mbaas":"mqijsw3tgpn6htwmbbg27jl6","authEndpoint":"/test","defaultEnvironment":"dev"}"  [required]
+  --checkUserExists, --ce    Boolean <true|false> to check if exist the user.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  --checkUserApproved, --ca  Boolean <true|false> to check if the user is approved                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  --json, -j                 Output in json format                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+
+----

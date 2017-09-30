@@ -1,0 +1,8 @@
+[[admin-appstore-itemgroups-list]]
+= admin appstore itemgroups list
+----
+fhc admin appstore itemgroups list
+ list admin appstore itemgroups
+ 
+ 
+----

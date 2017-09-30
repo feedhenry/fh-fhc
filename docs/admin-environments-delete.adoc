@@ -1,0 +1,12 @@
+[[admin-environments-delete]]
+= admin environments delete
+----
+fhc admin environments delete --id=<id> [--token=<token>]
+
+  fhc admin environments delete --id=<environment id> --token=<token for deleting openshift environment>    Delete an environment by id
+
+
+  --id     Some unique identifier for your environment                                                                                   [required]
+  --token  OpenShift token required to delete an OpenShift environment project (can be obtained from OpenShift at /oauth/token/request)
+
+----

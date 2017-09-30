@@ -1,0 +1,11 @@
+[[appforms-forms-read]]
+= appforms forms read
+----
+fhc appforms forms read --id=<id>
+
+  fhc appforms forms read --id=<ID Of Form To Read>    Read A Single Form
+
+
+  --id  ID Of Form To Read  [required]
+
+----

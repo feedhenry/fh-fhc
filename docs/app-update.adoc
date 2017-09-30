@@ -1,0 +1,15 @@
+[[app-update]]
+= app update
+----
+fhc app update --project=<project> --app=<app> [--title=<title>] [--width=<width>] [--height=<height>]
+
+  fhc app update --project=<project> --app=<app> --title=<title> --description=<description> --width=<width> --height=<height>    Update application information as <title>, <description>, <width> and <height>.
+
+
+  --project, -p  Unique 24 character GUID of the project     [required]
+  --app, -a      Unique 24 character GUID of the plaication  [required]
+  --title, -t    Title of the application.                 
+  --width, -w    Width of the application                  
+  --height, -h   Height of the application                 
+
+----

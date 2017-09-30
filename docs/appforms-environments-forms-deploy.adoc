@@ -1,0 +1,12 @@
+[[appforms-environments-forms-deploy]]
+= appforms environments forms deploy
+----
+fhc appforms environments forms deploy --id=<id> --environment=<environment>
+
+  fhc appforms environments forms deploy --id=<ID Of Form To Deploy> --environment=<ID Of Environment To Deploy Forms>    Deploy A Single Form To An Environment
+
+
+  --id           ID Of Form To Deploy            [required]
+  --environment  ID Of Environment To Deploy To  [required]
+
+----

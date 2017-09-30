@@ -1,0 +1,11 @@
+[[appforms-themes-delete]]
+= appforms themes delete
+----
+fhc appforms themes delete --id=<id>
+
+  fhc appforms themes delete --id=<ID Of Theme To Delete>    Delete A Single Theme.
+
+
+  --id  ID Of The Theme To Remove.  [required]
+
+----

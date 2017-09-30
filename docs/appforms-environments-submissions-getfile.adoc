@@ -1,0 +1,14 @@
+[[appforms-environments-submissions-getfile]]
+= appforms environments submissions getfile
+----
+fhc appforms environments submissions getfile --environment=<environment> --id=<id> --fileid=<fileid> --output=<output>
+
+  fhc appforms environments submissions getfile --environment=<ID Of Environment The Submission Is Located In> --id=<Submission ID> --fileid=<ID Of File To Download> --output=<Path To Output File>    Download A Single Submission File
+
+
+  --environment  ID Of Environment The Submission Is Located In  [required]
+  --id           ID Of Submission Containing The File            [required]
+  --fileid       ID Of File To Download                          [required]
+  --output       Path To Output Downloaded File To               [required]
+
+----

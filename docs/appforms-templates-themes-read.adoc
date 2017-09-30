@@ -1,0 +1,11 @@
+[[appforms-templates-themes-read]]
+= appforms templates themes read
+----
+fhc appforms templates themes read --id=<id>
+
+  fhc appforms templates themes read --id=<Template ID>    Reads A Single Theme Template.
+
+
+  --id  Theme Template ID  [required]
+
+----

@@ -1,0 +1,15 @@
+[[connections-update]]
+= connections update
+----
+fhc connections update --project=<project> --connection=<connection> --app=<app> [--env=<env>]
+
+  fhc connections update --project=<project> --connection=<connection> --app=<app>                        Update the <app> of the <connection> from the <project> 
+  fhc connections update --project=<project> --connection=<connection> --app=<app> --env=<environment>    Update the <app> and <environment> of the <connection> from the <project> 
+
+
+  --project, -p     Unique 24 character GUID of the project            [required]
+  --connection, -c  Unique 24 character GUID of the connection         [required]
+  --app, -a         Unique 24 character GUID of the cloud application  [required]
+  --env, -e         Unique 24 character GUID of the environment      
+
+----

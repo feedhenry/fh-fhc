@@ -1,0 +1,14 @@
+[[appdata-export-status]]
+= appdata export status
+----
+fhc appdata export status --envId=<envId> --appId=<appId> --jobId=<jobId> [--interval=<interval>]
+
+  fhc addpata export status --appId=5ujx2eifvzaudq43nw4nmvcu --envId=live --jobId=5731da1dd3e2b283203c4054    Poll for job status
+
+
+  --envId     Environment id                                      [required]
+  --appId     Application id                                      [required]
+  --jobId     Export job id                                       [required]
+  --interval  Polling interval in milliseconds (default is 2000)
+
+----

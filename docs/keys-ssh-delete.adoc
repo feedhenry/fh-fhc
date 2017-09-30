@@ -1,0 +1,12 @@
+[[keys-ssh-delete]]
+= keys ssh delete
+----
+fhc keys ssh delete --label=<label> [--json=<json>]
+
+  fhc keys ssh delete --label=<label>    Delete the SSH Key with the <label>
+
+
+  --label, -l  Label of the ssh key that you want delete.  [required]
+  --json, -j   Output in json format                     
+
+----

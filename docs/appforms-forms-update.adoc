@@ -1,0 +1,12 @@
+[[appforms-forms-update]]
+= appforms forms update
+----
+fhc appforms forms update --id=<id> --formfile=<formfile>
+
+  fhc appforms forms update --id=<id of form to update> --formfile=<path to form json file>    Update A Single Form
+
+
+  --id        ID Of The Form To Update                                       [required]
+  --formfile  A Path To A File Containing A Valid JSON Definition Of A Form  [required]
+
+----

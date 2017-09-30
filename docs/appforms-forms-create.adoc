@@ -1,0 +1,11 @@
+[[appforms-forms-create]]
+= appforms forms create
+----
+fhc appforms forms create --formfile=<formfile>
+
+  fhc appforms forms create --formfile=<path to form json file>    Creates A New Form
+
+
+  --formfile  A Path To A File Containing A Valid JSON Definition Of A Form  [required]
+
+----

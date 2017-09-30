@@ -1,0 +1,7 @@
+[[templates-apps]]
+= templates apps
+----
+fhc templates apps
+ lists all app templates
+
+----

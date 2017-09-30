@@ -1,0 +1,12 @@
+[[admin-policies-read]]
+= admin policies read
+----
+fhc admin policies read --id=<id> [--json=<json>]
+
+  fhc admin policies read --id=<id>    Read Auth Policy with <id>
+
+
+  --id, -i    ID of your policy      [required]
+  --json, -j  Output in json format
+
+----
