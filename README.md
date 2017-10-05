@@ -9,7 +9,7 @@ FeedHenry CLI, the command line interface to [FeedHenry](http://www.feedhenry.co
 * Install [NPM (the Node Package Manager)](http://npmjs.org/)
 * Install FHC: `sudo npm install -g fh-fhc`
 
-`fhc` should now be available your command line.  
+`fhc` should now be available on your command line.  
 `fhc -v` will tell you what version of fhc you have installed.
 
 Finally, install FHC bash completion: `fhc completion >> ~/.bashrc` (or ~/.zshrc)
@@ -20,7 +20,7 @@ Finally, install FHC bash completion: `fhc completion >> ~/.bashrc` (or ~/.zshrc
 To see the list of commands available, just run `fhc`.   
 See `fhc help` for general help, or `fhc help <someCommand>` for help on a specific command.
 
-To get started with fhc, set the FeedHenry target and then login:
+To get started with fhc, set the FeedHenry target and then log in:
 
 `$ fhc target https://apps.feedhenry.com`
 
@@ -110,7 +110,7 @@ $ docker tag 0618027d8d57 feedhenry/fhc:latest
 $ docker tag 0618027d8d57 feedhenry/fhc:2.17.3
 ```
 
-Push your images (you may need to login):
+Push your images (you may need to log in):
 
 ```
 $ docker push feedhenry/fhc
@@ -135,10 +135,10 @@ Internal commands in the internal directory are hidden from help output, but are
 
  Writing new commands is a little different than before. Old commands export a function - new style commands export an object.
 
-Commands are DRY'd up substantially - see App List `lib/cmd/fh3/app/list.js` as an example of what a command definition looks like. Using the 'demand' syntax, yargs look after all all validation -  you don't need to worry about it.
+Commands are DRY'd up substantially - see App List `lib/cmd/fh3/app/list.js` as an example of what a command definition looks like. Using the 'demand' syntax, yargs look after all validation -  you don't need to worry about it.
 Commands can be DRY'd up even more if they're very similar - e.g. app start. This extends from a base class - anything with an _ prefix doesn't go into the command tree.
 
-There's no longer need to require() new commands in many different places - no need to require() new commands at all, just put them in the relevant tree structure within in `lib/cmd`.
+There's no longer a need to require() new commands in many different places - no need to require() new commands at all, just put them in the relevant tree structure within `lib/cmd`.
 Tests are turbo'd, nock for mocks, coverage is at least a little better than before.
 
 
@@ -154,7 +154,7 @@ Tests are turbo'd, nock for mocks, coverage is at least a little better than bef
 
 ## Internationalization
 
-all of the strings expecting to be internationalized has to be passed through i18n._() function like:
+All of the strings expecting to be internationalized have to be passed through i18n._() function like:
 
 ```js
 module.exports = {
@@ -163,11 +163,11 @@ module.exports = {
 }
 ```
 
-To get strings translated, we use the Zanata, the web-based translation platform. the source strings file has to be uploaded into the Zanata server. that can be done with:
+To get strings translated, we use Zanata, the web-based translation platform. The source strings file has to be uploaded into the Zanata server. That can be done with:
 
     grunt potupload
 
-Prior to do that, please make sure you have an account on the Zanata server. if not, please visit https://translate.zanata.org and follow up the steps at http://docs.zanata.org/en/release/user-guide/account/account-sign-up/ to create an account, and http://zanata-client.readthedocs.io/en/latest/configuration/ to store the API key into $HOME/.config/zanata.ini.
+Prior to doing that, please make sure you have an account on the Zanata server. If not, please visit https://translate.zanata.org and follow up the steps at http://docs.zanata.org/en/release/user-guide/account/account-sign-up/ to create an account, and http://zanata-client.readthedocs.io/en/latest/configuration/ to store the API key into $HOME/.config/zanata.ini.
 
 ## Node version :
 FHC requires node 4.4.x version
