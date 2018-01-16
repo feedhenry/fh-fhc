@@ -4,7 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [4.2.2] - Fri Fab 16 2018
+## [4.2.5] - Wed Feb 21 2018
+### Changed
+- Updated README to include Tags/Versions to install information
+
+## [4.2.4] - Wed Feb 21 2018
+### Changed
+- Fix error that occurs when the output of the command 'fhc admin mbaas list' will be formated
+
+## [4.2.3] - Tue Feb 20 2018
+### Added
+- Adding missing command 'fhc admin appstore item add --id=<id>'
+
+## [4.2.2] - Fri Feb 16 2018
 ### Changed
 - app/update/config.js moved out of the update folder and renamed to updatedConfig so the command can now be used via: `fhc app updateConfig`.
 
