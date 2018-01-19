@@ -66,9 +66,34 @@ for it to be reviewed (Status: PULL REQUEST SENT).
 
 ## Before Merge
 * Bump the version in the files; `npm-shrinkwrap.json`, `package.json`, `sonar-project.properties`, e.g. version": "3.2.0-BUILD-NUMBER"
-* Prepend your commit message the text Bump Version, e.g. "Bump Version."
-* Ensure that the commits into the PR are properly squashed and you have at list one commit for the changes and one for the bump version.
+* CHANGELOG.md should be updated with all notable changes
+* Ensure that the commits in the PR are properly squashed and commit messages meet the format below. 
 * Ensure that the code doesn't have sonar issues/comments ( E.g MENOR )
+
+### __*Commit Message Format:*__
+
+All commit messages should adhere to the following standard:
+
+```
+<type>[optional scope]: <description> [issue reference**]
+ 
+[optional body]
+ 
+[optional footer]
+```
+
+** if commit relates to a specific JIRA/ issue ticket include the reference here.
+
+Examples of commits following this convention:
+
+- bug-fixes: `git commit -a -m "fix(parsing): fixed a bug in our parser (RHMAP-1234)"`
+- features: `git commit -a -m "feat(parser): we now have a parser \o/ (FH-3456)"`
+- breaking changes: 
+```
+git commit -a -m "feat(new-parser): introduces a new parsing library (FH-6789)
+BREAKING CHANGE: new library does not support foo-construct"
+```
+- other changes: `git commit -a -m "docs: fixed up the docs a bit"`
 
 ## Coding best practices
 
