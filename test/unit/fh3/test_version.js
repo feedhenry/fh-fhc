@@ -45,7 +45,7 @@ module.exports = {
     command({json:true}, function (err, data) {
       assert.equal(err, null);
       assert.ok(data);
-      assert.equal(data.plataformVersion, "3.18.2");
+      assert.equal(data.platformVersion, "3.18.2");
       return cb();
     });
   }
