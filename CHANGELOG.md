@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [4.2.2] - Fri Fab 16 2018
+### Changed
+- app/update/config.js moved out of the update folder and renamed to updatedConfig so the command can now be used via: `fhc app updateConfig`.
+
 ## [4.2.1] - Wed Jan 17 2018
 ### Changed
 - updated changelog for fh-fhc version >=2.16.3

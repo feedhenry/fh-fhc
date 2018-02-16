@@ -2035,7 +2035,7 @@ msgid ""
 msgstr ""
 
 #: lib/cmd/fh3/app/update.js:30
-#: lib/cmd/fh3/app/update/config.js:25
+#: lib/cmd/fh3/app/updateConfig.js:25
 #: lib/cmd/fh3/connections/list.js:17
 #: lib/cmd/fh3/connections/read.js:22
 #: lib/cmd/fh3/connections/update.js:32
@@ -2047,7 +2047,7 @@ msgid "Unique 24 character GUID of the project"
 msgstr ""
 
 #: lib/cmd/fh3/app/update.js:31
-#: lib/cmd/fh3/app/update/config.js:26
+#: lib/cmd/fh3/app/updateConfig.js:26
 msgid "Unique 24 character GUID of the plaication"
 msgstr ""
 
@@ -2064,33 +2064,33 @@ msgid "Height of the application"
 msgstr ""
 
 #: lib/cmd/fh3/app/update.js:42
-#: lib/cmd/fh3/app/update/config.js:36
+#: lib/cmd/fh3/app/updateConfig.js:36
 msgid "Application '%s' from the project '%' not found"
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:7
+#: lib/cmd/fh3/app/updateConfig.js:7
 msgid "Update config of application"
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:11
+#: lib/cmd/fh3/app/updateConfig.js:11
 msgid ""
 "Update config properties of the <app> via create a new property or by "
 "updating a existing into a domain."
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:27
+#: lib/cmd/fh3/app/updateConfig.js:27
 #: lib/cmd/fh3/projects/update.js:25
 #: lib/cmd/fh3/services/update.js:24
 msgid "Name of the property."
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:28
+#: lib/cmd/fh3/app/updateConfig.js:28
 #: lib/cmd/fh3/projects/update.js:26
 #: lib/cmd/fh3/services/update.js:25
 msgid "Value of the property"
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:42
+#: lib/cmd/fh3/app/updateConfig.js:42
 #: lib/cmd/fh3/build.js:229
 #: lib/common.js:700
 #: lib/common.js:708
@@ -2099,7 +2099,7 @@ msgstr ""
 msgid "Error reading app: "
 msgstr ""
 
-#: lib/cmd/fh3/app/update/config.js:47
+#: lib/cmd/fh3/app/updateConfig.js:47
 msgid "Config property set ok"
 msgstr ""
 
