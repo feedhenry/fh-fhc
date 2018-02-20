@@ -200,4 +200,4 @@ If you want install an older version of `fh-fhc` you can do it by the available 
 | latest       | 4.x   |
 | latest-1     | 1.2.0   |
 | latest-2     | 2.18.0-896  |
-| latest-4     | 4.2.3  |
+| latest-4     | 4.2.5  |
