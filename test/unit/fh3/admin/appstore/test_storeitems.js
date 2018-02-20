@@ -13,7 +13,8 @@ var commands = {
   delgroups: genericCommand(require('cmd/fh3/admin/appstore/storeitems/delgroups')),
   binaryversions: genericCommand(require('cmd/fh3/admin/appstore/storeitems/binaryversions')),
   grouprestrict: genericCommand(require('cmd/fh3/admin/appstore/storeitems/grouprestrict')),
-  list: genericCommand(require('cmd/fh3/admin/appstore/storeitems/list'))
+  list: genericCommand(require('cmd/fh3/admin/appstore/storeitems/list')),
+  add: genericCommand(require('cmd/fh3/admin/appstore/storeitems/add')),
 };
 
 var nock = require('nock');
@@ -319,7 +320,11 @@ module.exports = nock('https://apps.feedhenry.com')
   .reply(200, {})
   .post('/box/srv/1.1/admin/storeitem/update')
   .times(2)
-  .reply(200, data);
+  .reply(200, data)
+  .post('/box/srv/1.1/admin/appstore/additem')
+  .reply(200, {
+    "status": "ok"
+  });
 
 module.exports = {
   'test fhc admin appstore storeitems create --name=<name> --json': function(cb) {
@@ -446,6 +451,14 @@ module.exports = {
       assert.equal(data._table,null);
       return cb();
     });
-  }
+  },
+  'test fhc admin appstore storeitems add --id --json': function(cb) {
+    commands.add({id:'5w477lfgy3jrnovri7gctsb7',json:true}, function(err, data) {
+      assert.equal(err, null);
+      assert.equal(data._table,null);
+      assert.equal(data.status, "ok");
+      return cb();
+    });
+  },
 
 };
