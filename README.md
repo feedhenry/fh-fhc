@@ -189,3 +189,15 @@ $grunt eslint
 ## RHMAP Supportability
 
 If you are targetting a version of RHMAP < `3.5.0` then install an older version of `fh-fhc` with `npm install fh-fhc@latest-1`.
+
+
+## Tags/Versions to install
+
+If you want install an older version of `fh-fhc` you can do it by the available tags via the command `npm install fh-fhc@<tag>`. To check the available tags use the command `npm view fh-fhc` and check the `dist-tags` section. Following a list with the currently tags/versions available.
+
+| Tag          | Version |
+|    :---:     |  :---:  |
+| latest       | 4.x   |
+| latest-1     | 1.2.0   |
+| latest-2     | 2.18.0-896  |
+| latest-4     | 4.2.5  |
