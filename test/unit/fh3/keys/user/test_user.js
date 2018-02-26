@@ -6,7 +6,8 @@ var userCommand = {
   delete: genericCommand(require('cmd/fh3/keys/user/delete')),
   update: genericCommand(require('cmd/fh3/keys/user/update')),
   read: genericCommand(require('cmd/fh3/keys/user/read')),
-  target: genericCommand(require('cmd/fh3/keys/user/target'))
+  target: genericCommand(require('cmd/fh3/keys/user/target')),
+  add: genericCommand(require('cmd/fh3/keys/user/add'))
 };
 
 var nock = require('nock');
@@ -42,6 +43,9 @@ module.exports = nock('https://apps.feedhenry.com')
   .times(9)
   .reply(200, userList)
   .post('/box/srv/1.1/ide/apps/api/delete')
+  .times(2)
+  .reply(200, key)
+  .post('/box/srv/1.1/ide/apps/api/create')
   .times(2)
   .reply(200, key)
   .post('/box/srv/1.1/ide/apps/api/update')
@@ -123,6 +127,25 @@ module.exports = {
   },
   'fhc keys user delete --label --json' : function(cb) {
     userCommand.delete({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
+      assert.equal(err, null);
+      assert.ok(data);
+      assert.equal(data._table, null);
+      assert.equal(data.status, "ok");
+      return cb();
+    });
+  },
+  'fhc keys user add --label' : function(cb) {
+    userCommand.add({label:"FH_MBAAS_API_KEY"}, function(err, data) {
+      assert.equal(err, null);
+      assert.ok(data);
+      var table = data._table;
+      assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
+      assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
+      return cb();
+    });
+  },
+  'fhc keys user add --label --json' : function(cb) {
+    userCommand.add({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data);
       assert.equal(data._table, null);
