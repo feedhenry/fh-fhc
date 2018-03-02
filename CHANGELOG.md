@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [4.2.6] - Wed Feb 27 2018
+### Added
+- Came back the command "fhc keys user add <label>" which was missing.
+- Add unit tests for the command "fhc keys user add <label>"
+
 ## [4.2.5] - Wed Feb 21 2018
 ### Changed
 - Updated README to include Tags/Versions to install information
