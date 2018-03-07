@@ -7,7 +7,7 @@ var userCommand = {
   update: genericCommand(require('cmd/fh3/keys/user/update')),
   read: genericCommand(require('cmd/fh3/keys/user/read')),
   target: genericCommand(require('cmd/fh3/keys/user/target')),
-  add: genericCommand(require('cmd/fh3/keys/user/add'))
+  create: genericCommand(require('cmd/fh3/keys/user/create'))
 };
 
 var nock = require('nock');
@@ -134,8 +134,8 @@ module.exports = {
       return cb();
     });
   },
-  'fhc keys user add --label' : function(cb) {
-    userCommand.add({label:"FH_MBAAS_API_KEY"}, function(err, data) {
+  'fhc keys user create --label' : function(cb) {
+    userCommand.create({label:"FH_MBAAS_API_KEY"}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data);
       var table = data._table;
@@ -144,8 +144,8 @@ module.exports = {
       return cb();
     });
   },
-  'fhc keys user add --label --json' : function(cb) {
-    userCommand.add({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
+  'fhc keys user create --label --json' : function(cb) {
+    userCommand.create({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data);
       assert.equal(data._table, null);
