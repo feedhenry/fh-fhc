@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [4.2.8] - Wed Mar 07 2018
+### Changed
+- Change the action command from `add` to `create` in order to follow the nomenclature describe into docs for the command 'fhc keys user create'
+- Change the action command from `delete` to `revoke` in order to follow the nomenclature describe into docs for the command 'fhc keys user revoke'
+
 ## [4.2.7] - Friday Mar 02 2018
 ### Changed
 - Correcting the nomenclature of the amqp column of the output table for status.
