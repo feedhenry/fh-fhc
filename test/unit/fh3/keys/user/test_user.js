@@ -3,7 +3,7 @@ var assert = require('assert');
 
 var userCommand = {
   list: genericCommand(require('cmd/fh3/keys/user/list')),
-  delete: genericCommand(require('cmd/fh3/keys/user/delete')),
+  revoke: genericCommand(require('cmd/fh3/keys/user/revoke')),
   update: genericCommand(require('cmd/fh3/keys/user/update')),
   read: genericCommand(require('cmd/fh3/keys/user/read')),
   target: genericCommand(require('cmd/fh3/keys/user/target')),
@@ -115,8 +115,8 @@ module.exports = {
       return cb();
     });
   },
-  'fhc keys user delete --label' : function(cb) {
-    userCommand.delete({label:"FH_MBAAS_API_KEY"}, function(err, data) {
+  'fhc keys user revoke --label' : function(cb) {
+    userCommand.revoke({label:"FH_MBAAS_API_KEY"}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data);
       var table = data._table;
@@ -125,8 +125,8 @@ module.exports = {
       return cb();
     });
   },
-  'fhc keys user delete --label --json' : function(cb) {
-    userCommand.delete({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
+  'fhc keys user revoke --label --json' : function(cb) {
+    userCommand.revoke({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
       assert.equal(err, null);
       assert.ok(data);
       assert.equal(data._table, null);
