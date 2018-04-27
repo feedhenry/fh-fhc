@@ -339,11 +339,6 @@
           "from": "hawk@>=6.0.2 <6.1.0",
           "resolved": "https://registry.npmjs.org/hawk/-/hawk-6.0.2.tgz",
           "dependencies": {
-            "hoek": {
-              "version": "4.2.0",
-              "from": "hoek@>=4.0.0 <5.0.0",
-              "resolved": "https://registry.npmjs.org/hoek/-/hoek-4.2.0.tgz"
-            },
             "boom": {
               "version": "4.3.1",
               "from": "boom@>=4.0.0 <5.0.0",
@@ -360,6 +355,11 @@
                   "resolved": "https://registry.npmjs.org/boom/-/boom-5.2.0.tgz"
                 }
               }
+            },
+            "hoek": {
+              "version": "4.2.0",
+              "from": "hoek@>=4.0.0 <5.0.0",
+              "resolved": "https://registry.npmjs.org/hoek/-/hoek-4.2.0.tgz"
             },
             "sntp": {
               "version": "2.0.2",
@@ -417,10 +417,22 @@
                   "from": "asn1@>=0.2.3 <0.3.0",
                   "resolved": "https://registry.npmjs.org/asn1/-/asn1-0.2.3.tgz"
                 },
+                "bcrypt-pbkdf": {
+                  "version": "1.0.1",
+                  "from": "bcrypt-pbkdf@>=1.0.0 <2.0.0",
+                  "resolved": "https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz",
+                  "optional": true
+                },
                 "dashdash": {
                   "version": "1.14.1",
                   "from": "dashdash@>=1.12.0 <2.0.0",
                   "resolved": "https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz"
+                },
+                "ecc-jsbn": {
+                  "version": "0.1.1",
+                  "from": "ecc-jsbn@>=0.1.1 <0.2.0",
+                  "resolved": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz",
+                  "optional": true
                 },
                 "getpass": {
                   "version": "0.1.7",
@@ -430,22 +442,14 @@
                 "jsbn": {
                   "version": "0.1.1",
                   "from": "jsbn@>=0.1.0 <0.2.0",
-                  "resolved": "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz"
+                  "resolved": "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz",
+                  "optional": true
                 },
                 "tweetnacl": {
                   "version": "0.14.5",
                   "from": "tweetnacl@>=0.14.0 <0.15.0",
-                  "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz"
-                },
-                "ecc-jsbn": {
-                  "version": "0.1.1",
-                  "from": "ecc-jsbn@>=0.1.1 <0.2.0",
-                  "resolved": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz"
-                },
-                "bcrypt-pbkdf": {
-                  "version": "1.0.1",
-                  "from": "bcrypt-pbkdf@>=1.0.0 <2.0.0",
-                  "resolved": "https://registry.npmjs.org/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz"
+                  "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz",
+                  "optional": true
                 }
               }
             }
