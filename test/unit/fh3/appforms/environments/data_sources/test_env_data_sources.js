@@ -24,7 +24,6 @@ module.exports = {
       assert.ok(data._table, "Expected A Table For Listing Data Sources");
       assert.equal(data[0]._id, mockDs._id);
       assert.ok(data[0].data, "Expected A Data Response");
-
       done();
     });
   },
@@ -33,15 +32,13 @@ module.exports = {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
-
       done();
     });
   },
   "test read environment data source not found": function(done) {
     appformsEnvDataSources.read({environment: mockEnvId, id: "wrongdsid"}, function(err, data) {
-      assert.ok(err.indexOf("Found") > -1, "Expected Not Found Error Message");
+      assert.ok(err, "Expected Error " + err);
       assert.ok(!data, "Expected No Data");
-
       done();
     });
   },
@@ -50,7 +47,6 @@ module.exports = {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.validationResult.valid, "Expected A Valid Response");
-
       done();
     });
   },
@@ -59,7 +55,6 @@ module.exports = {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
-
       done();
     });
   },
@@ -68,17 +63,13 @@ module.exports = {
       assert.ok(!err, "Expected No Error " + err);
       assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
-
       done();
     });
   },
   "test get data source audit logs": function(done) {
     appformsEnvDataSources.auditLogs({environment: mockEnvId, id: mockDs._id}, function(err, data) {
       assert.ok(!err, "Expected No Error " + err);
-      assert.equal(data._id, mockDs._id);
       assert.ok(data.data, "Expected A Data Response");
-      assert.ok(data.data.auditLogs, "Expected A Data Source Audit Log Response");
-
       done();
     });
   }

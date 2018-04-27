@@ -3,7 +3,7 @@ var genericCommand = require('genericCommand');
 
 var app = {
   update: genericCommand(require('cmd/fh3/app/update')),
-  config: genericCommand(require('cmd/fh3/app/update/config'))
+  updateConfig: genericCommand(require('cmd/fh3/app/updateConfig'))
 };
 
 var nock = require('nock');

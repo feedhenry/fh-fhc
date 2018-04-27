@@ -66,10 +66,8 @@ module.exports = {
     }];
   },
   withAuditLogs: function() {
-    var self = this;
-    var ds = this.withData();
-
-    ds.auditLogs =  [{
+    var data = this.withData();
+    data.auditLogs =  [{
       updateTimestamp: new Date(),
       serviceGuid: testServiceGuid,
       endpoint: ds.endpoint,
@@ -80,6 +78,7 @@ module.exports = {
         status: "ok"
       }
     }];
+    return data;
   },
   withError: function() {
     var ds = this.apiResponse();

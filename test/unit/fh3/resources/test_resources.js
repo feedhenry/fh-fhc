@@ -1,6 +1,7 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
 var setCmd = genericCommand(require('cmd/fh3/resources/cache/set'));
+var listResourcesCmd = genericCommand(require('cmd/fh3/resources/list'));
 var flushCmd = genericCommand(require('cmd/fh3/resources/cache/flush'));
 
 var nock = require('nock');
@@ -27,6 +28,8 @@ var dataSet = {
 };
 
 module.exports = nock('https://apps.feedhenry.com')
+  .get('/api/v2/resources/apps/dev')
+  .reply(200, {})
   .post('/api/v2/resources/apps/dev/cache/set')
   .reply(200, dataSet);
 
@@ -37,5 +40,12 @@ module.exports = {
       assert.equal(data.state,"RUNNING");
       return cb();
     });
+  },
+  'fhc resources list --env': function(cb) {
+    listResourcesCmd({env:'dev'}, function(err) {
+      assert.equal(err, null);
+      return cb();
+    });
   }
+
 };

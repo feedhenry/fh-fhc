@@ -1,9 +1,9 @@
 var assert = require('assert');
 var genericCommand = require('genericCommand');
 var nockCloud = require('test/fixtures/app/fixture_cloud');
-var nockHosts = require('test/fixtures/app/fixture_hosts')(1);
+var nockHosts = require('test/fixtures/app/fixture_hosts')(2);
 var act = genericCommand(require('cmd/fh3/app/act'));
-var appReadNock = require('test/fixtures/app/fixture_appread.js')(1);
+var appReadNock = require('test/fixtures/app/fixture_appread.js')(2);
 module.exports = {
   setUp : function(cb) {
     return cb();

@@ -38,7 +38,7 @@ not already exist.
 * Follow the coding style in use.
 * Check for unnecessary whitespace with `git diff --check` before committing.
 * Make sure you have added the necessary tests for your changes.
-* Run _all_ the tests to assure nothing else was accidentally broken.
+* Run _all_ the tests using the `$grunt test` command to make sure your change did not accidentally introduce a bug.
 
 ## Submitting changes
 
@@ -49,8 +49,8 @@ not already exist.
   * Advanced users may want to install the [GitHub CLI](https://hub.github.com/) 
     and use the `hub pull-request` command.
 * Update your JIRA ticket to mark that you have submitted code and are ready 
-for it to be reviewed (Status: Dev Complete).
-  * Include a link to the pull request in the ticket.
+for it to be reviewed (Status: PULL REQUEST SENT).
+  * Include a link to the pull request in the ticket. ( `Git Pull Request` )
 * Add detail about the change to the pull request including screenshots 
   if the change affects the UI.
 
@@ -63,6 +63,37 @@ for it to be reviewed (Status: Dev Complete).
   member will merge them.
 * Note: if you have write access to the repository, do not directly merge pull 
   requests. Let another team member review your pull request and approve it.
+
+## Before Merge
+* Bump the version in the files; `npm-shrinkwrap.json`, `package.json`, `sonar-project.properties`, e.g. version": "3.2.0-BUILD-NUMBER"
+* CHANGELOG.md should be updated with all notable changes
+* Ensure that the commits in the PR are properly squashed and commit messages meet the format below. 
+* Ensure that the code doesn't have sonar issues/comments ( E.g MENOR )
+
+### __*Commit Message Format:*__
+
+All commit messages should adhere to the following standard:
+
+```
+<type>[optional scope]: <description> [issue reference**]
+ 
+[optional body]
+ 
+[optional footer]
+```
+
+** if commit relates to a specific JIRA/ issue ticket include the reference here.
+
+Examples of commits following this convention:
+
+- bug-fixes: `git commit -a -m "fix(parsing): fixed a bug in our parser (RHMAP-1234)"`
+- features: `git commit -a -m "feat(parser): we now have a parser \o/ (FH-3456)"`
+- breaking changes: 
+```
+git commit -a -m "feat(new-parser): introduces a new parsing library (FH-6789)
+BREAKING CHANGE: new library does not support foo-construct"
+```
+- other changes: `git commit -a -m "docs: fixed up the docs a bit"`
 
 ## Coding best practices
 
