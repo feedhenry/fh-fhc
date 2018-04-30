@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [4.2.9] - Friday April 27 2018
+### Changed
+- CVE-2017-18214 - Upgrade moment dependency
+- Fix the deprecation warning related to moment constructions without format
+
 ## [4.2.8] - Friday April 27 2018
 ### Fix
 - Fix issue to run grunt fh:dist task after new Japanese translations be added
