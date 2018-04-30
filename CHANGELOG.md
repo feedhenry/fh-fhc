@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - CVE-2017-18214 - Upgrade moment dependency
 - Fix the deprecation warning related to moment constructions without format
 
+## [4.2.8] - Friday April 27 2018
+### Fix
+- Fix issue to run grunt fh:dist task after new Japanese translations be added
+
 ## [4.2.7] - Friday Mar 02 2018
 ### Changed
 - Correcting the nomenclature of the amqp column of the output table for status.
