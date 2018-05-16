@@ -1,3 +1,4 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -8,45 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-09-20 18:56+0000\n"
-
-#: lib/cmd/common/ota.js:6
-msgid "Build OTA version of an app"
-msgstr ""
-
-#: lib/cmd/common/ota.js:8
-msgid ""
-"\n"
-"where <destination> is one of: android, iphone, ipad, blackberry, "
-"windowsphone7"
-msgstr ""
-
-#: lib/cmd/common/ota.js:9
-msgid ""
-"\n"
-"where <version> is specific to the destination"
-msgstr ""
-
-#: lib/cmd/common/ota.js:10
-msgid ""
-"\n"
-"where <config> is always distribution or release for OTA"
-msgstr ""
-
-#: lib/cmd/common/ota.js:11
-msgid ""
-"\n"
-"'keypass' and 'certpass' only needed for 'release' builds"
-msgstr ""
-
-#: lib/cmd/common/ota.js:53
-msgid "Error processing args: "
-msgstr ""
-
-#: lib/cmd/common/ota.js:53
-#: lib/cmd/internal/clusterprops.js:18
-msgid "Usage: "
-msgstr ""
+"POT-Creation-Date: 2018-05-18 07:58+0000\n"
 
 #: lib/cmd/fh3/-v.js:5
 msgid "Version info about this tool"
@@ -95,6 +58,7 @@ msgstr ""
 #: lib/cmd/fh3/admin/appstore/policy/delete.js:20
 #: lib/cmd/fh3/admin/appstore/policy/list.js:15
 #: lib/cmd/fh3/admin/appstore/read.js:15
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:20
 #: lib/cmd/fh3/admin/appstore/storeitems/create.js:29
 #: lib/cmd/fh3/admin/appstore/storeitems/delete.js:20
 #: lib/cmd/fh3/admin/appstore/storeitems/list.js:15
@@ -196,16 +160,24 @@ msgstr ""
 #: lib/cmd/fh3/keys/ssh/add.js:24
 #: lib/cmd/fh3/keys/ssh/delete.js:21
 #: lib/cmd/fh3/keys/ssh/list.js:18
+#: lib/cmd/fh3/keys/user/add.js:25
 #: lib/cmd/fh3/keys/user/delete.js:24
 #: lib/cmd/fh3/keys/user/list.js:20
 #: lib/cmd/fh3/keys/user/read.js:24
 #: lib/cmd/fh3/keys/user/update.js:28
 #: lib/cmd/fh3/notifications/list.js:26
 #: lib/cmd/fh3/preview/url.js:22
-#: lib/cmd/fh3/projects/create.js:35
+#: lib/cmd/fh3/projects/create.js:36
 #: lib/cmd/fh3/projects/delete.js:19
-#: lib/cmd/fh3/projects/list.js:27
+#: lib/cmd/fh3/projects/list.js:31
 #: lib/cmd/fh3/projects/update.js:27
+#: lib/cmd/fh3/ups/config.js:19
+#: lib/cmd/fh3/ups/read.js:20
+#: lib/cmd/fh3/ups/reset.js:19
+#: lib/cmd/fh3/ups/send.js:27
+#: lib/cmd/fh3/ups/variant/add.js:51
+#: lib/cmd/fh3/ups/variant/delete.js:25
+#: lib/cmd/fh3/ups/variant/list.js:20
 msgid "Output in json format"
 msgstr ""
 
@@ -409,14 +381,15 @@ msgstr ""
 msgid "Read App Store of this domain"
 msgstr ""
 
-#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:7
-msgid "Add groups into restrictions of the store item"
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:7
+msgid "Add Store Item into App Store"
 msgstr ""
 
-#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:10
-msgid "Add <group> into restrictions of the store item with <id>"
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:10
+msgid "Add store item with <id> to the App Store"
 msgstr ""
 
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:19
 #: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:20
 #: lib/cmd/fh3/admin/appstore/storeitems/addpolicy.js:20
 #: lib/cmd/fh3/admin/appstore/storeitems/binaryversions.js:18
@@ -430,6 +403,22 @@ msgstr ""
 #: lib/cmd/fh3/admin/appstore/storeitems/uploadbinary.js:21
 #: lib/cmd/fh3/admin/appstore/storeitems/uploadicon.js:19
 msgid "Unique 24 character GUID of the store item."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:23
+msgid "Error updating store item: "
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/add.js:28
+msgid "Item Store added successfully."
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:7
+msgid "Add groups into restrictions of the store item"
+msgstr ""
+
+#: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:10
+msgid "Add <group> into restrictions of the store item with <id>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/storeitems/addgroups.js:21
@@ -492,7 +481,7 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/storeitems/create.js:27
 #: lib/cmd/fh3/admin/appstore/storeitems/update.js:30
-msgid "AuthToken of the store item."
+msgid "[DEPRECATED] AuthToken of the store item."
 msgstr ""
 
 #: lib/cmd/fh3/admin/appstore/storeitems/create.js:28
@@ -1071,13 +1060,13 @@ msgid "A label to apply to the MBaaS"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/create.js:17
-msgid "Create Auth Policy"
+msgid "[DEPRECATED] Create Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/create.js:21
 msgid ""
-"Create Auth Policy with <id>,<type>,<checkUserExists>,<checkUserApproved> "
-"and <config>"
+"[DEPRECATED] Create Auth Policy with "
+"<id>,<type>,<checkUserExists>,<checkUserApproved> and <config>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/create.js:38
@@ -1151,11 +1140,11 @@ msgid "Error updating policy: "
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/delete.js:6
-msgid "Delete Auth Policy"
+msgid "[DEPRECATED] Delete Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/delete.js:10
-msgid "Delete Auth Policy with <guid>"
+msgid "[DEPRECATED] Delete Auth Policy with <guid>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/delete.js:19
@@ -1167,11 +1156,11 @@ msgid "Auth Policy deleted successfully"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/list.js:5
-msgid "List Auth Policies"
+msgid "[DEPRECATED] List Auth Policies"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/list.js:9
-msgid "List all Auth Policies of the target domain"
+msgid "[DEPRECATED] List all Auth Policies of the target domain"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/list.js:29
@@ -1179,11 +1168,11 @@ msgid "No Auth Policies found for the target domain"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/read.js:6
-msgid "Read Auth Policy"
+msgid "[DEPRECATED] Read Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/read.js:10
-msgid "Read Auth Policy with <id>"
+msgid "[DEPRECATED] Read Auth Policy with <id>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/read.js:19
@@ -1195,13 +1184,14 @@ msgid "Error reading policy: "
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/update.js:18
-msgid "Update Auth Policy"
+msgid "[DEPRECATED] Update Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/update.js:22
 msgid ""
-"Update the values of <type>,<checkUserExists>,<checkUserApproved> and "
-"<config> of Auth Policy with <id>"
+"[DEPRECATED] Update the values of "
+"<type>,<checkUserExists>,<checkUserApproved> and <config> of Auth Policy "
+"with <id>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/update.js:41
@@ -1221,11 +1211,11 @@ msgid "Invalid JSON object for the 'configurations' parameter:"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/add.js:6
-msgid "Add the User into a Auth Policy"
+msgid "[DEPRECATED] Add the User into a Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/add.js:10
-msgid "Add <user> to Auth Policy with <guid>"
+msgid "[DEPRECATED] Add <user> to Auth Policy with <guid>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/add.js:21
@@ -1248,11 +1238,11 @@ msgid "User successfully added to Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/delete.js:6
-msgid "Delete User from a Auth Policy"
+msgid "[DEPRECATED] Delete User from a Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/delete.js:10
-msgid "Delete <user> from Auth Policy with <guid>"
+msgid "[DEPRECATED] Delete <user> from Auth Policy with <guid>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/delete.js:31
@@ -1260,11 +1250,11 @@ msgid "User successfully removed from Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/list.js:6
-msgid "List users of Auth Policy"
+msgid "[DEPRECATED] List users of Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/list.js:10
-msgid "List users of Auth Policy with <id>"
+msgid "[DEPRECATED] List users of Auth Policy with <id>"
 msgstr ""
 
 #: lib/cmd/fh3/admin/policies/users/list.js:19
@@ -1359,7 +1349,7 @@ msgid "A unique user GUID"
 msgstr ""
 
 #: lib/cmd/fh3/admin/users/changeauthpolicies.js:5
-msgid "Change auth policies of the a RHMAP User"
+msgid "[DEPRECATED] Change auth policies of the a RHMAP User"
 msgstr ""
 
 #: lib/cmd/fh3/admin/users/changeauthpolicies.js:9
@@ -1372,9 +1362,6 @@ msgid "Username of the user which will be changed."
 msgstr ""
 
 #: lib/cmd/fh3/admin/users/changeauthpolicies.js:21
-#: lib/cmd/fh3/admin/users/create.js:40
-#: lib/cmd/fh3/admin/users/import.js:27
-#: lib/cmd/fh3/admin/users/update.js:42
 msgid ""
 "Unique 24 character GUID of Auth Policies. Run '$fhc admin policies list' "
 "to check it."
@@ -1420,6 +1407,14 @@ msgstr ""
 
 #: lib/cmd/fh3/admin/users/create.js:38
 msgid "Name of the new user"
+msgstr ""
+
+#: lib/cmd/fh3/admin/users/create.js:40
+#: lib/cmd/fh3/admin/users/import.js:27
+#: lib/cmd/fh3/admin/users/update.js:42
+msgid ""
+"[DEPRECATED] Unique 24 character GUID of Auth Policies. Run '$fhc admin "
+"policies list' to check it."
 msgstr ""
 
 #: lib/cmd/fh3/admin/users/create.js:41
@@ -1610,28 +1605,28 @@ msgstr ""
 msgid "The lifecycle environment your application is running in, e.g. dev"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:19
+#: lib/cmd/fh3/app/_baseCloudRequest.js:20
 msgid "Unique 24 character GUID of the app you want to do a request on"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:20
+#: lib/cmd/fh3/app/_baseCloudRequest.js:21
 msgid "Environment within which the request should be performed"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:21
+#: lib/cmd/fh3/app/_baseCloudRequest.js:22
 msgid "Request body to send thru"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:37
+#: lib/cmd/fh3/app/_baseCloudRequest.js:38
 msgid "App %s not found for environment %s"
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:71
+#: lib/cmd/fh3/app/_baseCloudRequest.js:72
 #: lib/cmd/internal/df.js:162
 msgid "Bad response: "
 msgstr ""
 
-#: lib/cmd/fh3/app/_baseCloudRequest.js:71
+#: lib/cmd/fh3/app/_baseCloudRequest.js:72
 msgid " code: "
 msgstr ""
 
@@ -1676,7 +1671,13 @@ msgid "Unique 24 character GUID of the project you want this app to be created i
 msgstr ""
 
 #: lib/cmd/fh3/app/create.js:29
-msgid "The type of app."
+msgid ""
+"The type of app. Choose from: \n"
+"\t\t - cloud_nodejs (Node.js App) \n"
+"\t\t - client_advanced_hybrid (Cordova) \n"
+"\t\t - client_native_ios (Native iOS) \n"
+"\t\t - client_native_android (Native Android) \n"
+"\t\t - webapp_advanced (Web App)\n"
 msgstr ""
 
 #: lib/cmd/fh3/app/create.js:30
@@ -1774,6 +1775,13 @@ msgstr ""
 #: lib/cmd/fh3/app/logs/tail.js:27
 #: lib/cmd/fh3/appinit.js:19
 #: lib/cmd/fh3/clone.js:20
+#: lib/cmd/fh3/ups/config.js:18
+#: lib/cmd/fh3/ups/read.js:19
+#: lib/cmd/fh3/ups/reset.js:18
+#: lib/cmd/fh3/ups/send.js:24
+#: lib/cmd/fh3/ups/variant/add.js:41
+#: lib/cmd/fh3/ups/variant/delete.js:22
+#: lib/cmd/fh3/ups/variant/list.js:19
 msgid "Unique 24 character GUID of your application."
 msgstr ""
 
@@ -2091,11 +2099,11 @@ msgid "Value of the property"
 msgstr ""
 
 #: lib/cmd/fh3/app/updateConfig.js:42
-#: lib/cmd/fh3/build.js:229
-#: lib/common.js:700
-#: lib/common.js:708
-#: lib/common.js:770
-#: lib/common.js:778
+#: lib/cmd/fh3/build.js:248
+#: lib/common.js:630
+#: lib/common.js:638
+#: lib/common.js:666
+#: lib/common.js:674
 msgid "Error reading app: "
 msgstr ""
 
@@ -3042,11 +3050,11 @@ msgid "Unique 24 character GUID of your client application."
 msgstr ""
 
 #: lib/cmd/fh3/auth.js:6
-msgid "Performs an auth call against an Auth Policy"
+msgid "[DEPRECATED] Performs an auth call against an Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/auth.js:9
-msgid "Performs a auth call against  Auth Policy"
+msgid "[DEPRECATED] Performs a auth call against  Auth Policy"
 msgstr ""
 
 #: lib/cmd/fh3/auth.js:22
@@ -3154,49 +3162,55 @@ msgstr ""
 msgid "Missing 'bundleId' parameter"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:99
+#: lib/cmd/fh3/build.js:100
 msgid "Error processing params: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:178
+#: lib/cmd/fh3/build.js:179
 msgid ""
 "\n"
 "OTA URL: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:200
+#: lib/cmd/fh3/build.js:201
 msgid ""
 "\n"
 "Downloaded file: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:214
+#: lib/cmd/fh3/build.js:215
 msgid ""
 "\n"
 "Download URL: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:322
+#: lib/cmd/fh3/build.js:260
+msgid ""
+"Git repository not found. Please check that all provided Git parameters are "
+"valid."
+msgstr ""
+
+#: lib/cmd/fh3/build.js:335
 msgid "Unexpected response code for file download: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:322
+#: lib/cmd/fh3/build.js:335
 msgid " message: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:342
+#: lib/cmd/fh3/build.js:355
 msgid "Finish stream event received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:347
+#: lib/cmd/fh3/build.js:360
 msgid "close stream event received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:352
+#: lib/cmd/fh3/build.js:365
 msgid "End of netork stream received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:358
+#: lib/cmd/fh3/build.js:371
 msgid "Error downloading build: "
 msgstr ""
 
@@ -3290,14 +3304,14 @@ msgstr ""
 
 #: lib/cmd/fh3/cordova/migrate.js:3
 msgid ""
-"Migrate a Cordova Light app (config.json) to a full cordova app "
-"(config.xml)."
+"[DEPRECATED] Migrate a Cordova Light app (config.json) to a full cordova "
+"app (config.xml)."
 msgstr ""
 
 #: lib/cmd/fh3/cordova/migrate.js:4
 msgid ""
-"Migrate a cordova light app (config.json) to a full cordova app "
-"(config.xml) with id 2b"
+"[DEPRECATED] Migrate a cordova light app (config.json) to a full cordova "
+"app (config.xml) with id 2b"
 msgstr ""
 
 #: lib/cmd/fh3/credential/create.js:7
@@ -3832,6 +3846,22 @@ msgstr ""
 msgid "List of all SSH keys of the logged in user"
 msgstr ""
 
+#: lib/cmd/fh3/keys/user/add.js:11
+msgid "Add a user API Key"
+msgstr ""
+
+#: lib/cmd/fh3/keys/user/add.js:15
+msgid "Add the a new suer key with the <label>"
+msgstr ""
+
+#: lib/cmd/fh3/keys/user/add.js:24
+msgid "Label of the API Key that you want to add."
+msgstr ""
+
+#: lib/cmd/fh3/keys/user/add.js:36
+msgid "Error add Api Key: "
+msgstr ""
+
 #: lib/cmd/fh3/keys/user/delete.js:10
 msgid "Delete a ssh user API Key"
 msgstr ""
@@ -3961,41 +3991,45 @@ msgstr ""
 msgid "Clone project"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:9
+#: lib/cmd/fh3/projects/create.js:10
 msgid "Create project"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:13
+#: lib/cmd/fh3/projects/create.js:14
 msgid "Create a  with the <title>"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:16
+#: lib/cmd/fh3/projects/create.js:17
 msgid "Create a project with the <title> and <template>"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:19
+#: lib/cmd/fh3/projects/create.js:20
 msgid ""
 "Create a project with the <title> and <template>, after deploy it on "
 "<environment>"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:32
+#: lib/cmd/fh3/projects/create.js:33
 msgid "Title of the Project that you want create"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:33
+#: lib/cmd/fh3/projects/create.js:34
 #: lib/cmd/fh3/services/create.js:32
 msgid "Unique 24 character GUID of the template"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:34
+#: lib/cmd/fh3/projects/create.js:35
 #: lib/cmd/fh3/services/create.js:33
 msgid ""
 "Unique 24 character GUID of the environment that you want deploy the "
 "project after it be created"
 msgstr ""
 
-#: lib/cmd/fh3/projects/create.js:55
+#: lib/cmd/fh3/projects/create.js:52
+msgid "Error creating project: "
+msgstr ""
+
+#: lib/cmd/fh3/projects/create.js:56
 msgid "Project '%s' create successfully"
 msgstr ""
 
@@ -4015,11 +4049,11 @@ msgstr ""
 msgid "List projects"
 msgstr ""
 
-#: lib/cmd/fh3/projects/list.js:26
+#: lib/cmd/fh3/projects/list.js:30
 msgid "Email of the user author/owner of the project."
 msgstr ""
 
-#: lib/cmd/fh3/projects/list.js:37
+#: lib/cmd/fh3/projects/list.js:42
 msgid "Not found projects with the authorEmail '%s' ."
 msgstr ""
 
@@ -4238,6 +4272,10 @@ msgstr ""
 msgid "Title of the Service that you want create"
 msgstr ""
 
+#: lib/cmd/fh3/services/create.js:48
+msgid "Error creating service: "
+msgstr ""
+
 #: lib/cmd/fh3/services/create.js:52
 msgid "Service '%s' create successfully"
 msgstr ""
@@ -4402,6 +4440,188 @@ msgstr ""
 msgid "Service template not found with id:"
 msgstr ""
 
+#: lib/cmd/fh3/ups/config.js:5
+msgid "Read Push Notifications init config for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/config.js:9
+msgid "Read UPS init config from the <appId>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/config.js:27
+msgid "Push notification not found."
+msgstr ""
+
+#: lib/cmd/fh3/ups/read.js:6
+msgid "Read the Push Notification for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/read.js:10
+msgid "Read the Push Notification from the <appId>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/read.js:28
+msgid "Not found Push Notification"
+msgstr ""
+
+#: lib/cmd/fh3/ups/reset.js:5
+msgid "Reset Push Notifications Secret for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/reset.js:9
+msgid "Reset the Master Secret Push Notifications Secret from the <appId>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/reset.js:36
+msgid "Master Secrete reset/re-newed successfully."
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:7
+msgid "Send Push Notifications for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:11
+msgid "Send the <message> from the <appId> for all variants with the <priority>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:25
+msgid "Text with the message"
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:26
+msgid ""
+"Priority of the alert. The default value is 'normal'. Choose from: \n"
+"\t\t - normal \n"
+"\t\t - high \n"
+" "
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:33
+msgid "Invalid priority param."
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:46
+msgid "Not found appId"
+msgstr ""
+
+#: lib/cmd/fh3/ups/send.js:56
+msgid "Error to send Push Notification: "
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:9
+#: lib/cmd/fh3/ups/variant/list.js:6
+msgid "List Push Notifications Variants for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:13
+msgid ""
+"Add Android variant for the <appId> with the <name>, and <serverKey> and "
+"<senderId>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:17
+#: lib/cmd/fh3/ups/variant/add.js:21
+msgid ""
+"Add Android variant for the <appId> with the <name>, and <production> and "
+"<passphrase>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:42
+msgid "Name of the variant."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:43
+#: lib/cmd/fh3/ups/variant/delete.js:24
+msgid ""
+"Type of the variant. Choose from: \n"
+"\t\t - android \n"
+"\t\t - ios \n"
+"\t\t - windows (WNS)\n"
+" "
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:44
+msgid ""
+"Server Key to use Android Firebase Cloud Messaging (E.g. "
+"AIza5a448c2f31700a466fbc9d33d33942b043a27596)"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:45
+msgid "Sender ID to use Android Firebase Cloud Messaging (E.g.contact@email.com)"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:46
+msgid ""
+"To inform if is a production certificate to use the Apple Push Network. "
+"Default value is false."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:47
+msgid "Password of the certificate  to use the Apple Push Network"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:48
+msgid ""
+"Path with the name of the iOS certificate file, *.p12, to use the Apple "
+"Push Network."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:49
+msgid ""
+"Package SID to use the Microsoft Push Notification Service (MPNS). (E.g "
+"ms-app://s-1-15-2-3183935804-3637592178)"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:50
+msgid "Client Secret  to use the Microsoft Push Notification Service (MPNS)."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:56
+msgid "Invalid type param."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:61
+msgid "Inform all required parameters to create an iOS variant."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:67
+msgid "Inform all required parameters to create an Win variant."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:72
+msgid "Inform all required parameters to create an Android variant."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:99
+msgid "Variant '%s' created successfully"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/add.js:101
+msgid "Error to add variant: "
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/delete.js:5
+msgid "Delete Push Notifications Variant for an app"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/delete.js:9
+msgid "Delete the variant with <id> from the <appId>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/delete.js:23
+msgid ""
+"Variant ID which should be removed. To get this value use $fhc ups variant "
+"list --app=<app>"
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/delete.js:42
+msgid "Variant deleted successfully."
+msgstr ""
+
+#: lib/cmd/fh3/ups/variant/list.js:10
+msgid "List all UPS variants from the <appId>"
+msgstr ""
+
 #: lib/cmd/fh3/user.js:5
 msgid "User information"
 msgstr ""
@@ -4448,11 +4668,11 @@ msgstr ""
 msgid "Manage the fhc Configuration File"
 msgstr ""
 
-#: lib/cmd/fhc/fhcfg.js:52
+#: lib/cmd/fhc/fhcfg.js:51
 msgid "No EDITOR config or environ set."
 msgstr ""
 
-#: lib/cmd/fhc/fhcfg.js:104
+#: lib/cmd/fhc/fhcfg.js:103
 msgid "no key provided"
 msgstr ""
 
@@ -4662,6 +4882,10 @@ msgstr ""
 msgid "Manage clusterprops"
 msgstr ""
 
+#: lib/cmd/internal/clusterprops.js:18
+msgid "Usage: "
+msgstr ""
+
 #: lib/cmd/internal/clusterprops.js:41
 msgid "Invalid action: "
 msgstr ""
@@ -4672,28 +4896,6 @@ msgstr ""
 
 #: lib/cmd/internal/clusterprops.js:119
 msgid "failed to delete cluster prop"
-msgstr ""
-
-#: lib/cmd/internal/configuration.js:10
-msgid "Manage client app configuration properties"
-msgstr ""
-
-#: lib/cmd/internal/configuration.js:14
-msgid ""
-"\n"
-"where destination can be one of: %s or 'all'"
-msgstr ""
-
-#: lib/cmd/internal/configuration.js:60
-msgid "Error listing destination config: "
-msgstr ""
-
-#: lib/cmd/internal/configuration.js:92
-msgid "Error setting destination config: "
-msgstr ""
-
-#: lib/cmd/internal/configuration.js:105
-msgid "Usage:"
 msgstr ""
 
 #: lib/cmd/internal/deploy-target.js:12
@@ -4789,63 +4991,36 @@ msgstr ""
 
 #: lib/common.js:21
 #: lib/common.js:43
-#: lib/common.js:69
-#: lib/common.js:94
+#: lib/common.js:65
+#: lib/common.js:91
+#: lib/common.js:116
 msgid "No remoteData returned. Raw response is: "
 msgstr ""
 
 #: lib/common.js:25
 #: lib/common.js:47
-#: lib/common.js:73
-#: lib/common.js:98
+#: lib/common.js:69
+#: lib/common.js:95
+#: lib/common.js:120
 msgid "Error, check your login details.. \n"
 msgstr ""
 
-#: lib/common.js:119
-msgid "\"Error, check app is deployed and guid is correct..."
-msgstr ""
-
-#: lib/common.js:129
+#: lib/common.js:137
 msgid "polling for cacheKey: %s start: %s to complete"
 msgstr ""
 
-#: lib/common.js:147
+#: lib/common.js:155
 msgid "Progress: "
 msgstr ""
 
-#: lib/common.js:427
-#: lib/common.js:1053
+#: lib/common.js:389
+#: lib/common.js:844
 msgid "Yes"
 msgstr ""
 
-#: lib/common.js:429
-#: lib/common.js:1055
+#: lib/common.js:391
+#: lib/common.js:846
 msgid "No"
-msgstr ""
-
-#: lib/common.js:714
-msgid "Error reading template: "
-msgstr ""
-
-#: lib/common.js:718
-#: lib/common.js:730
-msgid "Error reading Projects: "
-msgstr ""
-
-#: lib/common.js:722
-msgid "Error creating service: "
-msgstr ""
-
-#: lib/common.js:726
-msgid "Error creating project: "
-msgstr ""
-
-#: lib/common.js:802
-msgid "Error deleting app: "
-msgstr ""
-
-#: lib/common.js:1011
-msgid "Invalid argument format: "
 msgstr ""
 
 #: lib/fhc.js:53
@@ -4958,31 +5133,31 @@ msgstr ""
 msgid "cancelled"
 msgstr ""
 
-#: lib/utils/request.js:46
+#: lib/utils/request.js:47
 msgid "Error - not 2xx status code. (%s)\n"
 msgstr ""
 
-#: lib/utils/request.js:76
+#: lib/utils/request.js:77
 msgid "favicon.ico isn't a package, it's a picture."
 msgstr ""
 
-#: lib/utils/request.js:188
+#: lib/utils/request.js:190
 msgid "error parsing json"
 msgstr ""
 
-#: lib/utils/request.js:263
+#: lib/utils/request.js:269
 msgid "Error Uploading File"
 msgstr ""
 
-#: lib/utils/request.js:303
+#: lib/utils/request.js:309
 msgid "Saved to %s"
 msgstr ""
 
-#: lib/utils/request.js:381
+#: lib/utils/request.js:387
 msgid "Must target a feedhenry domain first."
 msgstr ""
 
-#: lib/utils/request.js:393
+#: lib/utils/request.js:399
 msgid "Must define messaging URL before accessing FeedHenry Message Server."
 msgstr ""
 
