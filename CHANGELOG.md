@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 # Unreleased
+
+## [6.0.0] - Tue Jul 17 2018
+### FiX
+- Fix fhc help commands
+### Change
+- Add fhc command --help option
+- Remove support from NodeJS versions < 6
+
 ## [5.0.1] - Friday Jul 13 2018
 ### Fix
 - Fix event alert commands ( use the domain target in the URL)
@@ -31,7 +39,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Came back the command "fhc keys user add <label>" which was missing.
 - Add unit tests for the command "fhc keys user add <label>"
 
-
+# Released
 ## [4.2.5] - Wed Feb 21 2018
 ### Changed
 - Updated README to include Tags/Versions to install information
@@ -52,11 +60,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - updated changelog for fh-fhc version >=2.16.3
 
-
 ## [4.2.0] - Tue Jan 16 16:03:28 2018 +0000
 ### Added
 - added FHC CLI functionality for UPS
-
 
 ## [4.1.4] - Tue Oct 17 15:59:09 2017 +0100
 ### Removed
