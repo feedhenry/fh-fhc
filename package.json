@@ -68,7 +68,7 @@
     "turbo-test-runner": "0.3.3"
   },
   "engines": {
-    "node": ">=4.4"
+    "node": ">=6"
   },
   "scripts": {
     "test": "grunt test"
