@@ -13,15 +13,15 @@ var nock = require('nock');
 var dataList = {"list":[{"alertName":"clone","emails":"emails@test.com,emails2@test.com","enabled":true,"env":"dev","eventCategories":"APP_STATE,APP_ENVIRONMENT","eventNames":"CRASHED","eventSeverities":"INFO,WARN,ERROR,FATAL","guid":"4ulbq3zkggc5ttzpydneaphv","sysCreated":"2017-07-06 16:30:06","sysModified":"2017-07-06 16:30:06","uid":"7gwbu7lepnxijuyhcxrqtodg"},{"alertName":"NewAlert2","emails":"emails@test.com,emails2@test.com","enabled":true,"env":"dev","eventCategories":"APP_STATE,APP_ENVIRONMENT","eventNames":"CRASHED","eventSeverities":"INFO,WARN,ERROR,FATAL","guid":"jmmizhv3fvg4aqz32iqyqd4p","sysCreated":"2017-07-06 15:56:53","sysModified":"2017-07-06 15:56:53","uid":"7gwbu7lepnxijuyhcxrqtodg"}],"status":"ok"};
 
 module.exports = nock('https://apps.feedhenry.com')
-  .get("/api/v2/mbaas/support/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts")
+  .get("/api/v2/mbaas/apps/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts")
   .times(5)
   .reply(200, dataList)
-  .post("/api/v2/mbaas/support/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts")
+  .post("/api/v2/mbaas/apps/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts")
   .times(4)
   .reply(200, dataList.list[0])
-  .put("/api/v2/mbaas/support/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts/4ulbq3zkggc5ttzpydneaphv")
+  .put("/api/v2/mbaas/apps/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts/4ulbq3zkggc5ttzpydneaphv")
   .reply(200, dataList.list[0])
-  .delete("/api/v2/mbaas/support/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts/4ulbq3zkggc5ttzpydneaphv")
+  .delete("/api/v2/mbaas/apps/dev/apps/7gwbu7lepnxijuyhcxrqtodg/alerts/4ulbq3zkggc5ttzpydneaphv")
   .reply(200, dataList.list[0]);
 
 module.exports = {
