@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-05-18 07:58+0000\n"
+"POT-Creation-Date: 2018-07-30 19:46+0000\n"
 
 #: lib/cmd/fh3/-v.js:5
 msgid "Version info about this tool"
@@ -154,8 +154,8 @@ msgstr ""
 #: lib/cmd/fh3/env/unset.js:24
 #: lib/cmd/fh3/env/update.js:37
 #: lib/cmd/fh3/eventalert/clone.js:26
-#: lib/cmd/fh3/eventalert/create.js:36
-#: lib/cmd/fh3/eventalert/list.js:21
+#: lib/cmd/fh3/eventalert/create.js:37
+#: lib/cmd/fh3/eventalert/list.js:22
 #: lib/cmd/fh3/eventalert/update.js:40
 #: lib/cmd/fh3/keys/ssh/add.js:24
 #: lib/cmd/fh3/keys/ssh/delete.js:21
@@ -175,7 +175,7 @@ msgstr ""
 #: lib/cmd/fh3/ups/read.js:20
 #: lib/cmd/fh3/ups/reset.js:19
 #: lib/cmd/fh3/ups/send.js:27
-#: lib/cmd/fh3/ups/variant/add.js:51
+#: lib/cmd/fh3/ups/variant/add.js:45
 #: lib/cmd/fh3/ups/variant/delete.js:25
 #: lib/cmd/fh3/ups/variant/list.js:20
 msgid "Output in json format"
@@ -1779,7 +1779,7 @@ msgstr ""
 #: lib/cmd/fh3/ups/read.js:19
 #: lib/cmd/fh3/ups/reset.js:18
 #: lib/cmd/fh3/ups/send.js:24
-#: lib/cmd/fh3/ups/variant/add.js:41
+#: lib/cmd/fh3/ups/variant/add.js:37
 #: lib/cmd/fh3/ups/variant/delete.js:22
 #: lib/cmd/fh3/ups/variant/list.js:19
 msgid "Unique 24 character GUID of your application."
@@ -3099,9 +3099,7 @@ msgid "The id of a target environment, e.g. dev."
 msgstr ""
 
 #: lib/cmd/fh3/build.js:52
-msgid ""
-"One of: android, iphone, ipad, ios(for universal binary), blackberry, "
-"windowsphone7, windowsphone (windows phone 8)."
+msgid "One of: android, iphone, ipad, ios(for universal binary), blackberry"
 msgstr ""
 
 #: lib/cmd/fh3/build.js:53
@@ -3578,9 +3576,9 @@ msgid "Clone alert with <id> from <app> into <environment> with <name>"
 msgstr ""
 
 #: lib/cmd/fh3/eventalert/clone.js:22
-#: lib/cmd/fh3/eventalert/create.js:29
-#: lib/cmd/fh3/eventalert/delete.js:20
-#: lib/cmd/fh3/eventalert/list.js:19
+#: lib/cmd/fh3/eventalert/create.js:30
+#: lib/cmd/fh3/eventalert/delete.js:21
+#: lib/cmd/fh3/eventalert/list.js:20
 #: lib/cmd/fh3/eventalert/read.js:22
 #: lib/cmd/fh3/eventalert/update.js:32
 #: lib/cmd/fh3/notifications/list.js:23
@@ -3589,22 +3587,22 @@ msgid "Unique 24 character GUID of your cloud application."
 msgstr ""
 
 #: lib/cmd/fh3/eventalert/clone.js:23
-#: lib/cmd/fh3/eventalert/delete.js:21
+#: lib/cmd/fh3/eventalert/delete.js:22
 #: lib/cmd/fh3/eventalert/read.js:23
 #: lib/cmd/fh3/eventalert/update.js:33
 msgid "Unique 24 character GUID of the event alert"
 msgstr ""
 
 #: lib/cmd/fh3/eventalert/clone.js:24
-#: lib/cmd/fh3/eventalert/create.js:30
+#: lib/cmd/fh3/eventalert/create.js:31
 #: lib/cmd/fh3/eventalert/update.js:34
 msgid "Name of the event alert"
 msgstr ""
 
 #: lib/cmd/fh3/eventalert/clone.js:25
-#: lib/cmd/fh3/eventalert/create.js:35
-#: lib/cmd/fh3/eventalert/delete.js:22
-#: lib/cmd/fh3/eventalert/list.js:20
+#: lib/cmd/fh3/eventalert/create.js:36
+#: lib/cmd/fh3/eventalert/delete.js:23
+#: lib/cmd/fh3/eventalert/list.js:21
 #: lib/cmd/fh3/eventalert/read.js:24
 #: lib/cmd/fh3/eventalert/update.js:39
 msgid ""
@@ -3618,61 +3616,65 @@ msgstr ""
 msgid "Alert not found with GUID: "
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:6
+#: lib/cmd/fh3/eventalert/create.js:7
 msgid "Create event alert for a cloud application"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:9
+#: lib/cmd/fh3/eventalert/create.js:10
 msgid ""
 "Create event alert for <app> into <environment> with <name>, for "
 "<categories>, with <severities>, for <events> be sent to <emails>"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:31
+#: lib/cmd/fh3/eventalert/create.js:32
 #: lib/cmd/fh3/eventalert/update.js:35
 msgid "Categories of this alert. (E.g APP_STATE,APP_ENVIRONMENT"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:32
+#: lib/cmd/fh3/eventalert/create.js:33
 #: lib/cmd/fh3/eventalert/update.js:36
 msgid "Severities of this alert. (E.g INFO,WARN,ERROR,FATAL"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:33
+#: lib/cmd/fh3/eventalert/create.js:34
 #: lib/cmd/fh3/eventalert/update.js:37
 msgid "Severities of this alert. (E.g START_REQUESTED,DEPLOY_REQUESTED"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:34
+#: lib/cmd/fh3/eventalert/create.js:35
 #: lib/cmd/fh3/eventalert/update.js:38
 msgid "Emails which will received this alert. (E.g test@test.com, test2@test.com"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/create.js:52
+#: lib/cmd/fh3/eventalert/create.js:53
 msgid "Error to create: "
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/delete.js:5
+#: lib/cmd/fh3/eventalert/create.js:62
+msgid "Alert created with success."
+msgstr ""
+
+#: lib/cmd/fh3/eventalert/delete.js:6
 msgid "Delete alerts from cloud application"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/delete.js:8
+#: lib/cmd/fh3/eventalert/delete.js:9
 msgid "Delete alert <id> from <app> into <environment>"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/delete.js:33
+#: lib/cmd/fh3/eventalert/delete.js:34
 msgid "Event alerts with ID '%s' for app '%s' into env '%s' deleted successfully."
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/list.js:6
+#: lib/cmd/fh3/eventalert/list.js:7
 msgid "List of all event alerts from a cloud application"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/list.js:9
+#: lib/cmd/fh3/eventalert/list.js:10
 msgid "List all event alerts from <app> into <environment>"
 msgstr ""
 
-#: lib/cmd/fh3/eventalert/list.js:32
+#: lib/cmd/fh3/eventalert/list.js:33
 msgid "Alerts not found from app '%s' into env '%s'."
 msgstr ""
 
@@ -4520,83 +4522,67 @@ msgid ""
 msgstr ""
 
 #: lib/cmd/fh3/ups/variant/add.js:17
-#: lib/cmd/fh3/ups/variant/add.js:21
 msgid ""
 "Add Android variant for the <appId> with the <name>, and <production> and "
 "<passphrase>"
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:42
+#: lib/cmd/fh3/ups/variant/add.js:38
 msgid "Name of the variant."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:43
+#: lib/cmd/fh3/ups/variant/add.js:39
 #: lib/cmd/fh3/ups/variant/delete.js:24
 msgid ""
 "Type of the variant. Choose from: \n"
 "\t\t - android \n"
 "\t\t - ios \n"
-"\t\t - windows (WNS)\n"
 " "
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:44
+#: lib/cmd/fh3/ups/variant/add.js:40
 msgid ""
 "Server Key to use Android Firebase Cloud Messaging (E.g. "
 "AIza5a448c2f31700a466fbc9d33d33942b043a27596)"
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:45
+#: lib/cmd/fh3/ups/variant/add.js:41
 msgid "Sender ID to use Android Firebase Cloud Messaging (E.g.contact@email.com)"
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:46
+#: lib/cmd/fh3/ups/variant/add.js:42
 msgid ""
 "To inform if is a production certificate to use the Apple Push Network. "
 "Default value is false."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:47
+#: lib/cmd/fh3/ups/variant/add.js:43
 msgid "Password of the certificate  to use the Apple Push Network"
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:48
+#: lib/cmd/fh3/ups/variant/add.js:44
 msgid ""
 "Path with the name of the iOS certificate file, *.p12, to use the Apple "
 "Push Network."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:49
-msgid ""
-"Package SID to use the Microsoft Push Notification Service (MPNS). (E.g "
-"ms-app://s-1-15-2-3183935804-3637592178)"
-msgstr ""
-
 #: lib/cmd/fh3/ups/variant/add.js:50
-msgid "Client Secret  to use the Microsoft Push Notification Service (MPNS)."
-msgstr ""
-
-#: lib/cmd/fh3/ups/variant/add.js:56
 msgid "Invalid type param."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:61
+#: lib/cmd/fh3/ups/variant/add.js:55
 msgid "Inform all required parameters to create an iOS variant."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:67
-msgid "Inform all required parameters to create an Win variant."
-msgstr ""
-
-#: lib/cmd/fh3/ups/variant/add.js:72
+#: lib/cmd/fh3/ups/variant/add.js:60
 msgid "Inform all required parameters to create an Android variant."
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:99
+#: lib/cmd/fh3/ups/variant/add.js:84
 msgid "Variant '%s' created successfully"
 msgstr ""
 
-#: lib/cmd/fh3/ups/variant/add.js:101
+#: lib/cmd/fh3/ups/variant/add.js:86
 msgid "Error to add variant: "
 msgstr ""
 
@@ -4676,75 +4662,75 @@ msgstr ""
 msgid "no key provided"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:11
+#: lib/cmd/fhc/help.js:8
 msgid "Help with the FeedHenry Command"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:13
+#: lib/cmd/fhc/help.js:10
 msgid "Retrieves help for all of FHC"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:14
+#: lib/cmd/fhc/help.js:11
 msgid "Retrieves help with the app command"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:20
+#: lib/cmd/fhc/help.js:17
 msgid ""
 "Forces the return of JSON output even if config is set otherwise - useful "
 "in scripts"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:23
+#: lib/cmd/fhc/help.js:20
 msgid "Forces the return of table output even if config is set otherwise"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:45
+#: lib/cmd/fhc/help.js:42
 msgid "Error - command not found: "
 msgstr ""
 
-#: lib/cmd/fhc/help.js:69
+#: lib/cmd/fhc/help.js:63
 msgid "FeedHenry CLI, the Command Line Interface to FeedHenry."
 msgstr ""
 
-#: lib/cmd/fhc/help.js:70
+#: lib/cmd/fhc/help.js:64
 msgid ""
 "\n"
 "Usage: fhc <command>"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:72
+#: lib/cmd/fhc/help.js:66
 msgid "where <command> is one of: "
 msgstr ""
 
-#: lib/cmd/fhc/help.js:74
+#: lib/cmd/fhc/help.js:68
 msgid ""
 "\n"
 "or an FHC command: "
 msgstr ""
 
-#: lib/cmd/fhc/help.js:77
+#: lib/cmd/fhc/help.js:71
 msgid ""
 "\n"
 "Add --help to any command for quick help, or use fhc help <command>."
 msgstr ""
 
-#: lib/cmd/fhc/help.js:82
+#: lib/cmd/fhc/help.js:76
 msgid " <action>"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:83
+#: lib/cmd/fhc/help.js:77
 msgid "Where <action> is one of:"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:94
+#: lib/cmd/fhc/help.js:88
 msgid "No action specified. Usage: \n"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:105
+#: lib/cmd/fhc/help.js:99
 msgid "No usage for this command found"
 msgstr ""
 
-#: lib/cmd/fhc/help.js:165
+#: lib/cmd/fhc/help.js:129
 msgid "Global Options"
 msgstr ""
 
