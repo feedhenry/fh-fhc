@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [7.0.0] - Tue Jul 17 2018
 ### Change
-- Remove Windows features support since them are not so long supported in RHMAP studio.
+- Remove Windows features support since they are no longer supported in RHMAP studio.
 
 ## [6.0.1] - Tue Jul 17 2018
 ### FiX
