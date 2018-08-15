@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [7.0.1] - Tue Ago 15 2018
 ### Change
-- Remove the Blackberry references since it is not so longer supported. 
+- Remove the Blackberry references since it is no so longer supported. 
 
 ## [7.0.0] - Tue Jul 17 2018
 ### Change
