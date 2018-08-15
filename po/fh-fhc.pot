@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-07-30 19:46+0000\n"
+"POT-Creation-Date: 2018-08-15 09:07+0000\n"
 
 #: lib/cmd/fh3/-v.js:5
 msgid "Version info about this tool"
@@ -3099,7 +3099,7 @@ msgid "The id of a target environment, e.g. dev."
 msgstr ""
 
 #: lib/cmd/fh3/build.js:52
-msgid "One of: android, iphone, ipad, ios(for universal binary), blackberry"
+msgid "One of: android, iphone, ipad, ios(for universal binary)"
 msgstr ""
 
 #: lib/cmd/fh3/build.js:53
