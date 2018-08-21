@@ -58,7 +58,7 @@
     "grunt-jsxgettext": "1.1.0",
     "grunt-open": "0.2.3",
     "grunt-shell": "2.1.0",
-    "grunt-zanata-js": "1.3.2",
+    "grunt-zanata-js": "1.4.1",
     "istanbul": "0.4.5",
     "jsxgettext": "0.8.2",
     "load-grunt-tasks": "3.5.2",
