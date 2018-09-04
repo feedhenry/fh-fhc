@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 # Unreleased
 
+## [7.0.2] - Fri Aug 24 2018
+### Change
+- Update the dependency of grunt-zanata-js to fix the failure of potupload task in grunt.
+
 ## [7.0.1] - Tue Ago 15 2018
 ### Change
 - Remove the Blackberry references since it is no so longer supported. 
