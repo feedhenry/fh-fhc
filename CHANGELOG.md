@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 # Unreleased
 
+## [7.1.0] - Tue Sep 27 2018
+### Change
+- Add deprecate notice for build command since it will not so long supported. For more details, please see [here](https://redhatmobilestatus.com/2018/09/26/immediate-deprecation-of-the-rhmap-client-binary-build-service-build-farm/).
+- Add deprecation option to show messages in the default executions of commands
+
 ## [7.0.3] - Tue Sep 11 2018
 ### Fix
 - Fixed alias for template parameter for fhc services create command.

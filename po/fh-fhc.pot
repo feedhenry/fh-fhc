@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2018-08-15 09:07+0000\n"
+"POT-Creation-Date: 2018-09-27 16:32+0000\n"
 
 #: lib/cmd/fh3/-v.js:5
 msgid "Version info about this tool"
@@ -66,7 +66,7 @@ msgstr ""
 #: lib/cmd/fh3/admin/appstore/storeitems/update.js:32
 #: lib/cmd/fh3/admin/appstore/update.js:26
 #: lib/cmd/fh3/admin/appstore/updatefield.js:23
-#: lib/cmd/fh3/build.js:63
+#: lib/cmd/fh3/build.js:65
 #: lib/cmd/fh3/git/pull.js:24
 #: lib/cmd/fh3/import.js:39
 #: lib/cmd/fh3/secureendpoints/auditlog.js:26
@@ -2099,7 +2099,7 @@ msgid "Value of the property"
 msgstr ""
 
 #: lib/cmd/fh3/app/updateConfig.js:42
-#: lib/cmd/fh3/build.js:248
+#: lib/cmd/fh3/build.js:250
 #: lib/common.js:630
 #: lib/common.js:638
 #: lib/common.js:666
@@ -3069,146 +3069,146 @@ msgstr ""
 msgid "Error in auth call: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:15
-msgid "Builds a client application"
+#: lib/cmd/fh3/build.js:16
+msgid "[DEPRECATED] Builds a client application"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:47
+#: lib/cmd/fh3/build.js:49
 #: lib/cmd/fh3/import.js:32
 msgid "Unique 24 character GUID of the project."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:48
+#: lib/cmd/fh3/build.js:50
 msgid "Unique 24 character GUID of the client app which will be built."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:49
+#: lib/cmd/fh3/build.js:51
 msgid ""
 "Unique 24 character GUID of the cloud app which the client app will connect "
 "to."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:50
+#: lib/cmd/fh3/build.js:52
 msgid ""
 "The name of a connection tag for the cloud app, must be in Semantic Version "
 "format, e.g. 0.0.1. See: http://semver.org."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:51
+#: lib/cmd/fh3/build.js:53
 msgid "The id of a target environment, e.g. dev."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:52
+#: lib/cmd/fh3/build.js:54
 msgid "One of: android, iphone, ipad, ios(for universal binary)"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:53
+#: lib/cmd/fh3/build.js:55
 msgid "Specific to the destination (e.g. Android version 4.0)."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:54
+#: lib/cmd/fh3/build.js:56
 msgid "Either 'debug' (default), 'distribution', or 'release'."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:55
+#: lib/cmd/fh3/build.js:57
 msgid "Private key password of the bundleId, only needed for 'release' builds."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:56
+#: lib/cmd/fh3/build.js:58
 msgid "Certificate password."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:57
+#: lib/cmd/fh3/build.js:59
 msgid "Boolean value to inform to download or not the built when it finish."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:58
+#: lib/cmd/fh3/build.js:60
 msgid ""
 "The unique bundle identifier of the credential bundle. You can get it using "
 "'fhc credentials list'. Required for all iOS builds."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:59
+#: lib/cmd/fh3/build.js:61
 msgid ""
 "For specifying which version of Cordova to use. Currently supported: either "
 "2.2 or 3.3. Only valid for Android for now."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:60
+#: lib/cmd/fh3/build.js:62
 msgid "Long value of URL that you want shorter for the henr.ie URL."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:61
+#: lib/cmd/fh3/build.js:63
 msgid "The name of the git branch to build, defaults to 'master'."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:62
+#: lib/cmd/fh3/build.js:64
 msgid ""
 "The full hash of the commit to build, if not the head of the branch. Must "
 "be used with <branch name>."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:70
+#: lib/cmd/fh3/build.js:72
 msgid "Missing 'privateKeyPass' parameter"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:73
+#: lib/cmd/fh3/build.js:75
 msgid "Missing 'certpass' parameter"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:79
+#: lib/cmd/fh3/build.js:81
 msgid "Missing 'bundleId' parameter"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:100
+#: lib/cmd/fh3/build.js:102
 msgid "Error processing params: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:179
+#: lib/cmd/fh3/build.js:181
 msgid ""
 "\n"
 "OTA URL: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:201
+#: lib/cmd/fh3/build.js:203
 msgid ""
 "\n"
 "Downloaded file: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:215
+#: lib/cmd/fh3/build.js:217
 msgid ""
 "\n"
 "Download URL: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:260
+#: lib/cmd/fh3/build.js:262
 msgid ""
 "Git repository not found. Please check that all provided Git parameters are "
 "valid."
 msgstr ""
 
-#: lib/cmd/fh3/build.js:335
+#: lib/cmd/fh3/build.js:337
 msgid "Unexpected response code for file download: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:335
+#: lib/cmd/fh3/build.js:337
 msgid " message: "
 msgstr ""
 
-#: lib/cmd/fh3/build.js:355
+#: lib/cmd/fh3/build.js:357
 msgid "Finish stream event received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:360
+#: lib/cmd/fh3/build.js:362
 msgid "close stream event received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:365
+#: lib/cmd/fh3/build.js:367
 msgid "End of netork stream received"
 msgstr ""
 
-#: lib/cmd/fh3/build.js:371
+#: lib/cmd/fh3/build.js:373
 msgid "Error downloading build: "
 msgstr ""
 
@@ -4016,7 +4016,6 @@ msgid "Title of the Project that you want create"
 msgstr ""
 
 #: lib/cmd/fh3/projects/create.js:34
-#: lib/cmd/fh3/services/create.js:32
 msgid "Unique 24 character GUID of the template"
 msgstr ""
 
@@ -4274,12 +4273,16 @@ msgstr ""
 msgid "Title of the Service that you want create"
 msgstr ""
 
+#: lib/cmd/fh3/services/create.js:32
+msgid "ID of the template, see `fhc templates services`"
+msgstr ""
+
 #: lib/cmd/fh3/services/create.js:48
 msgid "Error creating service: "
 msgstr ""
 
 #: lib/cmd/fh3/services/create.js:52
-msgid "Service '%s' create successfully"
+msgid "Service '%s' created successfully"
 msgstr ""
 
 #: lib/cmd/fh3/services/data-sources.js:7
@@ -5021,7 +5024,7 @@ msgstr ""
 msgid "Command not found: "
 msgstr ""
 
-#: lib/fhc.js:154
+#: lib/fhc.js:160
 msgid "Unable to determine domain - please login again."
 msgstr ""
 
