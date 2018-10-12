@@ -9,7 +9,7 @@ FeedHenry CLI, the command line interface to [FeedHenry](http://www.feedhenry.co
 * Install [NPM (the Node Package Manager)](http://npmjs.org/)
 * Install FHC: `sudo npm install -g fh-fhc`
 
-`fhc` should now be available on your command line.  
+`fhc` should now be available on your command line.
 `fhc -v` will tell you what version of fhc you have installed.
 
 ## Usage
@@ -197,7 +197,7 @@ If you want install an older version of `fh-fhc` you can do it by the available 
 
 | Tag          | Version |
 |    :---:     |  :---:  |
-| latest       | 4.x   |
+| latest       | 7.x   |
 | latest-1     | 1.2.0   |
 | latest-2     | 2.18.0-896  |
 | latest-4     | 4.2.5  |
