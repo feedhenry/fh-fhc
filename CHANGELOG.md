@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 # Unreleased
 
+## [7.1.1] - Tue Oct 12 2018
+### Fix
+- Dependency required for production is missing
+
 ## [7.1.0] - Tue Sep 27 2018
 ### Change
 - Add deprecate notice for build command since it will not so long supported. For more details, please see [here](https://redhatmobilestatus.com/2018/09/26/immediate-deprecation-of-the-rhmap-client-binary-build-service-build-farm/).
@@ -21,7 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [7.0.1] - Tue Ago 15 2018
 ### Change
-- Remove the Blackberry references since it is no so longer supported. 
+- Remove the Blackberry references since it is no so longer supported.
 
 ## [7.0.0] - Tue Jul 17 2018
 ### Change
@@ -99,7 +103,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Updated readme
 
 
-## [4.1.2] - 
+## [4.1.2] -
 ### Added
 - added tests
 
@@ -107,32 +111,32 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - change to not include app info by default
 
 
-## [4.1.1] - 
+## [4.1.1] -
 ### Changed
 - changed so fhc requires just the branchname rather than /refs/head/<Branchname>
 
 
-## [4.1.0] - 
+## [4.1.0] -
 ### Removed
 - Removes command completion
 
 
-## [4.0.6] - 
+## [4.0.6] -
 ### Changed
 - Changed proxy timeout to millicore
 
 
-## [4.0.5] - 
+## [4.0.5] -
 ### Changed
 - Moved request implementations defined in common.js to command files.
 
 
-## [4.0.4] - 
+## [4.0.4] -
 ### Changed
 - Replaced deprecated `util.pump`
 
 
-## [4.0.3] - 
+## [4.0.3] -
 ### Changed
 - updated dependencies:
 ```git
@@ -221,7 +225,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added unit tests
 
 ### Changed
-- Change the cmd fhc admin-users to follow the V3 standard 
+- Change the cmd fhc admin-users to follow the V3 standard
 
 
 ## [3.1.2] - Wed Sep 13 18:55:44 2017 +0100
@@ -297,7 +301,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [3.0.0] - Fri Aug 11 11:53:44 2017 +0100
-__*note*__ breaking API changes introduced in v3 of fh-fhc, where support for v2 commands are removed  
+__*note*__ breaking API changes introduced in v3 of fh-fhc, where support for v2 commands are removed
 ### Added
 - Added unit tests
 
@@ -382,7 +386,7 @@ __*note*__ breaking API changes introduced in v3 of fh-fhc, where support for v2
 
 
 ## [2.18.0] - Tue Jul 25 11:19:43 2017 +0200
-__*note:*__ v2.18.0 was a large minor version update that involved a lot of changes to add various commands that meet v3 standards, along with accompanying unit tests. In addition files CRUDL commands were removed, support for versions of node >=4.4 was enabled, and linting support was added.  
+__*note:*__ v2.18.0 was a large minor version update that involved a lot of changes to add various commands that meet v3 standards, along with accompanying unit tests. In addition files CRUDL commands were removed, support for versions of node >=4.4 was enabled, and linting support was added.
 ### Added
 - Adds verification for environment ids
 - Adds eslint file containing rules that don't throw any errors (uses grunt-eslint)
@@ -433,7 +437,7 @@ __*note:*__ v2.18.0 was a large minor version update that involved a lot of chan
 - Fixes where re-deployment via fhc get stuck with incorrect runtime specified
 - Add command `fhc artifacts` to V3 standard
 - Change the cmd user to follow the V3 standard
-- Change the cmd -v update to follow the V3 standard 
+- Change the cmd -v update to follow the V3 standard
 - Change the cmd shorturl to follow the V3 standard
 - Change the cmd stats to follow the V3 standard
 - Change the cmd call to follow the V3 standard
@@ -502,7 +506,7 @@ __*note:*__ v2.18.0 was a large minor version update that involved a lot of chan
 - Updated request payload to allow import of cloud app from git repo
 - Allows type MBAAS for fhc policies create. Updated usage also
 - Fixes validation on admin-policies args length and passing correct args to update function
-- Fixes zanata grunt task that previously broke the build 
+- Fixes zanata grunt task that previously broke the build
 - Defaults to HEAD if user doesn't pass a git hash
 - App stage - default to master and update usage to show default
 - Fixes error where `fhc clusterprops` appears as a subcommand of the `error` command
