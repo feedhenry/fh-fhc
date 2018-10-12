@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+## [7.1.3] - Tue Oct 09 2018
+### Fix/Change
+- Add alias to the command fhc admin logs syslogs which was missing
+- Remove the perm validations in the command and allow backend return unauthorized messages
+
 ## [7.1.2] - Tue Oct 12 2018
 ### Change
 - Upgrade request dependency to 2.88.0
