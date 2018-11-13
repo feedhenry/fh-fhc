@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+## [7.1.4] - Tue Nov 13 2018
+- Fix: Unable to run grunt task test
+
 ## [7.1.3] - Tue Oct 09 2018
 ### Fix/Change
 - Add alias to the command fhc admin logs syslogs which was missing
