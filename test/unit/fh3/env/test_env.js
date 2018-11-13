@@ -18,7 +18,7 @@ module.exports = {
     envCmd.create({app:'1a', name:'name', env:'dev', json:true}, function(err, data) {
       assert.equal(err, null);
       assert.notEqual(data, null);
-      assert.ok(data.status, "ok");
+      assert.equal(data.status, "ok");
       assert.equal(data._table, null);
       return cb();
     });

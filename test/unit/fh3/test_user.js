@@ -278,7 +278,7 @@ module.exports = {
   'test fhc user': function(cb) {
     userCmd({}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.userName, "Example User");
       return cb();
     });

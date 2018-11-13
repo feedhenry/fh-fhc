@@ -13,17 +13,17 @@ module.exports = {
       requestId: mockRequestId,
       projects: "core,mbaas"
     }, function(err, searchResponse) {
-      assert.ok(!err, "Expected no error " + err);
+      assert(!err, "Expected no error " + err);
 
       //The search response should be JSON
-      assert.ok(searchResponse, "Expected a search response");
+      assert(searchResponse, "Expected a search response");
 
-      assert.equal(mockRequestId, searchResponse.hits.hits[0]._source.reqId);
+      assert(mockRequestId, searchResponse.hits.hits[0]._source.reqId);
 
       //There should be a table.
-      assert.ok(searchResponse._table, "Expected a table for the search response");
+      assert(searchResponse._table, "Expected a table for the search response");
 
-      assert.ok(searchResponse._table.toString().indexOf('Error reading environment') > -1);
+      assert(searchResponse._table.toString().indexOf('Error reading environment') > -1);
       done();
     });
   }

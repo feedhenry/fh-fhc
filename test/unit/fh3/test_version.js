@@ -37,14 +37,14 @@ module.exports = {
   'test fhc version': function(cb) {
     command({}, function (err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       return cb();
     });
   },
   'test fhc version --json': function(cb) {
     command({json:true}, function (err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.platformVersion, "3.18.2");
       return cb();
     });

@@ -407,7 +407,7 @@ module.exports = {
   'test fhc templates projects --json': function(cb) {
     cmd({json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       assert.equal(data[0].id, 'pushstarter_project');
       return cb();
     });

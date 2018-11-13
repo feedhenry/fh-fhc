@@ -45,10 +45,10 @@ module.exports = {
   },
   'test appforms-forms deploy wrong environment': function(cb) {
     appformsenvforms.deploy({ id: 'someformid', environment: "wrongenvid" }, function(err) {
-      assert.ok(err, "Expected an error");
+      assert.notEqual(err, null, "Expected an error");
       //An error should produce a request ID (see fixture_env_forms.js)
       assert.equal('requestid12345', err.requestId);
-      assert.ok(err.toString().indexOf('Environment with ID wrongenvid not found') > -1, "Expected an environment error message");
+      assert(err.toString().indexOf('Environment with ID wrongenvid not found') > -1, "Expected an environment error message");
       return cb();
     });
   },

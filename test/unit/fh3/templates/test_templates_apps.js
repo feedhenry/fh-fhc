@@ -89,7 +89,7 @@ module.exports = {
   'test fhc templates apps --json': function(cb) {
     cmd({json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       assert.equal(data[0].id, 'hello_world_hybrid_app');
       return cb();
     });

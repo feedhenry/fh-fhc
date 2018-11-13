@@ -14,7 +14,7 @@ module.exports = {
   'test fhc secureendpoints auditlog --app=<app-id> --env=<environment>': function(cb) {
     secureendpoints.auditlog({app:'1a',env:'dev'}, function(err,data) {
       assert.equal(err, null);
-      assert.ok(data._table, "Data table is Expected");
+      assert(data._table, "Data table is Expected");
       assert.equal(data.status, "ok");
       var table = data._table;
       assert.equal(table['0'][0], 'Add Endpoint');
@@ -28,7 +28,7 @@ module.exports = {
   'test fhc secureendpoints auditlog --app=<app-id> --env=<environment> --json': function(cb) {
     secureendpoints.auditlog({app:'1a',env:'dev',json:true}, function(err,data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       assert.equal(data.status, "ok");
       return cb();
     });
@@ -36,7 +36,7 @@ module.exports = {
   'test fhc secureendpoints list --app=<app-id> --env=<environment>': function(cb) {
     secureendpoints.list({app:'1a',env:'dev'}, function(err,data) {
       assert.equal(err, null);
-      assert.ok(data._table, "Data _table is Expected");
+      assert(data._table, "Data _table is Expected");
       var table = data._table;
       assert.equal(table['0'][0], '/hello');
       assert.equal(table['0'][1], 'https');
@@ -48,9 +48,9 @@ module.exports = {
   'test fhc secureendpoints list --app=<app-id> --env=<environment> --json': function(cb) {
     secureendpoints.list({app:'1a',env:'dev',json:true}, function(err,data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data _table is not Expected");
+      assert(!data._table, "Data _table is not Expected");
       assert.equal(data.status, "ok");
-      assert.ok(data.overrides, "Data overrides are expected.");
+      assert(data.overrides, "Data overrides are expected.");
       return cb();
     });
   },
