@@ -14,7 +14,7 @@ module.exports = nock('https://apps.feedhenry.com')
 module.exports = {
   'test ping app': function(cb) {
     command({app:'1a', env:'dev'}, function(err) {
-      assert.ok(err, null);
+      assert.equal(err, null);
       return cb();
     });
   }

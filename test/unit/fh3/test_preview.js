@@ -14,8 +14,8 @@ module.exports = nock('https://apps.feedhenry.com')
 module.exports = {
   'test fhc preview url --app': function(cb) {
     urlPreviewCmd({app:'1a', json:true}, function(err, data) {
-      assert.ok(!err, "No Error is Expected");
-      assert.ok(data, "Data is Expected");
+      assert.equal(err, null, "No Error is Expected");
+      assert.notEqual(data, null, "Data is Expected");
       assert.equal(data.url, "https://apps.feedhenry.com/box/srv/1.1/wid/apps/studio/1a/container");
       return cb();
     });

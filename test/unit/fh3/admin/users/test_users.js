@@ -329,7 +329,7 @@ module.exports = {
   'test admin users list': function(cb) {
     commands.list({}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], 'Ou3Nt_FRP9cw1ATChbvz57Qv');
       assert.equal(table['0'][1], 'feedhenry-qa.radm@example.com');
@@ -343,23 +343,23 @@ module.exports = {
   'test admin users list --json': function(cb) {
     commands.list({json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(data);
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users read --json': function(cb) {
     commands.read({json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(data);
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users read': function(cb) {
     commands.read({}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -373,23 +373,23 @@ module.exports = {
   'test admin users create --username --email --json': function(cb) {
     commands.create({username:'newuser', email:'newuser@redhat.com',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users delete --username --json': function(cb) {
     commands.delete({username:'ndonnell@redhat.com',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users update --username --email': function(cb) {
     commands.update({username:'ndonnell@redhat.com', email:'ndonnell@redhat.com'}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -403,16 +403,16 @@ module.exports = {
   'test admin users update --username --email --json': function(cb) {
     commands.update({username:'ndonnell@redhat.com', email:'ndonnell@redhat.com', json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users changeroles --username --roles': function(cb) {
     commands.changeroles({username:'ndonnell@redhat.com', roles:'sub'}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -426,16 +426,16 @@ module.exports = {
   'test admin users changeroles --username --roles --json': function(cb) {
     commands.changeroles({username:'ndonnell@redhat.com', roles:'sub',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users changeauthpolicies --username --authpolicies': function(cb) {
     commands.changeauthpolicies({username:'ndonnell@redhat.com', authpolicies:'authpolicies'}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -449,16 +449,16 @@ module.exports = {
   'test admin users changeauthpolicies --username --authpolicies --json': function(cb) {
     commands.changeauthpolicies({username:'ndonnell@redhat.com', authpolicies:'authpolicies',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users enable --username ': function(cb) {
     commands.enable({username:'ndonnell@redhat.com'}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -472,16 +472,16 @@ module.exports = {
   'test admin users enable --username --json': function(cb) {
     commands.enable({username:'ndonnell@redhat.com',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },
   'test admin users disable --username ': function(cb) {
     commands.enable({username:'ndonnell@redhat.com'}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], '25zmxbt3ky2oytmda6uqcuql');
       assert.equal(table['0'][1], 'ndonnell@redhat.com');
@@ -495,9 +495,9 @@ module.exports = {
   'test admin users disable --username --json': function(cb) {
     commands.enable({username:'ndonnell@redhat.com',json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data.status, 'ok');
-      assert.ok(!data._table, "Data table is not Expected");
+      assert(!data._table, "Data table is not Expected");
       return cb();
     });
   },

@@ -9,15 +9,15 @@ module.exports = {
   "verify it works as a CLI with no arguments" : function(cb) {
     exec('node bin/fhc.js',
       function(error, stdout, stderr) {
-        assert.ok(stdout.length > 0);
-        assert.ok(stdout.indexOf('Usage')>-1);
+        assert(stdout.length > 0);
+        assert(stdout.indexOf('Usage')>-1);
         return cb();
       });
   },
   "verify it works as a CLI with arguments" : function(cb) {
     exec('node bin/fhc.js help app logs',
       function(error, stdout, stderr) {
-        assert.ok(stdout.length > 0);
+        assert(stdout.length > 0);
         return cb();
       });
   }

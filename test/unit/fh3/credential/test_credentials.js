@@ -56,7 +56,7 @@ module.exports = {
       privatekey: pathTest,
       certificate: pathTest
     }, function(err) {
-      assert.equal(err, "Missed parameter --provisioning.");
+      assert.notEqual(err, null, "Missed parameter --provisioning.");
       return cb();
     });
   },

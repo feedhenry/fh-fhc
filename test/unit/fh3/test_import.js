@@ -84,7 +84,7 @@ module.exports = {
   'test import --project=<project> --title=<title> --template=<template> --zipFile=<zipFile>': function(cb) {
     cmd({project:"usqzucpwydegcjhphznrjstl", title:"testZip", template:"client_advanced_hybrid", zipFile:pathZipFile}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       return cb();
     });
   }
@@ -92,7 +92,7 @@ module.exports = {
   'test import --project=<project> --title=<title> --template=<template> --gitRepo=<gitRepo>': function(cb) {
     cmd({project:"usqzucpwydegcjhphznrjstl", title:"testZip", template:"client_advanced_hybrid", gitRepo:"git@git.us.feedhenry.com:support/NewHelloTest-Cordova-App.git", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       return cb();
     });
   }

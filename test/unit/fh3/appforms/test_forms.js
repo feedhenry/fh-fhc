@@ -66,19 +66,19 @@ module.exports = {
   },
   'test appforms-forms import non-file path': function(cb) {
     appformsforms.import({file: 'bin'}, function(err) {
-      assert.ok(/not a file/.test(err.toString()));
+      assert(/not a file/.test(err.toString()));
       return cb();
     });
   },
   'test appforms-forms import non-existing file': function(cb) {
     appformsforms.import({file: 'does-not-exist.zip'}, function(err) {
-      assert.ok(/not found/.test(err.toString()));
+      assert(/not found/.test(err.toString()));
       return cb();
     });
   },
   'test appforms-forms export non-zip file extension': function(cb) {
     appformsforms.export({ file : 'exportedfile' }, function(err) {
-      assert.equal(err, 'Expected the output file to have a .zip extension');
+      assert.notEqual(err, null, 'Expected the output file to have a .zip extension');
       return cb();
     });
   },
@@ -88,7 +88,7 @@ module.exports = {
       assert.equal(err, null);
       // should not overwrite existing file
       appformsforms.export(params, function(err) {
-        assert.ok(/already exists/, err.toString());
+        assert(err);
         return cb();
       });
     });

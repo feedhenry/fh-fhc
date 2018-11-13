@@ -28,7 +28,7 @@ module.exports = {
   'test fhc eventalert clone --app=<app> --id=<id> --name=<name> --env=<environment> --json': function(cb) {
     eventAlertCmd.clone({app: "7gwbu7lepnxijuyhcxrqtodg", env: "dev", id:"4ulbq3zkggc5ttzpydneaphv", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data is not Expected");
+      assert(!data._table, "Data is not Expected");
       return cb();
     });
   },
@@ -49,28 +49,28 @@ module.exports = {
   'test fhc eventalert list --app=<app> --id=<id> --env=<environment> --json': function(cb) {
     eventAlertCmd.list({app: "7gwbu7lepnxijuyhcxrqtodg", env: "dev", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data is not Expected");
+      assert(!data._table, "Data is not Expected");
       return cb();
     });
   },
   'test fhc eventalert udpate --app=<app> --id=<id> --name=<name> --env=<environment> --json': function(cb) {
     eventAlertCmd.update({app: "7gwbu7lepnxijuyhcxrqtodg", name:"name", env: "dev", id:"4ulbq3zkggc5ttzpydneaphv", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data is not Expected");
+      assert(!data._table, "Data is not Expected");
       return cb();
     });
   },
   'test fhc eventalert read --app=<app> --id=<id> --env=<environment> --json': function(cb) {
     eventAlertCmd.read({app: "7gwbu7lepnxijuyhcxrqtodg", env: "dev", id:"4ulbq3zkggc5ttzpydneaphv", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data is not Expected");
+      assert(!data._table, "Data is not Expected");
       return cb();
     });
   },
   'test fhc eventalert delete --app=<app> --id=<id> --env=<environment> --json': function(cb) {
     eventAlertCmd.delete({app: "7gwbu7lepnxijuyhcxrqtodg", env: "dev", id:"4ulbq3zkggc5ttzpydneaphv", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(!data._table, "Data is not Expected");
+      assert(!data._table, "Data is not Expected");
       return cb();
     });
   }

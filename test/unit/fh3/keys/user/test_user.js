@@ -57,7 +57,7 @@ module.exports = {
   'test fhc keys user list' : function(cb) {
     userCommand.list({}, function(err, list) {
       assert.equal(err, null);
-      assert.ok(list);
+      assert(list);
       var table = list._table;
       assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
       assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
@@ -67,7 +67,7 @@ module.exports = {
   'test fhc keys user list --json' : function(cb) {
     userCommand.list({json:true}, function(err, list) {
       assert.equal(err, null);
-      assert.ok(list);
+      assert(list);
       assert.equal(list._table, null);
       return cb();
     });
@@ -75,7 +75,7 @@ module.exports = {
   'fhc keys user read --label' : function(cb) {
     userCommand.read({ label:"FH_MBAAS_API_KEY"}, function(err, list) {
       assert.equal(err, null);
-      assert.ok(list);
+      assert(list);
       var table = list._table;
       assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
       assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
@@ -85,7 +85,7 @@ module.exports = {
   'fhc keys user read --label --json' : function(cb) {
     userCommand.read({ label:"FH_MBAAS_API_KEY", json:true}, function(err, list) {
       assert.equal(err, null);
-      assert.ok(list);
+      assert(list);
       assert.equal(list._table, null);
       return cb();
     });
@@ -99,7 +99,7 @@ module.exports = {
   'fhc keys user update --label --value' : function(cb) {
     userCommand.update({label:"FH_MBAAS_API_KEY", value:"FH_MBAAS_API_KEY2"}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
       assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
@@ -109,7 +109,7 @@ module.exports = {
   'fhc keys user update --label --value --json' : function(cb) {
     userCommand.update({label:"FH_MBAAS_API_KEY", value:"FH_MBAAS_API_KEY2", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data._table, null);
       assert.equal(data.status, "ok");
       return cb();
@@ -118,7 +118,7 @@ module.exports = {
   'fhc keys user delete --label' : function(cb) {
     userCommand.delete({label:"FH_MBAAS_API_KEY"}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
       assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
@@ -128,7 +128,7 @@ module.exports = {
   'fhc keys user delete --label --json' : function(cb) {
     userCommand.delete({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data._table, null);
       assert.equal(data.status, "ok");
       return cb();
@@ -137,7 +137,7 @@ module.exports = {
   'fhc keys user add --label' : function(cb) {
     userCommand.add({label:"FH_MBAAS_API_KEY"}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       var table = data._table;
       assert.equal(table['0'][0], 'FH_MBAAS_API_KEY');
       assert.equal(table['0'][1], 'ad351414f0769fdf443203e8ed07534711457f5d');
@@ -147,7 +147,7 @@ module.exports = {
   'fhc keys user add --label --json' : function(cb) {
     userCommand.add({label:"FH_MBAAS_API_KEY", json:true}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data);
+      assert(data);
       assert.equal(data._table, null);
       assert.equal(data.status, "ok");
       return cb();

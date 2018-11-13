@@ -22,7 +22,7 @@ module.exports = {
   'test appforms-submissions list': function(cb) {
     appformsenvsubmissions.list({environment: "someenv", page: page, limit: limit}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data._table, "Expected A Table Of Submissions");
+      assert(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'somesubmissionid');
       return cb();
@@ -31,7 +31,7 @@ module.exports = {
   'test appforms-submissions filter': function(cb) {
     appformsenvsubmissions.filter({environment: "someenv", formid: "someformid", projectid: "someformproject", page: page, limit: limit}, function(err, data) {
       assert.equal(err, null);
-      assert.ok(data._table, "Expected A Table Of Submissions");
+      assert(data._table, "Expected A Table Of Submissions");
       assert.equal(data.length, 1);
       assert.equal(data[0]._id, 'somesubmissionid');
       return cb();
@@ -111,7 +111,7 @@ module.exports = {
       async: "true",
       output: testOutputZipFile
     }, function(err) {
-      assert.ok(err.indexOf("available") > -1, "Expected the error message to show that async submissions export is unavailable.");
+      assert(err.indexOf("available") > -1, "Expected the error message to show that async submissions export is unavailable.");
 
       //Making sure that the required endpoints were called for async submission export.
       csvExportAsyncRequests.done();
